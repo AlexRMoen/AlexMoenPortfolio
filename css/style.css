@@ -49,10 +49,11 @@
 }
 
 /* div sizes */
-/* 30% of a full viewport height */
-.height100 {
+/* 93% of a full viewport height */
+/* exactly fills the vertical height on common browsers */
+.heightFull {
 	width: 100%;
-	min-height: 100vh;
+	min-height: 93vh;
 }
 
 /* 30% of a full viewport height */
