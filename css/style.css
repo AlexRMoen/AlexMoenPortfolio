@@ -70,9 +70,9 @@
 }
 
 /* drop shadows */
-.shadow {
--webkit-filter: drop-shadow(0 15px 12px rgba(0,0,0,0.4));
-	filter: drop-shadow(0 15px 12px rgba(0,0,0,0.4));
+.shadowHeight1 {
+-webkit-filter: drop-shadow(0 0.2em 0.2em rgba(0,0,0,0.2));
+	filter: drop-shadow(0 0.2em 0.2em rgba(0,0,0,0.2));
 }
 
 /* specific element rules */
