@@ -1,13 +1,23 @@
 @charset "UTF-8";
 /* CSS Document */
 
+p {
+	margin-bottom: 1em;
+}
+
 /* headers */
 h1 {
 	font-family: 'Palanquin Dark', sans-serif;
-	font-size: 5em;
+	font-size: 4em;
 }
 
 h2 {
+	font-family: 'Palanquin Dark', sans-serif;
+	font-size: 1.5em;
+	font-weight: lighter;
+}
+
+h3 {
 	font-family: 'Palanquin Dark', sans-serif;
 	font-size: 2em;
 }
