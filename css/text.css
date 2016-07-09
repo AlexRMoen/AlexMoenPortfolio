@@ -2,6 +2,11 @@
 /* CSS Document */
 
 /* headers */
+h1 {
+	font-family: 'Palanquin Dark', sans-serif;
+	font-size: 3em;
+}
+
 h2 {
 	font-family: 'Palanquin Dark', sans-serif;
 	font-size: 2em;

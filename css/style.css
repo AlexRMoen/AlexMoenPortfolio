@@ -43,17 +43,39 @@
 	margin-bottom: 1em;
 }
 
+.leftRightMargin10em {
+	margin-left: 10em;
+	margin-right: 10em;
+}
+
 /* div sizes */
+/* 30% of a full viewport height */
+.height100 {
+	width: 100%;
+	min-height: 100vh;
+}
+
 /* 30% of a full viewport height */
 .height30 {
 	width: 100%;
 	min-height: 30vh;
 }
 
-/* specific element rules */
+/* div behaviors */
 .imgFitBox {
 	background-repeat: no-repeat;
 	background-size: contain;
+}
+
+/* specific element rules */
+.relative {
+	position: relative;
+}
+
+.title {
+	position: absolute;
+	left: 0;
+	bottom: 0;
 }
 
 .ella {
