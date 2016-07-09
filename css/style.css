@@ -64,6 +64,21 @@
 }
 
 /* div behaviors */
+/* gallery box transition rules */
+.box {
+	-webkit-transition: transform 0.5s ease-out;
+	transition: transform 0.25s ease-out;
+}
+
+/* gallery box hover behavior */
+.box:hover {
+	z-index: 999;
+	transform: scale(1.1, 1.1);
+	-webkit-filter: drop-shadow(0 0.4em 0.4em rgba(0,0,0,0.2));
+	filter: drop-shadow(0 0.4em 0.4em rgba(0,0,0,0.2));
+}
+
+/* makes a background image for a box */
 .imgFitBox {
 	background-repeat: no-repeat;
 	background-size: contain;
