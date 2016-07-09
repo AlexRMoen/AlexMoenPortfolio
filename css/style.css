@@ -39,8 +39,9 @@
 	margin-bottom: 0.5em;
 }
 
-.bottomMargin1em {
-	margin-bottom: 1em;
+/* should be set to the same margin width as the grid gutter, in vw units */
+.bottomMarginGutterWidth {
+	margin-bottom: 1.6vw;
 }
 
 .leftRightMargin10em {
@@ -101,6 +102,9 @@
 
 /* take up full width of container if using mobile viewport */
 @media only screen and (max-width: 550px) {
+	.bottomMarginGutterWidth {
+	margin-bottom: 1em;
+}
 	.leftRightMargin10em {
 	margin-left: 2em;
 	margin-right: 2em;
