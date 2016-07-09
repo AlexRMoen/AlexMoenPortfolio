@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* colors */
+/* white */
+.white {
+	color: rgb(255, 255, 255);
+} 
+
+.whiteBG {
+	background-color: rgb(255, 255, 255);
+}
+
+/* teal */
+.teal {
+	color: rgb(35, 174, 194);
+} 
+
+.tealBG {
+	background-color: rgb(35, 174, 194);
+}
+
+/* paddings */
+.paddingTop1em {
+	padding-top: 1em;
+}
+
+.paddingBottom2em {
+	padding-bottom: 2em;
+}
+
+/* margins */
+.bottomMarginPoint5em {
+	margin-bottom: 0.5em;
+}
+
+.bottomMargin1em {
+	margin-bottom: 1em;
+}
+
+/* div sizes */
+/* 30% of a full viewport height */
+.height30 {
+	width: 100%;
+	min-height: 30vh;
+}
+
+/* specific element rules */
+.imgFitBox {
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.ella {
+	background-image: url(../img/gallery/ella/thumbnail.png);
+}
+
+.kojiro {
+	background-image: url(../img/gallery/kojiro/thumbnail.png);
+}
+
+.trello {
+	background-image: url(../img/gallery/trello/thumbnail.png);
+}
+
+.playboy {
+	background-image: url(../img/gallery/playboy/thumbnail.png);
+}
+
+.enterprise {
+	background-image: url(../img/gallery/enterprise/thumbnail.png);
+}
+
+.chirpr {
+	background-image: url(../img/gallery/chirpr/thumbnail.png);
+}
