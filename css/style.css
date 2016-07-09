@@ -97,3 +97,11 @@
 .chirpr {
 	background-image: url(../img/gallery/chirpr/thumbnail.png);
 }
+
+/* take up full width of container if using mobile viewport */
+@media only screen and (max-width: 550px) {
+	.leftRightMargin10em {
+	margin-left: 2em;
+	margin-right: 2em;
+}
+}
