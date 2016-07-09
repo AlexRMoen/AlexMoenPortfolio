@@ -50,7 +50,7 @@
 }
 
 /* div sizes */
-/* 93% of a full viewport height */
+/* 95% of a full viewport height */
 /* exactly fills the vertical height on common browsers */
 .heightFull {
 	width: 100%;
@@ -67,6 +67,12 @@
 .imgFitBox {
 	background-repeat: no-repeat;
 	background-size: contain;
+}
+
+/* drop shadows */
+.shadow {
+-webkit-filter: drop-shadow(0 15px 12px rgba(0,0,0,0.4));
+	filter: drop-shadow(0 15px 12px rgba(0,0,0,0.4));
 }
 
 /* specific element rules */
