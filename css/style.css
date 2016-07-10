@@ -35,12 +35,12 @@
 }
 
 /* paddings */
-.paddingTop1em {
-	padding-top: 1em;
+.paddingTop1point5em {
+	padding-top: 1.5em;
 }
 
-.paddingTop2em {
-	padding-top: 2em;
+.paddingTop3em {
+	padding-top: 3em;
 }
 
 .paddingBottom2em {
@@ -52,8 +52,8 @@
 }
 
 /* margins */
-.bottomMarginPoint5em {
-	margin-bottom: 0.5em;
+.bottomMarginPoint75em {
+	margin-bottom: 0.75em;
 }
 
 .bottomMargin1em {
@@ -134,8 +134,8 @@
 }
 
 .icon {
-	margin-left: 1.5em;
-	margin-right: 1.5em;
+	margin-left: 2.25em;
+	margin-right: 2.25em;
 }
 
 .ella {
