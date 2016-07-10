@@ -6,6 +6,7 @@
 	padding: 0;
 }
 
+/* video stuff *deserves scrutiny and compat with mobile* */
 /* for ie8 */
 video {
 	display: block;
@@ -26,7 +27,6 @@ video#bgvid {
     background: url(fish1.png) no-repeat;
     background-size: cover; 
 }
-
 
 /* colors */
 /* white */
