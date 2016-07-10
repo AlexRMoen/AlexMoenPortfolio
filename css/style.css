@@ -56,6 +56,14 @@
 	margin-bottom: 0.5em;
 }
 
+.bottomMargin1em {
+	margin-bottom: 1em;
+}
+
+.bottomMargin2em {
+	margin-bottom: 2em;
+}
+
 /* should be set to the same margin width as the grid gutter, in vw units */
 .bottomMarginGutterWidth {
 	margin-bottom: 1.6vw;
@@ -123,6 +131,11 @@
 	position: absolute;
 	left: 0;
 	bottom: 14vh;
+}
+
+.icon {
+	margin-left: 1.5em;
+	margin-right: 1.5em;
 }
 
 .ella {
