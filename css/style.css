@@ -60,6 +60,10 @@
 	margin-bottom: 1em;
 }
 
+.bottomMargin1point5em {
+	margin-bottom: 1.5em;
+}
+
 .bottomMargin2em {
 	margin-bottom: 2em;
 }
@@ -75,11 +79,10 @@
 }
 
 /* div sizes */
-/* 95% of a full viewport height */
-/* exactly fills the vertical height on common browsers */
+/* 100% of a full viewport height */
 .heightFull {
 	width: 100%;
-	min-height: 93vh;
+	min-height: 100vh;
 }
 
 /* 30% of a full viewport height */
@@ -127,17 +130,20 @@
 }
 
 /* specific element rules */
+/* main page title and sub-heading */
 .title {
 	position: absolute;
 	left: 0;
 	bottom: 14vh;
 }
 
+/* margins which resize icons inside their grid containers */
 .icon {
 	margin-left: 2.25em;
 	margin-right: 2.25em;
 }
 
+/* gallery items */
 .ella {
 	background-image: url(../img/gallery/ella/thumbnail.png);
 }
@@ -160,6 +166,20 @@
 
 .chirpr {
 	background-image: url(../img/gallery/chirpr/thumbnail.png);
+}
+
+/* creates see-through porthole effect */
+.porthole {
+	position: relative;
+	background: radial-gradient(circle 20% at 50% 33.333%, transparent 20%, rgb(255,255,255) 20%);
+    background: -webkit-radial-gradient(50% 33.333%, circle, transparent 20%, rgb(255,255,255) 20%);
+}
+
+/* attaches contact methods to the bottom of the contact me section */
+.contactPosition {
+	position: absolute;
+	bottom: 1em;
+	width: 100%;
 }
 
 /* take up full width of container if using mobile viewport */
