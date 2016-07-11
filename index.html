@@ -22,10 +22,12 @@
 
 <!-- BEGIN video stuff *deserves scrutiny and compat with mobile* -->
 <!-- play the video background - webm, then mp4, then static png -->
+<!-- VIDEO OFF
 <video autoplay loop poster="video/fish1.png" id="bgvid">
   <source src="video/fishHigher60.webm" type="video/webm">
   <source src="video/fishyEdit.mp4" type="video/mp4">
 </video>
+-->
 
 <!--[if lt IE 9]>
 <script>
@@ -201,10 +203,11 @@
 </div>
 
 <!-- gallery of projects section -->
-<div class="paddingTop1point5em paddingBottom2em tealBG">
-  <h3 class="white shadowHeight1 bold bottomMargin1em textCenter"> MY WORK </h3>
+<div class="paddingTop1point5em paddingBottom2em tealBG" id="gallery">
+  <h3 class="white shadowHeight1 bold bottomMargin1em textCenter">MY WORK</h3>
   <div class="row">
-    <div class="column column-4 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox ella">
+  
+    <div class="column column-4 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox" id="ella">
     
     <div class="boxLabel">
     <h5 class="teal">24 hour design challenge<br>
@@ -212,14 +215,25 @@
     </div>
     
     </div>
-    <div class="column column-4 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox kojiro">
+    <div class="column column-4 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox" id="kojiro">
     
+    <a href="#gallery" onclick="document.getElementById('ella').style.width = '6.86666666667%';
+     document.getElementById('ella').style.height = '80vh'; 
+     document.getElementById('kojiro').style.width = '83.0666666667%'; 
+     document.getElementById('kojiro').style.height = '80vh'; 
+     document.getElementById('trello').style.width = '6.86666666667%'; 
+     document.getElementById('trello').style.height = '80vh';
+     document.getElementById('playboy').style.height = '5vh';
+     document.getElementById('enterprise').style.height = '5vh';
+     document.getElementById('chirpr').style.height = '5vh';
+     document.getElementById('newitem').style.height = '5vh';">
     <div class="boxLabel">
     <h5 class="teal">Kojirō Izakaya<br> interactive restaurant menu</h5>
     </div>
+    </a>
     
     </div>
-    <div class="column column-4 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox trello">
+    <div class="column column-4 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox" id="trello">
     
     <div class="boxLabel">
     <h5 class="teal">Trello<br> iOS app proposal</h5>
@@ -228,28 +242,28 @@
     </div>
   </div>
   <div class="row">
-    <div class="column column-3 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox playboy">
+    <div class="column column-3 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox" id="playboy">
     
     <div class="boxLabel">
     <h5 class="teal">Playboy.com<br> writing-focused website proposal</h5>
     </div>
     
     </div>
-    <div class="column column-3 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox enterprise">
+    <div class="column column-3 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox" id="enterprise">
     
     <div class="boxLabel">
     <h5 class="teal">Enterprise Rent-A-Car<br> Car Drop app proposal</h5>
     </div>
     
     </div>
-    <div class="column column-3 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox chirpr">
+    <div class="column column-3 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox" id="chirpr">
     
     <div class="boxLabel">
     <h5 class="teal">Chirpr<br> parody card game</h5>
     </div>
     
     </div>
-    <div class="column column-3 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox ella">
+    <div class="column column-3 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox" id="newitem">
     
     <div class="boxLabel">
     <h5 class="teal">Chirpr<br> parody card game</h5>
