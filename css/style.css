@@ -202,7 +202,19 @@ video#bgvid {
 .title {
 	position: absolute;
 	left: 0;
-	bottom: 14vh;
+	bottom: 20vh;
+}
+
+/* down arrow to indicate scrolling on a full screen */
+.arrowDown {
+	position: absolute;
+	bottom: 5vh;
+	left: 50%;
+	-ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+	width: 3em;
 }
 
 /* margins which resize icons inside their grid containers */
