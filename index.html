@@ -18,6 +18,27 @@
 <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
 </head>
 
+<!-- loads jQuery from Google -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- smooth scroll between anchor links -->
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
 <body class="tealBG">
 
 <!-- BEGIN video stuff *deserves scrutiny and compat with mobile* -->
@@ -204,7 +225,7 @@
 
 <!-- gallery of projects section -->
 <div class="paddingTop1point5em paddingBottom2em tealBG" id="gallery">
-  <h3 class="white shadowHeight1 bold bottomMargin1em textCenter">MY WORK</h3>
+  <h3 class="white shadowHeight1 bold bottomMargin1em textCenter" id="myWork">MY WORK</h3>
   <div class="row">
   
     <div class="column column-4 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox" id="ella">
@@ -215,21 +236,99 @@
     </div>
     
     </div>
-    <div class="column column-4 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox" id="kojiro">
+    <div class="column column-4 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox" id="kojiro" width="100%">
     
-    <a href="#gallery" onclick="document.getElementById('ella').style.width = '6.86666666667%';
-     document.getElementById('ella').style.height = '80vh'; 
-     document.getElementById('kojiro').style.width = '83.0666666667%'; 
-     document.getElementById('kojiro').style.height = '80vh'; 
-     document.getElementById('trello').style.width = '6.86666666667%'; 
-     document.getElementById('trello').style.height = '80vh';
-     document.getElementById('playboy').style.height = '5vh';
-     document.getElementById('enterprise').style.height = '5vh';
-     document.getElementById('chirpr').style.height = '5vh';
-     document.getElementById('newitem').style.height = '5vh';">
+    <a href="#gallery" onclick="
+    
+    
+    document.getElementById('gallery').style.height = '100vh';
+    document.getElementById('myWork').style.opacity = '0';
+    document.getElementById('myWork').style.transform = 'scale(0)';
+    document.getElementById('myWork').style.height = '0';
+    
+    document.getElementById('ella').style.height = '80vh';
+    document.getElementById('ella').style.width = '10%';
+    document.getElementById('ella').style.opacity = '0';
+    document.getElementById('ella').style.leftMargin = '0';
+    document.getElementById('ella').style.rightMargin = '0';
+    document.getElementById('trello').style.height = '80vh';
+    document.getElementById('trello').style.width = '10%';
+    document.getElementById('trello').style.opacity = '0';
+    document.getElementById('trello').style.leftMargin = '0';
+    document.getElementById('trello').style.rightMargin = '0';
+    
+    document.getElementById('playboy').style.height = '0';
+    document.getElementById('playboy').style.opacity = '0';
+    document.getElementById('playboy').style.leftMargin = '0';
+    document.getElementById('playboy').style.rightMargin = '0';
+    document.getElementById('enterprise').style.height = '0';
+    document.getElementById('enterprise').style.opacity = '0';
+    document.getElementById('enterprise').style.leftMargin = '0';
+    document.getElementById('enterprise').style.rightMargin = '0';
+    document.getElementById('chirpr').style.height = '0';
+    document.getElementById('chirpr').style.opacity = '0';
+    document.getElementById('chirpr').style.leftMargin = '0';
+    document.getElementById('chirpr').style.rightMargin = '0';
+    document.getElementById('newitem').style.height = '0';
+    document.getElementById('newitem').style.opacity = '0';
+    document.getElementById('newitem').style.leftMargin = '0';
+    document.getElementById('newitem').style.rightMargin = '0';
+    
+    
+    document.getElementById('kojiro').style.height = '85vh';
+    document.getElementById('kojiro').style.width = '76%';
+    document.getElementById('kojiro').style.leftMargin = '0';
+    document.getElementById('kojiro').style.rightMargin = '0';
+    
+    ">
     <div class="boxLabel">
     <h5 class="teal">Kojirō Izakaya<br> interactive restaurant menu</h5>
     </div>
+    </a>
+    
+    <a href="javascript:void(0)" onclick="
+    
+    
+    document.getElementById('gallery').style.height = 'auto';
+    document.getElementById('myWork').style.opacity = '1';
+    document.getElementById('myWork').style.transform = 'scale(1)';
+    document.getElementById('myWork').style.height = 'auto';
+    
+    document.getElementById('ella').style.height = '30vh';
+    document.getElementById('ella').style.width = '32.2666666667%';
+    document.getElementById('ella').style.opacity = '1';
+    document.getElementById('ella').style.leftMargin = '1.6%';
+    document.getElementById('ella').style.rightMargin = 'auto';
+    document.getElementById('trello').style.height = '30vh';
+    document.getElementById('trello').style.width = '32.2666666667%';
+    document.getElementById('trello').style.opacity = '1';
+    document.getElementById('trello').style.leftMargin = '1.6%';
+    document.getElementById('trello').style.rightMargin = 'auto';
+    
+    document.getElementById('playboy').style.height = '30vh';
+    document.getElementById('playboy').style.opacity = '1';
+    document.getElementById('playboy').style.leftMargin = '1.6%';
+    document.getElementById('playboy').style.rightMargin = 'auto';
+    document.getElementById('enterprise').style.height = '30vh';
+    document.getElementById('enterprise').style.opacity = '1';
+    document.getElementById('enterprise').style.leftMargin = '1.6%';
+    document.getElementById('enterprise').style.rightMargin = 'auto';
+    document.getElementById('chirpr').style.height = '30vh';
+    document.getElementById('chirpr').style.opacity = '1';
+    document.getElementById('chirpr').style.leftMargin = '1.6%';
+    document.getElementById('chirpr').style.rightMargin = 'auto';
+    document.getElementById('newitem').style.height = '30vh';
+    document.getElementById('newitem').style.opacity = '1';
+    document.getElementById('newitem').style.leftMargin = '1.6%';
+    document.getElementById('newitem').style.rightMargin = 'auto';
+    
+    
+    document.getElementById('kojiro').style.height = '30vh';
+    document.getElementById('kojiro').style.width = '32.2666666667%';
+    document.getElementById('kojiro').style.leftMargin = '1.6%';
+    document.getElementById('kojiro').style.rightMargin = 'auto';
+    
+    ">YYY
     </a>
     
     </div>
