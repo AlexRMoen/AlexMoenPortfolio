@@ -31,7 +31,7 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        }, 1000);
+        }, 800);
         return false;
       }
     }
@@ -226,59 +226,116 @@ $(function() {
 <!-- gallery of projects section -->
 <div class="paddingTop1point5em paddingBottom2em tealBG" id="gallery">
   <h3 class="white shadowHeight1 bold bottomMargin1em textCenter" id="myWork">MY WORK</h3>
-  <div class="row">
-  
+  <div class="row" id="galleryRow">
+  <div id="spacerLeft">
+  </div>
     <div class="column column-4 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox" id="ella">
     
+    <a href="#galleryRow" onclick="
+    
+    
+    // makes the background fill the screen
+    document.getElementById('gallery').style.height = '110vh';
+    document.getElementById('myWork').style.opacity = '0';
+    document.getElementById('myWork').style.transform = 'scale(0)';
+    document.getElementById('galleryRow').style.paddingTop = '7.5vh';
+    
+    // adjust spacers to properly center modal
+    document.getElementById('spacerLeft').style.width = '15.3333333333%';
+    
+    // rescales and fades other line 1 items
+    document.getElementById('kojiro').style.height = '80vh';
+    document.getElementById('kojiro').style.width = '6.86666666667%';
+    document.getElementById('kojiro').style.opacity = '0';
+    document.getElementById('trello').style.height = '80vh';
+    document.getElementById('trello').style.width = '6.86666666667%';
+    document.getElementById('trello').style.opacity = '0';
+    
+    // rescales and fades line 2 items
+    document.getElementById('playboy').style.height = '0';
+    document.getElementById('playboy').style.opacity = '0';
+    document.getElementById('enterprise').style.height = '0';
+    document.getElementById('enterprise').style.opacity = '0';
+    document.getElementById('chirpr').style.height = '0';
+    document.getElementById('chirpr').style.opacity = '0';
+    document.getElementById('newitem').style.height = '0';
+    document.getElementById('newitem').style.opacity = '0';
+    
+    // scales a gallery item into a modal
+    document.getElementById('ella').style.height = '85vh';
+    document.getElementById('ella').style.width = '83.0666666667%';
+    document.getElementById('ella').style.overflow = 'scroll';
+    
+    ">
     <div class="boxLabel">
     <h5 class="teal">24 hour design challenge<br>
     ella volunteering app</h5>
     </div>
     
-    </div>
-    <div class="column column-4 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox" id="kojiro" width="100%">
-    
     <a href="#gallery" onclick="
     
     
-    document.getElementById('gallery').style.height = '100vh';
+    document.getElementById('gallery').style.height = 'auto';
+    document.getElementById('myWork').style.opacity = '1';
+    document.getElementById('myWork').style.transform = 'scale(1)';
+    document.getElementById('galleryRow').style.paddingTop = '0';
+    
+    document.getElementById('kojiro').style.height = '30vh';
+    document.getElementById('kojiro').style.width = '32.2666666667%';
+    document.getElementById('kojiro').style.opacity = '1';
+    document.getElementById('trello').style.height = '30vh';
+    document.getElementById('trello').style.width = '32.2666666667%';
+    document.getElementById('trello').style.opacity = '1';
+    
+    document.getElementById('playboy').style.height = '30vh';
+    document.getElementById('playboy').style.opacity = '1';
+    document.getElementById('enterprise').style.height = '30vh';
+    document.getElementById('enterprise').style.opacity = '1';
+    document.getElementById('chirpr').style.height = '30vh';
+    document.getElementById('chirpr').style.opacity = '1';
+    document.getElementById('newitem').style.height = '30vh';
+    document.getElementById('newitem').style.opacity = '1';
+    
+    
+    document.getElementById('ella').style.height = '30vh';
+    document.getElementById('ella').style.width = '32.2666666667%';
+    
+    ">YYY
+    </a>
+    
+    </div>
+    <div class="column column-4 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox" id="kojiro" width="100%">
+    
+    <a href="#galleryRow" onclick="
+    
+    // makes the background fill the screen
+    document.getElementById('gallery').style.height = '110vh';
     document.getElementById('myWork').style.opacity = '0';
     document.getElementById('myWork').style.transform = 'scale(0)';
-    document.getElementById('myWork').style.height = '0';
+    document.getElementById('galleryRow').style.paddingTop = '7.5vh';
     
+    // rescales and fades other line 1 items
     document.getElementById('ella').style.height = '80vh';
-    document.getElementById('ella').style.width = '10%';
+    document.getElementById('ella').style.width = '6.86666666667%';
     document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.leftMargin = '0';
-    document.getElementById('ella').style.rightMargin = '0';
     document.getElementById('trello').style.height = '80vh';
-    document.getElementById('trello').style.width = '10%';
+    document.getElementById('trello').style.width = '6.86666666667%';
     document.getElementById('trello').style.opacity = '0';
-    document.getElementById('trello').style.leftMargin = '0';
-    document.getElementById('trello').style.rightMargin = '0';
     
+    // rescales and fades line 2 items
     document.getElementById('playboy').style.height = '0';
     document.getElementById('playboy').style.opacity = '0';
-    document.getElementById('playboy').style.leftMargin = '0';
-    document.getElementById('playboy').style.rightMargin = '0';
     document.getElementById('enterprise').style.height = '0';
     document.getElementById('enterprise').style.opacity = '0';
-    document.getElementById('enterprise').style.leftMargin = '0';
-    document.getElementById('enterprise').style.rightMargin = '0';
     document.getElementById('chirpr').style.height = '0';
     document.getElementById('chirpr').style.opacity = '0';
-    document.getElementById('chirpr').style.leftMargin = '0';
-    document.getElementById('chirpr').style.rightMargin = '0';
     document.getElementById('newitem').style.height = '0';
     document.getElementById('newitem').style.opacity = '0';
-    document.getElementById('newitem').style.leftMargin = '0';
-    document.getElementById('newitem').style.rightMargin = '0';
     
-    
+    // scales a gallery item into a modal
     document.getElementById('kojiro').style.height = '85vh';
-    document.getElementById('kojiro').style.width = '76%';
-    document.getElementById('kojiro').style.leftMargin = '0';
-    document.getElementById('kojiro').style.rightMargin = '0';
+    document.getElementById('kojiro').style.width = '83.0666666667%';
+    document.getElementById('kojiro').style.overflow = 'scroll';
     
     ">
     <div class="boxLabel">
@@ -286,50 +343,53 @@ $(function() {
     </div>
     </a>
     
-    <a href="javascript:void(0)" onclick="
+    <a href="#gallery" onclick="
     
     
     document.getElementById('gallery').style.height = 'auto';
     document.getElementById('myWork').style.opacity = '1';
     document.getElementById('myWork').style.transform = 'scale(1)';
-    document.getElementById('myWork').style.height = 'auto';
+    document.getElementById('galleryRow').style.paddingTop = '0';
     
     document.getElementById('ella').style.height = '30vh';
     document.getElementById('ella').style.width = '32.2666666667%';
     document.getElementById('ella').style.opacity = '1';
-    document.getElementById('ella').style.leftMargin = '1.6%';
-    document.getElementById('ella').style.rightMargin = 'auto';
     document.getElementById('trello').style.height = '30vh';
     document.getElementById('trello').style.width = '32.2666666667%';
     document.getElementById('trello').style.opacity = '1';
-    document.getElementById('trello').style.leftMargin = '1.6%';
-    document.getElementById('trello').style.rightMargin = 'auto';
     
     document.getElementById('playboy').style.height = '30vh';
     document.getElementById('playboy').style.opacity = '1';
-    document.getElementById('playboy').style.leftMargin = '1.6%';
-    document.getElementById('playboy').style.rightMargin = 'auto';
     document.getElementById('enterprise').style.height = '30vh';
     document.getElementById('enterprise').style.opacity = '1';
-    document.getElementById('enterprise').style.leftMargin = '1.6%';
-    document.getElementById('enterprise').style.rightMargin = 'auto';
     document.getElementById('chirpr').style.height = '30vh';
     document.getElementById('chirpr').style.opacity = '1';
-    document.getElementById('chirpr').style.leftMargin = '1.6%';
-    document.getElementById('chirpr').style.rightMargin = 'auto';
     document.getElementById('newitem').style.height = '30vh';
     document.getElementById('newitem').style.opacity = '1';
-    document.getElementById('newitem').style.leftMargin = '1.6%';
-    document.getElementById('newitem').style.rightMargin = 'auto';
     
     
     document.getElementById('kojiro').style.height = '30vh';
     document.getElementById('kojiro').style.width = '32.2666666667%';
-    document.getElementById('kojiro').style.leftMargin = '1.6%';
-    document.getElementById('kojiro').style.rightMargin = 'auto';
-    
     ">YYY
     </a>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
     
     </div>
     <div class="column column-4 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox" id="trello">

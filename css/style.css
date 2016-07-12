@@ -229,6 +229,11 @@ video#bgvid {
 	transition: all 1s ease-out;
 }
 
+#galleryRow {
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
+}
+
 #myWork {
 	-webkit-transition: all 1s ease-out;
 	transition: all 1s ease-out;
@@ -260,6 +265,14 @@ video#bgvid {
 
 #newitem {
 	background-image: url(../img/gallery/chirpr/thumbnail.png);
+}
+
+/* spacers to properly center modals */
+
+#spacerLeft {
+	width: 0;
+	    position: relative;
+    float: left;
 }
 
 /* creates see-through porthole effect */
