@@ -267,14 +267,6 @@ video#bgvid {
 	background-image: url(../img/gallery/chirpr/thumbnail.png);
 }
 
-/* spacers to properly center modals */
-
-#spacerLeft {
-	width: 0;
-	    position: relative;
-    float: left;
-}
-
 /* creates see-through porthole effect */
 .porthole {
 	position: relative;
