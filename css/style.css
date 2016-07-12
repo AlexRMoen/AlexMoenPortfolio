@@ -239,6 +239,28 @@ video#bgvid {
 	transition: all 1s ease-out;
 }
 
+.leftArrow {
+	position: fixed;
+	width: 2em;
+	left: -2.5em;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	opacity: 0;
+}
+
+.rightArrow {
+	position: fixed;
+	width: 2em;
+	right: -2.5em;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	opacity: 0;
+}
+
 #ella {
 	background-image: url(../img/gallery/ella/thumbnail.png);
 }

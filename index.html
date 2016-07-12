@@ -31,7 +31,7 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        }, 800);
+        }, 825);
         return false;
       }
     }
@@ -63,7 +63,7 @@ $(function() {
   
   <!-- name and job position -->
   <div class="leftRightMargin10em title">
-    <h1 class="white shadowHeight1"> ALEX MOEN </h1>
+    <h1 class="white shadowHeight1">ALEX MOEN</h1>
     <h2 class="white shadowHeight1">UX Design <span class="grey">+</span> Art Direction</h2>
   </div>
   
@@ -228,7 +228,7 @@ $(function() {
   <h3 class="white shadowHeight1 bold bottomMargin1em textCenter" id="myWork">MY WORK</h3>
   <div class="row" id="galleryRow">
     <div class="column column-4 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox" id="ella">
-    
+
     <a href="#galleryRow" onclick="
     
     
@@ -257,6 +257,12 @@ $(function() {
     document.getElementById('chirpr').style.opacity = '0';
     document.getElementById('newitem').style.height = '0';
     document.getElementById('newitem').style.opacity = '0';
+    
+    // displays left and right arrows
+    document.getElementById('ellaLeftArrow').style.left = '2.5em';
+    document.getElementById('ellaLeftArrow').style.opacity = '1';
+    document.getElementById('ellaRightArrow').style.right = '2.5em';
+    document.getElementById('ellaRightArrow').style.opacity = '1';
     
     // scales a gallery item into a modal
     document.getElementById('ella').style.height = '85vh';
@@ -297,6 +303,10 @@ $(function() {
     document.getElementById('newitem').style.height = '30vh';
     document.getElementById('newitem').style.opacity = '1';
     
+    document.getElementById('ellaLeftArrow').style.left = '-2.5em';
+    document.getElementById('ellaLeftArrow').style.opacity = '0';
+    document.getElementById('ellaRightArrow').style.right = '-2.5em';
+    document.getElementById('ellaRightArrow').style.opacity = '0';
     
     document.getElementById('ella').style.height = '30vh';
     document.getElementById('ella').style.width = '32.2666666667%';
@@ -305,25 +315,6 @@ $(function() {
     
     ">YYY
     </a>
-    
-    
-    <a href="#javascript:void(0)" onclick="
- 
-    // closes itself
-    document.getElementById('ella').style.width = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginLeft = '0';
-    document.getElementById('ella').style.marginRight = '0';
-    
-    // moves other modal into place
-    document.getElementById('kojiro').style.height = '85vh';
-    document.getElementById('kojiro').style.width = '80%';
-    document.getElementById('kojiro').style.marginLeft = '10%';
-    document.getElementById('kojiro').style.marginRight = '10%';
-    document.getElementById('kojiro').style.overflow = 'scroll';
-    document.getElementById('kojiro').style.opacity = '1';
-    
-    ">ZZZ</a>
     
     </div>
     <div class="column column-4 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox" id="kojiro" width="100%">
@@ -460,6 +451,71 @@ $(function() {
     
     </div>
   </div>
+  
+  <!-- left arrow for browsing ella -->
+<a href="#javascript:void(0)" onclick="
+ 
+    // closes itself
+    document.getElementById('ella').style.width = '0';
+    document.getElementById('ella').style.opacity = '0';
+    document.getElementById('ella').style.marginLeft = '0';
+    document.getElementById('ella').style.marginRight = '0';
+    
+    // switches out arrow for the proper item
+    document.getElementById('ellaLeftArrow').style.left = '-2.5em';
+    document.getElementById('ellaLeftArrow').style.opacity = '0';
+    document.getElementById('ellaRightArrow').style.right = '-2.5em';
+    document.getElementById('ellaRightArrow').style.opacity = '0';
+    
+    // moves other modal into place
+    document.getElementById('kojiro').style.height = '85vh';
+    document.getElementById('kojiro').style.width = '80%';
+    document.getElementById('kojiro').style.marginLeft = '10%';
+    document.getElementById('kojiro').style.marginRight = '10%';
+    document.getElementById('kojiro').style.overflow = 'scroll';
+    document.getElementById('kojiro').style.opacity = '1';
+    
+    ">
+    
+    <div class="leftArrow shadowHeight1" id="ellaLeftArrow">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" height="100%"><style type="text/css">  
+	.arrowLeft{fill:#FFFFFF;}
+</style><polygon class="arrowLeft" points="21 42 22.4 40.6 2.8 21 22.4 1.4 21 0 0 21 "/></svg>
+</div>
+</a>
+    
+<!-- right arrow for browsing ella -->
+<a href="#javascript:void(0)" onclick="
+ 
+    // closes itself
+    document.getElementById('ella').style.width = '0';
+    document.getElementById('ella').style.opacity = '0';
+    document.getElementById('ella').style.marginLeft = '0';
+    document.getElementById('ella').style.marginRight = '0';
+    
+    // switches out arrow for the proper item
+    document.getElementById('ellaLeftArrow').style.left = '-2.5em';
+    document.getElementById('ellaLeftArrow').style.opacity = '0';
+    document.getElementById('ellaRightArrow').style.right = '-2.5em';
+    document.getElementById('ellaRightArrow').style.opacity = '0';
+    
+    // moves other modal into place
+    document.getElementById('kojiro').style.height = '85vh';
+    document.getElementById('kojiro').style.width = '80%';
+    document.getElementById('kojiro').style.marginLeft = '10%';
+    document.getElementById('kojiro').style.marginRight = '10%';
+    document.getElementById('kojiro').style.overflow = 'scroll';
+    document.getElementById('kojiro').style.opacity = '1';
+    
+    ">
+    
+<div class="rightArrow shadowHeight1" id="ellaRightArrow">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" width="100%"><style type="text/css">  
+	.arrowRight{fill:#FFFFFF;}
+</style><polygon class="arrowRight" points="1.4 42 0 40.6 19.6 21 0 1.4 1.4 0 22.4 21 "/></svg>
+</div>
+</a>
+
 </div>
 
 <!-- contact me section -->
