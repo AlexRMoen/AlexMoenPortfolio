@@ -90,14 +90,19 @@ video#bgvid {
 	margin-bottom: 2em;
 }
 
-/* should be set to the same margin width as the grid gutter, in vw units */
-.bottomMarginGutterWidth {
-	margin-bottom: 1.6vw;
-}
-
 .leftRightMargin10em {
 	margin-left: 10em;
 	margin-right: 10em;
+}
+
+.leftRightMargin5em {
+	margin-left: 5em;
+	margin-right: 5em;
+}
+
+/* should be set to the same margin width as the grid gutter, in vw units */
+.bottomMarginGutterWidth {
+	margin-bottom: 1.6vw;
 }
 
 /* div sizes */
@@ -232,6 +237,7 @@ video#bgvid {
 #galleryRow {
 	-webkit-transition: all 1s ease-out;
 	transition: all 1s ease-out;
+	position: relative;
 }
 
 #myWork {
@@ -242,7 +248,7 @@ video#bgvid {
 /* the header and main window of the modal */
 .modalHeader {
 	height: 100%;
-	width: 100%;
+	max-width: 100%;
 	-webkit-transition: all 0.75s ease-out;
 	transition: all 0.75s ease-out;
 	position: relative;
@@ -250,17 +256,20 @@ video#bgvid {
 
 .modalMain {
 	height: 0%;
-	width: 100%;
-	-webkit-transition: all 0.75s ease-out;
-	transition: all 0.75s ease-out;
+	max-width: 100%;
+	-webkit-transition: height 0.75s ease-out, width 0.75s ease-out;
+	transition: height 0.75s ease-out, width 0.75s ease-out;
 	overflow: scroll;
+	opacity: 0;
+	-webkit-transition: opacity 3s ease-out;
+	transition: opacity 3s ease-out;
 }
 
 #ellaHeader {
 	background-image: url(../img/gallery/ella/thumbnail.png);
 }
 
-#closeX {
+#ellaCloseX {
 	position: absolute;
 	top: 1.5em;
 	right: 1.5em;
@@ -271,24 +280,24 @@ video#bgvid {
 }
 
 .leftArrow {
-	position: fixed;
+	position: absolute;
 	width: 2em;
 	left: -2.5em;
 	top: 50%;
 	transform: translateY(-50%);
-	-webkit-transition: all 0.75s ease-out;
-	transition: all 0.75s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
 	opacity: 0;
 }
 
 .rightArrow {
-	position: fixed;
+	position: absolute;
 	width: 2em;
 	right: -2.5em;
 	top: 50%;
 	transform: translateY(-50%);
-	-webkit-transition: all 0.75s ease-out;
-	transition: all 0.75s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
 	opacity: 0;
 }
 
