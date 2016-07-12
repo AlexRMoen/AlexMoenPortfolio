@@ -110,7 +110,7 @@ video#bgvid {
 /* 30% of a full viewport height */
 .height30 {
 	width: 100%;
-	min-height: 30vh;
+	height: 30vh;
 }
 
 /* img behaviors */
@@ -166,14 +166,14 @@ video#bgvid {
 /* div behaviors */
 /* gallery box transition rules */
 .box {
-	-webkit-transition: all 0.25s ease-out;
-	transition: all 0.25s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	overflow: hidden;
 }
 
 /* gallery box hover behavior */
 .box:hover {
 	z-index: 999;
-	transform: scale(1.1, 1.1);
 	-webkit-filter: drop-shadow(0 0.4em 0.4em rgba(0,0,0,0.2));
 	filter: drop-shadow(0 0.4em 0.4em rgba(0,0,0,0.2));
 }
@@ -224,28 +224,55 @@ video#bgvid {
 }
 
 /* gallery items */
-.ella {
+#gallery {
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
+}
+
+#galleryRow {
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
+}
+
+#myWork {
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
+}
+
+#ella {
 	background-image: url(../img/gallery/ella/thumbnail.png);
 }
 
-.kojiro {
+#kojiro {
 	background-image: url(../img/gallery/kojiro/thumbnail.png);
 }
 
-.trello {
+#trello {
 	background-image: url(../img/gallery/trello/thumbnail.png);
 }
 
-.playboy {
+#playboy {
 	background-image: url(../img/gallery/playboy/thumbnail.png);
 }
 
-.enterprise {
+#enterprise {
 	background-image: url(../img/gallery/enterprise/thumbnail.png);
 }
 
-.chirpr {
+#chirpr {
 	background-image: url(../img/gallery/chirpr/thumbnail.png);
+}
+
+#newitem {
+	background-image: url(../img/gallery/chirpr/thumbnail.png);
+}
+
+/* spacers to properly center modals */
+
+#spacerLeft {
+	width: 0;
+	    position: relative;
+    float: left;
 }
 
 /* creates see-through porthole effect */
