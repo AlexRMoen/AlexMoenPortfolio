@@ -227,8 +227,6 @@ $(function() {
 <div class="paddingTop1point5em paddingBottom2em tealBG" id="gallery">
   <h3 class="white shadowHeight1 bold bottomMargin1em textCenter" id="myWork">MY WORK</h3>
   <div class="row" id="galleryRow">
-  <div id="spacerLeft">
-  </div>
     <div class="column column-4 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox" id="ella">
     
     <a href="#galleryRow" onclick="
@@ -240,16 +238,15 @@ $(function() {
     document.getElementById('myWork').style.transform = 'scale(0)';
     document.getElementById('galleryRow').style.paddingTop = '7.5vh';
     
-    // adjust spacers to properly center modal
-    document.getElementById('spacerLeft').style.width = '15.3333333333%';
-    
     // rescales and fades other line 1 items
     document.getElementById('kojiro').style.height = '80vh';
-    document.getElementById('kojiro').style.width = '6.86666666667%';
+    document.getElementById('kojiro').style.width = '0';
     document.getElementById('kojiro').style.opacity = '0';
+    document.getElementById('kojiro').style.marginLeft = '0';
     document.getElementById('trello').style.height = '80vh';
-    document.getElementById('trello').style.width = '6.86666666667%';
+    document.getElementById('trello').style.width = '0';
     document.getElementById('trello').style.opacity = '0';
+    document.getElementById('trello').style.marginLeft = '0';
     
     // rescales and fades line 2 items
     document.getElementById('playboy').style.height = '0';
@@ -263,7 +260,9 @@ $(function() {
     
     // scales a gallery item into a modal
     document.getElementById('ella').style.height = '85vh';
-    document.getElementById('ella').style.width = '83.0666666667%';
+    document.getElementById('ella').style.width = '80%';
+    document.getElementById('ella').style.marginLeft = '10%';
+    document.getElementById('ella').style.marginRight = '10%';
     document.getElementById('ella').style.overflow = 'scroll';
     
     ">
@@ -274,7 +273,7 @@ $(function() {
     
     <a href="#gallery" onclick="
     
-    
+    // resets all gallery elements back to their proper grid format
     document.getElementById('gallery').style.height = 'auto';
     document.getElementById('myWork').style.opacity = '1';
     document.getElementById('myWork').style.transform = 'scale(1)';
@@ -283,9 +282,11 @@ $(function() {
     document.getElementById('kojiro').style.height = '30vh';
     document.getElementById('kojiro').style.width = '32.2666666667%';
     document.getElementById('kojiro').style.opacity = '1';
+    document.getElementById('kojiro').style.marginLeft = '1.6%';
     document.getElementById('trello').style.height = '30vh';
     document.getElementById('trello').style.width = '32.2666666667%';
     document.getElementById('trello').style.opacity = '1';
+    document.getElementById('trello').style.marginLeft = '1.6%';
     
     document.getElementById('playboy').style.height = '30vh';
     document.getElementById('playboy').style.opacity = '1';
@@ -299,6 +300,8 @@ $(function() {
     
     document.getElementById('ella').style.height = '30vh';
     document.getElementById('ella').style.width = '32.2666666667%';
+    document.getElementById('ella').style.marginLeft = '0';
+    document.getElementById('ella').style.marginRight = '0';
     
     ">YYY
     </a>
@@ -316,11 +319,13 @@ $(function() {
     
     // rescales and fades other line 1 items
     document.getElementById('ella').style.height = '80vh';
-    document.getElementById('ella').style.width = '6.86666666667%';
+    document.getElementById('ella').style.width = '0';
     document.getElementById('ella').style.opacity = '0';
+    document.getElementById('ella').style.marginLeft = '0';
     document.getElementById('trello').style.height = '80vh';
-    document.getElementById('trello').style.width = '6.86666666667%';
+    document.getElementById('trello').style.width = '0';
     document.getElementById('trello').style.opacity = '0';
+    document.getElementById('trello').style.marginLeft = '0';
     
     // rescales and fades line 2 items
     document.getElementById('playboy').style.height = '0';
@@ -334,7 +339,9 @@ $(function() {
     
     // scales a gallery item into a modal
     document.getElementById('kojiro').style.height = '85vh';
-    document.getElementById('kojiro').style.width = '83.0666666667%';
+    document.getElementById('kojiro').style.width = '80%';
+    document.getElementById('kojiro').style.marginLeft = '10%';
+    document.getElementById('kojiro').style.marginRight = '10%';
     document.getElementById('kojiro').style.overflow = 'scroll';
     
     ">
@@ -345,7 +352,7 @@ $(function() {
     
     <a href="#gallery" onclick="
     
-    
+    // resets all gallery elements back to their proper grid format
     document.getElementById('gallery').style.height = 'auto';
     document.getElementById('myWork').style.opacity = '1';
     document.getElementById('myWork').style.transform = 'scale(1)';
@@ -354,9 +361,11 @@ $(function() {
     document.getElementById('ella').style.height = '30vh';
     document.getElementById('ella').style.width = '32.2666666667%';
     document.getElementById('ella').style.opacity = '1';
+    document.getElementById('ella').style.marginLeft = '0';
     document.getElementById('trello').style.height = '30vh';
     document.getElementById('trello').style.width = '32.2666666667%';
     document.getElementById('trello').style.opacity = '1';
+    document.getElementById('trello').style.marginLeft = '1.6%';
     
     document.getElementById('playboy').style.height = '30vh';
     document.getElementById('playboy').style.opacity = '1';
@@ -370,6 +379,8 @@ $(function() {
     
     document.getElementById('kojiro').style.height = '30vh';
     document.getElementById('kojiro').style.width = '32.2666666667%';
+    document.getElementById('kojiro').style.marginLeft = '1.6%';
+    document.getElementById('kojiro').style.marginRight = '0';
     ">YYY
     </a>
     
