@@ -265,11 +265,7 @@ video#bgvid {
 	transition: opacity 3s ease-out;
 }
 
-#ellaHeader {
-	background-image: url(../img/gallery/ella/thumbnail.png);
-}
-
-#ellaCloseX {
+.closeX {
 	position: absolute;
 	top: 1.5em;
 	right: 1.5em;
@@ -301,7 +297,12 @@ video#bgvid {
 	opacity: 0;
 }
 
-#kojiro {
+/* covers for gallery boxes / headers for modals */
+#ellaHeader {
+	background-image: url(../img/gallery/ella/thumbnail.png);
+}
+
+#kojiroHeader {
 	background-image: url(../img/gallery/kojiro/thumbnail.png);
 }
 
