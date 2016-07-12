@@ -227,9 +227,12 @@ $(function() {
 <div class="paddingTop1point5em paddingBottom2em tealBG" id="gallery">
   <h3 class="white shadowHeight1 bold bottomMargin1em textCenter" id="myWork">MY WORK</h3>
   <div class="row" id="galleryRow">
-    <div class="column column-4 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox" id="ella">
+    <div class="column column-4 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box" id="ella">
+    
+<!-- label for the gallery item becomes modal header -->
+<div class="modalHeader imgFitBox" id="ellaHeader">
 
-    <a href="#galleryRow" onclick="
+<a href="#galleryRow" onclick="
     
     
     // makes the background fill the screen
@@ -269,13 +272,21 @@ $(function() {
     document.getElementById('ella').style.width = '80%';
     document.getElementById('ella').style.marginLeft = '10%';
     document.getElementById('ella').style.marginRight = '10%';
-    document.getElementById('ella').style.overflow = 'scroll';
+    document.getElementById('ellaHeader').style.height = '30%';
+    document.getElementById('ellaMain').style.height = '70%';
     
     ">
     <div class="boxLabel">
     <h5 class="teal">24 hour design challenge<br>
     ella volunteering app</h5>
-    </div>
+    </div></a>
+    
+</div>
+
+<!-- main section of modal is hidden until expanded -->
+<div class="modalMain greyBG" id="ellaMain">
+
+    
     
     <a href="#gallery" onclick="
     
@@ -312,9 +323,13 @@ $(function() {
     document.getElementById('ella').style.width = '32.2666666667%';
     document.getElementById('ella').style.marginLeft = '0';
     document.getElementById('ella').style.marginRight = '0';
+    document.getElementById('ellaHeader').style.height = '100%';
+    document.getElementById('ellaMain').style.height = '0';
     
     ">YYY
     </a>
+    
+    </div>
     
     </div>
     <div class="column column-4 whiteBG shadowHeight1 height30 bottomMarginGutterWidth box imgFitBox" id="kojiro" width="100%">
@@ -460,6 +475,8 @@ $(function() {
     document.getElementById('ella').style.opacity = '0';
     document.getElementById('ella').style.marginLeft = '0';
     document.getElementById('ella').style.marginRight = '0';
+    document.getElementById('ellaHeader').style.height = '100%';
+    document.getElementById('ellaMain').style.height = '0';
     
     // switches out arrow for the proper item
     document.getElementById('ellaLeftArrow').style.left = '-2.5em';
@@ -492,6 +509,8 @@ $(function() {
     document.getElementById('ella').style.opacity = '0';
     document.getElementById('ella').style.marginLeft = '0';
     document.getElementById('ella').style.marginRight = '0';
+    document.getElementById('ellaHeader').style.height = '100%';
+    document.getElementById('ellaMain').style.height = '0';
     
     // switches out arrow for the proper item
     document.getElementById('ellaLeftArrow').style.left = '-2.5em';

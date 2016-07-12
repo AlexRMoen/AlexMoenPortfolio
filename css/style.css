@@ -239,14 +239,35 @@ video#bgvid {
 	transition: all 1s ease-out;
 }
 
+/* the header and main window of the modal */
+.modalHeader {
+	height: 100%;
+	width: 100%;
+	-webkit-transition: all 0.75s ease-out;
+	transition: all 0.75s ease-out;
+	position: relative;
+}
+
+.modalMain {
+	height: 0%;
+	width: 100%;
+	-webkit-transition: all 0.75s ease-out;
+	transition: all 0.75s ease-out;
+	overflow: scroll;
+}
+
+#ellaHeader {
+	background-image: url(../img/gallery/ella/thumbnail.png);
+}
+
 .leftArrow {
 	position: fixed;
 	width: 2em;
 	left: -2.5em;
 	top: 50%;
 	transform: translateY(-50%);
-	-webkit-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
 	opacity: 0;
 }
 
@@ -256,13 +277,9 @@ video#bgvid {
 	right: -2.5em;
 	top: 50%;
 	transform: translateY(-50%);
-	-webkit-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
 	opacity: 0;
-}
-
-#ella {
-	background-image: url(../img/gallery/ella/thumbnail.png);
 }
 
 #kojiro {
