@@ -4,7 +4,6 @@
 * {
 	margin: 0;
 	padding: 0;
-	z-index: 500;
 }
 
 /* video stuff *deserves scrutiny and compat with mobile* */
@@ -74,23 +73,28 @@ video#bgvid {
 	padding-left: 2em;
 }
 
+.paddingLeftRight5em {
+	margin-left: 5em;
+	margin-right: 5em;
+}
+
 /* margins */
 .marginAuto {
 	margin: auto;
 }
-.bottomMarginPoint75em {
+.marginBottomPoint75em {
 	margin-bottom: 0.75em;
 }
 
-.bottomMargin1em {
+.marginBottom1em {
 	margin-bottom: 1em;
 }
 
-.bottomMargin1point5em {
+.marginBottom1point5em {
 	margin-bottom: 1.5em;
 }
 
-.bottomMargin2em {
+.marginBottom2em {
 	margin-bottom: 2em;
 }
 
@@ -105,7 +109,7 @@ video#bgvid {
 }
 
 /* should be set to the same margin width as the grid gutter, in vw units */
-.bottomMarginGutterWidth {
+.marginBottomGutterWidth {
 	margin-bottom: 1.6vw;
 }
 
@@ -126,6 +130,12 @@ video#bgvid {
 /* makes img circular */
 .imgCircle {
     border-radius: 50%;
+}
+
+/* makes img greyscale */
+.greyscale {
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
 }
 
 /* makes img full width */
@@ -196,15 +206,21 @@ video#bgvid {
 /* makes a background image for a box */
 .imgFitBox {
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 }
 
 /* labels the box */
 .boxLabel {
 	position: absolute;
-	right: 2em;
-	bottom: 1.5em;
+	right: -2em;
+	padding-left: 1.25em; 
+	padding-top: 0.6em; 
+	padding-bottom: 0.20em; 
+	padding-right: 2em;
+	bottom: 1.75em;
+	transform: scale(0.8);
 }
+
 
 /* drop shadows */
 .shadowHeight1 {
@@ -337,7 +353,7 @@ video#bgvid {
 	background-image: url(../img/gallery/trello/thumbnail.png);
 }
 
-#playboy {
+#playboyHeader {
 	background-image: url(../img/gallery/playboy/thumbnail.png);
 }
 
@@ -370,7 +386,7 @@ video#bgvid {
 
 /* take up full width of container if using mobile viewport */
 @media only screen and (max-width: 550px) {
-	.bottomMarginGutterWidth {
+	.marginBottomGutterWidth {
 	margin-bottom: 1em;
 }
 	.leftRightMargin10em {

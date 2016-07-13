@@ -84,11 +84,11 @@ $(function() {
   <div class="leftRightMargin10em"> 
     
     <!-- skill icons -->
-    <div class="row bottomMargin2em">
-      <div class="column column-3 bottomMarginGutterWidth imgFitBox"> 
+    <div class="row marginBottom2em">
+      <div class="column column-3 marginBottomGutterWidth imgFitBox"> 
         
         <!-- high-quality UI + graphic design icon -->
-        <div class="icon bottomMargin1em">
+        <div class="icon marginBottom1em">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306 306" width="100%">
             <style type="text/css">  
 	.st0{fill:#21AEC2;}
@@ -110,10 +110,10 @@ $(function() {
         <h4 class="grey textCenter">high-quality UI <br>
           + graphic design</h4>
       </div>
-      <div class="column column-3 bottomMarginGutterWidth imgFitBox"> 
+      <div class="column column-3 marginBottomGutterWidth imgFitBox"> 
         
         <!-- HTML + CSS web coding icon -->
-        <div class="icon bottomMargin1em">
+        <div class="icon marginBottom1em">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306 306" width="100%">
             <style type="text/css">  
 	.st0{fill:#21AEC2;}
@@ -130,10 +130,10 @@ $(function() {
         <h4 class="grey textCenter">HTML + CSS <br>
           web coding</h4>
       </div>
-      <div class="column column-3 bottomMarginGutterWidth imgFitBox"> 
+      <div class="column column-3 marginBottomGutterWidth imgFitBox"> 
         
         <!-- video editing + sound design icon -->
-        <div class="icon bottomMargin1em">
+        <div class="icon marginBottom1em">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306 306" width="100%">
             <style type="text/css">  
 	.st0{fill:#21AEC2;}
@@ -159,10 +159,10 @@ $(function() {
         <h4 class="grey textCenter">video editing <br>
           + sound design</h4>
       </div>
-      <div class="column column-3 bottomMarginGutterWidth imgFitBox"> 
+      <div class="column column-3 marginBottomGutterWidth imgFitBox"> 
         
         <!-- motion text + animated graphics icon -->
-        <div class="icon bottomMargin1em">
+        <div class="icon marginBottom1em">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306 306" width="100%">
             <style type="text/css">  
 	.st0{fill:#21AEC2;}
@@ -202,14 +202,14 @@ $(function() {
     
     <!-- my pic and description row -->
     <div class="row">
-      <div class="column column-6 bottomMarginGutterWidth imgFitBox"> 
+      <div class="column column-6 marginBottomGutterWidth imgFitBox"> 
         
         <!-- my pic --> 
-        <img src="img/gallery/chirpr/thumbnail.png" class="imgCircle img100"> </div>
-      <div class="column column-6 bottomMarginGutterWidth imgFitBox paddingLeft2em"> 
+        <img src="img/gallery/chirpr/thumbnail.png" class="imgCircle greyscale img100"> </div>
+      <div class="column column-6 marginBottomGutterWidth imgFitBox paddingLeft2em"> 
         
         <!-- my description-->
-        <h3 class="teal bold bottomMarginPoint75em textCenter">ABOUT ME</h3>
+        <h3 class="teal bold marginBottomPoint75em textCenter">ABOUT ME</h3>
         <p class="grey">Hello! I'm a designer specializing in user interface design, graphic design, website coding and video production.</p>
         <p class="grey">Whether its a UI concept for an app, the coding of a website, or a pitch video or trailer, I can deliver a high level of design quality that will communicate and delight.</p>
         
@@ -222,13 +222,13 @@ $(function() {
 
 <!-- gallery of projects section -->
 <div class="paddingTop1point5em paddingBottom2em tealBG" id="gallery">
-  <h3 class="white shadowHeight1 bold bottomMargin1em textCenter" id="myWork">MY WORK</h3>
+  <h3 class="white shadowHeight1 bold marginBottom1em textCenter" id="myWork">MY WORK</h3>
   
   <!-- wraps the first row of gallery items -->
   <div class="row galleryRow" id="firstRow"> 
     
     <!-- ella gallery section -->
-    <div class="column column-4 greyBG shadowHeight1 height35 bottomMarginGutterWidth box" id="ella"> 
+    <div class="column column-4 whiteBG shadowHeight1 height35 marginBottomGutterWidth box" id="ella"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="ellaHeader"> 
@@ -242,6 +242,8 @@ $(function() {
     document.getElementById('myWork').style.opacity = '0';
     document.getElementById('myWork').style.transform = 'scale(0)';
     document.getElementById('firstRow').style.paddingTop = '7.5vh';
+    document.getElementById('ellaLabel').style.transform = 'scale(1.1)';
+    document.getElementById('ellaLabel').style.right = '0';
     
     // rescales and fades other line 1 items
     document.getElementById('kojiro').style.height = '85vh';
@@ -279,46 +281,20 @@ $(function() {
     document.getElementById('ellaMain').style.opacity = '1';
     document.getElementById('ellaCloseX').style.transform = 'scale(1)';
     
+    
     ">
-        <div class="boxLabel">
-          <h5 class="teal">24 hour design challenge<br>
-            ella volunteering app</h5>
+        <div class="boxLabel tealBG white textRight" id="ellaLabel">
+          <h6>24 hour design challenge</h6>
+          <h5>
+            ELLA VOLUNTEERING APP</h5>
         </div>
         </a> </div>
       
       <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain greyBG leftRightMargin5em" id="ellaMain">
+      <div class="modalMain leftRightMargin5em" id="ellaMain">
       
       
-<div class="leftRightMargin5em">
 
-<div class="videoWrapper">
-    <!-- Copy & Pasted from YouTube -->
-    <iframe width="560" height="315" src="http://www.youtube.com/embed/OlpkLHqLKPI?modestbranding=1&rel=0&color=white" frameborder="0"></iframe>
-
-</div>
-
-
-<!-- <img src="img/gallery/kojiro/gallery1.png" width="100%" class="bottomPadding"> -->
-<p class="bottomPadding"><b>We only had 24 hours.</b> There was no time for a long period of ideation, and refinement of a final product. We needed to create an app design in a day, with only one requirement. It needed to help connect would-be volunteers to a charity of their interest.</p>
-
-</div>
-
-
-<hr>
-
-
-<div class="row">
-
-<div class="column column-5"><img class="imgBorder imgShadow" src="img/gallery/kojiro/gallery2b.png" width="100%"></div>
-
-<div class="column column-7 paddingLeft2em">
-<p>This was not the usual UI development process: we had only 24 hours. There was no time for a long period of ideation, and refinement of a final product. We needed to create an app design in a day, with only one requirement. It needed to help connect would-be volunteers to a charity of their interest.</p>
-
-
-</div>
-
-</div>
 
       
       </div>
@@ -374,7 +350,7 @@ $(function() {
       </a> </div>
     
     <!-- kojiro gallery section -->
-    <div class="column column-4 whiteBG shadowHeight1 height35 bottomMarginGutterWidth box" id="kojiro"> 
+    <div class="column column-4 whiteBG shadowHeight1 height35 marginBottomGutterWidth box" id="kojiro"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="kojiroHeader"> 
@@ -433,16 +409,38 @@ $(function() {
         </a> </div>
       
       <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain leftRightMargin5em" id="kojiroMain">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+      <div class="modalMain paddingLeftRight5em" id="kojiroMain">
+        
+        <div class="paddingLeftRight5em">
+
+<div class="videoWrapper">
+    <!-- Copy & Pasted from YouTube -->
+    <iframe width="560" height="315" src="http://www.youtube.com/embed/OlpkLHqLKPI?modestbranding=1&rel=0&color=white" frameborder="0"></iframe>
+
+</div>
+
+
+<!-- <img src="img/gallery/kojiro/gallery1.png" width="100%" class="bottomPadding"> -->
+<p class="bottomPadding"><b>We only had 24 hours.</b> There was no time for a long period of ideation, and refinement of a final product. We needed to create an app design in a day, with only one requirement. It needed to help connect would-be volunteers to a charity of their interest.</p>
+
+</div>
+
+
+<hr>
+
+
+<div class="row">
+
+<div class="column column-5"><img class="imgBorder imgShadow" src="img/gallery/kojiro/gallery2b.png" width="100%"></div>
+
+<div class="column column-7 paddingLeft2em">
+<p>This was not the usual UI development process: we had only 24 hours. There was no time for a long period of ideation, and refinement of a final product. We needed to create an app design in a day, with only one requirement. It needed to help connect would-be volunteers to a charity of their interest.</p>
+
+
+</div>
+
+</div>
+        
       </div>
       <a href="#gallery" onclick="
     
@@ -496,7 +494,7 @@ $(function() {
       </a> </div>
     
     <!-- trello gallery section -->
-    <div class="column column-4 whiteBG shadowHeight1 height35 bottomMarginGutterWidth box" id="trello"> 
+    <div class="column column-4 whiteBG shadowHeight1 height35 marginBottomGutterWidth box" id="trello"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="trelloHeader"> 
@@ -925,7 +923,7 @@ $(function() {
   <div class="row galleryRow" id="secondRow"> 
     
     <!-- playboy gallery section -->
-    <div class="column column-3 whiteBG shadowHeight1 height35 bottomMarginGutterWidth box" id="playboy"> 
+    <div class="column column-3 whiteBG shadowHeight1 height35 marginBottomGutterWidth box" id="playboy"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="playboyHeader"> 
@@ -1055,19 +1053,19 @@ $(function() {
         </svg>
       </div>
       </a> </div>
-    <div class="column column-3 whiteBG shadowHeight1 height35 bottomMarginGutterWidth box imgFitBox" id="enterprise">
+    <div class="column column-3 whiteBG shadowHeight1 height35 marginBottomGutterWidth box imgFitBox" id="enterprise">
       <div class="boxLabel">
         <h5 class="teal">Enterprise Rent-A-Car<br>
           Car Drop app proposal</h5>
       </div>
     </div>
-    <div class="column column-3 whiteBG shadowHeight1 height35 bottomMarginGutterWidth box imgFitBox" id="chirpr">
+    <div class="column column-3 whiteBG shadowHeight1 height35 marginBottomGutterWidth box imgFitBox" id="chirpr">
       <div class="boxLabel">
         <h5 class="teal">Chirpr<br>
           parody card game</h5>
       </div>
     </div>
-    <div class="column column-3 whiteBG shadowHeight1 height35 bottomMarginGutterWidth box imgFitBox" id="newitem">
+    <div class="column column-3 whiteBG shadowHeight1 height35 marginBottomGutterWidth box imgFitBox" id="newitem">
       <div class="boxLabel">
         <h5 class="teal">Chirpr<br>
           parody card game</h5>
@@ -1199,15 +1197,15 @@ $(function() {
 <!-- contact me section -->
 <div class="paddingBottom1point5em shadowHeight1 textCenter heightFull" id="porthole">
   <div class="contactPosition transitionAll0point5" id="contactMe">
-    <h3 class="teal bold bottomMarginPoint75em"> CONTACT ME </h3>
+    <h3 class="teal bold marginBottomPoint75em"> CONTACT ME </h3>
     <div class="leftRightMargin10em"> 
       
       <!-- contact methods -->
       <div class="row"> <a href="tel://1-604-773-2199">
-        <div class="column column-3 bottomMarginGutterWidth box imgFitBox"> 
+        <div class="column column-3 marginBottomGutterWidth box imgFitBox"> 
           
           <!-- phone icon -->
-          <div class="icon bottomMargin1em">
+          <div class="icon marginBottom1em">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.1 75.8" width="100%">
               <style type="text/css">  
 	.st0{fill:#1FAEC2;}
@@ -1222,10 +1220,10 @@ $(function() {
           <h4 class="grey textCenter">604.773.2199</h4>
         </div>
         </a> <a href="mailto:info@alexmoen.com">
-        <div class="column column-3 bottomMarginGutterWidth box imgFitBox"> 
+        <div class="column column-3 marginBottomGutterWidth box imgFitBox"> 
           
           <!-- email icon -->
-          <div class="icon bottomMargin1em">
+          <div class="icon marginBottom1em">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.1 75.8" width="100%">
               <style type="text/css">  
 	.st0{fill:#1FAEC2;}
@@ -1241,10 +1239,10 @@ $(function() {
           <h4 class="grey textCenter">info@alexmoen.com</h4>
         </div>
         </a> <a href="https://linkedin.com/in/alexmoen">
-        <div class="column column-3 bottomMarginGutterWidth box imgFitBox"> 
+        <div class="column column-3 marginBottomGutterWidth box imgFitBox"> 
           
           <!-- LinkedIn icon -->
-          <div class="icon bottomMargin1em">
+          <div class="icon marginBottom1em">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.1 75.8" width="100%">
               <style type="text/css">  
 	.st0{fill:#1FAEC2;}
@@ -1261,10 +1259,10 @@ $(function() {
           <h4 class="grey textCenter">alexmoen</h4>
         </div>
         </a> <a href="https://twitter.com/AlexRMoen">
-        <div class="column column-3 bottomMarginGutterWidth box imgFitBox"> 
+        <div class="column column-3 marginBottomGutterWidth box imgFitBox"> 
           
           <!-- Twitter icon -->
-          <div class="icon bottomMargin1em">
+          <div class="icon marginBottom1em">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.1 75.8" width="100%">
               <style type="text/css">  
 	.st0{fill:#1FAEC2;}

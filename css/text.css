@@ -29,8 +29,13 @@ h4 {
 }
 
 h5 {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Palanquin Dark', sans-serif;
 	font-size: 1.25em;
+}
+
+h6 {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
 }
 
 /* text rules */
@@ -41,4 +46,9 @@ h5 {
 .textCenter {
 	text-align: center;
 }
+
+.textRight {
+	text-align: right;
+}
+
 
