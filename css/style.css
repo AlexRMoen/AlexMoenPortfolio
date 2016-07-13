@@ -4,6 +4,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	z-index: 500;
 }
 
 /* video stuff *deserves scrutiny and compat with mobile* */
@@ -74,6 +75,9 @@ video#bgvid {
 }
 
 /* margins */
+.marginAuto {
+	margin: auto;
+}
 .bottomMarginPoint75em {
 	margin-bottom: 0.75em;
 }
@@ -234,6 +238,21 @@ video#bgvid {
 	margin-right: 2.25em;
 }
 
+/* wrapper which resizes videos to container size */
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 /* gallery items */
 #gallery {
 	-webkit-transition: all 1s ease-out;
@@ -335,10 +354,11 @@ video#bgvid {
 }
 
 /* creates see-through porthole effect */
-.porthole {
+#porthole {
 	position: relative;
 	background: radial-gradient(circle 20% at 50% 33.333%, transparent 20%, rgb(255,255,255) 20%);
     background: -webkit-radial-gradient(50% 33.333%, circle, transparent 20%, rgb(255,255,255) 20%);
+	overflow:hidden;
 }
 
 /* attaches contact methods to the bottom of the contact me section */
