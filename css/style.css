@@ -240,12 +240,11 @@ video#bgvid {
 	transition: all 1s ease-out;
 }
 
-#galleryRow {
+.galleryRow {
 	-webkit-transition: all 1s ease-out;
 	transition: all 1s ease-out;
 	position: relative;
 	max-width: 100vw;
-	
 	overflow: hidden;
 }
 
