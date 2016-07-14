@@ -117,7 +117,7 @@ video#bgvid {
 /* 100% of a full viewport height */
 .heightFull {
 	width: 100%;
-	min-height: 100vh;
+	height: 100vh;
 }
 
 /* 35% of a full viewport height */
@@ -193,7 +193,6 @@ video#bgvid {
 .box {
 	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
-	
 }
 
 /* gallery box hover behavior */
@@ -239,14 +238,14 @@ video#bgvid {
 
 /* specific element rules */
 /* main page title and sub-heading */
-.title {
+#title {
 	position: absolute;
 	left: 0;
 	bottom: 20vh;
 }
 
 /* down arrow to indicate scrolling on a full screen */
-.arrowDown {
+#arrowDown {
 	position: absolute;
 	bottom: 5vh;
 	left: 50%;
@@ -309,8 +308,8 @@ video#bgvid {
 .modalMain {
 	height: 0%;
 	max-width: 100%;
-	-webkit-transition: height 1s ease-out, width 0.75s ease-out;
-	transition: height 1s ease-out, width 0.75s ease-out;
+	-webkit-transition: height 0.5s ease-out, width 0.75s ease-out;
+	transition: height 0.5s ease-out, width 0.75s ease-out;
 	opacity: 0;
 	-webkit-transition: opacity 2s ease-out;
 	transition: opacity 2s ease-out;
@@ -394,6 +393,20 @@ video#bgvid {
     background: -webkit-radial-gradient(50% 33.333%, circle, transparent 20%, rgb(255,255,255) 20%);
 	overflow:hidden;
 }
+
+#aboveFold {
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	overflow:hidden;
+}
+
+#aboutMe {
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	height: 100%;
+	overflow:hidden;
+}
+
 
 /* attaches contact methods to the bottom of the contact me section */
 .contactPosition {

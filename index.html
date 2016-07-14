@@ -39,6 +39,7 @@ $(function() {
 });
 </script>
 
+
 <body class="tealBG">
 
 <!-- BEGIN video stuff *deserves scrutiny and compat with mobile* --> 
@@ -59,17 +60,17 @@ $(function() {
 <!-- END video stuff *deserves scrutiny and compat with mobile* --> 
 
 <!-- above the fold -->
-<div class="paddingTop1point5em paddingBottom2em heightFull"> 
+<div class="paddingTop1point5em paddingBottom2em heightFull" id="aboveFold"> 
   
   <!-- name and job position -->
-  <div class="leftRightMargin10em title">
+  <div class="leftRightMargin10em" id="title">
     <h1 class="white shadowHeight1">ALEX MOEN</h1>
     <h2 class="white shadowHeight1">UX Design <span class="grey">+</span> Art Direction</h2>
   </div>
   
   <!-- down arrow to indicate scrolling on a full screen --> 
   <a href="#aboutMe">
-  <div class="arrowDown shadowHeight1">
+  <div class="shadowHeight1" id="arrowDown">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 22.4" width="100%">
       <style type="text/css">  
 	.arrowDownColor{fill:#FFFFFF;}
@@ -221,7 +222,7 @@ $(function() {
 </div>
 
 <!-- gallery of projects section -->
-<div class="paddingTop1point5em paddingBottom2em tealBG" id="gallery">
+<div class="paddingTop1point5em tealBG" id="gallery">
   <h3 class="white shadowHeight1 bold marginBottom1em textCenter" id="myWork">MY WORK</h3>
   
   <!-- wraps the first row of gallery items -->
@@ -234,14 +235,16 @@ $(function() {
       <div class="modalHeader imgFitBox" id="ellaHeader"> 
         
         <!-- this link expands a gallery box into a modal --> 
-        <a href="#firstRow" onclick="
+        <a href="javascript:void(0)" onclick="
     
     
     // makes the background fill the screen
-    document.getElementById('gallery').style.height = '110vh';
+    document.getElementById('gallery').style.height = '100vh';
     document.getElementById('myWork').style.opacity = '0';
     document.getElementById('myWork').style.transform = 'scale(0)';
-    document.getElementById('firstRow').style.paddingTop = '7.5vh';
+    document.getElementById('myWork').style.height = '0';
+    document.getElementById('myWork').style.marginBottom = '0';
+    document.getElementById('firstRow').style.paddingTop = '0';
     
     // rescales and fades other line 1 items
     document.getElementById('kojiro').style.height = '85vh';
@@ -277,6 +280,7 @@ $(function() {
     document.getElementById('ella').style.overflowX = 'hidden';
     document.getElementById('ella').style.overflowY = 'scroll';
     document.getElementById('ellaHeader').style.height = '45%';
+    document.getElementById('ellaMain').style.height = '55%';
     document.getElementById('ellaMain').style.opacity = '1';
     document.getElementById('ellaCloseX').style.transform = 'scale(1)';
     document.getElementById('ellaCloseX').style.opacity = '1';
@@ -286,6 +290,39 @@ $(function() {
     document.getElementById('ellaLabel').style.right = '1.75em';
     document.getElementById('ellaLabel').style.bottom = '3.5em';
     
+    document.getElementById('aboveFold').style.height = '0';
+    document.getElementById('aboveFold').style.topMargin = '0';
+    document.getElementById('aboveFold').style.bottomMargin = '0';
+    document.getElementById('aboveFold').style.padding = '0';
+        document.getElementById('aboveFold').style.topPadding = '0';
+    document.getElementById('aboveFold').style.bottomPadding = '0';
+    
+    document.getElementById('aboutMe').style.height = '0';
+    document.getElementById('aboutMe').style.topMargin = '0';
+    document.getElementById('aboutMe').style.bottomMargin = '0';
+    document.getElementById('aboutMe').style.padding = '0';
+        document.getElementById('aboutMe').style.topPadding = '0';
+    document.getElementById('aboutMe').style.bottomPadding = '0';
+    
+    document.getElementById('porthole').style.height = '0';
+        document.getElementById('porthole').style.margin = '0';
+        document.getElementById('porthole').style.topMargin = '0';
+        document.getElementById('porthole').style.bottomMargin = '0';
+    document.getElementById('porthole').style.padding = '0';
+    document.getElementById('porthole').style.topPadding = '0';
+    document.getElementById('porthole').style.bottomPadding = '0';
+    
+            document.getElementById('gallery').style.margin = '0';
+        document.getElementById('gallery').style.topMargin = '0';
+        document.getElementById('gallery').style.bottomMargin = '0';
+    document.getElementById('gallery').style.padding = '0';
+    document.getElementById('gallery').style.topPadding = '0';
+    document.getElementById('gallery').style.bottomPadding = '0';
+    
+    document.getElementById('title').style.display = 'none';
+    document.getElementById('arrowDown').style.display = 'none';
+    
+    document.getElementById('ella').style.marginTop = '7.5vh';
     
     
     
@@ -303,7 +340,15 @@ $(function() {
       <div class="modalMain leftRightMargin5em" id="ellaMain">
       
       
-
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
 
       
       </div>
@@ -317,6 +362,7 @@ $(function() {
         
         <!-- this link expands a gallery box into a modal --> 
         <a href="#firstRow" onclick="
+        
     
     
     // makes the background fill the screen
@@ -359,6 +405,8 @@ $(function() {
     document.getElementById('kojiro').style.overflowX = 'hidden';
     document.getElementById('kojiro').style.overflowY = 'scroll';
     document.getElementById('kojiroHeader').style.height = '45%';
+    document.getElementById('kojiroMain').style.display = 'block';
+    document.getElementById('kojiroMain').style.height = '55%';
     document.getElementById('kojiroMain').style.opacity = '1';
     document.getElementById('kojiroCloseX').style.transform = 'scale(1)';
     document.getElementById('kojiroCloseX').style.opacity = '1';
@@ -579,6 +627,7 @@ $(function() {
     document.getElementById('ella').style.overflowX = 'auto';
     document.getElementById('ella').style.overflowY = 'auto';
     document.getElementById('ellaHeader').style.height = '100%';
+    document.getElementById('ellaMain').style.height = '0';
     document.getElementById('ellaMain').style.opacity = '0';
     document.getElementById('ellaCloseX').style.transform = 'scale(0)';
     document.getElementById('ellaCloseX').style.opacity = '0';
@@ -694,6 +743,8 @@ $(function() {
     
     <!-- close X for kojiro -->
           <a href="#gallery" onclick="
+          
+          
     
     // resets all gallery elements back to their proper grid format
     document.getElementById('gallery').style.height = 'auto';
@@ -731,6 +782,7 @@ $(function() {
     document.getElementById('kojiro').style.overflowX = 'auto';
     document.getElementById('kojiro').style.overflowY = 'auto';
     document.getElementById('kojiroHeader').style.height = '100%';
+    document.getElementById('kojiroMain').style.height = '0';
     document.getElementById('kojiroMain').style.opacity = '0';
     document.getElementById('kojiroCloseX').style.transform = 'scale(0)';
     document.getElementById('kojiroCloseX').style.opacity = '0';
@@ -739,6 +791,10 @@ $(function() {
     document.getElementById('kojiroLabel').style.transform = 'scale(1)';
     document.getElementById('kojiroLabel').style.right = '-0.2em';
     document.getElementById('kojiroLabel').style.bottom = '1.75em';
+    
+
+    
+    
     
     ">
       <div class="closeX" id="kojiroCloseX">
@@ -1332,5 +1388,6 @@ $(function() {
     </div>
   </div>
 </div>
+
 </body>
 </html>
