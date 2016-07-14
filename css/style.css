@@ -193,13 +193,18 @@ video#bgvid {
 .box {
 	-webkit-transition: all 1s ease-out;
 	transition: all 1s ease-out;
-	
-	-webkit-transform: translateZ(0);
--moz-transform: translateZ(0);
 }
-.backfaceVisibility {
-	webkit-backface-visibility:hidden; 
--moz-backface-visibility:hidden;
+.3daccel {
+   -webkit-transform: translateZ(0);
+   -moz-transform: translateZ(0);
+   -ms-transform: translateZ(0);
+   -o-transform: translateZ(0);
+   transform: translateZ(0);
+   
+	-webkit-backface-visibility: hidden;
+   -moz-backface-visibility: hidden;
+   -ms-backface-visibility: hidden;
+   backface-visibility: hidden;
 }
 
 /* gallery box hover behavior 
@@ -224,7 +229,7 @@ video#bgvid {
 	padding-bottom: 0.5em; 
 	padding-right: 2em;
 	bottom: 1.75em;
-	transform: scale(1);
+	transform-origin: 100% 0;
 	-webkit-transition: all 1s ease-out;
 	transition: all 1s ease-out;
 }

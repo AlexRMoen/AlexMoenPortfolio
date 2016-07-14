@@ -222,14 +222,14 @@ $(function() {
 </div>
 
 <!-- gallery of projects section -->
-<div class="tealBG" id="gallery">
-  <h3 class="white shadowHeight1 bold marginBottom1em textCenter" id="myWork">MY WORK</h3>
+<div class="tealBG paddingTop1point5em paddingBottom2em 3daccel" id="gallery">
+  <h3 class="white shadowHeight1 bold marginBottom1em textCenter 3daccel" id="myWork">MY WORK</h3>
   
   <!-- wraps the first row of gallery items -->
-  <div class="row galleryRow backfaceVisibility" id="firstRow"> 
+  <div class="row galleryRow" id="firstRow"> 
     
     <!-- ella gallery section -->
-    <div class="column column-4 whiteBG shadowHeight1 height35 marginBottomGutterWidth box" id="ella"> 
+    <div class="column column-4 whiteBG shadowHeight1 height35 marginBottomGutterWidth box 3daccel" id="ella"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="ellaHeader"> 
@@ -240,11 +240,23 @@ $(function() {
     
     // makes the background fill the screen
     document.getElementById('gallery').style.height = '100vh';
+        document.getElementById('gallery').style.padding = '0';
     document.getElementById('myWork').style.opacity = '0';
     document.getElementById('myWork').style.transform = 'scale(0)';
     document.getElementById('myWork').style.height = '0';
     document.getElementById('myWork').style.marginBottom = '0';
-    document.getElementById('firstRow').style.paddingTop = '0';
+        document.getElementById('firstRow').style.paddingTop = '7.5vh';
+        document.getElementById('title').style.display = 'none';
+        document.getElementById('arrowDown').style.display = 'none';
+        
+        // closes and fades other elements on screen
+        document.getElementById('aboveFold').style.height = '0';
+        document.getElementById('aboveFold').style.padding = '0';
+        document.getElementById('aboutMe').style.height = '0';
+        document.getElementById('aboutMe').style.opacity = '0';
+        document.getElementById('aboutMe').style.padding = '0';
+        document.getElementById('porthole').style.height = '0';
+        document.getElementById('porthole').style.opacity = '0';
     
     // rescales and fades other line 1 items
     document.getElementById('kojiro').style.height = '85vh';
@@ -287,49 +299,10 @@ $(function() {
     document.getElementById('ellaCloseX').style.right = '12vw';
     document.getElementById('ellaCloseX').style.top = '11vh';
     document.getElementById('ellaLabel').style.transform = 'scale(1.3)';
-    document.getElementById('ellaLabel').style.right = '1.75em';
     document.getElementById('ellaLabel').style.bottom = '3.5em';
-    
-    document.getElementById('aboveFold').style.height = '0';
-    document.getElementById('aboveFold').style.topMargin = '0';
-    document.getElementById('aboveFold').style.bottomMargin = '0';
-    document.getElementById('aboveFold').style.padding = '0';
-        document.getElementById('aboveFold').style.topPadding = '0';
-    document.getElementById('aboveFold').style.bottomPadding = '0';
-    
-    document.getElementById('aboutMe').style.height = '0';
-    document.getElementById('aboutMe').style.topMargin = '0';
-    document.getElementById('aboutMe').style.bottomMargin = '0';
-    document.getElementById('aboutMe').style.padding = '0';
-        document.getElementById('aboutMe').style.topPadding = '0';
-    document.getElementById('aboutMe').style.bottomPadding = '0';
-    
-    document.getElementById('porthole').style.height = '0';
-        document.getElementById('porthole').style.margin = '0';
-        document.getElementById('porthole').style.topMargin = '0';
-        document.getElementById('porthole').style.bottomMargin = '0';
-    document.getElementById('porthole').style.padding = '0';
-    document.getElementById('porthole').style.topPadding = '0';
-    document.getElementById('porthole').style.bottomPadding = '0';
-    
-            document.getElementById('gallery').style.margin = '0';
-        document.getElementById('gallery').style.topMargin = '0';
-        document.getElementById('gallery').style.bottomMargin = '0';
-    document.getElementById('gallery').style.padding = '0';
-    document.getElementById('gallery').style.topPadding = '0';
-    document.getElementById('gallery').style.bottomPadding = '0';
-    
-    document.getElementById('title').style.display = 'none';
-    document.getElementById('arrowDown').style.display = 'none';
-    
-    document.getElementById('firstRow').style.paddingTop = '7.5vh';
-    
-    
-    
-    
-    
+
     ">
-        <div class="boxLabel tealBG white shadowHeight2 textRight" id="ellaLabel">
+        <div class="boxLabel tealBG white shadowHeight2 textRight 3daccel" id="ellaLabel">
           <h6>24 hour design challenge</h6>
           <h5>
             ELLA VOLUNTEERING APP</h5>
@@ -338,7 +311,7 @@ $(function() {
         </div>
       
       <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain leftRightMargin5em" id="ellaMain">
+      <div class="modalMain leftRightMargin5em 3daccel" id="ellaMain">
       
       
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
@@ -356,7 +329,7 @@ $(function() {
  </div>
     
     <!-- kojiro gallery section -->
-    <div class="column column-4 whiteBG shadowHeight1 height35 marginBottomGutterWidth box" id="kojiro"> 
+    <div class="column column-4 whiteBG shadowHeight1 height35 marginBottomGutterWidth box 3daccel" id="kojiro"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="kojiroHeader"> 
@@ -420,7 +393,7 @@ $(function() {
     
     ">
     
-    <div class="boxLabel tealBG white textRight shadowHeight2" id="kojiroLabel">
+    <div class="boxLabel tealBG white textRight shadowHeight2 3daccel" id="kojiroLabel">
           <h5>KOJIRŌ IZAKAYA</h5>
             <h6>interactive restaurant menu</h6>
         </div>
@@ -466,7 +439,7 @@ $(function() {
  </div>
     
     <!-- trello gallery section -->
-    <div class="column column-4 whiteBG shadowHeight1 height35 marginBottomGutterWidth box" id="trello"> 
+    <div class="column column-4 whiteBG shadowHeight1 height35 marginBottomGutterWidth box 3daccel" id="trello"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="trelloHeader"> 
@@ -518,7 +491,7 @@ $(function() {
     document.getElementById('trelloCloseX').style.transform = 'scale(1)';
     
     ">    
-    <div class="boxLabel tealBG white textRight" id="trelloLabel">
+    <div class="boxLabel tealBG white textRight shadowHeight2 3daccel" id="trelloLabel">
           <h5>TRELLO</h5>
             <h6>iOS app proposal</h6>
         </div>
@@ -1024,7 +997,7 @@ $(function() {
   <div class="row galleryRow" id="secondRow"> 
     
     <!-- playboy gallery section -->
-    <div class="column column-3 whiteBG shadowHeight1 height35 marginBottomGutterWidth box" id="playboy"> 
+    <div class="column column-3 whiteBG shadowHeight1 height35 marginBottomGutterWidth box 3daccel" id="playboy"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="playboyHeader"> 
@@ -1082,7 +1055,7 @@ $(function() {
     
     ">
     
-        <div class="boxLabel tealBG white textRight" id="playboyLabel">
+        <div class="boxLabel tealBG white textRight shadowHeight2 3daccel" id="playboyLabel">
           <h5>PLAYBOY.COM</h5>
             <h6>writer-focused website proposal</h6>
         </div>
@@ -1156,25 +1129,25 @@ $(function() {
         </svg>
       </div>
       </a> </div>
-    <div class="column column-3 whiteBG shadowHeight1 height35 marginBottomGutterWidth box imgFitBox" id="enterprise">
+    <div class="column column-3 whiteBG shadowHeight1 height35 marginBottomGutterWidth box imgFitBox 3daccel" id="enterprise">
      
-             <div class="boxLabel tealBG white textRight" id="ellaLabel">
+             <div class="boxLabel tealBG white textRight shadowHeight2 3daccel" id="ellaLabel">
           <h5>ENTERPRISE RENT-A-CAR</h5>
             <h6>Car Drop app proposal</h6>
         </div>
      
     </div>
-    <div class="column column-3 whiteBG shadowHeight1 height35 marginBottomGutterWidth box imgFitBox" id="chirpr">
+    <div class="column column-3 whiteBG shadowHeight1 height35 marginBottomGutterWidth box imgFitBox 3daccel" id="chirpr">
       
-        <div class="boxLabel tealBG white textRight" id="ellaLabel">
+        <div class="boxLabel tealBG white textRight shadowHeight2 3daccel" id="ellaLabel">
           <h5>CHIRPR</h5>
             <h6>parody card game</h6>
         </div>
         
     </div>
-    <div class="column column-3 whiteBG shadowHeight1 height35 marginBottomGutterWidth box imgFitBox" id="newitem">
+    <div class="column column-3 whiteBG shadowHeight1 height35 marginBottomGutterWidth box imgFitBox 3daccel" id="newitem">
 
-        <div class="boxLabel tealBG white textRight" id="ellaLabel">
+        <div class="boxLabel tealBG white textRight shadowHeight2 3daccel" id="ellaLabel">
           <h5>ITEM</h5>
             <h6>item name</h6>
         </div>
