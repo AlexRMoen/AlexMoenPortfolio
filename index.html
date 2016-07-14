@@ -31,7 +31,7 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        }, 825);
+        }, 1000);
         return false;
       }
     }
@@ -222,11 +222,11 @@ $(function() {
 </div>
 
 <!-- gallery of projects section -->
-<div class="paddingTop1point5em tealBG" id="gallery">
+<div class="tealBG" id="gallery">
   <h3 class="white shadowHeight1 bold marginBottom1em textCenter" id="myWork">MY WORK</h3>
   
   <!-- wraps the first row of gallery items -->
-  <div class="row galleryRow" id="firstRow"> 
+  <div class="row galleryRow backfaceVisibility" id="firstRow"> 
     
     <!-- ella gallery section -->
     <div class="column column-4 whiteBG shadowHeight1 height35 marginBottomGutterWidth box" id="ella"> 
@@ -235,7 +235,7 @@ $(function() {
       <div class="modalHeader imgFitBox" id="ellaHeader"> 
         
         <!-- this link expands a gallery box into a modal --> 
-        <a href="javascript:void(0)" onclick="
+        <a href="#myWork" onclick="
     
     
     // makes the background fill the screen
@@ -322,7 +322,8 @@ $(function() {
     document.getElementById('title').style.display = 'none';
     document.getElementById('arrowDown').style.display = 'none';
     
-    document.getElementById('ella').style.marginTop = '7.5vh';
+    document.getElementById('firstRow').style.paddingTop = '7.5vh';
+    
     
     
     

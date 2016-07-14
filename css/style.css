@@ -191,16 +191,22 @@ video#bgvid {
 /* div behaviors */
 /* gallery box transition rules */
 .box {
-	-webkit-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
+	
+	-webkit-transform: translateZ(0);
+-moz-transform: translateZ(0);
+}
+.backfaceVisibility {
+	webkit-backface-visibility:hidden; 
+-moz-backface-visibility:hidden;
 }
 
-/* gallery box hover behavior */
+/* gallery box hover behavior 
 .box:hover {
-	z-index: 999;
 	-webkit-filter: drop-shadow(0 0.4em 0.4em rgba(0,0,0,0.2));
 	filter: drop-shadow(0 0.4em 0.4em rgba(0,0,0,0.2));
-}
+}*/
 
 /* makes a background image for a box */
 .imgFitBox {
@@ -212,15 +218,15 @@ video#bgvid {
 /* labels the box */
 .boxLabel {
 	position: absolute;
-	right: -0.2em;
+	right: 0;
 	padding-left: 1.25em; 
 	padding-top: 0.5em; 
 	padding-bottom: 0.5em; 
 	padding-right: 2em;
 	bottom: 1.75em;
 	transform: scale(1);
-	-webkit-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
 }
 
 
@@ -279,37 +285,39 @@ video#bgvid {
 
 /* gallery items */
 #gallery {
-	-webkit-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.7s ease-out;
+	transition: all 0.7s ease-out;
 }
 
 .galleryRow {
-	-webkit-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
+	-webkit-transition: padding-top 0.1s ease-out;
+	transition: padding-top 0.1s ease-out;
 	position: relative;
 	max-width: 100vw;
 	overflow: hidden;
 }
 
 #myWork {
-	-webkit-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
 }
 
 /* the header and main window of the modal */
 .modalHeader {
 	height: 100%;
 	max-width: 100%;
-	-webkit-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
 	position: relative;
 }
 
 .modalMain {
 	height: 0%;
 	max-width: 100%;
-	-webkit-transition: height 0.5s ease-out, width 0.75s ease-out;
-	transition: height 0.5s ease-out, width 0.75s ease-out;
+	-webkit-transition: height 1s ease-out, width 0.75s ease-out;
+	transition: height 1s ease-out, width 0.75s ease-out;
 	opacity: 0;
 	-webkit-transition: opacity 2s ease-out;
 	transition: opacity 2s ease-out;
@@ -322,8 +330,8 @@ video#bgvid {
 	width: 1.75em;
 	transform: scale(0);
 	opacity: 0;
-	-webkit-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
 	z-index: 999;
 }
 
@@ -341,8 +349,8 @@ video#bgvid {
 	left: -2.5em;
 	top: 50%;
 	transform: translateY(-50%);
-	-webkit-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
 	opacity: 0;
 }
 
@@ -352,8 +360,8 @@ video#bgvid {
 	right: -2.5em;
 	top: 50%;
 	transform: translateY(-50%);
-	-webkit-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
 	opacity: 0;
 }
 
@@ -395,14 +403,14 @@ video#bgvid {
 }
 
 #aboveFold {
-	-webkit-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
 	overflow:hidden;
 }
 
 #aboutMe {
-	-webkit-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
 	height: 100%;
 	overflow:hidden;
 }
