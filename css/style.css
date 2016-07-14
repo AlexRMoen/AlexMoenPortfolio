@@ -236,14 +236,23 @@ video#bgvid {
 
 
 /* drop shadows */
-.shadowHeight1 {
--webkit-filter: drop-shadow(0 0.2em 0.2em rgba(0,0,0,0.2));
-	filter: drop-shadow(0 0.2em 0.2em rgba(0,0,0,0.2));
+.boxShadowHeight1 {
+	box-shadow: 0.1em 0.1em 1em rgba(0,0,0,0.3);
 }
 
-.shadowHeight2 {
--webkit-filter: drop-shadow(0 0.4em 0.4em rgba(0,0,0,0.2));
-	filter: drop-shadow(0 0.4em 0.4em rgba(0,0,0,0.2));
+.boxShadowHeight2 {
+	box-shadow: 0.2em 0.2em 1.1em rgba(0,0,0,0.3);
+}
+
+.dropShadowHeight1 {
+-webkit-filter: drop-shadow(0.1em 0.1em 0.2em rgba(0,0,0,0.2));
+	filter: drop-shadow(0.1em 0.1em 0.2em rgba(0,0,0,0.2));
+	
+}
+
+.dropShadowHeight2 {
+-webkit-filter: drop-shadow(0.2em 0.2em 1em rgba(0,0,0,0.2));
+	filter: drop-shadow(0.2em 0.2em 1.1em rgba(0,0,0,0.2));
 }
 
 
