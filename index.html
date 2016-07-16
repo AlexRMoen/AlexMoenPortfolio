@@ -44,12 +44,12 @@ $(function() {
 
 <!-- BEGIN video stuff *deserves scrutiny and compat with mobile* --> 
 <!-- play the video background - webm, then mp4, then static png --> 
-<!-- VIDEO OFF
+<!-- VIDEO OFF -->
 <video autoplay loop poster="video/fish1.png" id="bgvid">
   <source src="video/fishHigher60.webm" type="video/webm">
   <source src="video/fishyEdit.mp4" type="video/mp4">
 </video>
- -->
+
 
 <!--[if lt IE 9]>
 <script>
@@ -250,15 +250,10 @@ $(function() {
         document.getElementById('arrowDown').style.display = 'none';
         
         // closes and fades other elements on screen
-        document.getElementById('aboveFold').style.height = '0';
-        document.getElementById('aboveFold').style.padding = '0';
-        document.getElementById('aboutMe').style.overflow = 'hidden';
-        document.getElementById('aboutMe').style.height = '0';
-        document.getElementById('aboutMe').style.opacity = '0';
-        document.getElementById('aboutMe').style.padding = '0';
-        document.getElementById('porthole').style.overflow = 'hidden';
-        document.getElementById('porthole').style.height = '0';
-        document.getElementById('porthole').style.opacity = '0';
+        document.getElementById('bgvid').style.display = 'none';
+        document.getElementById('aboveFold').style.display = 'none';
+        document.getElementById('aboutMe').style.display = 'none';
+        document.getElementById('porthole').style.display = 'none';
     
     // rescales and fades other line 1 items
     document.getElementById('kojiro').style.height = '85vh';
