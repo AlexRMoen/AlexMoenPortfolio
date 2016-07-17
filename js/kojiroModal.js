@@ -1,6 +1,6 @@
 // JavaScript Document
 
-function openKojiroModal() {
+function kojiroOpenModal() {
 
 (function($) {
 	

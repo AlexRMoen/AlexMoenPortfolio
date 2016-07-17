@@ -1,6 +1,6 @@
 // JavaScript Document
 
-function openTrelloModal() {
+function trelloOpenModal() {
 
 (function($) {
 	

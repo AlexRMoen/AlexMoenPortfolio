@@ -1,6 +1,6 @@
 // JavaScript Document
 
-function openEnterpriseModal() {
+function enterpriseOpenModal() {
 
 (function($) {
 	

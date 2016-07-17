@@ -1,6 +1,6 @@
 // JavaScript Document
 
-function openEllaModal() {
+function ellaOpenModal() {
 
 (function($) {
 	
@@ -91,7 +91,7 @@ function openEllaModal() {
 }
 
 
-function rightEllaArrow() {
+function ellaRightArrow() {
 	
 // closes itself
     document.getElementById('ella').style.width = '0';
