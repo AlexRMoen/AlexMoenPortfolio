@@ -423,41 +423,8 @@ $(function() {
     <!-- NONE! --> 
     
     <!-- right arrow for ella --> 
-    <a href="#javascript:void(0)" onclick="
- 
-    // closes itself
-    document.getElementById('ella').style.width = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginLeft = '0';
-    document.getElementById('ella').style.marginRight = '0';
-    document.getElementById('ellaHeader').style.height = '100%';
-    document.getElementById('ellaMain').style.height = '0';
-    document.getElementById('ellaMain').style.opacity = '0';
-    document.getElementById('ellaCloseX').style.transform = 'scale(0)';
+    <a href="javascript:void(0)" onclick="rightEllaArrow()">
     
-    // switches out arrow for the proper item
-    // NONE document.getElementById('ellaLeftArrow').style.left = '-2.5em';
-    // NONE document.getElementById('ellaLeftArrow').style.opacity = '0';
-    document.getElementById('ellaRightArrow').style.right = '-2.5em';
-    document.getElementById('ellaRightArrow').style.opacity = '0';
-    document.getElementById('kojiroLeftArrow').style.left = '2.5em';
-    document.getElementById('kojiroLeftArrow').style.opacity = '1';
-    document.getElementById('kojiroRightArrow').style.right = '2.5em';
-    document.getElementById('kojiroRightArrow').style.opacity = '1';
-    
-    // moves other modal into place
-    document.getElementById('kojiro').style.height = '85vh';
-    document.getElementById('kojiro').style.width = '80%';
-    document.getElementById('kojiro').style.marginLeft = '10%';
-    document.getElementById('kojiro').style.marginRight = '10%';
-    document.getElementById('kojiro').style.overflow = 'scroll';
-    document.getElementById('kojiro').style.opacity = '1';
-    document.getElementById('kojiroHeader').style.height = '30%';
-    document.getElementById('kojiroMain').style.height = '70%';
-    document.getElementById('kojiroMain').style.opacity = '1';
-    document.getElementById('kojiroCloseX').style.transform = 'scale(1)';
-    
-    ">
     <div class="rightArrow dropShadowHeight1" id="ellaRightArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" width="100%">
         <style type="text/css">  
