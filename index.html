@@ -273,63 +273,7 @@ $(function() {
       <div class="modalHeader imgFitBox" id="kojiroHeader"> 
         
         <!-- this link expands a gallery box into a modal --> 
-        <a href="#firstRow" onclick="
-        
-    
-    
-    // makes the background fill the screen
-    document.getElementById('gallery').style.height = '110vh';
-    document.getElementById('myWork').style.opacity = '0';
-    document.getElementById('myWork').style.transform = 'scale(0)';
-    document.getElementById('firstRow').style.paddingTop = '7.5vh';
-    
-    // rescales and fades other line 1 items
-    document.getElementById('ella').style.height = '85vh';
-    document.getElementById('ella').style.width = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginLeft = '0';
-    document.getElementById('trello').style.height = '85vh';
-    document.getElementById('trello').style.width = '0';
-    document.getElementById('trello').style.opacity = '0';
-    document.getElementById('trello').style.marginLeft = '0';
-    
-    // rescales and fades line 2 items
-    document.getElementById('playboy').style.height = '0';
-    document.getElementById('playboy').style.opacity = '0';
-    document.getElementById('enterprise').style.height = '0';
-    document.getElementById('enterprise').style.opacity = '0';
-    document.getElementById('chirpr').style.height = '0';
-    document.getElementById('chirpr').style.opacity = '0';
-    document.getElementById('newitem').style.height = '0';
-    document.getElementById('newitem').style.opacity = '0';
-    
-    // displays left and right arrows
-    document.getElementById('kojiroLeftArrow').style.left = '2.5em';
-    document.getElementById('kojiroLeftArrow').style.opacity = '1';
-    document.getElementById('kojiroRightArrow').style.right = '2.5em';
-    document.getElementById('kojiroRightArrow').style.opacity = '1';
-    
-    // scales a gallery item into a modal
-    document.getElementById('kojiro').style.height = '85vh';
-    document.getElementById('kojiro').style.width = '80%';
-    document.getElementById('kojiro').style.marginLeft = '10%';
-    document.getElementById('kojiro').style.marginRight = '10%';
-    document.getElementById('kojiro').style.overflowX = 'hidden';
-    document.getElementById('kojiro').style.overflowY = 'scroll';
-    document.getElementById('kojiroHeader').style.height = '45%';
-    document.getElementById('kojiroMain').style.display = 'block';
-    document.getElementById('kojiroMain').style.height = '55%';
-    document.getElementById('kojiroMain').style.opacity = '1';
-    document.getElementById('kojiroCloseX').style.transform = 'scale(1)';
-    document.getElementById('kojiroCloseX').style.opacity = '1';
-    document.getElementById('kojiroCloseX').style.right = '12vw';
-    document.getElementById('kojiroCloseX').style.top = '11vh';
-    document.getElementById('kojiroLabel').style.transform = 'scale(1.3)';
-    document.getElementById('kojiroLabel').style.right = '1.75em';
-    document.getElementById('kojiroLabel').style.bottom = '3.5em';
-    
-    
-    ">
+        <a href="javascript:void(0)" onclick="openKojiroModal()">
     
     <div class="boxLabel tealBG white textRight boxShadowHeight2 3daccel" id="kojiroLabel">
           <h5>KOJIRŌ IZAKAYA</h5>
