@@ -299,13 +299,13 @@ video#bgvid {
 
 /* gallery items */
 #gallery {
-	-webkit-transition: all 0.7s ease-out;
-	transition: all 0.7s ease-out;
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
 }
 
 .galleryRow {
-	-webkit-transition: all 1s ease-out;
-	transition: all 1s ease-out;
+	-webkit-transition: all 0.7s ease-out;
+	transition: all 0.7s ease-out;
 	-webkit-transition: padding-top 0.1s ease-out;
 	transition: padding-top 0.1s ease-out;
 	position: relative;
