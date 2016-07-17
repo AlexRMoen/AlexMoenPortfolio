@@ -117,7 +117,7 @@ video#bgvid {
 /* 100% of a full viewport height */
 .heightFull {
 	width: 100%;
-	min-height: 100vh;
+	height: 100vh;
 }
 
 /* 35% of a full viewport height */
@@ -193,15 +193,25 @@ video#bgvid {
 .box {
 	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
-	
+}
+.3daccel {
+   -webkit-transform: translateZ(0);
+   -moz-transform: translateZ(0);
+   -ms-transform: translateZ(0);
+   -o-transform: translateZ(0);
+   transform: translateZ(0);
+   
+	-webkit-backface-visibility: hidden;
+   -moz-backface-visibility: hidden;
+   -ms-backface-visibility: hidden;
+   backface-visibility: hidden;
 }
 
-/* gallery box hover behavior */
+/* gallery box hover behavior 
 .box:hover {
-	z-index: 999;
 	-webkit-filter: drop-shadow(0 0.4em 0.4em rgba(0,0,0,0.2));
 	filter: drop-shadow(0 0.4em 0.4em rgba(0,0,0,0.2));
-}
+}*/
 
 /* makes a background image for a box */
 .imgFitBox {
@@ -213,40 +223,49 @@ video#bgvid {
 /* labels the box */
 .boxLabel {
 	position: absolute;
-	right: -0.2em;
+	right: 0;
 	padding-left: 1.25em; 
 	padding-top: 0.5em; 
 	padding-bottom: 0.5em; 
 	padding-right: 2em;
 	bottom: 1.75em;
-	transform: scale(1);
+	transform-origin: 100% 0;
 	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 }
 
 
 /* drop shadows */
-.shadowHeight1 {
--webkit-filter: drop-shadow(0 0.2em 0.2em rgba(0,0,0,0.2));
-	filter: drop-shadow(0 0.2em 0.2em rgba(0,0,0,0.2));
+.boxShadowHeight1 {
+	box-shadow: 0.1em 0.1em 1em rgba(0,0,0,0.3);
 }
 
-.shadowHeight2 {
--webkit-filter: drop-shadow(0 0.4em 0.4em rgba(0,0,0,0.2));
-	filter: drop-shadow(0 0.4em 0.4em rgba(0,0,0,0.2));
+.boxShadowHeight2 {
+	box-shadow: 0.2em 0.2em 1.1em rgba(0,0,0,0.3);
+}
+
+.dropShadowHeight1 {
+-webkit-filter: drop-shadow(0.1em 0.1em 0.2em rgba(0,0,0,0.2));
+	filter: drop-shadow(0.1em 0.1em 0.2em rgba(0,0,0,0.2));
+	
+}
+
+.dropShadowHeight2 {
+-webkit-filter: drop-shadow(0.2em 0.2em 1em rgba(0,0,0,0.2));
+	filter: drop-shadow(0.2em 0.2em 1.1em rgba(0,0,0,0.2));
 }
 
 
 /* specific element rules */
 /* main page title and sub-heading */
-.title {
+#title {
 	position: absolute;
 	left: 0;
 	bottom: 20vh;
 }
 
 /* down arrow to indicate scrolling on a full screen */
-.arrowDown {
+#arrowDown {
 	position: absolute;
 	bottom: 5vh;
 	left: 50%;
@@ -282,19 +301,22 @@ video#bgvid {
 #gallery {
 	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
+	height: 100vh;
 }
 
 .galleryRow {
-	-webkit-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.7s ease-out;
+	transition: all 0.7s ease-out;
+	-webkit-transition: padding-top 0.1s ease-out;
+	transition: padding-top 0.1s ease-out;
 	position: relative;
 	max-width: 100vw;
 	overflow: hidden;
 }
 
 #myWork {
-	-webkit-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
 }
 
 /* the header and main window of the modal */
@@ -309,8 +331,8 @@ video#bgvid {
 .modalMain {
 	height: 0%;
 	max-width: 100%;
-	-webkit-transition: height 1s ease-out, width 0.75s ease-out;
-	transition: height 1s ease-out, width 0.75s ease-out;
+	-webkit-transition: height 0.5s ease-out, width 0.5s ease-out;
+	transition: height 0.5s ease-out, width 0.5s ease-out;
 	opacity: 0;
 	-webkit-transition: opacity 2s ease-out;
 	transition: opacity 2s ease-out;
@@ -334,6 +356,10 @@ video#bgvid {
 
 #kojiroCloseX {
 	right: 50%;
+}
+
+#trelloCloseX {
+	right: 6.86666666667%;
 }
 
 .leftArrow {
@@ -375,11 +401,11 @@ video#bgvid {
 	background-image: url(../img/gallery/playboy/thumbnail.png);
 }
 
-#enterprise {
+#enterpriseHeader {
 	background-image: url(../img/gallery/enterprise/thumbnail.png);
 }
 
-#chirpr {
+#chirprHeader {
 	background-image: url(../img/gallery/chirpr/thumbnail.png);
 }
 
@@ -392,8 +418,20 @@ video#bgvid {
 	position: relative;
 	background: radial-gradient(circle 20% at 50% 33.333%, transparent 20%, rgb(255,255,255) 20%);
     background: -webkit-radial-gradient(50% 33.333%, circle, transparent 20%, rgb(255,255,255) 20%);
+}
+
+#aboveFold {
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
 	overflow:hidden;
 }
+
+#aboutMe {
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
+	height: 100%;
+}
+
 
 /* attaches contact methods to the bottom of the contact me section */
 .contactPosition {

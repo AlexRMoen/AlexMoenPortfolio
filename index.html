@@ -31,7 +31,7 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        }, 825);
+        }, 1000);
         return false;
       }
     }
@@ -39,16 +39,26 @@ $(function() {
 });
 </script>
 
+<!-- loads modal expanding JavaScript -->
+<script src="js/ellaModal.js"></script>
+<script src="js/kojiroModal.js"></script>
+<script src="js/trelloModal.js"></script>
+<script src="js/playboyModal.js"></script>
+<script src="js/enterpriseModal.js"></script>
+<script src="js/chirprModal.js"></script>
+
+
 <body class="tealBG">
 
 <!-- BEGIN video stuff *deserves scrutiny and compat with mobile* --> 
 <!-- play the video background - webm, then mp4, then static png --> 
-<!-- VIDEO OFF
+
 <video autoplay loop poster="video/fish1.png" id="bgvid">
+<!-- VIDEO OFF 
   <source src="video/fishHigher60.webm" type="video/webm">
   <source src="video/fishyEdit.mp4" type="video/mp4">
+  -->
 </video>
- -->
 
 <!--[if lt IE 9]>
 <script>
@@ -59,17 +69,17 @@ $(function() {
 <!-- END video stuff *deserves scrutiny and compat with mobile* --> 
 
 <!-- above the fold -->
-<div class="paddingTop1point5em paddingBottom2em heightFull"> 
+<div class="paddingTop1point5em paddingBottom2em heightFull" id="aboveFold"> 
   
   <!-- name and job position -->
-  <div class="leftRightMargin10em title">
-    <h1 class="white shadowHeight1">ALEX MOEN</h1>
-    <h2 class="white shadowHeight1">UX Design <span class="grey">+</span> Art Direction</h2>
+  <div class="leftRightMargin10em" id="title">
+    <h1 class="white dropShadowHeight1">ALEX MOEN</h1>
+    <h2 class="white dropShadowHeight1">UX Design <span class="grey">+</span> Art Direction</h2>
   </div>
   
   <!-- down arrow to indicate scrolling on a full screen --> 
   <a href="#aboutMe">
-  <div class="arrowDown shadowHeight1">
+  <div class="dropShadowHeight1" id="arrowDown">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 22.4" width="100%">
       <style type="text/css">  
 	.arrowDownColor{fill:#FFFFFF;}
@@ -80,7 +90,7 @@ $(function() {
   </a> </div>
 
 <!-- About Me section -->
-<div class="paddingTop3em paddingBottom2em whiteBG shadowHeight1" id="aboutMe">
+<div class="paddingTop3em paddingBottom2em whiteBG dropShadowHeight1" id="aboutMe">
   <div class="leftRightMargin10em"> 
     
     <!-- skill icons -->
@@ -221,77 +231,21 @@ $(function() {
 </div>
 
 <!-- gallery of projects section -->
-<div class="paddingTop1point5em paddingBottom2em tealBG" id="gallery">
-  <h3 class="white shadowHeight1 bold marginBottom1em textCenter" id="myWork">MY WORK</h3>
+<div class="tealBG paddingTop1point5em paddingBottom2em 3daccel" id="gallery">
+  <h3 class="white dropShadowHeight1 bold marginBottom1em textCenter 3daccel" id="myWork">MY WORK</h3>
   
   <!-- wraps the first row of gallery items -->
   <div class="row galleryRow" id="firstRow"> 
     
     <!-- ella gallery section -->
-    <div class="column column-4 whiteBG shadowHeight1 height35 marginBottomGutterWidth box" id="ella"> 
+    <div class="column column-4 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box 3daccel" id="ella"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="ellaHeader"> 
         
         <!-- this link expands a gallery box into a modal --> 
-        <a href="#firstRow" onclick="
-    
-    
-    // makes the background fill the screen
-    document.getElementById('gallery').style.height = '110vh';
-    document.getElementById('myWork').style.opacity = '0';
-    document.getElementById('myWork').style.transform = 'scale(0)';
-    document.getElementById('firstRow').style.paddingTop = '7.5vh';
-    
-    // rescales and fades other line 1 items
-    document.getElementById('kojiro').style.height = '85vh';
-    document.getElementById('kojiro').style.width = '0';
-    document.getElementById('kojiro').style.opacity = '0';
-    document.getElementById('kojiro').style.marginLeft = '0';
-    document.getElementById('trello').style.height = '85vh';
-    document.getElementById('trello').style.width = '0';
-    document.getElementById('trello').style.opacity = '0';
-    document.getElementById('trello').style.marginLeft = '0';
-    
-    // rescales and fades line 2 items
-    document.getElementById('playboy').style.height = '0';
-    document.getElementById('playboy').style.opacity = '0';
-    document.getElementById('enterprise').style.height = '0';
-    document.getElementById('enterprise').style.opacity = '0';
-    document.getElementById('chirpr').style.height = '0';
-    document.getElementById('chirpr').style.opacity = '0';
-    document.getElementById('newitem').style.height = '0';
-    document.getElementById('newitem').style.opacity = '0';
-    
-    // displays left and right arrows
-    // NONE document.getElementById('ellaLeftArrow').style.left = '2.5em';
-    // NONE document.getElementById('ellaLeftArrow').style.opacity = '1';
-    document.getElementById('ellaRightArrow').style.right = '2.5em';
-    document.getElementById('ellaRightArrow').style.opacity = '1';
-    
-    // scales a gallery item into a modal
-    document.getElementById('ella').style.height = '85vh';
-    document.getElementById('ella').style.width = '80%';
-    document.getElementById('ella').style.marginLeft = '10%';
-    document.getElementById('ella').style.marginRight = '10%';
-    document.getElementById('ella').style.overflowX = 'hidden';
-    document.getElementById('ella').style.overflowY = 'scroll';
-    document.getElementById('ellaHeader').style.height = '45%';
-    document.getElementById('ellaMain').style.opacity = '1';
-    document.getElementById('ellaCloseX').style.transform = 'scale(1)';
-    document.getElementById('ellaCloseX').style.opacity = '1';
-    document.getElementById('ellaCloseX').style.right = '12vw';
-    document.getElementById('ellaCloseX').style.top = '11vh';
-    document.getElementById('ellaLabel').style.transform = 'scale(1.3)';
-    document.getElementById('ellaLabel').style.right = '1.75em';
-    document.getElementById('ellaLabel').style.bottom = '3.5em';
-    
-    
-    
-    
-    
-    ">
-        <div class="boxLabel tealBG white shadowHeight2 textRight" id="ellaLabel">
+        <a href="javascript:void(0)" onclick="openEllaModal()">
+        <div class="boxLabel tealBG white boxShadowHeight2 textRight 3daccel" id="ellaLabel">
           <h6>24 hour design challenge</h6>
           <h5>
             ELLA VOLUNTEERING APP</h5>
@@ -300,78 +254,33 @@ $(function() {
         </div>
       
       <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain leftRightMargin5em" id="ellaMain">
+      <div class="modalMain leftRightMargin5em 3daccel" id="ellaMain">
       
       
-
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
 
       
       </div>
  </div>
     
     <!-- kojiro gallery section -->
-    <div class="column column-4 whiteBG shadowHeight1 height35 marginBottomGutterWidth box" id="kojiro"> 
+    <div class="column column-4 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box 3daccel" id="kojiro"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="kojiroHeader"> 
         
         <!-- this link expands a gallery box into a modal --> 
-        <a href="#firstRow" onclick="
+        <a href="javascript:void(0)" onclick="openKojiroModal()">
     
-    
-    // makes the background fill the screen
-    document.getElementById('gallery').style.height = '110vh';
-    document.getElementById('myWork').style.opacity = '0';
-    document.getElementById('myWork').style.transform = 'scale(0)';
-    document.getElementById('firstRow').style.paddingTop = '7.5vh';
-    
-    // rescales and fades other line 1 items
-    document.getElementById('ella').style.height = '85vh';
-    document.getElementById('ella').style.width = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginLeft = '0';
-    document.getElementById('trello').style.height = '85vh';
-    document.getElementById('trello').style.width = '0';
-    document.getElementById('trello').style.opacity = '0';
-    document.getElementById('trello').style.marginLeft = '0';
-    
-    // rescales and fades line 2 items
-    document.getElementById('playboy').style.height = '0';
-    document.getElementById('playboy').style.opacity = '0';
-    document.getElementById('enterprise').style.height = '0';
-    document.getElementById('enterprise').style.opacity = '0';
-    document.getElementById('chirpr').style.height = '0';
-    document.getElementById('chirpr').style.opacity = '0';
-    document.getElementById('newitem').style.height = '0';
-    document.getElementById('newitem').style.opacity = '0';
-    
-    // displays left and right arrows
-    document.getElementById('kojiroLeftArrow').style.left = '2.5em';
-    document.getElementById('kojiroLeftArrow').style.opacity = '1';
-    document.getElementById('kojiroRightArrow').style.right = '2.5em';
-    document.getElementById('kojiroRightArrow').style.opacity = '1';
-    
-    // scales a gallery item into a modal
-    document.getElementById('kojiro').style.height = '85vh';
-    document.getElementById('kojiro').style.width = '80%';
-    document.getElementById('kojiro').style.marginLeft = '10%';
-    document.getElementById('kojiro').style.marginRight = '10%';
-    document.getElementById('kojiro').style.overflowX = 'hidden';
-    document.getElementById('kojiro').style.overflowY = 'scroll';
-    document.getElementById('kojiroHeader').style.height = '45%';
-    document.getElementById('kojiroMain').style.opacity = '1';
-    document.getElementById('kojiroCloseX').style.transform = 'scale(1)';
-    document.getElementById('kojiroCloseX').style.opacity = '1';
-    document.getElementById('kojiroCloseX').style.right = '12vw';
-    document.getElementById('kojiroCloseX').style.top = '11vh';
-    document.getElementById('kojiroLabel').style.transform = 'scale(1.3)';
-    document.getElementById('kojiroLabel').style.right = '1.75em';
-    document.getElementById('kojiroLabel').style.bottom = '3.5em';
-    
-    
-    ">
-    
-    <div class="boxLabel tealBG white textRight shadowHeight2" id="kojiroLabel">
+    <div class="boxLabel tealBG white textRight boxShadowHeight2 3daccel" id="kojiroLabel">
           <h5>KOJIRŌ IZAKAYA</h5>
             <h6>interactive restaurant menu</h6>
         </div>
@@ -417,59 +326,15 @@ $(function() {
  </div>
     
     <!-- trello gallery section -->
-    <div class="column column-4 whiteBG shadowHeight1 height35 marginBottomGutterWidth box" id="trello"> 
+    <div class="column column-4 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box 3daccel" id="trello"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="trelloHeader"> 
         
         <!-- this link expands a gallery box into a modal --> 
-        <a href="#firstRow" onclick="
-    
-    
-    // makes the background fill the screen
-    document.getElementById('gallery').style.height = '110vh';
-    document.getElementById('myWork').style.opacity = '0';
-    document.getElementById('myWork').style.transform = 'scale(0)';
-    document.getElementById('firstRow').style.paddingTop = '7.5vh';
-    
-    // rescales and fades other line 1 items
-    document.getElementById('ella').style.height = '85vh';
-    document.getElementById('ella').style.width = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginLeft = '0';
-    document.getElementById('kojiro').style.height = '85vh';
-    document.getElementById('kojiro').style.width = '0';
-    document.getElementById('kojiro').style.opacity = '0';
-    document.getElementById('kojiro').style.marginLeft = '0';
-    
-    // rescales and fades line 2 items
-    document.getElementById('playboy').style.height = '0';
-    document.getElementById('playboy').style.opacity = '0';
-    document.getElementById('enterprise').style.height = '0';
-    document.getElementById('enterprise').style.opacity = '0';
-    document.getElementById('chirpr').style.height = '0';
-    document.getElementById('chirpr').style.opacity = '0';
-    document.getElementById('newitem').style.height = '0';
-    document.getElementById('newitem').style.opacity = '0';
-    
-    // displays left and right arrows
-    document.getElementById('trelloLeftArrow').style.left = '2.5em';
-    document.getElementById('trelloLeftArrow').style.opacity = '1';
-    document.getElementById('trelloRightArrow').style.right = '2.5em';
-    document.getElementById('trelloRightArrow').style.opacity = '1';
-    
-    // scales a gallery item into a modal
-    document.getElementById('trello').style.height = '85vh';
-    document.getElementById('trello').style.width = '80%';
-    document.getElementById('trello').style.marginLeft = '10%';
-    document.getElementById('trello').style.marginRight = '10%';
-    document.getElementById('trelloHeader').style.height = '35vh';
-    document.getElementById('trelloMain').style.height = '50vh';
-    document.getElementById('trelloMain').style.opacity = '1';
-    document.getElementById('trelloCloseX').style.transform = 'scale(1)';
-    
-    ">    
-    <div class="boxLabel tealBG white textRight" id="trelloLabel">
+        <a href="javascript:void(0)" onclick="openTrelloModal()">
+            
+    <div class="boxLabel tealBG white textRight boxShadowHeight2 3daccel" id="trelloLabel">
           <h5>TRELLO</h5>
             <h6>iOS app proposal</h6>
         </div>
@@ -488,56 +353,7 @@ $(function() {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
       </div>
-      <a href="#gallery" onclick="
-    
-    // resets all gallery elements back to their proper grid format
-    document.getElementById('gallery').style.height = 'auto';
-    document.getElementById('myWork').style.opacity = '1';
-    document.getElementById('myWork').style.transform = 'scale(1)';
-    document.getElementById('firstRow').style.paddingTop = '0';
-    
-    document.getElementById('ella').style.height = '35vh';
-    document.getElementById('ella').style.width = '32.2666666667%';
-    document.getElementById('ella').style.opacity = '1';
-    document.getElementById('ella').style.marginLeft = '0';
-    document.getElementById('kojiro').style.height = '35vh';
-    document.getElementById('kojiro').style.width = '32.2666666667%';
-    document.getElementById('kojiro').style.opacity = '1';
-    document.getElementById('kojiro').style.marginLeft = '1.6%';
-    
-    document.getElementById('playboy').style.height = '35vh';
-    document.getElementById('playboy').style.opacity = '1';
-    document.getElementById('enterprise').style.height = '35vh';
-    document.getElementById('enterprise').style.opacity = '1';
-    document.getElementById('chirpr').style.height = '35vh';
-    document.getElementById('chirpr').style.opacity = '1';
-    document.getElementById('newitem').style.height = '35vh';
-    document.getElementById('newitem').style.opacity = '1';
-    
-    document.getElementById('trelloLeftArrow').style.left = '-2.5em';
-    document.getElementById('trelloLeftArrow').style.opacity = '0';
-    document.getElementById('trelloRightArrow').style.right = '-2.5em';
-    document.getElementById('trelloRightArrow').style.opacity = '0';
-    
-    document.getElementById('trello').style.height = '35vh';
-    document.getElementById('trello').style.width = '32.2666666667%';
-    document.getElementById('trello').style.marginLeft = '1.6%';
-    document.getElementById('trello').style.marginRight = '0';
-    document.getElementById('trelloHeader').style.height = '100%';
-    document.getElementById('trelloMain').style.height = '0';
-    document.getElementById('trelloMain').style.opacity = '0';
-    document.getElementById('trelloCloseX').style.transform = 'scale(0)';
-    
-    ">
-      <div class="closeX" id="trelloCloseX">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" width="100%">
-          <style type="text/css">  
-	.x{fill:#23AEC2;}
-</style>
-          <polygon class="x" points="42 1.4 40.6 0 21 19.6 1.4 0 0 1.4 19.6 21 0 40.6 1.4 42 21 22.4 40.6 42 42 40.6 22.4 21 "/>
-        </svg>
-      </div>
-      </a> </div>
+ </div>
     
     <!-- close X and arrows for each expanded modal in first row --> 
     <!-- close X for ella-->
@@ -579,6 +395,7 @@ $(function() {
     document.getElementById('ella').style.overflowX = 'auto';
     document.getElementById('ella').style.overflowY = 'auto';
     document.getElementById('ellaHeader').style.height = '100%';
+    document.getElementById('ellaMain').style.height = '0';
     document.getElementById('ellaMain').style.opacity = '0';
     document.getElementById('ellaCloseX').style.transform = 'scale(0)';
     document.getElementById('ellaCloseX').style.opacity = '0';
@@ -603,48 +420,6 @@ $(function() {
       
     <!-- left arrow for ella --> 
     <!-- NONE! --> 
-    <!--
-    <a href="#javascript:void(0)" onclick="
- 
-    // closes itself
-    document.getElementById('ella').style.width = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginLeft = '0';
-    document.getElementById('ella').style.marginRight = '0';
-    document.getElementById('ellaHeader').style.height = '100%';
-    document.getElementById('ellaMain').style.height = '0';
-    document.getElementById('ellaMain').style.opacity = '0';
-    document.getElementById('ellaCloseX').style.transform = 'scale(0)';
-    
-    // switches out arrow for the proper item
-    document.getElementById('ellaLeftArrow').style.left = '-2.5em';
-    document.getElementById('ellaLeftArrow').style.opacity = '0';
-    document.getElementById('ellaRightArrow').style.right = '-2.5em';
-    document.getElementById('ellaRightArrow').style.opacity = '0';
-    document.getElementById('kojiroLeftArrow').style.left = '2.5em';
-    document.getElementById('kojiroLeftArrow').style.opacity = '1';
-    document.getElementById('kojiroRightArrow').style.right = '2.5em';
-    document.getElementById('kojiroRightArrow').style.opacity = '1';
-    
-    // moves other modal into place
-    document.getElementById('kojiro').style.height = '85vh';
-    document.getElementById('kojiro').style.width = '80%';
-    document.getElementById('kojiro').style.marginLeft = '10%';
-    document.getElementById('kojiro').style.marginRight = '10%';
-    document.getElementById('kojiro').style.overflow = 'scroll';
-    document.getElementById('kojiro').style.opacity = '1';
-    
-    ">
-    <div class="leftArrow shadowHeight1" id="ellaLeftArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" height="100%">
-        <style type="text/css">  
-	.arrowLeft{fill:#FFFFFF;}
-</style>
-        <polygon class="arrowLeft" points="21 42 22.4 40.6 2.8 21 22.4 1.4 21 0 0 21 "/>
-      </svg>
-    </div>
-    </a> 
-    --> 
     
     <!-- right arrow for ella --> 
     <a href="#javascript:void(0)" onclick="
@@ -682,7 +457,7 @@ $(function() {
     document.getElementById('kojiroCloseX').style.transform = 'scale(1)';
     
     ">
-    <div class="rightArrow shadowHeight1" id="ellaRightArrow">
+    <div class="rightArrow dropShadowHeight1" id="ellaRightArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" width="100%">
         <style type="text/css">  
 	.arrowRight{fill:#FFFFFF;}
@@ -692,8 +467,11 @@ $(function() {
     </div>
     </a> 
     
+
     <!-- close X for kojiro -->
           <a href="#gallery" onclick="
+          
+          
     
     // resets all gallery elements back to their proper grid format
     document.getElementById('gallery').style.height = 'auto';
@@ -731,6 +509,7 @@ $(function() {
     document.getElementById('kojiro').style.overflowX = 'auto';
     document.getElementById('kojiro').style.overflowY = 'auto';
     document.getElementById('kojiroHeader').style.height = '100%';
+    document.getElementById('kojiroMain').style.height = '0';
     document.getElementById('kojiroMain').style.opacity = '0';
     document.getElementById('kojiroCloseX').style.transform = 'scale(0)';
     document.getElementById('kojiroCloseX').style.opacity = '0';
@@ -739,6 +518,10 @@ $(function() {
     document.getElementById('kojiroLabel').style.transform = 'scale(1)';
     document.getElementById('kojiroLabel').style.right = '-0.2em';
     document.getElementById('kojiroLabel').style.bottom = '1.75em';
+    
+
+    
+    
     
     ">
       <div class="closeX" id="kojiroCloseX">
@@ -787,7 +570,7 @@ $(function() {
     document.getElementById('ellaCloseX').style.transform = 'scale(1)';
     
     ">
-    <div class="leftArrow shadowHeight1" id="kojiroLeftArrow">
+    <div class="leftArrow dropShadowHeight1" id="kojiroLeftArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" height="100%">
         <style type="text/css">  
 	.arrowLeft{fill:#FFFFFF;}
@@ -833,7 +616,7 @@ $(function() {
     document.getElementById('trelloCloseX').style.transform = 'scale(1)';
     
     ">
-    <div class="rightArrow shadowHeight1" id="kojiroRightArrow">
+    <div class="rightArrow dropShadowHeight1" id="kojiroRightArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" width="100%">
         <style type="text/css">  
 	.arrowRight{fill:#FFFFFF;}
@@ -879,7 +662,7 @@ $(function() {
     document.getElementById('kojiroCloseX').style.transform = 'scale(1)';
     
     ">
-    <div class="leftArrow shadowHeight1" id="trelloLeftArrow">
+    <div class="leftArrow dropShadowHeight1" id="trelloLeftArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" height="100%">
         <style type="text/css">  
 	.arrowLeft{fill:#FFFFFF;}
@@ -953,7 +736,7 @@ $(function() {
     
     
     ">
-    <div class="rightArrow shadowHeight1" id="trelloRightArrow">
+    <div class="rightArrow dropShadowHeight1" id="trelloRightArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" width="100%">
         <style type="text/css">  
 	.arrowRight{fill:#FFFFFF;}
@@ -961,71 +744,85 @@ $(function() {
         <polygon class="arrowRight" points="1.4 42 0 40.6 19.6 21 0 1.4 1.4 0 22.4 21 "/>
       </svg>
     </div>
-    </a> </div>
+    </a>
+    
+        <!-- close X for ella-->
+          <a href="#gallery" onclick="
+    
+    // resets all gallery elements back to their proper grid format
+    document.getElementById('gallery').style.height = 'auto';
+    document.getElementById('myWork').style.opacity = '1';
+    document.getElementById('myWork').style.transform = 'scale(1)';
+    document.getElementById('firstRow').style.paddingTop = '0';
+    
+    document.getElementById('ella').style.height = '35vh';
+    document.getElementById('ella').style.width = '32.2666666667%';
+    document.getElementById('ella').style.opacity = '1';
+    document.getElementById('ella').style.marginLeft = '1.6%';
+    document.getElementById('trello').style.height = '35vh';
+    document.getElementById('trello').style.width = '32.2666666667%';
+    document.getElementById('trello').style.opacity = '1';
+    document.getElementById('trello').style.marginLeft = '1.6%';
+    
+    document.getElementById('playboy').style.height = '35vh';
+    document.getElementById('playboy').style.opacity = '1';
+    document.getElementById('enterprise').style.height = '35vh';
+    document.getElementById('enterprise').style.opacity = '1';
+    document.getElementById('chirpr').style.height = '35vh';
+    document.getElementById('chirpr').style.opacity = '1';
+    document.getElementById('newitem').style.height = '35vh';
+    document.getElementById('newitem').style.opacity = '1';
+    
+    document.getElementById('trelloLeftArrow').style.left = '-2.5em';
+    document.getElementById('trelloLeftArrow').style.opacity = '0';
+    document.getElementById('trelloRightArrow').style.right = '-2.5em';
+    document.getElementById('trelloRightArrow').style.opacity = '0';
+    
+    document.getElementById('trello').style.height = '35vh';
+    document.getElementById('trello').style.width = '32.2666666667%';
+    document.getElementById('trello').style.marginLeft = '0';
+    document.getElementById('trello').style.marginRight = '0';
+    document.getElementById('trello').style.overflowX = 'auto';
+    document.getElementById('trello').style.overflowY = 'auto';
+    document.getElementById('trelloHeader').style.height = '100%';
+    document.getElementById('trelloMain').style.height = '0';
+    document.getElementById('trelloMain').style.opacity = '0';
+    document.getElementById('trelloCloseX').style.transform = 'scale(0)';
+    document.getElementById('trelloCloseX').style.opacity = '0';
+    document.getElementById('trelloCloseX').style.right = '91.5333333333%';
+    document.getElementById('trelloCloseX').style.top = '50%';
+    document.getElementById('trelloLabel').style.transform = 'scale(1)';
+    document.getElementById('trelloLabel').style.right = '-0.2em';
+    document.getElementById('trelloLabel').style.bottom = '1.75em';
+    
+    
+    
+    ">
+      <div class="closeX" id="trelloCloseX">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" width="100%">
+          <style type="text/css">  
+	.x{fill:#23AEC2;}
+</style>
+          <polygon class="x" points="42 1.4 40.6 0 21 19.6 1.4 0 0 1.4 19.6 21 0 40.6 1.4 42 21 22.4 40.6 42 42 40.6 22.4 21 "/>
+        </svg>
+      </div>
+      </a>
+    
+    </div>
   
   <!-- wraps the second row of gallery items -->
   <div class="row galleryRow" id="secondRow"> 
     
     <!-- playboy gallery section -->
-    <div class="column column-3 whiteBG shadowHeight1 height35 marginBottomGutterWidth box" id="playboy"> 
+    <div class="column column-3 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box 3daccel" id="playboy"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="playboyHeader"> 
         
         <!-- this link expands a gallery box into a modal --> 
-        <a href="#firstRow" onclick="
+        <a href="javascript:void(0)" onclick="openPlayboyModal()">
     
-    
-    // makes the background fill the screen
-    document.getElementById('gallery').style.height = '110vh';
-    document.getElementById('myWork').style.opacity = '0';
-    document.getElementById('myWork').style.transform = 'scale(0)';
-    document.getElementById('firstRow').style.paddingTop = '7.5vh';
-    
-    // rescales and fades line 1 items
-    document.getElementById('ella').style.height = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginBottom = '0';
-    document.getElementById('kojiro').style.height = '0';
-    document.getElementById('kojiro').style.opacity = '0';
-    document.getElementById('kojiro').style.marginBottom = '0';
-    document.getElementById('trello').style.height = '0';
-    document.getElementById('trello').style.opacity = '0';
-    document.getElementById('trello').style.marginBottom = '0';
-    
-    // rescales and fades other line 2 items
-    document.getElementById('enterprise').style.height = '85vh';
-    document.getElementById('enterprise').style.opacity = '0';
-    document.getElementById('enterprise').style.width = '0';
-    document.getElementById('enterprise').style.marginLeft = '0';
-    document.getElementById('chirpr').style.height = '85vh';
-    document.getElementById('chirpr').style.opacity = '0';
-    document.getElementById('chirpr').style.width = '0';
-    document.getElementById('chirpr').style.marginLeft = '0';
-    document.getElementById('newitem').style.height = '85vh';
-    document.getElementById('newitem').style.opacity = '0';
-    document.getElementById('newitem').style.width = '0';
-    document.getElementById('newitem').style.marginLeft = '0';
-    
-    // displays left and right arrows
-    document.getElementById('playboyLeftArrow').style.left = '2.5em';
-    document.getElementById('playboyLeftArrow').style.opacity = '1';
-    document.getElementById('playboyRightArrow').style.right = '2.5em';
-    document.getElementById('playboyRightArrow').style.opacity = '1';
-    
-    // scales a gallery item into a modal
-    document.getElementById('playboy').style.height = '85vh';
-    document.getElementById('playboy').style.width = '80%';
-    document.getElementById('playboy').style.marginLeft = '10%';
-    document.getElementById('playboy').style.marginRight = '10%';
-    document.getElementById('playboyHeader').style.height = '30%';
-    document.getElementById('playboyMain').style.height = '70%';
-    document.getElementById('playboyMain').style.opacity = '1';
-    document.getElementById('playboyCloseX').style.transform = 'scale(1)';
-    
-    ">
-    
-        <div class="boxLabel tealBG white textRight" id="playboyLabel">
+        <div class="boxLabel tealBG white textRight boxShadowHeight2 3daccel" id="playboyLabel">
           <h5>PLAYBOY.COM</h5>
             <h6>writer-focused website proposal</h6>
         </div>
@@ -1099,25 +896,75 @@ $(function() {
         </svg>
       </div>
       </a> </div>
-    <div class="column column-3 whiteBG shadowHeight1 height35 marginBottomGutterWidth box imgFitBox" id="enterprise">
-     
-             <div class="boxLabel tealBG white textRight" id="ellaLabel">
+      
+    
+        <!-- enterprise gallery section -->
+    <div class="column column-3 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box imgFitBox 3daccel" id="enterprise"> 
+      
+      <!-- label for the gallery item becomes modal header -->
+      <div class="modalHeader imgFitBox" id="enterpriseHeader"> 
+        
+        <!-- this link expands a gallery box into a modal --> 
+        <a href="javascript:void(0)" onclick="openEnterpriseModal()">
+            
+        <div class="boxLabel tealBG white textRight boxShadowHeight2 3daccel" id="enterpriseLabel">
           <h5>ENTERPRISE RENT-A-CAR</h5>
             <h6>Car Drop app proposal</h6>
         </div>
-     
-    </div>
-    <div class="column column-3 whiteBG shadowHeight1 height35 marginBottomGutterWidth box imgFitBox" id="chirpr">
+        
+        </a> </div>
       
-        <div class="boxLabel tealBG white textRight" id="ellaLabel">
+      <!-- main section of modal is hidden until expanded -->
+      <div class="modalMain leftRightMargin5em" id="enterpriseMain">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+      </div>
+ </div>
+    
+    
+    
+        <!-- chirpr gallery section -->
+    <div class="column column-3 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box imgFitBox 3daccel" id="chirpr"> 
+      
+      <!-- label for the gallery item becomes modal header -->
+      <div class="modalHeader imgFitBox" id="chirprHeader"> 
+        
+        <!-- this link expands a gallery box into a modal --> 
+        <a href="javascript:void(0)" onclick="openChirprModal()">
+            
+        <div class="boxLabel tealBG white textRight boxShadowHeight2 3daccel" id="chirprLabel">
           <h5>CHIRPR</h5>
             <h6>parody card game</h6>
         </div>
         
-    </div>
-    <div class="column column-3 whiteBG shadowHeight1 height35 marginBottomGutterWidth box imgFitBox" id="newitem">
+        </a> </div>
+      
+      <!-- main section of modal is hidden until expanded -->
+      <div class="modalMain leftRightMargin5em" id="chirprMain">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+      </div>
+ </div>
+    
+    
+    
+    <div class="column column-3 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box imgFitBox 3daccel" id="newitem">
 
-        <div class="boxLabel tealBG white textRight" id="ellaLabel">
+        <div class="boxLabel tealBG white textRight boxShadowHeight2 3daccel" id="ellaLabel">
           <h5>ITEM</h5>
             <h6>item name</h6>
         </div>
@@ -1189,7 +1036,7 @@ $(function() {
     document.getElementById('trelloCloseX').style.transform = 'scale(1)';
     
     ">
-    <div class="leftArrow shadowHeight1" id="playboyLeftArrow">
+    <div class="leftArrow dropShadowHeight1" id="playboyLeftArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" height="100%">
         <style type="text/css">  
 	.arrowLeft{fill:#FFFFFF;}
@@ -1235,7 +1082,7 @@ $(function() {
     document.getElementById('enterpriseCloseX').style.transform = 'scale(1)';
     
     ">
-    <div class="rightArrow shadowHeight1" id="playboyRightArrow">
+    <div class="rightArrow dropShadowHeight1" id="playboyRightArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" width="100%">
         <style type="text/css">  
 	.arrowRight{fill:#FFFFFF;}
@@ -1244,12 +1091,331 @@ $(function() {
       </svg>
     </div>
     </a> </div>
+    
+    
+    <!-- close X for enterprise -->
+          <a href="#gallery" onclick="
+          
+          
+    
+    // resets all gallery elements back to their proper grid format
+    document.getElementById('gallery').style.height = 'auto';
+    document.getElementById('myWork').style.opacity = '1';
+    document.getElementById('myWork').style.transform = 'scale(1)';
+    document.getElementById('firstRow').style.paddingTop = '0';
+    
+    document.getElementById('ella').style.height = '35vh';
+    document.getElementById('ella').style.width = '32.2666666667%';
+    document.getElementById('ella').style.opacity = '1';
+    document.getElementById('ella').style.marginLeft = '0';
+    document.getElementById('trello').style.height = '35vh';
+    document.getElementById('trello').style.width = '32.2666666667%';
+    document.getElementById('trello').style.opacity = '1';
+    document.getElementById('trello').style.marginLeft = '1.6%';
+    
+    document.getElementById('playboy').style.height = '35vh';
+    document.getElementById('playboy').style.opacity = '1';
+    document.getElementById('enterprise').style.height = '35vh';
+    document.getElementById('enterprise').style.opacity = '1';
+    document.getElementById('chirpr').style.height = '35vh';
+    document.getElementById('chirpr').style.opacity = '1';
+    document.getElementById('newitem').style.height = '35vh';
+    document.getElementById('newitem').style.opacity = '1';
+    
+    document.getElementById('kojiroLeftArrow').style.left = '-2.5em';
+    document.getElementById('kojiroLeftArrow').style.opacity = '0';
+    document.getElementById('kojiroRightArrow').style.right = '-2.5em';
+    document.getElementById('kojiroRightArrow').style.opacity = '0';
+    
+    document.getElementById('kojiro').style.height = '35vh';
+    document.getElementById('kojiro').style.width = '32.2666666667%';
+    document.getElementById('kojiro').style.marginLeft = '1.6%';
+    document.getElementById('kojiro').style.marginRight = '0';
+    document.getElementById('kojiro').style.overflowX = 'auto';
+    document.getElementById('kojiro').style.overflowY = 'auto';
+    document.getElementById('kojiroHeader').style.height = '100%';
+    document.getElementById('kojiroMain').style.height = '0';
+    document.getElementById('kojiroMain').style.opacity = '0';
+    document.getElementById('kojiroCloseX').style.transform = 'scale(0)';
+    document.getElementById('kojiroCloseX').style.opacity = '0';
+    document.getElementById('kojiroCloseX').style.right = '50%';
+    document.getElementById('kojiroCloseX').style.top = '50%';
+    document.getElementById('kojiroLabel').style.transform = 'scale(1)';
+    document.getElementById('kojiroLabel').style.right = '-0.2em';
+    document.getElementById('kojiroLabel').style.bottom = '1.75em';
+    
+
+    
+    
+    
+    ">
+      <div class="closeX" id="enterpriseCloseX">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" width="100%">
+          <style type="text/css">  
+	.x{fill:#23AEC2;}
+</style>
+          <polygon class="x" points="42 1.4 40.6 0 21 19.6 1.4 0 0 1.4 19.6 21 0 40.6 1.4 42 21 22.4 40.6 42 42 40.6 22.4 21 "/>
+        </svg>
+      </div>
+      </a>
+    
+    <!-- left arrow for enterprise --> 
+    <a href="#javascript:void(0)" onclick="
+ 
+    // closes itself
+    document.getElementById('kojiro').style.width = '0';
+    document.getElementById('kojiro').style.opacity = '0';
+    document.getElementById('kojiro').style.marginLeft = '0';
+    document.getElementById('kojiro').style.marginRight = '0';
+    document.getElementById('kojiroHeader').style.height = '100%';
+    document.getElementById('kojiroMain').style.height = '0';
+    document.getElementById('kojiroMain').style.opacity = '0';
+    document.getElementById('kojiroCloseX').style.transform = 'scale(0)';
+    
+    // switches out arrow for the proper item
+    document.getElementById('kojiroLeftArrow').style.left = '-2.5em';
+    document.getElementById('kojiroLeftArrow').style.opacity = '0';
+    document.getElementById('kojiroRightArrow').style.right = '-2.5em';
+    document.getElementById('kojiroRightArrow').style.opacity = '0';
+    // NONE document.getElementById('ellaLeftArrow').style.left = '2.5em';
+    // NONE document.getElementById('ellaLeftArrow').style.opacity = '1';
+    document.getElementById('ellaRightArrow').style.right = '2.5em';
+    document.getElementById('ellaRightArrow').style.opacity = '1';
+    
+    // moves other modal into place
+    document.getElementById('ella').style.height = '85vh';
+    document.getElementById('ella').style.width = '80%';
+    document.getElementById('ella').style.marginLeft = '10%';
+    document.getElementById('ella').style.marginRight = '10%';
+    document.getElementById('ella').style.overflow = 'scroll';
+    document.getElementById('ella').style.opacity = '1';
+    document.getElementById('ellaHeader').style.height = '30%';
+    document.getElementById('ellaMain').style.height = '70%';
+    document.getElementById('ellaMain').style.opacity = '1';
+    document.getElementById('ellaCloseX').style.transform = 'scale(1)';
+    
+    ">
+    <div class="leftArrow dropShadowHeight1" id="enterpriseLeftArrow">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" height="100%">
+        <style type="text/css">  
+	.arrowLeft{fill:#FFFFFF;}
+</style>
+        <polygon class="arrowLeft" points="21 42 22.4 40.6 2.8 21 22.4 1.4 21 0 0 21 "/>
+      </svg>
+    </div>
+    </a> 
+    
+    <!-- right arrow for enterprise --> 
+    <a href="#javascript:void(0)" onclick="
+ 
+    // closes itself
+    document.getElementById('kojiro').style.width = '0';
+    document.getElementById('kojiro').style.opacity = '0';
+    document.getElementById('kojiro').style.marginLeft = '0';
+    document.getElementById('kojiro').style.marginRight = '0';
+    document.getElementById('kojiroHeader').style.height = '100%';
+    document.getElementById('kojiroMain').style.height = '0';
+    document.getElementById('kojiroMain').style.opacity = '0';
+    document.getElementById('kojiroCloseX').style.transform = 'scale(0)';
+    
+    // switches out arrow for the proper item
+    document.getElementById('kojiroLeftArrow').style.left = '-2.5em';
+    document.getElementById('kojiroLeftArrow').style.opacity = '0';
+    document.getElementById('kojiroRightArrow').style.right = '-2.5em';
+    document.getElementById('kojiroRightArrow').style.opacity = '0';
+    document.getElementById('trelloLeftArrow').style.left = '2.5em';
+    document.getElementById('trelloLeftArrow').style.opacity = '1';
+    document.getElementById('trelloRightArrow').style.right = '2.5em';
+    document.getElementById('trelloRightArrow').style.opacity = '1';
+    
+    // moves other modal into place
+    document.getElementById('trello').style.height = '85vh';
+    document.getElementById('trello').style.width = '80%';
+    document.getElementById('trello').style.marginLeft = '10%';
+    document.getElementById('trello').style.marginRight = '10%';
+    document.getElementById('trello').style.overflow = 'scroll';
+    document.getElementById('trello').style.opacity = '1';
+    document.getElementById('trelloHeader').style.height = '30%';
+    document.getElementById('trelloMain').style.height = '70%';
+    document.getElementById('trelloMain').style.opacity = '1';
+    document.getElementById('trelloCloseX').style.transform = 'scale(1)';
+    
+    ">
+    <div class="rightArrow dropShadowHeight1" id="enterpriseRightArrow">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" width="100%">
+        <style type="text/css">  
+	.arrowRight{fill:#FFFFFF;}
+</style>
+        <polygon class="arrowRight" points="1.4 42 0 40.6 19.6 21 0 1.4 1.4 0 22.4 21 "/>
+      </svg>
+    </div>
+    </a> 
+    
+    
+    <!-- close X for chirpr -->
+          <a href="#gallery" onclick="
+          
+          
+    
+    // resets all gallery elements back to their proper grid format
+    document.getElementById('gallery').style.height = 'auto';
+    document.getElementById('myWork').style.opacity = '1';
+    document.getElementById('myWork').style.transform = 'scale(1)';
+    document.getElementById('firstRow').style.paddingTop = '0';
+    
+    document.getElementById('ella').style.height = '35vh';
+    document.getElementById('ella').style.width = '32.2666666667%';
+    document.getElementById('ella').style.opacity = '1';
+    document.getElementById('ella').style.marginLeft = '0';
+    document.getElementById('trello').style.height = '35vh';
+    document.getElementById('trello').style.width = '32.2666666667%';
+    document.getElementById('trello').style.opacity = '1';
+    document.getElementById('trello').style.marginLeft = '1.6%';
+    
+    document.getElementById('playboy').style.height = '35vh';
+    document.getElementById('playboy').style.opacity = '1';
+    document.getElementById('enterprise').style.height = '35vh';
+    document.getElementById('enterprise').style.opacity = '1';
+    document.getElementById('chirpr').style.height = '35vh';
+    document.getElementById('chirpr').style.opacity = '1';
+    document.getElementById('newitem').style.height = '35vh';
+    document.getElementById('newitem').style.opacity = '1';
+    
+    document.getElementById('kojiroLeftArrow').style.left = '-2.5em';
+    document.getElementById('kojiroLeftArrow').style.opacity = '0';
+    document.getElementById('kojiroRightArrow').style.right = '-2.5em';
+    document.getElementById('kojiroRightArrow').style.opacity = '0';
+    
+    document.getElementById('kojiro').style.height = '35vh';
+    document.getElementById('kojiro').style.width = '32.2666666667%';
+    document.getElementById('kojiro').style.marginLeft = '1.6%';
+    document.getElementById('kojiro').style.marginRight = '0';
+    document.getElementById('kojiro').style.overflowX = 'auto';
+    document.getElementById('kojiro').style.overflowY = 'auto';
+    document.getElementById('kojiroHeader').style.height = '100%';
+    document.getElementById('kojiroMain').style.height = '0';
+    document.getElementById('kojiroMain').style.opacity = '0';
+    document.getElementById('kojiroCloseX').style.transform = 'scale(0)';
+    document.getElementById('kojiroCloseX').style.opacity = '0';
+    document.getElementById('kojiroCloseX').style.right = '50%';
+    document.getElementById('kojiroCloseX').style.top = '50%';
+    document.getElementById('kojiroLabel').style.transform = 'scale(1)';
+    document.getElementById('kojiroLabel').style.right = '-0.2em';
+    document.getElementById('kojiroLabel').style.bottom = '1.75em';
+    
+
+    
+    
+    
+    ">
+      <div class="closeX" id="chirprCloseX">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" width="100%">
+          <style type="text/css">  
+	.x{fill:#23AEC2;}
+</style>
+          <polygon class="x" points="42 1.4 40.6 0 21 19.6 1.4 0 0 1.4 19.6 21 0 40.6 1.4 42 21 22.4 40.6 42 42 40.6 22.4 21 "/>
+        </svg>
+      </div>
+      </a>
+    
+    <!-- left arrow for chirpr --> 
+    <a href="#javascript:void(0)" onclick="
+ 
+    // closes itself
+    document.getElementById('kojiro').style.width = '0';
+    document.getElementById('kojiro').style.opacity = '0';
+    document.getElementById('kojiro').style.marginLeft = '0';
+    document.getElementById('kojiro').style.marginRight = '0';
+    document.getElementById('kojiroHeader').style.height = '100%';
+    document.getElementById('kojiroMain').style.height = '0';
+    document.getElementById('kojiroMain').style.opacity = '0';
+    document.getElementById('kojiroCloseX').style.transform = 'scale(0)';
+    
+    // switches out arrow for the proper item
+    document.getElementById('kojiroLeftArrow').style.left = '-2.5em';
+    document.getElementById('kojiroLeftArrow').style.opacity = '0';
+    document.getElementById('kojiroRightArrow').style.right = '-2.5em';
+    document.getElementById('kojiroRightArrow').style.opacity = '0';
+    // NONE document.getElementById('ellaLeftArrow').style.left = '2.5em';
+    // NONE document.getElementById('ellaLeftArrow').style.opacity = '1';
+    document.getElementById('ellaRightArrow').style.right = '2.5em';
+    document.getElementById('ellaRightArrow').style.opacity = '1';
+    
+    // moves other modal into place
+    document.getElementById('ella').style.height = '85vh';
+    document.getElementById('ella').style.width = '80%';
+    document.getElementById('ella').style.marginLeft = '10%';
+    document.getElementById('ella').style.marginRight = '10%';
+    document.getElementById('ella').style.overflow = 'scroll';
+    document.getElementById('ella').style.opacity = '1';
+    document.getElementById('ellaHeader').style.height = '30%';
+    document.getElementById('ellaMain').style.height = '70%';
+    document.getElementById('ellaMain').style.opacity = '1';
+    document.getElementById('ellaCloseX').style.transform = 'scale(1)';
+    
+    ">
+    <div class="leftArrow dropShadowHeight1" id="chirprLeftArrow">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" height="100%">
+        <style type="text/css">  
+	.arrowLeft{fill:#FFFFFF;}
+</style>
+        <polygon class="arrowLeft" points="21 42 22.4 40.6 2.8 21 22.4 1.4 21 0 0 21 "/>
+      </svg>
+    </div>
+    </a> 
+    
+    <!-- right arrow for chirpr --> 
+    <a href="#javascript:void(0)" onclick="
+ 
+    // closes itself
+    document.getElementById('kojiro').style.width = '0';
+    document.getElementById('kojiro').style.opacity = '0';
+    document.getElementById('kojiro').style.marginLeft = '0';
+    document.getElementById('kojiro').style.marginRight = '0';
+    document.getElementById('kojiroHeader').style.height = '100%';
+    document.getElementById('kojiroMain').style.height = '0';
+    document.getElementById('kojiroMain').style.opacity = '0';
+    document.getElementById('kojiroCloseX').style.transform = 'scale(0)';
+    
+    // switches out arrow for the proper item
+    document.getElementById('kojiroLeftArrow').style.left = '-2.5em';
+    document.getElementById('kojiroLeftArrow').style.opacity = '0';
+    document.getElementById('kojiroRightArrow').style.right = '-2.5em';
+    document.getElementById('kojiroRightArrow').style.opacity = '0';
+    document.getElementById('trelloLeftArrow').style.left = '2.5em';
+    document.getElementById('trelloLeftArrow').style.opacity = '1';
+    document.getElementById('trelloRightArrow').style.right = '2.5em';
+    document.getElementById('trelloRightArrow').style.opacity = '1';
+    
+    // moves other modal into place
+    document.getElementById('trello').style.height = '85vh';
+    document.getElementById('trello').style.width = '80%';
+    document.getElementById('trello').style.marginLeft = '10%';
+    document.getElementById('trello').style.marginRight = '10%';
+    document.getElementById('trello').style.overflow = 'scroll';
+    document.getElementById('trello').style.opacity = '1';
+    document.getElementById('trelloHeader').style.height = '30%';
+    document.getElementById('trelloMain').style.height = '70%';
+    document.getElementById('trelloMain').style.opacity = '1';
+    document.getElementById('trelloCloseX').style.transform = 'scale(1)';
+    
+    ">
+    <div class="rightArrow dropShadowHeight1" id="chirprRightArrow">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" width="100%">
+        <style type="text/css">  
+	.arrowRight{fill:#FFFFFF;}
+</style>
+        <polygon class="arrowRight" points="1.4 42 0 40.6 19.6 21 0 1.4 1.4 0 22.4 21 "/>
+      </svg>
+    </div>
+    </a> 
+    
 </div>
 
 <!-- contact me section -->
-<div class="paddingBottom1point5em shadowHeight1 textCenter heightFull" id="porthole">
+<div class="paddingBottom1point5em dropShadowHeight1 textCenter heightFull" id="porthole">
   <div class="contactPosition transitionAll0point5" id="contactMe">
-    <h3 class="teal bold marginBottomPoint75em"> CONTACT ME </h3>
+    <h3 class="teal bold marginBottomPoint75em">CONTACT ME</h3>
     <div class="leftRightMargin10em"> 
       
       <!-- contact methods -->
@@ -1332,5 +1498,6 @@ $(function() {
     </div>
   </div>
 </div>
+
 </body>
 </html>
