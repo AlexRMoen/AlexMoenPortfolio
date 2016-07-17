@@ -1,6 +1,9 @@
 // JavaScript Document
 
 function openEllaModal() {
+	
+	
+        document.getElementById('bgvid').style.display = 'none';
 
 var scrollingToGallery = true;
 
@@ -9,10 +12,9 @@ if (scrollingToGallery == true) {
     $(document).ready(function() {
          $('html, body').animate({
            'scrollTop':   $('#gallery').offset().top
-         }, 2000);
+         }, 400);
 		 
-		// makes the background fill the screen
-        document.getElementById('gallery').style.height = '100vh';
+		document.getElementById('gallery').style.padding = '0';
 		 
 		
 		 
@@ -23,18 +25,17 @@ if (scrollingToGallery == true) {
 			 setTimeout(function() {
  
          // closes other elements on screen
-        document.getElementById('bgvid').style.display = 'none';
         document.getElementById('aboveFold').style.display = 'none';
         document.getElementById('aboutMe').style.display = 'none';
         document.getElementById('porthole').style.display = 'none';
  
-}, 2200);
+}, 400);
 
 
 setTimeout(function() {
 			 
 			 
-        document.getElementById('gallery').style.padding = '0';
+        
     document.getElementById('myWork').style.opacity = '0';
     document.getElementById('myWork').style.transform = 'scale(0)';
     document.getElementById('myWork').style.height = '0';
@@ -88,7 +89,7 @@ setTimeout(function() {
     document.getElementById('ellaLabel').style.transform = 'scale(1.3)';
     document.getElementById('ellaLabel').style.bottom = '3.75em';
 	
-	}, 2400);
+	}, 400);
 	
 	
 	
