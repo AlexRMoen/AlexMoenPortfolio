@@ -191,8 +191,8 @@ video#bgvid {
 /* div behaviors */
 /* gallery box transition rules */
 .box {
-	-webkit-transition: all 1s ease-out;
-	transition: all 1s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
 }
 .3daccel {
    -webkit-transform: translateZ(0);
@@ -230,8 +230,8 @@ video#bgvid {
 	padding-right: 2em;
 	bottom: 1.75em;
 	transform-origin: 100% 0;
-	-webkit-transition: all 1s ease-out;
-	transition: all 1s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
 }
 
 
@@ -299,8 +299,8 @@ video#bgvid {
 
 /* gallery items */
 #gallery {
-	-webkit-transition: all 1s ease-out;
-	transition: all 1s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
 	height: 100vh;
 }
 
@@ -323,16 +323,16 @@ video#bgvid {
 .modalHeader {
 	height: 100%;
 	max-width: 100%;
-	-webkit-transition: all 1s ease-out;
-	transition: all 1s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
 	position: relative;
 }
 
 .modalMain {
 	height: 0%;
 	max-width: 100%;
-	-webkit-transition: height 1s ease-out, width 0.75s ease-out;
-	transition: height 1s ease-out, width 0.75s ease-out;
+	-webkit-transition: height 0.5s ease-out, width 0.5s ease-out;
+	transition: height 0.5s ease-out, width 0.5s ease-out;
 	opacity: 0;
 	-webkit-transition: opacity 2s ease-out;
 	transition: opacity 2s ease-out;
@@ -345,8 +345,8 @@ video#bgvid {
 	width: 1.75em;
 	transform: scale(0);
 	opacity: 0;
-	-webkit-transition: all 1s ease-out;
-	transition: all 1s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
 	z-index: 999;
 }
 
@@ -364,8 +364,8 @@ video#bgvid {
 	left: -2.5em;
 	top: 50%;
 	transform: translateY(-50%);
-	-webkit-transition: all 1s ease-out;
-	transition: all 1s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
 	opacity: 0;
 }
 
@@ -375,8 +375,8 @@ video#bgvid {
 	right: -2.5em;
 	top: 50%;
 	transform: translateY(-50%);
-	-webkit-transition: all 1s ease-out;
-	transition: all 1s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
 	opacity: 0;
 }
 

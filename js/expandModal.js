@@ -1,51 +1,45 @@
 // JavaScript Document
 
 function openEllaModal() {
-	
-	
-        document.getElementById('bgvid').style.display = 'none';
 
-var scrollingToGallery = true;
-
-if (scrollingToGallery == true) {
 (function($) {
+	
+	// stops the video for added resources
+	document.getElementById('bgvid').style.display = 'none';
+	
     $(document).ready(function() {
+		 // scrolls to the top of the gallery div
          $('html, body').animate({
            'scrollTop':   $('#gallery').offset().top
-         }, 400);
+         }, 500); 
+	});
+	 
+	 
+	// removes all padding from the gallery
+	document.getElementById('gallery').style.padding = '0';
 		 
-		document.getElementById('gallery').style.padding = '0';
-		 
-		
-		 
-		     });
-			 
-			 
-			 
-			 setTimeout(function() {
- 
-         // closes other elements on screen
-        document.getElementById('aboveFold').style.display = 'none';
-        document.getElementById('aboutMe').style.display = 'none';
-        document.getElementById('porthole').style.display = 'none';
- 
-}, 400);
-
-
-setTimeout(function() {
-			 
-			 
-        
-    document.getElementById('myWork').style.opacity = '0';
+	// removes the visual of the gallery title
+	document.getElementById('myWork').style.opacity = '0';
     document.getElementById('myWork').style.transform = 'scale(0)';
+			 
+			 
+			 
+	setTimeout(function() {
+ 
+    // closes other elements on screen
+    document.getElementById('aboveFold').style.display = 'none';
+    document.getElementById('title').style.display = 'none';
+    document.getElementById('arrowDown').style.display = 'none';
+    document.getElementById('aboutMe').style.display = 'none';
+    document.getElementById('porthole').style.display = 'none';
+
+    // removes the gallery title
     document.getElementById('myWork').style.height = '0';
     document.getElementById('myWork').style.marginBottom = '0';
-        document.getElementById('firstRow').style.paddingTop = '7.5vh';
-        document.getElementById('title').style.display = 'none';
-        document.getElementById('arrowDown').style.display = 'none';
-        
+	
+	// adds the padding to accurately position the modal
+    document.getElementById('firstRow').style.paddingTop = '7.5vh';
 
-    
     // rescales and fades other line 1 items
     document.getElementById('kojiro').style.height = '85vh';
     document.getElementById('kojiro').style.width = '0';
@@ -89,22 +83,9 @@ setTimeout(function() {
     document.getElementById('ellaLabel').style.transform = 'scale(1.3)';
     document.getElementById('ellaLabel').style.bottom = '3.75em';
 	
-	}, 400);
-	
-	
-	
-			 
-			 
+	}, 500);
+		 
 })(jQuery);
-}
-
-	
-	
-	
-
-
-
-
 
 
 }
