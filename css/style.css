@@ -358,6 +358,10 @@ video#bgvid {
 	right: 50%;
 }
 
+#trelloCloseX {
+	right: 6.86666666667%;
+}
+
 .leftArrow {
 	position: absolute;
 	width: 2em;
