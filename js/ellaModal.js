@@ -191,11 +191,11 @@ function ellaRightArrow() {
     document.getElementById('ellaMain').style.height = '0';
     document.getElementById('ellaMain').style.opacity = '0';
     document.getElementById('ellaCloseX').style.transform = 'scale(0)';
-    document.getElementById('kojiroCloseX').style.opacity = '0';
-    document.getElementById('kojiroCloseX').style.right = '91.5333333333%';
-    document.getElementById('kojiroCloseX').style.top = '50%';
-    document.getElementById('kojiroLabel').style.transform = 'scale(1)';
-    document.getElementById('kojiroLabel').style.bottom = '1.75em';
+    document.getElementById('ellaCloseX').style.opacity = '0';
+    document.getElementById('ellaCloseX').style.right = '91.5333333333%';
+    document.getElementById('ellaCloseX').style.top = '50%';
+    document.getElementById('ellaLabel').style.transform = 'scale(1)';
+    document.getElementById('ellaLabel').style.bottom = '1.75em';
     
     // switches out arrow for the proper item
     // NONE document.getElementById('ellaLeftArrow').style.left = '-2.5em';
