@@ -100,7 +100,7 @@ function kojiroOpenModal() {
 function kojiroCloseX() {
 	
 	// changes the height of the wrapper around the gallery
-	document.getElementById('galleryHeightWrapper').style.minHeight = 'auto';
+	document.getElementById('galleryHeightWrapper').style.minHeight = '100%';
 	
 	// adds the padding to accurately position the modal
     document.getElementById('firstRow').style.paddingTop = '0';
