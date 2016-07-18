@@ -25,6 +25,8 @@ function ellaOpenModal() {
 			 
 			 
 	setTimeout(function() {
+		
+		tempScrollTop = $(window).scrollTop();
  
     // closes other elements on screen
     document.getElementById('aboveFold').style.display = 'none';
@@ -95,13 +97,11 @@ function ellaCloseX() {
 	
 	
 	
-	
-	
 	// adds the padding to accurately position the modal
     document.getElementById('firstRow').style.paddingTop = '0';
 	
 	// removes all padding from the gallery
-	// document.getElementById('gallery').style.padding = '0';
+	document.getElementById('gallery').style.paddingTop = '1.5em';
 	
 	// rescales and fades-in other line 1 items
     document.getElementById('kojiro').style.height = '35vh';
@@ -161,15 +161,10 @@ function ellaCloseX() {
     document.getElementById('aboutMe').style.display = 'block';
     document.getElementById('porthole').style.display = 'block';
 	
+	$(window).scrollTop(tempScrollTop);
+	
 	// starts the video
 	document.getElementById('bgvid').style.display = 'block';
-	
-	    $(document).ready(function() {
-		 // scrolls to the top of the gallery div
-         $('html, body').animate({
-           'scrollTop':   $('#gallery').offset().top
-         }, 1000); 
-	});
 	
 }
 
