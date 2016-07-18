@@ -15,6 +15,9 @@ function newitemOpenModal() {
 	});
 	 
 	 
+	// changes the height of the wrapper around the gallery
+	document.getElementById('galleryHeightWrapper').style.minHeight = '100vh';
+	 
 	// removes all padding from the gallery
 	document.getElementById('gallery').style.padding = '0';
 		 
@@ -25,6 +28,8 @@ function newitemOpenModal() {
 			 
 			 
 	setTimeout(function() {
+		
+	tempScrollTop = $(window).scrollTop();
  
     // closes other elements on screen
     document.getElementById('aboveFold').style.display = 'none';

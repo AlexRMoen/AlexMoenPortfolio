@@ -29,7 +29,7 @@ function ellaOpenModal() {
 			 
 	setTimeout(function() {
 		
-		tempScrollTop = $(window).scrollTop();
+	tempScrollTop = $(window).scrollTop();
  
     // closes other elements on screen
     document.getElementById('aboveFold').style.display = 'none';
