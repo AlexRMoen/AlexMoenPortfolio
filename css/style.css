@@ -424,6 +424,7 @@ video#bgvid {
 	position: relative;
 	background: radial-gradient(circle 20% at 50% 33.333%, transparent 20%, rgb(255,255,255) 20%);
     background: -webkit-radial-gradient(50% 33.333%, circle, transparent 20%, rgb(255,255,255) 20%);
+	background: -moz-radial-gradient(50% 33.333%, circle, transparent 20%, rgb(255,255,255) 20%);
 }
 
 #aboveFold {

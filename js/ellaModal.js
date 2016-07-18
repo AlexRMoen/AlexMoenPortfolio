@@ -162,6 +162,8 @@ function ellaCloseX() {
 	document.getElementById('myWork').style.opacity = '1';
     document.getElementById('myWork').style.transform = 'scale(1)';
 	
+	setTimeout(function() {
+	
 	// opens other elements on screen
     document.getElementById('aboveFold').style.display = 'block';
     document.getElementById('title').style.display = 'block';
@@ -173,6 +175,8 @@ function ellaCloseX() {
 	
 	// starts the video
 	document.getElementById('bgvid').style.display = 'block';
+	
+	}, 500);
 	
 }
 
