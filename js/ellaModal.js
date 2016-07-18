@@ -140,7 +140,10 @@ function ellaCloseX() {
     document.getElementById('ella').style.marginLeft = '0';
     document.getElementById('ella').style.marginRight = '0';
     document.getElementById('ella').style.overflowX = 'auto';
-    document.getElementById('ella').style.overflowY = 'auto';
+    document.getElementById('ella').style.overflowY = 'hidden';
+	
+	$("#ella").animate({ scrollTop: 0 }, 500);
+	
     document.getElementById('ellaHeader').style.height = '100%';
     document.getElementById('ellaMain').style.height = '0';
     document.getElementById('ellaMain').style.opacity = '0';

@@ -141,7 +141,10 @@ function kojiroCloseX() {
     document.getElementById('kojiro').style.marginLeft = '1.6%';
     document.getElementById('kojiro').style.marginRight = '0';
     document.getElementById('kojiro').style.overflowX = 'auto';
-    document.getElementById('kojiro').style.overflowY = 'auto';
+    document.getElementById('kojiro').style.overflowY = 'hidden';
+	
+	$("#kojiro").animate({ scrollTop: 0 }, 500);
+	
     document.getElementById('kojiroHeader').style.height = '100%';
     document.getElementById('kojiroMain').style.height = '0';
     document.getElementById('kojiroMain').style.opacity = '0';
