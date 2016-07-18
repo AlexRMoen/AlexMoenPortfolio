@@ -55,10 +55,10 @@ $(function() {
 <!-- play the video background - webm, then mp4, then static png --> 
 
 <video autoplay loop poster="video/fish1.png" id="bgvid">
-<!-- VIDEO OFF 
+<!-- VIDEO OFF -->
   <source src="video/fishHigher60.webm" type="video/webm">
   <source src="video/fishyEdit.mp4" type="video/mp4">
-  -->
+  
 </video>
 
 <!--[if lt IE 9]>
@@ -400,41 +400,7 @@ $(function() {
       </a>
     
     <!-- left arrow for kojiro --> 
-    <a href="#javascript:void(0)" onclick="
- 
-    // closes itself
-    document.getElementById('kojiro').style.width = '0';
-    document.getElementById('kojiro').style.opacity = '0';
-    document.getElementById('kojiro').style.marginLeft = '0';
-    document.getElementById('kojiro').style.marginRight = '0';
-    document.getElementById('kojiroHeader').style.height = '100%';
-    document.getElementById('kojiroMain').style.height = '0';
-    document.getElementById('kojiroMain').style.opacity = '0';
-    document.getElementById('kojiroCloseX').style.transform = 'scale(0)';
-    
-    // switches out arrow for the proper item
-    document.getElementById('kojiroLeftArrow').style.left = '-2.5em';
-    document.getElementById('kojiroLeftArrow').style.opacity = '0';
-    document.getElementById('kojiroRightArrow').style.right = '-2.5em';
-    document.getElementById('kojiroRightArrow').style.opacity = '0';
-    // NONE document.getElementById('ellaLeftArrow').style.left = '2.5em';
-    // NONE document.getElementById('ellaLeftArrow').style.opacity = '1';
-    document.getElementById('ellaRightArrow').style.right = '2.5em';
-    document.getElementById('ellaRightArrow').style.opacity = '1';
-    
-    // moves other modal into place
-    document.getElementById('ella').style.height = '85vh';
-    document.getElementById('ella').style.width = '80%';
-    document.getElementById('ella').style.marginLeft = '10%';
-    document.getElementById('ella').style.marginRight = '10%';
-    document.getElementById('ella').style.overflow = 'scroll';
-    document.getElementById('ella').style.opacity = '1';
-    document.getElementById('ellaHeader').style.height = '30%';
-    document.getElementById('ellaMain').style.height = '70%';
-    document.getElementById('ellaMain').style.opacity = '1';
-    document.getElementById('ellaCloseX').style.transform = 'scale(1)';
-    
-    ">
+    <a href="#javascript:void(0)" onclick="kojiroLeftArrow()">
     <div class="leftArrow dropShadowHeight1" id="kojiroLeftArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" height="100%">
         <style type="text/css">  
@@ -773,7 +739,7 @@ $(function() {
         <a href="javascript:void(0)" onclick="enterpriseOpenModal()">
             
         <div class="boxLabel tealBG white textRight boxShadowHeight2 3daccel" id="enterpriseLabel">
-          <h5>ENTERPRISE RENT-A-CAR</h5>
+          <h5>ENTERPRISE<br>RENT-A-CAR</h5>
             <h6>Car Drop app proposal</h6>
         </div>
         
