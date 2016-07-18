@@ -61,12 +61,20 @@ video#bgvid {
 	padding-top: 1.5em;
 }
 
+.paddingTop2em {
+	padding-top: 2em;
+}
+
 .paddingTop3em {
 	padding-top: 3em;
 }
 
 .paddingBottom2em {
 	padding-bottom: 2em;
+}
+
+.paddingBottom3em {
+	padding-bottom: 3em;
 }
 
 .paddingLeft2em {
@@ -224,10 +232,10 @@ video#bgvid {
 .boxLabel {
 	position: absolute;
 	right: 0;
-	padding-left: 1.25em; 
+	padding-left: 1.3em; 
 	padding-top: 0.5em; 
 	padding-bottom: 0.5em; 
-	padding-right: 2em;
+	padding-right: 1.35em;
 	bottom: 1.75em;
 	transform-origin: 100% 0;
 	-webkit-transition: all 0.5s ease-out;
