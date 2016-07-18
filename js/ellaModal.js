@@ -216,8 +216,11 @@ function ellaRightArrow() {
     document.getElementById('kojiro').style.width = '80%';
     document.getElementById('kojiro').style.marginLeft = '10%';
     document.getElementById('kojiro').style.marginRight = '10%';
-    document.getElementById('kojiro').style.overflowX = 'hidden';
-    document.getElementById('kojiro').style.overflowY = 'scroll';
+    document.getElementById('ella').style.overflowX = 'auto';
+    document.getElementById('ella').style.overflowY = 'hidden';
+	
+	$("#ella").animate({ scrollTop: 0 }, 500);
+	
     document.getElementById('kojiro').style.opacity = '1';
     document.getElementById('kojiroHeader').style.height = '55%';
     document.getElementById('kojiroMain').style.height = '45%';
