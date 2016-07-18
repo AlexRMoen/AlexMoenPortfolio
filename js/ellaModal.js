@@ -15,6 +15,9 @@ function ellaOpenModal() {
 	});
 	 
 	 
+	// changes the height of the wrapper around the gallery
+	document.getElementById('galleryHeightWrapper').style.minHeight = '100vh';
+	 
 	// removes all padding from the gallery
 	document.getElementById('gallery').style.padding = '0';
 		 
@@ -95,13 +98,15 @@ function ellaOpenModal() {
 
 function ellaCloseX() {
 	
-	
+	// changes the height of the wrapper around the gallery
+	document.getElementById('galleryHeightWrapper').style.minHeight = 'auto';
 	
 	// adds the padding to accurately position the modal
     document.getElementById('firstRow').style.paddingTop = '0';
 	
-	// removes all padding from the gallery
+	// adds padding back to the gallery
 	document.getElementById('gallery').style.paddingTop = '1.5em';
+	document.getElementById('gallery').style.paddingBottom = '2em';
 	
 	// rescales and fades-in other line 1 items
     document.getElementById('kojiro').style.height = '35vh';
