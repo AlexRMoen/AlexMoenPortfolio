@@ -234,11 +234,15 @@ function trelloLeftArrow() {
 
 function trelloRightArrow() {
 	
+	
 // closes itself
-    document.getElementById('trello').style.width = '0';
+
+    document.getElementById('trello').style.height = '0';
+    document.getElementById('trello').style.width = '32.2666666667%';
     document.getElementById('trello').style.opacity = '0';
-    document.getElementById('trello').style.marginLeft = '0';
+    document.getElementById('trello').style.marginLeft = '1.6%';
     document.getElementById('trello').style.marginRight = '0';
+    document.getElementById('trello').style.marginBottom = '0';
     document.getElementById('trelloHeader').style.height = '100%';
     document.getElementById('trelloMain').style.height = '0';
     document.getElementById('trelloMain').style.opacity = '0';
@@ -263,6 +267,33 @@ function trelloRightArrow() {
     document.getElementById('playboyLeftArrow').style.opacity = '1';
     document.getElementById('playboyRightArrow').style.right = '2.5em';
     document.getElementById('playboyRightArrow').style.opacity = '1';
+	
+	// resizes top row items
+    document.getElementById('ella').style.height = '0';
+    document.getElementById('ella').style.width = '32.2666666667%';
+    document.getElementById('ella').style.opacity = '0';
+    document.getElementById('ella').style.marginBottom = '0';
+    document.getElementById('kojiro').style.height = '0';
+    document.getElementById('kojiro').style.width = '32.2666666667%';
+    document.getElementById('kojiro').style.opacity = '0';
+    document.getElementById('kojiro').style.marginBottom = '0';
+    document.getElementById('kojiro').style.marginLeft = '1.6%';
+    
+    
+    // resizes bottom row items
+    document.getElementById('enterprise').style.height = '85vh';
+    document.getElementById('enterprise').style.opacity = '0';
+    document.getElementById('enterprise').style.width = '0';
+    document.getElementById('enterprise').style.marginLeft = '0';
+    document.getElementById('chirpr').style.height = '85vh';
+    document.getElementById('chirpr').style.opacity = '0';
+    document.getElementById('chirpr').style.width = '0';
+    document.getElementById('chirpr').style.marginLeft = '0';
+    document.getElementById('newitem').style.height = '85vh';
+    document.getElementById('newitem').style.opacity = '0';
+    document.getElementById('newitem').style.width = '0';
+    document.getElementById('newitem').style.marginLeft = '0';
+    
     
     // moves other modal into place
     document.getElementById('playboy').style.height = '85vh';
@@ -284,5 +315,3 @@ function trelloRightArrow() {
 	
 }
 
-
-    
