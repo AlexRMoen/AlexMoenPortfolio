@@ -234,5 +234,57 @@ function kojiroLeftArrow() {
 	
 }
 
+function kojiroRightArrow() {
+	
+// closes itself
+    document.getElementById('kojiro').style.width = '0';
+    document.getElementById('kojiro').style.opacity = '0';
+    document.getElementById('kojiro').style.marginLeft = '0';
+    document.getElementById('kojiro').style.marginRight = '0';
+    document.getElementById('kojiroHeader').style.height = '100%';
+    document.getElementById('kojiroMain').style.height = '0';
+    document.getElementById('kojiroMain').style.opacity = '0';
+	document.getElementById('kojiro').style.overflowX = 'auto';
+    document.getElementById('kojiro').style.overflowY = 'hidden';
+	
+	$("#ella").animate({ scrollTop: 0 }, 500);
+	
+    document.getElementById('kojiroCloseX').style.transform = 'scale(0)';
+    document.getElementById('kojiroCloseX').style.opacity = '0';
+    document.getElementById('kojiroCloseX').style.right = '91.5333333333%';
+    document.getElementById('kojiroCloseX').style.top = '50%';
+    document.getElementById('kojiroLabel').style.transform = 'scale(1)';
+    document.getElementById('kojiroLabel').style.bottom = '1.75em';
+    
+    // switches out arrow for the proper item
+    document.getElementById('kojiroLeftArrow').style.left = '-2.5em';
+    document.getElementById('kojiroLeftArrow').style.opacity = '0';
+    document.getElementById('kojiroRightArrow').style.right = '-2.5em';
+    document.getElementById('kojiroRightArrow').style.opacity = '0';
+    document.getElementById('trelloLeftArrow').style.left = '2.5em';
+    document.getElementById('trelloLeftArrow').style.opacity = '1';
+    document.getElementById('trelloRightArrow').style.right = '2.5em';
+    document.getElementById('trelloRightArrow').style.opacity = '1';
+    
+    // moves other modal into place
+    document.getElementById('trello').style.height = '85vh';
+    document.getElementById('trello').style.width = '80%';
+    document.getElementById('trello').style.marginLeft = '10%';
+    document.getElementById('trello').style.marginRight = '10%';
+    document.getElementById('trello').style.opacity = '1';
+    document.getElementById('trelloHeader').style.height = '55%';
+    document.getElementById('trelloMain').style.height = '45%';
+    document.getElementById('trelloMain').style.opacity = '1';
+	document.getElementById('trello').style.overflowX = 'hidden';
+    document.getElementById('trello').style.overflowY = 'scroll';
+    document.getElementById('trelloCloseX').style.transform = 'scale(1)';
+    document.getElementById('trelloCloseX').style.opacity = '1';
+    document.getElementById('trelloCloseX').style.right = '12vw';
+    document.getElementById('trelloCloseX').style.top = '11vh';
+    document.getElementById('trelloLabel').style.transform = 'scale(1.3)';
+    document.getElementById('trelloLabel').style.bottom = '3.75em';
+	
+}
+
 
     
