@@ -43,7 +43,7 @@ function playboyOpenModal() {
     document.getElementById('myWork').style.marginBottom = '0';
 	
 	// adds the padding to accurately position the modal
-    document.getElementById('firstRow').style.paddingTop = '7.5vh';
+    document.getElementById('secondRow').style.paddingTop = '7.5vh';
 
     // rescales and fades line 1 items
     document.getElementById('ella').style.height = '0';
@@ -107,7 +107,7 @@ function playboyCloseX() {
 	document.getElementById('galleryHeightWrapper').style.minHeight = '100%';
 	
 	// adds the padding to accurately position the modal
-    document.getElementById('firstRow').style.paddingTop = '0';
+    document.getElementById('secondRow').style.paddingTop = '0';
 	
 	// adds padding back to the gallery
 	document.getElementById('gallery').style.paddingTop = '2em';

@@ -352,7 +352,7 @@ video#bgvid {
 	transition: opacity 2s ease-out;
 }
 
-/* close X button and custom close X classes */
+/* close X button */
 .closeX {
 	position: absolute;
 	top: 50%;
