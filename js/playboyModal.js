@@ -288,6 +288,8 @@ function playboyLeftArrow() {
 
 function playboyRightArrow() {
 	
+
+	
 	
 // closes itself
 

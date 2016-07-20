@@ -43,7 +43,7 @@ function chirprOpenModal() {
     document.getElementById('myWork').style.marginBottom = '0';
 	
 	// adds the padding to accurately position the modal
-    document.getElementById('firstRow').style.paddingTop = '7.5vh';
+    document.getElementById('secondRow').style.paddingTop = '7.5vh';
 
     // rescales and fades line 1 items
     document.getElementById('ella').style.height = '0';
