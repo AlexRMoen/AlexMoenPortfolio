@@ -105,8 +105,8 @@ function ellaCloseX() {
     document.getElementById('firstRow').style.paddingTop = '0';
 	
 	// adds padding back to the gallery
-	document.getElementById('gallery').style.paddingTop = '1.5em';
-	document.getElementById('gallery').style.paddingBottom = '2em';
+	document.getElementById('gallery').style.paddingTop = '2em';
+	document.getElementById('gallery').style.paddingBottom = '3em';
 	
 	// rescales and fades-in other line 1 items
     document.getElementById('kojiro').style.height = '35vh';
@@ -149,7 +149,7 @@ function ellaCloseX() {
     document.getElementById('ellaMain').style.opacity = '0';
     document.getElementById('ellaCloseX').style.transform = 'scale(0)';
     document.getElementById('ellaCloseX').style.opacity = '0';
-    document.getElementById('ellaCloseX').style.right = '91.5333333333%';
+    document.getElementById('ellaCloseX').style.right = '50%';
     document.getElementById('ellaCloseX').style.top = '50%';
     document.getElementById('ellaLabel').style.transform = 'scale(1)';
     document.getElementById('ellaLabel').style.bottom = '1.75em';
@@ -194,9 +194,14 @@ function ellaRightArrow() {
     document.getElementById('ellaHeader').style.height = '100%';
     document.getElementById('ellaMain').style.height = '0';
     document.getElementById('ellaMain').style.opacity = '0';
+	document.getElementById('ella').style.overflowX = 'auto';
+    document.getElementById('ella').style.overflowY = 'hidden';
+	
+	$("#ella").animate({ scrollTop: 0 }, 500);
+	
     document.getElementById('ellaCloseX').style.transform = 'scale(0)';
     document.getElementById('ellaCloseX').style.opacity = '0';
-    document.getElementById('ellaCloseX').style.right = '91.5333333333%';
+    document.getElementById('ellaCloseX').style.right = '50%';
     document.getElementById('ellaCloseX').style.top = '50%';
     document.getElementById('ellaLabel').style.transform = 'scale(1)';
     document.getElementById('ellaLabel').style.bottom = '1.75em';
@@ -216,15 +221,12 @@ function ellaRightArrow() {
     document.getElementById('kojiro').style.width = '80%';
     document.getElementById('kojiro').style.marginLeft = '10%';
     document.getElementById('kojiro').style.marginRight = '10%';
-    document.getElementById('ella').style.overflowX = 'auto';
-    document.getElementById('ella').style.overflowY = 'hidden';
-	
-	$("#ella").animate({ scrollTop: 0 }, 500);
-	
     document.getElementById('kojiro').style.opacity = '1';
     document.getElementById('kojiroHeader').style.height = '55%';
     document.getElementById('kojiroMain').style.height = '45%';
     document.getElementById('kojiroMain').style.opacity = '1';
+	document.getElementById('kojiro').style.overflowX = 'hidden';
+    document.getElementById('kojiro').style.overflowY = 'scroll';
     document.getElementById('kojiroCloseX').style.transform = 'scale(1)';
     document.getElementById('kojiroCloseX').style.opacity = '1';
     document.getElementById('kojiroCloseX').style.right = '12vw';

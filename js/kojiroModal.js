@@ -106,8 +106,8 @@ function kojiroCloseX() {
     document.getElementById('firstRow').style.paddingTop = '0';
 	
 	// adds padding back to the gallery
-	document.getElementById('gallery').style.paddingTop = '1.5em';
-	document.getElementById('gallery').style.paddingBottom = '2em';
+	document.getElementById('gallery').style.paddingTop = '2em';
+	document.getElementById('gallery').style.paddingBottom = '3em';
 	
 	// rescales and fades-in other line 1 items
     document.getElementById('ella').style.height = '35vh';
@@ -150,7 +150,7 @@ function kojiroCloseX() {
     document.getElementById('kojiroMain').style.opacity = '0';
     document.getElementById('kojiroCloseX').style.transform = 'scale(0)';
     document.getElementById('kojiroCloseX').style.opacity = '0';
-    document.getElementById('kojiroCloseX').style.right = '91.5333333333%';
+    document.getElementById('kojiroCloseX').style.right = '50%';
     document.getElementById('kojiroCloseX').style.top = '50%';
     document.getElementById('kojiroLabel').style.transform = 'scale(1)';
     document.getElementById('kojiroLabel').style.bottom = '1.75em';
@@ -178,6 +178,111 @@ function kojiroCloseX() {
 	document.getElementById('bgvid').style.display = 'block';
 	
 	}, 500);
+	
+}
+
+
+function kojiroLeftArrow() {
+	
+    // closes itself
+    document.getElementById('kojiro').style.width = '0';
+    document.getElementById('kojiro').style.opacity = '0';
+    document.getElementById('kojiro').style.marginLeft = '0';
+    document.getElementById('kojiro').style.marginRight = '0';
+    document.getElementById('kojiroHeader').style.height = '100%';
+    document.getElementById('kojiroMain').style.height = '0';
+    document.getElementById('kojiroMain').style.opacity = '0';
+	document.getElementById('kojiro').style.overflowX = 'auto';
+    document.getElementById('kojiro').style.overflowY = 'hidden';
+	
+	$("#kojiro").animate({ scrollTop: 0 }, 500);
+	
+    document.getElementById('kojiroCloseX').style.transform = 'scale(0)';
+    document.getElementById('kojiroCloseX').style.opacity = '0';
+    document.getElementById('kojiroCloseX').style.right = '50%';
+    document.getElementById('kojiroCloseX').style.top = '50%';
+    document.getElementById('kojiroLabel').style.transform = 'scale(1)';
+    document.getElementById('kojiroLabel').style.bottom = '1.75em';
+    
+    // switches out arrow for the proper item
+    document.getElementById('kojiroLeftArrow').style.left = '-2.5em';
+    document.getElementById('kojiroLeftArrow').style.opacity = '0';
+    document.getElementById('kojiroRightArrow').style.right = '-2.5em';
+    document.getElementById('kojiroRightArrow').style.opacity = '0';
+	// NONE document.getElementById('ellaLeftArrow').style.left = '2.5em';
+    // NONE document.getElementById('ellaLeftArrow').style.opacity = '0';
+    document.getElementById('ellaRightArrow').style.right = '2.5em';
+    document.getElementById('ellaRightArrow').style.opacity = '1';
+    
+    // moves other modal into place
+    document.getElementById('ella').style.height = '85vh';
+    document.getElementById('ella').style.width = '80%';
+    document.getElementById('ella').style.marginLeft = '10%';
+    document.getElementById('ella').style.marginRight = '10%';
+    document.getElementById('ella').style.opacity = '1';
+    document.getElementById('ellaHeader').style.height = '55%';
+    document.getElementById('ellaMain').style.height = '45%';
+    document.getElementById('ellaMain').style.opacity = '1';
+	document.getElementById('ella').style.overflowX = 'hidden';
+    document.getElementById('ella').style.overflowY = 'scroll';
+    document.getElementById('ellaCloseX').style.transform = 'scale(1)';
+    document.getElementById('ellaCloseX').style.opacity = '1';
+    document.getElementById('ellaCloseX').style.right = '12vw';
+    document.getElementById('ellaCloseX').style.top = '11vh';
+    document.getElementById('ellaLabel').style.transform = 'scale(1.3)';
+    document.getElementById('ellaLabel').style.bottom = '3.75em';
+	
+}
+
+function kojiroRightArrow() {
+	
+// closes itself
+    document.getElementById('kojiro').style.width = '0';
+    document.getElementById('kojiro').style.opacity = '0';
+    document.getElementById('kojiro').style.marginLeft = '0';
+    document.getElementById('kojiro').style.marginRight = '0';
+    document.getElementById('kojiroHeader').style.height = '100%';
+    document.getElementById('kojiroMain').style.height = '0';
+    document.getElementById('kojiroMain').style.opacity = '0';
+	document.getElementById('kojiro').style.overflowX = 'auto';
+    document.getElementById('kojiro').style.overflowY = 'hidden';
+	
+	$("#kojiro").animate({ scrollTop: 0 }, 500);
+	
+    document.getElementById('kojiroCloseX').style.transform = 'scale(0)';
+    document.getElementById('kojiroCloseX').style.opacity = '0';
+    document.getElementById('kojiroCloseX').style.right = '50%';
+    document.getElementById('kojiroCloseX').style.top = '50%';
+    document.getElementById('kojiroLabel').style.transform = 'scale(1)';
+    document.getElementById('kojiroLabel').style.bottom = '1.75em';
+    
+    // switches out arrow for the proper item
+    document.getElementById('kojiroLeftArrow').style.left = '-2.5em';
+    document.getElementById('kojiroLeftArrow').style.opacity = '0';
+    document.getElementById('kojiroRightArrow').style.right = '-2.5em';
+    document.getElementById('kojiroRightArrow').style.opacity = '0';
+    document.getElementById('trelloLeftArrow').style.left = '2.5em';
+    document.getElementById('trelloLeftArrow').style.opacity = '1';
+    document.getElementById('trelloRightArrow').style.right = '2.5em';
+    document.getElementById('trelloRightArrow').style.opacity = '1';
+    
+    // moves other modal into place
+    document.getElementById('trello').style.height = '85vh';
+    document.getElementById('trello').style.width = '80%';
+    document.getElementById('trello').style.marginLeft = '10%';
+    document.getElementById('trello').style.marginRight = '10%';
+    document.getElementById('trello').style.opacity = '1';
+    document.getElementById('trelloHeader').style.height = '55%';
+    document.getElementById('trelloMain').style.height = '45%';
+    document.getElementById('trelloMain').style.opacity = '1';
+	document.getElementById('trello').style.overflowX = 'hidden';
+    document.getElementById('trello').style.overflowY = 'scroll';
+    document.getElementById('trelloCloseX').style.transform = 'scale(1)';
+    document.getElementById('trelloCloseX').style.opacity = '1';
+    document.getElementById('trelloCloseX').style.right = '12vw';
+    document.getElementById('trelloCloseX').style.top = '11vh';
+    document.getElementById('trelloLabel').style.transform = 'scale(1.3)';
+    document.getElementById('trelloLabel').style.bottom = '3.75em';
 	
 }
 

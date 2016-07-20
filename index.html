@@ -55,10 +55,10 @@ $(function() {
 <!-- play the video background - webm, then mp4, then static png --> 
 
 <video autoplay loop poster="video/fish1.png" id="bgvid">
-<!-- VIDEO OFF -->
+<!-- VIDEO OFF 
   <source src="video/fishHigher60.webm" type="video/webm">
   <source src="video/fishyEdit.mp4" type="video/mp4">
-  
+  -->
 </video>
 
 <!--[if lt IE 9]>
@@ -233,7 +233,7 @@ $(function() {
 
 <!-- gallery of projects section -->
 <div id="galleryHeightWrapper">
-<div class="tealBG paddingTop1point5em paddingBottom2em 3daccel" id="gallery">
+<div class="tealBG paddingTop2em paddingBottom3em 3daccel" id="gallery">
   <h3 class="white dropShadowHeight1 bold marginBottom1em textCenter 3daccel" id="myWork">MY WORK</h3>
   
   <!-- wraps the first row of gallery items -->
@@ -400,41 +400,7 @@ $(function() {
       </a>
     
     <!-- left arrow for kojiro --> 
-    <a href="#javascript:void(0)" onclick="
- 
-    // closes itself
-    document.getElementById('kojiro').style.width = '0';
-    document.getElementById('kojiro').style.opacity = '0';
-    document.getElementById('kojiro').style.marginLeft = '0';
-    document.getElementById('kojiro').style.marginRight = '0';
-    document.getElementById('kojiroHeader').style.height = '100%';
-    document.getElementById('kojiroMain').style.height = '0';
-    document.getElementById('kojiroMain').style.opacity = '0';
-    document.getElementById('kojiroCloseX').style.transform = 'scale(0)';
-    
-    // switches out arrow for the proper item
-    document.getElementById('kojiroLeftArrow').style.left = '-2.5em';
-    document.getElementById('kojiroLeftArrow').style.opacity = '0';
-    document.getElementById('kojiroRightArrow').style.right = '-2.5em';
-    document.getElementById('kojiroRightArrow').style.opacity = '0';
-    // NONE document.getElementById('ellaLeftArrow').style.left = '2.5em';
-    // NONE document.getElementById('ellaLeftArrow').style.opacity = '1';
-    document.getElementById('ellaRightArrow').style.right = '2.5em';
-    document.getElementById('ellaRightArrow').style.opacity = '1';
-    
-    // moves other modal into place
-    document.getElementById('ella').style.height = '85vh';
-    document.getElementById('ella').style.width = '80%';
-    document.getElementById('ella').style.marginLeft = '10%';
-    document.getElementById('ella').style.marginRight = '10%';
-    document.getElementById('ella').style.overflow = 'scroll';
-    document.getElementById('ella').style.opacity = '1';
-    document.getElementById('ellaHeader').style.height = '30%';
-    document.getElementById('ellaMain').style.height = '70%';
-    document.getElementById('ellaMain').style.opacity = '1';
-    document.getElementById('ellaCloseX').style.transform = 'scale(1)';
-    
-    ">
+    <a href="#javascript:void(0)" onclick="kojiroLeftArrow()">
     <div class="leftArrow dropShadowHeight1" id="kojiroLeftArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" height="100%">
         <style type="text/css">  
@@ -446,41 +412,7 @@ $(function() {
     </a> 
     
     <!-- right arrow for kojiro --> 
-    <a href="#javascript:void(0)" onclick="
- 
-    // closes itself
-    document.getElementById('kojiro').style.width = '0';
-    document.getElementById('kojiro').style.opacity = '0';
-    document.getElementById('kojiro').style.marginLeft = '0';
-    document.getElementById('kojiro').style.marginRight = '0';
-    document.getElementById('kojiroHeader').style.height = '100%';
-    document.getElementById('kojiroMain').style.height = '0';
-    document.getElementById('kojiroMain').style.opacity = '0';
-    document.getElementById('kojiroCloseX').style.transform = 'scale(0)';
-    
-    // switches out arrow for the proper item
-    document.getElementById('kojiroLeftArrow').style.left = '-2.5em';
-    document.getElementById('kojiroLeftArrow').style.opacity = '0';
-    document.getElementById('kojiroRightArrow').style.right = '-2.5em';
-    document.getElementById('kojiroRightArrow').style.opacity = '0';
-    document.getElementById('trelloLeftArrow').style.left = '2.5em';
-    document.getElementById('trelloLeftArrow').style.opacity = '1';
-    document.getElementById('trelloRightArrow').style.right = '2.5em';
-    document.getElementById('trelloRightArrow').style.opacity = '1';
-    
-    // moves other modal into place
-    document.getElementById('trello').style.height = '85vh';
-    document.getElementById('trello').style.width = '80%';
-    document.getElementById('trello').style.marginLeft = '10%';
-    document.getElementById('trello').style.marginRight = '10%';
-    document.getElementById('trello').style.overflow = 'scroll';
-    document.getElementById('trello').style.opacity = '1';
-    document.getElementById('trelloHeader').style.height = '30%';
-    document.getElementById('trelloMain').style.height = '70%';
-    document.getElementById('trelloMain').style.opacity = '1';
-    document.getElementById('trelloCloseX').style.transform = 'scale(1)';
-    
-    ">
+    <a href="javascript:void(0)" onclick="kojiroRightArrow()">
     <div class="rightArrow dropShadowHeight1" id="kojiroRightArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" width="100%">
         <style type="text/css">  
@@ -491,42 +423,20 @@ $(function() {
     </div>
     </a> 
     
+            <!-- close X for trello-->
+          <a href="javascript:void(0)" onclick="trelloCloseX()">
+      <div class="closeX" id="trelloCloseX">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" width="100%">
+          <style type="text/css">  
+	.x{fill:#23AEC2;}
+</style>
+          <polygon class="x" points="42 1.4 40.6 0 21 19.6 1.4 0 0 1.4 19.6 21 0 40.6 1.4 42 21 22.4 40.6 42 42 40.6 22.4 21 "/>
+        </svg>
+      </div>
+      </a>
+    
     <!-- left arrow for trello --> 
-    <a href="#javascript:void(0)" onclick="
- 
-    // closes itself
-    document.getElementById('trello').style.width = '0';
-    document.getElementById('trello').style.opacity = '0';
-    document.getElementById('trello').style.marginLeft = '0';
-    document.getElementById('trello').style.marginRight = '0';
-    document.getElementById('trelloHeader').style.height = '100%';
-    document.getElementById('trelloMain').style.height = '0';
-    document.getElementById('trelloMain').style.opacity = '0';
-    document.getElementById('trelloCloseX').style.transform = 'scale(0)';
-    
-    // switches out arrow for the proper item
-    document.getElementById('trelloLeftArrow').style.left = '-2.5em';
-    document.getElementById('trelloLeftArrow').style.opacity = '0';
-    document.getElementById('trelloRightArrow').style.right = '-2.5em';
-    document.getElementById('trelloRightArrow').style.opacity = '0';
-    document.getElementById('kojiroLeftArrow').style.left = '2.5em';
-    document.getElementById('kojiroLeftArrow').style.opacity = '1';
-    document.getElementById('kojiroRightArrow').style.right = '2.5em';
-    document.getElementById('kojiroRightArrow').style.opacity = '1';
-    
-    // moves other modal into place
-    document.getElementById('kojiro').style.height = '85vh';
-    document.getElementById('kojiro').style.width = '80%';
-    document.getElementById('kojiro').style.marginLeft = '10%';
-    document.getElementById('kojiro').style.marginRight = '10%';
-    document.getElementById('kojiro').style.overflow = 'scroll';
-    document.getElementById('kojiro').style.opacity = '1';
-    document.getElementById('kojiroHeader').style.height = '30%';
-    document.getElementById('kojiroMain').style.height = '70%';
-    document.getElementById('kojiroMain').style.opacity = '1';
-    document.getElementById('kojiroCloseX').style.transform = 'scale(1)';
-    
-    ">
+    <a href="javascript:void(0)" onclick="trelloLeftArrow()">
     <div class="leftArrow dropShadowHeight1" id="trelloLeftArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" height="100%">
         <style type="text/css">  
@@ -611,67 +521,7 @@ $(function() {
     </div>
     </a>
     
-        <!-- close X for ella-->
-          <a href="#gallery" onclick="
-    
-    // resets all gallery elements back to their proper grid format
-    document.getElementById('gallery').style.height = 'auto';
-    document.getElementById('myWork').style.opacity = '1';
-    document.getElementById('myWork').style.transform = 'scale(1)';
-    document.getElementById('firstRow').style.paddingTop = '0';
-    
-    document.getElementById('ella').style.height = '35vh';
-    document.getElementById('ella').style.width = '32.2666666667%';
-    document.getElementById('ella').style.opacity = '1';
-    document.getElementById('ella').style.marginLeft = '1.6%';
-    document.getElementById('trello').style.height = '35vh';
-    document.getElementById('trello').style.width = '32.2666666667%';
-    document.getElementById('trello').style.opacity = '1';
-    document.getElementById('trello').style.marginLeft = '1.6%';
-    
-    document.getElementById('playboy').style.height = '35vh';
-    document.getElementById('playboy').style.opacity = '1';
-    document.getElementById('enterprise').style.height = '35vh';
-    document.getElementById('enterprise').style.opacity = '1';
-    document.getElementById('chirpr').style.height = '35vh';
-    document.getElementById('chirpr').style.opacity = '1';
-    document.getElementById('newitem').style.height = '35vh';
-    document.getElementById('newitem').style.opacity = '1';
-    
-    document.getElementById('trelloLeftArrow').style.left = '-2.5em';
-    document.getElementById('trelloLeftArrow').style.opacity = '0';
-    document.getElementById('trelloRightArrow').style.right = '-2.5em';
-    document.getElementById('trelloRightArrow').style.opacity = '0';
-    
-    document.getElementById('trello').style.height = '35vh';
-    document.getElementById('trello').style.width = '32.2666666667%';
-    document.getElementById('trello').style.marginLeft = '0';
-    document.getElementById('trello').style.marginRight = '0';
-    document.getElementById('trello').style.overflowX = 'auto';
-    document.getElementById('trello').style.overflowY = 'auto';
-    document.getElementById('trelloHeader').style.height = '100%';
-    document.getElementById('trelloMain').style.height = '0';
-    document.getElementById('trelloMain').style.opacity = '0';
-    document.getElementById('trelloCloseX').style.transform = 'scale(0)';
-    document.getElementById('trelloCloseX').style.opacity = '0';
-    document.getElementById('trelloCloseX').style.right = '91.5333333333%';
-    document.getElementById('trelloCloseX').style.top = '50%';
-    document.getElementById('trelloLabel').style.transform = 'scale(1)';
-    document.getElementById('trelloLabel').style.right = '-0.2em';
-    document.getElementById('trelloLabel').style.bottom = '1.75em';
-    
-    
-    
-    ">
-      <div class="closeX" id="trelloCloseX">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" width="100%">
-          <style type="text/css">  
-	.x{fill:#23AEC2;}
-</style>
-          <polygon class="x" points="42 1.4 40.6 0 21 19.6 1.4 0 0 1.4 19.6 21 0 40.6 1.4 42 21 22.4 40.6 42 42 40.6 22.4 21 "/>
-        </svg>
-      </div>
-      </a>
+
     
     </div>
   
@@ -773,7 +623,7 @@ $(function() {
         <a href="javascript:void(0)" onclick="enterpriseOpenModal()">
             
         <div class="boxLabel tealBG white textRight boxShadowHeight2 3daccel" id="enterpriseLabel">
-          <h5>ENTERPRISE RENT-A-CAR</h5>
+          <h5>ENTERPRISE<br>RENT-A-CAR</h5>
             <h6>Car Drop app proposal</h6>
         </div>
         
