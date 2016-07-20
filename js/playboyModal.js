@@ -324,16 +324,6 @@ function playboyRightArrow() {
     document.getElementById('enterpriseRightArrow').style.right = '2.5em';
     document.getElementById('enterpriseRightArrow').style.opacity = '1'; 
     
-    // resizes other bottom row items
-    document.getElementById('chirpr').style.height = '85vh';
-    document.getElementById('chirpr').style.opacity = '0';
-    document.getElementById('chirpr').style.width = '0';
-    document.getElementById('chirpr').style.marginLeft = '0';
-    document.getElementById('newitem').style.height = '85vh';
-    document.getElementById('newitem').style.opacity = '0';
-    document.getElementById('newitem').style.width = '0';
-    document.getElementById('newitem').style.marginLeft = '0';
-    
     
     // moves other modal into place
     document.getElementById('enterprise').style.height = '85vh';

@@ -195,3 +195,124 @@ function enterpriseCloseX() {
 	}, 500);
 	
 }
+
+
+function enterpriseLeftArrow() {
+	
+
+	
+	
+// closes itself
+
+    document.getElementById('enterprise').style.height = '85vh';
+    document.getElementById('enterprise').style.width = '0';
+    document.getElementById('enterprise').style.opacity = '0';
+    document.getElementById('enterprise').style.marginLeft = '0';
+    document.getElementById('enterprise').style.marginRight = '0';
+    document.getElementById('enterprise').style.marginBottom = '0';
+    document.getElementById('enterpriseHeader').style.height = '100%';
+    document.getElementById('enterpriseMain').style.height = '0';
+    document.getElementById('enterpriseMain').style.opacity = '0';
+	document.getElementById('enterprise').style.overflowX = 'auto';
+    document.getElementById('enterprise').style.overflowY = 'hidden';
+	
+	$("#enterprise").animate({ scrollTop: 0 }, 500);
+	
+    document.getElementById('enterpriseCloseX').style.transform = 'scale(0)';
+    document.getElementById('enterpriseCloseX').style.opacity = '0';
+    document.getElementById('enterpriseCloseX').style.right = '50%';
+    document.getElementById('enterpriseCloseX').style.top = '50%';
+    document.getElementById('enterpriseLabel').style.transform = 'scale(1)';
+    document.getElementById('enterpriseLabel').style.bottom = '1.75em';
+    
+    // switches out arrow for the proper item
+    document.getElementById('enterpriseLeftArrow').style.left = '-2.5em';
+    document.getElementById('enterpriseLeftArrow').style.opacity = '0';
+    document.getElementById('enterpriseRightArrow').style.right = '-2.5em';
+    document.getElementById('enterpriseRightArrow').style.opacity = '0';
+    document.getElementById('playboyLeftArrow').style.left = '2.5em';
+    document.getElementById('playboyLeftArrow').style.opacity = '1';
+    document.getElementById('playboyRightArrow').style.right = '2.5em';
+    document.getElementById('playboyRightArrow').style.opacity = '1'; 
+    
+    
+    // moves other modal into place
+    document.getElementById('playboy').style.height = '85vh';
+    document.getElementById('playboy').style.width = '80%';
+    document.getElementById('playboy').style.marginLeft = '10%';
+    document.getElementById('playboy').style.marginRight = '10%';
+    document.getElementById('playboy').style.opacity = '1';
+    document.getElementById('playboyHeader').style.height = '55%';
+    document.getElementById('playboyMain').style.height = '45%';
+    document.getElementById('playboyMain').style.opacity = '1';
+	document.getElementById('playboy').style.overflowX = 'hidden';
+    document.getElementById('playboy').style.overflowY = 'scroll';
+    document.getElementById('playboyCloseX').style.transform = 'scale(1)';
+    document.getElementById('playboyCloseX').style.opacity = '1';
+    document.getElementById('playboyCloseX').style.right = '12vw';
+    document.getElementById('playboyCloseX').style.top = '11vh';
+    document.getElementById('playboyLabel').style.transform = 'scale(1.3)';
+    document.getElementById('playboyLabel').style.bottom = '3.75em';
+	
+}
+
+
+
+function enterpriseRightArrow() {
+	
+
+	
+	
+// closes itself
+
+    document.getElementById('enterprise').style.height = '85vh';
+    document.getElementById('enterprise').style.width = '0';
+    document.getElementById('enterprise').style.opacity = '0';
+    document.getElementById('enterprise').style.marginLeft = '0';
+    document.getElementById('enterprise').style.marginRight = '0';
+    document.getElementById('enterprise').style.marginBottom = '0';
+    document.getElementById('enterpriseHeader').style.height = '100%';
+    document.getElementById('enterpriseMain').style.height = '0';
+    document.getElementById('enterpriseMain').style.opacity = '0';
+	document.getElementById('enterprise').style.overflowX = 'auto';
+    document.getElementById('enterprise').style.overflowY = 'hidden';
+	
+	$("#enterprise").animate({ scrollTop: 0 }, 500);
+	
+    document.getElementById('enterpriseCloseX').style.transform = 'scale(0)';
+    document.getElementById('enterpriseCloseX').style.opacity = '0';
+    document.getElementById('enterpriseCloseX').style.right = '50%';
+    document.getElementById('enterpriseCloseX').style.top = '50%';
+    document.getElementById('enterpriseLabel').style.transform = 'scale(1)';
+    document.getElementById('enterpriseLabel').style.bottom = '1.75em';
+    
+    // switches out arrow for the proper item
+    document.getElementById('enterpriseLeftArrow').style.left = '-2.5em';
+    document.getElementById('enterpriseLeftArrow').style.opacity = '0';
+    document.getElementById('enterpriseRightArrow').style.right = '-2.5em';
+    document.getElementById('enterpriseRightArrow').style.opacity = '0';
+    document.getElementById('chirprLeftArrow').style.left = '2.5em';
+    document.getElementById('chirprLeftArrow').style.opacity = '1';
+    document.getElementById('chirprRightArrow').style.right = '2.5em';
+    document.getElementById('chirprRightArrow').style.opacity = '1'; 
+    
+    
+    // moves other modal into place
+    document.getElementById('chirpr').style.height = '85vh';
+    document.getElementById('chirpr').style.width = '80%';
+    document.getElementById('chirpr').style.marginLeft = '10%';
+    document.getElementById('chirpr').style.marginRight = '10%';
+    document.getElementById('chirpr').style.opacity = '1';
+    document.getElementById('chirprHeader').style.height = '55%';
+    document.getElementById('chirprMain').style.height = '45%';
+    document.getElementById('chirprMain').style.opacity = '1';
+	document.getElementById('chirpr').style.overflowX = 'hidden';
+    document.getElementById('chirpr').style.overflowY = 'scroll';
+    document.getElementById('chirprCloseX').style.transform = 'scale(1)';
+    document.getElementById('chirprCloseX').style.opacity = '1';
+    document.getElementById('chirprCloseX').style.right = '12vw';
+    document.getElementById('chirprCloseX').style.top = '11vh';
+    document.getElementById('chirprLabel').style.transform = 'scale(1.3)';
+    document.getElementById('chirprLabel').style.bottom = '3.75em';
+	
+}
