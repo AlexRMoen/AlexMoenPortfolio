@@ -149,7 +149,7 @@ function ellaCloseX() {
     document.getElementById('ellaMain').style.opacity = '0';
     document.getElementById('ellaCloseX').style.transform = 'scale(0)';
     document.getElementById('ellaCloseX').style.opacity = '0';
-    document.getElementById('ellaCloseX').style.right = '91.5333333333%';
+    document.getElementById('ellaCloseX').style.right = '50%';
     document.getElementById('ellaCloseX').style.top = '50%';
     document.getElementById('ellaLabel').style.transform = 'scale(1)';
     document.getElementById('ellaLabel').style.bottom = '1.75em';
@@ -201,7 +201,7 @@ function ellaRightArrow() {
 	
     document.getElementById('ellaCloseX').style.transform = 'scale(0)';
     document.getElementById('ellaCloseX').style.opacity = '0';
-    document.getElementById('ellaCloseX').style.right = '91.5333333333%';
+    document.getElementById('ellaCloseX').style.right = '50%';
     document.getElementById('ellaCloseX').style.top = '50%';
     document.getElementById('ellaLabel').style.transform = 'scale(1)';
     document.getElementById('ellaLabel').style.bottom = '1.75em';

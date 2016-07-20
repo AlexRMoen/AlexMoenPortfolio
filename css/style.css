@@ -356,24 +356,13 @@ video#bgvid {
 .closeX {
 	position: absolute;
 	top: 50%;
+	right: 50%;
 	width: 1.75em;
 	transform: scale(0);
 	opacity: 0;
 	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 	z-index: 999;
-}
-
-#ellaCloseX {
-	right: 91.5333333333%;
-}
-
-#kojiroCloseX {
-	right: 50%;
-}
-
-#trelloCloseX {
-	right: 6.86666666667%;
 }
 
 .leftArrow {

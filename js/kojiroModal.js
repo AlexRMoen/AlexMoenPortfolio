@@ -150,7 +150,7 @@ function kojiroCloseX() {
     document.getElementById('kojiroMain').style.opacity = '0';
     document.getElementById('kojiroCloseX').style.transform = 'scale(0)';
     document.getElementById('kojiroCloseX').style.opacity = '0';
-    document.getElementById('kojiroCloseX').style.right = '91.5333333333%';
+    document.getElementById('kojiroCloseX').style.right = '50%';
     document.getElementById('kojiroCloseX').style.top = '50%';
     document.getElementById('kojiroLabel').style.transform = 'scale(1)';
     document.getElementById('kojiroLabel').style.bottom = '1.75em';
@@ -199,7 +199,7 @@ function kojiroLeftArrow() {
 	
     document.getElementById('kojiroCloseX').style.transform = 'scale(0)';
     document.getElementById('kojiroCloseX').style.opacity = '0';
-    document.getElementById('kojiroCloseX').style.right = '91.5333333333%';
+    document.getElementById('kojiroCloseX').style.right = '50%';
     document.getElementById('kojiroCloseX').style.top = '50%';
     document.getElementById('kojiroLabel').style.transform = 'scale(1)';
     document.getElementById('kojiroLabel').style.bottom = '1.75em';
@@ -247,11 +247,11 @@ function kojiroRightArrow() {
 	document.getElementById('kojiro').style.overflowX = 'auto';
     document.getElementById('kojiro').style.overflowY = 'hidden';
 	
-	$("#ella").animate({ scrollTop: 0 }, 500);
+	$("#kojiro").animate({ scrollTop: 0 }, 500);
 	
     document.getElementById('kojiroCloseX').style.transform = 'scale(0)';
     document.getElementById('kojiroCloseX').style.opacity = '0';
-    document.getElementById('kojiroCloseX').style.right = '91.5333333333%';
+    document.getElementById('kojiroCloseX').style.right = '50%';
     document.getElementById('kojiroCloseX').style.top = '50%';
     document.getElementById('kojiroLabel').style.transform = 'scale(1)';
     document.getElementById('kojiroLabel').style.bottom = '1.75em';

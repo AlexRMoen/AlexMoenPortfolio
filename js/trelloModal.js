@@ -148,7 +148,7 @@ function trelloCloseX() {
     document.getElementById('trelloMain').style.opacity = '0';
     document.getElementById('trelloCloseX').style.transform = 'scale(0)';
     document.getElementById('trelloCloseX').style.opacity = '0';
-    document.getElementById('trelloCloseX').style.right = '91.5333333333%';
+    document.getElementById('trelloCloseX').style.right = '50%';
     document.getElementById('trelloCloseX').style.top = '50%';
     document.getElementById('trelloLabel').style.transform = 'scale(1)';
     document.getElementById('trelloLabel').style.bottom = '1.75em';
@@ -197,7 +197,7 @@ function trelloLeftArrow() {
 	
     document.getElementById('trelloCloseX').style.transform = 'scale(0)';
     document.getElementById('trelloCloseX').style.opacity = '0';
-    document.getElementById('trelloCloseX').style.right = '91.5333333333%';
+    document.getElementById('trelloCloseX').style.right = '50%';
     document.getElementById('trelloCloseX').style.top = '50%';
     document.getElementById('trelloLabel').style.transform = 'scale(1)';
     document.getElementById('trelloLabel').style.bottom = '1.75em';
@@ -208,7 +208,7 @@ function trelloLeftArrow() {
     document.getElementById('trelloRightArrow').style.right = '-2.5em';
     document.getElementById('trelloRightArrow').style.opacity = '0';
 	document.getElementById('kojiroLeftArrow').style.left = '2.5em';
-    document.getElementById('kojiroLeftArrow').style.opacity = '0';
+    document.getElementById('kojiroLeftArrow').style.opacity = '1';
     document.getElementById('kojiroRightArrow').style.right = '2.5em';
     document.getElementById('kojiroRightArrow').style.opacity = '1';
     
@@ -249,7 +249,7 @@ function trelloRightArrow() {
 	
     document.getElementById('trelloCloseX').style.transform = 'scale(0)';
     document.getElementById('trelloCloseX').style.opacity = '0';
-    document.getElementById('trelloCloseX').style.right = '91.5333333333%';
+    document.getElementById('trelloCloseX').style.right = '50%';
     document.getElementById('trelloCloseX').style.top = '50%';
     document.getElementById('trelloLabel').style.transform = 'scale(1)';
     document.getElementById('trelloLabel').style.bottom = '1.75em';
