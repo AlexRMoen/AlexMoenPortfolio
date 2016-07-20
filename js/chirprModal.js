@@ -294,8 +294,8 @@ function chirprRightArrow() {
     document.getElementById('chirprRightArrow').style.opacity = '0';
     document.getElementById('newitemLeftArrow').style.left = '2.5em';
     document.getElementById('newitemLeftArrow').style.opacity = '1';
-    document.getElementById('newitemRightArrow').style.right = '2.5em';
-    document.getElementById('newitemRightArrow').style.opacity = '1'; 
+    // NONE document.getElementById('newitemRightArrow').style.right = '2.5em';
+    // NONE document.getElementById('newitemRightArrow').style.opacity = '1'; 
     
     
     // moves other modal into place
