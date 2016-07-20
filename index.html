@@ -619,41 +619,7 @@ $(function() {
     </a> 
     
     <!-- right arrow for playboy --> 
-    <a href="#javascript:void(0)" onclick="
- 
-    // closes itself
-    document.getElementById('playboy').style.width = '0';
-    document.getElementById('playboy').style.opacity = '0';
-    document.getElementById('playboy').style.marginLeft = '0';
-    document.getElementById('playboy').style.marginRight = '0';
-    document.getElementById('playboyHeader').style.height = '100%';
-    document.getElementById('playboyMain').style.height = '0';
-    document.getElementById('playboyMain').style.opacity = '0';
-    document.getElementById('playboyCloseX').style.transform = 'scale(0)';
-    
-    // switches out arrow for the proper item
-    document.getElementById('playboyLeftArrow').style.left = '-2.5em';
-    document.getElementById('playboyLeftArrow').style.opacity = '0';
-    document.getElementById('playboyRightArrow').style.right = '-2.5em';
-    document.getElementById('playboyRightArrow').style.opacity = '0';
-    document.getElementById('enterpriseLeftArrow').style.left = '2.5em';
-    document.getElementById('enterpriseLeftArrow').style.opacity = '1';
-    document.getElementById('enterpriseRightArrow').style.right = '2.5em';
-    document.getElementById('enterpriseRightArrow').style.opacity = '1';
-    
-    // moves other modal into place
-    document.getElementById('enterprise').style.height = '85vh';
-    document.getElementById('enterprise').style.width = '80%';
-    document.getElementById('enterprise').style.marginLeft = '10%';
-    document.getElementById('enterprise').style.marginRight = '10%';
-    document.getElementById('enterprise').style.overflow = 'scroll';
-    document.getElementById('enterprise').style.opacity = '1';
-    document.getElementById('enterpriseHeader').style.height = '30%';
-    document.getElementById('enterpriseMain').style.height = '70%';
-    document.getElementById('enterpriseMain').style.opacity = '1';
-    document.getElementById('enterpriseCloseX').style.transform = 'scale(1)';
-    
-    ">
+    <a href="javascript:void(0)" onclick="playboyRightArrow()">
     <div class="rightArrow dropShadowHeight1" id="playboyRightArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" width="100%">
         <style type="text/css">  

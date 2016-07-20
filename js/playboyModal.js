@@ -291,54 +291,38 @@ function playboyRightArrow() {
 	
 // closes itself
 
-    document.getElementById('trello').style.height = '0';
-    document.getElementById('trello').style.width = '32.2666666667%';
-    document.getElementById('trello').style.opacity = '0';
-    document.getElementById('trello').style.marginLeft = '1.6%';
-    document.getElementById('trello').style.marginRight = '0';
-    document.getElementById('trello').style.marginBottom = '0';
-    document.getElementById('trelloHeader').style.height = '100%';
-    document.getElementById('trelloMain').style.height = '0';
-    document.getElementById('trelloMain').style.opacity = '0';
-	document.getElementById('trello').style.overflowX = 'auto';
-    document.getElementById('trello').style.overflowY = 'hidden';
+    document.getElementById('playboy').style.height = '85vh';
+    document.getElementById('playboy').style.width = '0';
+    document.getElementById('playboy').style.opacity = '0';
+    document.getElementById('playboy').style.marginLeft = '0';
+    document.getElementById('playboy').style.marginRight = '0';
+    document.getElementById('playboy').style.marginBottom = '0';
+    document.getElementById('playboyHeader').style.height = '100%';
+    document.getElementById('playboyMain').style.height = '0';
+    document.getElementById('playboyMain').style.opacity = '0';
+	document.getElementById('playboy').style.overflowX = 'auto';
+    document.getElementById('playboy').style.overflowY = 'hidden';
 	
-	$("#trello").animate({ scrollTop: 0 }, 500);
+	$("#playboy").animate({ scrollTop: 0 }, 500);
 	
-    document.getElementById('trelloCloseX').style.transform = 'scale(0)';
-    document.getElementById('trelloCloseX').style.opacity = '0';
-    document.getElementById('trelloCloseX').style.right = '50%';
-    document.getElementById('trelloCloseX').style.top = '50%';
-    document.getElementById('trelloLabel').style.transform = 'scale(1)';
-    document.getElementById('trelloLabel').style.bottom = '1.75em';
+    document.getElementById('playboyCloseX').style.transform = 'scale(0)';
+    document.getElementById('playboyCloseX').style.opacity = '0';
+    document.getElementById('playboyCloseX').style.right = '50%';
+    document.getElementById('playboyCloseX').style.top = '50%';
+    document.getElementById('playboyLabel').style.transform = 'scale(1)';
+    document.getElementById('playboyLabel').style.bottom = '1.75em';
     
     // switches out arrow for the proper item
-    document.getElementById('trelloLeftArrow').style.left = '-2.5em';
-    document.getElementById('trelloLeftArrow').style.opacity = '0';
-    document.getElementById('trelloRightArrow').style.right = '-2.5em';
-    document.getElementById('trelloRightArrow').style.opacity = '0';
-    document.getElementById('playboyLeftArrow').style.left = '2.5em';
-    document.getElementById('playboyLeftArrow').style.opacity = '1';
-    document.getElementById('playboyRightArrow').style.right = '2.5em';
-    document.getElementById('playboyRightArrow').style.opacity = '1';
-	
-	// resizes top row items
-    document.getElementById('ella').style.height = '0';
-    document.getElementById('ella').style.width = '32.2666666667%';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginBottom = '0';
-    document.getElementById('kojiro').style.height = '0';
-    document.getElementById('kojiro').style.width = '32.2666666667%';
-    document.getElementById('kojiro').style.opacity = '0';
-    document.getElementById('kojiro').style.marginBottom = '0';
-    document.getElementById('kojiro').style.marginLeft = '1.6%';
+    document.getElementById('playboyLeftArrow').style.left = '-2.5em';
+    document.getElementById('playboyLeftArrow').style.opacity = '0';
+    document.getElementById('playboyRightArrow').style.right = '-2.5em';
+    document.getElementById('playboyRightArrow').style.opacity = '0';
+    document.getElementById('enterpriseLeftArrow').style.left = '2.5em';
+    document.getElementById('enterpriseLeftArrow').style.opacity = '1';
+    document.getElementById('enterpriseRightArrow').style.right = '2.5em';
+    document.getElementById('enterpriseRightArrow').style.opacity = '1'; 
     
-    
-    // resizes bottom row items
-    document.getElementById('enterprise').style.height = '85vh';
-    document.getElementById('enterprise').style.opacity = '0';
-    document.getElementById('enterprise').style.width = '0';
-    document.getElementById('enterprise').style.marginLeft = '0';
+    // resizes other bottom row items
     document.getElementById('chirpr').style.height = '85vh';
     document.getElementById('chirpr').style.opacity = '0';
     document.getElementById('chirpr').style.width = '0';
@@ -350,22 +334,23 @@ function playboyRightArrow() {
     
     
     // moves other modal into place
-    document.getElementById('playboy').style.height = '85vh';
-    document.getElementById('playboy').style.width = '80%';
-    document.getElementById('playboy').style.marginLeft = '10%';
-    document.getElementById('playboy').style.marginRight = '10%';
-    document.getElementById('playboy').style.opacity = '1';
-    document.getElementById('playboyHeader').style.height = '55%';
-    document.getElementById('playboyMain').style.height = '45%';
-    document.getElementById('playboyMain').style.opacity = '1';
-	document.getElementById('playboy').style.overflowX = 'hidden';
-    document.getElementById('playboy').style.overflowY = 'scroll';
-    document.getElementById('playboyCloseX').style.transform = 'scale(1)';
-    document.getElementById('playboyCloseX').style.opacity = '1';
-    document.getElementById('playboyCloseX').style.right = '12vw';
-    document.getElementById('playboyCloseX').style.top = '11vh';
-    document.getElementById('playboyLabel').style.transform = 'scale(1.3)';
-    document.getElementById('playboyLabel').style.bottom = '3.75em';
+    document.getElementById('enterprise').style.height = '85vh';
+    document.getElementById('enterprise').style.width = '80%';
+    document.getElementById('enterprise').style.marginLeft = '10%';
+    document.getElementById('enterprise').style.marginRight = '10%';
+    document.getElementById('enterprise').style.opacity = '1';
+    document.getElementById('enterpriseHeader').style.height = '55%';
+    document.getElementById('enterpriseMain').style.height = '45%';
+    document.getElementById('enterpriseMain').style.opacity = '1';
+	document.getElementById('enterprise').style.overflowX = 'hidden';
+    document.getElementById('enterprise').style.overflowY = 'scroll';
+    document.getElementById('enterpriseCloseX').style.transform = 'scale(1)';
+    document.getElementById('enterpriseCloseX').style.opacity = '1';
+    document.getElementById('enterpriseCloseX').style.right = '12vw';
+    document.getElementById('enterpriseCloseX').style.top = '11vh';
+    document.getElementById('enterpriseLabel').style.transform = 'scale(1.3)';
+    document.getElementById('enterpriseLabel').style.bottom = '3.75em';
 	
 }
+
 
