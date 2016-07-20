@@ -234,9 +234,12 @@ function trelloLeftArrow() {
 
 function trelloRightArrow() {
 	
+	// adds the padding to accurately position the modal
+    document.getElementById('firstRow').style.paddingTop = '0';
+	document.getElementById('secondRow').style.paddingTop = '7.5vh';
 	
-// closes itself
-
+	
+    // closes itself
     document.getElementById('trello').style.height = '0';
     document.getElementById('trello').style.width = '32.2666666667%';
     document.getElementById('trello').style.opacity = '0';
