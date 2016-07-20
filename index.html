@@ -494,61 +494,7 @@ $(function() {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
       </div>
-      <a href="#gallery" onclick="
-    
-    // resets all gallery elements back to their proper grid format
-    document.getElementById('gallery').style.height = 'auto';
-    document.getElementById('myWork').style.opacity = '1';
-    document.getElementById('myWork').style.transform = 'scale(1)';
-    document.getElementById('firstRow').style.paddingTop = '0';
-    
-    document.getElementById('ella').style.height = '35vh';
-    document.getElementById('ella').style.opacity = '1';
-    document.getElementById('ella').style.marginBottom = '1.6vw';
-    document.getElementById('kojiro').style.height = '35vh';
-    document.getElementById('kojiro').style.opacity = '1';
-    document.getElementById('kojiro').style.marginBottom = '1.6vw';
-    document.getElementById('trello').style.height = '35vh';
-    document.getElementById('trello').style.opacity = '1';
-    document.getElementById('trello').style.marginBottom = '1.6vw';
-    
-    document.getElementById('enterprise').style.height = '35vh';
-    document.getElementById('enterprise').style.opacity = '1';
-    document.getElementById('enterprise').style.width = '23.8%';
-    document.getElementById('enterprise').style.marginLeft = '1.6%';
-    document.getElementById('chirpr').style.height = '35vh';
-    document.getElementById('chirpr').style.opacity = '1';
-    document.getElementById('chirpr').style.width = '23.8%';
-    document.getElementById('chirpr').style.marginLeft = '1.6%';
-    document.getElementById('newitem').style.height = '35vh';
-    document.getElementById('newitem').style.opacity = '1';
-    document.getElementById('newitem').style.width = '23.8%';
-    document.getElementById('newitem').style.marginLeft = '1.6%';
-    
-    document.getElementById('playboyLeftArrow').style.left = '-2.5em';
-    document.getElementById('playboyLeftArrow').style.opacity = '0';
-    document.getElementById('playboyRightArrow').style.right = '-2.5em';
-    document.getElementById('playboyRightArrow').style.opacity = '0';
-    
-    document.getElementById('playboy').style.height = '35vh';
-    document.getElementById('playboy').style.width = '23.8%';
-    document.getElementById('playboy').style.marginLeft = '0';
-    document.getElementById('playboy').style.marginRight = '0';
-    document.getElementById('playboyHeader').style.height = '100%';
-    document.getElementById('playboyMain').style.height = '0';
-    document.getElementById('playboyMain').style.opacity = '0';
-    document.getElementById('playboyCloseX').style.transform = 'scale(0)';
-    
-    ">
-      <div class="closeX" id="playboyCloseX">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" width="100%">
-          <style type="text/css">  
-	.x{fill:#23AEC2;}
-</style>
-          <polygon class="x" points="42 1.4 40.6 0 21 19.6 1.4 0 0 1.4 19.6 21 0 40.6 1.4 42 21 22.4 40.6 42 42 40.6 22.4 21 "/>
-        </svg>
-      </div>
-      </a> </div>
+     </div>
       
     
         <!-- enterprise gallery section -->
@@ -649,8 +595,19 @@ $(function() {
  
     
     <!-- close X and arrows for each expanded modal in second row --> 
+    <!-- close X for Playboy -->
+     <a href="javascript:void(0)" onclick="playboyCloseX()">
+      <div class="closeX" id="playboyCloseX">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" width="100%">
+          <style type="text/css">  
+	.x{fill:#23AEC2;}
+</style>
+          <polygon class="x" points="42 1.4 40.6 0 21 19.6 1.4 0 0 1.4 19.6 21 0 40.6 1.4 42 21 22.4 40.6 42 42 40.6 22.4 21 "/>
+        </svg>
+      </div>
+      </a> 
     <!-- left arrow for playboy --> 
-    <a href="#javascript:void(0)" onclick="
+    <a href="javascript:void(0)" onclick="
     
     
     // closes itself
