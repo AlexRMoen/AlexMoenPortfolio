@@ -81,11 +81,6 @@ video#bgvid {
 	padding-left: 2em;
 }
 
-.paddingLeftRight5em {
-	margin-left: 5em;
-	margin-right: 5em;
-}
-
 /* margins */
 .marginAuto {
 	margin: auto;
@@ -106,12 +101,12 @@ video#bgvid {
 	margin-bottom: 2em;
 }
 
-.leftRightMargin10em {
+.marginLeftRight10em {
 	margin-left: 10em;
 	margin-right: 10em;
 }
 
-.leftRightMargin5em {
+.marginLeftRight5em {
 	margin-left: 5em;
 	margin-right: 5em;
 }
@@ -202,7 +197,7 @@ video#bgvid {
 	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 }
-.3daccel {
+.threeDaccel {
    -webkit-transform: translateZ(0);
    -moz-transform: translateZ(0);
    -ms-transform: translateZ(0);
@@ -232,14 +227,21 @@ video#bgvid {
 .boxLabel {
 	position: absolute;
 	right: 0;
-	padding-left: 1.3em; 
-	padding-top: 0.5em; 
-	padding-bottom: 0.5em; 
-	padding-right: 1.35em;
 	bottom: 1.75em;
 	transform-origin: 100% 0;
 	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
+}
+
+.topLabel {
+	padding-right: 30px;
+}
+
+.bottomLabel {
+	padding-left: 20px;
+	padding-right: 30px;
+	padding-top: 0.25em;
+	padding-bottom: 0.3em;
 }
 
 
@@ -259,8 +261,12 @@ video#bgvid {
 }
 
 .dropShadowHeight2 {
--webkit-filter: drop-shadow(0.2em 0.2em 1em rgba(0,0,0,0.2));
+-webkit-filter: drop-shadow(0.2em 0.2em 1.1em rgba(0,0,0,0.2));
 	filter: drop-shadow(0.2em 0.2em 1.1em rgba(0,0,0,0.2));
+}
+
+.textShadowStrong {
+	text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
 }
 
 
@@ -449,7 +455,7 @@ video#bgvid {
 	.marginBottomGutterWidth {
 	margin-bottom: 1em;
 }
-	.leftRightMargin10em {
+	.marginLeftRight10em {
 	margin-left: 2em;
 	margin-right: 2em;
 }
