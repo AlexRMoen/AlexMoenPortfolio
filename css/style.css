@@ -423,10 +423,22 @@ video#bgvid {
 }
 
 /* creates see-through porthole effect */
+
 #porthole {
 	position: relative;
 	background: radial-gradient(circle 20% at 50% 33.333%, transparent 20%, rgb(255,255,255) 20%);
-    background: -webkit-radial-gradient(50% 33.333%, circle, transparent 20%, rgb(255,255,255) 20%);
+    background: -webkit-radial-gradient(50% 33.333%, circle, transparent 20%, rgb(100, 100, 100) 20%);
+	background: -moz-radial-gradient(50% 33.333%, circle, transparent 20%, rgb(255,255,255) 20%);
+}
+
+.portholeRim {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(circle 5% at 50% 33.333%, transparent 20%, rgb(255,255,255) 20%);
+    background: -webkit-radial-gradient(50% 33.333%, circle, transparent 24%, rgb(255,255,255) 20%);
 	background: -moz-radial-gradient(50% 33.333%, circle, transparent 20%, rgb(255,255,255) 20%);
 }
 
