@@ -234,12 +234,12 @@ video#bgvid {
 }
 
 .topLabel {
-	padding-right: 30px;
+	padding-right: 25px;
 }
 
 .bottomLabel {
-	padding-left: 20px;
-	padding-right: 30px;
+	padding-left: 15px;
+	padding-right: 25px;
 	padding-top: 0.25em;
 	padding-bottom: 0.3em;
 }
@@ -266,7 +266,7 @@ video#bgvid {
 }
 
 .textShadowStrong {
-	text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+	text-shadow: 3px 3px 16px rgba(0, 0, 0, 0.8);
 }
 
 
@@ -363,7 +363,7 @@ video#bgvid {
 	position: absolute;
 	top: 50%;
 	right: 50%;
-	width: 1.75em;
+	width: 2.25em;
 	transform: scale(0);
 	opacity: 0;
 	-webkit-transition: all 0.5s ease-out;

@@ -31,7 +31,7 @@ h4 {
 
 h5 {
 	font-family: 'Palanquin Dark', sans-serif;
-	font-size: 1.8em;
+	font-size: 1.9em;
 	line-height: 1.6em;
 }
 
@@ -39,6 +39,7 @@ h6 {
 	font-family: 'Lato', sans-serif;
 	font-size: 0.8em;
 	/* line-height: 1.4em; */
+	font-weight: lighter;
 }
 
 /* text rules */
