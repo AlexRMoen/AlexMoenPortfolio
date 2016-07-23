@@ -47,6 +47,10 @@ h6 {
 	font-weight: bold;
 }
 
+.italic {
+	font-style: italic;
+}
+
 .textCenter {
 	text-align: center;
 }
