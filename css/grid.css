@@ -90,6 +90,29 @@ m = margin (1.6%)
     width: 100%;
 }
 
+@media only screen and (max-width: 800px) {
+	
+	
+
+.column-5-small {
+	    width: 60%;
+        float: none;
+		margin-left: 20%;
+}
+
+.column-7-small {
+	    width: auto;
+        float: none;
+		margin-left: 0;
+}
+
+.verticalCenterParent {
+	min-height: auto;
+	padding-bottom: 2em;
+}
+	
+}
+
 /* take up full width of container if using mobile viewport */
 @media only screen and (max-width: 550px) {
     .column-1, 
