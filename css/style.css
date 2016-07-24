@@ -81,6 +81,11 @@ video#bgvid {
 	padding-left: 2em;
 }
 
+.paddingLeftRight1percent {
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
 /* margins */
 .marginAuto {
 	margin: auto;
@@ -93,6 +98,10 @@ video#bgvid {
 	margin-bottom: 1em;
 }
 
+.marginBottom1point25em {
+	margin-bottom: 1.25em;
+}
+
 .marginBottom1point5em {
 	margin-bottom: 1.5em;
 }
@@ -101,14 +110,14 @@ video#bgvid {
 	margin-bottom: 2em;
 }
 
-.marginLeftRight10em {
-	margin-left: 10em;
-	margin-right: 10em;
-}
-
 .marginLeftRight5em {
 	margin-left: 5em;
 	margin-right: 5em;
+}
+
+.marginLeftRight10em {
+	margin-left: 10em;
+	margin-right: 10em;
 }
 
 /* should be set to the same margin width as the grid gutter, in vw units */
@@ -266,7 +275,7 @@ video#bgvid {
 }
 
 .textShadowStrong {
-	text-shadow: 3px 3px 16px rgba(0, 0, 0, 0.8);
+	text-shadow: 3px 3px 16px rgba(0, 0, 0, 0.7);
 }
 
 
