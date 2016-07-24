@@ -81,9 +81,9 @@ video#bgvid {
 	padding-left: 2em;
 }
 
-.paddingLeftRight5em {
-	margin-left: 5em;
-	margin-right: 5em;
+.paddingLeftRight1percent {
+	padding-left: 1%;
+	padding-right: 1%;
 }
 
 /* margins */
@@ -98,6 +98,10 @@ video#bgvid {
 	margin-bottom: 1em;
 }
 
+.marginBottom1point25em {
+	margin-bottom: 1.25em;
+}
+
 .marginBottom1point5em {
 	margin-bottom: 1.5em;
 }
@@ -106,14 +110,14 @@ video#bgvid {
 	margin-bottom: 2em;
 }
 
-.leftRightMargin10em {
-	margin-left: 10em;
-	margin-right: 10em;
-}
-
-.leftRightMargin5em {
+.marginLeftRight5em {
 	margin-left: 5em;
 	margin-right: 5em;
+}
+
+.marginLeftRight10em {
+	margin-left: 10em;
+	margin-right: 10em;
 }
 
 /* should be set to the same margin width as the grid gutter, in vw units */
@@ -202,7 +206,7 @@ video#bgvid {
 	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 }
-.3daccel {
+.threeDaccel {
    -webkit-transform: translateZ(0);
    -moz-transform: translateZ(0);
    -ms-transform: translateZ(0);
@@ -232,14 +236,21 @@ video#bgvid {
 .boxLabel {
 	position: absolute;
 	right: 0;
-	padding-left: 1.3em; 
-	padding-top: 0.5em; 
-	padding-bottom: 0.5em; 
-	padding-right: 1.35em;
 	bottom: 1.75em;
 	transform-origin: 100% 0;
 	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
+}
+
+.topLabel {
+	padding-right: 25px;
+}
+
+.bottomLabel {
+	padding-left: 15px;
+	padding-right: 25px;
+	padding-top: 0.25em;
+	padding-bottom: 0.3em;
 }
 
 
@@ -259,8 +270,12 @@ video#bgvid {
 }
 
 .dropShadowHeight2 {
--webkit-filter: drop-shadow(0.2em 0.2em 1em rgba(0,0,0,0.2));
+-webkit-filter: drop-shadow(0.2em 0.2em 1.1em rgba(0,0,0,0.2));
 	filter: drop-shadow(0.2em 0.2em 1.1em rgba(0,0,0,0.2));
+}
+
+.textShadowStrong {
+	text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.7);
 }
 
 
@@ -357,7 +372,7 @@ video#bgvid {
 	position: absolute;
 	top: 50%;
 	right: 50%;
-	width: 1.75em;
+	width: 2.25em;
 	transform: scale(0);
 	opacity: 0;
 	-webkit-transition: all 0.5s ease-out;
@@ -417,11 +432,23 @@ video#bgvid {
 }
 
 /* creates see-through porthole effect */
+
 #porthole {
 	position: relative;
-	background: radial-gradient(circle 20% at 50% 33.333%, transparent 20%, rgb(255,255,255) 20%);
-    background: -webkit-radial-gradient(50% 33.333%, circle, transparent 20%, rgb(255,255,255) 20%);
-	background: -moz-radial-gradient(50% 33.333%, circle, transparent 20%, rgb(255,255,255) 20%);
+	background: radial-gradient(circle 20% at 50% 33.333%, transparent 20%, rgb(235,235,235) 20%);
+    background: -webkit-radial-gradient(50% 33.333%, circle, transparent 20%, rgba(235,235,235,1.00) 20%);
+	background: -moz-radial-gradient(50% 33.333%, circle, transparent 20%, rgb(235,235,235) 20%);
+}
+
+.portholeRim {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(circle 5% at 50% 33.333%, transparent 23%, rgb(255,255,255) 20%);
+    background: -webkit-radial-gradient(50% 33.333%, circle, transparent 23%, rgb(255,255,255) 20%);
+	background: -moz-radial-gradient(50% 33.333%, circle, transparent 23%, rgb(255,255,255) 20%);
 }
 
 #aboveFold {
@@ -444,13 +471,88 @@ video#bgvid {
 	width: 100%;
 }
 
+.verticalCenterParent {
+display: table;
+min-height: 55vh;
+}
+
+.verticalCenterChild {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.helloRow {
+	min-height: 55vh;
+}
+
+/* incrementally reduces the margin on the sides of the screen */
+@media only screen and (max-width: 1100px) {
+	
+	.marginLeftRight10em {
+	margin-left: 9em;
+	margin-right: 9em;
+}
+	
+}
+
+@media only screen and (max-width: 1050px) {
+	
+	.marginLeftRight10em {
+	margin-left: 8em;
+	margin-right: 8em;
+}
+	
+}
+
+@media only screen and (max-width: 1000px) {
+	
+	.marginLeftRight10em {
+	margin-left: 7em;
+	margin-right: 7em;
+}
+	
+}
+
+@media only screen and (max-width: 950px) {
+	
+	.marginLeftRight10em {
+	margin-left: 6em;
+	margin-right: 6em;
+}
+	
+}
+
+@media only screen and (max-width: 900px) {
+	
+	.marginLeftRight10em {
+	margin-left: 5em;
+	margin-right: 5em;
+}
+	
+}
+
+
+@media only screen and (max-width: 800px) {
+	 .paddingLeft2em {
+		 padding-left: 0;
+	 }
+}
+
+
 /* take up full width of container if using mobile viewport */
 @media only screen and (max-width: 550px) {
+	
+	 
+	 .column-3-small {
+		 width: 50%;
+	 }
+	 
 	.marginBottomGutterWidth {
 	margin-bottom: 1em;
 }
-	.leftRightMargin10em {
+	.marginLeftRight10em {
 	margin-left: 2em;
 	margin-right: 2em;
 }
+
 }

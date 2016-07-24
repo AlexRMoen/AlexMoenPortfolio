@@ -31,19 +31,24 @@ h4 {
 
 h5 {
 	font-family: 'Palanquin Dark', sans-serif;
-	font-size: 1.25em;
-	line-height: 1.5em;
+	font-size: 1.9em;
+	line-height: 1.6em;
 }
 
 h6 {
 	font-family: 'Lato', sans-serif;
 	font-size: 0.8em;
-	line-height: 1.4em;
+	/* line-height: 1.4em; */
+	font-weight: lighter;
 }
 
 /* text rules */
 .bold {
 	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
 }
 
 .textCenter {
@@ -52,6 +57,10 @@ h6 {
 
 .textRight {
 	text-align: right;
+}
+
+.topIsFlush {
+	line-height: 0.65em;
 }
 
 

@@ -55,10 +55,10 @@ $(function() {
 <!-- play the video background - webm, then mp4, then static png --> 
 
 <video autoplay loop poster="video/fish1.png" id="bgvid">
-<!-- VIDEO OFF 
+<!-- VIDEO OFF
   <source src="video/fishHigher60.webm" type="video/webm">
   <source src="video/fishyEdit.mp4" type="video/mp4">
-  -->
+   -->
 </video>
 
 <!--[if lt IE 9]>
@@ -73,7 +73,7 @@ $(function() {
 <div class="paddingTop1point5em paddingBottom2em heightFull" id="aboveFold"> 
   
   <!-- name and job position -->
-  <div class="leftRightMargin10em" id="title">
+  <div class="marginLeftRight10em" id="title">
     <h1 class="white dropShadowHeight1">ALEX MOEN</h1>
     <h2 class="white dropShadowHeight1">UX Design <span class="grey">+</span> Art Direction</h2>
   </div>
@@ -92,11 +92,11 @@ $(function() {
 
 <!-- About Me section -->
 <div class="paddingTop3em paddingBottom2em whiteBG dropShadowHeight1" id="aboutMe">
-  <div class="leftRightMargin10em"> 
+  <div class="marginLeftRight10em"> 
     
     <!-- skill icons -->
-    <div class="row marginBottom2em">
-      <div class="column column-3 marginBottomGutterWidth imgFitBox"> 
+    <div class="row marginBottom1point5em">
+      <div class="column column-3 column-3-small marginBottomGutterWidth imgFitBox paddingLeftRight1percent"> 
         
         <!-- high-quality UI + graphic design icon -->
         <div class="icon marginBottom1em">
@@ -121,7 +121,7 @@ $(function() {
         <h4 class="grey textCenter">high-quality UI <br>
           + graphic design</h4>
       </div>
-      <div class="column column-3 marginBottomGutterWidth imgFitBox"> 
+      <div class="column column-3 column-3-small marginBottomGutterWidth imgFitBox paddingLeftRight1percent"> 
         
         <!-- HTML + CSS web coding icon -->
         <div class="icon marginBottom1em">
@@ -141,7 +141,7 @@ $(function() {
         <h4 class="grey textCenter">HTML + CSS <br>
           web coding</h4>
       </div>
-      <div class="column column-3 marginBottomGutterWidth imgFitBox"> 
+      <div class="column column-3 column-3-small marginBottomGutterWidth imgFitBox paddingLeftRight1percent"> 
         
         <!-- video editing + sound design icon -->
         <div class="icon marginBottom1em">
@@ -170,7 +170,7 @@ $(function() {
         <h4 class="grey textCenter">video editing <br>
           + sound design</h4>
       </div>
-      <div class="column column-3 marginBottomGutterWidth imgFitBox"> 
+      <div class="column column-3 column-3-small marginBottomGutterWidth imgFitBox paddingLeftRight1percent"> 
         
         <!-- motion text + animated graphics icon -->
         <div class="icon marginBottom1em">
@@ -212,20 +212,28 @@ $(function() {
     </div>
     
     <!-- my pic and description row -->
-    <div class="row">
-      <div class="column column-5 marginBottomGutterWidth imgFitBox"> 
-        
+    <div class="row helloRow">
+      <div class="column column-5 column-5-small marginBottomGutterWidth imgFitBox verticalCenterParent"> 
+        <div class="verticalCenterChild"> 
+      
+      
         <!-- my pic --> 
-        <img src="img/gallery/chirpr/thumbnail.png" class="imgCircle greyscale img100"> </div>
-      <div class="column column-7 marginBottomGutterWidth imgFitBox paddingLeft2em"> 
+        <img src="img/gallery/chirpr/thumbnail.png" class="imgCircle greyscale img100"> 
+        </div>
+        </div>
         
+      <div class="column column-7 column-7-small marginBottomGutterWidth imgFitBox paddingLeft2em verticalCenterParent">
+      <div class="verticalCenterChild"> 
+      
         <!-- my description-->
-        <h3 class="teal bold marginBottomPoint75em textCenter">ABOUT ME</h3>
-        <p class="grey">Hello! I'm a designer specializing in user interface design, graphic design, website coding and video production.</p>
-        <p class="grey">Whether its a UI concept for an app, the coding of a website, or a pitch video or trailer, I can deliver a high level of design quality that will communicate and delight.</p>
+        <h3 class="teal bold marginBottom1point25em textCenter topIsFlush">HELLO !</h3>
+        <p class="grey">I'm a designer specializing in user interfaces, graphic design, website coding and video production. I've been trained in user experience design at SFU's <span class="italic">School of Interactive Arts & Technology</span>.</p>
+        <p class="grey">Whether its the UI concept for an app, the creation of a responsive website (like this one), or a smart promotional video, I will deliver a high level of design quality that will communicate and delight.</p>
         
         <!-- my resume + jump to contact me -->
         <div class="buttonCluster"> <a href="#" class="button buttonResume">MY RESUME</a> <a href="#contactMe" class="button">CONTACT ME</a> </div>
+        
+        </div>
       </div>
     </div>
   </div>
@@ -233,30 +241,29 @@ $(function() {
 
 <!-- gallery of projects section -->
 <div id="galleryHeightWrapper">
-<div class="tealBG paddingTop2em paddingBottom3em 3daccel" id="gallery">
-  <h3 class="white dropShadowHeight1 bold marginBottom1em textCenter 3daccel" id="myWork">MY WORK</h3>
+<div class="tealBG paddingTop2em paddingBottom3em threeDaccel" id="gallery">
+  <h3 class="white dropShadowHeight1 bold marginBottom1em textCenter threeDaccel" id="myWork">PROJECTS</h3>
   
   <!-- wraps the first row of gallery items -->
   <div class="row galleryRow" id="firstRow"> 
     
     <!-- ella gallery section -->
-    <div class="column column-4 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box 3daccel" id="ella"> 
+    <div class="column column-4 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box threeDaccel" id="ella"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="ellaHeader"> 
         
         <!-- this link expands a gallery box into a modal --> 
         <a href="javascript:void(0)" onclick="ellaOpenModal()">
-        <div class="boxLabel tealBG white boxShadowHeight2 textRight 3daccel" id="ellaLabel">
-          <h6>24 hour design challenge</h6>
-          <h5>
-            ELLA VOLUNTEERING APP</h5>
+         <div class="boxLabel threeDaccel" id="ellaLabel">
+          <h5 class="white topLabel textShadowStrong">ELLA</h5>
+            <h6 class="tealBG white bottomLabel boxShadowHeight2">24 hour app challenge</h6>
         </div>
         </a>
         </div>
       
       <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain leftRightMargin5em 3daccel" id="ellaMain">
+      <div class="modalMain marginLeftRight5em threeDaccel" id="ellaMain">
       
       
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
@@ -274,7 +281,7 @@ $(function() {
  </div>
     
     <!-- kojiro gallery section -->
-    <div class="column column-4 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box 3daccel" id="kojiro"> 
+    <div class="column column-4 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box threeDaccel" id="kojiro"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="kojiroHeader"> 
@@ -282,9 +289,9 @@ $(function() {
         <!-- this link expands a gallery box into a modal --> 
         <a href="javascript:void(0)" onclick="kojiroOpenModal()">
     
-    <div class="boxLabel tealBG white textRight boxShadowHeight2 3daccel" id="kojiroLabel">
-          <h5>KOJIRŌ IZAKAYA</h5>
-            <h6>interactive restaurant menu</h6>
+    <div class="boxLabel threeDaccel" id="kojiroLabel">
+          <h5 class="white topLabel textShadowStrong">KOJIRŌ IZAKAYA</h5>
+            <h6 class="tealBG white bottomLabel boxShadowHeight2">interactive restaurant menu</h6>
         </div>
         </a>
         </div>
@@ -292,9 +299,9 @@ $(function() {
    
       
       <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain paddingLeftRight5em" id="kojiroMain">
+      <div class="modalMain marginLeftRight5em" id="kojiroMain">
         
-        <div class="paddingLeftRight5em">
+        <div class="marginLeftRight5em">
 
 <div class="videoWrapper">
     <!-- Copy & Pasted from YouTube -->
@@ -328,23 +335,21 @@ $(function() {
  </div>
     
     <!-- trello gallery section -->
-    <div class="column column-4 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box 3daccel" id="trello"> 
+    <div class="column column-4 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box threeDaccel" id="trello"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="trelloHeader"> 
         
         <!-- this link expands a gallery box into a modal --> 
         <a href="javascript:void(0)" onclick="trelloOpenModal()">
-            
-    <div class="boxLabel tealBG white textRight boxShadowHeight2 3daccel" id="trelloLabel">
-          <h5>TRELLO</h5>
-            <h6>iOS app proposal</h6>
+               <div class="boxLabel threeDaccel" id="trelloLabel">
+          <h5 class="white topLabel textShadowStrong">A SUNNY SPOT</h5>
+            <h6 class="tealBG white bottomLabel boxShadowHeight2">short documentary</h6>
         </div>
-        
         </a> </div>
       
       <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain leftRightMargin5em" id="trelloMain">
+      <div class="modalMain marginLeftRight5em" id="trelloMain">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
@@ -360,13 +365,11 @@ $(function() {
     <!-- close X and arrows for each expanded modal in first row --> 
     <!-- close X for ella-->
           <a href="javascript:void(0)" onclick="ellaCloseX()">
-      <div class="closeX" id="ellaCloseX">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" width="100%">
-          <style type="text/css">  
-	.x{fill:#23AEC2;}
-</style>
-          <polygon class="x" points="42 1.4 40.6 0 21 19.6 1.4 0 0 1.4 19.6 21 0 40.6 1.4 42 21 22.4 40.6 42 42 40.6 22.4 21 "/>
-        </svg>
+      <div class="closeX dropShadowHeight2" id="ellaCloseX">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
+	.xBG{fill:rgb(35, 174, 194);}
+	.xIcon{fill:rgb(255, 255, 255);}
+</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
       </div>
       </a>
       
@@ -389,13 +392,11 @@ $(function() {
 
     <!-- close X for kojiro -->
           <a href="javascript:void(0)" onclick="kojiroCloseX()">
-      <div class="closeX" id="kojiroCloseX">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" width="100%">
-          <style type="text/css">  
-	.x{fill:#23AEC2;}
-</style>
-          <polygon class="x" points="42 1.4 40.6 0 21 19.6 1.4 0 0 1.4 19.6 21 0 40.6 1.4 42 21 22.4 40.6 42 42 40.6 22.4 21 "/>
-        </svg>
+     <div class="closeX dropShadowHeight2" id="kojiroCloseX">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
+	.xBG{fill:rgb(35, 174, 194);}
+	.xIcon{fill:rgb(255, 255, 255);}
+</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
       </div>
       </a>
     
@@ -425,13 +426,11 @@ $(function() {
     
             <!-- close X for trello-->
           <a href="javascript:void(0)" onclick="trelloCloseX()">
-      <div class="closeX" id="trelloCloseX">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" width="100%">
-          <style type="text/css">  
-	.x{fill:#23AEC2;}
-</style>
-          <polygon class="x" points="42 1.4 40.6 0 21 19.6 1.4 0 0 1.4 19.6 21 0 40.6 1.4 42 21 22.4 40.6 42 42 40.6 22.4 21 "/>
-        </svg>
+         <div class="closeX dropShadowHeight2" id="trelloCloseX">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
+	.xBG{fill:rgb(35, 174, 194);}
+	.xIcon{fill:rgb(255, 255, 255);}
+</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
       </div>
       </a>
     
@@ -467,23 +466,23 @@ $(function() {
   <div class="row galleryRow" id="secondRow"> 
     
     <!-- playboy gallery section -->
-    <div class="column column-3 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box 3daccel" id="playboy"> 
+    <div class="column column-3 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box threeDaccel" id="playboy"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="playboyHeader"> 
         
         <!-- this link expands a gallery box into a modal --> 
         <a href="javascript:void(0)" onclick="playboyOpenModal()">
-    
-        <div class="boxLabel tealBG white textRight boxShadowHeight2 3daccel" id="playboyLabel">
-          <h5>PLAYBOY.COM</h5>
-            <h6>writer-focused website proposal</h6>
+        
+        <div class="boxLabel threeDaccel" id="playboyLabel">
+          <h5 class="white topLabel textShadowStrong">PLAYBOY</h5>
+            <h6 class="tealBG white bottomLabel boxShadowHeight2">writer-focused website proposal</h6>
         </div>
 
         </a> </div>
       
       <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain leftRightMargin5em" id="playboyMain">
+      <div class="modalMain marginLeftRight5em" id="playboyMain">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
@@ -498,23 +497,23 @@ $(function() {
       
     
         <!-- enterprise gallery section -->
-    <div class="column column-3 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box imgFitBox 3daccel" id="enterprise"> 
+    <div class="column column-3 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box imgFitBox threeDaccel" id="enterprise"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="enterpriseHeader"> 
         
         <!-- this link expands a gallery box into a modal --> 
         <a href="javascript:void(0)" onclick="enterpriseOpenModal()">
-            
-        <div class="boxLabel tealBG white textRight boxShadowHeight2 3daccel" id="enterpriseLabel">
-          <h5>ENTERPRISE<br>RENT-A-CAR</h5>
-            <h6>Car Drop app proposal</h6>
+        
+        <div class="boxLabel threeDaccel" id="enterpriseLabel">
+          <h5 class="white topLabel textShadowStrong">ENTERPRISE</h5>
+            <h6 class="tealBG white bottomLabel boxShadowHeight2">Car Drop app proposal</h6>
         </div>
         
         </a> </div>
       
       <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain leftRightMargin5em" id="enterpriseMain">
+      <div class="modalMain marginLeftRight5em" id="enterpriseMain">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
@@ -530,23 +529,23 @@ $(function() {
     
     
         <!-- chirpr gallery section -->
-    <div class="column column-3 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box imgFitBox 3daccel" id="chirpr"> 
+    <div class="column column-3 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box imgFitBox threeDaccel" id="chirpr"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="chirprHeader"> 
         
         <!-- this link expands a gallery box into a modal --> 
         <a href="javascript:void(0)" onclick="chirprOpenModal()">
-            
-        <div class="boxLabel tealBG white textRight boxShadowHeight2 3daccel" id="chirprLabel">
-          <h5>CHIRPR</h5>
-            <h6>parody card game</h6>
+        
+                <div class="boxLabel threeDaccel" id="chirprLabel">
+          <h5 class="white topLabel textShadowStrong">CHIRPR</h5>
+            <h6 class="tealBG white bottomLabel boxShadowHeight2">parody card game</h6>
         </div>
         
         </a> </div>
       
       <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain leftRightMargin5em" id="chirprMain">
+      <div class="modalMain marginLeftRight5em" id="chirprMain">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
@@ -563,23 +562,23 @@ $(function() {
     
     
         <!-- newitem gallery section -->
-    <div class="column column-3 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box imgFitBox 3daccel" id="newitem"> 
+    <div class="column column-3 whiteBG boxShadowHeight1 height35 marginBottomGutterWidth box imgFitBox threeDaccel" id="newitem"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="newitemHeader"> 
         
         <!-- this link expands a gallery box into a modal --> 
         <a href="javascript:void(0)" onclick="newitemOpenModal()">
-            
-        <div class="boxLabel tealBG white textRight boxShadowHeight2 3daccel" id="newitemLabel">
-          <h5>ITEM</h5>
-            <h6>item name</h6>
+        
+                        <div class="boxLabel threeDaccel" id="newitemLabel">
+          <h5 class="white topLabel textShadowStrong">ITEM</h5>
+            <h6 class="tealBG white bottomLabel boxShadowHeight2">item type</h6>
         </div>
         
         </a> </div>
       
       <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain leftRightMargin5em" id="newitemMain">
+      <div class="modalMain marginLeftRight5em" id="newitemMain">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
@@ -597,13 +596,11 @@ $(function() {
     <!-- close X and arrows for each expanded modal in second row --> 
     <!-- close X for Playboy -->
      <a href="javascript:void(0)" onclick="playboyCloseX()">
-      <div class="closeX" id="playboyCloseX">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" width="100%">
-          <style type="text/css">  
-	.x{fill:#23AEC2;}
-</style>
-          <polygon class="x" points="42 1.4 40.6 0 21 19.6 1.4 0 0 1.4 19.6 21 0 40.6 1.4 42 21 22.4 40.6 42 42 40.6 22.4 21 "/>
-        </svg>
+       <div class="closeX dropShadowHeight2" id="playboyCloseX">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
+	.xBG{fill:rgb(35, 174, 194);}
+	.xIcon{fill:rgb(255, 255, 255);}
+</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
       </div>
       </a> 
     <!-- left arrow for playboy --> 
@@ -633,13 +630,11 @@ $(function() {
     
     <!-- close X for enterprise -->
           <a href="javascript:void(0)" onclick="enterpriseCloseX()">
-      <div class="closeX" id="enterpriseCloseX">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" width="100%">
-          <style type="text/css">  
-	.x{fill:#23AEC2;}
-</style>
-          <polygon class="x" points="42 1.4 40.6 0 21 19.6 1.4 0 0 1.4 19.6 21 0 40.6 1.4 42 21 22.4 40.6 42 42 40.6 22.4 21 "/>
-        </svg>
+        <div class="closeX dropShadowHeight2" id="enterpriseCloseX">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
+	.xBG{fill:rgb(35, 174, 194);}
+	.xIcon{fill:rgb(255, 255, 255);}
+</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
       </div>
       </a>
     
@@ -670,13 +665,11 @@ $(function() {
     
     <!-- close X for chirpr -->
           <a href="javascript:void(0)" onclick="chirprCloseX()">
-      <div class="closeX" id="chirprCloseX">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" width="100%">
-          <style type="text/css">  
-	.x{fill:#23AEC2;}
-</style>
-          <polygon class="x" points="42 1.4 40.6 0 21 19.6 1.4 0 0 1.4 19.6 21 0 40.6 1.4 42 21 22.4 40.6 42 42 40.6 22.4 21 "/>
-        </svg>
+        <div class="closeX dropShadowHeight2" id="chirprCloseX">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
+	.xBG{fill:rgb(35, 174, 194);}
+	.xIcon{fill:rgb(255, 255, 255);}
+</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
       </div>
       </a>
     
@@ -707,13 +700,11 @@ $(function() {
     
     <!-- close X for newitem -->
           <a href="javascript:void(0)" onclick="newitemCloseX()">
-      <div class="closeX" id="newitemCloseX">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" width="100%">
-          <style type="text/css">  
-	.x{fill:#23AEC2;}
-</style>
-          <polygon class="x" points="42 1.4 40.6 0 21 19.6 1.4 0 0 1.4 19.6 21 0 40.6 1.4 42 21 22.4 40.6 42 42 40.6 22.4 21 "/>
-        </svg>
+         <div class="closeX dropShadowHeight2" id="newitemCloseX">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
+	.xBG{fill:rgb(35, 174, 194);}
+	.xIcon{fill:rgb(255, 255, 255);}
+</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
       </div>
       </a>
     
@@ -738,13 +729,14 @@ $(function() {
 
 <!-- contact me section -->
 <div class="paddingBottom1point5em dropShadowHeight1 textCenter heightFull" id="porthole">
+<div class="portholeRim">
   <div class="contactPosition transitionAll0point5" id="contactMe">
     <h3 class="teal bold marginBottomPoint75em">CONTACT ME</h3>
-    <div class="leftRightMargin10em"> 
+    <div class="marginLeftRight10em"> 
       
       <!-- contact methods -->
       <div class="row"> <a href="tel://1-604-773-2199">
-        <div class="column column-3 marginBottomGutterWidth box imgFitBox"> 
+        <div class="column column-3 column-3-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent"> 
           
           <!-- phone icon -->
           <div class="icon marginBottom1em">
@@ -762,7 +754,7 @@ $(function() {
           <h4 class="grey textCenter">604.773.2199</h4>
         </div>
         </a> <a href="mailto:info@alexmoen.com">
-        <div class="column column-3 marginBottomGutterWidth box imgFitBox"> 
+        <div class="column column-3 column-3-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent"> 
           
           <!-- email icon -->
           <div class="icon marginBottom1em">
@@ -781,7 +773,7 @@ $(function() {
           <h4 class="grey textCenter">info@alexmoen.com</h4>
         </div>
         </a> <a href="https://linkedin.com/in/alexmoen">
-        <div class="column column-3 marginBottomGutterWidth box imgFitBox"> 
+        <div class="column column-3 column-3-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent"> 
           
           <!-- LinkedIn icon -->
           <div class="icon marginBottom1em">
@@ -801,7 +793,7 @@ $(function() {
           <h4 class="grey textCenter">alexmoen</h4>
         </div>
         </a> <a href="https://twitter.com/AlexRMoen">
-        <div class="column column-3 marginBottomGutterWidth box imgFitBox"> 
+        <div class="column column-3 column-3-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent"> 
           
           <!-- Twitter icon -->
           <div class="icon marginBottom1em">
@@ -820,6 +812,7 @@ $(function() {
         </div>
         </a> </div>
     </div>
+  </div>
   </div>
 </div>
 

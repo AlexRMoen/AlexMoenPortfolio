@@ -90,11 +90,34 @@ m = margin (1.6%)
     width: 100%;
 }
 
+@media only screen and (max-width: 800px) {
+	
+	
+
+.column-5-small {
+	    width: 60%;
+        float: none;
+		margin-left: 20%;
+}
+
+.column-7-small {
+	    width: auto;
+        float: none;
+		margin-left: 0;
+}
+
+.verticalCenterParent {
+	min-height: auto;
+	padding-bottom: 2em;
+}
+	
+}
+
 /* take up full width of container if using mobile viewport */
 @media only screen and (max-width: 550px) {
     .column-1, 
-    .column-2, 
-    .column-3, 
+    .column-2,
+	.column-3, 
     .column-4, 
     .column-5, 
     .column-6, 
@@ -107,6 +130,11 @@ m = margin (1.6%)
         width: auto;
         float: none;
     }
+	
+	.column-3-small {
+		width: 50%;
+		float: left;
+	}
 
     .column + .column {
         margin-left: 0;
