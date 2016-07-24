@@ -471,6 +471,20 @@ video#bgvid {
 	width: 100%;
 }
 
+.verticalCenterParent {
+display: table;
+min-height: 55vh;
+}
+
+.verticalCenterChild {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.helloRow {
+	min-height: 55vh;
+}
+
 /* take up full width of container if using mobile viewport */
 @media only screen and (max-width: 550px) {
 	.marginBottomGutterWidth {
