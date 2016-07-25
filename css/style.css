@@ -259,6 +259,24 @@ video#bgvid {
 	transition: all 0.5s ease-out;
 }
 
+.gradient {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
+
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%);
+
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#0d000000',GradientType=0 );
+
+
+
+}
+
 
 /* drop shadows */
 .boxShadowHeight1 {
@@ -281,7 +299,7 @@ video#bgvid {
 }
 
 .textShadowStrong {
-	text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.7);
+	text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.6);
 }
 
 
