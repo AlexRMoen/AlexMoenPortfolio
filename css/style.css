@@ -246,6 +246,8 @@ video#bgvid {
 .topLabel {
 	padding-left: 35px;
 	padding-right: 25px;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
 }
 
 .bottomLabel {

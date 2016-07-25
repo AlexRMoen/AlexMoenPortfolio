@@ -95,6 +95,8 @@ function enterpriseOpenModal() {
     document.getElementById('enterpriseLabel').style.width = '38%';
 	document.getElementById('enterpriseBottomLabel').style.paddingTop = '0.3em';
 	document.getElementById('enterpriseBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('enterpriseTopLabel').style.paddingLeft = '15px';
+	document.getElementById('enterpriseBottomLabel').style.paddingLeft = '15px';
 	
 	}, 500);
 		 
@@ -175,6 +177,8 @@ function enterpriseCloseX() {
 	document.getElementById('enterpriseLabel').style.width = '100%';
 	document.getElementById('enterpriseBottomLabel').style.paddingTop = '0.5em';
 	document.getElementById('enterpriseBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('enterpriseTopLabel').style.paddingLeft = '35px';
+	document.getElementById('enterpriseBottomLabel').style.paddingLeft = '35px';
 	
 	// adds the gallery title
     document.getElementById('myWork').style.height = 'auto';
@@ -233,6 +237,8 @@ function enterpriseLeftArrow() {
 	document.getElementById('enterpriseLabel').style.width = '100%';
 	document.getElementById('enterpriseBottomLabel').style.paddingTop = '0.5em';
 	document.getElementById('enterpriseBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('enterpriseTopLabel').style.paddingLeft = '35px';
+	document.getElementById('enterpriseBottomLabel').style.paddingLeft = '35px';
     
     // switches out arrow for the proper item
     document.getElementById('enterpriseLeftArrow').style.left = '-2.5em';
@@ -265,6 +271,8 @@ function enterpriseLeftArrow() {
     document.getElementById('playboyLabel').style.width = '38%';
 	document.getElementById('playboyBottomLabel').style.paddingTop = '0.3em';
 	document.getElementById('playboyBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('playboyTopLabel').style.paddingLeft = '15px';
+	document.getElementById('playboyBottomLabel').style.paddingLeft = '15px';
 	
 }
 
@@ -300,6 +308,8 @@ function enterpriseRightArrow() {
 	document.getElementById('enterpriseLabel').style.width = '100%';
 	document.getElementById('enterpriseBottomLabel').style.paddingTop = '0.5em';
 	document.getElementById('enterpriseBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('enterpriseTopLabel').style.paddingLeft = '35px';
+	document.getElementById('enterpriseBottomLabel').style.paddingLeft = '35px';
     
     // switches out arrow for the proper item
     document.getElementById('enterpriseLeftArrow').style.left = '-2.5em';
@@ -332,5 +342,7 @@ function enterpriseRightArrow() {
     document.getElementById('chirprLabel').style.width = '38%';
 	document.getElementById('chirprBottomLabel').style.paddingTop = '0.3em';
 	document.getElementById('chirprBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('chirprTopLabel').style.paddingLeft = '15px';
+	document.getElementById('chirprBottomLabel').style.paddingLeft = '15px';
 	
 }

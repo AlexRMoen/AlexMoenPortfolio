@@ -95,6 +95,8 @@ function playboyOpenModal() {
     document.getElementById('playboyLabel').style.width = '38%';
 	document.getElementById('playboyBottomLabel').style.paddingTop = '0.3em';
 	document.getElementById('playboyBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('playboyTopLabel').style.paddingLeft = '15px';
+	document.getElementById('playboyBottomLabel').style.paddingLeft = '15px';
 	
 	}, 500);
 		 
@@ -175,6 +177,8 @@ function playboyCloseX() {
 	document.getElementById('playboyLabel').style.width = '100%';
 	document.getElementById('playboyBottomLabel').style.paddingTop = '0.5em';
 	document.getElementById('playboyBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('playboyTopLabel').style.paddingLeft = '35px';
+	document.getElementById('playboyBottomLabel').style.paddingLeft = '35px';
 	
 	// adds the gallery title
     document.getElementById('myWork').style.height = 'auto';
@@ -236,6 +240,8 @@ function playboyLeftArrow() {
 	document.getElementById('playboyLabel').style.width = '100%';
 	document.getElementById('playboyBottomLabel').style.paddingTop = '0.5em';
 	document.getElementById('playboyBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('playboyTopLabel').style.paddingLeft = '35px';
+	document.getElementById('playboyBottomLabel').style.paddingLeft = '35px';
     
     // switches out arrow for the proper item
     document.getElementById('playboyLeftArrow').style.left = '-2.5em';
@@ -295,6 +301,8 @@ function playboyLeftArrow() {
     document.getElementById('trelloLabel').style.width = '38%';
 	document.getElementById('trelloBottomLabel').style.paddingTop = '0.3em';
 	document.getElementById('trelloBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('trelloTopLabel').style.paddingLeft = '15px';
+	document.getElementById('trelloBottomLabel').style.paddingLeft = '15px';
 	
 }
 
@@ -328,6 +336,8 @@ function playboyRightArrow() {
 	document.getElementById('playboyLabel').style.width = '100%';
 	document.getElementById('playboyBottomLabel').style.paddingTop = '0.5em';
 	document.getElementById('playboyBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('playboyTopLabel').style.paddingLeft = '35px';
+	document.getElementById('playboyBottomLabel').style.paddingLeft = '35px';
     
     // switches out arrow for the proper item
     document.getElementById('playboyLeftArrow').style.left = '-2.5em';
@@ -360,6 +370,8 @@ function playboyRightArrow() {
     document.getElementById('enterpriseLabel').style.width = '38%';
 	document.getElementById('enterpriseBottomLabel').style.paddingTop = '0.3em';
 	document.getElementById('enterpriseBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('enterpriseTopLabel').style.paddingLeft = '15px';
+	document.getElementById('enterpriseBottomLabel').style.paddingLeft = '15px';
 	
 }
 

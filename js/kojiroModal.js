@@ -90,6 +90,8 @@ function kojiroOpenModal() {
     document.getElementById('kojiroLabel').style.width = '38%';
 	document.getElementById('kojiroBottomLabel').style.paddingTop = '0.3em';
 	document.getElementById('kojiroBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('kojiroTopLabel').style.paddingLeft = '15px';
+	document.getElementById('kojiroBottomLabel').style.paddingLeft = '15px';
 	
 	}, 500);
 		 
@@ -160,6 +162,8 @@ function kojiroCloseX() {
 	document.getElementById('kojiroLabel').style.width = '100%';
 	document.getElementById('kojiroBottomLabel').style.paddingTop = '0.5em';
 	document.getElementById('kojiroBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('kojiroTopLabel').style.paddingLeft = '35px';
+	document.getElementById('kojiroBottomLabel').style.paddingLeft = '35px';
 	
 	// adds the gallery title
     document.getElementById('myWork').style.height = 'auto';
@@ -212,6 +216,8 @@ function kojiroLeftArrow() {
 	document.getElementById('kojiroLabel').style.width = '100%';
 	document.getElementById('kojiroBottomLabel').style.paddingTop = '0.5em';
 	document.getElementById('kojiroBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('kojiroTopLabel').style.paddingLeft = '35px';
+	document.getElementById('kojiroBottomLabel').style.paddingLeft = '35px';
     
     // switches out arrow for the proper item
     document.getElementById('kojiroLeftArrow').style.left = '-2.5em';
@@ -243,6 +249,8 @@ function kojiroLeftArrow() {
     document.getElementById('ellaLabel').style.width = '38%';
 	document.getElementById('ellaBottomLabel').style.paddingTop = '0.3em';
 	document.getElementById('ellaBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('ellaTopLabel').style.paddingLeft = '15px';
+	document.getElementById('ellaBottomLabel').style.paddingLeft = '15px';
 	
 }
 
@@ -270,6 +278,8 @@ function kojiroRightArrow() {
 	document.getElementById('kojiroLabel').style.width = '100%';
 	document.getElementById('kojiroBottomLabel').style.paddingTop = '0.5em';
 	document.getElementById('kojiroBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('kojiroTopLabel').style.paddingLeft = '35px';
+	document.getElementById('kojiroBottomLabel').style.paddingLeft = '35px';
     
     // switches out arrow for the proper item
     document.getElementById('kojiroLeftArrow').style.left = '-2.5em';
@@ -301,6 +311,8 @@ function kojiroRightArrow() {
     document.getElementById('trelloLabel').style.width = '38%';
 	document.getElementById('trelloBottomLabel').style.paddingTop = '0.3em';
 	document.getElementById('trelloBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('trelloTopLabel').style.paddingLeft = '15px';
+	document.getElementById('trelloBottomLabel').style.paddingLeft = '15px';
 	
 }
 

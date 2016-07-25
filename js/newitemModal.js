@@ -95,6 +95,8 @@ function newitemOpenModal() {
     document.getElementById('newitemLabel').style.width = '38%';
 	document.getElementById('newitemBottomLabel').style.paddingTop = '0.3em';
 	document.getElementById('newitemBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('newitemTopLabel').style.paddingLeft = '15px';
+	document.getElementById('newitemBottomLabel').style.paddingLeft = '15px';
 	
 	}, 500);
 		 
@@ -177,6 +179,8 @@ function newitemCloseX() {
 	document.getElementById('newitemLabel').style.width = '100%';
 	document.getElementById('newitemBottomLabel').style.paddingTop = '0.5em';
 	document.getElementById('newitemBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('newitemTopLabel').style.paddingLeft = '35px';
+	document.getElementById('newitemBottomLabel').style.paddingLeft = '35px';
 	
 	// adds the gallery title
     document.getElementById('myWork').style.height = 'auto';
@@ -235,6 +239,8 @@ function newitemLeftArrow() {
 	document.getElementById('newitemLabel').style.width = '100%';
 	document.getElementById('newitemBottomLabel').style.paddingTop = '0.5em';
 	document.getElementById('newitemBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('newitemTopLabel').style.paddingLeft = '35px';
+	document.getElementById('newitemBottomLabel').style.paddingLeft = '35px';
     
     // switches out arrow for the proper item
     document.getElementById('newitemLeftArrow').style.left = '-2.5em';
@@ -267,5 +273,7 @@ function newitemLeftArrow() {
     document.getElementById('chirprLabel').style.width = '38%';
 	document.getElementById('chirprBottomLabel').style.paddingTop = '0.3em';
 	document.getElementById('chirprBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('chirprTopLabel').style.paddingLeft = '15px';
+	document.getElementById('chirprBottomLabel').style.paddingLeft = '15px';
 	
 }
