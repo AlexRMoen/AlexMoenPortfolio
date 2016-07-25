@@ -235,22 +235,26 @@ video#bgvid {
 /* labels the box */
 .boxLabel {
 	position: absolute;
+	width: 100%;
+	bottom: 0;
 	right: 0;
-	bottom: 1.75em;
 	transform-origin: 100% 0;
 	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 }
 
 .topLabel {
+	padding-left: 35px;
 	padding-right: 25px;
 }
 
 .bottomLabel {
-	padding-left: 15px;
+	padding-left: 35px;
 	padding-right: 25px;
-	padding-top: 0.25em;
-	padding-bottom: 0.3em;
+	padding-top: 0.5em;
+	padding-bottom: 0.7em;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
 }
 
 

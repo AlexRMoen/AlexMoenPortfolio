@@ -87,6 +87,9 @@ function trelloOpenModal() {
     document.getElementById('trelloCloseX').style.top = '11vh';
     document.getElementById('trelloLabel').style.transform = 'scale(1.3)';
     document.getElementById('trelloLabel').style.bottom = '3.75em';
+    document.getElementById('trelloLabel').style.width = '38%';
+	document.getElementById('trelloBottomLabel').style.paddingTop = '0.3em';
+	document.getElementById('trelloBottomLabel').style.paddingBottom = '0.4em';
 	
 	}, 500);
 		 
@@ -151,7 +154,10 @@ function trelloCloseX() {
     document.getElementById('trelloCloseX').style.right = '50%';
     document.getElementById('trelloCloseX').style.top = '50%';
     document.getElementById('trelloLabel').style.transform = 'scale(1)';
-    document.getElementById('trelloLabel').style.bottom = '1.75em';
+    document.getElementById('trelloLabel').style.bottom = '0';
+	document.getElementById('trelloLabel').style.width = '100%';
+	document.getElementById('trelloBottomLabel').style.paddingTop = '0.5em';
+	document.getElementById('trelloBottomLabel').style.paddingBottom = '0.7em';
 	
 	// adds the gallery title
     document.getElementById('myWork').style.height = 'auto';
@@ -200,7 +206,10 @@ function trelloLeftArrow() {
     document.getElementById('trelloCloseX').style.right = '50%';
     document.getElementById('trelloCloseX').style.top = '50%';
     document.getElementById('trelloLabel').style.transform = 'scale(1)';
-    document.getElementById('trelloLabel').style.bottom = '1.75em';
+    document.getElementById('trelloLabel').style.bottom = '0';
+	document.getElementById('trelloLabel').style.width = '100%';
+	document.getElementById('trelloBottomLabel').style.paddingTop = '0.5em';
+	document.getElementById('trelloBottomLabel').style.paddingBottom = '0.7em';
     
     // switches out arrow for the proper item
     document.getElementById('trelloLeftArrow').style.left = '-2.5em';
@@ -229,6 +238,9 @@ function trelloLeftArrow() {
     document.getElementById('kojiroCloseX').style.top = '11vh';
     document.getElementById('kojiroLabel').style.transform = 'scale(1.3)';
     document.getElementById('kojiroLabel').style.bottom = '3.75em';
+    document.getElementById('kojiroLabel').style.width = '38%';
+	document.getElementById('kojiroBottomLabel').style.paddingTop = '0.3em';
+	document.getElementById('kojiroBottomLabel').style.paddingBottom = '0.4em';
 	
 }
 
@@ -259,7 +271,10 @@ function trelloRightArrow() {
     document.getElementById('trelloCloseX').style.right = '50%';
     document.getElementById('trelloCloseX').style.top = '50%';
     document.getElementById('trelloLabel').style.transform = 'scale(1)';
-    document.getElementById('trelloLabel').style.bottom = '1.75em';
+    document.getElementById('trelloLabel').style.bottom = '0';
+	document.getElementById('trelloLabel').style.width = '100%';
+	document.getElementById('trelloBottomLabel').style.paddingTop = '0.5em';
+	document.getElementById('trelloBottomLabel').style.paddingBottom = '0.7em';
     
     // switches out arrow for the proper item
     document.getElementById('trelloLeftArrow').style.left = '-2.5em';
@@ -315,6 +330,9 @@ function trelloRightArrow() {
     document.getElementById('playboyCloseX').style.top = '11vh';
     document.getElementById('playboyLabel').style.transform = 'scale(1.3)';
     document.getElementById('playboyLabel').style.bottom = '3.75em';
+    document.getElementById('playboyLabel').style.width = '38%';
+	document.getElementById('playboyBottomLabel').style.paddingTop = '0.3em';
+	document.getElementById('playboyBottomLabel').style.paddingBottom = '0.4em';
 	
 }
 

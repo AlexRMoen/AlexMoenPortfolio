@@ -87,6 +87,9 @@ function ellaOpenModal() {
     document.getElementById('ellaCloseX').style.top = '11vh';
     document.getElementById('ellaLabel').style.transform = 'scale(1.3)';
     document.getElementById('ellaLabel').style.bottom = '3.75em';
+    document.getElementById('ellaLabel').style.width = '38%';
+	document.getElementById('ellaBottomLabel').style.paddingTop = '0.3em';
+	document.getElementById('ellaBottomLabel').style.paddingBottom = '0.4em';
 	
 	}, 500);
 		 
@@ -152,7 +155,10 @@ function ellaCloseX() {
     document.getElementById('ellaCloseX').style.right = '50%';
     document.getElementById('ellaCloseX').style.top = '50%';
     document.getElementById('ellaLabel').style.transform = 'scale(1)';
-    document.getElementById('ellaLabel').style.bottom = '1.75em';
+    document.getElementById('ellaLabel').style.bottom = '0';
+	document.getElementById('ellaLabel').style.width = '100%';
+	document.getElementById('ellaBottomLabel').style.paddingTop = '0.5em';
+	document.getElementById('ellaBottomLabel').style.paddingBottom = '0.7em';
 	
 	// adds the gallery title
     document.getElementById('myWork').style.height = 'auto';
@@ -204,7 +210,10 @@ function ellaRightArrow() {
     document.getElementById('ellaCloseX').style.right = '50%';
     document.getElementById('ellaCloseX').style.top = '50%';
     document.getElementById('ellaLabel').style.transform = 'scale(1)';
-    document.getElementById('ellaLabel').style.bottom = '1.75em';
+    document.getElementById('ellaLabel').style.bottom = '0';
+	document.getElementById('ellaLabel').style.width = '100%';
+	document.getElementById('ellaBottomLabel').style.paddingTop = '0.5em';
+	document.getElementById('ellaBottomLabel').style.paddingBottom = '0.7em';
     
     // switches out arrow for the proper item
     // NONE document.getElementById('ellaLeftArrow').style.left = '-2.5em';
@@ -233,5 +242,8 @@ function ellaRightArrow() {
     document.getElementById('kojiroCloseX').style.top = '11vh';
     document.getElementById('kojiroLabel').style.transform = 'scale(1.3)';
     document.getElementById('kojiroLabel').style.bottom = '3.75em';
+    document.getElementById('kojiroLabel').style.width = '38%';
+	document.getElementById('kojiroBottomLabel').style.paddingTop = '0.3em';
+	document.getElementById('kojiroBottomLabel').style.paddingBottom = '0.4em';
 	
 }

@@ -92,6 +92,9 @@ function chirprOpenModal() {
     document.getElementById('chirprCloseX').style.top = '11vh';
     document.getElementById('chirprLabel').style.transform = 'scale(1.3)';
     document.getElementById('chirprLabel').style.bottom = '3.75em';
+    document.getElementById('chirprLabel').style.width = '38%';
+	document.getElementById('chirprBottomLabel').style.paddingTop = '0.3em';
+	document.getElementById('chirprBottomLabel').style.paddingBottom = '0.4em';
 	
 	}, 500);
 		 
@@ -169,7 +172,10 @@ function chirprCloseX() {
     document.getElementById('chirprCloseX').style.right = '50%';
     document.getElementById('chirprCloseX').style.top = '50%';
     document.getElementById('chirprLabel').style.transform = 'scale(1)';
-    document.getElementById('chirprLabel').style.bottom = '1.75em';
+    document.getElementById('chirprLabel').style.bottom = '0';
+	document.getElementById('chirprLabel').style.width = '100%';
+	document.getElementById('chirprBottomLabel').style.paddingTop = '0.5em';
+	document.getElementById('chirprBottomLabel').style.paddingBottom = '0.7em';
 	
 	// adds the gallery title
     document.getElementById('myWork').style.height = 'auto';
@@ -224,7 +230,10 @@ function chirprLeftArrow() {
     document.getElementById('chirprCloseX').style.right = '50%';
     document.getElementById('chirprCloseX').style.top = '50%';
     document.getElementById('chirprLabel').style.transform = 'scale(1)';
-    document.getElementById('chirprLabel').style.bottom = '1.75em';
+    document.getElementById('chirprLabel').style.bottom = '0';
+	document.getElementById('chirprLabel').style.width = '100%';
+	document.getElementById('chirprBottomLabel').style.paddingTop = '0.5em';
+	document.getElementById('chirprBottomLabel').style.paddingBottom = '0.7em';
     
     // switches out arrow for the proper item
     document.getElementById('chirprLeftArrow').style.left = '-2.5em';
@@ -254,6 +263,9 @@ function chirprLeftArrow() {
     document.getElementById('enterpriseCloseX').style.top = '11vh';
     document.getElementById('enterpriseLabel').style.transform = 'scale(1.3)';
     document.getElementById('enterpriseLabel').style.bottom = '3.75em';
+    document.getElementById('enterpriseLabel').style.width = '38%';
+	document.getElementById('enterpriseBottomLabel').style.paddingTop = '0.3em';
+	document.getElementById('enterpriseBottomLabel').style.paddingBottom = '0.4em';
 	
 }
 
@@ -285,7 +297,10 @@ function chirprRightArrow() {
     document.getElementById('chirprCloseX').style.right = '50%';
     document.getElementById('chirprCloseX').style.top = '50%';
     document.getElementById('chirprLabel').style.transform = 'scale(1)';
-    document.getElementById('chirprLabel').style.bottom = '1.75em';
+    document.getElementById('chirprLabel').style.bottom = '0';
+	document.getElementById('chirprLabel').style.width = '100%';
+	document.getElementById('chirprBottomLabel').style.paddingTop = '0.5em';
+	document.getElementById('chirprBottomLabel').style.paddingBottom = '0.7em';
     
     // switches out arrow for the proper item
     document.getElementById('chirprLeftArrow').style.left = '-2.5em';
@@ -315,5 +330,8 @@ function chirprRightArrow() {
     document.getElementById('newitemCloseX').style.top = '11vh';
     document.getElementById('newitemLabel').style.transform = 'scale(1.3)';
     document.getElementById('newitemLabel').style.bottom = '3.75em';
+    document.getElementById('newitemLabel').style.width = '38%';
+	document.getElementById('newitemBottomLabel').style.paddingTop = '0.3em';
+	document.getElementById('newitemBottomLabel').style.paddingBottom = '0.4em';
 	
 }
