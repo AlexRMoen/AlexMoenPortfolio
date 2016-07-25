@@ -279,23 +279,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 
 /* drop shadows */
-.boxShadowHeight1 {
-	box-shadow: 0.1em 0.1em 1em rgba(0,0,0,0.3);
+.boxShadow {
+	box-shadow: 2px 2px 16px rgba(0,0,0,0.3);
 }
 
-.boxShadowHeight2 {
-	box-shadow: 0.2em 0.2em 1.1em rgba(0,0,0,0.3);
-}
-
-.dropShadowHeight1 {
--webkit-filter: drop-shadow(0.1em 0.1em 0.2em rgba(0,0,0,0.2));
-	filter: drop-shadow(0.1em 0.1em 0.2em rgba(0,0,0,0.2));
+.dropShadow {
+-webkit-filter: drop-shadow(2px 2px 16px rgba(0,0,0,0.3));
+	filter: drop-shadow(2px 2px 16px rgba(0,0,0,0.3));
 	
-}
-
-.dropShadowHeight2 {
--webkit-filter: drop-shadow(0.2em 0.2em 1.1em rgba(0,0,0,0.2));
-	filter: drop-shadow(0.2em 0.2em 1.1em rgba(0,0,0,0.2));
 }
 
 .textShadowStrong {
@@ -314,7 +305,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 /* down arrow to indicate scrolling on a full screen */
 #arrowDown {
 	position: absolute;
-	bottom: 5vh;
+	bottom: 6vh;
 	left: 50%;
 	-ms-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
