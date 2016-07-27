@@ -551,23 +551,15 @@ min-height: 55vh;
 	 .paddingLeft2em {
 		 padding-left: 0;
 	 }
-}
-
-
-/* take up full width of container if using mobile viewport */
-@media only screen and (max-width: 550px) {
 	
 	 
-	 .column-3-small {
-		 width: 50%;
-	 }
-	 
+	
 	.marginBottomGutterWidth {
 	margin-bottom: 1em;
 }
 	.marginLeftRight10em {
-	margin-left: 2em;
-	margin-right: 2em;
+	margin-left: 3em;
+	margin-right: 3em;
 }
 
 }

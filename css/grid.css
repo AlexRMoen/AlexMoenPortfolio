@@ -94,10 +94,12 @@ m = margin (1.6%)
 	
 	
 
+
 .column-5-small {
 	    width: 60%;
         float: none;
-		margin-left: 20%;
+		margin-left: 15%;
+		margin-right: 15%;
 }
 
 .column-7-small {
@@ -111,10 +113,7 @@ m = margin (1.6%)
 	padding-bottom: 2em;
 }
 	
-}
 
-/* take up full width of container if using mobile viewport */
-@media only screen and (max-width: 550px) {
     .column-1, 
     .column-2,
 	.column-3, 
