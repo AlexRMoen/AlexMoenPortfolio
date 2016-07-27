@@ -556,17 +556,28 @@ min-height: 55vh;
 	 
 	
 	.marginBottomGutterWidth {
-	margin-bottom: 1em;
+	margin-bottom: 2em;
 }
 	.marginLeftRight10em {
 	margin-left: 4em;
 	margin-right: 4em;
 }
+}
+
+@media only screen and (max-width: 700px) {
 
 #porthole {
+	
+	background: radial-gradient(circle 20% at 50% 25%, transparent 20%, rgb(235,235,235) 20%);
+    background: -webkit-radial-gradient(50% 25%, circle, transparent 20%, rgba(235,235,235,1.00) 20%);
+	background: -moz-radial-gradient(50% 25%, circle, transparent 20%, rgb(235,235,235) 20%);
 }
 
 .portholeRim {
+	
+	background: radial-gradient(circle 5% at 50% 25%, transparent 23%, rgb(255,255,255) 20%);
+    background: -webkit-radial-gradient(50% 25%, circle, transparent 23%, rgb(255,255,255) 20%);
+	background: -moz-radial-gradient(50% 25%, circle, transparent 23%, rgb(255,255,255) 20%);
 }
 
 }
