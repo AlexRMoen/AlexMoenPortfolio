@@ -46,12 +46,12 @@ function newitemOpenModal() {
     document.getElementById('secondRow').style.paddingTop = '7.5vh';
 
     // rescales and fades line 1 items
-    document.getElementById('ella').style.height = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginBottom = '0';
     document.getElementById('kojiro').style.height = '0';
     document.getElementById('kojiro').style.opacity = '0';
     document.getElementById('kojiro').style.marginBottom = '0';
+    document.getElementById('ella').style.height = '0';
+    document.getElementById('ella').style.opacity = '0';
+    document.getElementById('ella').style.marginBottom = '0';
     document.getElementById('trello').style.height = '0';
     document.getElementById('trello').style.opacity = '0';
     document.getElementById('trello').style.marginBottom = '0';
@@ -121,16 +121,16 @@ function newitemCloseX() {
 	document.getElementById('gallery').style.paddingBottom = '3em';
 	
 	// rescales and fades-in line 1 items
-    document.getElementById('ella').style.height = '35vh';
-    document.getElementById('ella').style.width = '32.2666666667%';
-    document.getElementById('ella').style.opacity = '1';
-    document.getElementById('ella').style.marginLeft = '0';
-	document.getElementById('ella').style.marginBottom = '1.6vw';
     document.getElementById('kojiro').style.height = '35vh';
     document.getElementById('kojiro').style.width = '32.2666666667%';
     document.getElementById('kojiro').style.opacity = '1';
-    document.getElementById('kojiro').style.marginLeft = '1.6%';
+    document.getElementById('kojiro').style.marginLeft = '0';
 	document.getElementById('kojiro').style.marginBottom = '1.6vw';
+    document.getElementById('ella').style.height = '35vh';
+    document.getElementById('ella').style.width = '32.2666666667%';
+    document.getElementById('ella').style.opacity = '1';
+    document.getElementById('ella').style.marginLeft = '1.6%';
+	document.getElementById('ella').style.marginBottom = '1.6vw';
 	document.getElementById('trello').style.height = '35vh';
     document.getElementById('trello').style.width = '32.2666666667%';
     document.getElementById('trello').style.opacity = '1';

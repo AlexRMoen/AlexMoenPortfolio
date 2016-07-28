@@ -40,8 +40,8 @@ $(function() {
 </script>
 
 <!-- loads modal expanding JavaScript -->
-<script src="js/ellaModal.js"></script>
 <script src="js/kojiroModal.js"></script>
+<script src="js/ellaModal.js"></script>
 <script src="js/trelloModal.js"></script>
 <script src="js/playboyModal.js"></script>
 <script src="js/enterpriseModal.js"></script>
@@ -247,26 +247,26 @@ $(function() {
   <!-- wraps the first row of gallery items -->
   <div class="row galleryRow" id="firstRow"> 
     
-    <!-- ella gallery section -->
-    <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="ella"> 
+    <!-- kojiro gallery section -->
+    <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="kojiro"> 
       
       <!-- label for the gallery item becomes modal header -->
-      <div class="modalHeader imgFitBox" id="ellaHeader"> 
+      <div class="modalHeader imgFitBox" id="kojiroHeader"> 
       
         
         <!-- this link expands a gallery box into a modal --> 
-        <a href="javascript:void(0)" onclick="ellaOpenModal()">
-         <div class="boxLabel threeDaccel" id="ellaLabel">
+        <a href="javascript:void(0)" onclick="kojiroOpenModal()">
+         <div class="boxLabel threeDaccel" id="kojiroLabel">
          <div class="gradient">
-          <h5 class="white topLabel textShadowStrong" id="ellaTopLabel">ELLA</h5>
+          <h5 class="white topLabel textShadowStrong" id="kojiroTopLabel">KOJIRŌ IZAKAYA</h5>
           </div>
-            <h6 class="tealBG white bottomLabel boxShadow" id="ellaBottomLabel">24 hour app challenge</h6>
+            <h6 class="tealBG white bottomLabel boxShadow" id="kojiroBottomLabel">interactive restaurant menu</h6>
         </div>
         </a>
         </div>
       
       <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain marginLeftRight5em threeDaccel" id="ellaMain">
+      <div class="modalMain marginLeftRight5em threeDaccel" id="kojiroMain">
       
       
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
@@ -283,23 +283,23 @@ $(function() {
       </div>
  </div>
     
-    <!-- kojiro gallery section -->
-    <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="kojiro"> 
+    <!-- ella gallery section -->
+    <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="ella"> 
       
       <!-- label for the gallery item becomes modal header -->
-      <div class="modalHeader imgFitBox" id="kojiroHeader"> 
+      <div class="modalHeader imgFitBox" id="ellaHeader"> 
       
        
         
         <!-- this link expands a gallery box into a modal --> 
-        <a href="javascript:void(0)" onclick="kojiroOpenModal()">
+        <a href="javascript:void(0)" onclick="ellaOpenModal()">
     
-    <div class="boxLabel threeDaccel" id="kojiroLabel">
+    <div class="boxLabel threeDaccel" id="ellaLabel">
     
   <div class="gradient">
-              <h5 class="white topLabel textShadowStrong" id="kojiroTopLabel">KOJIRŌ IZAKAYA</h5>
+              <h5 class="white topLabel textShadowStrong" id="ellaTopLabel">ELLA</h5>
               </div>
-            <h6 class="tealBG white bottomLabel boxShadow" id="kojiroBottomLabel">interactive restaurant menu</h6>
+            <h6 class="tealBG white bottomLabel boxShadow" id="ellaBottomLabel">24 hour app challenge</h6>
             
              
         </div>
@@ -309,7 +309,7 @@ $(function() {
    
       
       <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain marginLeftRight5em" id="kojiroMain">
+      <div class="modalMain marginLeftRight5em" id="ellaMain">
         
         <div class="marginLeftRight5em">
 
@@ -320,7 +320,7 @@ $(function() {
 </div>
 
 
-<!-- <img src="img/gallery/kojiro/gallery1.png" width="100%" class="bottomPadding"> -->
+<!-- <img src="img/gallery/ella/gallery1.png" width="100%" class="bottomPadding"> -->
 <p class="bottomPadding"><b>We only had 24 hours.</b> There was no time for a long period of ideation, and refinement of a final product. We needed to create an app design in a day, with only one requirement. It needed to help connect would-be volunteers to a charity of their interest.</p>
 
 </div>
@@ -331,7 +331,7 @@ $(function() {
 
 <div class="row">
 
-<div class="column column-5"><img class="imgBorder imgShadow" src="img/gallery/kojiro/gallery2b.png" width="100%"></div>
+<div class="column column-5"><img class="imgBorder imgShadow" src="img/gallery/ella/gallery2b.png" width="100%"></div>
 
 <div class="column column-7 paddingLeft2em">
 <p>This was not the usual UI development process: we had only 24 hours. There was no time for a long period of ideation, and refinement of a final product. We needed to create an app design in a day, with only one requirement. It needed to help connect would-be volunteers to a charity of their interest.</p>
@@ -377,9 +377,9 @@ $(function() {
  </div>
     
     <!-- close X and arrows for each expanded modal in first row --> 
-    <!-- close X for ella-->
-          <a href="javascript:void(0)" onclick="ellaCloseX()">
-      <div class="closeX dropShadow" id="ellaCloseX">
+    <!-- close X for kojiro-->
+          <a href="javascript:void(0)" onclick="kojiroCloseX()">
+      <div class="closeX dropShadow" id="kojiroCloseX">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
 	.xBG{fill:rgb(35, 174, 194);}
 	.xIcon{fill:rgb(255, 255, 255);}
@@ -387,13 +387,13 @@ $(function() {
       </div>
       </a>
       
-    <!-- left arrow for ella --> 
+    <!-- left arrow for kojiro --> 
     <!-- NONE! --> 
     
-    <!-- right arrow for ella --> 
-    <a href="javascript:void(0)" onclick="ellaRightArrow()">
+    <!-- right arrow for kojiro --> 
+    <a href="javascript:void(0)" onclick="kojiroRightArrow()">
     
-    <div class="rightArrow dropShadow" id="ellaRightArrow">
+    <div class="rightArrow dropShadow" id="kojiroRightArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" width="100%">
         <style type="text/css">  
 	.arrowRight{fill:#FFFFFF;}
@@ -404,9 +404,9 @@ $(function() {
     </a> 
     
 
-    <!-- close X for kojiro -->
-          <a href="javascript:void(0)" onclick="kojiroCloseX()">
-     <div class="closeX dropShadow" id="kojiroCloseX">
+    <!-- close X for ella -->
+          <a href="javascript:void(0)" onclick="ellaCloseX()">
+     <div class="closeX dropShadow" id="ellaCloseX">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
 	.xBG{fill:rgb(35, 174, 194);}
 	.xIcon{fill:rgb(255, 255, 255);}
@@ -414,9 +414,9 @@ $(function() {
       </div>
       </a>
     
-    <!-- left arrow for kojiro --> 
-    <a href="#javascript:void(0)" onclick="kojiroLeftArrow()">
-    <div class="leftArrow dropShadow" id="kojiroLeftArrow">
+    <!-- left arrow for ella --> 
+    <a href="#javascript:void(0)" onclick="ellaLeftArrow()">
+    <div class="leftArrow dropShadow" id="ellaLeftArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" height="100%">
         <style type="text/css">  
 	.arrowLeft{fill:#FFFFFF;}
@@ -426,9 +426,9 @@ $(function() {
     </div>
     </a> 
     
-    <!-- right arrow for kojiro --> 
-    <a href="javascript:void(0)" onclick="kojiroRightArrow()">
-    <div class="rightArrow dropShadow" id="kojiroRightArrow">
+    <!-- right arrow for ella --> 
+    <a href="javascript:void(0)" onclick="ellaRightArrow()">
+    <div class="rightArrow dropShadow" id="ellaRightArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" width="100%">
         <style type="text/css">  
 	.arrowRight{fill:#FFFFFF;}

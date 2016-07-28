@@ -418,12 +418,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 /* covers for gallery boxes / headers for modals */
-#ellaHeader {
-	background-image: url(../img/gallery/ella/thumbnail.png);
-}
-
 #kojiroHeader {
 	background-image: url(../img/gallery/kojiro/thumbnail2.png);
+}
+
+#ellaHeader {
+	background-image: url(../img/gallery/ella/thumbnail.png);
 }
 
 #trelloHeader {
