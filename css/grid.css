@@ -93,11 +93,16 @@ m = margin (1.6%)
 @media only screen and (max-width: 800px) {
 	
 	
+.row-small {
+		margin-left: 15%;
+		margin-right: 15%;
+	}
 
 .column-5-small {
 	    width: 60%;
         float: none;
-		margin-left: 20%;
+		margin-left: 15%;
+		margin-right: 15%;
 }
 
 .column-7-small {
@@ -111,10 +116,7 @@ m = margin (1.6%)
 	padding-bottom: 2em;
 }
 	
-}
 
-/* take up full width of container if using mobile viewport */
-@media only screen and (max-width: 550px) {
     .column-1, 
     .column-2,
 	.column-3, 
@@ -135,8 +137,77 @@ m = margin (1.6%)
 		width: 50%;
 		float: left;
 	}
+	
+	.contact-small {
+		width: 23.8%;
+		float: left;
+	}
+	
+
 
     .column + .column {
         margin-left: 0;
     }
+}
+
+@media only screen and (max-width: 700px) {
+	.contact-small {
+		width: 50%;
+		float: left;
+	}
+	
+	.contact-row-small {
+		margin-left: 26%;
+		margin-right: 26%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+.contact-row-small {
+		margin-left: 19%;
+		margin-right: 19%;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	
+	
+.row-small {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	
+	
+
+	.contact-row-small {
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	
+	
+
+	
+	
+
+	.contact-row-small {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	
+	
+
+	
+	
+
+	.contact-row-small {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
 }

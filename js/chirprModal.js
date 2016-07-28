@@ -46,12 +46,12 @@ function chirprOpenModal() {
     document.getElementById('secondRow').style.paddingTop = '7.5vh';
 
     // rescales and fades line 1 items
-    document.getElementById('ella').style.height = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginBottom = '0';
     document.getElementById('kojiro').style.height = '0';
     document.getElementById('kojiro').style.opacity = '0';
     document.getElementById('kojiro').style.marginBottom = '0';
+    document.getElementById('ella').style.height = '0';
+    document.getElementById('ella').style.opacity = '0';
+    document.getElementById('ella').style.marginBottom = '0';
     document.getElementById('trello').style.height = '0';
     document.getElementById('trello').style.opacity = '0';
     document.getElementById('trello').style.marginBottom = '0';
@@ -92,6 +92,11 @@ function chirprOpenModal() {
     document.getElementById('chirprCloseX').style.top = '11vh';
     document.getElementById('chirprLabel').style.transform = 'scale(1.3)';
     document.getElementById('chirprLabel').style.bottom = '3.75em';
+    document.getElementById('chirprLabel').style.width = '38%';
+	document.getElementById('chirprBottomLabel').style.paddingTop = '0.3em';
+	document.getElementById('chirprBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('chirprTopLabel').style.paddingLeft = '15px';
+	document.getElementById('chirprBottomLabel').style.paddingLeft = '15px';
 	
 	}, 500);
 		 
@@ -115,16 +120,16 @@ function chirprCloseX() {
 	document.getElementById('gallery').style.paddingBottom = '3em';
 	
 	// rescales and fades-in line 1 items
-    document.getElementById('ella').style.height = '35vh';
-    document.getElementById('ella').style.width = '32.2666666667%';
-    document.getElementById('ella').style.opacity = '1';
-    document.getElementById('ella').style.marginLeft = '0';
-	document.getElementById('ella').style.marginBottom = '1.6vw';
     document.getElementById('kojiro').style.height = '35vh';
     document.getElementById('kojiro').style.width = '32.2666666667%';
     document.getElementById('kojiro').style.opacity = '1';
-    document.getElementById('kojiro').style.marginLeft = '1.6%';
+    document.getElementById('kojiro').style.marginLeft = '0';
 	document.getElementById('kojiro').style.marginBottom = '1.6vw';
+    document.getElementById('ella').style.height = '35vh';
+    document.getElementById('ella').style.width = '32.2666666667%';
+    document.getElementById('ella').style.opacity = '1';
+    document.getElementById('ella').style.marginLeft = '1.6%';
+	document.getElementById('ella').style.marginBottom = '1.6vw';
 	document.getElementById('trello').style.height = '35vh';
     document.getElementById('trello').style.width = '32.2666666667%';
     document.getElementById('trello').style.opacity = '1';
@@ -169,7 +174,12 @@ function chirprCloseX() {
     document.getElementById('chirprCloseX').style.right = '50%';
     document.getElementById('chirprCloseX').style.top = '50%';
     document.getElementById('chirprLabel').style.transform = 'scale(1)';
-    document.getElementById('chirprLabel').style.bottom = '1.75em';
+    document.getElementById('chirprLabel').style.bottom = '0';
+	document.getElementById('chirprLabel').style.width = '100%';
+	document.getElementById('chirprBottomLabel').style.paddingTop = '0.5em';
+	document.getElementById('chirprBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('chirprTopLabel').style.paddingLeft = '35px';
+	document.getElementById('chirprBottomLabel').style.paddingLeft = '35px';
 	
 	// adds the gallery title
     document.getElementById('myWork').style.height = 'auto';
@@ -224,7 +234,12 @@ function chirprLeftArrow() {
     document.getElementById('chirprCloseX').style.right = '50%';
     document.getElementById('chirprCloseX').style.top = '50%';
     document.getElementById('chirprLabel').style.transform = 'scale(1)';
-    document.getElementById('chirprLabel').style.bottom = '1.75em';
+    document.getElementById('chirprLabel').style.bottom = '0';
+	document.getElementById('chirprLabel').style.width = '100%';
+	document.getElementById('chirprBottomLabel').style.paddingTop = '0.5em';
+	document.getElementById('chirprBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('chirprTopLabel').style.paddingLeft = '35px';
+	document.getElementById('chirprBottomLabel').style.paddingLeft = '35px';
     
     // switches out arrow for the proper item
     document.getElementById('chirprLeftArrow').style.left = '-2.5em';
@@ -254,6 +269,11 @@ function chirprLeftArrow() {
     document.getElementById('enterpriseCloseX').style.top = '11vh';
     document.getElementById('enterpriseLabel').style.transform = 'scale(1.3)';
     document.getElementById('enterpriseLabel').style.bottom = '3.75em';
+    document.getElementById('enterpriseLabel').style.width = '38%';
+	document.getElementById('enterpriseBottomLabel').style.paddingTop = '0.3em';
+	document.getElementById('enterpriseBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('enterpriseTopLabel').style.paddingLeft = '15px';
+	document.getElementById('enterpriseBottomLabel').style.paddingLeft = '15px';
 	
 }
 
@@ -285,7 +305,12 @@ function chirprRightArrow() {
     document.getElementById('chirprCloseX').style.right = '50%';
     document.getElementById('chirprCloseX').style.top = '50%';
     document.getElementById('chirprLabel').style.transform = 'scale(1)';
-    document.getElementById('chirprLabel').style.bottom = '1.75em';
+    document.getElementById('chirprLabel').style.bottom = '0';
+	document.getElementById('chirprLabel').style.width = '100%';
+	document.getElementById('chirprBottomLabel').style.paddingTop = '0.5em';
+	document.getElementById('chirprBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('chirprTopLabel').style.paddingLeft = '35px';
+	document.getElementById('chirprBottomLabel').style.paddingLeft = '35px';
     
     // switches out arrow for the proper item
     document.getElementById('chirprLeftArrow').style.left = '-2.5em';
@@ -315,5 +340,10 @@ function chirprRightArrow() {
     document.getElementById('newitemCloseX').style.top = '11vh';
     document.getElementById('newitemLabel').style.transform = 'scale(1.3)';
     document.getElementById('newitemLabel').style.bottom = '3.75em';
+    document.getElementById('newitemLabel').style.width = '38%';
+	document.getElementById('newitemBottomLabel').style.paddingTop = '0.3em';
+	document.getElementById('newitemBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('newitemTopLabel').style.paddingLeft = '15px';
+	document.getElementById('newitemBottomLabel').style.paddingLeft = '15px';
 	
 }

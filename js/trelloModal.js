@@ -46,14 +46,14 @@ function trelloOpenModal() {
     document.getElementById('firstRow').style.paddingTop = '7.5vh';
 
     // rescales and fades other line 1 items
-    document.getElementById('ella').style.height = '85vh';
-    document.getElementById('ella').style.width = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginLeft = '0';
     document.getElementById('kojiro').style.height = '85vh';
     document.getElementById('kojiro').style.width = '0';
     document.getElementById('kojiro').style.opacity = '0';
     document.getElementById('kojiro').style.marginLeft = '0';
+    document.getElementById('ella').style.height = '85vh';
+    document.getElementById('ella').style.width = '0';
+    document.getElementById('ella').style.opacity = '0';
+    document.getElementById('ella').style.marginLeft = '0';
     
     // rescales and fades line 2 items
     document.getElementById('playboy').style.height = '0';
@@ -87,6 +87,11 @@ function trelloOpenModal() {
     document.getElementById('trelloCloseX').style.top = '11vh';
     document.getElementById('trelloLabel').style.transform = 'scale(1.3)';
     document.getElementById('trelloLabel').style.bottom = '3.75em';
+    document.getElementById('trelloLabel').style.width = '38%';
+	document.getElementById('trelloBottomLabel').style.paddingTop = '0.3em';
+	document.getElementById('trelloBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('trelloTopLabel').style.paddingLeft = '15px';
+	document.getElementById('trelloBottomLabel').style.paddingLeft = '15px';
 	
 	}, 500);
 		 
@@ -108,14 +113,14 @@ function trelloCloseX() {
 	document.getElementById('gallery').style.paddingBottom = '3em';
 	
 	// rescales and fades-in other line 1 items
-    document.getElementById('ella').style.height = '35vh';
-    document.getElementById('ella').style.width = '32.2666666667%';
-    document.getElementById('ella').style.opacity = '1';
-    document.getElementById('ella').style.marginLeft = '0';
     document.getElementById('kojiro').style.height = '35vh';
     document.getElementById('kojiro').style.width = '32.2666666667%';
     document.getElementById('kojiro').style.opacity = '1';
-    document.getElementById('kojiro').style.marginLeft = '1.6%';
+    document.getElementById('kojiro').style.marginLeft = '0';
+    document.getElementById('ella').style.height = '35vh';
+    document.getElementById('ella').style.width = '32.2666666667%';
+    document.getElementById('ella').style.opacity = '1';
+    document.getElementById('ella').style.marginLeft = '1.6%';
 	
 	// rescales and fadesin line 2 items
     document.getElementById('playboy').style.height = '35vh';
@@ -151,7 +156,12 @@ function trelloCloseX() {
     document.getElementById('trelloCloseX').style.right = '50%';
     document.getElementById('trelloCloseX').style.top = '50%';
     document.getElementById('trelloLabel').style.transform = 'scale(1)';
-    document.getElementById('trelloLabel').style.bottom = '1.75em';
+    document.getElementById('trelloLabel').style.bottom = '0';
+	document.getElementById('trelloLabel').style.width = '100%';
+	document.getElementById('trelloBottomLabel').style.paddingTop = '0.5em';
+	document.getElementById('trelloBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('trelloTopLabel').style.paddingLeft = '35px';
+	document.getElementById('trelloBottomLabel').style.paddingLeft = '35px';
 	
 	// adds the gallery title
     document.getElementById('myWork').style.height = 'auto';
@@ -200,35 +210,45 @@ function trelloLeftArrow() {
     document.getElementById('trelloCloseX').style.right = '50%';
     document.getElementById('trelloCloseX').style.top = '50%';
     document.getElementById('trelloLabel').style.transform = 'scale(1)';
-    document.getElementById('trelloLabel').style.bottom = '1.75em';
+    document.getElementById('trelloLabel').style.bottom = '0';
+	document.getElementById('trelloLabel').style.width = '100%';
+	document.getElementById('trelloBottomLabel').style.paddingTop = '0.5em';
+	document.getElementById('trelloBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('trelloTopLabel').style.paddingLeft = '35px';
+	document.getElementById('trelloBottomLabel').style.paddingLeft = '35px';
     
     // switches out arrow for the proper item
     document.getElementById('trelloLeftArrow').style.left = '-2.5em';
     document.getElementById('trelloLeftArrow').style.opacity = '0';
     document.getElementById('trelloRightArrow').style.right = '-2.5em';
     document.getElementById('trelloRightArrow').style.opacity = '0';
-	document.getElementById('kojiroLeftArrow').style.left = '2.5em';
-    document.getElementById('kojiroLeftArrow').style.opacity = '1';
-    document.getElementById('kojiroRightArrow').style.right = '2.5em';
-    document.getElementById('kojiroRightArrow').style.opacity = '1';
+	document.getElementById('ellaLeftArrow').style.left = '2.5em';
+    document.getElementById('ellaLeftArrow').style.opacity = '1';
+    document.getElementById('ellaRightArrow').style.right = '2.5em';
+    document.getElementById('ellaRightArrow').style.opacity = '1';
     
     // moves other modal into place
-    document.getElementById('kojiro').style.height = '85vh';
-    document.getElementById('kojiro').style.width = '80%';
-    document.getElementById('kojiro').style.marginLeft = '10%';
-    document.getElementById('kojiro').style.marginRight = '10%';
-    document.getElementById('kojiro').style.opacity = '1';
-    document.getElementById('kojiroHeader').style.height = '55%';
-    document.getElementById('kojiroMain').style.height = '45%';
-    document.getElementById('kojiroMain').style.opacity = '1';
-	document.getElementById('kojiro').style.overflowX = 'hidden';
-    document.getElementById('kojiro').style.overflowY = 'scroll';
-    document.getElementById('kojiroCloseX').style.transform = 'scale(1)';
-    document.getElementById('kojiroCloseX').style.opacity = '1';
-    document.getElementById('kojiroCloseX').style.right = '12vw';
-    document.getElementById('kojiroCloseX').style.top = '11vh';
-    document.getElementById('kojiroLabel').style.transform = 'scale(1.3)';
-    document.getElementById('kojiroLabel').style.bottom = '3.75em';
+    document.getElementById('ella').style.height = '85vh';
+    document.getElementById('ella').style.width = '80%';
+    document.getElementById('ella').style.marginLeft = '10%';
+    document.getElementById('ella').style.marginRight = '10%';
+    document.getElementById('ella').style.opacity = '1';
+    document.getElementById('ellaHeader').style.height = '55%';
+    document.getElementById('ellaMain').style.height = '45%';
+    document.getElementById('ellaMain').style.opacity = '1';
+	document.getElementById('ella').style.overflowX = 'hidden';
+    document.getElementById('ella').style.overflowY = 'scroll';
+    document.getElementById('ellaCloseX').style.transform = 'scale(1)';
+    document.getElementById('ellaCloseX').style.opacity = '1';
+    document.getElementById('ellaCloseX').style.right = '12vw';
+    document.getElementById('ellaCloseX').style.top = '11vh';
+    document.getElementById('ellaLabel').style.transform = 'scale(1.3)';
+    document.getElementById('ellaLabel').style.bottom = '3.75em';
+    document.getElementById('ellaLabel').style.width = '38%';
+	document.getElementById('ellaBottomLabel').style.paddingTop = '0.3em';
+	document.getElementById('ellaBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('ellaTopLabel').style.paddingLeft = '15px';
+	document.getElementById('ellaBottomLabel').style.paddingLeft = '15px';
 	
 }
 
@@ -259,7 +279,12 @@ function trelloRightArrow() {
     document.getElementById('trelloCloseX').style.right = '50%';
     document.getElementById('trelloCloseX').style.top = '50%';
     document.getElementById('trelloLabel').style.transform = 'scale(1)';
-    document.getElementById('trelloLabel').style.bottom = '1.75em';
+    document.getElementById('trelloLabel').style.bottom = '0';
+	document.getElementById('trelloLabel').style.width = '100%';
+	document.getElementById('trelloBottomLabel').style.paddingTop = '0.5em';
+	document.getElementById('trelloBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('trelloTopLabel').style.paddingLeft = '35px';
+	document.getElementById('trelloBottomLabel').style.paddingLeft = '35px';
     
     // switches out arrow for the proper item
     document.getElementById('trelloLeftArrow').style.left = '-2.5em';
@@ -272,15 +297,15 @@ function trelloRightArrow() {
     document.getElementById('playboyRightArrow').style.opacity = '1';
 	
 	// resizes top row items
-    document.getElementById('ella').style.height = '0';
-    document.getElementById('ella').style.width = '32.2666666667%';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginBottom = '0';
     document.getElementById('kojiro').style.height = '0';
     document.getElementById('kojiro').style.width = '32.2666666667%';
     document.getElementById('kojiro').style.opacity = '0';
     document.getElementById('kojiro').style.marginBottom = '0';
-    document.getElementById('kojiro').style.marginLeft = '1.6%';
+    document.getElementById('ella').style.height = '0';
+    document.getElementById('ella').style.width = '32.2666666667%';
+    document.getElementById('ella').style.opacity = '0';
+    document.getElementById('ella').style.marginBottom = '0';
+    document.getElementById('ella').style.marginLeft = '1.6%';
     
     
     // resizes bottom row items
@@ -315,6 +340,11 @@ function trelloRightArrow() {
     document.getElementById('playboyCloseX').style.top = '11vh';
     document.getElementById('playboyLabel').style.transform = 'scale(1.3)';
     document.getElementById('playboyLabel').style.bottom = '3.75em';
+    document.getElementById('playboyLabel').style.width = '38%';
+	document.getElementById('playboyBottomLabel').style.paddingTop = '0.3em';
+	document.getElementById('playboyBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('playboyTopLabel').style.paddingLeft = '15px';
+	document.getElementById('playboyBottomLabel').style.paddingLeft = '15px';
 	
 }
 

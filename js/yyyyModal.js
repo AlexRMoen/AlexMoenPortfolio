@@ -1,6 +1,6 @@
 // JavaScript Document
 
-function ellaOpenModal() {
+function yyyyOpenModal() {
 
 (function($) {
 	
@@ -66,32 +66,32 @@ function ellaOpenModal() {
     document.getElementById('newitem').style.opacity = '0';
     
     // displays left and right arrows
-    document.getElementById('ellaLeftArrow').style.left = '2.5em';
-    document.getElementById('ellaLeftArrow').style.opacity = '1';
-    document.getElementById('ellaRightArrow').style.right = '2.5em';
-    document.getElementById('ellaRightArrow').style.opacity = '1';
+    document.getElementById('yyyyLeftArrow').style.left = '2.5em';
+    document.getElementById('yyyyLeftArrow').style.opacity = '1';
+    document.getElementById('yyyyRightArrow').style.right = '2.5em';
+    document.getElementById('yyyyRightArrow').style.opacity = '1';
     
     // scales a gallery item into a modal
-    document.getElementById('ella').style.height = '85vh';
-    document.getElementById('ella').style.width = '80%';
-    document.getElementById('ella').style.marginLeft = '10%';
-    document.getElementById('ella').style.marginRight = '10%';
-    document.getElementById('ella').style.overflowX = 'hidden';
-    document.getElementById('ella').style.overflowY = 'scroll';
-    document.getElementById('ellaHeader').style.height = '55%';
-    document.getElementById('ellaMain').style.height = '45%';
-    document.getElementById('ellaMain').style.opacity = '1';
-    document.getElementById('ellaCloseX').style.transform = 'scale(1)';
-    document.getElementById('ellaCloseX').style.opacity = '1';
-    document.getElementById('ellaCloseX').style.right = '12vw';
-    document.getElementById('ellaCloseX').style.top = '11vh';
-    document.getElementById('ellaLabel').style.transform = 'scale(1.3)';
-    document.getElementById('ellaLabel').style.bottom = '3.75em';
-    document.getElementById('ellaLabel').style.width = '38%';
-	document.getElementById('ellaBottomLabel').style.paddingTop = '0.3em';
-	document.getElementById('ellaBottomLabel').style.paddingBottom = '0.4em';
-	document.getElementById('ellaTopLabel').style.paddingLeft = '15px';
-	document.getElementById('ellaBottomLabel').style.paddingLeft = '15px';
+    document.getElementById('yyyy').style.height = '85vh';
+    document.getElementById('yyyy').style.width = '80%';
+    document.getElementById('yyyy').style.marginLeft = '10%';
+    document.getElementById('yyyy').style.marginRight = '10%';
+    document.getElementById('yyyy').style.overflowX = 'hidden';
+    document.getElementById('yyyy').style.overflowY = 'scroll';
+    document.getElementById('yyyyHeader').style.height = '55%';
+    document.getElementById('yyyyMain').style.height = '45%';
+    document.getElementById('yyyyMain').style.opacity = '1';
+    document.getElementById('yyyyCloseX').style.transform = 'scale(1)';
+    document.getElementById('yyyyCloseX').style.opacity = '1';
+    document.getElementById('yyyyCloseX').style.right = '12vw';
+    document.getElementById('yyyyCloseX').style.top = '11vh';
+    document.getElementById('yyyyLabel').style.transform = 'scale(1.3)';
+    document.getElementById('yyyyLabel').style.bottom = '3.75em';
+    document.getElementById('yyyyLabel').style.width = '38%';
+	document.getElementById('yyyyBottomLabel').style.paddingTop = '0.3em';
+	document.getElementById('yyyyBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('yyyyTopLabel').style.paddingLeft = '15px';
+	document.getElementById('yyyyBottomLabel').style.paddingLeft = '15px';
 	
 	}, 500);
 		 
@@ -102,7 +102,7 @@ function ellaOpenModal() {
 
 
 
-function ellaCloseX() {
+function yyyyCloseX() {
 	
 	// changes the height of the wrapper around the gallery
 	document.getElementById('galleryHeightWrapper').style.minHeight = '100%';
@@ -135,35 +135,35 @@ function ellaCloseX() {
     document.getElementById('newitem').style.opacity = '1';
 	
 	// removes left and right arrows
-    document.getElementById('ellaLeftArrow').style.left = '-2.5em';
-    document.getElementById('ellaLeftArrow').style.opacity = '1';
-    document.getElementById('ellaRightArrow').style.right = '-2.5em';
-    document.getElementById('ellaRightArrow').style.opacity = '0';
+    document.getElementById('yyyyLeftArrow').style.left = '-2.5em';
+    document.getElementById('yyyyLeftArrow').style.opacity = '1';
+    document.getElementById('yyyyRightArrow').style.right = '-2.5em';
+    document.getElementById('yyyyRightArrow').style.opacity = '0';
 	
 	// scales a gallery item into a modal
-    document.getElementById('ella').style.height = '35vh';
-    document.getElementById('ella').style.width = '32.2666666667%';
-    document.getElementById('ella').style.marginLeft = '1.6%';
-    document.getElementById('ella').style.marginRight = '0';
-    document.getElementById('ella').style.overflowX = 'auto';
-    document.getElementById('ella').style.overflowY = 'hidden';
+    document.getElementById('yyyy').style.height = '35vh';
+    document.getElementById('yyyy').style.width = '32.2666666667%';
+    document.getElementById('yyyy').style.marginLeft = '1.6%';
+    document.getElementById('yyyy').style.marginRight = '0';
+    document.getElementById('yyyy').style.overflowX = 'auto';
+    document.getElementById('yyyy').style.overflowY = 'hidden';
 	
-	$("#ella").animate({ scrollTop: 0 }, 500);
+	$("#yyyy").animate({ scrollTop: 0 }, 500);
 	
-    document.getElementById('ellaHeader').style.height = '100%';
-    document.getElementById('ellaMain').style.height = '0';
-    document.getElementById('ellaMain').style.opacity = '0';
-    document.getElementById('ellaCloseX').style.transform = 'scale(0)';
-    document.getElementById('ellaCloseX').style.opacity = '0';
-    document.getElementById('ellaCloseX').style.right = '50%';
-    document.getElementById('ellaCloseX').style.top = '50%';
-    document.getElementById('ellaLabel').style.transform = 'scale(1)';
-    document.getElementById('ellaLabel').style.bottom = '0';
-	document.getElementById('ellaLabel').style.width = '100%';
-	document.getElementById('ellaBottomLabel').style.paddingTop = '0.5em';
-	document.getElementById('ellaBottomLabel').style.paddingBottom = '0.7em';
-	document.getElementById('ellaTopLabel').style.paddingLeft = '35px';
-	document.getElementById('ellaBottomLabel').style.paddingLeft = '35px';
+    document.getElementById('yyyyHeader').style.height = '100%';
+    document.getElementById('yyyyMain').style.height = '0';
+    document.getElementById('yyyyMain').style.opacity = '0';
+    document.getElementById('yyyyCloseX').style.transform = 'scale(0)';
+    document.getElementById('yyyyCloseX').style.opacity = '0';
+    document.getElementById('yyyyCloseX').style.right = '50%';
+    document.getElementById('yyyyCloseX').style.top = '50%';
+    document.getElementById('yyyyLabel').style.transform = 'scale(1)';
+    document.getElementById('yyyyLabel').style.bottom = '0';
+	document.getElementById('yyyyLabel').style.width = '100%';
+	document.getElementById('yyyyBottomLabel').style.paddingTop = '0.5em';
+	document.getElementById('yyyyBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('yyyyTopLabel').style.paddingLeft = '35px';
+	document.getElementById('yyyyBottomLabel').style.paddingLeft = '35px';
 	
 	// adds the gallery title
     document.getElementById('myWork').style.height = 'auto';
@@ -192,38 +192,38 @@ function ellaCloseX() {
 }
 
 
-function ellaLeftArrow() {
+function yyyyLeftArrow() {
 	
     // closes itself
-    document.getElementById('ella').style.width = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginLeft = '0';
-    document.getElementById('ella').style.marginRight = '0';
-    document.getElementById('ellaHeader').style.height = '100%';
-    document.getElementById('ellaMain').style.height = '0';
-    document.getElementById('ellaMain').style.opacity = '0';
-	document.getElementById('ella').style.overflowX = 'auto';
-    document.getElementById('ella').style.overflowY = 'hidden';
+    document.getElementById('yyyy').style.width = '0';
+    document.getElementById('yyyy').style.opacity = '0';
+    document.getElementById('yyyy').style.marginLeft = '0';
+    document.getElementById('yyyy').style.marginRight = '0';
+    document.getElementById('yyyyHeader').style.height = '100%';
+    document.getElementById('yyyyMain').style.height = '0';
+    document.getElementById('yyyyMain').style.opacity = '0';
+	document.getElementById('yyyy').style.overflowX = 'auto';
+    document.getElementById('yyyy').style.overflowY = 'hidden';
 	
-	$("#ella").animate({ scrollTop: 0 }, 500);
+	$("#yyyy").animate({ scrollTop: 0 }, 500);
 	
-    document.getElementById('ellaCloseX').style.transform = 'scale(0)';
-    document.getElementById('ellaCloseX').style.opacity = '0';
-    document.getElementById('ellaCloseX').style.right = '50%';
-    document.getElementById('ellaCloseX').style.top = '50%';
-    document.getElementById('ellaLabel').style.transform = 'scale(1)';
-    document.getElementById('ellaLabel').style.bottom = '0';
-	document.getElementById('ellaLabel').style.width = '100%';
-	document.getElementById('ellaBottomLabel').style.paddingTop = '0.5em';
-	document.getElementById('ellaBottomLabel').style.paddingBottom = '0.7em';
-	document.getElementById('ellaTopLabel').style.paddingLeft = '35px';
-	document.getElementById('ellaBottomLabel').style.paddingLeft = '35px';
+    document.getElementById('yyyyCloseX').style.transform = 'scale(0)';
+    document.getElementById('yyyyCloseX').style.opacity = '0';
+    document.getElementById('yyyyCloseX').style.right = '50%';
+    document.getElementById('yyyyCloseX').style.top = '50%';
+    document.getElementById('yyyyLabel').style.transform = 'scale(1)';
+    document.getElementById('yyyyLabel').style.bottom = '0';
+	document.getElementById('yyyyLabel').style.width = '100%';
+	document.getElementById('yyyyBottomLabel').style.paddingTop = '0.5em';
+	document.getElementById('yyyyBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('yyyyTopLabel').style.paddingLeft = '35px';
+	document.getElementById('yyyyBottomLabel').style.paddingLeft = '35px';
     
     // switches out arrow for the proper item
-    document.getElementById('ellaLeftArrow').style.left = '-2.5em';
-    document.getElementById('ellaLeftArrow').style.opacity = '0';
-    document.getElementById('ellaRightArrow').style.right = '-2.5em';
-    document.getElementById('ellaRightArrow').style.opacity = '0';
+    document.getElementById('yyyyLeftArrow').style.left = '-2.5em';
+    document.getElementById('yyyyLeftArrow').style.opacity = '0';
+    document.getElementById('yyyyRightArrow').style.right = '-2.5em';
+    document.getElementById('yyyyRightArrow').style.opacity = '0';
 	// NONE document.getElementById('kojiroLeftArrow').style.left = '2.5em';
     // NONE document.getElementById('kojiroLeftArrow').style.opacity = '0';
     document.getElementById('kojiroRightArrow').style.right = '2.5em';
@@ -254,38 +254,38 @@ function ellaLeftArrow() {
 	
 }
 
-function ellaRightArrow() {
+function yyyyRightArrow() {
 	
 // closes itself
-    document.getElementById('ella').style.width = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginLeft = '0';
-    document.getElementById('ella').style.marginRight = '0';
-    document.getElementById('ellaHeader').style.height = '100%';
-    document.getElementById('ellaMain').style.height = '0';
-    document.getElementById('ellaMain').style.opacity = '0';
-	document.getElementById('ella').style.overflowX = 'auto';
-    document.getElementById('ella').style.overflowY = 'hidden';
+    document.getElementById('yyyy').style.width = '0';
+    document.getElementById('yyyy').style.opacity = '0';
+    document.getElementById('yyyy').style.marginLeft = '0';
+    document.getElementById('yyyy').style.marginRight = '0';
+    document.getElementById('yyyyHeader').style.height = '100%';
+    document.getElementById('yyyyMain').style.height = '0';
+    document.getElementById('yyyyMain').style.opacity = '0';
+	document.getElementById('yyyy').style.overflowX = 'auto';
+    document.getElementById('yyyy').style.overflowY = 'hidden';
 	
-	$("#ella").animate({ scrollTop: 0 }, 500);
+	$("#yyyy").animate({ scrollTop: 0 }, 500);
 	
-    document.getElementById('ellaCloseX').style.transform = 'scale(0)';
-    document.getElementById('ellaCloseX').style.opacity = '0';
-    document.getElementById('ellaCloseX').style.right = '50%';
-    document.getElementById('ellaCloseX').style.top = '50%';
-    document.getElementById('ellaLabel').style.transform = 'scale(1)';
-    document.getElementById('ellaLabel').style.bottom = '0';
-	document.getElementById('ellaLabel').style.width = '100%';
-	document.getElementById('ellaBottomLabel').style.paddingTop = '0.5em';
-	document.getElementById('ellaBottomLabel').style.paddingBottom = '0.7em';
-	document.getElementById('ellaTopLabel').style.paddingLeft = '35px';
-	document.getElementById('ellaBottomLabel').style.paddingLeft = '35px';
+    document.getElementById('yyyyCloseX').style.transform = 'scale(0)';
+    document.getElementById('yyyyCloseX').style.opacity = '0';
+    document.getElementById('yyyyCloseX').style.right = '50%';
+    document.getElementById('yyyyCloseX').style.top = '50%';
+    document.getElementById('yyyyLabel').style.transform = 'scale(1)';
+    document.getElementById('yyyyLabel').style.bottom = '0';
+	document.getElementById('yyyyLabel').style.width = '100%';
+	document.getElementById('yyyyBottomLabel').style.paddingTop = '0.5em';
+	document.getElementById('yyyyBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('yyyyTopLabel').style.paddingLeft = '35px';
+	document.getElementById('yyyyBottomLabel').style.paddingLeft = '35px';
     
     // switches out arrow for the proper item
-    document.getElementById('ellaLeftArrow').style.left = '-2.5em';
-    document.getElementById('ellaLeftArrow').style.opacity = '0';
-    document.getElementById('ellaRightArrow').style.right = '-2.5em';
-    document.getElementById('ellaRightArrow').style.opacity = '0';
+    document.getElementById('yyyyLeftArrow').style.left = '-2.5em';
+    document.getElementById('yyyyLeftArrow').style.opacity = '0';
+    document.getElementById('yyyyRightArrow').style.right = '-2.5em';
+    document.getElementById('yyyyRightArrow').style.opacity = '0';
     document.getElementById('trelloLeftArrow').style.left = '2.5em';
     document.getElementById('trelloLeftArrow').style.opacity = '1';
     document.getElementById('trelloRightArrow').style.right = '2.5em';
