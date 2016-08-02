@@ -109,101 +109,15 @@ function chirprOpenModal() {
 
 function chirprCloseX() {
 	
-	// changes the height of the wrapper around the gallery
-	document.getElementById('galleryHeightWrapper').style.minHeight = '';
-	
-	// adds the padding to accurately position the modal
-    document.getElementById('secondRow').style.paddingTop = '';
-	
-	// adds padding back to the gallery
-	document.getElementById('gallery').style.paddingTop = '';
-	document.getElementById('gallery').style.paddingBottom = '';
-	
-	// rescales and fades-in line 1 items
-    document.getElementById('kojiro').style.height = '';
-    document.getElementById('kojiro').style.width = '';
-    document.getElementById('kojiro').style.opacity = '';
-    document.getElementById('kojiro').style.marginLeft = '';
-	document.getElementById('kojiro').style.marginBottom = '';
-    document.getElementById('ella').style.height = '';
-    document.getElementById('ella').style.width = '';
-    document.getElementById('ella').style.opacity = '';
-    document.getElementById('ella').style.marginLeft = '';
-	document.getElementById('ella').style.marginBottom = '';
-	document.getElementById('trello').style.height = '';
-    document.getElementById('trello').style.width = '';
-    document.getElementById('trello').style.opacity = '';
-    document.getElementById('trello').style.marginLeft = '';
-	document.getElementById('trello').style.marginBottom = '';
-	
-	// rescales and fades in other line 2 items
-    document.getElementById('playboy').style.height = '';
-	document.getElementById('playboy').style.width = '';
-    document.getElementById('playboy').style.opacity = '';
-    document.getElementById('playboy').style.marginLeft = '';
-    document.getElementById('enterprise').style.height = '';
-	document.getElementById('enterprise').style.width = '';
-    document.getElementById('enterprise').style.opacity = '';
-	document.getElementById('enterprise').style.marginLeft = '';
-    document.getElementById('newitem').style.height = '';
-	document.getElementById('newitem').style.width = '';
-    document.getElementById('newitem').style.opacity = '';
-	document.getElementById('newitem').style.marginLeft = '';
-	
 	// removes left and right arrows
     document.getElementById('chirprLeftArrow').style.left = '';
     document.getElementById('chirprLeftArrow').style.opacity = '';
     document.getElementById('chirprRightArrow').style.right = '';
     document.getElementById('chirprRightArrow').style.opacity = '';
 	
-	// scales this modal into a gallery item
-    document.getElementById('chirpr').style.height = '';
-    document.getElementById('chirpr').style.width = '';
-    document.getElementById('chirpr').style.marginLeft = '';
-    document.getElementById('chirpr').style.marginRight = '';
-    document.getElementById('chirpr').style.overflowX = 'auto';
-    document.getElementById('chirpr').style.overflowY = 'hidden';
-	
 	$("#chirpr").animate({ scrollTop: 0 }, 500);
 	
-    document.getElementById('chirprHeader').style.height = '';
-    document.getElementById('chirprMain').style.height = '';
-    document.getElementById('chirprMain').style.opacity = '';
-    document.getElementById('chirprCloseX').style.transform = '';
-    document.getElementById('chirprCloseX').style.opacity = '';
-    document.getElementById('chirprCloseX').style.right = '';
-    document.getElementById('chirprCloseX').style.top = '';
-    document.getElementById('chirprLabel').style.transform = '';
-    document.getElementById('chirprLabel').style.bottom = '';
-	document.getElementById('chirprLabel').style.width = '';
-	document.getElementById('chirprBottomLabel').style.paddingTop = '';
-	document.getElementById('chirprBottomLabel').style.paddingBottom = '';
-	document.getElementById('chirprTopLabel').style.paddingLeft = '';
-	document.getElementById('chirprBottomLabel').style.paddingLeft = '';
-	
-	// adds the gallery title
-    document.getElementById('myWork').style.height = '';
-    document.getElementById('myWork').style.marginBottom = '';
-		 
-	// adds the visual of the gallery title
-	document.getElementById('myWork').style.opacity = '';
-    document.getElementById('myWork').style.transform = '';
-	
-	setTimeout(function() {
-		
-	// opens other elements on screen
-    document.getElementById('aboveFold').style.display = 'block';
-    document.getElementById('title').style.display = 'block';
-    document.getElementById('arrowDown').style.display = 'block';
-    document.getElementById('aboutMe').style.display = 'block';
-    document.getElementById('porthole').style.display = 'block';
-	
-	$(window).scrollTop(tempScrollTop);
-	
-	// starts the video
-	document.getElementById('bgvid').style.display = 'block';
-	
-	}, 500);
+	closeX();
 	
 }
 

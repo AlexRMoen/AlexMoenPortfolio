@@ -102,90 +102,15 @@ function trelloOpenModal() {
 
 function trelloCloseX() {
 	
-	// changes the height of the wrapper around the gallery
-	document.getElementById('galleryHeightWrapper').style.minHeight = '';
-	
-	// adds the padding to accurately position the modal
-    document.getElementById('firstRow').style.paddingTop = '';
-	
-	// adds padding back to the gallery
-	document.getElementById('gallery').style.paddingTop = '';
-	document.getElementById('gallery').style.paddingBottom = '';
-	
-	// rescales and fades-in other line 1 items
-    document.getElementById('kojiro').style.height = '';
-    document.getElementById('kojiro').style.width = '';
-    document.getElementById('kojiro').style.opacity = '';
-    document.getElementById('kojiro').style.marginLeft = '';
-    document.getElementById('ella').style.height = '';
-    document.getElementById('ella').style.width = '';
-    document.getElementById('ella').style.opacity = '';
-    document.getElementById('ella').style.marginLeft = '';
-	
-	// rescales and fadesin line 2 items
-    document.getElementById('playboy').style.height = '';
-    document.getElementById('playboy').style.opacity = '';
-    document.getElementById('enterprise').style.height = '';
-    document.getElementById('enterprise').style.opacity = '';
-    document.getElementById('chirpr').style.height = '';
-    document.getElementById('chirpr').style.opacity = '';
-    document.getElementById('newitem').style.height = '';
-    document.getElementById('newitem').style.opacity = '';
-	
 	// removes left and right arrows
     document.getElementById('trelloLeftArrow').style.left = '';
     document.getElementById('trelloLeftArrow').style.opacity = '';
     document.getElementById('trelloRightArrow').style.right = '';
     document.getElementById('trelloRightArrow').style.opacity = '';
 	
-	// scales a gallery item into a modal
-    document.getElementById('trello').style.height = '';
-    document.getElementById('trello').style.width = '';
-    document.getElementById('trello').style.marginLeft = '';
-    document.getElementById('trello').style.marginRight = '';
-    document.getElementById('trello').style.overflowX = 'auto';
-    document.getElementById('trello').style.overflowY = 'hidden';
-	
 	$("#trello").animate({ scrollTop: 0 }, 500);
 	
-    document.getElementById('trelloHeader').style.height = '';
-    document.getElementById('trelloMain').style.height = '';
-    document.getElementById('trelloMain').style.opacity = '';
-    document.getElementById('trelloCloseX').style.transform = '';
-    document.getElementById('trelloCloseX').style.opacity = '';
-    document.getElementById('trelloCloseX').style.right = '';
-    document.getElementById('trelloCloseX').style.top = '';
-    document.getElementById('trelloLabel').style.transform = '';
-    document.getElementById('trelloLabel').style.bottom = '';
-	document.getElementById('trelloLabel').style.width = '';
-	document.getElementById('trelloBottomLabel').style.paddingTop = '';
-	document.getElementById('trelloBottomLabel').style.paddingBottom = '';
-	document.getElementById('trelloTopLabel').style.paddingLeft = '';
-	document.getElementById('trelloBottomLabel').style.paddingLeft = '';
-	
-	// adds the gallery title
-    document.getElementById('myWork').style.height = '';
-    document.getElementById('myWork').style.marginBottom = '';
-		 
-	// adds the visual of the gallery title
-	document.getElementById('myWork').style.opacity = '';
-    document.getElementById('myWork').style.transform = '';
-	
-	setTimeout(function() {
-		
-	// opens other elements on screen
-    document.getElementById('aboveFold').style.display = 'block';
-    document.getElementById('title').style.display = 'block';
-    document.getElementById('arrowDown').style.display = 'block';
-    document.getElementById('aboutMe').style.display = 'block';
-    document.getElementById('porthole').style.display = 'block';
-	
-	$(window).scrollTop(tempScrollTop);
-	
-	// starts the video
-	document.getElementById('bgvid').style.display = 'block';
-	
-	}, 500);
+	closeX();
 	
 }
 
@@ -254,10 +179,9 @@ function trelloLeftArrow() {
 
 function trelloRightArrow() {
 	
-	// adds the padding to accurately position the modal
+	
     document.getElementById('firstRow').style.paddingTop = '0';
 	document.getElementById('secondRow').style.paddingTop = '7.5vh';
-	
 	
     // closes itself
     document.getElementById('trello').style.height = '0';

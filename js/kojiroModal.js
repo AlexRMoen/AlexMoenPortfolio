@@ -104,8 +104,8 @@ function kojiroOpenModal() {
 function kojiroCloseX() {
 	
 	// removes left and right arrows
-    // NONE document.getElementById('kojiroLeftArrow').style.left = '-2.5em';
-    // NONE document.getElementById('kojiroLeftArrow').style.opacity = '1';
+    // NONE document.getElementById('kojiroLeftArrow').style.left = '';
+    // NONE document.getElementById('kojiroLeftArrow').style.opacity = '';
     document.getElementById('kojiroRightArrow').style.right = '';
     document.getElementById('kojiroRightArrow').style.opacity = '';
 	

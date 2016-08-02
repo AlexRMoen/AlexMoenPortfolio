@@ -7,6 +7,7 @@ function closeX() {
 	
 	// adds the padding to accurately position the modal
     document.getElementById('firstRow').style.paddingTop = '';
+    document.getElementById('secondRow').style.paddingTop = '';
 	
 	// adds padding back to the gallery
 	document.getElementById('gallery').style.paddingTop = '';
@@ -18,6 +19,7 @@ function closeX() {
     document.getElementById('kojiro').style.opacity = '';
     document.getElementById('kojiro').style.marginLeft = '';
     document.getElementById('kojiro').style.marginRight = '';
+    document.getElementById('kojiro').style.marginBottom = '';
     document.getElementById('kojiro').style.overflowX = 'auto';
     document.getElementById('kojiro').style.overflowY = 'hidden';
     document.getElementById('kojiroHeader').style.height = '';
@@ -40,6 +42,7 @@ function closeX() {
     document.getElementById('ella').style.opacity = '';
     document.getElementById('ella').style.marginLeft = '';
     document.getElementById('ella').style.marginRight = '';
+    document.getElementById('ella').style.marginBottom = '';
     document.getElementById('ella').style.overflowX = 'auto';
     document.getElementById('ella').style.overflowY = 'hidden';
     document.getElementById('ellaHeader').style.height = '';
@@ -62,6 +65,7 @@ function closeX() {
     document.getElementById('trello').style.opacity = '';
     document.getElementById('trello').style.marginLeft = '';
     document.getElementById('trello').style.marginRight = '';
+    document.getElementById('trello').style.marginBottom = '';
     document.getElementById('trello').style.overflowX = 'auto';
     document.getElementById('trello').style.overflowY = 'hidden';
     document.getElementById('trelloHeader').style.height = '';
@@ -84,6 +88,7 @@ function closeX() {
     document.getElementById('playboy').style.opacity = '';
     document.getElementById('playboy').style.marginLeft = '';
     document.getElementById('playboy').style.marginRight = '';
+    document.getElementById('playboy').style.marginBottom = '';
     document.getElementById('playboy').style.overflowX = 'auto';
     document.getElementById('playboy').style.overflowY = 'hidden';
     document.getElementById('playboyHeader').style.height = '';
@@ -106,6 +111,7 @@ function closeX() {
     document.getElementById('enterprise').style.opacity = '';
     document.getElementById('enterprise').style.marginLeft = '';
     document.getElementById('enterprise').style.marginRight = '';
+    document.getElementById('enterprise').style.marginBottom = '';
     document.getElementById('enterprise').style.overflowX = 'auto';
     document.getElementById('enterprise').style.overflowY = 'hidden';
     document.getElementById('enterpriseHeader').style.height = '';
@@ -128,6 +134,7 @@ function closeX() {
     document.getElementById('chirpr').style.opacity = '';
     document.getElementById('chirpr').style.marginLeft = '';
     document.getElementById('chirpr').style.marginRight = '';
+    document.getElementById('chirpr').style.marginBottom = '';
     document.getElementById('chirpr').style.overflowX = 'auto';
     document.getElementById('chirpr').style.overflowY = 'hidden';
     document.getElementById('chirprHeader').style.height = '';
@@ -150,6 +157,7 @@ function closeX() {
     document.getElementById('newitem').style.opacity = '';
     document.getElementById('newitem').style.marginLeft = '';
     document.getElementById('newitem').style.marginRight = '';
+    document.getElementById('newitem').style.marginBottom = '';
     document.getElementById('newitem').style.overflowX = 'auto';
     document.getElementById('newitem').style.overflowY = 'hidden';
     document.getElementById('newitemHeader').style.height = '';
