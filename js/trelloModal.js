@@ -103,73 +103,73 @@ function trelloOpenModal() {
 function trelloCloseX() {
 	
 	// changes the height of the wrapper around the gallery
-	document.getElementById('galleryHeightWrapper').style.minHeight = '100%';
+	document.getElementById('galleryHeightWrapper').style.minHeight = '';
 	
 	// adds the padding to accurately position the modal
-    document.getElementById('firstRow').style.paddingTop = '0';
+    document.getElementById('firstRow').style.paddingTop = '';
 	
 	// adds padding back to the gallery
-	document.getElementById('gallery').style.paddingTop = '2em';
-	document.getElementById('gallery').style.paddingBottom = '3em';
+	document.getElementById('gallery').style.paddingTop = '';
+	document.getElementById('gallery').style.paddingBottom = '';
 	
 	// rescales and fades-in other line 1 items
-    document.getElementById('kojiro').style.height = '35vh';
-    document.getElementById('kojiro').style.width = '32.2666666667%';
-    document.getElementById('kojiro').style.opacity = '1';
-    document.getElementById('kojiro').style.marginLeft = '0';
-    document.getElementById('ella').style.height = '35vh';
-    document.getElementById('ella').style.width = '32.2666666667%';
-    document.getElementById('ella').style.opacity = '1';
-    document.getElementById('ella').style.marginLeft = '1.6%';
+    document.getElementById('kojiro').style.height = '';
+    document.getElementById('kojiro').style.width = '';
+    document.getElementById('kojiro').style.opacity = '';
+    document.getElementById('kojiro').style.marginLeft = '';
+    document.getElementById('ella').style.height = '';
+    document.getElementById('ella').style.width = '';
+    document.getElementById('ella').style.opacity = '';
+    document.getElementById('ella').style.marginLeft = '';
 	
 	// rescales and fadesin line 2 items
-    document.getElementById('playboy').style.height = '35vh';
-    document.getElementById('playboy').style.opacity = '1';
-    document.getElementById('enterprise').style.height = '35vh';
-    document.getElementById('enterprise').style.opacity = '1';
-    document.getElementById('chirpr').style.height = '35vh';
-    document.getElementById('chirpr').style.opacity = '1';
-    document.getElementById('newitem').style.height = '35vh';
-    document.getElementById('newitem').style.opacity = '1';
+    document.getElementById('playboy').style.height = '';
+    document.getElementById('playboy').style.opacity = '';
+    document.getElementById('enterprise').style.height = '';
+    document.getElementById('enterprise').style.opacity = '';
+    document.getElementById('chirpr').style.height = '';
+    document.getElementById('chirpr').style.opacity = '';
+    document.getElementById('newitem').style.height = '';
+    document.getElementById('newitem').style.opacity = '';
 	
 	// removes left and right arrows
-    document.getElementById('trelloLeftArrow').style.left = '-2.5em';
-    document.getElementById('trelloLeftArrow').style.opacity = '1';
-    document.getElementById('trelloRightArrow').style.right = '-2.5em';
-    document.getElementById('trelloRightArrow').style.opacity = '0';
+    document.getElementById('trelloLeftArrow').style.left = '';
+    document.getElementById('trelloLeftArrow').style.opacity = '';
+    document.getElementById('trelloRightArrow').style.right = '';
+    document.getElementById('trelloRightArrow').style.opacity = '';
 	
 	// scales a gallery item into a modal
-    document.getElementById('trello').style.height = '35vh';
-    document.getElementById('trello').style.width = '32.2666666667%';
-    document.getElementById('trello').style.marginLeft = '1.6%';
-    document.getElementById('trello').style.marginRight = '0';
+    document.getElementById('trello').style.height = '';
+    document.getElementById('trello').style.width = '';
+    document.getElementById('trello').style.marginLeft = '';
+    document.getElementById('trello').style.marginRight = '';
     document.getElementById('trello').style.overflowX = 'auto';
     document.getElementById('trello').style.overflowY = 'hidden';
 	
 	$("#trello").animate({ scrollTop: 0 }, 500);
 	
-    document.getElementById('trelloHeader').style.height = '100%';
-    document.getElementById('trelloMain').style.height = '0';
-    document.getElementById('trelloMain').style.opacity = '0';
-    document.getElementById('trelloCloseX').style.transform = 'scale(0)';
-    document.getElementById('trelloCloseX').style.opacity = '0';
-    document.getElementById('trelloCloseX').style.right = '50%';
-    document.getElementById('trelloCloseX').style.top = '50%';
-    document.getElementById('trelloLabel').style.transform = 'scale(1)';
-    document.getElementById('trelloLabel').style.bottom = '0';
-	document.getElementById('trelloLabel').style.width = '100%';
-	document.getElementById('trelloBottomLabel').style.paddingTop = '0.5em';
-	document.getElementById('trelloBottomLabel').style.paddingBottom = '0.7em';
-	document.getElementById('trelloTopLabel').style.paddingLeft = '35px';
-	document.getElementById('trelloBottomLabel').style.paddingLeft = '35px';
+    document.getElementById('trelloHeader').style.height = '';
+    document.getElementById('trelloMain').style.height = '';
+    document.getElementById('trelloMain').style.opacity = '';
+    document.getElementById('trelloCloseX').style.transform = '';
+    document.getElementById('trelloCloseX').style.opacity = '';
+    document.getElementById('trelloCloseX').style.right = '';
+    document.getElementById('trelloCloseX').style.top = '';
+    document.getElementById('trelloLabel').style.transform = '';
+    document.getElementById('trelloLabel').style.bottom = '';
+	document.getElementById('trelloLabel').style.width = '';
+	document.getElementById('trelloBottomLabel').style.paddingTop = '';
+	document.getElementById('trelloBottomLabel').style.paddingBottom = '';
+	document.getElementById('trelloTopLabel').style.paddingLeft = '';
+	document.getElementById('trelloBottomLabel').style.paddingLeft = '';
 	
 	// adds the gallery title
-    document.getElementById('myWork').style.height = 'auto';
-    document.getElementById('myWork').style.marginBottom = '1em';
+    document.getElementById('myWork').style.height = '';
+    document.getElementById('myWork').style.marginBottom = '';
 		 
 	// adds the visual of the gallery title
-	document.getElementById('myWork').style.opacity = '1';
-    document.getElementById('myWork').style.transform = 'scale(1)';
+	document.getElementById('myWork').style.opacity = '';
+    document.getElementById('myWork').style.transform = '';
 	
 	setTimeout(function() {
 		

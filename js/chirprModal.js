@@ -110,84 +110,84 @@ function chirprOpenModal() {
 function chirprCloseX() {
 	
 	// changes the height of the wrapper around the gallery
-	document.getElementById('galleryHeightWrapper').style.minHeight = '100%';
+	document.getElementById('galleryHeightWrapper').style.minHeight = '';
 	
 	// adds the padding to accurately position the modal
-    document.getElementById('secondRow').style.paddingTop = '0';
+    document.getElementById('secondRow').style.paddingTop = '';
 	
 	// adds padding back to the gallery
-	document.getElementById('gallery').style.paddingTop = '2em';
-	document.getElementById('gallery').style.paddingBottom = '3em';
+	document.getElementById('gallery').style.paddingTop = '';
+	document.getElementById('gallery').style.paddingBottom = '';
 	
 	// rescales and fades-in line 1 items
-    document.getElementById('kojiro').style.height = '35vh';
-    document.getElementById('kojiro').style.width = '32.2666666667%';
-    document.getElementById('kojiro').style.opacity = '1';
-    document.getElementById('kojiro').style.marginLeft = '0';
-	document.getElementById('kojiro').style.marginBottom = '1.6vw';
-    document.getElementById('ella').style.height = '35vh';
-    document.getElementById('ella').style.width = '32.2666666667%';
-    document.getElementById('ella').style.opacity = '1';
-    document.getElementById('ella').style.marginLeft = '1.6%';
-	document.getElementById('ella').style.marginBottom = '1.6vw';
-	document.getElementById('trello').style.height = '35vh';
-    document.getElementById('trello').style.width = '32.2666666667%';
-    document.getElementById('trello').style.opacity = '1';
-    document.getElementById('trello').style.marginLeft = '1.6%';
-	document.getElementById('trello').style.marginBottom = '1.6vw';
+    document.getElementById('kojiro').style.height = '';
+    document.getElementById('kojiro').style.width = '';
+    document.getElementById('kojiro').style.opacity = '';
+    document.getElementById('kojiro').style.marginLeft = '';
+	document.getElementById('kojiro').style.marginBottom = '';
+    document.getElementById('ella').style.height = '';
+    document.getElementById('ella').style.width = '';
+    document.getElementById('ella').style.opacity = '';
+    document.getElementById('ella').style.marginLeft = '';
+	document.getElementById('ella').style.marginBottom = '';
+	document.getElementById('trello').style.height = '';
+    document.getElementById('trello').style.width = '';
+    document.getElementById('trello').style.opacity = '';
+    document.getElementById('trello').style.marginLeft = '';
+	document.getElementById('trello').style.marginBottom = '';
 	
 	// rescales and fades in other line 2 items
-    document.getElementById('playboy').style.height = '35vh';
-	document.getElementById('playboy').style.width = '23.8%';
-    document.getElementById('playboy').style.opacity = '1';
-    document.getElementById('playboy').style.marginLeft = '0';
-    document.getElementById('enterprise').style.height = '35vh';
-	document.getElementById('enterprise').style.width = '23.8%';
-    document.getElementById('enterprise').style.opacity = '1';
-	document.getElementById('enterprise').style.marginLeft = '1.6%';
-    document.getElementById('newitem').style.height = '35vh';
-	document.getElementById('newitem').style.width = '23.8%';
-    document.getElementById('newitem').style.opacity = '1';
-	document.getElementById('newitem').style.marginLeft = '1.6%';
+    document.getElementById('playboy').style.height = '';
+	document.getElementById('playboy').style.width = '';
+    document.getElementById('playboy').style.opacity = '';
+    document.getElementById('playboy').style.marginLeft = '';
+    document.getElementById('enterprise').style.height = '';
+	document.getElementById('enterprise').style.width = '';
+    document.getElementById('enterprise').style.opacity = '';
+	document.getElementById('enterprise').style.marginLeft = '';
+    document.getElementById('newitem').style.height = '';
+	document.getElementById('newitem').style.width = '';
+    document.getElementById('newitem').style.opacity = '';
+	document.getElementById('newitem').style.marginLeft = '';
 	
 	// removes left and right arrows
-    document.getElementById('chirprLeftArrow').style.left = '-2.5em';
-    document.getElementById('chirprLeftArrow').style.opacity = '1';
-    document.getElementById('chirprRightArrow').style.right = '-2.5em';
-    document.getElementById('chirprRightArrow').style.opacity = '0';
+    document.getElementById('chirprLeftArrow').style.left = '';
+    document.getElementById('chirprLeftArrow').style.opacity = '';
+    document.getElementById('chirprRightArrow').style.right = '';
+    document.getElementById('chirprRightArrow').style.opacity = '';
 	
 	// scales this modal into a gallery item
-    document.getElementById('chirpr').style.height = '35vh';
-    document.getElementById('chirpr').style.width = '23.8%';
-    document.getElementById('chirpr').style.marginLeft = '1.6%';
-    document.getElementById('chirpr').style.marginRight = '0';
+    document.getElementById('chirpr').style.height = '';
+    document.getElementById('chirpr').style.width = '';
+    document.getElementById('chirpr').style.marginLeft = '';
+    document.getElementById('chirpr').style.marginRight = '';
     document.getElementById('chirpr').style.overflowX = 'auto';
     document.getElementById('chirpr').style.overflowY = 'hidden';
 	
 	$("#chirpr").animate({ scrollTop: 0 }, 500);
 	
-    document.getElementById('chirprHeader').style.height = '100%';
-    document.getElementById('chirprMain').style.height = '0';
-    document.getElementById('chirprMain').style.opacity = '0';
-    document.getElementById('chirprCloseX').style.transform = 'scale(0)';
-    document.getElementById('chirprCloseX').style.opacity = '0';
-    document.getElementById('chirprCloseX').style.right = '50%';
-    document.getElementById('chirprCloseX').style.top = '50%';
-    document.getElementById('chirprLabel').style.transform = 'scale(1)';
-    document.getElementById('chirprLabel').style.bottom = '0';
-	document.getElementById('chirprLabel').style.width = '100%';
-	document.getElementById('chirprBottomLabel').style.paddingTop = '0.5em';
-	document.getElementById('chirprBottomLabel').style.paddingBottom = '0.7em';
-	document.getElementById('chirprTopLabel').style.paddingLeft = '35px';
-	document.getElementById('chirprBottomLabel').style.paddingLeft = '35px';
+    document.getElementById('chirprHeader').style.height = '';
+    document.getElementById('chirprMain').style.height = '';
+    document.getElementById('chirprMain').style.opacity = '';
+    document.getElementById('chirprCloseX').style.transform = '';
+    document.getElementById('chirprCloseX').style.opacity = '';
+    document.getElementById('chirprCloseX').style.right = '';
+    document.getElementById('chirprCloseX').style.top = '';
+    document.getElementById('chirprLabel').style.transform = '';
+    document.getElementById('chirprLabel').style.bottom = '';
+	document.getElementById('chirprLabel').style.width = '';
+	document.getElementById('chirprBottomLabel').style.paddingTop = '';
+	document.getElementById('chirprBottomLabel').style.paddingBottom = '';
+	document.getElementById('chirprTopLabel').style.paddingLeft = '';
+	document.getElementById('chirprBottomLabel').style.paddingLeft = '';
 	
 	// adds the gallery title
-    document.getElementById('myWork').style.height = 'auto';
-    document.getElementById('myWork').style.marginBottom = '1em';
+    document.getElementById('myWork').style.height = '';
+    document.getElementById('myWork').style.marginBottom = '';
 		 
 	// adds the visual of the gallery title
-	document.getElementById('myWork').style.opacity = '1';
-    document.getElementById('myWork').style.transform = 'scale(1)';
+	document.getElementById('myWork').style.opacity = '';
+    document.getElementById('myWork').style.transform = '';
 	
 	setTimeout(function() {
 		
