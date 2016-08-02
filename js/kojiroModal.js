@@ -103,90 +103,15 @@ function kojiroOpenModal() {
 
 function kojiroCloseX() {
 	
-	// changes the height of the wrapper around the gallery
-	document.getElementById('galleryHeightWrapper').style.minHeight = '';
-	
-	// adds the padding to accurately position the modal
-    document.getElementById('firstRow').style.paddingTop = '';
-	
-	// adds padding back to the gallery
-	document.getElementById('gallery').style.paddingTop = '';
-	document.getElementById('gallery').style.paddingBottom = '';
-	
-	// rescales and fades-in other line 1 items
-    document.getElementById('ella').style.height = '';
-    document.getElementById('ella').style.width = '';
-    document.getElementById('ella').style.opacity = '';
-    document.getElementById('ella').style.marginLeft = '';
-    document.getElementById('trello').style.height = '';
-    document.getElementById('trello').style.width = '';
-    document.getElementById('trello').style.opacity = '';
-    document.getElementById('trello').style.marginLeft = '';
-	
-	// rescales and fadesin line 2 items
-    document.getElementById('playboy').style.height = '';
-    document.getElementById('playboy').style.opacity = '';
-    document.getElementById('enterprise').style.height = '';
-    document.getElementById('enterprise').style.opacity = '1';
-    document.getElementById('chirpr').style.height = '';
-    document.getElementById('chirpr').style.opacity = '';
-    document.getElementById('newitem').style.height = '';
-    document.getElementById('newitem').style.opacity = '';
-	
 	// removes left and right arrows
     // NONE document.getElementById('kojiroLeftArrow').style.left = '-2.5em';
     // NONE document.getElementById('kojiroLeftArrow').style.opacity = '1';
     document.getElementById('kojiroRightArrow').style.right = '';
     document.getElementById('kojiroRightArrow').style.opacity = '';
 	
-	// scales a gallery item into a modal
-    document.getElementById('kojiro').style.height = '';
-    document.getElementById('kojiro').style.width = '';
-    document.getElementById('kojiro').style.marginLeft = '';
-    document.getElementById('kojiro').style.marginRight = '';
-    document.getElementById('kojiro').style.overflowX = 'auto';
-    document.getElementById('kojiro').style.overflowY = 'hidden';
-	
 	$("#kojiro").animate({ scrollTop: 0 }, 500);
 	
-    document.getElementById('kojiroHeader').style.height = '';
-    document.getElementById('kojiroMain').style.height = '';
-    document.getElementById('kojiroMain').style.opacity = '';
-    document.getElementById('kojiroCloseX').style.transform = '';
-    document.getElementById('kojiroCloseX').style.opacity = '';
-    document.getElementById('kojiroCloseX').style.right = '';
-    document.getElementById('kojiroCloseX').style.top = '';
-    document.getElementById('kojiroLabel').style.transform = '';
-    document.getElementById('kojiroLabel').style.bottom = '';
-	document.getElementById('kojiroLabel').style.width = '';
-	document.getElementById('kojiroBottomLabel').style.paddingTop = '';
-	document.getElementById('kojiroBottomLabel').style.paddingBottom = '';
-	document.getElementById('kojiroTopLabel').style.paddingLeft = '';
-	document.getElementById('kojiroBottomLabel').style.paddingLeft = '';
-	
-	// adds the gallery title
-    document.getElementById('myWork').style.height = '';
-    document.getElementById('myWork').style.marginBottom = '';
-		 
-	// adds the visual of the gallery title
-	document.getElementById('myWork').style.opacity = '';
-    document.getElementById('myWork').style.transform = '';
-	
-	setTimeout(function() {
-	
-	// opens other elements on screen
-    document.getElementById('aboveFold').style.display = 'block';
-    document.getElementById('title').style.display = 'block';
-    document.getElementById('arrowDown').style.display = 'block';
-    document.getElementById('aboutMe').style.display = 'block';
-    document.getElementById('porthole').style.display = 'block';
-	
-	$(window).scrollTop(tempScrollTop);
-	
-	// starts the video
-	document.getElementById('bgvid').style.display = 'block';
-	
-	}, 500);
+	closeX();
 	
 }
 
