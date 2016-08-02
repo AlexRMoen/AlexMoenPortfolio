@@ -555,13 +555,18 @@ min-height: 55vh;
 	
 	 
 	
+	.marginTopGutterWidth {
+		margin-top: 1.6vw;
+	}
+	
 	.marginBottomGutterWidth {
-	margin-bottom: 2em;
-}
+		margin-bottom: 2em;
+	}
 	.marginLeftRight10em {
 	margin-left: 4em;
 	margin-right: 4em;
 }
+
 }
 
 @media only screen and (max-width: 700px) {
