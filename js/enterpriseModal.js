@@ -49,26 +49,32 @@ function enterpriseOpenModal() {
     document.getElementById('kojiro').style.height = '0';
     document.getElementById('kojiro').style.opacity = '0';
     document.getElementById('kojiro').style.marginBottom = '0';
+	$( "#kojiro" ).addClass( "smallViewHide" );
     document.getElementById('ella').style.height = '0';
     document.getElementById('ella').style.opacity = '0';
     document.getElementById('ella').style.marginBottom = '0';
+	$( "#ella" ).addClass( "smallViewHide" );
     document.getElementById('trello').style.height = '0';
     document.getElementById('trello').style.opacity = '0';
     document.getElementById('trello').style.marginBottom = '0';
+	$( "#trello" ).addClass( "smallViewHide" );
     
     // rescales and fades other line 2 items
     document.getElementById('playboy').style.height = '85vh';
     document.getElementById('playboy').style.opacity = '0';
     document.getElementById('playboy').style.width = '0';
     document.getElementById('playboy').style.marginLeft = '0';
+	$( "#playboy" ).addClass( "smallViewHide" );
     document.getElementById('chirpr').style.height = '85vh';
     document.getElementById('chirpr').style.opacity = '0';
     document.getElementById('chirpr').style.width = '0';
     document.getElementById('chirpr').style.marginLeft = '0';
+	$( "#chirpr" ).addClass( "smallViewHide" );
     document.getElementById('newitem').style.height = '85vh';
     document.getElementById('newitem').style.opacity = '0';
     document.getElementById('newitem').style.width = '0';
     document.getElementById('newitem').style.marginLeft = '0';
+	$( "#newitem" ).addClass( "smallViewHide" );
     
     // displays left and right arrows
     document.getElementById('enterpriseLeftArrow').style.left = '2.5em';
@@ -153,6 +159,7 @@ function enterpriseLeftArrow() {
 	document.getElementById('enterpriseBottomLabel').style.paddingBottom = '0.7em';
 	document.getElementById('enterpriseTopLabel').style.paddingLeft = '35px';
 	document.getElementById('enterpriseBottomLabel').style.paddingLeft = '35px';
+	$( "#enterprise" ).addClass( "smallViewHide" );
     
     // switches out arrow for the proper item
     document.getElementById('enterpriseLeftArrow').style.left = '-2.5em';
@@ -166,6 +173,7 @@ function enterpriseLeftArrow() {
     
     
     // moves other modal into place
+	$( "#playboy" ).removeClass( "smallViewHide" );
     document.getElementById('playboy').style.height = '85vh';
     document.getElementById('playboy').style.width = '80%';
     document.getElementById('playboy').style.marginLeft = '10%';
@@ -224,6 +232,7 @@ function enterpriseRightArrow() {
 	document.getElementById('enterpriseBottomLabel').style.paddingBottom = '0.7em';
 	document.getElementById('enterpriseTopLabel').style.paddingLeft = '35px';
 	document.getElementById('enterpriseBottomLabel').style.paddingLeft = '35px';
+	$( "#enterprise" ).addClass( "smallViewHide" );
     
     // switches out arrow for the proper item
     document.getElementById('enterpriseLeftArrow').style.left = '-2.5em';
@@ -237,6 +246,7 @@ function enterpriseRightArrow() {
     
     
     // moves other modal into place
+	$( "#chirpr" ).removeClass( "smallViewHide" );
     document.getElementById('chirpr').style.height = '85vh';
     document.getElementById('chirpr').style.width = '80%';
     document.getElementById('chirpr').style.marginLeft = '10%';

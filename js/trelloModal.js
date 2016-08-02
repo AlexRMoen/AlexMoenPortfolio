@@ -50,20 +50,26 @@ function trelloOpenModal() {
     document.getElementById('kojiro').style.width = '0';
     document.getElementById('kojiro').style.opacity = '0';
     document.getElementById('kojiro').style.marginLeft = '0';
+	$( "#kojiro" ).addClass( "smallViewHide" );
     document.getElementById('ella').style.height = '85vh';
     document.getElementById('ella').style.width = '0';
     document.getElementById('ella').style.opacity = '0';
     document.getElementById('ella').style.marginLeft = '0';
+	$( "#ella" ).addClass( "smallViewHide" );
     
     // rescales and fades line 2 items
     document.getElementById('playboy').style.height = '0';
     document.getElementById('playboy').style.opacity = '0';
+	$( "#playboy" ).addClass( "smallViewHide" );
     document.getElementById('enterprise').style.height = '0';
     document.getElementById('enterprise').style.opacity = '0';
+	$( "#enterprise" ).addClass( "smallViewHide" );
     document.getElementById('chirpr').style.height = '0';
     document.getElementById('chirpr').style.opacity = '0';
+	$( "#chirpr" ).addClass( "smallViewHide" );
     document.getElementById('newitem').style.height = '0';
     document.getElementById('newitem').style.opacity = '0';
+	$( "#newitem" ).addClass( "smallViewHide" );
     
     // displays left and right arrows
     document.getElementById('trelloLeftArrow').style.left = '2.5em';
@@ -141,6 +147,7 @@ function trelloLeftArrow() {
 	document.getElementById('trelloBottomLabel').style.paddingBottom = '0.7em';
 	document.getElementById('trelloTopLabel').style.paddingLeft = '35px';
 	document.getElementById('trelloBottomLabel').style.paddingLeft = '35px';
+	$( "#trello" ).addClass( "smallViewHide" );
     
     // switches out arrow for the proper item
     document.getElementById('trelloLeftArrow').style.left = '-2.5em';
@@ -153,6 +160,7 @@ function trelloLeftArrow() {
     document.getElementById('ellaRightArrow').style.opacity = '1';
     
     // moves other modal into place
+	$( "#ella" ).removeClass( "smallViewHide" );
     document.getElementById('ella').style.height = '85vh';
     document.getElementById('ella').style.width = '80%';
     document.getElementById('ella').style.marginLeft = '10%';
@@ -209,6 +217,7 @@ function trelloRightArrow() {
 	document.getElementById('trelloBottomLabel').style.paddingBottom = '0.7em';
 	document.getElementById('trelloTopLabel').style.paddingLeft = '35px';
 	document.getElementById('trelloBottomLabel').style.paddingLeft = '35px';
+	$( "#trello" ).addClass( "smallViewHide" );
     
     // switches out arrow for the proper item
     document.getElementById('trelloLeftArrow').style.left = '-2.5em';
@@ -248,6 +257,7 @@ function trelloRightArrow() {
     
     
     // moves other modal into place
+	$( "#playboy" ).removeClass( "smallViewHide" );
     document.getElementById('playboy').style.height = '85vh';
     document.getElementById('playboy').style.width = '80%';
     document.getElementById('playboy').style.marginLeft = '10%';

@@ -22,6 +22,7 @@ function closeX() {
     document.getElementById('kojiro').style.marginBottom = '';
     document.getElementById('kojiro').style.overflowX = 'auto';
     document.getElementById('kojiro').style.overflowY = 'hidden';
+	$( "#kojiro" ).removeClass( "smallViewHide" );
     document.getElementById('kojiroHeader').style.height = '';
     document.getElementById('kojiroMain').style.height = '';
     document.getElementById('kojiroMain').style.opacity = '';
@@ -45,6 +46,7 @@ function closeX() {
     document.getElementById('ella').style.marginBottom = '';
     document.getElementById('ella').style.overflowX = 'auto';
     document.getElementById('ella').style.overflowY = 'hidden';
+	$( "#ella" ).removeClass( "smallViewHide" );
     document.getElementById('ellaHeader').style.height = '';
     document.getElementById('ellaMain').style.height = '';
     document.getElementById('ellaMain').style.opacity = '';
@@ -68,6 +70,7 @@ function closeX() {
     document.getElementById('trello').style.marginBottom = '';
     document.getElementById('trello').style.overflowX = 'auto';
     document.getElementById('trello').style.overflowY = 'hidden';
+	$( "#trello" ).removeClass( "smallViewHide" );
     document.getElementById('trelloHeader').style.height = '';
     document.getElementById('trelloMain').style.height = '';
     document.getElementById('trelloMain').style.opacity = '';
@@ -91,6 +94,7 @@ function closeX() {
     document.getElementById('playboy').style.marginBottom = '';
     document.getElementById('playboy').style.overflowX = 'auto';
     document.getElementById('playboy').style.overflowY = 'hidden';
+	$( "#playboy" ).removeClass( "smallViewHide" );
     document.getElementById('playboyHeader').style.height = '';
     document.getElementById('playboyMain').style.height = '';
     document.getElementById('playboyMain').style.opacity = '';
@@ -114,6 +118,7 @@ function closeX() {
     document.getElementById('enterprise').style.marginBottom = '';
     document.getElementById('enterprise').style.overflowX = 'auto';
     document.getElementById('enterprise').style.overflowY = 'hidden';
+	$( "#enterprise" ).removeClass( "smallViewHide" );
     document.getElementById('enterpriseHeader').style.height = '';
     document.getElementById('enterpriseMain').style.height = '';
     document.getElementById('enterpriseMain').style.opacity = '';
@@ -137,6 +142,7 @@ function closeX() {
     document.getElementById('chirpr').style.marginBottom = '';
     document.getElementById('chirpr').style.overflowX = 'auto';
     document.getElementById('chirpr').style.overflowY = 'hidden';
+	$( "#chirpr" ).removeClass( "smallViewHide" );
     document.getElementById('chirprHeader').style.height = '';
     document.getElementById('chirprMain').style.height = '';
     document.getElementById('chirprMain').style.opacity = '';
@@ -160,6 +166,7 @@ function closeX() {
     document.getElementById('newitem').style.marginBottom = '';
     document.getElementById('newitem').style.overflowX = 'auto';
     document.getElementById('newitem').style.overflowY = 'hidden';
+	$( "#newitem" ).removeClass( "smallViewHide" );
     document.getElementById('newitemHeader').style.height = '';
     document.getElementById('newitemMain').style.height = '';
     document.getElementById('newitemMain').style.opacity = '';

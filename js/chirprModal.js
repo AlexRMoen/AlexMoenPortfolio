@@ -49,26 +49,32 @@ function chirprOpenModal() {
     document.getElementById('kojiro').style.height = '0';
     document.getElementById('kojiro').style.opacity = '0';
     document.getElementById('kojiro').style.marginBottom = '0';
+	$( "#kojiro" ).addClass( "smallViewHide" );
     document.getElementById('ella').style.height = '0';
     document.getElementById('ella').style.opacity = '0';
     document.getElementById('ella').style.marginBottom = '0';
+	$( "#ella" ).addClass( "smallViewHide" );
     document.getElementById('trello').style.height = '0';
     document.getElementById('trello').style.opacity = '0';
     document.getElementById('trello').style.marginBottom = '0';
+	$( "#trello" ).addClass( "smallViewHide" );
     
     // rescales and fades other line 2 items
     document.getElementById('playboy').style.height = '85vh';
     document.getElementById('playboy').style.opacity = '0';
     document.getElementById('playboy').style.width = '0';
     document.getElementById('playboy').style.marginLeft = '0';
+	$( "#playboy" ).addClass( "smallViewHide" );
     document.getElementById('enterprise').style.height = '85vh';
     document.getElementById('enterprise').style.opacity = '0';
     document.getElementById('enterprise').style.width = '0';
     document.getElementById('enterprise').style.marginLeft = '0';
+	$( "#enterprise" ).addClass( "smallViewHide" );
     document.getElementById('newitem').style.height = '85vh';
     document.getElementById('newitem').style.opacity = '0';
     document.getElementById('newitem').style.width = '0';
     document.getElementById('newitem').style.marginLeft = '0';
+	$( "#newitem" ).addClass( "smallViewHide" );
     
     // displays left and right arrows
     document.getElementById('chirprLeftArrow').style.left = '2.5em';
@@ -154,6 +160,7 @@ function chirprLeftArrow() {
 	document.getElementById('chirprBottomLabel').style.paddingBottom = '0.7em';
 	document.getElementById('chirprTopLabel').style.paddingLeft = '35px';
 	document.getElementById('chirprBottomLabel').style.paddingLeft = '35px';
+	$( "#chirpr" ).addClass( "smallViewHide" );
     
     // switches out arrow for the proper item
     document.getElementById('chirprLeftArrow').style.left = '-2.5em';
@@ -167,6 +174,7 @@ function chirprLeftArrow() {
     
     
     // moves other modal into place
+	$( "#enterprise" ).removeClass( "smallViewHide" );
     document.getElementById('enterprise').style.height = '85vh';
     document.getElementById('enterprise').style.width = '80%';
     document.getElementById('enterprise').style.marginLeft = '10%';
@@ -225,6 +233,7 @@ function chirprRightArrow() {
 	document.getElementById('chirprBottomLabel').style.paddingBottom = '0.7em';
 	document.getElementById('chirprTopLabel').style.paddingLeft = '35px';
 	document.getElementById('chirprBottomLabel').style.paddingLeft = '35px';
+	$( "#chirpr" ).addClass( "smallViewHide" );
     
     // switches out arrow for the proper item
     document.getElementById('chirprLeftArrow').style.left = '-2.5em';
@@ -238,6 +247,7 @@ function chirprRightArrow() {
     
     
     // moves other modal into place
+	$( "#newitem" ).removeClass( "smallViewHide" );
     document.getElementById('newitem').style.height = '85vh';
     document.getElementById('newitem').style.width = '80%';
     document.getElementById('newitem').style.marginLeft = '10%';

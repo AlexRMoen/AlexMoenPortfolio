@@ -50,20 +50,26 @@ function kojiroOpenModal() {
     document.getElementById('ella').style.width = '0';
     document.getElementById('ella').style.opacity = '0';
     document.getElementById('ella').style.marginLeft = '0';
+	$( "#ella" ).addClass( "smallViewHide" );
     document.getElementById('trello').style.height = '85vh';
     document.getElementById('trello').style.width = '0';
     document.getElementById('trello').style.opacity = '0';
     document.getElementById('trello').style.marginLeft = '0';
+	$( "#trello" ).addClass( "smallViewHide" );
     
     // rescales and fades line 2 items
     document.getElementById('playboy').style.height = '0';
     document.getElementById('playboy').style.opacity = '0';
+	$( "#playboy" ).addClass( "smallViewHide" );
     document.getElementById('enterprise').style.height = '0';
     document.getElementById('enterprise').style.opacity = '0';
+	$( "#enterprise" ).addClass( "smallViewHide" );
     document.getElementById('chirpr').style.height = '0';
     document.getElementById('chirpr').style.opacity = '0';
+	$( "#chirpr" ).addClass( "smallViewHide" );
     document.getElementById('newitem').style.height = '0';
     document.getElementById('newitem').style.opacity = '0';
+	$( "#newitem" ).addClass( "smallViewHide" );
     
     // displays left and right arrows
     // NONE document.getElementById('kojiroLeftArrow').style.left = '2.5em';
@@ -145,6 +151,7 @@ function kojiroRightArrow() {
 	document.getElementById('kojiroBottomLabel').style.paddingBottom = '0.7em';
 	document.getElementById('kojiroTopLabel').style.paddingLeft = '35px';
 	document.getElementById('kojiroBottomLabel').style.paddingLeft = '35px';
+	$( "#kojiro" ).addClass( "smallViewHide" );
     
     // switches out arrow for the proper item
     // NONE document.getElementById('kojiroLeftArrow').style.left = '-2.5em';
@@ -157,6 +164,7 @@ function kojiroRightArrow() {
     document.getElementById('ellaRightArrow').style.opacity = '1';
     
     // moves other modal into place
+	$( "#ella" ).removeClass( "smallViewHide" );
     document.getElementById('ella').style.height = '85vh';
     document.getElementById('ella').style.width = '80%';
     document.getElementById('ella').style.marginLeft = '10%';

@@ -49,26 +49,32 @@ function newitemOpenModal() {
     document.getElementById('kojiro').style.height = '0';
     document.getElementById('kojiro').style.opacity = '0';
     document.getElementById('kojiro').style.marginBottom = '0';
+	$( "#kojiro" ).addClass( "smallViewHide" );
     document.getElementById('ella').style.height = '0';
     document.getElementById('ella').style.opacity = '0';
     document.getElementById('ella').style.marginBottom = '0';
+	$( "#ella" ).addClass( "smallViewHide" );
     document.getElementById('trello').style.height = '0';
     document.getElementById('trello').style.opacity = '0';
     document.getElementById('trello').style.marginBottom = '0';
+	$( "#trello" ).addClass( "smallViewHide" );
     
     // rescales and fades other line 2 items
     document.getElementById('playboy').style.height = '85vh';
     document.getElementById('playboy').style.opacity = '0';
     document.getElementById('playboy').style.width = '0';
     document.getElementById('playboy').style.marginLeft = '0';
+	$( "#playboy" ).addClass( "smallViewHide" );
     document.getElementById('enterprise').style.height = '85vh';
     document.getElementById('enterprise').style.opacity = '0';
     document.getElementById('enterprise').style.width = '0';
     document.getElementById('enterprise').style.marginLeft = '0';
+	$( "#enterprise" ).addClass( "smallViewHide" );
     document.getElementById('chirpr').style.height = '85vh';
     document.getElementById('chirpr').style.opacity = '0';
     document.getElementById('chirpr').style.width = '0';
     document.getElementById('chirpr').style.marginLeft = '0';
+	$( "#chirpr" ).addClass( "smallViewHide" );
     
     // displays left and right arrows
     document.getElementById('newitemLeftArrow').style.left = '2.5em';
@@ -155,6 +161,7 @@ function newitemLeftArrow() {
 	document.getElementById('newitemBottomLabel').style.paddingBottom = '0.7em';
 	document.getElementById('newitemTopLabel').style.paddingLeft = '35px';
 	document.getElementById('newitemBottomLabel').style.paddingLeft = '35px';
+	$( "#newitem" ).addClass( "smallViewHide" );
     
     // switches out arrow for the proper item
     document.getElementById('newitemLeftArrow').style.left = '-2.5em';
@@ -168,6 +175,7 @@ function newitemLeftArrow() {
     
     
     // moves other modal into place
+	$( "#chirpr" ).removeClass( "smallViewHide" );
     document.getElementById('chirpr').style.height = '85vh';
     document.getElementById('chirpr').style.width = '80%';
     document.getElementById('chirpr').style.marginLeft = '10%';
