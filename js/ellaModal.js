@@ -7,12 +7,14 @@ function ellaOpenModal() {
 	// stops the video for added resources
 	document.getElementById('bgvid').style.display = 'none';
 	
+	if (window.matchMedia("(min-width: 800px)").matches) {
     $(document).ready(function() {
 		 // scrolls to the top of the gallery div
          $('html, body').animate({
            'scrollTop':   $('#gallery').offset().top
          }, 500); 
 	});
+	}
 	 
 	 
 	// changes the height of the wrapper around the gallery
