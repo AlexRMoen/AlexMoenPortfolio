@@ -97,8 +97,6 @@ function chirprOpenModal() {
     document.getElementById('chirprMain').style.opacity = '1';
     document.getElementById('chirprCloseX').style.transform = 'scale(1)';
     document.getElementById('chirprCloseX').style.opacity = '1';
-    document.getElementById('chirprCloseX').style.right = '12vw';
-    document.getElementById('chirprCloseX').style.top = '11vh';
     document.getElementById('chirprLabel').style.transform = 'scale(1.3)';
     document.getElementById('chirprLabel').style.bottom = '3.75em';
     document.getElementById('chirprLabel').style.width = '38%';
@@ -178,8 +176,6 @@ function chirprOpenModal() {
     document.getElementById('chirprMain').style.opacity = '1';
     document.getElementById('chirprCloseX').style.transform = 'scale(1)';
     document.getElementById('chirprCloseX').style.opacity = '1';
-    document.getElementById('chirprCloseX').style.right = '12vw';
-    document.getElementById('chirprCloseX').style.top = '11vh';
     document.getElementById('chirprLabel').style.transform = 'scale(1.3)';
     document.getElementById('chirprLabel').style.bottom = '3.75em';
     document.getElementById('chirprLabel').style.width = '38%';
@@ -245,8 +241,6 @@ function chirprLeftArrow() {
 	
     document.getElementById('chirprCloseX').style.transform = 'scale(0)';
     document.getElementById('chirprCloseX').style.opacity = '0';
-    document.getElementById('chirprCloseX').style.right = '50%';
-    document.getElementById('chirprCloseX').style.top = '50%';
     document.getElementById('chirprLabel').style.transform = 'scale(1)';
     document.getElementById('chirprLabel').style.bottom = '0';
 	document.getElementById('chirprLabel').style.width = '100%';
@@ -281,8 +275,6 @@ function chirprLeftArrow() {
     document.getElementById('enterprise').style.overflowY = 'scroll';
     document.getElementById('enterpriseCloseX').style.transform = 'scale(1)';
     document.getElementById('enterpriseCloseX').style.opacity = '1';
-    document.getElementById('enterpriseCloseX').style.right = '12vw';
-    document.getElementById('enterpriseCloseX').style.top = '11vh';
     document.getElementById('enterpriseLabel').style.transform = 'scale(1.3)';
     document.getElementById('enterpriseLabel').style.bottom = '3.75em';
     document.getElementById('enterpriseLabel').style.width = '38%';
@@ -322,8 +314,6 @@ function chirprRightArrow() {
 	
     document.getElementById('chirprCloseX').style.transform = 'scale(0)';
     document.getElementById('chirprCloseX').style.opacity = '0';
-    document.getElementById('chirprCloseX').style.right = '50%';
-    document.getElementById('chirprCloseX').style.top = '50%';
     document.getElementById('chirprLabel').style.transform = 'scale(1)';
     document.getElementById('chirprLabel').style.bottom = '0';
 	document.getElementById('chirprLabel').style.width = '100%';
@@ -358,8 +348,6 @@ function chirprRightArrow() {
     document.getElementById('newitem').style.overflowY = 'scroll';
     document.getElementById('newitemCloseX').style.transform = 'scale(1)';
     document.getElementById('newitemCloseX').style.opacity = '1';
-    document.getElementById('newitemCloseX').style.right = '12vw';
-    document.getElementById('newitemCloseX').style.top = '11vh';
     document.getElementById('newitemLabel').style.transform = 'scale(1.3)';
     document.getElementById('newitemLabel').style.bottom = '3.75em';
     document.getElementById('newitemLabel').style.width = '38%';

@@ -28,8 +28,6 @@ function closeX() {
     document.getElementById('kojiroMain').style.opacity = '';
     document.getElementById('kojiroCloseX').style.transform = '';
     document.getElementById('kojiroCloseX').style.opacity = '';
-    document.getElementById('kojiroCloseX').style.right = '';
-    document.getElementById('kojiroCloseX').style.top = '';
     document.getElementById('kojiroLabel').style.transform = '';
     document.getElementById('kojiroLabel').style.bottom = '';
 	document.getElementById('kojiroLabel').style.width = '';
@@ -52,8 +50,6 @@ function closeX() {
     document.getElementById('ellaMain').style.opacity = '';
     document.getElementById('ellaCloseX').style.transform = '';
     document.getElementById('ellaCloseX').style.opacity = '';
-    document.getElementById('ellaCloseX').style.right = '';
-    document.getElementById('ellaCloseX').style.top = '';
     document.getElementById('ellaLabel').style.transform = '';
     document.getElementById('ellaLabel').style.bottom = '';
 	document.getElementById('ellaLabel').style.width = '';
@@ -76,8 +72,6 @@ function closeX() {
     document.getElementById('trelloMain').style.opacity = '';
     document.getElementById('trelloCloseX').style.transform = '';
     document.getElementById('trelloCloseX').style.opacity = '';
-    document.getElementById('trelloCloseX').style.right = '';
-    document.getElementById('trelloCloseX').style.top = '';
     document.getElementById('trelloLabel').style.transform = '';
     document.getElementById('trelloLabel').style.bottom = '';
 	document.getElementById('trelloLabel').style.width = '';
@@ -100,8 +94,6 @@ function closeX() {
     document.getElementById('playboyMain').style.opacity = '';
     document.getElementById('playboyCloseX').style.transform = '';
     document.getElementById('playboyCloseX').style.opacity = '';
-    document.getElementById('playboyCloseX').style.right = '';
-    document.getElementById('playboyCloseX').style.top = '';
     document.getElementById('playboyLabel').style.transform = '';
     document.getElementById('playboyLabel').style.bottom = '';
 	document.getElementById('playboyLabel').style.width = '';
@@ -124,8 +116,6 @@ function closeX() {
     document.getElementById('enterpriseMain').style.opacity = '';
     document.getElementById('enterpriseCloseX').style.transform = '';
     document.getElementById('enterpriseCloseX').style.opacity = '';
-    document.getElementById('enterpriseCloseX').style.right = '';
-    document.getElementById('enterpriseCloseX').style.top = '';
     document.getElementById('enterpriseLabel').style.transform = '';
     document.getElementById('enterpriseLabel').style.bottom = '';
 	document.getElementById('enterpriseLabel').style.width = '';
@@ -148,8 +138,6 @@ function closeX() {
     document.getElementById('chirprMain').style.opacity = '';
     document.getElementById('chirprCloseX').style.transform = '';
     document.getElementById('chirprCloseX').style.opacity = '';
-    document.getElementById('chirprCloseX').style.right = '';
-    document.getElementById('chirprCloseX').style.top = '';
     document.getElementById('chirprLabel').style.transform = '';
     document.getElementById('chirprLabel').style.bottom = '';
 	document.getElementById('chirprLabel').style.width = '';
@@ -172,8 +160,6 @@ function closeX() {
     document.getElementById('newitemMain').style.opacity = '';
     document.getElementById('newitemCloseX').style.transform = '';
     document.getElementById('newitemCloseX').style.opacity = '';
-    document.getElementById('newitemCloseX').style.right = '';
-    document.getElementById('newitemCloseX').style.top = '';
     document.getElementById('newitemLabel').style.transform = '';
     document.getElementById('newitemLabel').style.bottom = '';
 	document.getElementById('newitemLabel').style.width = '';

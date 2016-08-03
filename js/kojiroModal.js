@@ -93,8 +93,6 @@ function kojiroOpenModal() {
     document.getElementById('kojiroMain').style.opacity = '1';
     document.getElementById('kojiroCloseX').style.transform = 'scale(1)';
     document.getElementById('kojiroCloseX').style.opacity = '1';
-    document.getElementById('kojiroCloseX').style.right = '12vw';
-    document.getElementById('kojiroCloseX').style.top = '11vh';
     document.getElementById('kojiroLabel').style.transform = 'scale(1.3)';
     document.getElementById('kojiroLabel').style.bottom = '3.75em';
     document.getElementById('kojiroLabel').style.width = '38%';
@@ -170,8 +168,6 @@ function kojiroOpenModal() {
     document.getElementById('kojiroMain').style.opacity = '1';
     document.getElementById('kojiroCloseX').style.transform = 'scale(1)';
     document.getElementById('kojiroCloseX').style.opacity = '1';
-    document.getElementById('kojiroCloseX').style.right = '12vw';
-    document.getElementById('kojiroCloseX').style.top = '11vh';
     document.getElementById('kojiroLabel').style.transform = 'scale(1.3)';
     document.getElementById('kojiroLabel').style.bottom = '3.75em';
     document.getElementById('kojiroLabel').style.width = '38%';
@@ -234,8 +230,6 @@ function kojiroRightArrow() {
 	
     document.getElementById('kojiroCloseX').style.transform = 'scale(0)';
     document.getElementById('kojiroCloseX').style.opacity = '0';
-    document.getElementById('kojiroCloseX').style.right = '50%';
-    document.getElementById('kojiroCloseX').style.top = '50%';
     document.getElementById('kojiroLabel').style.transform = 'scale(1)';
     document.getElementById('kojiroLabel').style.bottom = '0';
 	document.getElementById('kojiroLabel').style.width = '100%';
@@ -269,8 +263,6 @@ function kojiroRightArrow() {
     document.getElementById('ella').style.overflowY = 'scroll';
     document.getElementById('ellaCloseX').style.transform = 'scale(1)';
     document.getElementById('ellaCloseX').style.opacity = '1';
-    document.getElementById('ellaCloseX').style.right = '12vw';
-    document.getElementById('ellaCloseX').style.top = '11vh';
     document.getElementById('ellaLabel').style.transform = 'scale(1.3)';
     document.getElementById('ellaLabel').style.bottom = '3.75em';
     document.getElementById('ellaLabel').style.width = '38%';

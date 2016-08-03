@@ -97,8 +97,6 @@ function newitemOpenModal() {
     document.getElementById('newitemMain').style.opacity = '1';
     document.getElementById('newitemCloseX').style.transform = 'scale(1)';
     document.getElementById('newitemCloseX').style.opacity = '1';
-    document.getElementById('newitemCloseX').style.right = '12vw';
-    document.getElementById('newitemCloseX').style.top = '11vh';
     document.getElementById('newitemLabel').style.transform = 'scale(1.3)';
     document.getElementById('newitemLabel').style.bottom = '3.75em';
     document.getElementById('newitemLabel').style.width = '38%';
@@ -178,8 +176,6 @@ function newitemOpenModal() {
     document.getElementById('newitemMain').style.opacity = '1';
     document.getElementById('newitemCloseX').style.transform = 'scale(1)';
     document.getElementById('newitemCloseX').style.opacity = '1';
-    document.getElementById('newitemCloseX').style.right = '12vw';
-    document.getElementById('newitemCloseX').style.top = '11vh';
     document.getElementById('newitemLabel').style.transform = 'scale(1.3)';
     document.getElementById('newitemLabel').style.bottom = '3.75em';
     document.getElementById('newitemLabel').style.width = '38%';
@@ -246,8 +242,6 @@ function newitemLeftArrow() {
 	
     document.getElementById('newitemCloseX').style.transform = 'scale(0)';
     document.getElementById('newitemCloseX').style.opacity = '0';
-    document.getElementById('newitemCloseX').style.right = '50%';
-    document.getElementById('newitemCloseX').style.top = '50%';
     document.getElementById('newitemLabel').style.transform = 'scale(1)';
     document.getElementById('newitemLabel').style.bottom = '0';
 	document.getElementById('newitemLabel').style.width = '100%';
@@ -282,8 +276,6 @@ function newitemLeftArrow() {
     document.getElementById('chirpr').style.overflowY = 'scroll';
     document.getElementById('chirprCloseX').style.transform = 'scale(1)';
     document.getElementById('chirprCloseX').style.opacity = '1';
-    document.getElementById('chirprCloseX').style.right = '12vw';
-    document.getElementById('chirprCloseX').style.top = '11vh';
     document.getElementById('chirprLabel').style.transform = 'scale(1.3)';
     document.getElementById('chirprLabel').style.bottom = '3.75em';
     document.getElementById('chirprLabel').style.width = '38%';

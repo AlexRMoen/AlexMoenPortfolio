@@ -97,8 +97,6 @@ function playboyOpenModal() {
     document.getElementById('playboyMain').style.opacity = '1';
     document.getElementById('playboyCloseX').style.transform = 'scale(1)';
     document.getElementById('playboyCloseX').style.opacity = '1';
-    document.getElementById('playboyCloseX').style.right = '12vw';
-    document.getElementById('playboyCloseX').style.top = '11vh';
     document.getElementById('playboyLabel').style.transform = 'scale(1.3)';
     document.getElementById('playboyLabel').style.bottom = '3.75em';
     document.getElementById('playboyLabel').style.width = '38%';
@@ -178,8 +176,6 @@ function playboyOpenModal() {
     document.getElementById('playboyMain').style.opacity = '1';
     document.getElementById('playboyCloseX').style.transform = 'scale(1)';
     document.getElementById('playboyCloseX').style.opacity = '1';
-    document.getElementById('playboyCloseX').style.right = '12vw';
-    document.getElementById('playboyCloseX').style.top = '11vh';
     document.getElementById('playboyLabel').style.transform = 'scale(1.3)';
     document.getElementById('playboyLabel').style.bottom = '3.75em';
     document.getElementById('playboyLabel').style.width = '38%';
@@ -247,8 +243,6 @@ function playboyLeftArrow() {
 	
     document.getElementById('playboyCloseX').style.transform = 'scale(0)';
     document.getElementById('playboyCloseX').style.opacity = '0';
-    document.getElementById('playboyCloseX').style.right = '50%';
-    document.getElementById('playboyCloseX').style.top = '50%';
     document.getElementById('playboyLabel').style.transform = 'scale(1)';
     document.getElementById('playboyLabel').style.bottom = '0';
 	document.getElementById('playboyLabel').style.width = '100%';
@@ -310,8 +304,6 @@ function playboyLeftArrow() {
     document.getElementById('trello').style.overflowY = 'scroll';
     document.getElementById('trelloCloseX').style.transform = 'scale(1)';
     document.getElementById('trelloCloseX').style.opacity = '1';
-    document.getElementById('trelloCloseX').style.right = '12vw';
-    document.getElementById('trelloCloseX').style.top = '11vh';
     document.getElementById('trelloLabel').style.transform = 'scale(1.3)';
     document.getElementById('trelloLabel').style.bottom = '3.75em';
     document.getElementById('trelloLabel').style.width = '38%';
@@ -349,8 +341,6 @@ function playboyRightArrow() {
 	
     document.getElementById('playboyCloseX').style.transform = 'scale(0)';
     document.getElementById('playboyCloseX').style.opacity = '0';
-    document.getElementById('playboyCloseX').style.right = '50%';
-    document.getElementById('playboyCloseX').style.top = '50%';
     document.getElementById('playboyLabel').style.transform = 'scale(1)';
     document.getElementById('playboyLabel').style.bottom = '0';
 	document.getElementById('playboyLabel').style.width = '100%';
@@ -385,8 +375,6 @@ function playboyRightArrow() {
     document.getElementById('enterprise').style.overflowY = 'scroll';
     document.getElementById('enterpriseCloseX').style.transform = 'scale(1)';
     document.getElementById('enterpriseCloseX').style.opacity = '1';
-    document.getElementById('enterpriseCloseX').style.right = '12vw';
-    document.getElementById('enterpriseCloseX').style.top = '11vh';
     document.getElementById('enterpriseLabel').style.transform = 'scale(1.3)';
     document.getElementById('enterpriseLabel').style.bottom = '3.75em';
     document.getElementById('enterpriseLabel').style.width = '38%';

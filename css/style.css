@@ -385,8 +385,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 /* close X button */
 .closeX {
 	position: absolute;
-	top: 50%;
-	right: 50%;
+	top: 1.5em;
+	right: 1.5em;
 	width: 2.25em;
 	transform: scale(0);
 	opacity: 0;
@@ -498,9 +498,6 @@ min-height: 55vh;
 
 .helloRow {
 	min-height: 55vh;
-}
-.modalHeight {
-	height: 85vh;
 }
 
 /* incrementally reduces the margin on the sides of the screen */
