@@ -80,9 +80,9 @@ function chirprOpenModal() {
 	$( "#newitem" ).addClass( "smallViewHide" );
     
     // displays left and right arrows
-    document.getElementById('chirprLeftArrow').style.left = '2.5em';
+    document.getElementById('chirprLeftArrow').style.left = '3.5vw';
     document.getElementById('chirprLeftArrow').style.opacity = '1';
-    document.getElementById('chirprRightArrow').style.right = '2.5em';
+    document.getElementById('chirprRightArrow').style.right = '3.5vw';
     document.getElementById('chirprRightArrow').style.opacity = '1';
     
     // scales a gallery item into a modal
@@ -161,9 +161,9 @@ function chirprOpenModal() {
 	$( "#newitem" ).addClass( "smallViewHide" );
     
     // displays left and right arrows
-    document.getElementById('chirprLeftArrow').style.left = '2.5em';
+    document.getElementById('chirprLeftArrow').style.left = '3.5vw';
     document.getElementById('chirprLeftArrow').style.opacity = '1';
-    document.getElementById('chirprRightArrow').style.right = '2.5em';
+    document.getElementById('chirprRightArrow').style.right = '3.5vw';
     document.getElementById('chirprRightArrow').style.opacity = '1';
     
     // scales a gallery item into a modal
@@ -257,13 +257,13 @@ function chirprLeftArrow() {
 	$( "#chirpr" ).addClass( "smallViewHide" );
     
     // switches out arrow for the proper item
-    document.getElementById('chirprLeftArrow').style.left = '-2.5em';
+    document.getElementById('chirprLeftArrow').style.left = '-3.5vw';
     document.getElementById('chirprLeftArrow').style.opacity = '0';
-    document.getElementById('chirprRightArrow').style.right = '-2.5em';
+    document.getElementById('chirprRightArrow').style.right = '-3.5vw';
     document.getElementById('chirprRightArrow').style.opacity = '0';
-    document.getElementById('enterpriseLeftArrow').style.left = '2.5em';
+    document.getElementById('enterpriseLeftArrow').style.left = '3.5vw';
     document.getElementById('enterpriseLeftArrow').style.opacity = '1';
-    document.getElementById('enterpriseRightArrow').style.right = '2.5em';
+    document.getElementById('enterpriseRightArrow').style.right = '3.5vw';
     document.getElementById('enterpriseRightArrow').style.opacity = '1'; 
     
     
@@ -334,13 +334,13 @@ function chirprRightArrow() {
 	$( "#chirpr" ).addClass( "smallViewHide" );
     
     // switches out arrow for the proper item
-    document.getElementById('chirprLeftArrow').style.left = '-2.5em';
+    document.getElementById('chirprLeftArrow').style.left = '-3.5vw';
     document.getElementById('chirprLeftArrow').style.opacity = '0';
-    document.getElementById('chirprRightArrow').style.right = '-2.5em';
+    document.getElementById('chirprRightArrow').style.right = '-3.5vw';
     document.getElementById('chirprRightArrow').style.opacity = '0';
-    document.getElementById('newitemLeftArrow').style.left = '2.5em';
+    document.getElementById('newitemLeftArrow').style.left = '3.5vw';
     document.getElementById('newitemLeftArrow').style.opacity = '1';
-    // NONE document.getElementById('newitemRightArrow').style.right = '2.5em';
+    // NONE document.getElementById('newitemRightArrow').style.right = '3.5vw';
     // NONE document.getElementById('newitemRightArrow').style.opacity = '1'; 
     
     

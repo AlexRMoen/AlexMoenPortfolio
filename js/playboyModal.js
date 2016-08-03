@@ -80,9 +80,9 @@ function playboyOpenModal() {
 	$( "#newitem" ).addClass( "smallViewHide" );
     
     // displays left and right arrows
-    document.getElementById('playboyLeftArrow').style.left = '2.5em';
+    document.getElementById('playboyLeftArrow').style.left = '3.5vw';
     document.getElementById('playboyLeftArrow').style.opacity = '1';
-    document.getElementById('playboyRightArrow').style.right = '2.5em';
+    document.getElementById('playboyRightArrow').style.right = '3.5vw';
     document.getElementById('playboyRightArrow').style.opacity = '1';
     
     // scales a gallery item into a modal
@@ -161,9 +161,9 @@ function playboyOpenModal() {
 	$( "#newitem" ).addClass( "smallViewHide" );
     
     // displays left and right arrows
-    document.getElementById('playboyLeftArrow').style.left = '2.5em';
+    document.getElementById('playboyLeftArrow').style.left = '3.5vw';
     document.getElementById('playboyLeftArrow').style.opacity = '1';
-    document.getElementById('playboyRightArrow').style.right = '2.5em';
+    document.getElementById('playboyRightArrow').style.right = '3.5vw';
     document.getElementById('playboyRightArrow').style.opacity = '1';
     
     // scales a gallery item into a modal
@@ -259,13 +259,13 @@ function playboyLeftArrow() {
 	$( "#playboy" ).addClass( "smallViewHide" );
     
     // switches out arrow for the proper item
-    document.getElementById('playboyLeftArrow').style.left = '-2.5em';
+    document.getElementById('playboyLeftArrow').style.left = '-3.5vw';
     document.getElementById('playboyLeftArrow').style.opacity = '0';
-    document.getElementById('playboyRightArrow').style.right = '-2.5em';
+    document.getElementById('playboyRightArrow').style.right = '-3.5vw';
     document.getElementById('playboyRightArrow').style.opacity = '0';
-    document.getElementById('trelloLeftArrow').style.left = '2.5em';
+    document.getElementById('trelloLeftArrow').style.left = '3.5vw';
     document.getElementById('trelloLeftArrow').style.opacity = '1';
-    document.getElementById('trelloRightArrow').style.right = '2.5em';
+    document.getElementById('trelloRightArrow').style.right = '3.5vw';
     document.getElementById('trelloRightArrow').style.opacity = '1';
 	
 	// resizes top row items
@@ -361,13 +361,13 @@ function playboyRightArrow() {
 	$( "#playboy" ).addClass( "smallViewHide" );
     
     // switches out arrow for the proper item
-    document.getElementById('playboyLeftArrow').style.left = '-2.5em';
+    document.getElementById('playboyLeftArrow').style.left = '-3.5vw';
     document.getElementById('playboyLeftArrow').style.opacity = '0';
-    document.getElementById('playboyRightArrow').style.right = '-2.5em';
+    document.getElementById('playboyRightArrow').style.right = '-3.5vw';
     document.getElementById('playboyRightArrow').style.opacity = '0';
-    document.getElementById('enterpriseLeftArrow').style.left = '2.5em';
+    document.getElementById('enterpriseLeftArrow').style.left = '3.5vw';
     document.getElementById('enterpriseLeftArrow').style.opacity = '1';
-    document.getElementById('enterpriseRightArrow').style.right = '2.5em';
+    document.getElementById('enterpriseRightArrow').style.right = '3.5vw';
     document.getElementById('enterpriseRightArrow').style.opacity = '1'; 
     
     

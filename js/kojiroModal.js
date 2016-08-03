@@ -76,9 +76,9 @@ function kojiroOpenModal() {
 	$( "#newitem" ).addClass( "smallViewHide" );
     
     // displays left and right arrows
-    // NONE document.getElementById('kojiroLeftArrow').style.left = '2.5em';
+    // NONE document.getElementById('kojiroLeftArrow').style.left = '3.5vw';
     // NONE document.getElementById('kojiroLeftArrow').style.opacity = '1';
-    document.getElementById('kojiroRightArrow').style.right = '2.5em';
+    document.getElementById('kojiroRightArrow').style.right = '3.5vw';
     document.getElementById('kojiroRightArrow').style.opacity = '1';
     
     // scales a gallery item into a modal
@@ -153,9 +153,9 @@ function kojiroOpenModal() {
 	$( "#newitem" ).addClass( "smallViewHide" );
     
     // displays left and right arrows
-    // NONE document.getElementById('kojiroLeftArrow').style.left = '2.5em';
+    // NONE document.getElementById('kojiroLeftArrow').style.left = '3.5vw';
     // NONE document.getElementById('kojiroLeftArrow').style.opacity = '1';
-    document.getElementById('kojiroRightArrow').style.right = '2.5em';
+    document.getElementById('kojiroRightArrow').style.right = '3.5vw';
     document.getElementById('kojiroRightArrow').style.opacity = '1';
     
     // scales a gallery item into a modal
@@ -246,13 +246,13 @@ function kojiroRightArrow() {
 	$( "#kojiro" ).addClass( "smallViewHide" );
     
     // switches out arrow for the proper item
-    // NONE document.getElementById('kojiroLeftArrow').style.left = '-2.5em';
+    // NONE document.getElementById('kojiroLeftArrow').style.left = '-3.5vw';
     // NONE document.getElementById('kojiroLeftArrow').style.opacity = '0';
-    document.getElementById('kojiroRightArrow').style.right = '-2.5em';
+    document.getElementById('kojiroRightArrow').style.right = '-3.5vw';
     document.getElementById('kojiroRightArrow').style.opacity = '0';
-    document.getElementById('ellaLeftArrow').style.left = '2.5em';
+    document.getElementById('ellaLeftArrow').style.left = '3.5vw';
     document.getElementById('ellaLeftArrow').style.opacity = '1';
-    document.getElementById('ellaRightArrow').style.right = '2.5em';
+    document.getElementById('ellaRightArrow').style.right = '3.5vw';
     document.getElementById('ellaRightArrow').style.opacity = '1';
     
     // moves other modal into place
