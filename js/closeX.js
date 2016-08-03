@@ -190,6 +190,8 @@ function closeX() {
 	document.getElementById('myWork').style.opacity = '';
     document.getElementById('myWork').style.transform = '';
 	
+	if (window.matchMedia("(min-width: 800px)").matches) {
+	
 	setTimeout(function() {
 	
 	// opens other elements on screen
@@ -205,6 +207,26 @@ function closeX() {
 	document.getElementById('bgvid').style.display = 'block';
 	
 	}, 500);
+	
+	} else {
+		
+			setTimeout(function() {
+	
+	// opens other elements on screen
+    document.getElementById('aboveFold').style.display = 'block';
+    document.getElementById('title').style.display = 'block';
+    document.getElementById('arrowDown').style.display = 'block';
+    document.getElementById('aboutMe').style.display = 'block';
+    document.getElementById('porthole').style.display = 'block';
+	
+	$(window).scrollTop(tempScrollTop);
+	
+	// starts the video
+	document.getElementById('bgvid').style.display = 'block';
+	
+	}, 0);
+	
+	}
 	
 }
 

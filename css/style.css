@@ -569,15 +569,11 @@ min-height: 55vh;
 
 .leftArrow {
 	position: fixed;
-	width: 2em;
-	left: -2.5em;
 	top: 5vh;
 }
 
 .rightArrow {
 	position: fixed;
-	width: 2em;
-	right: -2.5em;
 	top: 5vh;
 }
 .closedGallery-sm {
@@ -585,6 +581,85 @@ min-height: 55vh;
 }
 .smallViewHide {
 	display: none;
+}
+.transitionAll0point5 {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+.box {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+.boxLabel {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+.topLabel {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+.bottomLabel {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+#gallery {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+
+.galleryRow {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+#myWork {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+.modalHeader {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+.modalMain {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+.closeX {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+.leftArrow {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+.rightArrow {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+#aboveFold {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+#aboutMe {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+#porthole {
+	
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
 }
 
 @media only screen and (max-width: 700px) {
