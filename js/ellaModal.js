@@ -66,7 +66,7 @@ function ellaOpenModal() {
 	$( "#playboy" ).addClass( "smallViewHide" );
     document.getElementById('enterprise').style.height = '0';
     document.getElementById('enterprise').style.opacity = '0';
-	$( "#playboy" ).addClass( "smallViewHide" );
+	$( "#enterprise" ).addClass( "smallViewHide" );
     document.getElementById('chirpr').style.height = '0';
     document.getElementById('chirpr').style.opacity = '0';
 	$( "#chirpr" ).addClass( "smallViewHide" );
@@ -142,7 +142,7 @@ function ellaOpenModal() {
 	$( "#playboy" ).addClass( "smallViewHide" );
     document.getElementById('enterprise').style.height = '0';
     document.getElementById('enterprise').style.opacity = '0';
-	$( "#playboy" ).addClass( "smallViewHide" );
+	$( "#enterprise" ).addClass( "smallViewHide" );
     document.getElementById('chirpr').style.height = '0';
     document.getElementById('chirpr').style.opacity = '0';
 	$( "#chirpr" ).addClass( "smallViewHide" );
