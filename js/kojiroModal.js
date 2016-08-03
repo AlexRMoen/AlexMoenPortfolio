@@ -229,7 +229,7 @@ function kojiroRightArrow() {
 	if (window.matchMedia("(min-width: 800px)").matches) {
 	$("#kojiro").animate({ scrollTop: 0 }, 500);
 	} else {
-	$("#kojiro").animate({ scrollTop: 0 }, 0);
+	$("#kojiro").animate({ scrollTop: 0 }, 500);
 	}
 	
     document.getElementById('kojiroCloseX').style.transform = 'scale(0)';

@@ -397,7 +397,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .leftArrow {
 	position: absolute;
-	width: 2em;
+	width: 3em;
 	left: -2.5em;
 	top: 50%;
 	transform: translateY(-50%);
@@ -408,7 +408,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .rightArrow {
 	position: absolute;
-	width: 2em;
+	width: 3em;
 	right: -2.5em;
 	top: 50%;
 	transform: translateY(-50%);
@@ -499,6 +499,9 @@ min-height: 55vh;
 .helloRow {
 	min-height: 55vh;
 }
+.modalHeight {
+	height: 85vh;
+}
 
 /* incrementally reduces the margin on the sides of the screen */
 @media only screen and (max-width: 1100px) {
@@ -549,6 +552,8 @@ min-height: 55vh;
 
 @media only screen and (max-width: 800px) {
 	
+	
+	
 	 .paddingLeft2em {
 		 padding-left: 0;
 	 }
@@ -567,15 +572,7 @@ min-height: 55vh;
 	margin-right: 4em;
 }
 
-.leftArrow {
-	position: fixed;
-	top: 5vh;
-}
 
-.rightArrow {
-	position: fixed;
-	top: 5vh;
-}
 .closedGallery-sm {
 	height: 0;
 }
