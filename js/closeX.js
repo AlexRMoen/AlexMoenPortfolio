@@ -4,11 +4,9 @@ function closeX() {
 	
 	// opens the modal link divs
 	document.getElementById('kojiroModalLinkContainer').style.display = '';
-	document.getElementById('ellaModalLinkContainer').style.display = '';
 	document.getElementById('trelloModalLinkContainer').style.display = '';
 	document.getElementById('playboyModalLinkContainer').style.display = '';
 	document.getElementById('enterpriseModalLinkContainer').style.display = '';
-	document.getElementById('chirprModalLinkContainer').style.display = '';
 	document.getElementById('newitemModalLinkContainer').style.display = '';
 	
 	// changes the height of the wrapper around the gallery
@@ -44,28 +42,6 @@ function closeX() {
 	document.getElementById('kojiroBottomLabel').style.paddingBottom = '';
 	document.getElementById('kojiroTopLabel').style.paddingLeft = '';
 	document.getElementById('kojiroBottomLabel').style.paddingLeft = '';
-	
-	document.getElementById('ella').style.height = '';
-    document.getElementById('ella').style.width = '';
-    document.getElementById('ella').style.opacity = '';
-    document.getElementById('ella').style.marginLeft = '';
-    document.getElementById('ella').style.marginRight = '';
-    document.getElementById('ella').style.marginBottom = '';
-    document.getElementById('ella').style.overflowX = 'auto';
-    document.getElementById('ella').style.overflowY = 'hidden';
-	$( "#ella" ).removeClass( "smallViewHide" );
-    document.getElementById('ellaHeader').style.height = '';
-    document.getElementById('ellaMain').style.height = '';
-    document.getElementById('ellaMain').style.opacity = '';
-    document.getElementById('ellaCloseX').style.transform = '';
-    document.getElementById('ellaCloseX').style.opacity = '';
-    document.getElementById('ellaLabel').style.transform = '';
-    document.getElementById('ellaLabel').style.bottom = '';
-	document.getElementById('ellaLabel').style.width = '';
-	document.getElementById('ellaBottomLabel').style.paddingTop = '';
-	document.getElementById('ellaBottomLabel').style.paddingBottom = '';
-	document.getElementById('ellaTopLabel').style.paddingLeft = '';
-	document.getElementById('ellaBottomLabel').style.paddingLeft = '';
 	
 	document.getElementById('trello').style.height = '';
     document.getElementById('trello').style.width = '';
@@ -132,28 +108,6 @@ function closeX() {
 	document.getElementById('enterpriseBottomLabel').style.paddingBottom = '';
 	document.getElementById('enterpriseTopLabel').style.paddingLeft = '';
 	document.getElementById('enterpriseBottomLabel').style.paddingLeft = '';
-	
-	document.getElementById('chirpr').style.height = '';
-    document.getElementById('chirpr').style.width = '';
-    document.getElementById('chirpr').style.opacity = '';
-    document.getElementById('chirpr').style.marginLeft = '';
-    document.getElementById('chirpr').style.marginRight = '';
-    document.getElementById('chirpr').style.marginBottom = '';
-    document.getElementById('chirpr').style.overflowX = 'auto';
-    document.getElementById('chirpr').style.overflowY = 'hidden';
-	$( "#chirpr" ).removeClass( "smallViewHide" );
-    document.getElementById('chirprHeader').style.height = '';
-    document.getElementById('chirprMain').style.height = '';
-    document.getElementById('chirprMain').style.opacity = '';
-    document.getElementById('chirprCloseX').style.transform = '';
-    document.getElementById('chirprCloseX').style.opacity = '';
-    document.getElementById('chirprLabel').style.transform = '';
-    document.getElementById('chirprLabel').style.bottom = '';
-	document.getElementById('chirprLabel').style.width = '';
-	document.getElementById('chirprBottomLabel').style.paddingTop = '';
-	document.getElementById('chirprBottomLabel').style.paddingBottom = '';
-	document.getElementById('chirprTopLabel').style.paddingLeft = '';
-	document.getElementById('chirprBottomLabel').style.paddingLeft = '';
 	
 	document.getElementById('newitem').style.height = '';
     document.getElementById('newitem').style.width = '';

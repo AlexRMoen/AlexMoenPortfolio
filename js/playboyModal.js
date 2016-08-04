@@ -17,11 +17,9 @@ function playboyOpenModal() {
 	
 	// closes the modal link divs
 	document.getElementById('kojiroModalLinkContainer').style.display = 'none';
-	document.getElementById('ellaModalLinkContainer').style.display = 'none';
 	document.getElementById('trelloModalLinkContainer').style.display = 'none';
 	document.getElementById('playboyModalLinkContainer').style.display = 'none';
 	document.getElementById('enterpriseModalLinkContainer').style.display = 'none';
-	document.getElementById('chirprModalLinkContainer').style.display = 'none';
 	document.getElementById('newitemModalLinkContainer').style.display = 'none';
 	
 	// stops the video for added resources
@@ -73,10 +71,6 @@ function playboyOpenModal() {
     document.getElementById('kojiro').style.opacity = '0';
     document.getElementById('kojiro').style.marginBottom = '0';
 	$( "#kojiro" ).addClass( "smallViewHide" );
-    document.getElementById('ella').style.height = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginBottom = '0';
-	$( "#ella" ).addClass( "smallViewHide" );
     document.getElementById('trello').style.height = '0';
     document.getElementById('trello').style.opacity = '0';
     document.getElementById('trello').style.marginBottom = '0';
@@ -88,11 +82,6 @@ function playboyOpenModal() {
     document.getElementById('enterprise').style.width = '0';
     document.getElementById('enterprise').style.marginLeft = '0';
 	$( "#enterprise" ).addClass( "smallViewHide" );
-    document.getElementById('chirpr').style.height = '85vh';
-    document.getElementById('chirpr').style.opacity = '0';
-    document.getElementById('chirpr').style.width = '0';
-    document.getElementById('chirpr').style.marginLeft = '0';
-	$( "#chirpr" ).addClass( "smallViewHide" );
     document.getElementById('newitem').style.height = '85vh';
     document.getElementById('newitem').style.opacity = '0';
     document.getElementById('newitem').style.width = '0';
@@ -152,10 +141,6 @@ function playboyOpenModal() {
     document.getElementById('kojiro').style.opacity = '0';
     document.getElementById('kojiro').style.marginBottom = '0';
 	$( "#kojiro" ).addClass( "smallViewHide" );
-    document.getElementById('ella').style.height = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginBottom = '0';
-	$( "#ella" ).addClass( "smallViewHide" );
     document.getElementById('trello').style.height = '0';
     document.getElementById('trello').style.opacity = '0';
     document.getElementById('trello').style.marginBottom = '0';
@@ -167,11 +152,6 @@ function playboyOpenModal() {
     document.getElementById('enterprise').style.width = '0';
     document.getElementById('enterprise').style.marginLeft = '0';
 	$( "#enterprise" ).addClass( "smallViewHide" );
-    document.getElementById('chirpr').style.height = '85vh';
-    document.getElementById('chirpr').style.opacity = '0';
-    document.getElementById('chirpr').style.width = '0';
-    document.getElementById('chirpr').style.marginLeft = '0';
-	$( "#chirpr" ).addClass( "smallViewHide" );
     document.getElementById('newitem').style.height = '85vh';
     document.getElementById('newitem').style.opacity = '0';
     document.getElementById('newitem').style.width = '0';
@@ -287,11 +267,6 @@ function playboyLeftArrow() {
     document.getElementById('kojiro').style.width = '0';
     document.getElementById('kojiro').style.opacity = '0';
     document.getElementById('kojiro').style.marginBottom = '1.6vw';
-    document.getElementById('ella').style.height = '85vh';
-    document.getElementById('ella').style.width = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginBottom = '1.6vw';
-    document.getElementById('ella').style.marginLeft = '0';
     
     
     // resizes bottom row items
@@ -299,10 +274,6 @@ function playboyLeftArrow() {
     document.getElementById('enterprise').style.opacity = '0';
     document.getElementById('enterprise').style.width = '23.8%';
     document.getElementById('enterprise').style.marginLeft = '1.6%';
-    document.getElementById('chirpr').style.height = '0';
-    document.getElementById('chirpr').style.opacity = '0';
-    document.getElementById('chirpr').style.width = '23.8%';
-    document.getElementById('chirpr').style.marginLeft = '1.6%';
     document.getElementById('newitem').style.height = '0';
     document.getElementById('newitem').style.opacity = '0';
     document.getElementById('newitem').style.width = '23.8%';

@@ -17,11 +17,9 @@ function trelloOpenModal() {
 	
 	// closes the modal link divs
 	document.getElementById('kojiroModalLinkContainer').style.display = 'none';
-	document.getElementById('ellaModalLinkContainer').style.display = 'none';
 	document.getElementById('trelloModalLinkContainer').style.display = 'none';
 	document.getElementById('playboyModalLinkContainer').style.display = 'none';
 	document.getElementById('enterpriseModalLinkContainer').style.display = 'none';
-	document.getElementById('chirprModalLinkContainer').style.display = 'none';
 	document.getElementById('newitemModalLinkContainer').style.display = 'none';
 	
 	// stops the video for added resources
@@ -74,11 +72,6 @@ function trelloOpenModal() {
     document.getElementById('kojiro').style.opacity = '0';
     document.getElementById('kojiro').style.marginLeft = '0';
 	$( "#kojiro" ).addClass( "smallViewHide" );
-    document.getElementById('ella').style.height = '85vh';
-    document.getElementById('ella').style.width = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginLeft = '0';
-	$( "#ella" ).addClass( "smallViewHide" );
     
     // rescales and fades line 2 items
     document.getElementById('playboy').style.height = '0';
@@ -87,9 +80,6 @@ function trelloOpenModal() {
     document.getElementById('enterprise').style.height = '0';
     document.getElementById('enterprise').style.opacity = '0';
 	$( "#enterprise" ).addClass( "smallViewHide" );
-    document.getElementById('chirpr').style.height = '0';
-    document.getElementById('chirpr').style.opacity = '0';
-	$( "#chirpr" ).addClass( "smallViewHide" );
     document.getElementById('newitem').style.height = '0';
     document.getElementById('newitem').style.opacity = '0';
 	$( "#newitem" ).addClass( "smallViewHide" );
@@ -148,11 +138,6 @@ function trelloOpenModal() {
     document.getElementById('kojiro').style.opacity = '0';
     document.getElementById('kojiro').style.marginLeft = '0';
 	$( "#kojiro" ).addClass( "smallViewHide" );
-    document.getElementById('ella').style.height = '85vh';
-    document.getElementById('ella').style.width = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginLeft = '0';
-	$( "#ella" ).addClass( "smallViewHide" );
     
     // rescales and fades line 2 items
     document.getElementById('playboy').style.height = '0';
@@ -161,9 +146,6 @@ function trelloOpenModal() {
     document.getElementById('enterprise').style.height = '0';
     document.getElementById('enterprise').style.opacity = '0';
 	$( "#enterprise" ).addClass( "smallViewHide" );
-    document.getElementById('chirpr').style.height = '0';
-    document.getElementById('chirpr').style.opacity = '0';
-	$( "#chirpr" ).addClass( "smallViewHide" );
     document.getElementById('newitem').style.height = '0';
     document.getElementById('newitem').style.opacity = '0';
 	$( "#newitem" ).addClass( "smallViewHide" );
@@ -257,32 +239,32 @@ function trelloLeftArrow() {
     document.getElementById('trelloLeftArrow').style.opacity = '0';
     document.getElementById('trelloRightArrow').style.right = '-3.5vw';
     document.getElementById('trelloRightArrow').style.opacity = '0';
-	document.getElementById('ellaLeftArrow').style.left = '3.5vw';
-    document.getElementById('ellaLeftArrow').style.opacity = '1';
-    document.getElementById('ellaRightArrow').style.right = '3.5vw';
-    document.getElementById('ellaRightArrow').style.opacity = '1';
+	// NONE document.getElementById('kojiroLeftArrow').style.left = '3.5vw';
+    // NONE document.getElementById('kojiroLeftArrow').style.opacity = '1';
+    document.getElementById('kojiroRightArrow').style.right = '3.5vw';
+    document.getElementById('kojiroRightArrow').style.opacity = '1';
     
     // moves other modal into place
-	$( "#ella" ).removeClass( "smallViewHide" );
-    document.getElementById('ella').style.height = '85vh';
-    document.getElementById('ella').style.width = '80%';
-    document.getElementById('ella').style.marginLeft = '10%';
-    document.getElementById('ella').style.marginRight = '10%';
-    document.getElementById('ella').style.opacity = '1';
-    document.getElementById('ellaHeader').style.height = '55%';
-    document.getElementById('ellaMain').style.height = '45%';
-    document.getElementById('ellaMain').style.opacity = '1';
-	document.getElementById('ella').style.overflowX = 'hidden';
-    document.getElementById('ella').style.overflowY = 'scroll';
-    document.getElementById('ellaCloseX').style.transform = 'scale(1)';
-    document.getElementById('ellaCloseX').style.opacity = '1';
-    document.getElementById('ellaLabel').style.transform = 'scale(1.3)';
-    document.getElementById('ellaLabel').style.bottom = '3.75em';
-    document.getElementById('ellaLabel').style.width = '38%';
-	document.getElementById('ellaBottomLabel').style.paddingTop = '0.3em';
-	document.getElementById('ellaBottomLabel').style.paddingBottom = '0.4em';
-	document.getElementById('ellaTopLabel').style.paddingLeft = '15px';
-	document.getElementById('ellaBottomLabel').style.paddingLeft = '15px';
+	$( "#kojiro" ).removeClass( "smallViewHide" );
+    document.getElementById('kojiro').style.height = '85vh';
+    document.getElementById('kojiro').style.width = '80%';
+    document.getElementById('kojiro').style.marginLeft = '10%';
+    document.getElementById('kojiro').style.marginRight = '10%';
+    document.getElementById('kojiro').style.opacity = '1';
+    document.getElementById('kojiroHeader').style.height = '55%';
+    document.getElementById('kojiroMain').style.height = '45%';
+    document.getElementById('kojiroMain').style.opacity = '1';
+	document.getElementById('kojiro').style.overflowX = 'hidden';
+    document.getElementById('kojiro').style.overflowY = 'scroll';
+    document.getElementById('kojiroCloseX').style.transform = 'scale(1)';
+    document.getElementById('kojiroCloseX').style.opacity = '1';
+    document.getElementById('kojiroLabel').style.transform = 'scale(1.3)';
+    document.getElementById('kojiroLabel').style.bottom = '3.75em';
+    document.getElementById('kojiroLabel').style.width = '38%';
+	document.getElementById('kojiroBottomLabel').style.paddingTop = '0.3em';
+	document.getElementById('kojiroBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('kojiroTopLabel').style.paddingLeft = '15px';
+	document.getElementById('kojiroBottomLabel').style.paddingLeft = '15px';
 	
 }
 
@@ -337,11 +319,6 @@ function trelloRightArrow() {
     document.getElementById('kojiro').style.width = '32.2666666667%';
     document.getElementById('kojiro').style.opacity = '0';
     document.getElementById('kojiro').style.marginBottom = '0';
-    document.getElementById('ella').style.height = '0';
-    document.getElementById('ella').style.width = '32.2666666667%';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginBottom = '0';
-    document.getElementById('ella').style.marginLeft = '1.6%';
     
     
     // resizes bottom row items
@@ -349,10 +326,6 @@ function trelloRightArrow() {
     document.getElementById('enterprise').style.opacity = '0';
     document.getElementById('enterprise').style.width = '0';
     document.getElementById('enterprise').style.marginLeft = '0';
-    document.getElementById('chirpr').style.height = '85vh';
-    document.getElementById('chirpr').style.opacity = '0';
-    document.getElementById('chirpr').style.width = '0';
-    document.getElementById('chirpr').style.marginLeft = '0';
     document.getElementById('newitem').style.height = '85vh';
     document.getElementById('newitem').style.opacity = '0';
     document.getElementById('newitem').style.width = '0';

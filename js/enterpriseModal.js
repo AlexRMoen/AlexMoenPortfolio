@@ -17,11 +17,9 @@ function enterpriseOpenModal() {
 	
 	// closes the modal link divs
 	document.getElementById('kojiroModalLinkContainer').style.display = 'none';
-	document.getElementById('ellaModalLinkContainer').style.display = 'none';
 	document.getElementById('trelloModalLinkContainer').style.display = 'none';
 	document.getElementById('playboyModalLinkContainer').style.display = 'none';
 	document.getElementById('enterpriseModalLinkContainer').style.display = 'none';
-	document.getElementById('chirprModalLinkContainer').style.display = 'none';
 	document.getElementById('newitemModalLinkContainer').style.display = 'none';
 	
 	// stops the video for added resources
@@ -73,10 +71,6 @@ function enterpriseOpenModal() {
     document.getElementById('kojiro').style.opacity = '0';
     document.getElementById('kojiro').style.marginBottom = '0';
 	$( "#kojiro" ).addClass( "smallViewHide" );
-    document.getElementById('ella').style.height = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginBottom = '0';
-	$( "#ella" ).addClass( "smallViewHide" );
     document.getElementById('trello').style.height = '0';
     document.getElementById('trello').style.opacity = '0';
     document.getElementById('trello').style.marginBottom = '0';
@@ -88,11 +82,6 @@ function enterpriseOpenModal() {
     document.getElementById('playboy').style.width = '0';
     document.getElementById('playboy').style.marginLeft = '0';
 	$( "#playboy" ).addClass( "smallViewHide" );
-    document.getElementById('chirpr').style.height = '85vh';
-    document.getElementById('chirpr').style.opacity = '0';
-    document.getElementById('chirpr').style.width = '0';
-    document.getElementById('chirpr').style.marginLeft = '0';
-	$( "#chirpr" ).addClass( "smallViewHide" );
     document.getElementById('newitem').style.height = '85vh';
     document.getElementById('newitem').style.opacity = '0';
     document.getElementById('newitem').style.width = '0';
@@ -152,10 +141,6 @@ function enterpriseOpenModal() {
     document.getElementById('kojiro').style.opacity = '0';
     document.getElementById('kojiro').style.marginBottom = '0';
 	$( "#kojiro" ).addClass( "smallViewHide" );
-    document.getElementById('ella').style.height = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginBottom = '0';
-	$( "#ella" ).addClass( "smallViewHide" );
     document.getElementById('trello').style.height = '0';
     document.getElementById('trello').style.opacity = '0';
     document.getElementById('trello').style.marginBottom = '0';
@@ -167,11 +152,6 @@ function enterpriseOpenModal() {
     document.getElementById('playboy').style.width = '0';
     document.getElementById('playboy').style.marginLeft = '0';
 	$( "#playboy" ).addClass( "smallViewHide" );
-    document.getElementById('chirpr').style.height = '85vh';
-    document.getElementById('chirpr').style.opacity = '0';
-    document.getElementById('chirpr').style.width = '0';
-    document.getElementById('chirpr').style.marginLeft = '0';
-	$( "#chirpr" ).addClass( "smallViewHide" );
     document.getElementById('newitem').style.height = '85vh';
     document.getElementById('newitem').style.opacity = '0';
     document.getElementById('newitem').style.width = '0';
@@ -347,32 +327,32 @@ function enterpriseRightArrow() {
     document.getElementById('enterpriseLeftArrow').style.opacity = '0';
     document.getElementById('enterpriseRightArrow').style.right = '-3.5vw';
     document.getElementById('enterpriseRightArrow').style.opacity = '0';
-    document.getElementById('chirprLeftArrow').style.left = '3.5vw';
-    document.getElementById('chirprLeftArrow').style.opacity = '1';
-    document.getElementById('chirprRightArrow').style.right = '3.5vw';
-    document.getElementById('chirprRightArrow').style.opacity = '1'; 
+    document.getElementById('newitemLeftArrow').style.left = '3.5vw';
+    document.getElementById('newitemLeftArrow').style.opacity = '1';
+    // NONE document.getElementById('newitemRightArrow').style.right = '3.5vw';
+    // NONE document.getElementById('newitemRightArrow').style.opacity = '1'; 
     
     
     // moves other modal into place
-	$( "#chirpr" ).removeClass( "smallViewHide" );
-    document.getElementById('chirpr').style.height = '85vh';
-    document.getElementById('chirpr').style.width = '80%';
-    document.getElementById('chirpr').style.marginLeft = '10%';
-    document.getElementById('chirpr').style.marginRight = '10%';
-    document.getElementById('chirpr').style.opacity = '1';
-    document.getElementById('chirprHeader').style.height = '55%';
-    document.getElementById('chirprMain').style.height = '45%';
-    document.getElementById('chirprMain').style.opacity = '1';
-	document.getElementById('chirpr').style.overflowX = 'hidden';
-    document.getElementById('chirpr').style.overflowY = 'scroll';
-    document.getElementById('chirprCloseX').style.transform = 'scale(1)';
-    document.getElementById('chirprCloseX').style.opacity = '1';
-    document.getElementById('chirprLabel').style.transform = 'scale(1.3)';
-    document.getElementById('chirprLabel').style.bottom = '3.75em';
-    document.getElementById('chirprLabel').style.width = '38%';
-	document.getElementById('chirprBottomLabel').style.paddingTop = '0.3em';
-	document.getElementById('chirprBottomLabel').style.paddingBottom = '0.4em';
-	document.getElementById('chirprTopLabel').style.paddingLeft = '15px';
-	document.getElementById('chirprBottomLabel').style.paddingLeft = '15px';
+	$( "#newitem" ).removeClass( "smallViewHide" );
+    document.getElementById('newitem').style.height = '85vh';
+    document.getElementById('newitem').style.width = '80%';
+    document.getElementById('newitem').style.marginLeft = '10%';
+    document.getElementById('newitem').style.marginRight = '10%';
+    document.getElementById('newitem').style.opacity = '1';
+    document.getElementById('newitemHeader').style.height = '55%';
+    document.getElementById('newitemMain').style.height = '45%';
+    document.getElementById('newitemMain').style.opacity = '1';
+	document.getElementById('newitem').style.overflowX = 'hidden';
+    document.getElementById('newitem').style.overflowY = 'scroll';
+    document.getElementById('newitemCloseX').style.transform = 'scale(1)';
+    document.getElementById('newitemCloseX').style.opacity = '1';
+    document.getElementById('newitemLabel').style.transform = 'scale(1.3)';
+    document.getElementById('newitemLabel').style.bottom = '3.75em';
+    document.getElementById('newitemLabel').style.width = '38%';
+	document.getElementById('newitemBottomLabel').style.paddingTop = '0.3em';
+	document.getElementById('newitemBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('newitemTopLabel').style.paddingLeft = '15px';
+	document.getElementById('newitemBottomLabel').style.paddingLeft = '15px';
 	
 }
