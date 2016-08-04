@@ -1,8 +1,19 @@
 // JavaScript Document
 
+$(function() {
+  $('#newitemModalLinkContainer').hover(function() {
+    $('#newitem').css('transform', 'scale(1.1)');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('#newitem').css('transform', '');
+  });
+});
+
 function newitemOpenModal() {
 
 (function($) {
+	
+	$('#newitem').css('transform', '');
 	
 	// closes the modal link divs
 	document.getElementById('kojiroModalLinkContainer').style.display = 'none';

@@ -1,8 +1,19 @@
 // JavaScript Document
 
+$(function() {
+  $('#chirprModalLinkContainer').hover(function() {
+    $('#chirpr').css('transform', 'scale(1.1)');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('#chirpr').css('transform', '');
+  });
+});
+
 function chirprOpenModal() {
 
 (function($) {
+	
+	$('#chirpr').css('transform', '');
 	
 	// closes the modal link divs
 	document.getElementById('kojiroModalLinkContainer').style.display = 'none';

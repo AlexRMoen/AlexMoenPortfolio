@@ -1,8 +1,19 @@
 // JavaScript Document
 
+$(function() {
+  $('#ellaModalLinkContainer').hover(function() {
+    $('#ella').css('transform', 'scale(1.1)');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('#ella').css('transform', '');
+  });
+});
+
 function ellaOpenModal() {
 
 (function($) {
+	
+	$('#ella').css('transform', '');
 	
 	// closes the modal link divs
 	document.getElementById('kojiroModalLinkContainer').style.display = 'none';

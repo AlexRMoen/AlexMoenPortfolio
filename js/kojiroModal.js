@@ -1,6 +1,17 @@
 // JavaScript Document
 
+$(function() {
+  $('#kojiroModalLinkContainer').hover(function() {
+    $('#kojiro').css('transform', 'scale(1.1)');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('#kojiro').css('transform', '');
+  });
+});
+
 function kojiroOpenModal() {
+	
+	$('#kojiro').css('transform', '');
 
 (function($) {
 	

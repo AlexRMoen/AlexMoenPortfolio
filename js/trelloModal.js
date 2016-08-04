@@ -1,8 +1,19 @@
 // JavaScript Document
 
+$(function() {
+  $('#trelloModalLinkContainer').hover(function() {
+    $('#trello').css('transform', 'scale(1.1)');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('#trello').css('transform', '');
+  });
+});
+
 function trelloOpenModal() {
 
 (function($) {
+	
+	$('#trello').css('transform', '');
 	
 	// closes the modal link divs
 	document.getElementById('kojiroModalLinkContainer').style.display = 'none';

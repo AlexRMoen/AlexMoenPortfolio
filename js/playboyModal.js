@@ -1,8 +1,19 @@
 // JavaScript Document
 
+$(function() {
+  $('#playboyModalLinkContainer').hover(function() {
+    $('#playboy').css('transform', 'scale(1.1)');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('#playboy').css('transform', '');
+  });
+});
+
 function playboyOpenModal() {
 
 (function($) {
+	
+	$('#playboy').css('transform', '');
 	
 	// closes the modal link divs
 	document.getElementById('kojiroModalLinkContainer').style.display = 'none';
