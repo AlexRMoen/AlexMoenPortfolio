@@ -139,7 +139,7 @@ function closeX() {
 	document.getElementById('myWork').style.opacity = '';
     document.getElementById('myWork').style.transform = '';
 	
-	if (window.matchMedia("(min-width: 800px)").matches) {
+	if (window.matchMedia("(min-width: 48em)").matches) {
 	
 	setTimeout(function() {
 	

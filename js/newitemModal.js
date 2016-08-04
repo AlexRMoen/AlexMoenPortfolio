@@ -25,7 +25,7 @@ function newitemOpenModal() {
 	// stops the video for added resources
 	document.getElementById('bgvid').style.display = 'none';
 	
-	if (window.matchMedia("(min-width: 800px)").matches) {
+	if (window.matchMedia("(min-width: 48em)").matches) {
     $(document).ready(function() {
 		 // scrolls to the top of the gallery div
          $('html, body').animate({
@@ -46,7 +46,7 @@ function newitemOpenModal() {
     document.getElementById('myWork').style.transform = 'scale(0)';
 			 
 			 
-	if (window.matchMedia("(min-width: 800px)").matches) { 
+	if (window.matchMedia("(min-width: 48em)").matches) { 
 			 
 	setTimeout(function() {
 		
@@ -204,7 +204,7 @@ function newitemCloseX() {
     // document.getElementById('newitemRightArrow').style.right = '';
     // document.getElementById('newitemRightArrow').style.opacity = '';
 	
-	if (window.matchMedia("(min-width: 800px)").matches) { 
+	if (window.matchMedia("(min-width: 48em)").matches) { 
 	$("#newitem").animate({ scrollTop: 0 }, 500);
 	} else {
 	$("#newitem").animate({ scrollTop: 0 }, 0);
@@ -234,7 +234,7 @@ function newitemLeftArrow() {
 	document.getElementById('newitem').style.overflowX = 'auto';
     document.getElementById('newitem').style.overflowY = 'hidden';
 	
-	if (window.matchMedia("(min-width: 800px)").matches) { 
+	if (window.matchMedia("(min-width: 48em)").matches) { 
 	$("#newitem").animate({ scrollTop: 0 }, 500);
 	} else {
 	$("#newitem").animate({ scrollTop: 0 }, 0);

@@ -546,7 +546,7 @@ min-height: 55vh;
 }
 
 /* incrementally reduces the margin on the sides of the screen */
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 68.75em) {
 	
 	.marginLeftRight10em {
 	margin-left: 9em;
@@ -555,7 +555,7 @@ min-height: 55vh;
 	
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 65.625) {
 	
 	.marginLeftRight10em {
 	margin-left: 8em;
@@ -564,7 +564,7 @@ min-height: 55vh;
 	
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 62.5em) {
 	
 	.marginLeftRight10em {
 	margin-left: 7em;
@@ -573,7 +573,7 @@ min-height: 55vh;
 	
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 59.375em) {
 	
 	.marginLeftRight10em {
 	margin-left: 6em;
@@ -582,7 +582,7 @@ min-height: 55vh;
 	
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 56.25em) {
 	
 	.marginLeftRight10em {
 	margin-left: 5em;
@@ -592,7 +592,7 @@ min-height: 55vh;
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 48em) {
 	
 
 	
@@ -707,7 +707,7 @@ min-height: 55vh;
 }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 43.75em) {
 	
 	
 
@@ -727,7 +727,7 @@ min-height: 55vh;
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 37.5em) {
 	
 		.leftArrow {
 	width: 2.5em;

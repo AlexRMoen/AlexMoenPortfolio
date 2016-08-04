@@ -27,7 +27,7 @@ function ellaOpenModal() {
 	// stops the video for added resources
 	document.getElementById('bgvid').style.display = 'none';
 	
-	if (window.matchMedia("(min-width: 800px)").matches) {
+	if (window.matchMedia("(min-width: 48em)").matches) {
     $(document).ready(function() {
 		 // scrolls to the top of the gallery div
          $('html, body').animate({
@@ -48,7 +48,7 @@ function ellaOpenModal() {
     document.getElementById('myWork').style.transform = 'scale(0)';
 		
 			 
-	if (window.matchMedia("(min-width: 800px)").matches) {	 
+	if (window.matchMedia("(min-width: 48em)").matches) {	 
 			 
 	setTimeout(function() {
 		
@@ -213,7 +213,7 @@ function ellaCloseX() {
     document.getElementById('ellaRightArrow').style.right = '';
     document.getElementById('ellaRightArrow').style.opacity = '';
 	
-	if (window.matchMedia("(min-width: 800px)").matches) {
+	if (window.matchMedia("(min-width: 48em)").matches) {
 	$("#ella").animate({ scrollTop: 0 }, 500);
 	} else {
 	$("#ella").animate({ scrollTop: 0 }, 0);	
@@ -237,7 +237,7 @@ function ellaLeftArrow() {
 	document.getElementById('ella').style.overflowX = 'auto';
     document.getElementById('ella').style.overflowY = 'hidden';
 	
-	if (window.matchMedia("(min-width: 800px)").matches) {
+	if (window.matchMedia("(min-width: 48em)").matches) {
 	$("#ella").animate({ scrollTop: 0 }, 500);
 	} else {
 	$("#ella").animate({ scrollTop: 0 }, 0);	
@@ -301,7 +301,7 @@ function ellaRightArrow() {
 	document.getElementById('ella').style.overflowX = 'auto';
     document.getElementById('ella').style.overflowY = 'hidden';
 	
-	if (window.matchMedia("(min-width: 800px)").matches) {
+	if (window.matchMedia("(min-width: 48em)").matches) {
 	$("#ella").animate({ scrollTop: 0 }, 500);
 	} else {
 	$("#ella").animate({ scrollTop: 0 }, 0);

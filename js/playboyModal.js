@@ -25,7 +25,7 @@ function playboyOpenModal() {
 	// stops the video for added resources
 	document.getElementById('bgvid').style.display = 'none';
 	
-	if (window.matchMedia("(min-width: 800px)").matches) {
+	if (window.matchMedia("(min-width: 48em)").matches) {
     $(document).ready(function() {
 		 // scrolls to the top of the gallery div
          $('html, body').animate({
@@ -46,7 +46,7 @@ function playboyOpenModal() {
     document.getElementById('myWork').style.transform = 'scale(0)';
 			 
 		
-	if (window.matchMedia("(min-width: 800px)").matches) {	 
+	if (window.matchMedia("(min-width: 48em)").matches) {	 
 			 
 	setTimeout(function() {
 		
@@ -202,7 +202,7 @@ function playboyCloseX() {
     document.getElementById('playboyRightArrow').style.right = '';
     document.getElementById('playboyRightArrow').style.opacity = '';
 	
-	if (window.matchMedia("(min-width: 800px)").matches) {
+	if (window.matchMedia("(min-width: 48em)").matches) {
 	$("#playboy").animate({ scrollTop: 0 }, 500);
 	} else {
 	$("#playboy").animate({ scrollTop: 0 }, 0);
@@ -235,7 +235,7 @@ function playboyLeftArrow() {
 	document.getElementById('playboy').style.overflowX = 'auto';
     document.getElementById('playboy').style.overflowY = 'hidden';
 	
-	if (window.matchMedia("(min-width: 800px)").matches) {
+	if (window.matchMedia("(min-width: 48em)").matches) {
 	$("#playboy").animate({ scrollTop: 0 }, 500);
 	} else {
 	$("#playboy").animate({ scrollTop: 0 }, 0);
@@ -324,7 +324,7 @@ function playboyRightArrow() {
 	document.getElementById('playboy').style.overflowX = 'auto';
     document.getElementById('playboy').style.overflowY = 'hidden';
 	
-	if (window.matchMedia("(min-width: 800px)").matches) {
+	if (window.matchMedia("(min-width: 48em)").matches) {
 	$("#playboy").animate({ scrollTop: 0 }, 500);
 	} else {
 	$("#playboy").animate({ scrollTop: 0 }, 0);

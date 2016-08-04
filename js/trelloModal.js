@@ -25,7 +25,7 @@ function trelloOpenModal() {
 	// stops the video for added resources
 	document.getElementById('bgvid').style.display = 'none';
 	
-	if (window.matchMedia("(min-width: 800px)").matches) {
+	if (window.matchMedia("(min-width: 48em)").matches) {
     $(document).ready(function() {
 		 // scrolls to the top of the gallery div
          $('html, body').animate({
@@ -46,7 +46,7 @@ function trelloOpenModal() {
     document.getElementById('myWork').style.transform = 'scale(0)';
 			
 			 
-	if (window.matchMedia("(min-width: 800px)").matches) {		 
+	if (window.matchMedia("(min-width: 48em)").matches) {		 
 			 
 	setTimeout(function() {
 		
@@ -193,7 +193,7 @@ function trelloCloseX() {
     document.getElementById('trelloRightArrow').style.right = '';
     document.getElementById('trelloRightArrow').style.opacity = '';
 	
-	if (window.matchMedia("(min-width: 800px)").matches) {
+	if (window.matchMedia("(min-width: 48em)").matches) {
 	$("#trello").animate({ scrollTop: 0 }, 500);
 	} else {
 	$("#trello").animate({ scrollTop: 0 }, 0);
@@ -217,7 +217,7 @@ function trelloLeftArrow() {
 	document.getElementById('trello').style.overflowX = 'auto';
     document.getElementById('trello').style.overflowY = 'hidden';
 	
-	if (window.matchMedia("(min-width: 800px)").matches) {
+	if (window.matchMedia("(min-width: 48em)").matches) {
 	$("#trello").animate({ scrollTop: 0 }, 500);
 	} else {
 	$("#trello").animate({ scrollTop: 0 }, 0);
@@ -287,7 +287,7 @@ function trelloRightArrow() {
 	document.getElementById('trello').style.overflowX = 'auto';
     document.getElementById('trello').style.overflowY = 'hidden';
 	
-	if (window.matchMedia("(min-width: 800px)").matches) {
+	if (window.matchMedia("(min-width: 48em)").matches) {
 	$("#trello").animate({ scrollTop: 0 }, 500);
 	} else {
 	$("#trello").animate({ scrollTop: 0 }, 0);
