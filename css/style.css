@@ -6,6 +6,12 @@
 	padding: 0;
 }
 
+hr {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	
+}
+
 /* video stuff *deserves scrutiny and compat with mobile* */
 /* for ie8 */
 video {
@@ -397,6 +403,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	opacity: 0;
 	-webkit-transition: opacity 2s ease-out;
 	transition: opacity 2s ease-out;
+	padding-top: 2em;
 }
 
 /* close X button */
