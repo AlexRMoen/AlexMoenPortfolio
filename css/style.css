@@ -219,6 +219,22 @@ video#bgvid {
    backface-visibility: hidden;
 }
 
+/* link for the modal to open */
+.modalLinkContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.modalLink {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 /* gallery box hover behavior 
 .box:hover {
 	-webkit-filter: drop-shadow(0 0.4em 0.4em rgba(0,0,0,0.2));

@@ -4,6 +4,15 @@ function kojiroOpenModal() {
 
 (function($) {
 	
+	// closes the modal link divs
+	document.getElementById('kojiroModalLinkContainer').style.display = 'none';
+	document.getElementById('ellaModalLinkContainer').style.display = 'none';
+	document.getElementById('trelloModalLinkContainer').style.display = 'none';
+	document.getElementById('playboyModalLinkContainer').style.display = 'none';
+	document.getElementById('enterpriseModalLinkContainer').style.display = 'none';
+	document.getElementById('chirprModalLinkContainer').style.display = 'none';
+	document.getElementById('newitemModalLinkContainer').style.display = 'none';
+	
 	// stops the video for added resources
 	document.getElementById('bgvid').style.display = 'none';
 	

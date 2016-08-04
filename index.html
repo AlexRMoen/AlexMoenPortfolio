@@ -252,8 +252,12 @@ $(function() {
     <!-- kojiro gallery section -->
     <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="kojiro"> 
       
+      <!-- this link expands a gallery box into a modal --> 
+      <div class="modalLink"></div>
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="kojiroHeader"> 
+      
+   
       
               <!-- close X for kojiro-->
           <a href="javascript:void(0)" onclick="kojiroCloseX()">
@@ -265,15 +269,13 @@ $(function() {
       </div>
       </a>
       
-        <!-- this link expands a gallery box into a modal --> 
-        <a href="javascript:void(0)" onclick="kojiroOpenModal()">
+        <!-- label for gallery item --> 
          <div class="boxLabel threeDaccel" id="kojiroLabel">
          <div class="gradient">
           <h5 class="white topLabel textShadowStrong" id="kojiroTopLabel">KOJIRŌ IZAKAYA</h5>
           </div>
             <h6 class="tealBG white bottomLabel boxShadow" id="kojiroBottomLabel">interactive restaurant menu</h6>
         </div>
-        </a>
         </div>
       
       <!-- main section of modal is hidden until expanded -->
@@ -297,6 +299,16 @@ $(function() {
 
       
       </div>
+      
+      <!-- this link expands a gallery box into a modal --> 
+      <div class="modalLinkContainer" id="kojiroModalLinkContainer">
+      <a href="javascript:void(0)" onclick="kojiroOpenModal()">
+      <div class="modalLink">
+      </div>
+      </a>
+      </div>
+      
+      
  </div>
     
     <!-- ella gallery section -->
@@ -315,9 +327,7 @@ $(function() {
       </div>
       </a>
         
-        <!-- this link expands a gallery box into a modal --> 
-        <a href="javascript:void(0)" onclick="ellaOpenModal()">
-    
+        <!-- label for gallery item -->
     <div class="boxLabel threeDaccel" id="ellaLabel">
     
   <div class="gradient">
@@ -327,7 +337,6 @@ $(function() {
             
              
         </div>
-        </a>
         </div>
         
    
@@ -363,6 +372,15 @@ $(function() {
 </div>
         
       </div>
+      
+        <!-- this link expands a gallery box into a modal --> 
+      <div class="modalLinkContainer" id="ellaModalLinkContainer">
+      <a href="javascript:void(0)" onclick="ellaOpenModal()">
+      <div class="modalLink">
+      </div>
+      </a>
+      </div>
+      
  </div>
     
     <!-- trello gallery section -->
@@ -381,8 +399,7 @@ $(function() {
       </div>
       </a>
         
-        <!-- this link expands a gallery box into a modal --> 
-        <a href="javascript:void(0)" onclick="trelloOpenModal()">
+        <!-- label for gallery item -->
                <div class="boxLabel threeDaccel" id="trelloLabel">
                
                <div class="gradient">
@@ -391,7 +408,7 @@ $(function() {
           
             <h6 class="tealBG white bottomLabel boxShadow" id="trelloBottomLabel">short documentary</h6>
         </div>
-        </a> </div>
+        </div>
       
       <!-- main section of modal is hidden until expanded -->
       <div class="modalMain marginLeftRight5em" id="trelloMain">
@@ -405,6 +422,16 @@ $(function() {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
       </div>
+      
+      
+        <!-- this link expands a gallery box into a modal --> 
+      <div class="modalLinkContainer" id="trelloModalLinkContainer">
+      <a href="javascript:void(0)" onclick="trelloOpenModal()">
+      <div class="modalLink">
+      </div>
+      </a>
+      </div>
+      
  </div>
     
     <!-- arrows for each expanded modal in first row --> 
@@ -489,9 +516,7 @@ $(function() {
       </div>
       </a>  
         
-        <!-- this link expands a gallery box into a modal --> 
-        <a href="javascript:void(0)" onclick="playboyOpenModal()">
-        
+        <!-- label for gallery item -->
         <div class="boxLabel threeDaccel" id="playboyLabel">
         
         <div class="gradient">
@@ -501,7 +526,7 @@ $(function() {
             <h6 class="tealBG white bottomLabel boxShadow" id="playboyBottomLabel">writer-focused website proposal</h6>
         </div>
 
-        </a> </div>
+        </div>
       
       <!-- main section of modal is hidden until expanded -->
       <div class="modalMain marginLeftRight5em" id="playboyMain">
@@ -515,6 +540,15 @@ $(function() {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
       </div>
+      
+        <!-- this link expands a gallery box into a modal --> 
+      <div class="modalLinkContainer" id="playboyModalLinkContainer">
+      <a href="javascript:void(0)" onclick="playboyOpenModal()">
+      <div class="modalLink">
+      </div>
+      </a>
+      </div>
+      
      </div>
       
     
@@ -534,9 +568,7 @@ $(function() {
       </div>
       </a>
         
-        <!-- this link expands a gallery box into a modal --> 
-        <a href="javascript:void(0)" onclick="enterpriseOpenModal()">
-        
+        <!-- label for gallery item -->
         <div class="boxLabel threeDaccel" id="enterpriseLabel">
         
         <div class="gradient">
@@ -546,7 +578,7 @@ $(function() {
             <h6 class="tealBG white bottomLabel boxShadow" id="enterpriseBottomLabel">Car Drop app proposal</h6>
         </div>
         
-        </a> </div>
+        </div>
       
       <!-- main section of modal is hidden until expanded -->
       <div class="modalMain marginLeftRight5em" id="enterpriseMain">
@@ -560,6 +592,15 @@ $(function() {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
       </div>
+      
+        <!-- this link expands a gallery box into a modal --> 
+      <div class="modalLinkContainer" id="enterpriseModalLinkContainer">
+      <a href="javascript:void(0)" onclick="enterpriseOpenModal()">
+      <div class="modalLink">
+      </div>
+      </a>
+      </div>
+      
  </div>
     
     
@@ -580,9 +621,7 @@ $(function() {
       </div>
       </a>
         
-        <!-- this link expands a gallery box into a modal --> 
-        <a href="javascript:void(0)" onclick="chirprOpenModal()">
-        
+        <!-- label for gallery item -->
                 <div class="boxLabel threeDaccel" id="chirprLabel">
                 
                 <div class="gradient">
@@ -592,7 +631,7 @@ $(function() {
             <h6 class="tealBG white bottomLabel boxShadow" id="chirprBottomLabel">parody card game</h6>
         </div>
         
-        </a> </div>
+        </div>
       
       <!-- main section of modal is hidden until expanded -->
       <div class="modalMain marginLeftRight5em" id="chirprMain">
@@ -606,6 +645,15 @@ $(function() {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
       </div>
+      
+        <!-- this link expands a gallery box into a modal --> 
+      <div class="modalLinkContainer" id="chirprModalLinkContainer">
+      <a href="javascript:void(0)" onclick="chirprOpenModal()">
+      <div class="modalLink">
+      </div>
+      </a>
+      </div>
+      
  </div>
     
     
@@ -627,9 +675,7 @@ $(function() {
       </div>
       </a>
         
-        <!-- this link expands a gallery box into a modal --> 
-        <a href="javascript:void(0)" onclick="newitemOpenModal()">
-        
+        <!-- label for gallery item -->
                         <div class="boxLabel threeDaccel" id="newitemLabel">
                         
                         <div class="gradient">
@@ -638,7 +684,7 @@ $(function() {
             <h6 class="tealBG white bottomLabel boxShadow" id="newitemBottomLabel">item type</h6>
         </div>
         
-        </a> </div>
+        </div>
       
       <!-- main section of modal is hidden until expanded -->
       <div class="modalMain marginLeftRight5em" id="newitemMain">
@@ -652,6 +698,15 @@ $(function() {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
       </div>
+      
+        <!-- this link expands a gallery box into a modal --> 
+      <div class="modalLinkContainer" id="newitemModalLinkContainer">
+      <a href="javascript:void(0)" onclick="newitemOpenModal()">
+      <div class="modalLink">
+      </div>
+      </a>
+      </div>
+      
  </div>
  
  

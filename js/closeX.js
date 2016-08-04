@@ -2,6 +2,15 @@
 
 function closeX() {
 	
+	// opens the modal link divs
+	document.getElementById('kojiroModalLinkContainer').style.display = '';
+	document.getElementById('ellaModalLinkContainer').style.display = '';
+	document.getElementById('trelloModalLinkContainer').style.display = '';
+	document.getElementById('playboyModalLinkContainer').style.display = '';
+	document.getElementById('enterpriseModalLinkContainer').style.display = '';
+	document.getElementById('chirprModalLinkContainer').style.display = '';
+	document.getElementById('newitemModalLinkContainer').style.display = '';
+	
 	// changes the height of the wrapper around the gallery
 	document.getElementById('galleryHeightWrapper').style.minHeight = '';
 	
