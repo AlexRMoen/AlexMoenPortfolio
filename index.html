@@ -252,22 +252,15 @@ $(function() {
     <!-- kojiro gallery section -->
     <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="kojiro"> 
       
-      <!-- this link expands a gallery box into a modal --> 
-      <div class="modalLink"></div>
+       
+      
+
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="kojiroHeader"> 
       
    
       
-              <!-- close X for kojiro-->
-          <a href="javascript:void(0)" onclick="kojiroCloseX()">
-      <div class="closeX dropShadow" id="kojiroCloseX">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
-	.xBG{fill:rgb(35, 174, 194);}
-	.xIcon{fill:rgb(255, 255, 255);}
-</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
-      </div>
-      </a>
+          
       
         <!-- label for gallery item --> 
          <div class="boxLabel threeDaccel" id="kojiroLabel">
@@ -308,6 +301,8 @@ $(function() {
       </a>
       </div>
       
+
+      
       
  </div>
     
@@ -317,15 +312,7 @@ $(function() {
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="ellaHeader"> 
       
-           <!-- close X for ella -->
-          <a href="javascript:void(0)" onclick="ellaCloseX()">
-     <div class="closeX dropShadow" id="ellaCloseX">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
-	.xBG{fill:rgb(35, 174, 194);}
-	.xIcon{fill:rgb(255, 255, 255);}
-</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
-      </div>
-      </a>
+
         
         <!-- label for gallery item -->
     <div class="boxLabel threeDaccel" id="ellaLabel">
@@ -389,15 +376,7 @@ $(function() {
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="trelloHeader"> 
       
-                  <!-- close X for trello-->
-          <a href="javascript:void(0)" onclick="trelloCloseX()">
-         <div class="closeX dropShadow" id="trelloCloseX">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
-	.xBG{fill:rgb(35, 174, 194);}
-	.xIcon{fill:rgb(255, 255, 255);}
-</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
-      </div>
-      </a>
+
         
         <!-- label for gallery item -->
                <div class="boxLabel threeDaccel" id="trelloLabel">
@@ -436,6 +415,16 @@ $(function() {
     
     <!-- arrows for each expanded modal in first row --> 
       
+              <!-- close X for kojiro-->
+          <a href="javascript:void(0)" onclick="kojiroCloseX()">
+      <div class="closeX dropShadow" id="kojiroCloseX">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
+	.xBG{fill:rgb(35, 174, 194);}
+	.xIcon{fill:rgb(255, 255, 255);}
+</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
+      </div>
+      </a>
+      
     <!-- left arrow for kojiro --> 
     <!-- NONE! --> 
     
@@ -451,7 +440,15 @@ $(function() {
     </a> 
     
 
-
+     <!-- close X for ella -->
+          <a href="javascript:void(0)" onclick="ellaCloseX()">
+     <div class="closeX dropShadow" id="ellaCloseX">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
+	.xBG{fill:rgb(35, 174, 194);}
+	.xIcon{fill:rgb(255, 255, 255);}
+</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
+      </div>
+      </a>
     
     <!-- left arrow for ella --> 
     <a href="#javascript:void(0)" onclick="ellaLeftArrow()">
@@ -472,6 +469,16 @@ $(function() {
 </style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/></svg>
     </div>
     </a> 
+    
+    <!-- close X for trello-->
+          <a href="javascript:void(0)" onclick="trelloCloseX()">
+         <div class="closeX dropShadow" id="trelloCloseX">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
+	.xBG{fill:rgb(35, 174, 194);}
+	.xIcon{fill:rgb(255, 255, 255);}
+</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
+      </div>
+      </a>
     
     <!-- left arrow for trello --> 
     <a href="javascript:void(0)" onclick="trelloLeftArrow()">
@@ -506,15 +513,7 @@ $(function() {
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="playboyHeader">
       
-      <!-- close X for Playboy -->
-     <a href="javascript:void(0)" onclick="playboyCloseX()">
-       <div class="closeX dropShadow" id="playboyCloseX">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
-	.xBG{fill:rgb(35, 174, 194);}
-	.xIcon{fill:rgb(255, 255, 255);}
-</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
-      </div>
-      </a>  
+
         
         <!-- label for gallery item -->
         <div class="boxLabel threeDaccel" id="playboyLabel">
@@ -558,15 +557,7 @@ $(function() {
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="enterpriseHeader"> 
       
-          <!-- close X for enterprise -->
-          <a href="javascript:void(0)" onclick="enterpriseCloseX()">
-        <div class="closeX dropShadow" id="enterpriseCloseX">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
-	.xBG{fill:rgb(35, 174, 194);}
-	.xIcon{fill:rgb(255, 255, 255);}
-</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
-      </div>
-      </a>
+
         
         <!-- label for gallery item -->
         <div class="boxLabel threeDaccel" id="enterpriseLabel">
@@ -610,16 +601,6 @@ $(function() {
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="chirprHeader"> 
-      
-          <!-- close X for chirpr -->
-          <a href="javascript:void(0)" onclick="chirprCloseX()">
-        <div class="closeX dropShadow" id="chirprCloseX">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
-	.xBG{fill:rgb(35, 174, 194);}
-	.xIcon{fill:rgb(255, 255, 255);}
-</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
-      </div>
-      </a>
         
         <!-- label for gallery item -->
                 <div class="boxLabel threeDaccel" id="chirprLabel">
@@ -664,16 +645,6 @@ $(function() {
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="newitemHeader"> 
-      
-          <!-- close X for newitem -->
-          <a href="javascript:void(0)" onclick="newitemCloseX()">
-         <div class="closeX dropShadow" id="newitemCloseX">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
-	.xBG{fill:rgb(35, 174, 194);}
-	.xIcon{fill:rgb(255, 255, 255);}
-</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
-      </div>
-      </a>
         
         <!-- label for gallery item -->
                         <div class="boxLabel threeDaccel" id="newitemLabel">
@@ -713,6 +684,16 @@ $(function() {
     
     <!-- arrows for each expanded modal in second row --> 
     
+     <!-- close X for Playboy -->
+     <a href="javascript:void(0)" onclick="playboyCloseX()">
+       <div class="closeX dropShadow" id="playboyCloseX">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
+	.xBG{fill:rgb(35, 174, 194);}
+	.xIcon{fill:rgb(255, 255, 255);}
+</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
+      </div>
+      </a>  
+      
     <!-- left arrow for playboy --> 
     <a href="javascript:void(0)" onclick="playboyLeftArrow()">
     <div class="leftArrow dropShadow" id="playboyLeftArrow">
@@ -733,6 +714,15 @@ $(function() {
     </div>
     </a> 
     
+    <!-- close X for enterprise -->
+          <a href="javascript:void(0)" onclick="enterpriseCloseX()">
+        <div class="closeX dropShadow" id="enterpriseCloseX">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
+	.xBG{fill:rgb(35, 174, 194);}
+	.xIcon{fill:rgb(255, 255, 255);}
+</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
+      </div>
+      </a>
     
     <!-- left arrow for enterprise --> 
     <a href="javascript:void(0)" onclick="enterpriseLeftArrow()">
@@ -754,7 +744,15 @@ $(function() {
     </div>
     </a> 
     
-    
+    <!-- close X for chirpr -->
+          <a href="javascript:void(0)" onclick="chirprCloseX()">
+        <div class="closeX dropShadow" id="chirprCloseX">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
+	.xBG{fill:rgb(35, 174, 194);}
+	.xIcon{fill:rgb(255, 255, 255);}
+</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
+      </div>
+      </a>
     
     <!-- left arrow for chirpr --> 
     <a href="javascript:void(0)" onclick="chirprLeftArrow()">
@@ -776,6 +774,15 @@ $(function() {
     </div>
     </a> 
     
+    <!-- close X for newitem -->
+          <a href="javascript:void(0)" onclick="newitemCloseX()">
+         <div class="closeX dropShadow" id="newitemCloseX">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
+	.xBG{fill:rgb(35, 174, 194);}
+	.xIcon{fill:rgb(255, 255, 255);}
+</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
+      </div>
+      </a>
     
     <!-- left arrow for newitem --> 
     <a href="javascript:void(0)" onclick="newitemLeftArrow()">
@@ -803,7 +810,7 @@ $(function() {
       
       <!-- contact methods -->
       <div class="row contact-row-small"> <a href="tel://1-604-773-2199">
-        <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent"> 
+        <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent hovering"> 
           
           <!-- phone icon -->
           <div class="icon marginBottom1em">
@@ -821,7 +828,7 @@ $(function() {
           <h4 class="grey textCenter">604.773.2199</h4>
         </div>
         </a> <a href="mailto:info@alexmoen.com">
-        <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent"> 
+        <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent hovering"> 
           
           <!-- email icon -->
           <div class="icon marginBottom1em">
@@ -840,7 +847,7 @@ $(function() {
           <h4 class="grey textCenter">info@alexmoen.com</h4>
         </div>
         </a> <a href="https://linkedin.com/in/alexmoen">
-        <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent"> 
+        <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent hovering"> 
           
           <!-- LinkedIn icon -->
           <div class="icon marginBottom1em">
@@ -860,7 +867,7 @@ $(function() {
           <h4 class="grey textCenter">alexmoen</h4>
         </div>
         </a> <a href="https://twitter.com/AlexRMoen">
-        <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent"> 
+        <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent hovering"> 
           
           <!-- Twitter icon -->
           <div class="icon marginBottom1em">

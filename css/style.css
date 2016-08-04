@@ -235,12 +235,6 @@ video#bgvid {
 	height: 100%;
 }
 
-/* gallery box hover behavior 
-.box:hover {
-	-webkit-filter: drop-shadow(0 0.4em 0.4em rgba(0,0,0,0.2));
-	filter: drop-shadow(0 0.4em 0.4em rgba(0,0,0,0.2));
-}*/
-
 /* makes a background image for a box */
 .imgFitBox {
 	background-repeat: no-repeat;
@@ -336,6 +330,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	margin-right: 2.25em;
 }
 
+.hovering:hover {
+	transform: scale(1.1);
+	-webkit-filter: drop-shadow(2px 2px 8px rgba(0,0,0,0.3));
+	filter: drop-shadow(2px 2px 8px rgba(0,0,0,0.3));
+}
+
 /* wrapper which resizes videos to container size */
 .videoWrapper {
 	position: relative;
@@ -402,9 +402,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 /* close X button */
 .closeX {
 	position: absolute;
-	top: 1.5em;
-	right: 1.5em;
+	top: 7.5vh;
+	right: 10vw;
 	width: 2.25em;
+	margin-right: 1.5em;
+	margin-top: 1.5em;
 	transform: scale(0);
 	opacity: 0;
 	-webkit-transition: all 0.5s ease-out;
@@ -414,7 +416,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .leftArrow {
 	position: absolute;
-	width: 3em;
+	width: 4vw;
 	left: -2.5em;
 	top: 50%;
 	transform: translateY(-50%);
@@ -425,7 +427,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .rightArrow {
 	position: absolute;
-	width: 3em;
+	width: 4vw;
 	right: -2.5em;
 	top: 50%;
 	transform: translateY(-50%);
@@ -566,7 +568,7 @@ min-height: 55vh;
 
 @media only screen and (max-width: 800px) {
 	
-	
+
 	
 	 .paddingLeft2em {
 		 padding-left: 0;
@@ -674,6 +676,8 @@ min-height: 55vh;
 }
 
 @media only screen and (max-width: 700px) {
+	
+	
 
 #porthole {
 	
@@ -689,4 +693,15 @@ min-height: 55vh;
 	background: -moz-radial-gradient(50% 25%, circle, transparent 23%, rgb(255,255,255) 20%);
 }
 
+}
+
+@media only screen and (max-width: 600px) {
+	
+		.leftArrow {
+	width: 2.5em;
+}
+
+.rightArrow {
+	width: 2.5em;
+}
 }
