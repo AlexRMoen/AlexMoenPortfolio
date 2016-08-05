@@ -410,7 +410,7 @@ jProcessingJS(this);
           }
           
           // edge detection to turn the fish around
-          if (xPos >= width-300 || xPos <= leftRightBorder+300) {
+          if (xPos >= width+300 || xPos <= leftRightBorder-300) {
             
             xVel = -xVel;
             flip = flip * -1;

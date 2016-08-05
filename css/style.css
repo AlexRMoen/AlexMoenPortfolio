@@ -19,6 +19,9 @@ hr {
 canvas {
 	width: 100vw;
 	height: 100vh;
+	top: 0;
+	left: 0;
+	position: absolute;
 }
 
 /* video stuff *deserves scrutiny and compat with mobile* */
