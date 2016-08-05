@@ -21,10 +21,7 @@ function enterpriseOpenModal() {
 	document.getElementById('playboyModalLinkContainer').style.display = 'none';
 	document.getElementById('enterpriseModalLinkContainer').style.display = 'none';
 	document.getElementById('newitemModalLinkContainer').style.display = 'none';
-	
-	// stops the video for added resources
-	document.getElementById('bgvid').style.display = 'none';
-	
+
 	if (window.matchMedia("(min-width: 48em)").matches) {
     $(document).ready(function() {
 		 // scrolls to the top of the gallery div

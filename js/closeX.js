@@ -152,9 +152,6 @@ function closeX() {
 	
 	$(window).scrollTop(tempScrollTop);
 	
-	// starts the video
-	document.getElementById('bgvid').style.display = 'block';
-	
 	}, 500);
 	
 	} else {
@@ -169,9 +166,6 @@ function closeX() {
     document.getElementById('porthole').style.display = 'block';
 	
 	$(window).scrollTop(tempScrollTop);
-	
-	// starts the video
-	document.getElementById('bgvid').style.display = 'block';
 	
 	}, 0);
 	

@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Alex Moen | UX Design + Art Direction</title>
 
 <!-- main style sheet -->
@@ -39,6 +40,10 @@ $(function() {
 });
 </script>
 
+<!-- loads Processing -->
+<script type="text/javascript" src="js/processing.min.js"></script>
+<script type="text/javascript" src="js/jprocessingjs-0.9.min.js"></script>
+
 <!-- loads modal expanding JavaScript -->
 <script src="js/kojiroModal.js"></script>
 <script src="js/ellaModal.js"></script>
@@ -53,26 +58,12 @@ $(function() {
 
 <body class="tealBG">
 
-<!-- BEGIN video stuff *deserves scrutiny and compat with mobile* --> 
-<!-- play the video background - webm, then mp4, then static png --> 
-
-<video autoplay loop poster="video/fish1.png" id="bgvid">
-<!-- VIDEO OFF 
-  <source src="video/fishHigher60.webm" type="video/webm">
-  <source src="video/fishyEdit.mp4" type="video/mp4">
-   -->
-</video>
-
-<!--[if lt IE 9]>
-<script>
-	document.createElement('video');
-</script>
-<![endif]--> 
-
-<!-- END video stuff *deserves scrutiny and compat with mobile* --> 
 
 <!-- above the fold -->
 <div class="paddingTop1point5em paddingBottom2em heightFull" id="aboveFold"> 
+
+<!-- hello, fish! -->
+<canvas data-processing-sources="js/fish.pde"></canvas>
   
   <!-- name and job position -->
   <div class="marginLeftRight10em" id="title">
@@ -229,8 +220,8 @@ $(function() {
       
         <!-- my description-->
         <h3 class="teal bold marginBottom1point25em textCenter topIsFlush">HELLO !</h3>
-        <p class="grey">I'm a designer specializing in user interfaces, graphic design, website coding and video production. I've been trained in user experience design at SFU's <span class="italic">School of Interactive Arts & Technology</span>.</p>
-        <p class="grey">Whether its the UI concept for an app, the creation of a responsive website (like this one), or a smart promotional video, I will deliver a high level of design quality that will communicate and delight.</p>
+        <p class="grey marginBottom1em">I'm a designer specializing in user interfaces, graphic design, website coding and video production. I've been trained in user experience design at SFU's <span class="italic">School of Interactive Arts & Technology</span>.</p>
+        <p class="grey marginBottom1em">Whether its the UI concept for an app, the creation of a responsive website (like this one), or a smart promotional video, I will deliver a high level of design quality that will communicate and delight.</p>
         
         <!-- my resume + jump to contact me -->
         <div class="buttonCluster"> <a href="#" class="button buttonResume">MY RESUME</a> <a href="#contactMe" class="button">CONTACT ME</a> </div>
@@ -416,12 +407,11 @@ $(function() {
 
       </div>
       
-      <!--
+      
             <div class="modalFooter">
 <a href="javascript:void(0)" onclick="kojiroRightArrow()"><h7 class="tealBG white bold">next project &#8594;</h7></a>
 </div>
--->
-      
+  
       
       </div>
 
@@ -462,16 +452,157 @@ $(function() {
         </div>
       
       <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain marginLeftRight5em" id="trelloMain">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+           <div class="modalMain threeDaccel" id="trelloMain">
+      
+    
+      <div class="marginLeftRight5em">
+    
+    
+    <p class="grey marginBottom2em">The course was <span class="italic">Interface Design</span>, and I was working with a talented team of students to create an interactive menu for a restaurant setting. Our vision was to place an interactive mobile tablet in front of every customer in the restaurant, replacing the traditional paper menu.</p>
+   
+    <figure>
+    <img src="img/gallery/kojiro/gallery9.png" width="100%" class="dropShadow marginBottom1em">
+    <figcaption class="grey">The final design for the Kojirō Izakaya interactive restaurant menu</figcaption>
+</figure>
+
+<figure>
+<div class="videoWrapper dropShadow marginBottom1em" id="kojiroVideo">
+    <!-- Copy & Pasted from YouTube -->
+    <iframe width="560" height="315" src="http://www.youtube.com/embed/OlpkLHqLKPI?modestbranding=1&rel=0&color=white" frameborder="0"></iframe>
+    </div>
+    <figcaption class="grey">The final video pitch to demonstrate the interactive menu concept / <span class="bold">1.5 minutes</span></figcaption>
+</figure>
+    
+        
+        
+        <h3 class="teal bold marginBottom1point25em textCenter">PROCESS</h3>
+
+<div class="row">
+<div class="column column-6">
+<figure>
+<img src="img/gallery/kojiro/gallerylogo.png" width="100%" class="dropShadow marginBottom1em">
+<figcaption class="grey">Kojirō Izakaya - our fictional Japanese pub concept</figcaption>
+</figure>
+</div>
+<div class="column column-6 paddingLeft2em">
+      
+ <p class="grey marginBottom1em">Our plan was for customers to be able to browse food and drink, and make orders, without having to summon the server. I suggested that we come up with an example restaurant to guide our design.</p>
+ <p class="grey marginBottom1em">Because the concept of the "izakaya" (Japanese pub) encouraged long visits with repeated ordering of drinks and small foods, this seemed like the ideal type of restaurant for an on-table ordering menu.</p>
+
+</div>
+</div>
+
+    <hr>
+
+<div class="row">
+<div class="column column-6">
+<figure>
+<img src="img/gallery/kojiro/gallery2b.png" width="100%" class="dropShadow marginBottom1em">
+<figcaption class="grey">An excerpt from my sketchbook, showing a rough paper wireframe of a potential menu layout</figcaption>
+</figure>
+</div>
+<div class="column column-6 paddingLeft2em">
+      
+<p class="grey marginBottom1em">I always start designing on paper. I began by sketching a series of possible layouts, keeping them simple to get through many ideas very quickly. Once I chose a layout that worked, I sketched it out in greater detail.</p>
+<p class="grey marginBottom1em">My concept was to allow the customer to jump to specific food/drink categories with persistent buttons, or allow them to keep swiping through the entire thing as in a traditional menu. A persistent shopping cart would be docked to the right side of the screen, to help people easily understand what they've ordered.</p>
+</div>
+</div>
+
+<hr>
+
+<div class="row">
+<div class="column column-6"><figure><img src="img/gallery/kojiro/gallery3.png" width="100%" class="dropShadow marginBottom1em">
+<img src="img/gallery/kojiro/gallery4.png" width="100%" class="dropShadow marginBottom1em">
+<figcaption class="grey">Rough digital wireframes</figcaption>
+</figure>
+</div>
+<div class="column column-6 paddingLeft2em">
+      
+<p class="grey marginBottom1em">I then took the concept into the digital realm, creating wireframes on the computer.</p>
+<p class="grey marginBottom1em">The goal here was to keep it rough and low detail. We were not worrying about final look yet. This was purely to test the feasibility of the layout.</p>
+</div>
+</div>
+
+<hr>
+
+<div class="row">
+<div class="column column-6">
+<figure>
+<img src="img/gallery/kojiro/gallery5.png" width="100%" class="dropShadow marginBottom1em">
+<figcaption class="grey">The wireframes made interactive through Axure, for user testing</figcaption>
+</figure>
+</div>
+<div class="column column-6 paddingLeft2em">
+      
+<p class="grey marginBottom1em">We took the digital wireframes and placed them into <span class="italic">Axure</span>. This tool allowed us to make the wireframes interactive.</p>
+<p class="grey marginBottom1em">We put the interface in front of a few test users, and got feedback. They liked the persistent category buttons and shopping cart. But they were a bit overwhelmed by the fact that you had some things docked to the bottom, and some to the side.</p>
+</div>
+</div>
+
+<hr>
+
+<div class="row">
+<div class="column column-6">
+<figure>
+<img src="img/gallery/kojiro/gallery6.png" width="100%" class="dropShadow marginBottom1em">
+<figcaption class="grey">Creating a high-detail layout in Illustrator</figcaption>
+</figure>
+</div>
+<div class="column column-6 paddingLeft2em">
+      
+<p class="grey marginBottom1em">We decided to move the category buttons to the left-hand side of the screen.</p>
+<p class="grey marginBottom1em">It was now time to create a high-detail version of the layout. I created the finished look in <span class="italic">Adobe Illustrator</span>, taking care to use fonts and colors which reflected the classy-but-comfortable image of an izakaya.</p>
+</div>
+</div>
+
+<hr>
+
+<div class="row">
+<div class="column column-6">
+<figure>
+<img src="img/gallery/kojiro/gallery7.png" width="100%" class="dropShadow marginBottom1em">
+<figcaption class="grey">Animating the interactions of the menu in AfterEffects</figcaption>
+</figure>
+</div>
+<div class="column column-6 paddingLeft2em">
+      
+<p class="grey marginBottom1em">We had to deliver a pitch video at the end of this process. I brought my final interface design into <span class="italic">Adobe AfterEffects</span> (one of my favorite tools) and animated all of the interactions.</p>
+<p class="grey marginBottom1em">A shaded circle represents a user's touch on the interface, and the menu responds with animations between different menu states.</p>
+</div>
+</div>
+
+<hr>
+
+<div class="row">
+<div class="column column-6">
+<figure>
+<img src="img/gallery/kojiro/gallery8.png" width="100%" class="dropShadow marginBottom1em">
+<figcaption class="grey">Actors point to the interactive tablet menu in our pitch video</figcaption>
+</figure>
+</div>
+<div class="column column-6 paddingLeft2em">
+      
+<p class="grey marginBottom1em">Normally, I'd be at ease shooting live action video for design pitches. But in this case I knew that I could fully count on a fellow teammate. <span class="italic">Jay Tseng</span> is an accomplished videographer, and he took a couple of actors to a Japanese restaurant in order to shoot video.</p>
+<p class="grey marginBottom2point5em">The two ladies acted out interaction with a tablet. When combined with my AfterEffects animation, this helped to visualize the experience of using our interactive menu in the field.</p>
+<!-- anchor link seems to be broken, check javascript 
+<p class="grey marginBottom1em">In case you missed it above, <a href="#kojiroVideo">jump back to the video</a>.</p>
+-->
+</div>
+</div>
+
+
+
+
+
+      </div>
+      
+      <!--
+            <div class="modalFooter">
+<a href="javascript:void(0)" onclick="kojiroRightArrow()"><h7 class="tealBG white bold">next project &#8594;</h7></a>
+</div>
+-->
+      
+      
       </div>
       
       
