@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Alex Moen | UX Design + Art Direction</title>
 
 <!-- main style sheet -->
@@ -39,38 +40,30 @@ $(function() {
 });
 </script>
 
+<!-- loads Processing -->
+<script type="text/javascript" src="js/processing.min.js"></script>
+<script type="text/javascript" src="js/jprocessingjs-0.9.min.js"></script>
+
 <!-- loads modal expanding JavaScript -->
 <script src="js/kojiroModal.js"></script>
 <script src="js/ellaModal.js"></script>
-<script src="js/trelloModal.js"></script>
+<script src="js/ellaModal.js"></script>
 <script src="js/playboyModal.js"></script>
 <script src="js/enterpriseModal.js"></script>
 <script src="js/chirprModal.js"></script>
 <script src="js/newitemModal.js"></script>
 
+<!-- loads modal expanding JavaScript -->
+<script src="js/closeX.js"></script>
 
 <body class="tealBG">
 
-<!-- BEGIN video stuff *deserves scrutiny and compat with mobile* --> 
-<!-- play the video background - webm, then mp4, then static png --> 
-
-<video autoplay loop poster="video/fish1.png" id="bgvid">
-<!-- VIDEO OFF 
-  <source src="video/fishHigher60.webm" type="video/webm">
-  <source src="video/fishyEdit.mp4" type="video/mp4">
-   -->
-</video>
-
-<!--[if lt IE 9]>
-<script>
-	document.createElement('video');
-</script>
-<![endif]--> 
-
-<!-- END video stuff *deserves scrutiny and compat with mobile* --> 
 
 <!-- above the fold -->
-<div class="paddingTop1point5em paddingBottom2em heightFull" id="aboveFold"> 
+<div class="heightFull" id="aboveFold"> 
+
+<!-- hello, fish! -->
+<canvas data-processing-sources="js/fish.pde"></canvas>
   
   <!-- name and job position -->
   <div class="marginLeftRight10em" id="title">
@@ -96,7 +89,7 @@ $(function() {
     
     <!-- skill icons -->
     <div class="row row-small marginBottom1point5em">
-      <div class="column column-3 column-3-small marginBottomGutterWidth imgFitBox paddingLeftRight1percent"> 
+      <div class="column column-3 column-3-small marginBottomGutterWidth imgFitBox paddingLeftRight1percent marginBottom1em"> 
         
         <!-- high-quality UI + graphic design icon -->
         <div class="icon marginBottom1em">
@@ -121,7 +114,7 @@ $(function() {
         <h4 class="grey textCenter">high-quality UI <br>
           + graphic design</h4>
       </div>
-      <div class="column column-3 column-3-small marginBottomGutterWidth imgFitBox paddingLeftRight1percent"> 
+      <div class="column column-3 column-3-small marginBottomGutterWidth imgFitBox paddingLeftRight1percent marginBottom1em"> 
         
         <!-- HTML + CSS web coding icon -->
         <div class="icon marginBottom1em">
@@ -141,7 +134,7 @@ $(function() {
         <h4 class="grey textCenter">HTML + CSS <br>
           web coding</h4>
       </div>
-      <div class="column column-3 column-3-small marginBottomGutterWidth imgFitBox paddingLeftRight1percent"> 
+      <div class="column column-3 column-3-small marginBottomGutterWidth imgFitBox paddingLeftRight1percent marginBottom1em"> 
         
         <!-- video editing + sound design icon -->
         <div class="icon marginBottom1em">
@@ -170,7 +163,7 @@ $(function() {
         <h4 class="grey textCenter">video editing <br>
           + sound design</h4>
       </div>
-      <div class="column column-3 column-3-small marginBottomGutterWidth imgFitBox paddingLeftRight1percent"> 
+      <div class="column column-3 column-3-small marginBottomGutterWidth imgFitBox paddingLeftRight1percent marginBottom1em"> 
         
         <!-- motion text + animated graphics icon -->
         <div class="icon marginBottom1em">
@@ -213,12 +206,12 @@ $(function() {
     
     <!-- my pic and description row -->
     <div class="row helloRow">
-      <div class="column column-5 column-5-small marginBottomGutterWidth imgFitBox verticalCenterParent"> 
+      <div class="column column-5 column-5-small marginBottomGutterWidth marginTopGutterWidth imgFitBox verticalCenterParent"> 
         <div class="verticalCenterChild"> 
       
       
         <!-- my pic --> 
-        <img src="img/gallery/chirpr/thumbnail.png" class="imgCircle greyscale img100"> 
+        <img src="img/profilepic.JPG" class="imgCircle img100"> 
         </div>
         </div>
         
@@ -227,8 +220,8 @@ $(function() {
       
         <!-- my description-->
         <h3 class="teal bold marginBottom1point25em textCenter topIsFlush">HELLO !</h3>
-        <p class="grey">I'm a designer specializing in user interfaces, graphic design, website coding and video production. I've been trained in user experience design at SFU's <span class="italic">School of Interactive Arts & Technology</span>.</p>
-        <p class="grey">Whether its the UI concept for an app, the creation of a responsive website (like this one), or a smart promotional video, I will deliver a high level of design quality that will communicate and delight.</p>
+        <p class="grey marginBottom1em">I'm a designer specializing in user interfaces, graphic design, website coding and video production. I've been trained in user experience design at SFU's <span class="italic">School of Interactive Arts & Technology</span>.</p>
+        <p class="grey marginBottom1em">Whether its the UI concept for an app, the creation of a responsive website (like this one), or a smart promotional video, I will deliver a high level of design quality that will communicate and delight.</p>
         
         <!-- my resume + jump to contact me -->
         <div class="buttonCluster"> <a href="#" class="button buttonResume">MY RESUME</a> <a href="#contactMe" class="button">CONTACT ME</a> </div>
@@ -248,138 +241,349 @@ $(function() {
   <div class="row galleryRow" id="firstRow"> 
     
     <!-- kojiro gallery section -->
-    <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="kojiro"> 
+    <div class="column column-6 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="kojiro"> 
       
+       
+      
+
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="kojiroHeader"> 
       
-        
-        <!-- this link expands a gallery box into a modal --> 
-        <a href="javascript:void(0)" onclick="kojiroOpenModal()">
+   
+      
+          
+      
+        <!-- label for gallery item --> 
          <div class="boxLabel threeDaccel" id="kojiroLabel">
          <div class="gradient">
           <h5 class="white topLabel textShadowStrong" id="kojiroTopLabel">KOJIRŌ IZAKAYA</h5>
           </div>
             <h6 class="tealBG white bottomLabel boxShadow" id="kojiroBottomLabel">interactive restaurant menu</h6>
         </div>
-        </a>
         </div>
       
       <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain marginLeftRight5em threeDaccel" id="kojiroMain">
+      <div class="modalMain threeDaccel" id="kojiroMain">
       
-      <div class="videoWrapper">
+    
+      <div class="marginLeftRight5em">
+    
+    
+    <p class="grey marginBottom2em">The course was <span class="italic">Interface Design</span>, and I was working with a talented team of students to create an interactive menu for a restaurant setting. Our vision was to place an interactive mobile tablet in front of every customer in the restaurant, replacing the traditional paper menu.</p>
+   
+    <figure>
+    <img src="img/gallery/kojiro/gallery9.png" width="100%" class="dropShadow marginBottom1em">
+    <figcaption class="grey">The final design for the Kojirō Izakaya interactive restaurant menu</figcaption>
+</figure>
+
+<figure>
+<div class="videoWrapper dropShadow marginBottom1em" id="kojiroVideo">
     <!-- Copy & Pasted from YouTube -->
     <iframe width="560" height="315" src="http://www.youtube.com/embed/OlpkLHqLKPI?modestbranding=1&rel=0&color=white" frameborder="0"></iframe>
+    </div>
+    <figcaption class="grey">The final video pitch to demonstrate the interactive menu concept / <span class="bold">1.5 minutes</span></figcaption>
+</figure>
+    
+        
+        
+        <h3 class="teal bold marginBottom1point25em textCenter">PROCESS</h3>
+
+<div class="row">
+<div class="column column-6">
+<figure>
+<img src="img/gallery/kojiro/gallerylogo.png" width="100%" class="dropShadow marginBottom1em">
+<figcaption class="grey">Kojirō Izakaya - our fictional Japanese pub concept</figcaption>
+</figure>
+</div>
+<div class="column column-6 paddingLeft2em">
+      
+ <p class="grey marginBottom1em">Our plan was for customers to be able to browse food and drink, and make orders, without having to summon the server. I suggested that we come up with an example restaurant to guide our design.</p>
+ <p class="grey marginBottom1em">Because the concept of the "izakaya" (Japanese pub) encouraged long visits with repeated ordering of drinks and small foods, this seemed like the ideal type of restaurant for an on-table ordering menu.</p>
 
 </div>
-      
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+</div>
 
+    <hr>
+
+<div class="row">
+<div class="column column-6">
+<figure>
+<img src="img/gallery/kojiro/gallery2b.png" width="100%" class="dropShadow marginBottom1em">
+<figcaption class="grey">An excerpt from my sketchbook, showing a rough paper wireframe of a potential menu layout</figcaption>
+</figure>
+</div>
+<div class="column column-6 paddingLeft2em">
+      
+<p class="grey marginBottom1em">I always start designing on paper. I began by sketching a series of possible layouts, keeping them simple to get through many ideas very quickly. Once I chose a layout that worked, I sketched it out in greater detail.</p>
+<p class="grey marginBottom1em">My concept was to allow the customer to jump to specific food/drink categories with persistent buttons, or allow them to keep swiping through the entire thing as in a traditional menu. A persistent shopping cart would be docked to the right side of the screen, to help people easily understand what they've ordered.</p>
+</div>
+</div>
+
+<hr>
+
+<div class="row">
+<div class="column column-6"><figure><img src="img/gallery/kojiro/gallery3.png" width="100%" class="dropShadow marginBottom1em">
+<img src="img/gallery/kojiro/gallery4.png" width="100%" class="dropShadow marginBottom1em">
+<figcaption class="grey">Rough digital wireframes</figcaption>
+</figure>
+</div>
+<div class="column column-6 paddingLeft2em">
+      
+<p class="grey marginBottom1em">I then took the concept into the digital realm, creating wireframes on the computer.</p>
+<p class="grey marginBottom1em">The goal here was to keep it rough and low detail. We were not worrying about final look yet. This was purely to test the feasibility of the layout.</p>
+</div>
+</div>
+
+<hr>
+
+<div class="row">
+<div class="column column-6">
+<figure>
+<img src="img/gallery/kojiro/gallery5.png" width="100%" class="dropShadow marginBottom1em">
+<figcaption class="grey">The wireframes made interactive through Axure, for user testing</figcaption>
+</figure>
+</div>
+<div class="column column-6 paddingLeft2em">
+      
+<p class="grey marginBottom1em">We took the digital wireframes and placed them into <span class="italic">Axure</span>. This tool allowed us to make the wireframes interactive.</p>
+<p class="grey marginBottom1em">We put the interface in front of a few test users, and got feedback. They liked the persistent category buttons and shopping cart. But they were a bit overwhelmed by the fact that you had some things docked to the bottom, and some to the side.</p>
+</div>
+</div>
+
+<hr>
+
+<div class="row">
+<div class="column column-6">
+<figure>
+<img src="img/gallery/kojiro/gallery6.png" width="100%" class="dropShadow marginBottom1em">
+<figcaption class="grey">Creating a high-detail layout in Illustrator</figcaption>
+</figure>
+</div>
+<div class="column column-6 paddingLeft2em">
+      
+<p class="grey marginBottom1em">We decided to move the category buttons to the left-hand side of the screen.</p>
+<p class="grey marginBottom1em">It was now time to create a high-detail version of the layout. I created the finished look in <span class="italic">Adobe Illustrator</span>, taking care to use fonts and colors which reflected the classy-but-comfortable image of an izakaya.</p>
+</div>
+</div>
+
+<hr>
+
+<div class="row">
+<div class="column column-6">
+<figure>
+<img src="img/gallery/kojiro/gallery7.png" width="100%" class="dropShadow marginBottom1em">
+<figcaption class="grey">Animating the interactions of the menu in AfterEffects</figcaption>
+</figure>
+</div>
+<div class="column column-6 paddingLeft2em">
+      
+<p class="grey marginBottom1em">We had to deliver a pitch video at the end of this process. I brought my final interface design into <span class="italic">Adobe AfterEffects</span> (one of my favorite tools) and animated all of the interactions.</p>
+<p class="grey marginBottom1em">A shaded circle represents a user's touch on the interface, and the menu responds with animations between different menu states.</p>
+</div>
+</div>
+
+<hr>
+
+<div class="row">
+<div class="column column-6">
+<figure>
+<img src="img/gallery/kojiro/gallery8.png" width="100%" class="dropShadow marginBottom1em">
+<figcaption class="grey">Actors point to the interactive tablet menu in our pitch video</figcaption>
+</figure>
+</div>
+<div class="column column-6 paddingLeft2em">
+      
+<p class="grey marginBottom1em">Normally, I'd be at ease shooting live action video for design pitches. But in this case I knew that I could fully count on a fellow teammate. <span class="italic">Jay Tseng</span> is an accomplished videographer, and he took a couple of actors to a Japanese restaurant in order to shoot video.</p>
+<p class="grey marginBottom2point5em">The two ladies acted out interaction with a tablet. When combined with my AfterEffects animation, this helped to visualize the experience of using our interactive menu in the field.</p>
+<!-- anchor link seems to be broken, check javascript 
+<p class="grey marginBottom1em">In case you missed it above, <a href="#kojiroVideo">jump back to the video</a>.</p>
+-->
+</div>
+</div>
+
+
+
+
+
+      </div>
+      
+      
+       <!--     <div class="modalFooter">
+<a href="javascript:void(0)" onclick="kojiroRightArrow()"><h7 class="tealBG white bold">next project &#8594;</h7></a>
+</div> -->
+  
       
       </div>
- </div>
+
+      
+      
+      <!-- this link expands a gallery box into a modal --> 
+      <div class="modalLinkContainer" id="kojiroModalLinkContainer">
+      <a href="javascript:void(0)" onclick="kojiroOpenModal()">
+      <div class="modalLink">
+      </div>
+      </a>
+      </div>
+      
+
+      </div>
+      
+
+    
+
     
     <!-- ella gallery section -->
-    <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="ella"> 
+    <div class="column column-6 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="ella"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="ellaHeader"> 
       
-       
+
         
-        <!-- this link expands a gallery box into a modal --> 
-        <a href="javascript:void(0)" onclick="ellaOpenModal()">
-    
-    <div class="boxLabel threeDaccel" id="ellaLabel">
-    
-  <div class="gradient">
-              <h5 class="white topLabel textShadowStrong" id="ellaTopLabel">ELLA</h5>
-              </div>
+        <!-- label for gallery item -->
+               <div class="boxLabel threeDaccel" id="ellaLabel">
+               
+               <div class="gradient">
+          <h5 class="white topLabel textShadowStrong" id="ellaTopLabel">ELLA</h5>
+          </div>
+          
             <h6 class="tealBG white bottomLabel boxShadow" id="ellaBottomLabel">24 hour app challenge</h6>
-            
-             
         </div>
-        </a>
         </div>
-        
-   
       
       <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain marginLeftRight5em" id="ellaMain">
+           <div class="modalMain threeDaccel" id="ellaMain">
+      
+    
+      <div class="marginLeftRight5em">
+      
+      <!-- <p>MY ROLES:<p>
+      <p>User interface prototyping</p>
+      <p>User testing</p>
+      <p>Finished UI design</p>
+      <p><i>AfterEffects</i> prototype video</p> -->
+    
+    
+    <p class="grey marginBottom2em">This wasn't the usual design process. In the <span class="italic">Interface Design course</span>, we were given 24 hours to come up with an app design that would help would-be volunteers connect with charitable organizations. It was an opportunity to come up with a finished-looking design in a quick span of time.</p>
+   
+    <figure>
+    <img src="img/gallery/ella/gallery6.png" width="100%" class="marginBottom1em">
+    <figcaption class="grey">A showcase of various pages from the Ella app concept.</figcaption>
+</figure>
+    
         
-        <div class="marginLeftRight5em">
+        
+        <h3 class="teal bold marginBottom1point25em textCenter">PROCESS</h3>
 
-
-
-
-
-<!-- <img src="img/gallery/ella/gallery1.png" width="100%" class="bottomPadding"> -->
-<p class="bottomPadding"><b>We only had 24 hours.</b> There was no time for a long period of ideation, and refinement of a final product. We needed to create an app design in a day, with only one requirement. It needed to help connect would-be volunteers to a charity of their interest.</p>
+<!--
+<div class="row">
+<div class="column column-6">
+<figure>
+<img src="img/gallery/ella/gallerylogo.png" width="100%" class="dropShadow marginBottom1em">
+<figcaption class="grey">An excerpt from my sketchbook, showing an early form of the "bubble concept" to help users select charity categories of their interest</figcaption>
+</figure>
+</div>
+<div class="column column-6 paddingLeft2em">
+      
+ <p class="grey marginBottom1em">Ideally, I'd have ample time to ideate, refine the best ideas, and collect feedback from others to perfect a design. This was not that time. With only one day to work, I'd have to trust my own insight.</p>
+<p class="grey marginBottom1em">I sketched out a few concepts on paper, thinking about how an app could best suggest charities to a willing volunteer.</p>
 
 </div>
+</div>
 
+    <hr> -->
+
+<div class="row">
+<div class="column column-6">
+<figure>
+<img src="img/gallery/ella/gallery2.png" width="100%" class="dropShadow marginBottom1point5em">
+<figcaption class="grey">The first page that a user will see, offering social media-based login options</figcaption>
+</figure>
+</div>
+<div class="column column-6 paddingLeft2em">
+      
+<p class="grey marginBottom1em">I set for myself the constraint that I wanted this app to have a low-bar for entry. I settled on offering social media-based login options from <span class="italic">Facebook</span>, <span class="italic">Twitter</span> and <span class="italic">Google</span>.</p>
+<p class="grey marginBottom1em">This is not a perfect solution for all apps, as it requires people to already be users of one of these social media sites. But it has the advantage of skipping an email-based signup process that can lose people. For this project, I felt it was a fit.</p>
+</div>
+</div>
 
 <hr>
 
+<div class="row">
+<div class="column column-6"><figure><img src="img/gallery/ella/gallery3.png" width="100%" class="dropShadow marginBottom1point5em">
+<figcaption class="grey">The onboarding experience of ella, showing a field of bubbles with different tpyes of charities that the user can select</figcaption>
+</figure>
+</div>
+<div class="column column-6 paddingLeft2em">
+      
+<p class="grey marginBottom1em">This app needed to be able to suggest charities to volunteers. I wanted to provide a meaningful "feed" of charity suggestions. But to do this, the volunteer needed to state the types of organizations and tasks that they would be interested in.</p>
+<p class="grey marginBottom1em">Taking inspiration from <span class="italic">Apple Music</span>, the onboarding experience for this app would provide a field of "bubbles", describing first <span class="italic">organizations</span> and later <span class="italic">tasks</span> that the user would be interested in. The user can tap on as many or as few bubbles as they like. This would help to populate the app's feed with appropriate charity suggestions.</p>
+</div>
+</div>
+
+<hr>
 
 <div class="row">
-
-<div class="column column-5"><img class="imgBorder imgShadow" src="img/gallery/ella/gallery2b.png" width="100%"></div>
-
-<div class="column column-7 paddingLeft2em">
-<p>This was not the usual UI development process: we had only 24 hours. There was no time for a long period of ideation, and refinement of a final product. We needed to create an app design in a day, with only one requirement. It needed to help connect would-be volunteers to a charity of their interest.</p>
-
-
+<div class="column column-6">
+<figure>
+<img src="img/gallery/ella/gallery4.png" width="100%" class="dropShadow marginBottom1point5em">
+<figcaption class="grey">The main feed, called "opportunities". By default it shows suggestions based on the user's previous activity.</figcaption>
+</figure>
 </div>
-
-</div>
-        
-      </div>
- </div>
-    
-    <!-- trello gallery section -->
-    <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="trello"> 
+<div class="column column-6 paddingLeft2em">
       
-      <!-- label for the gallery item becomes modal header -->
-      <div class="modalHeader imgFitBox" id="trelloHeader"> 
-        
+<p class="grey marginBottom1em">The main feed is called "opportunities", and by default shows the app's charity suggestions as determined by the user's choices during the on-boarding experience. These selections will be refined as the user continues to interact with the app. This section also allows you to filter by specific categories.</p>
+<p class="grey marginBottom1em">The user can swipe left and right between different charity options. Each chairty is placed on a color-appropiate card which shows imagery of the charity, and the ability to "favorite" it for later, or apply now.</p>
+</div>
+</div>
+
+<hr>
+
+<div class="row">
+<div class="column column-6">
+<figure>
+<img src="img/gallery/ella/gallery5.png" width="100%" class="dropShadow marginBottom2point5em">
+<figcaption class="grey">The "favorite" screen, showing charities that the user wants to remember.</figcaption>
+</figure>
+</div>
+<div class="column column-6 paddingLeft2em">
+      
+<p class="grey marginBottom1em">On every charity is a star icon, allowing the user to "favorite" it to a special list.</p>
+<p class="grey marginBottom1em">The star icon is prominantly displayed beside each entry. Clicking on that icon will "un-favorite" the charity, removing it from the list.</p>
+</div>
+</div>
+
+
+
+
+
+
+
+      </div>
+      
+      <!--
+            <div class="modalFooter">
+<a href="javascript:void(0)" onclick="kojiroRightArrow()"><h7 class="tealBG white bold">next project &#8594;</h7></a>
+</div>
+-->
+      
+      
+      </div>
+      
+      
         <!-- this link expands a gallery box into a modal --> 
-        <a href="javascript:void(0)" onclick="trelloOpenModal()">
-               <div class="boxLabel threeDaccel" id="trelloLabel">
-               
-               <div class="gradient">
-          <h5 class="white topLabel textShadowStrong" id="trelloTopLabel">A SUNNY SPOT</h5>
-          </div>
-          
-            <h6 class="tealBG white bottomLabel boxShadow" id="trelloBottomLabel">short documentary</h6>
-        </div>
-        </a> </div>
-      
-      <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain marginLeftRight5em" id="trelloMain">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+      <div class="modalLinkContainer" id="ellaModalLinkContainer">
+      <a href="javascript:void(0)" onclick="ellaOpenModal()">
+      <div class="modalLink">
       </div>
+      </a>
+      </div>
+      
  </div>
     
-    <!-- close X and arrows for each expanded modal in first row --> 
-    <!-- close X for kojiro-->
+    <!-- arrows for each expanded modal in first row --> 
+      
+              <!-- close X for kojiro-->
           <a href="javascript:void(0)" onclick="kojiroCloseX()">
       <div class="closeX dropShadow" id="kojiroCloseX">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
@@ -396,17 +600,15 @@ $(function() {
     <a href="javascript:void(0)" onclick="kojiroRightArrow()">
     
     <div class="rightArrow dropShadow" id="kojiroRightArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" width="100%">
-        <style type="text/css">  
-	.arrowRight{fill:#FFFFFF;}
-</style>
-        <polygon class="arrowRight" points="1.4 42 0 40.6 19.6 21 0 1.4 1.4 0 22.4 21 "/>
-      </svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+	.arrowCircle{fill:#FFFFFF;}
+	.arrowFill{fill:#21AEC2;}
+</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/></svg>
     </div>
     </a> 
     
 
-    <!-- close X for ella -->
+     <!-- close X for ella -->
           <a href="javascript:void(0)" onclick="ellaCloseX()">
      <div class="closeX dropShadow" id="ellaCloseX">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
@@ -419,30 +621,26 @@ $(function() {
     <!-- left arrow for ella --> 
     <a href="#javascript:void(0)" onclick="ellaLeftArrow()">
     <div class="leftArrow dropShadow" id="ellaLeftArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" height="100%">
-        <style type="text/css">  
-	.arrowLeft{fill:#FFFFFF;}
-</style>
-        <polygon class="arrowLeft" points="21 42 22.4 40.6 2.8 21 22.4 1.4 21 0 0 21 "/>
-      </svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+	.arrowCircle{fill:#FFFFFF;}
+	.arrowFill{fill:#21AEC2;}
+</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M25 33l1.4-1.4 -9.5-9.5c-0.4-0.4-0.8-0.8-1.1-1.1l10.6-10.6L25 9 13 21l0.7 0.7C13.8 21.8 25 33 25 33z"/></svg>
     </div>
     </a> 
     
     <!-- right arrow for ella --> 
     <a href="javascript:void(0)" onclick="ellaRightArrow()">
     <div class="rightArrow dropShadow" id="ellaRightArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" width="100%">
-        <style type="text/css">  
-	.arrowRight{fill:#FFFFFF;}
-</style>
-        <polygon class="arrowRight" points="1.4 42 0 40.6 19.6 21 0 1.4 1.4 0 22.4 21 "/>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+	.arrowCircle{fill:#FFFFFF;}
+	.arrowFill{fill:#21AEC2;}
+</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/></svg>
     </div>
     </a> 
     
-            <!-- close X for trello-->
-          <a href="javascript:void(0)" onclick="trelloCloseX()">
-         <div class="closeX dropShadow" id="trelloCloseX">
+    <!-- close X for ella-->
+          <a href="javascript:void(0)" onclick="ellaCloseX()">
+         <div class="closeX dropShadow" id="ellaCloseX">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
 	.xBG{fill:rgb(35, 174, 194);}
 	.xIcon{fill:rgb(255, 255, 255);}
@@ -450,27 +648,23 @@ $(function() {
       </div>
       </a>
     
-    <!-- left arrow for trello --> 
-    <a href="javascript:void(0)" onclick="trelloLeftArrow()">
-    <div class="leftArrow dropShadow" id="trelloLeftArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" height="100%">
-        <style type="text/css">  
-	.arrowLeft{fill:#FFFFFF;}
-</style>
-        <polygon class="arrowLeft" points="21 42 22.4 40.6 2.8 21 22.4 1.4 21 0 0 21 "/>
-      </svg>
+    <!-- left arrow for ella --> 
+    <a href="javascript:void(0)" onclick="ellaLeftArrow()">
+    <div class="leftArrow dropShadow" id="ellaLeftArrow">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+	.arrowCircle{fill:#FFFFFF;}
+	.arrowFill{fill:#21AEC2;}
+</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M25 33l1.4-1.4 -9.5-9.5c-0.4-0.4-0.8-0.8-1.1-1.1l10.6-10.6L25 9 13 21l0.7 0.7C13.8 21.8 25 33 25 33z"/></svg>
     </div>
     </a> 
     
-    <!-- right arrow for trello --> 
-    <a href="javascript:void(0)" onclick="trelloRightArrow()">
-    <div class="rightArrow dropShadow" id="trelloRightArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" width="100%">
-        <style type="text/css">  
-	.arrowRight{fill:#FFFFFF;}
-</style>
-        <polygon class="arrowRight" points="1.4 42 0 40.6 19.6 21 0 1.4 1.4 0 22.4 21 "/>
-      </svg>
+    <!-- right arrow for ella --> 
+    <a href="javascript:void(0)" onclick="ellaRightArrow()">
+    <div class="rightArrow dropShadow" id="ellaRightArrow">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+	.arrowCircle{fill:#FFFFFF;}
+	.arrowFill{fill:#21AEC2;}
+</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/></svg>
     </div>
     </a>
     
@@ -482,14 +676,14 @@ $(function() {
   <div class="row galleryRow" id="secondRow"> 
     
     <!-- playboy gallery section -->
-    <div class="column column-3 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="playboy"> 
+    <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="playboy"> 
       
       <!-- label for the gallery item becomes modal header -->
-      <div class="modalHeader imgFitBox" id="playboyHeader"> 
+      <div class="modalHeader imgFitBox" id="playboyHeader">
+      
+
         
-        <!-- this link expands a gallery box into a modal --> 
-        <a href="javascript:void(0)" onclick="playboyOpenModal()">
-        
+        <!-- label for gallery item -->
         <div class="boxLabel threeDaccel" id="playboyLabel">
         
         <div class="gradient">
@@ -499,32 +693,33 @@ $(function() {
             <h6 class="tealBG white bottomLabel boxShadow" id="playboyBottomLabel">writer-focused website proposal</h6>
         </div>
 
-        </a> </div>
+        </div>
       
       <!-- main section of modal is hidden until expanded -->
       <div class="modalMain marginLeftRight5em" id="playboyMain">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>(Coming Soon)</p><p>Sorry if you're seeing this. It will never be shown to a potential employer until it's fixed ;)</p>
       </div>
+      
+        <!-- this link expands a gallery box into a modal --> 
+      <div class="modalLinkContainer" id="playboyModalLinkContainer">
+      <a href="javascript:void(0)" onclick="playboyOpenModal()">
+      <div class="modalLink">
+      </div>
+      </a>
+      </div>
+      
      </div>
       
     
         <!-- enterprise gallery section -->
-    <div class="column column-3 whiteBG boxShadow height35 marginBottomGutterWidth box imgFitBox threeDaccel" id="enterprise"> 
+    <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box imgFitBox threeDaccel" id="enterprise"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="enterpriseHeader"> 
+      
+
         
-        <!-- this link expands a gallery box into a modal --> 
-        <a href="javascript:void(0)" onclick="enterpriseOpenModal()">
-        
+        <!-- label for gallery item -->
         <div class="boxLabel threeDaccel" id="enterpriseLabel">
         
         <div class="gradient">
@@ -534,98 +729,63 @@ $(function() {
             <h6 class="tealBG white bottomLabel boxShadow" id="enterpriseBottomLabel">Car Drop app proposal</h6>
         </div>
         
-        </a> </div>
+        </div>
       
       <!-- main section of modal is hidden until expanded -->
       <div class="modalMain marginLeftRight5em" id="enterpriseMain">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+         <p>(Coming Soon)</p><p>Sorry if you're seeing this. It will never be shown to a potential employer until it's fixed ;)</p>
       </div>
- </div>
-    
-    
-    
-        <!-- chirpr gallery section -->
-    <div class="column column-3 whiteBG boxShadow height35 marginBottomGutterWidth box imgFitBox threeDaccel" id="chirpr"> 
       
-      <!-- label for the gallery item becomes modal header -->
-      <div class="modalHeader imgFitBox" id="chirprHeader"> 
-        
         <!-- this link expands a gallery box into a modal --> 
-        <a href="javascript:void(0)" onclick="chirprOpenModal()">
-        
-                <div class="boxLabel threeDaccel" id="chirprLabel">
-                
-                <div class="gradient">
-          <h5 class="white topLabel textShadowStrong" id="chirprTopLabel">CHIRPR</h5>
-          </div>
-          
-            <h6 class="tealBG white bottomLabel boxShadow" id="chirprBottomLabel">parody card game</h6>
-        </div>
-        
-        </a> </div>
-      
-      <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain marginLeftRight5em" id="chirprMain">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+      <div class="modalLinkContainer" id="enterpriseModalLinkContainer">
+      <a href="javascript:void(0)" onclick="enterpriseOpenModal()">
+      <div class="modalLink">
       </div>
+      </a>
+      </div>
+      
  </div>
     
     
     
     
         <!-- newitem gallery section -->
-    <div class="column column-3 whiteBG boxShadow height35 marginBottomGutterWidth box imgFitBox threeDaccel" id="newitem"> 
+    <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box imgFitBox threeDaccel" id="newitem"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="newitemHeader"> 
         
-        <!-- this link expands a gallery box into a modal --> 
-        <a href="javascript:void(0)" onclick="newitemOpenModal()">
-        
+        <!-- label for gallery item -->
                         <div class="boxLabel threeDaccel" id="newitemLabel">
                         
                         <div class="gradient">
-          <h5 class="white topLabel textShadowStrong" id="newitemTopLabel">ITEM</h5>
+          <h5 class="white topLabel textShadowStrong" id="newitemTopLabel">CHIRPR</h5>
           </div>
-            <h6 class="tealBG white bottomLabel boxShadow" id="newitemBottomLabel">item type</h6>
+            <h6 class="tealBG white bottomLabel boxShadow" id="newitemBottomLabel">Social media parody card game</h6>
         </div>
         
-        </a> </div>
+        </div>
       
       <!-- main section of modal is hidden until expanded -->
       <div class="modalMain marginLeftRight5em" id="newitemMain">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet libero in massa mattis lacinia id a ligula. Vivamus non rhoncus risus. Vivamus sed leo vitae leo commodo suscipit. Phasellus imperdiet bibendum neque, id pulvinar dolor gravida sit amet. Suspendisse potenti. Quisque nec facilisis nunc. Cras a turpis ultricies, gravida mauris id, faucibus mi. Nunc id ornare sapien. Vestibulum varius mauris gravida dui semper luctus a a ipsum. Proin ut massa cursus, malesuada leo quis, faucibus turpis. Nulla facilisi. Mauris sem nulla, imperdiet sed posuere quis, viverra ut arcu. Nam tristique felis vel venenatis tincidunt. Suspendisse non diam ac ex dapibus lacinia vel id quam. Proin ut est non arcu euismod fermentum vel eu nisl. Suspendisse consequat ante vitae tincidunt blandit.</p>
+        <p>(Coming Soon)</p><p>Sorry if you're seeing this. It will never be shown to a potential employer until it's fixed ;)</p>
       </div>
+      
+        <!-- this link expands a gallery box into a modal --> 
+      <div class="modalLinkContainer" id="newitemModalLinkContainer">
+      <a href="javascript:void(0)" onclick="newitemOpenModal()">
+      <div class="modalLink">
+      </div>
+      </a>
+      </div>
+      
  </div>
  
  
     
-    <!-- close X and arrows for each expanded modal in second row --> 
-    <!-- close X for Playboy -->
+    <!-- arrows for each expanded modal in second row --> 
+    
+     <!-- close X for Playboy -->
      <a href="javascript:void(0)" onclick="playboyCloseX()">
        <div class="closeX dropShadow" id="playboyCloseX">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
@@ -633,31 +793,27 @@ $(function() {
 	.xIcon{fill:rgb(255, 255, 255);}
 </style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
       </div>
-      </a> 
+      </a>  
+      
     <!-- left arrow for playboy --> 
     <a href="javascript:void(0)" onclick="playboyLeftArrow()">
     <div class="leftArrow dropShadow" id="playboyLeftArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" height="100%">
-        <style type="text/css">  
-	.arrowLeft{fill:#FFFFFF;}
-</style>
-        <polygon class="arrowLeft" points="21 42 22.4 40.6 2.8 21 22.4 1.4 21 0 0 21 "/>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+	.arrowCircle{fill:#FFFFFF;}
+	.arrowFill{fill:#21AEC2;}
+</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M25 33l1.4-1.4 -9.5-9.5c-0.4-0.4-0.8-0.8-1.1-1.1l10.6-10.6L25 9 13 21l0.7 0.7C13.8 21.8 25 33 25 33z"/></svg>
     </div>
     </a> 
     
     <!-- right arrow for playboy --> 
     <a href="javascript:void(0)" onclick="playboyRightArrow()">
     <div class="rightArrow dropShadow" id="playboyRightArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" width="100%">
-        <style type="text/css">  
-	.arrowRight{fill:#FFFFFF;}
-</style>
-        <polygon class="arrowRight" points="1.4 42 0 40.6 19.6 21 0 1.4 1.4 0 22.4 21 "/>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+	.arrowCircle{fill:#FFFFFF;}
+	.arrowFill{fill:#21AEC2;}
+</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/></svg>
     </div>
     </a> 
-    
     
     <!-- close X for enterprise -->
           <a href="javascript:void(0)" onclick="enterpriseCloseX()">
@@ -672,27 +828,22 @@ $(function() {
     <!-- left arrow for enterprise --> 
     <a href="javascript:void(0)" onclick="enterpriseLeftArrow()">
     <div class="leftArrow dropShadow" id="enterpriseLeftArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" height="100%">
-        <style type="text/css">  
-	.arrowLeft{fill:#FFFFFF;}
-</style>
-        <polygon class="arrowLeft" points="21 42 22.4 40.6 2.8 21 22.4 1.4 21 0 0 21 "/>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+	.arrowCircle{fill:#FFFFFF;}
+	.arrowFill{fill:#21AEC2;}
+</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M25 33l1.4-1.4 -9.5-9.5c-0.4-0.4-0.8-0.8-1.1-1.1l10.6-10.6L25 9 13 21l0.7 0.7C13.8 21.8 25 33 25 33z"/></svg>
     </div>
     </a> 
     
     <!-- right arrow for enterprise --> 
     <a href="javascript:void(0)" onclick="enterpriseRightArrow()">
     <div class="rightArrow dropShadow" id="enterpriseRightArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" width="100%">
-        <style type="text/css">  
-	.arrowRight{fill:#FFFFFF;}
-</style>
-        <polygon class="arrowRight" points="1.4 42 0 40.6 19.6 21 0 1.4 1.4 0 22.4 21 "/>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+	.arrowCircle{fill:#FFFFFF;}
+	.arrowFill{fill:#21AEC2;}
+</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/></svg>
     </div>
     </a> 
-    
     
     <!-- close X for chirpr -->
           <a href="javascript:void(0)" onclick="chirprCloseX()">
@@ -707,27 +858,22 @@ $(function() {
     <!-- left arrow for chirpr --> 
     <a href="javascript:void(0)" onclick="chirprLeftArrow()">
     <div class="leftArrow dropShadow" id="chirprLeftArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" height="100%">
-        <style type="text/css">  
-	.arrowLeft{fill:#FFFFFF;}
-</style>
-        <polygon class="arrowLeft" points="21 42 22.4 40.6 2.8 21 22.4 1.4 21 0 0 21 "/>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+	.arrowCircle{fill:#FFFFFF;}
+	.arrowFill{fill:#21AEC2;}
+</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M25 33l1.4-1.4 -9.5-9.5c-0.4-0.4-0.8-0.8-1.1-1.1l10.6-10.6L25 9 13 21l0.7 0.7C13.8 21.8 25 33 25 33z"/></svg>
     </div>
     </a> 
     
     <!-- right arrow for chirpr --> 
     <a href="javascript:void(0)" onclick="chirprRightArrow()">
     <div class="rightArrow dropShadow" id="chirprRightArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" width="100%">
-        <style type="text/css">  
-	.arrowRight{fill:#FFFFFF;}
-</style>
-        <polygon class="arrowRight" points="1.4 42 0 40.6 19.6 21 0 1.4 1.4 0 22.4 21 "/>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+	.arrowCircle{fill:#FFFFFF;}
+	.arrowFill{fill:#21AEC2;}
+</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/></svg>
     </div>
     </a> 
-    
     
     <!-- close X for newitem -->
           <a href="javascript:void(0)" onclick="newitemCloseX()">
@@ -742,12 +888,10 @@ $(function() {
     <!-- left arrow for newitem --> 
     <a href="javascript:void(0)" onclick="newitemLeftArrow()">
     <div class="leftArrow dropShadow" id="newitemLeftArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" height="100%">
-        <style type="text/css">  
-	.arrowLeft{fill:#FFFFFF;}
-</style>
-        <polygon class="arrowLeft" points="21 42 22.4 40.6 2.8 21 22.4 1.4 21 0 0 21 "/>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+	.arrowCircle{fill:#FFFFFF;}
+	.arrowFill{fill:#21AEC2;}
+</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M25 33l1.4-1.4 -9.5-9.5c-0.4-0.4-0.8-0.8-1.1-1.1l10.6-10.6L25 9 13 21l0.7 0.7C13.8 21.8 25 33 25 33z"/></svg>
     </div>
     </a> 
     
@@ -760,14 +904,16 @@ $(function() {
 
 <!-- contact me section -->
 <div class="paddingBottom1point5em dropShadow textCenter heightFull" id="porthole">
+
 <div class="portholeRim">
+
   <div class="contactPosition transitionAll0point5" id="contactMe">
     <h3 class="teal bold marginBottomPoint75em">CONTACT ME</h3>
     <div class="marginLeftRight10em contactMarginFix"> 
       
       <!-- contact methods -->
       <div class="row contact-row-small"> <a href="tel://1-604-773-2199">
-        <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent"> 
+        <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent hovering"> 
           
           <!-- phone icon -->
           <div class="icon marginBottom1em">
@@ -785,7 +931,7 @@ $(function() {
           <h4 class="grey textCenter">604.773.2199</h4>
         </div>
         </a> <a href="mailto:info@alexmoen.com">
-        <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent"> 
+        <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent hovering"> 
           
           <!-- email icon -->
           <div class="icon marginBottom1em">
@@ -804,7 +950,7 @@ $(function() {
           <h4 class="grey textCenter">info@alexmoen.com</h4>
         </div>
         </a> <a href="https://linkedin.com/in/alexmoen">
-        <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent"> 
+        <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent hovering"> 
           
           <!-- LinkedIn icon -->
           <div class="icon marginBottom1em">
@@ -824,7 +970,7 @@ $(function() {
           <h4 class="grey textCenter">alexmoen</h4>
         </div>
         </a> <a href="https://twitter.com/AlexRMoen">
-        <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent"> 
+        <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent hovering"> 
           
           <!-- Twitter icon -->
           <div class="icon marginBottom1em">
@@ -845,6 +991,12 @@ $(function() {
     </div>
   </div>
   </div>
+</div>
+
+<!-- temporary IAT339 section -->
+<div class="339 whiteBG">
+<p>Temporary IAT 339 section!<p>
+<p>Style Guide | <a href="https://github.com/AlexRMoen/AlexMoenPortfolio">GitHub</a><p>
 </div>
 
 </body>

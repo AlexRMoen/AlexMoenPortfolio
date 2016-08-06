@@ -6,26 +6,23 @@
 	padding: 0;
 }
 
-/* video stuff *deserves scrutiny and compat with mobile* */
-/* for ie8 */
-video {
-	display: block;
-	}
-video#bgvid { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(fish1.png) no-repeat;
-    background-size: cover; 
+a {
+	text-decoration:none;
+}
+
+hr {
+	margin-top: 2em;
+	margin-bottom: 2.5em;
+	
+}
+
+canvas {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: -1;
 }
 
 /* colors */
@@ -108,6 +105,10 @@ video#bgvid {
 
 .marginBottom2em {
 	margin-bottom: 2em;
+}
+
+.marginBottom2point5em {
+	margin-bottom: 2.5em;
 }
 
 .marginLeftRight5em {
@@ -219,11 +220,21 @@ video#bgvid {
    backface-visibility: hidden;
 }
 
-/* gallery box hover behavior 
-.box:hover {
-	-webkit-filter: drop-shadow(0 0.4em 0.4em rgba(0,0,0,0.2));
-	filter: drop-shadow(0 0.4em 0.4em rgba(0,0,0,0.2));
-}*/
+/* link for the modal to open */
+.modalLinkContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.modalLink {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 
 /* makes a background image for a box */
 .imgFitBox {
@@ -320,6 +331,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	margin-right: 2.25em;
 }
 
+.hovering:hover {
+	transform: scale(1.1);
+	-webkit-filter: drop-shadow(2px 2px 8px rgba(0,0,0,0.3));
+	filter: drop-shadow(2px 2px 8px rgba(0,0,0,0.3));
+}
+
 /* wrapper which resizes videos to container size */
 .videoWrapper {
 	position: relative;
@@ -340,6 +357,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 	height: 100%;
+	overflow: hidden;
+
 }
 
 #galleryHeightWrapper {
@@ -355,8 +374,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	transition: padding-top 0.1s ease-out;
 	position: relative;
 	max-width: 100vw;
-	overflow: hidden;
-}
+	}
 
 #myWork {
 	-webkit-transition: all 1s ease-out;
@@ -380,14 +398,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	opacity: 0;
 	-webkit-transition: opacity 2s ease-out;
 	transition: opacity 2s ease-out;
+	padding-top: 2em;
+}
+
+.modalFooter {
+	width: 100%;
+	padding-top: 0.75em;
+	padding-bottom: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+	margin: 0;
+	background-color: rgb(35, 174, 194);
+	text-align: right;
 }
 
 /* close X button */
 .closeX {
 	position: absolute;
-	top: 50%;
-	right: 50%;
+	top: 7.5vh;
+	right: 10vw;
 	width: 2.25em;
+	margin-right: 1.5em;
+	margin-top: 1.5em;
 	transform: scale(0);
 	opacity: 0;
 	-webkit-transition: all 0.5s ease-out;
@@ -397,7 +429,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .leftArrow {
 	position: absolute;
-	width: 2em;
+	width: 4vw;
 	left: -2.5em;
 	top: 50%;
 	transform: translateY(-50%);
@@ -408,7 +440,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .rightArrow {
 	position: absolute;
-	width: 2em;
+	width: 4vw;
 	right: -2.5em;
 	top: 50%;
 	transform: translateY(-50%);
@@ -453,6 +485,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	background: radial-gradient(circle 20% at 50% 33.333%, transparent 20%, rgb(235,235,235) 20%);
     background: -webkit-radial-gradient(50% 33.333%, circle, transparent 20%, rgba(235,235,235,1.00) 20%);
 	background: -moz-radial-gradient(50% 33.333%, circle, transparent 20%, rgb(235,235,235) 20%);
+	z-index: 1;
 }
 
 .portholeRim {
@@ -501,7 +534,7 @@ min-height: 55vh;
 }
 
 /* incrementally reduces the margin on the sides of the screen */
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 68.75em) {
 	
 	.marginLeftRight10em {
 	margin-left: 9em;
@@ -510,7 +543,7 @@ min-height: 55vh;
 	
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 65.625) {
 	
 	.marginLeftRight10em {
 	margin-left: 8em;
@@ -519,7 +552,7 @@ min-height: 55vh;
 	
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 62.5em) {
 	
 	.marginLeftRight10em {
 	margin-left: 7em;
@@ -528,7 +561,7 @@ min-height: 55vh;
 	
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 59.375em) {
 	
 	.marginLeftRight10em {
 	margin-left: 6em;
@@ -537,7 +570,7 @@ min-height: 55vh;
 	
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 56.25em) {
 	
 	.marginLeftRight10em {
 	margin-left: 5em;
@@ -547,7 +580,9 @@ min-height: 55vh;
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 48em) {
+	
+
 	
 	 .paddingLeft2em {
 		 padding-left: 0;
@@ -555,16 +590,114 @@ min-height: 55vh;
 	
 	 
 	
+	.marginTopGutterWidth {
+		margin-top: 1.6vw;
+	}
+	
 	.marginBottomGutterWidth {
-	margin-bottom: 2em;
-}
+		margin-bottom: 2em;
+	}
+	
+	.marginLeftRight5em {
+		margin-left: 2.5em;
+	margin-right: 2.5em;
+	}
+	
 	.marginLeftRight10em {
 	margin-left: 4em;
 	margin-right: 4em;
 }
+
+
+.closedGallery-sm {
+	height: 0;
+}
+.smallViewHide {
+	display: none;
+}
+.transitionAll0point5 {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+.box {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+.boxLabel {
+	-webkit-transition: all 0s;
+	transition: all 0s;
 }
 
-@media only screen and (max-width: 700px) {
+.topLabel {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+.bottomLabel {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+#gallery {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+
+.galleryRow {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+#myWork {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+.modalHeader {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+.modalMain {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+.closeX {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+.leftArrow {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+.rightArrow {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+#aboveFold {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+#aboutMe {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+#porthole {
+	
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+}
+
+@media only screen and (max-width: 43.75em) {
+	
+	
 
 #porthole {
 	
@@ -580,4 +713,20 @@ min-height: 55vh;
 	background: -moz-radial-gradient(50% 25%, circle, transparent 23%, rgb(255,255,255) 20%);
 }
 
+}
+
+@media only screen and (max-width: 37.5em) {
+	
+		.leftArrow {
+	width: 2.5em;
+}
+
+.rightArrow {
+	width: 2.5em;
+}
+}
+
+.339 {
+	width: 100%;
+	padding-top: 2em;
 }
