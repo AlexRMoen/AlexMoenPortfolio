@@ -4,7 +4,7 @@ function closeX() {
 	
 	// opens the modal link divs
 	document.getElementById('kojiroModalLinkContainer').style.display = '';
-	document.getElementById('trelloModalLinkContainer').style.display = '';
+	document.getElementById('ellaModalLinkContainer').style.display = '';
 	document.getElementById('playboyModalLinkContainer').style.display = '';
 	document.getElementById('enterpriseModalLinkContainer').style.display = '';
 	document.getElementById('newitemModalLinkContainer').style.display = '';
@@ -43,27 +43,27 @@ function closeX() {
 	document.getElementById('kojiroTopLabel').style.paddingLeft = '';
 	document.getElementById('kojiroBottomLabel').style.paddingLeft = '';
 	
-	document.getElementById('trello').style.height = '';
-    document.getElementById('trello').style.width = '';
-    document.getElementById('trello').style.opacity = '';
-    document.getElementById('trello').style.marginLeft = '';
-    document.getElementById('trello').style.marginRight = '';
-    document.getElementById('trello').style.marginBottom = '';
-    document.getElementById('trello').style.overflowX = 'auto';
-    document.getElementById('trello').style.overflowY = 'hidden';
-	$( "#trello" ).removeClass( "smallViewHide" );
-    document.getElementById('trelloHeader').style.height = '';
-    document.getElementById('trelloMain').style.height = '';
-    document.getElementById('trelloMain').style.opacity = '';
-    document.getElementById('trelloCloseX').style.transform = '';
-    document.getElementById('trelloCloseX').style.opacity = '';
-    document.getElementById('trelloLabel').style.transform = '';
-    document.getElementById('trelloLabel').style.bottom = '';
-	document.getElementById('trelloLabel').style.width = '';
-	document.getElementById('trelloBottomLabel').style.paddingTop = '';
-	document.getElementById('trelloBottomLabel').style.paddingBottom = '';
-	document.getElementById('trelloTopLabel').style.paddingLeft = '';
-	document.getElementById('trelloBottomLabel').style.paddingLeft = '';
+	document.getElementById('ella').style.height = '';
+    document.getElementById('ella').style.width = '';
+    document.getElementById('ella').style.opacity = '';
+    document.getElementById('ella').style.marginLeft = '';
+    document.getElementById('ella').style.marginRight = '';
+    document.getElementById('ella').style.marginBottom = '';
+    document.getElementById('ella').style.overflowX = 'auto';
+    document.getElementById('ella').style.overflowY = 'hidden';
+	$( "#ella" ).removeClass( "smallViewHide" );
+    document.getElementById('ellaHeader').style.height = '';
+    document.getElementById('ellaMain').style.height = '';
+    document.getElementById('ellaMain').style.opacity = '';
+    document.getElementById('ellaCloseX').style.transform = '';
+    document.getElementById('ellaCloseX').style.opacity = '';
+    document.getElementById('ellaLabel').style.transform = '';
+    document.getElementById('ellaLabel').style.bottom = '';
+	document.getElementById('ellaLabel').style.width = '';
+	document.getElementById('ellaBottomLabel').style.paddingTop = '';
+	document.getElementById('ellaBottomLabel').style.paddingBottom = '';
+	document.getElementById('ellaTopLabel').style.paddingLeft = '';
+	document.getElementById('ellaBottomLabel').style.paddingLeft = '';
 	
 	document.getElementById('playboy').style.height = '';
     document.getElementById('playboy').style.width = '';

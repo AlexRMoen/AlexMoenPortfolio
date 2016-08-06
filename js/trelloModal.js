@@ -3,9 +3,19 @@
 $(function() {
   $('#trelloModalLinkContainer').hover(function() {
     $('#trello').css('transform', 'scale(1.1)');
+	$('#trello').css('z-index', '999');
+	$('#kojiro').css('z-index', '1');
+	$('#playboy').css('z-index', '1');
+	$('#enterprise').css('z-index', '1');
+	$('#newitem').css('z-index', '1');
   }, function() {
     // on mouseout, reset the background colour
     $('#trello').css('transform', '');
+	$('#trello').css('z-index', '');
+	$('#kojiro').css('z-index', '');
+	$('#playboy').css('z-index', '');
+	$('#enterprise').css('z-index', '');
+	$('#newitem').css('z-index', '');
   });
 });
 

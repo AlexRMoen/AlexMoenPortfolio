@@ -18,7 +18,7 @@ function chirprOpenModal() {
 	// closes the modal link divs
 	document.getElementById('kojiroModalLinkContainer').style.display = 'none';
 	document.getElementById('ellaModalLinkContainer').style.display = 'none';
-	document.getElementById('trelloModalLinkContainer').style.display = 'none';
+	document.getElementById('ellaModalLinkContainer').style.display = 'none';
 	document.getElementById('playboyModalLinkContainer').style.display = 'none';
 	document.getElementById('enterpriseModalLinkContainer').style.display = 'none';
 	document.getElementById('chirprModalLinkContainer').style.display = 'none';
@@ -74,10 +74,10 @@ function chirprOpenModal() {
     document.getElementById('ella').style.opacity = '0';
     document.getElementById('ella').style.marginBottom = '0';
 	$( "#ella" ).addClass( "smallViewHide" );
-    document.getElementById('trello').style.height = '0';
-    document.getElementById('trello').style.opacity = '0';
-    document.getElementById('trello').style.marginBottom = '0';
-	$( "#trello" ).addClass( "smallViewHide" );
+    document.getElementById('ella').style.height = '0';
+    document.getElementById('ella').style.opacity = '0';
+    document.getElementById('ella').style.marginBottom = '0';
+	$( "#ella" ).addClass( "smallViewHide" );
     
     // rescales and fades other line 2 items
     document.getElementById('playboy').style.height = '85vh';
@@ -153,10 +153,10 @@ function chirprOpenModal() {
     document.getElementById('ella').style.opacity = '0';
     document.getElementById('ella').style.marginBottom = '0';
 	$( "#ella" ).addClass( "smallViewHide" );
-    document.getElementById('trello').style.height = '0';
-    document.getElementById('trello').style.opacity = '0';
-    document.getElementById('trello').style.marginBottom = '0';
-	$( "#trello" ).addClass( "smallViewHide" );
+    document.getElementById('ella').style.height = '0';
+    document.getElementById('ella').style.opacity = '0';
+    document.getElementById('ella').style.marginBottom = '0';
+	$( "#ella" ).addClass( "smallViewHide" );
     
     // rescales and fades other line 2 items
     document.getElementById('playboy').style.height = '85vh';

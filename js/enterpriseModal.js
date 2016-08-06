@@ -3,9 +3,19 @@
 $(function() {
   $('#enterpriseModalLinkContainer').hover(function() {
     $('#enterprise').css('transform', 'scale(1.1)');
+	$('#enterprise').css('z-index', '999');
+	$('#kojiro').css('z-index', '1');
+	$('#ella').css('z-index', '1');
+	$('#playboy').css('z-index', '1');
+	$('#newitem').css('z-index', '1');
   }, function() {
     // on mouseout, reset the background colour
     $('#enterprise').css('transform', '');
+	$('#enterprise').css('z-index', '');
+	$('#kojiro').css('z-index', '');
+	$('#ella').css('z-index', '');
+	$('#playboy').css('z-index', '');
+	$('#newitem').css('z-index', '');
   });
 });
 
@@ -17,7 +27,7 @@ function enterpriseOpenModal() {
 	
 	// closes the modal link divs
 	document.getElementById('kojiroModalLinkContainer').style.display = 'none';
-	document.getElementById('trelloModalLinkContainer').style.display = 'none';
+	document.getElementById('ellaModalLinkContainer').style.display = 'none';
 	document.getElementById('playboyModalLinkContainer').style.display = 'none';
 	document.getElementById('enterpriseModalLinkContainer').style.display = 'none';
 	document.getElementById('newitemModalLinkContainer').style.display = 'none';
@@ -68,10 +78,10 @@ function enterpriseOpenModal() {
     document.getElementById('kojiro').style.opacity = '0';
     document.getElementById('kojiro').style.marginBottom = '0';
 	$( "#kojiro" ).addClass( "smallViewHide" );
-    document.getElementById('trello').style.height = '0';
-    document.getElementById('trello').style.opacity = '0';
-    document.getElementById('trello').style.marginBottom = '0';
-	$( "#trello" ).addClass( "smallViewHide" );
+    document.getElementById('ella').style.height = '0';
+    document.getElementById('ella').style.opacity = '0';
+    document.getElementById('ella').style.marginBottom = '0';
+	$( "#ella" ).addClass( "smallViewHide" );
     
     // rescales and fades other line 2 items
     document.getElementById('playboy').style.height = '85vh';
@@ -138,10 +148,10 @@ function enterpriseOpenModal() {
     document.getElementById('kojiro').style.opacity = '0';
     document.getElementById('kojiro').style.marginBottom = '0';
 	$( "#kojiro" ).addClass( "smallViewHide" );
-    document.getElementById('trello').style.height = '0';
-    document.getElementById('trello').style.opacity = '0';
-    document.getElementById('trello').style.marginBottom = '0';
-	$( "#trello" ).addClass( "smallViewHide" );
+    document.getElementById('ella').style.height = '0';
+    document.getElementById('ella').style.opacity = '0';
+    document.getElementById('ella').style.marginBottom = '0';
+	$( "#ella" ).addClass( "smallViewHide" );
     
     // rescales and fades other line 2 items
     document.getElementById('playboy').style.height = '85vh';
