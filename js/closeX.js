@@ -150,6 +150,9 @@ function closeX() {
     document.getElementById('aboutMe').style.display = 'block';
     document.getElementById('porthole').style.display = 'block';
 	
+	// TEMP DELETE LATER
+	document.getElementById('webdesign').style.display = 'block';
+	
 	$(window).scrollTop(tempScrollTop);
 	
 	}, 500);
