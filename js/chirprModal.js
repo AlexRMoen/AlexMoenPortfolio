@@ -17,9 +17,9 @@ function chirprOpenModal() {
 	
 	// closes the modal link divs
 	document.getElementById('kojiroModalLinkContainer').style.display = 'none';
+	document.getElementById('xxxModalLinkContainer').style.display = 'none';
+	document.getElementById('xxxModalLinkContainer').style.display = 'none';
 	document.getElementById('ellaModalLinkContainer').style.display = 'none';
-	document.getElementById('ellaModalLinkContainer').style.display = 'none';
-	document.getElementById('playboyModalLinkContainer').style.display = 'none';
 	document.getElementById('enterpriseModalLinkContainer').style.display = 'none';
 	document.getElementById('chirprModalLinkContainer').style.display = 'none';
 	document.getElementById('newitemModalLinkContainer').style.display = 'none';
@@ -70,21 +70,21 @@ function chirprOpenModal() {
     document.getElementById('kojiro').style.opacity = '0';
     document.getElementById('kojiro').style.marginBottom = '0';
 	$( "#kojiro" ).addClass( "smallViewHide" );
-    document.getElementById('ella').style.height = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginBottom = '0';
-	$( "#ella" ).addClass( "smallViewHide" );
-    document.getElementById('ella').style.height = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginBottom = '0';
-	$( "#ella" ).addClass( "smallViewHide" );
+    document.getElementById('xxx').style.height = '0';
+    document.getElementById('xxx').style.opacity = '0';
+    document.getElementById('xxx').style.marginBottom = '0';
+	$( "#xxx" ).addClass( "smallViewHide" );
+    document.getElementById('xxx').style.height = '0';
+    document.getElementById('xxx').style.opacity = '0';
+    document.getElementById('xxx').style.marginBottom = '0';
+	$( "#xxx" ).addClass( "smallViewHide" );
     
     // rescales and fades other line 2 items
-    document.getElementById('playboy').style.height = '85vh';
-    document.getElementById('playboy').style.opacity = '0';
-    document.getElementById('playboy').style.width = '0';
-    document.getElementById('playboy').style.marginLeft = '0';
-	$( "#playboy" ).addClass( "smallViewHide" );
+    document.getElementById('ella').style.height = '85vh';
+    document.getElementById('ella').style.opacity = '0';
+    document.getElementById('ella').style.width = '0';
+    document.getElementById('ella').style.marginLeft = '0';
+	$( "#ella" ).addClass( "smallViewHide" );
     document.getElementById('enterprise').style.height = '85vh';
     document.getElementById('enterprise').style.opacity = '0';
     document.getElementById('enterprise').style.width = '0';
@@ -149,21 +149,21 @@ function chirprOpenModal() {
     document.getElementById('kojiro').style.opacity = '0';
     document.getElementById('kojiro').style.marginBottom = '0';
 	$( "#kojiro" ).addClass( "smallViewHide" );
-    document.getElementById('ella').style.height = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginBottom = '0';
-	$( "#ella" ).addClass( "smallViewHide" );
-    document.getElementById('ella').style.height = '0';
-    document.getElementById('ella').style.opacity = '0';
-    document.getElementById('ella').style.marginBottom = '0';
-	$( "#ella" ).addClass( "smallViewHide" );
+    document.getElementById('xxx').style.height = '0';
+    document.getElementById('xxx').style.opacity = '0';
+    document.getElementById('xxx').style.marginBottom = '0';
+	$( "#xxx" ).addClass( "smallViewHide" );
+    document.getElementById('xxx').style.height = '0';
+    document.getElementById('xxx').style.opacity = '0';
+    document.getElementById('xxx').style.marginBottom = '0';
+	$( "#xxx" ).addClass( "smallViewHide" );
     
     // rescales and fades other line 2 items
-    document.getElementById('playboy').style.height = '85vh';
-    document.getElementById('playboy').style.opacity = '0';
-    document.getElementById('playboy').style.width = '0';
-    document.getElementById('playboy').style.marginLeft = '0';
-	$( "#playboy" ).addClass( "smallViewHide" );
+    document.getElementById('ella').style.height = '85vh';
+    document.getElementById('ella').style.opacity = '0';
+    document.getElementById('ella').style.width = '0';
+    document.getElementById('ella').style.marginLeft = '0';
+	$( "#ella" ).addClass( "smallViewHide" );
     document.getElementById('enterprise').style.height = '85vh';
     document.getElementById('enterprise').style.opacity = '0';
     document.getElementById('enterprise').style.width = '0';

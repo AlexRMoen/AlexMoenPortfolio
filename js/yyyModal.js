@@ -1,17 +1,17 @@
 // JavaScript Document
 
 $(function() {
-  $('#playboyModalLinkContainer').hover(function() {
-    $('#playboy').css('transform', 'scale(1.1)');
-	$('#playboy').css('z-index', '999');
+  $('#yyyModalLinkContainer').hover(function() {
+    $('#yyy').css('transform', 'scale(1.1)');
+	$('#yyy').css('z-index', '999');
 	$('#kojiro').css('z-index', '1');
 	$('#sunnyspot').css('z-index', '1');
 	$('#ella').css('z-index', '1');
 	$('#enterprise').css('z-index', '1');
   }, function() {
     // on mouseout, reset the background colour
-    $('#playboy').css('transform', '');
-	$('#playboy').css('z-index', '');
+    $('#yyy').css('transform', '');
+	$('#yyy').css('z-index', '');
 	$('#kojiro').css('z-index', '');
 	$('#sunnyspot').css('z-index', '');
 	$('#ella').css('z-index', '');
@@ -19,17 +19,17 @@ $(function() {
   });
 });
 
-function playboyOpenModal() {
+function yyyOpenModal() {
 
 (function($) {
 	
-	$('#playboy').css('transform', '');
+	$('#yyy').css('transform', '');
 	
 	// closes the modal link divs
 	document.getElementById('kojiroModalLinkContainer').style.display = 'none';
 	document.getElementById('sunnyspotModalLinkContainer').style.display = 'none';
 	document.getElementById('ellaModalLinkContainer').style.display = 'none';
-	document.getElementById('playboyModalLinkContainer').style.display = 'none';
+	document.getElementById('yyyModalLinkContainer').style.display = 'none';
 	document.getElementById('enterpriseModalLinkContainer').style.display = 'none';
 
 	if (window.matchMedia("(min-width: 48em)").matches) {
@@ -96,30 +96,30 @@ function playboyOpenModal() {
 	$( "#enterprise" ).addClass( "smallViewHide" );
     
     // displays left and right arrows
-    document.getElementById('playboyLeftArrow').style.left = '3.5vw';
-    document.getElementById('playboyLeftArrow').style.opacity = '1';
-    document.getElementById('playboyRightArrow').style.right = '3.5vw';
-    document.getElementById('playboyRightArrow').style.opacity = '1';
+    document.getElementById('yyyLeftArrow').style.left = '3.5vw';
+    document.getElementById('yyyLeftArrow').style.opacity = '1';
+    document.getElementById('yyyRightArrow').style.right = '3.5vw';
+    document.getElementById('yyyRightArrow').style.opacity = '1';
     
     // scales a gallery item into a modal
-    document.getElementById('playboy').style.height = '85vh';
-    document.getElementById('playboy').style.width = '80%';
-    document.getElementById('playboy').style.marginLeft = '10%';
-    document.getElementById('playboy').style.marginRight = '10%';
-    document.getElementById('playboy').style.overflowX = 'hidden';
-    document.getElementById('playboy').style.overflowY = 'scroll';
-    document.getElementById('playboyHeader').style.height = '55%';
-    document.getElementById('playboyMain').style.height = '45%';
-    document.getElementById('playboyMain').style.opacity = '1';
-    document.getElementById('playboyCloseX').style.transform = 'scale(1)';
-    document.getElementById('playboyCloseX').style.opacity = '1';
-    document.getElementById('playboyLabel').style.transform = 'scale(1.3)';
-    document.getElementById('playboyLabel').style.bottom = '3.75em';
-    document.getElementById('playboyLabel').style.width = '38%';
-	document.getElementById('playboyBottomLabel').style.paddingTop = '0.3em';
-	document.getElementById('playboyBottomLabel').style.paddingBottom = '0.4em';
-	document.getElementById('playboyTopLabel').style.paddingLeft = '15px';
-	document.getElementById('playboyBottomLabel').style.paddingLeft = '15px';
+    document.getElementById('yyy').style.height = '85vh';
+    document.getElementById('yyy').style.width = '80%';
+    document.getElementById('yyy').style.marginLeft = '10%';
+    document.getElementById('yyy').style.marginRight = '10%';
+    document.getElementById('yyy').style.overflowX = 'hidden';
+    document.getElementById('yyy').style.overflowY = 'scroll';
+    document.getElementById('yyyHeader').style.height = '55%';
+    document.getElementById('yyyMain').style.height = '45%';
+    document.getElementById('yyyMain').style.opacity = '1';
+    document.getElementById('yyyCloseX').style.transform = 'scale(1)';
+    document.getElementById('yyyCloseX').style.opacity = '1';
+    document.getElementById('yyyLabel').style.transform = 'scale(1.3)';
+    document.getElementById('yyyLabel').style.bottom = '3.75em';
+    document.getElementById('yyyLabel').style.width = '38%';
+	document.getElementById('yyyBottomLabel').style.paddingTop = '0.3em';
+	document.getElementById('yyyBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('yyyTopLabel').style.paddingLeft = '15px';
+	document.getElementById('yyyBottomLabel').style.paddingLeft = '15px';
 	
 	}, 500);
 	
@@ -166,30 +166,30 @@ function playboyOpenModal() {
 	$( "#enterprise" ).addClass( "smallViewHide" );
     
     // displays left and right arrows
-    document.getElementById('playboyLeftArrow').style.left = '3.5vw';
-    document.getElementById('playboyLeftArrow').style.opacity = '1';
-    document.getElementById('playboyRightArrow').style.right = '3.5vw';
-    document.getElementById('playboyRightArrow').style.opacity = '1';
+    document.getElementById('yyyLeftArrow').style.left = '3.5vw';
+    document.getElementById('yyyLeftArrow').style.opacity = '1';
+    document.getElementById('yyyRightArrow').style.right = '3.5vw';
+    document.getElementById('yyyRightArrow').style.opacity = '1';
     
     // scales a gallery item into a modal
-    document.getElementById('playboy').style.height = '85vh';
-    document.getElementById('playboy').style.width = '80%';
-    document.getElementById('playboy').style.marginLeft = '10%';
-    document.getElementById('playboy').style.marginRight = '10%';
-    document.getElementById('playboy').style.overflowX = 'hidden';
-    document.getElementById('playboy').style.overflowY = 'scroll';
-    document.getElementById('playboyHeader').style.height = '55%';
-    document.getElementById('playboyMain').style.height = '45%';
-    document.getElementById('playboyMain').style.opacity = '1';
-    document.getElementById('playboyCloseX').style.transform = 'scale(1)';
-    document.getElementById('playboyCloseX').style.opacity = '1';
-    document.getElementById('playboyLabel').style.transform = 'scale(1.3)';
-    document.getElementById('playboyLabel').style.bottom = '3.75em';
-    document.getElementById('playboyLabel').style.width = '38%';
-	document.getElementById('playboyBottomLabel').style.paddingTop = '0.3em';
-	document.getElementById('playboyBottomLabel').style.paddingBottom = '0.4em';
-	document.getElementById('playboyTopLabel').style.paddingLeft = '15px';
-	document.getElementById('playboyBottomLabel').style.paddingLeft = '15px';
+    document.getElementById('yyy').style.height = '85vh';
+    document.getElementById('yyy').style.width = '80%';
+    document.getElementById('yyy').style.marginLeft = '10%';
+    document.getElementById('yyy').style.marginRight = '10%';
+    document.getElementById('yyy').style.overflowX = 'hidden';
+    document.getElementById('yyy').style.overflowY = 'scroll';
+    document.getElementById('yyyHeader').style.height = '55%';
+    document.getElementById('yyyMain').style.height = '45%';
+    document.getElementById('yyyMain').style.opacity = '1';
+    document.getElementById('yyyCloseX').style.transform = 'scale(1)';
+    document.getElementById('yyyCloseX').style.opacity = '1';
+    document.getElementById('yyyLabel').style.transform = 'scale(1.3)';
+    document.getElementById('yyyLabel').style.bottom = '3.75em';
+    document.getElementById('yyyLabel').style.width = '38%';
+	document.getElementById('yyyBottomLabel').style.paddingTop = '0.3em';
+	document.getElementById('yyyBottomLabel').style.paddingBottom = '0.4em';
+	document.getElementById('yyyTopLabel').style.paddingLeft = '15px';
+	document.getElementById('yyyBottomLabel').style.paddingLeft = '15px';
 	
 	}, 0);
 		
@@ -201,18 +201,18 @@ function playboyOpenModal() {
 }
 
 
-function playboyCloseX() {
+function yyyCloseX() {
 	
 	// removes left and right arrows
-    document.getElementById('playboyLeftArrow').style.left = '';
-    document.getElementById('playboyLeftArrow').style.opacity = '';
-    document.getElementById('playboyRightArrow').style.right = '';
-    document.getElementById('playboyRightArrow').style.opacity = '';
+    document.getElementById('yyyLeftArrow').style.left = '';
+    document.getElementById('yyyLeftArrow').style.opacity = '';
+    document.getElementById('yyyRightArrow').style.right = '';
+    document.getElementById('yyyRightArrow').style.opacity = '';
 	
 	if (window.matchMedia("(min-width: 48em)").matches) {	
-	$("#playboy").animate({ scrollTop: 0 }, 500);
+	$("#yyy").animate({ scrollTop: 0 }, 500);
 	} else {
-	$("#playboy").animate({ scrollTop: 0 }, 0);
+	$("#yyy").animate({ scrollTop: 0 }, 0);
 	}
 	
 	closeX();
@@ -220,47 +220,47 @@ function playboyCloseX() {
 }
 
 
-function playboyLeftArrow() {
+function yyyLeftArrow() {
 	
 
 	
 	
 // closes itself
 
-    document.getElementById('playboy').style.height = '85vh';
-    document.getElementById('playboy').style.width = '0';
-    document.getElementById('playboy').style.opacity = '0';
-    document.getElementById('playboy').style.marginLeft = '0';
-    document.getElementById('playboy').style.marginRight = '0';
-    document.getElementById('playboy').style.marginBottom = '0';
-    document.getElementById('playboyHeader').style.height = '100%';
-    document.getElementById('playboyMain').style.height = '0';
-    document.getElementById('playboyMain').style.opacity = '0';
-	document.getElementById('playboy').style.overflowX = 'auto';
-    document.getElementById('playboy').style.overflowY = 'hidden';
+    document.getElementById('yyy').style.height = '85vh';
+    document.getElementById('yyy').style.width = '0';
+    document.getElementById('yyy').style.opacity = '0';
+    document.getElementById('yyy').style.marginLeft = '0';
+    document.getElementById('yyy').style.marginRight = '0';
+    document.getElementById('yyy').style.marginBottom = '0';
+    document.getElementById('yyyHeader').style.height = '100%';
+    document.getElementById('yyyMain').style.height = '0';
+    document.getElementById('yyyMain').style.opacity = '0';
+	document.getElementById('yyy').style.overflowX = 'auto';
+    document.getElementById('yyy').style.overflowY = 'hidden';
 	
 	if (window.matchMedia("(min-width: 48em)").matches) {	
-	$("#playboy").animate({ scrollTop: 0 }, 500);
+	$("#yyy").animate({ scrollTop: 0 }, 500);
 	} else {
-	$("#playboy").animate({ scrollTop: 0 }, 0);
+	$("#yyy").animate({ scrollTop: 0 }, 0);
 	}
 	
-    document.getElementById('playboyCloseX').style.transform = 'scale(0)';
-    document.getElementById('playboyCloseX').style.opacity = '0';
-    document.getElementById('playboyLabel').style.transform = 'scale(1)';
-    document.getElementById('playboyLabel').style.bottom = '0';
-	document.getElementById('playboyLabel').style.width = '100%';
-	document.getElementById('playboyBottomLabel').style.paddingTop = '0.5em';
-	document.getElementById('playboyBottomLabel').style.paddingBottom = '0.7em';
-	document.getElementById('playboyTopLabel').style.paddingLeft = '35px';
-	document.getElementById('playboyBottomLabel').style.paddingLeft = '35px';
-	$( "#playboy" ).addClass( "smallViewHide" );
+    document.getElementById('yyyCloseX').style.transform = 'scale(0)';
+    document.getElementById('yyyCloseX').style.opacity = '0';
+    document.getElementById('yyyLabel').style.transform = 'scale(1)';
+    document.getElementById('yyyLabel').style.bottom = '0';
+	document.getElementById('yyyLabel').style.width = '100%';
+	document.getElementById('yyyBottomLabel').style.paddingTop = '0.5em';
+	document.getElementById('yyyBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('yyyTopLabel').style.paddingLeft = '35px';
+	document.getElementById('yyyBottomLabel').style.paddingLeft = '35px';
+	$( "#yyy" ).addClass( "smallViewHide" );
     
     // switches out arrow for the proper item
-    document.getElementById('playboyLeftArrow').style.left = '-3.5vw';
-    document.getElementById('playboyLeftArrow').style.opacity = '0';
-    document.getElementById('playboyRightArrow').style.right = '-3.5vw';
-    document.getElementById('playboyRightArrow').style.opacity = '0';
+    document.getElementById('yyyLeftArrow').style.left = '-3.5vw';
+    document.getElementById('yyyLeftArrow').style.opacity = '0';
+    document.getElementById('yyyRightArrow').style.right = '-3.5vw';
+    document.getElementById('yyyRightArrow').style.opacity = '0';
     document.getElementById('ellaLeftArrow').style.left = '3.5vw';
     document.getElementById('ellaLeftArrow').style.opacity = '1';
     document.getElementById('ellaRightArrow').style.right = '3.5vw';
@@ -293,47 +293,47 @@ function playboyLeftArrow() {
 
 
 
-function playboyRightArrow() {
+function yyyRightArrow() {
 	
 
 	
 	
 // closes itself
 
-    document.getElementById('playboy').style.height = '85vh';
-    document.getElementById('playboy').style.width = '0';
-    document.getElementById('playboy').style.opacity = '0';
-    document.getElementById('playboy').style.marginLeft = '0';
-    document.getElementById('playboy').style.marginRight = '0';
-    document.getElementById('playboy').style.marginBottom = '0';
-    document.getElementById('playboyHeader').style.height = '100%';
-    document.getElementById('playboyMain').style.height = '0';
-    document.getElementById('playboyMain').style.opacity = '0';
-	document.getElementById('playboy').style.overflowX = 'auto';
-    document.getElementById('playboy').style.overflowY = 'hidden';
+    document.getElementById('yyy').style.height = '85vh';
+    document.getElementById('yyy').style.width = '0';
+    document.getElementById('yyy').style.opacity = '0';
+    document.getElementById('yyy').style.marginLeft = '0';
+    document.getElementById('yyy').style.marginRight = '0';
+    document.getElementById('yyy').style.marginBottom = '0';
+    document.getElementById('yyyHeader').style.height = '100%';
+    document.getElementById('yyyMain').style.height = '0';
+    document.getElementById('yyyMain').style.opacity = '0';
+	document.getElementById('yyy').style.overflowX = 'auto';
+    document.getElementById('yyy').style.overflowY = 'hidden';
 	
 	if (window.matchMedia("(min-width: 48em)").matches) {	
-	$("#playboy").animate({ scrollTop: 0 }, 500);
+	$("#yyy").animate({ scrollTop: 0 }, 500);
 	} else {
-	$("#playboy").animate({ scrollTop: 0 }, 0);
+	$("#yyy").animate({ scrollTop: 0 }, 0);
 	}
 	
-    document.getElementById('playboyCloseX').style.transform = 'scale(0)';
-    document.getElementById('playboyCloseX').style.opacity = '0';
-    document.getElementById('playboyLabel').style.transform = 'scale(1)';
-    document.getElementById('playboyLabel').style.bottom = '0';
-	document.getElementById('playboyLabel').style.width = '100%';
-	document.getElementById('playboyBottomLabel').style.paddingTop = '0.5em';
-	document.getElementById('playboyBottomLabel').style.paddingBottom = '0.7em';
-	document.getElementById('playboyTopLabel').style.paddingLeft = '35px';
-	document.getElementById('playboyBottomLabel').style.paddingLeft = '35px';
-	$( "#playboy" ).addClass( "smallViewHide" );
+    document.getElementById('yyyCloseX').style.transform = 'scale(0)';
+    document.getElementById('yyyCloseX').style.opacity = '0';
+    document.getElementById('yyyLabel').style.transform = 'scale(1)';
+    document.getElementById('yyyLabel').style.bottom = '0';
+	document.getElementById('yyyLabel').style.width = '100%';
+	document.getElementById('yyyBottomLabel').style.paddingTop = '0.5em';
+	document.getElementById('yyyBottomLabel').style.paddingBottom = '0.7em';
+	document.getElementById('yyyTopLabel').style.paddingLeft = '35px';
+	document.getElementById('yyyBottomLabel').style.paddingLeft = '35px';
+	$( "#yyy" ).addClass( "smallViewHide" );
     
     // switches out arrow for the proper item
-    document.getElementById('playboyLeftArrow').style.left = '-3.5vw';
-    document.getElementById('playboyLeftArrow').style.opacity = '0';
-    document.getElementById('playboyRightArrow').style.right = '-3.5vw';
-    document.getElementById('playboyRightArrow').style.opacity = '0';
+    document.getElementById('yyyLeftArrow').style.left = '-3.5vw';
+    document.getElementById('yyyLeftArrow').style.opacity = '0';
+    document.getElementById('yyyRightArrow').style.right = '-3.5vw';
+    document.getElementById('yyyRightArrow').style.opacity = '0';
     document.getElementById('enterpriseLeftArrow').style.left = '3.5vw';
     document.getElementById('enterpriseLeftArrow').style.opacity = '1';
     // NONE document.getElementById('enterpriseRightArrow').style.right = '3.5vw';
