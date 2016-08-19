@@ -46,12 +46,10 @@ $(function() {
 
 <!-- loads modal expanding JavaScript -->
 <script src="js/kojiroModal.js"></script>
-<script src="js/ellaModal.js"></script>
+<script src="js/sunnyspotModal.js"></script>
 <script src="js/ellaModal.js"></script>
 <script src="js/playboyModal.js"></script>
 <script src="js/enterpriseModal.js"></script>
-<script src="js/chirprModal.js"></script>
-<script src="js/newitemModal.js"></script>
 
 <!-- loads modal expanding JavaScript -->
 <script src="js/closeX.js"></script>
@@ -432,27 +430,27 @@ $(function() {
     
 
     
-    <!-- ella gallery section -->
-    <div class="column column-6 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="ella"> 
+    <!-- sunnyspot gallery section -->
+    <div class="column column-6 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="sunnyspot"> 
       
       <!-- label for the gallery item becomes modal header -->
-      <div class="modalHeader imgFitBox" id="ellaHeader"> 
+      <div class="modalHeader imgFitBox" id="sunnyspotHeader"> 
       
 
         
         <!-- label for gallery item -->
-               <div class="boxLabel threeDaccel" id="ellaLabel">
+               <div class="boxLabel threeDaccel" id="sunnyspotLabel">
                
                <div class="gradient">
-          <h5 class="white topLabel textShadowStrong" id="ellaTopLabel">ELLA</h5>
+          <h5 class="white topLabel textShadowStrong" id="sunnyspotTopLabel">A SUNNY SPOT</h5>
           </div>
           
-            <h6 class="tealBG white bottomLabel boxShadow" id="ellaBottomLabel">24 hour app challenge</h6>
+            <h6 class="tealBG white bottomLabel boxShadow" id="sunnyspotBottomLabel">short documentary</h6>
         </div>
         </div>
       
       <!-- main section of modal is hidden until expanded -->
-           <div class="modalMain threeDaccel" id="ellaMain">
+           <div class="modalMain threeDaccel" id="sunnyspotMain">
       
     
       <div class="marginLeftRight5em">
@@ -467,8 +465,8 @@ $(function() {
     <p class="grey marginBottom2em">This wasn't the usual design process. In the <span class="italic">Interface Design course</span>, we were given 24 hours to come up with an app design that would help would-be volunteers connect with charitable organizations. It was an opportunity to come up with a finished-looking design in a quick span of time.</p>
    
     <figure>
-    <img src="img/gallery/ella/gallery6.png" width="100%" class="marginBottom1em">
-    <figcaption class="grey">A showcase of various pages from the Ella app concept.</figcaption>
+    <img src="img/gallery/sunnyspot/gallery6.png" width="100%" class="marginBottom1em">
+    <figcaption class="grey">A showcase of various pages from the sunnyspot app concept.</figcaption>
 </figure>
     
         
@@ -479,7 +477,7 @@ $(function() {
 <div class="row">
 <div class="column column-6">
 <figure>
-<img src="img/gallery/ella/gallerylogo.png" width="100%" class="dropShadow marginBottom1em">
+<img src="img/gallery/sunnyspot/gallerylogo.png" width="100%" class="dropShadow marginBottom1em">
 <figcaption class="grey">An excerpt from my sketchbook, showing an early form of the "bubble concept" to help users select charity categories of their interest</figcaption>
 </figure>
 </div>
@@ -496,7 +494,7 @@ $(function() {
 <div class="row">
 <div class="column column-6">
 <figure>
-<img src="img/gallery/ella/gallery2.png" width="100%" class="dropShadow marginBottom1point5em">
+<img src="img/gallery/sunnyspot/gallery2.png" width="100%" class="dropShadow marginBottom1point5em">
 <figcaption class="grey">The first page that a user will see, offering social media-based login options</figcaption>
 </figure>
 </div>
@@ -510,8 +508,8 @@ $(function() {
 <hr>
 
 <div class="row">
-<div class="column column-6"><figure><img src="img/gallery/ella/gallery3.png" width="100%" class="dropShadow marginBottom1point5em">
-<figcaption class="grey">The onboarding experience of ella, showing a field of bubbles with different tpyes of charities that the user can select</figcaption>
+<div class="column column-6"><figure><img src="img/gallery/sunnyspot/gallery3.png" width="100%" class="dropShadow marginBottom1point5em">
+<figcaption class="grey">The onboarding experience of sunnyspot, showing a field of bubbles with different tpyes of charities that the user can select</figcaption>
 </figure>
 </div>
 <div class="column column-6 paddingLeft2em">
@@ -526,7 +524,7 @@ $(function() {
 <div class="row">
 <div class="column column-6">
 <figure>
-<img src="img/gallery/ella/gallery4.png" width="100%" class="dropShadow marginBottom1point5em">
+<img src="img/gallery/sunnyspot/gallery4.png" width="100%" class="dropShadow marginBottom1point5em">
 <figcaption class="grey">The main feed, called "opportunities". By default it shows suggestions based on the user's previous activity.</figcaption>
 </figure>
 </div>
@@ -542,7 +540,7 @@ $(function() {
 <div class="row">
 <div class="column column-6">
 <figure>
-<img src="img/gallery/ella/gallery5.png" width="100%" class="dropShadow marginBottom2point5em">
+<img src="img/gallery/sunnyspot/gallery5.png" width="100%" class="dropShadow marginBottom2point5em">
 <figcaption class="grey">The "favorite" screen, showing charities that the user wants to remember.</figcaption>
 </figure>
 </div>
@@ -572,8 +570,8 @@ $(function() {
       
       
         <!-- this link expands a gallery box into a modal --> 
-      <div class="modalLinkContainer" id="ellaModalLinkContainer">
-      <a href="javascript:void(0)" onclick="ellaOpenModal()">
+      <div class="modalLinkContainer" id="sunnyspotModalLinkContainer">
+      <a href="javascript:void(0)" onclick="sunnyspotOpenModal()">
       <div class="modalLink">
       </div>
       </a>
@@ -608,9 +606,9 @@ $(function() {
     </a> 
     
 
-     <!-- close X for ella -->
-          <a href="javascript:void(0)" onclick="ellaCloseX()">
-     <div class="closeX dropShadow" id="ellaCloseX">
+     <!-- close X for sunnyspot -->
+          <a href="javascript:void(0)" onclick="sunnyspotCloseX()">
+     <div class="closeX dropShadow" id="sunnyspotCloseX">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
 	.xBG{fill:rgb(35, 174, 194);}
 	.xIcon{fill:rgb(255, 255, 255);}
@@ -618,9 +616,9 @@ $(function() {
       </div>
       </a>
     
-    <!-- left arrow for ella --> 
-    <a href="#javascript:void(0)" onclick="ellaLeftArrow()">
-    <div class="leftArrow dropShadow" id="ellaLeftArrow">
+    <!-- left arrow for sunnyspot --> 
+    <a href="#javascript:void(0)" onclick="sunnyspotLeftArrow()">
+    <div class="leftArrow dropShadow" id="sunnyspotLeftArrow">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
 	.arrowCircle{fill:#FFFFFF;}
 	.arrowFill{fill:#21AEC2;}
@@ -628,9 +626,9 @@ $(function() {
     </div>
     </a> 
     
-    <!-- right arrow for ella --> 
-    <a href="javascript:void(0)" onclick="ellaRightArrow()">
-    <div class="rightArrow dropShadow" id="ellaRightArrow">
+    <!-- right arrow for sunnyspot --> 
+    <a href="javascript:void(0)" onclick="sunnyspotRightArrow()">
+    <div class="rightArrow dropShadow" id="sunnyspotRightArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
 	.arrowCircle{fill:#FFFFFF;}
 	.arrowFill{fill:#21AEC2;}
@@ -638,9 +636,9 @@ $(function() {
     </div>
     </a> 
     
-    <!-- close X for ella-->
-          <a href="javascript:void(0)" onclick="ellaCloseX()">
-         <div class="closeX dropShadow" id="ellaCloseX">
+    <!-- close X for sunnyspot-->
+          <a href="javascript:void(0)" onclick="sunnyspotCloseX()">
+         <div class="closeX dropShadow" id="sunnyspotCloseX">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
 	.xBG{fill:rgb(35, 174, 194);}
 	.xIcon{fill:rgb(255, 255, 255);}
@@ -648,9 +646,9 @@ $(function() {
       </div>
       </a>
     
-    <!-- left arrow for ella --> 
-    <a href="javascript:void(0)" onclick="ellaLeftArrow()">
-    <div class="leftArrow dropShadow" id="ellaLeftArrow">
+    <!-- left arrow for sunnyspot --> 
+    <a href="javascript:void(0)" onclick="sunnyspotLeftArrow()">
+    <div class="leftArrow dropShadow" id="sunnyspotLeftArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
 	.arrowCircle{fill:#FFFFFF;}
 	.arrowFill{fill:#21AEC2;}
@@ -658,9 +656,9 @@ $(function() {
     </div>
     </a> 
     
-    <!-- right arrow for ella --> 
-    <a href="javascript:void(0)" onclick="ellaRightArrow()">
-    <div class="rightArrow dropShadow" id="ellaRightArrow">
+    <!-- right arrow for sunnyspot --> 
+    <a href="javascript:void(0)" onclick="sunnyspotRightArrow()">
+    <div class="rightArrow dropShadow" id="sunnyspotRightArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
 	.arrowCircle{fill:#FFFFFF;}
 	.arrowFill{fill:#21AEC2;}
@@ -675,28 +673,28 @@ $(function() {
   <!-- wraps the second row of gallery items -->
   <div class="row galleryRow" id="secondRow"> 
     
-    <!-- playboy gallery section -->
-    <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="playboy"> 
+    <!-- ella gallery section -->
+    <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="ella"> 
       
       <!-- label for the gallery item becomes modal header -->
-      <div class="modalHeader imgFitBox" id="playboyHeader">
+      <div class="modalHeader imgFitBox" id="ellaHeader">
       
 
         
         <!-- label for gallery item -->
-        <div class="boxLabel threeDaccel" id="playboyLabel">
+        <div class="boxLabel threeDaccel" id="ellaLabel">
         
         <div class="gradient">
-          <h5 class="white topLabel textShadowStrong" id="playboyTopLabel">PLAYBOY</h5>
+          <h5 class="white topLabel textShadowStrong" id="ellaTopLabel">ELLA</h5>
           </div>
           
-            <h6 class="tealBG white bottomLabel boxShadow" id="playboyBottomLabel">writer-focused website proposal</h6>
+            <h6 class="tealBG white bottomLabel boxShadow" id="ellaBottomLabel">24 hour app challenge</h6>
         </div>
 
         </div>
       
       <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain threeDaccel" id="playboyMain">
+      <div class="modalMain threeDaccel" id="ellaMain">
 
       <div class="marginLeftRight5em">
 
@@ -755,7 +753,7 @@ $(function() {
 
 <div class="row">
 <div class="column column-6"><figure><img src="img/gallery/ella/gallery3.png" width="100%" class="dropShadow marginBottom1point5em">
-<figcaption class="grey">The onboarding experience of ella, showing a field of bubbles with different tpyes of charities that the user can select</figcaption>
+<figcaption class="grey">The onboarding experience of Ella, showing a field of bubbles with different tpyes of charities that the user can select</figcaption>
 </figure>
 </div>
 <div class="column column-6 paddingLeft2em">
@@ -805,8 +803,8 @@ $(function() {
       </div>
       
         <!-- this link expands a gallery box into a modal --> 
-      <div class="modalLinkContainer" id="playboyModalLinkContainer">
-      <a href="javascript:void(0)" onclick="playboyOpenModal()">
+      <div class="modalLinkContainer" id="ellaModalLinkContainer">
+      <a href="javascript:void(0)" onclick="ellaOpenModal()">
       <div class="modalLink">
       </div>
       </a>
@@ -815,29 +813,64 @@ $(function() {
      </div>
       
     
+        <!-- playboy gallery section -->
+    <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box imgFitBox threeDaccel" id="playboy"> 
+      
+      <!-- label for the gallery item becomes modal header -->
+      <div class="modalHeader imgFitBox" id="playboyHeader"> 
+      
+
+        
+        <!-- label for gallery item -->
+        <div class="boxLabel threeDaccel" id="playboyLabel">
+        
+        <div class="gradient">
+          <h5 class="white topLabel textShadowStrong" id="playboyTopLabel">playboy</h5>
+          </div>
+          
+            <h6 class="tealBG white bottomLabel boxShadow" id="playboyBottomLabel">Car Drop app proposal</h6>
+        </div>
+        
+        </div>
+      
+      <!-- main section of modal is hidden until expanded -->
+      <div class="modalMain marginLeftRight5em" id="playboyMain">
+         <p>(Coming Soon)</p><p>Sorry if you're seeing this. It will never be shown to a potential employer until it's fixed ;)</p>
+      </div>
+      
+        <!-- this link expands a gallery box into a modal --> 
+      <div class="modalLinkContainer" id="playboyModalLinkContainer">
+      <a href="javascript:void(0)" onclick="playboyOpenModal()">
+      <div class="modalLink">
+      </div>
+      </a>
+      </div>
+      
+ </div>
+    
+    
+    
+    
         <!-- enterprise gallery section -->
     <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box imgFitBox threeDaccel" id="enterprise"> 
       
       <!-- label for the gallery item becomes modal header -->
       <div class="modalHeader imgFitBox" id="enterpriseHeader"> 
-      
-
         
         <!-- label for gallery item -->
-        <div class="boxLabel threeDaccel" id="enterpriseLabel">
-        
-        <div class="gradient">
-          <h5 class="white topLabel textShadowStrong" id="enterpriseTopLabel">ENTERPRISE</h5>
+                        <div class="boxLabel threeDaccel" id="enterpriseLabel">
+                        
+                        <div class="gradient">
+          <h5 class="white topLabel textShadowStrong" id="enterpriseTopLabel">CHIRPR</h5>
           </div>
-          
-            <h6 class="tealBG white bottomLabel boxShadow" id="enterpriseBottomLabel">Car Drop app proposal</h6>
+            <h6 class="tealBG white bottomLabel boxShadow" id="enterpriseBottomLabel">Social media parody card game</h6>
         </div>
         
         </div>
       
       <!-- main section of modal is hidden until expanded -->
       <div class="modalMain marginLeftRight5em" id="enterpriseMain">
-         <p>(Coming Soon)</p><p>Sorry if you're seeing this. It will never be shown to a potential employer until it's fixed ;)</p>
+        <p>(Coming Soon)</p><p>Sorry if you're seeing this. It will never be shown to a potential employer until it's fixed ;)</p>
       </div>
       
         <!-- this link expands a gallery box into a modal --> 
@@ -849,49 +882,14 @@ $(function() {
       </div>
       
  </div>
-    
-    
-    
-    
-        <!-- newitem gallery section -->
-    <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box imgFitBox threeDaccel" id="newitem"> 
-      
-      <!-- label for the gallery item becomes modal header -->
-      <div class="modalHeader imgFitBox" id="newitemHeader"> 
-        
-        <!-- label for gallery item -->
-                        <div class="boxLabel threeDaccel" id="newitemLabel">
-                        
-                        <div class="gradient">
-          <h5 class="white topLabel textShadowStrong" id="newitemTopLabel">CHIRPR</h5>
-          </div>
-            <h6 class="tealBG white bottomLabel boxShadow" id="newitemBottomLabel">Social media parody card game</h6>
-        </div>
-        
-        </div>
-      
-      <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain marginLeftRight5em" id="newitemMain">
-        <p>(Coming Soon)</p><p>Sorry if you're seeing this. It will never be shown to a potential employer until it's fixed ;)</p>
-      </div>
-      
-        <!-- this link expands a gallery box into a modal --> 
-      <div class="modalLinkContainer" id="newitemModalLinkContainer">
-      <a href="javascript:void(0)" onclick="newitemOpenModal()">
-      <div class="modalLink">
-      </div>
-      </a>
-      </div>
-      
- </div>
  
  
     
     <!-- arrows for each expanded modal in second row --> 
     
-     <!-- close X for Playboy -->
-     <a href="javascript:void(0)" onclick="playboyCloseX()">
-       <div class="closeX dropShadow" id="playboyCloseX">
+     <!-- close X for ella -->
+     <a href="javascript:void(0)" onclick="ellaCloseX()">
+       <div class="closeX dropShadow" id="ellaCloseX">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
 	.xBG{fill:rgb(35, 174, 194);}
 	.xIcon{fill:rgb(255, 255, 255);}
@@ -899,6 +897,36 @@ $(function() {
       </div>
       </a>  
       
+    <!-- left arrow for ella --> 
+    <a href="javascript:void(0)" onclick="ellaLeftArrow()">
+    <div class="leftArrow dropShadow" id="ellaLeftArrow">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+	.arrowCircle{fill:#FFFFFF;}
+	.arrowFill{fill:#21AEC2;}
+</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M25 33l1.4-1.4 -9.5-9.5c-0.4-0.4-0.8-0.8-1.1-1.1l10.6-10.6L25 9 13 21l0.7 0.7C13.8 21.8 25 33 25 33z"/></svg>
+    </div>
+    </a> 
+    
+    <!-- right arrow for ella --> 
+    <a href="javascript:void(0)" onclick="ellaRightArrow()">
+    <div class="rightArrow dropShadow" id="ellaRightArrow">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+	.arrowCircle{fill:#FFFFFF;}
+	.arrowFill{fill:#21AEC2;}
+</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/></svg>
+    </div>
+    </a> 
+    
+    <!-- close X for playboy -->
+          <a href="javascript:void(0)" onclick="playboyCloseX()">
+        <div class="closeX dropShadow" id="playboyCloseX">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
+	.xBG{fill:rgb(35, 174, 194);}
+	.xIcon{fill:rgb(255, 255, 255);}
+</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
+      </div>
+      </a>
+    
     <!-- left arrow for playboy --> 
     <a href="javascript:void(0)" onclick="playboyLeftArrow()">
     <div class="leftArrow dropShadow" id="playboyLeftArrow">
@@ -912,36 +940,6 @@ $(function() {
     <!-- right arrow for playboy --> 
     <a href="javascript:void(0)" onclick="playboyRightArrow()">
     <div class="rightArrow dropShadow" id="playboyRightArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
-	.arrowCircle{fill:#FFFFFF;}
-	.arrowFill{fill:#21AEC2;}
-</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/></svg>
-    </div>
-    </a> 
-    
-    <!-- close X for enterprise -->
-          <a href="javascript:void(0)" onclick="enterpriseCloseX()">
-        <div class="closeX dropShadow" id="enterpriseCloseX">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
-	.xBG{fill:rgb(35, 174, 194);}
-	.xIcon{fill:rgb(255, 255, 255);}
-</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
-      </div>
-      </a>
-    
-    <!-- left arrow for enterprise --> 
-    <a href="javascript:void(0)" onclick="enterpriseLeftArrow()">
-    <div class="leftArrow dropShadow" id="enterpriseLeftArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
-	.arrowCircle{fill:#FFFFFF;}
-	.arrowFill{fill:#21AEC2;}
-</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M25 33l1.4-1.4 -9.5-9.5c-0.4-0.4-0.8-0.8-1.1-1.1l10.6-10.6L25 9 13 21l0.7 0.7C13.8 21.8 25 33 25 33z"/></svg>
-    </div>
-    </a> 
-    
-    <!-- right arrow for enterprise --> 
-    <a href="javascript:void(0)" onclick="enterpriseRightArrow()">
-    <div class="rightArrow dropShadow" id="enterpriseRightArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
 	.arrowCircle{fill:#FFFFFF;}
 	.arrowFill{fill:#21AEC2;}
@@ -979,9 +977,9 @@ $(function() {
     </div>
     </a> 
     
-    <!-- close X for newitem -->
-          <a href="javascript:void(0)" onclick="newitemCloseX()">
-         <div class="closeX dropShadow" id="newitemCloseX">
+    <!-- close X for enterprise -->
+          <a href="javascript:void(0)" onclick="enterpriseCloseX()">
+         <div class="closeX dropShadow" id="enterpriseCloseX">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
 	.xBG{fill:rgb(35, 174, 194);}
 	.xIcon{fill:rgb(255, 255, 255);}
@@ -989,9 +987,9 @@ $(function() {
       </div>
       </a>
     
-    <!-- left arrow for newitem --> 
-    <a href="javascript:void(0)" onclick="newitemLeftArrow()">
-    <div class="leftArrow dropShadow" id="newitemLeftArrow">
+    <!-- left arrow for enterprise --> 
+    <a href="javascript:void(0)" onclick="enterpriseLeftArrow()">
+    <div class="leftArrow dropShadow" id="enterpriseLeftArrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
 	.arrowCircle{fill:#FFFFFF;}
 	.arrowFill{fill:#21AEC2;}
@@ -999,7 +997,7 @@ $(function() {
     </div>
     </a> 
     
-    <!-- right arrow for newitem --> 
+    <!-- right arrow for enterprise --> 
     <!-- NONE -->
     
 </div>

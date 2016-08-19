@@ -4,10 +4,10 @@ function closeX() {
 	
 	// opens the modal link divs
 	document.getElementById('kojiroModalLinkContainer').style.display = '';
+	document.getElementById('sunnyspotModalLinkContainer').style.display = '';
 	document.getElementById('ellaModalLinkContainer').style.display = '';
 	document.getElementById('playboyModalLinkContainer').style.display = '';
 	document.getElementById('enterpriseModalLinkContainer').style.display = '';
-	document.getElementById('newitemModalLinkContainer').style.display = '';
 	
 	// changes the height of the wrapper around the gallery
 	document.getElementById('galleryHeightWrapper').style.minHeight = '';
@@ -42,6 +42,28 @@ function closeX() {
 	document.getElementById('kojiroBottomLabel').style.paddingBottom = '';
 	document.getElementById('kojiroTopLabel').style.paddingLeft = '';
 	document.getElementById('kojiroBottomLabel').style.paddingLeft = '';
+	
+	document.getElementById('sunnyspot').style.height = '';
+    document.getElementById('sunnyspot').style.width = '';
+    document.getElementById('sunnyspot').style.opacity = '';
+    document.getElementById('sunnyspot').style.marginLeft = '';
+    document.getElementById('sunnyspot').style.marginRight = '';
+    document.getElementById('sunnyspot').style.marginBottom = '';
+    document.getElementById('sunnyspot').style.overflowX = 'auto';
+    document.getElementById('sunnyspot').style.overflowY = 'hidden';
+	$( "#sunnyspot" ).removeClass( "smallViewHide" );
+    document.getElementById('sunnyspotHeader').style.height = '';
+    document.getElementById('sunnyspotMain').style.height = '';
+    document.getElementById('sunnyspotMain').style.opacity = '';
+    document.getElementById('sunnyspotCloseX').style.transform = '';
+    document.getElementById('sunnyspotCloseX').style.opacity = '';
+    document.getElementById('sunnyspotLabel').style.transform = '';
+    document.getElementById('sunnyspotLabel').style.bottom = '';
+	document.getElementById('sunnyspotLabel').style.width = '';
+	document.getElementById('sunnyspotBottomLabel').style.paddingTop = '';
+	document.getElementById('sunnyspotBottomLabel').style.paddingBottom = '';
+	document.getElementById('sunnyspotTopLabel').style.paddingLeft = '';
+	document.getElementById('sunnyspotBottomLabel').style.paddingLeft = '';
 	
 	document.getElementById('ella').style.height = '';
     document.getElementById('ella').style.width = '';
@@ -108,28 +130,6 @@ function closeX() {
 	document.getElementById('enterpriseBottomLabel').style.paddingBottom = '';
 	document.getElementById('enterpriseTopLabel').style.paddingLeft = '';
 	document.getElementById('enterpriseBottomLabel').style.paddingLeft = '';
-	
-	document.getElementById('newitem').style.height = '';
-    document.getElementById('newitem').style.width = '';
-    document.getElementById('newitem').style.opacity = '';
-    document.getElementById('newitem').style.marginLeft = '';
-    document.getElementById('newitem').style.marginRight = '';
-    document.getElementById('newitem').style.marginBottom = '';
-    document.getElementById('newitem').style.overflowX = 'auto';
-    document.getElementById('newitem').style.overflowY = 'hidden';
-	$( "#newitem" ).removeClass( "smallViewHide" );
-    document.getElementById('newitemHeader').style.height = '';
-    document.getElementById('newitemMain').style.height = '';
-    document.getElementById('newitemMain').style.opacity = '';
-    document.getElementById('newitemCloseX').style.transform = '';
-    document.getElementById('newitemCloseX').style.opacity = '';
-    document.getElementById('newitemLabel').style.transform = '';
-    document.getElementById('newitemLabel').style.bottom = '';
-	document.getElementById('newitemLabel').style.width = '';
-	document.getElementById('newitemBottomLabel').style.paddingTop = '';
-	document.getElementById('newitemBottomLabel').style.paddingBottom = '';
-	document.getElementById('newitemTopLabel').style.paddingLeft = '';
-	document.getElementById('newitemBottomLabel').style.paddingLeft = '';
 	
 	// adds the gallery title
     document.getElementById('myWork').style.height = '';
