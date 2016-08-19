@@ -57,9 +57,6 @@ function chirprOpenModal() {
     document.getElementById('arrowDown').style.display = 'none';
     document.getElementById('aboutMe').style.display = 'none';
     document.getElementById('porthole').style.display = 'none';
-	
-	// TEMP DELETE LATER
-	document.getElementById('webdesign').style.display = 'none';
 
     // removes the gallery title
     document.getElementById('myWork').style.height = '0';
@@ -139,9 +136,6 @@ function chirprOpenModal() {
     document.getElementById('arrowDown').style.display = 'none';
     document.getElementById('aboutMe').style.display = 'none';
     document.getElementById('porthole').style.display = 'none';
-	
-	// TEMP DELETE LATER
-	document.getElementById('webdesign').style.display = 'none';
 
     // removes the gallery title
     document.getElementById('myWork').style.height = '0';
