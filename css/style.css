@@ -87,6 +87,11 @@ canvas {
 .marginAuto {
 	margin: auto;
 }
+
+.marginBottomPoint2em {
+	margin-bottom: 0.2em;
+}
+
 .marginBottomPoint75em {
 	margin-bottom: 0.75em;
 }
