@@ -83,6 +83,16 @@ canvas {
 	padding-right: 1%;
 }
 
+.paddingForLargeViewports {
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
+.paddingForLargeViewportsContacts {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
 /* margins */
 .marginAuto {
 	margin: auto;
@@ -538,6 +548,90 @@ min-height: 55vh;
 	min-height: 55vh;
 }
 
+/* adds padding on very large viewports */
+@media only screen and (max-width: 300em) {
+	
+	.paddingForLargeViewports {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.paddingForLargeViewportsContacts {
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+	
+	
+}
+@media only screen and (max-width: 187.5em) {
+	
+	.paddingForLargeViewports {
+	padding-left: 15%;
+	padding-right: 15%;
+}
+	
+	.paddingForLargeViewportsContacts {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+	
+}
+@media only screen and (max-width: 125em) {
+	
+	.paddingForLargeViewports {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.paddingForLargeViewportsContacts {
+	padding-left: 12%;
+	padding-right: 12%;
+}
+	
+}
+@media only screen and (max-width: 93.75em) {
+	
+	.paddingForLargeViewports {
+	padding-left: 7%;
+	padding-right: 7%;
+}
+
+.paddingForLargeViewportsContacts {
+	padding-left: 6%;
+	padding-right: 6%;
+}
+	
+}
+@media only screen and (max-width: 81.25em) {
+	
+	.paddingForLargeViewports {
+	padding-left: 5%;
+	padding-right: 5%;
+	
+	
+}
+
+.paddingForLargeViewportsContacts {
+	padding-left: 3%;
+	padding-right: 3%;
+}
+	
+}
+@media only screen and (max-width: 75em) {
+	
+	.paddingForLargeViewports {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.paddingForLargeViewportsContacts {
+	padding-left: 0;
+	padding-right: 0;
+}
+	
+}
+
 /* incrementally reduces the margin on the sides of the screen */
 @media only screen and (max-width: 68.75em) {
 	
@@ -581,6 +675,7 @@ min-height: 55vh;
 	margin-left: 5em;
 	margin-right: 5em;
 }
+
 	
 }
 
