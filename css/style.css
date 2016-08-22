@@ -824,6 +824,21 @@ min-height: 55vh;
 .rightArrow {
 	width: 2.5em;
 }
+
+.button {
+	display: block;
+	margin-bottom: 1.5em;
+}
+.buttonResume {
+	margin-right: auto;
+}
+.marginLeftRight10em {
+	margin-left: 2.5em;
+	margin-right: 2.5em;
+}
+
+}
+@media only screen and (max-width: 25em) {
 }
 
 #webdesign {
