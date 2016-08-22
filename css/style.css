@@ -306,17 +306,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 /* drop shadows */
 .boxShadow {
-	box-shadow: 2px 2px 16px rgba(0,0,0,0.3);
+	box-shadow: 4px 4px 20px rgba(0,0,0,0.3);
 }
 
 .dropShadow {
--webkit-filter: drop-shadow(2px 2px 16px rgba(0,0,0,0.3));
-	filter: drop-shadow(2px 2px 16px rgba(0,0,0,0.3));
+-webkit-filter: drop-shadow(4px 4px 20px rgba(0,0,0,0.3));
+	filter: drop-shadow(4px 4px 20px rgba(0,0,0,0.3));
 	
 }
 
 .textShadowStrong {
-	text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.7);
+	text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.7);
 }
 
 
