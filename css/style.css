@@ -422,14 +422,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .modalFooter {
 	width: 100%;
-	padding-top: 1em;
-	padding-bottom: 1.25em;
+	padding-top: 1.25em;
+	padding-bottom: 1.5em;
 	margin: 0;
 	background-color: rgb(35, 174, 194);
 }
 .modalFooterText {
 	text-align: right;
-	padding-right: 1.5em;
+	padding-right: 2em;
 }
 
 /* close X button */

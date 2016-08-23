@@ -127,7 +127,7 @@ function playboyOpenModal() {
 	document.getElementById('sunnyspot').style.display = 'none';
 	document.getElementById('ella').style.display = 'none';
 	document.getElementById('enterprise').style.display = 'none';
-		}, 1000);
+		}, 510);
 	
 	}, 500);
 	

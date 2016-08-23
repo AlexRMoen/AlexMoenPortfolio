@@ -123,7 +123,7 @@ function sunnyspotOpenModal() {
 	document.getElementById('ella').style.display = 'none';
 	document.getElementById('playboy').style.display = 'none';
 	document.getElementById('enterprise').style.display = 'none';
-		}, 1000);
+		}, 510);
 	
 	}, 500);
 	
