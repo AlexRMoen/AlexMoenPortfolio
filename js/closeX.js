@@ -2,6 +2,13 @@
 
 function closeX() {
 	
+	// starts displaying other modals
+	document.getElementById('kojiro').style.display = '';
+	document.getElementById('ella').style.display = '';
+	document.getElementById('sunnyspot').style.display = '';
+	document.getElementById('ella').style.display = '';
+	document.getElementById('playboy').style.display = '';
+	
 	// opens the modal link divs
 	document.getElementById('kojiroModalLinkContainer').style.display = '';
 	document.getElementById('sunnyspotModalLinkContainer').style.display = '';

@@ -126,6 +126,10 @@ canvas {
 	margin-bottom: 2.5em;
 }
 
+.marginBottom4em {
+	margin-bottom: 4em;
+}
+
 .marginLeftRight5em {
 	margin-left: 5em;
 	margin-right: 5em;
@@ -418,13 +422,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .modalFooter {
 	width: 100%;
-	padding-top: 0.75em;
-	padding-bottom: 1em;
-	padding-left: 2em;
-	padding-right: 2em;
+	padding-top: 1em;
+	padding-bottom: 1.25em;
 	margin: 0;
 	background-color: rgb(35, 174, 194);
+}
+.modalFooterText {
 	text-align: right;
+	padding-right: 1.5em;
 }
 
 /* close X button */

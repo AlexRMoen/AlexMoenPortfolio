@@ -119,6 +119,14 @@ function kojiroOpenModal() {
 	document.getElementById('kojiroTopLabel').style.paddingLeft = '15px';
 	document.getElementById('kojiroBottomLabel').style.paddingLeft = '15px';
 	
+	setTimeout(function() {
+	// stops displaying other modals
+	document.getElementById('sunnyspot').style.display = 'none';
+	document.getElementById('ella').style.display = 'none';
+	document.getElementById('playboy').style.display = 'none';
+	document.getElementById('enterprise').style.display = 'none';
+		}, 1000);
+	
 	}, 500);
 	
 	} else {
@@ -186,6 +194,14 @@ function kojiroOpenModal() {
 	document.getElementById('kojiroTopLabel').style.paddingLeft = '15px';
 	document.getElementById('kojiroBottomLabel').style.paddingLeft = '15px';
 	
+	
+	// stops displaying other modals
+	document.getElementById('sunnyspot').style.display = 'none';
+	document.getElementById('ella').style.display = 'none';
+	document.getElementById('playboy').style.display = 'none';
+	document.getElementById('enterprise').style.display = 'none';
+	
+	
 	}, 0);
 	
 	}
@@ -198,6 +214,12 @@ function kojiroOpenModal() {
 
 
 function kojiroCloseX() {
+	
+	// starts displaying other modals
+	document.getElementById('sunnyspot').style.display = '';
+	document.getElementById('ella').style.display = '';
+	document.getElementById('playboy').style.display = '';
+	document.getElementById('enterprise').style.display = '';
 	
 	// removes left and right arrows
     // NONE document.getElementById('kojiroLeftArrow').style.left = '';
@@ -220,6 +242,12 @@ function kojiroCloseX() {
 	
 
 function kojiroRightArrow() {
+	
+	// starts displaying other modals
+	document.getElementById('sunnyspot').style.display = '';
+	document.getElementById('ella').style.display = '';
+	document.getElementById('playboy').style.display = '';
+	document.getElementById('enterprise').style.display = '';
 	
 // closes itself
     document.getElementById('kojiro').style.width = '0';

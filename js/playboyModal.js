@@ -121,6 +121,14 @@ function playboyOpenModal() {
 	document.getElementById('playboyTopLabel').style.paddingLeft = '15px';
 	document.getElementById('playboyBottomLabel').style.paddingLeft = '15px';
 	
+	setTimeout(function() {
+	// stops displaying other modals
+	document.getElementById('kojiro').style.display = 'none';
+	document.getElementById('sunnyspot').style.display = 'none';
+	document.getElementById('ella').style.display = 'none';
+	document.getElementById('enterprise').style.display = 'none';
+		}, 1000);
+	
 	}, 500);
 	
 	} else {
@@ -191,6 +199,12 @@ function playboyOpenModal() {
 	document.getElementById('playboyTopLabel').style.paddingLeft = '15px';
 	document.getElementById('playboyBottomLabel').style.paddingLeft = '15px';
 	
+	// stops displaying other modals
+	document.getElementById('kojiro').style.display = 'none';
+	document.getElementById('sunnyspot').style.display = 'none';
+	document.getElementById('ella').style.display = 'none';
+	document.getElementById('enterprise').style.display = 'none';
+	
 	}, 0);
 		
 	}
@@ -202,6 +216,12 @@ function playboyOpenModal() {
 
 
 function playboyCloseX() {
+	
+	// starts displaying other modals
+	document.getElementById('kojiro').style.display = '';
+	document.getElementById('sunnyspot').style.display = '';
+	document.getElementById('ella').style.display = '';
+	document.getElementById('enterprise').style.display = '';
 	
 	// removes left and right arrows
     document.getElementById('playboyLeftArrow').style.left = '';
@@ -222,7 +242,11 @@ function playboyCloseX() {
 
 function playboyLeftArrow() {
 	
-
+// starts displaying other modals
+	document.getElementById('kojiro').style.display = '';
+	document.getElementById('sunnyspot').style.display = '';
+	document.getElementById('ella').style.display = '';
+	document.getElementById('enterprise').style.display = '';
 	
 	
 // closes itself
@@ -295,7 +319,11 @@ function playboyLeftArrow() {
 
 function playboyRightArrow() {
 	
-
+// starts displaying other modals
+	document.getElementById('kojiro').style.display = '';
+	document.getElementById('sunnyspot').style.display = '';
+	document.getElementById('ella').style.display = '';
+	document.getElementById('enterprise').style.display = '';
 	
 	
 // closes itself

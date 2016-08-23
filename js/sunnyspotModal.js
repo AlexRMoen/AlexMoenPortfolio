@@ -117,6 +117,14 @@ function sunnyspotOpenModal() {
 	document.getElementById('sunnyspotTopLabel').style.paddingLeft = '15px';
 	document.getElementById('sunnyspotBottomLabel').style.paddingLeft = '15px';
 	
+	setTimeout(function() {
+	// stops displaying other modals
+	document.getElementById('kojiro').style.display = 'none';
+	document.getElementById('ella').style.display = 'none';
+	document.getElementById('playboy').style.display = 'none';
+	document.getElementById('enterprise').style.display = 'none';
+		}, 1000);
+	
 	}, 500);
 	
 	} else {
@@ -183,6 +191,12 @@ function sunnyspotOpenModal() {
 	document.getElementById('sunnyspotTopLabel').style.paddingLeft = '15px';
 	document.getElementById('sunnyspotBottomLabel').style.paddingLeft = '15px';
 	
+	// stops displaying other modals
+	document.getElementById('kojiro').style.display = 'none';
+	document.getElementById('ella').style.display = 'none';
+	document.getElementById('playboy').style.display = 'none';
+	document.getElementById('enterprise').style.display = 'none';
+	
 	}, 0);
 		
 	}
@@ -193,6 +207,12 @@ function sunnyspotOpenModal() {
 }
 
 function sunnyspotCloseX() {
+	
+	// starts displaying other modals
+	document.getElementById('kojiro').style.display = '';
+	document.getElementById('ella').style.display = '';
+	document.getElementById('playboy').style.display = '';
+	document.getElementById('enterprise').style.display = '';
 	
 	// removes left and right arrows
     document.getElementById('sunnyspotLeftArrow').style.left = '';
@@ -212,6 +232,12 @@ function sunnyspotCloseX() {
 
 
 function sunnyspotLeftArrow() {
+	
+	// starts displaying other modals
+	document.getElementById('kojiro').style.display = '';
+	document.getElementById('ella').style.display = '';
+	document.getElementById('playboy').style.display = '';
+	document.getElementById('enterprise').style.display = '';
 	
     // closes itself
     document.getElementById('sunnyspot').style.width = '0';
@@ -277,6 +303,11 @@ function sunnyspotLeftArrow() {
 
 function sunnyspotRightArrow() {
 	
+	// starts displaying other modals
+	document.getElementById('kojiro').style.display = '';
+	document.getElementById('ella').style.display = '';
+	document.getElementById('playboy').style.display = '';
+	document.getElementById('enterprise').style.display = '';
 	
     document.getElementById('firstRow').style.paddingTop = '0';
 	document.getElementById('secondRow').style.paddingTop = '7.5vh';

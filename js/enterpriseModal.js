@@ -122,6 +122,14 @@ function enterpriseOpenModal() {
 	document.getElementById('enterpriseTopLabel').style.paddingLeft = '15px';
 	document.getElementById('enterpriseBottomLabel').style.paddingLeft = '15px';
 	
+	setTimeout(function() {
+	// stops displaying other modals
+	document.getElementById('kojiro').style.display = 'none';
+	document.getElementById('sunnyspot').style.display = 'none';
+	document.getElementById('ella').style.display = 'none';
+	document.getElementById('playboy').style.display = 'none';
+		}, 1000);
+	
 	}, 500);
 	
 	} else {
@@ -192,6 +200,12 @@ function enterpriseOpenModal() {
 	document.getElementById('enterpriseTopLabel').style.paddingLeft = '15px';
 	document.getElementById('enterpriseBottomLabel').style.paddingLeft = '15px';
 	
+	// stops displaying other modals
+	document.getElementById('kojiro').style.display = 'none';
+	document.getElementById('sunnyspot').style.display = 'none';
+	document.getElementById('ella').style.display = 'none';
+	document.getElementById('playboy').style.display = 'none';
+	
 	}, 0);
 		
 	}
@@ -205,6 +219,14 @@ function enterpriseOpenModal() {
 
 
 function enterpriseCloseX() {
+	
+	
+	
+	// starts displaying other modals
+	document.getElementById('kojiro').style.display = '';
+	document.getElementById('sunnyspot').style.display = '';
+	document.getElementById('ella').style.display = '';
+	document.getElementById('playboy').style.display = '';
 	
 	// removes left and right arrows
     document.getElementById('enterpriseLeftArrow').style.left = '';
@@ -226,7 +248,11 @@ function enterpriseCloseX() {
 function enterpriseLeftArrow() {
 	
 
-	
+	// starts displaying other modals
+	document.getElementById('kojiro').style.display = '';
+	document.getElementById('sunnyspot').style.display = '';
+	document.getElementById('ella').style.display = '';
+	document.getElementById('playboy').style.display = '';
 	
 // closes itself
 

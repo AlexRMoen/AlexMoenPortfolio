@@ -121,6 +121,14 @@ function ellaOpenModal() {
 	document.getElementById('ellaTopLabel').style.paddingLeft = '15px';
 	document.getElementById('ellaBottomLabel').style.paddingLeft = '15px';
 	
+	setTimeout(function() {
+	// stops displaying other modals
+	document.getElementById('kojiro').style.display = 'none';
+	document.getElementById('sunnyspot').style.display = 'none';
+	document.getElementById('playboy').style.display = 'none';
+	document.getElementById('enterprise').style.display = 'none';
+		}, 1000);
+	
 	}, 500);
 	
 	} else {
@@ -191,6 +199,12 @@ function ellaOpenModal() {
 	document.getElementById('ellaTopLabel').style.paddingLeft = '15px';
 	document.getElementById('ellaBottomLabel').style.paddingLeft = '15px';
 	
+	// stops displaying other modals
+	document.getElementById('kojiro').style.display = 'none';
+	document.getElementById('sunnyspot').style.display = 'none';
+	document.getElementById('playboy').style.display = 'none';
+	document.getElementById('enterprise').style.display = 'none';
+	
 	}, 0);
 	
 	}
@@ -202,6 +216,12 @@ function ellaOpenModal() {
 
 
 function ellaCloseX() {
+	
+	// starts displaying other modals
+	document.getElementById('kojiro').style.display = '';
+	document.getElementById('sunnyspot').style.display = '';
+	document.getElementById('playboy').style.display = '';
+	document.getElementById('enterprise').style.display = '';
 	
 	// removes left and right arrows
     document.getElementById('ellaLeftArrow').style.left = '';
@@ -223,6 +243,13 @@ function ellaCloseX() {
 
 
 function ellaLeftArrow() {
+	
+		// starts displaying other modals
+	document.getElementById('kojiro').style.display = '';
+	document.getElementById('sunnyspot').style.display = '';
+	document.getElementById('playboy').style.display = '';
+	document.getElementById('enterprise').style.display = '';
+	
 	
 	// adds the padding to accurately position the modal
     document.getElementById('firstRow').style.paddingTop = '7.5vh';
@@ -314,7 +341,12 @@ function ellaLeftArrow() {
 
 function ellaRightArrow() {
 	
-
+	// starts displaying other modals
+	document.getElementById('kojiro').style.display = '';
+	document.getElementById('sunnyspot').style.display = '';
+	document.getElementById('playboy').style.display = '';
+	document.getElementById('enterprise').style.display = '';
+	
 	
 	
 // closes itself
