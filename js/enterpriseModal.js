@@ -3,7 +3,7 @@
 $(function() {
   $('#enterpriseModalLinkContainer').hover(function() {
     $('#enterprise').css('transform', 'scale(1.1)');
-	$('#enterprise').css('z-index', '999');
+	$('#enterprise').css('z-index', '900');
 	$('#kojiro').css('z-index', '1');
 	$('#sunnyspot').css('z-index', '1');
 	$('#ella').css('z-index', '1');
