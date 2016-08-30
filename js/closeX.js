@@ -20,8 +20,7 @@ function closeX() {
 	document.getElementById('galleryHeightWrapper').style.minHeight = '';
 	
 	// adds the padding to accurately position the modal
-    document.getElementById('firstRow').style.paddingTop = '';
-    document.getElementById('secondRow').style.paddingTop = '';
+    document.getElementById('galleryRow').style.paddingTop = '';
 	
 	// adds padding back to the gallery
 	document.getElementById('gallery').style.paddingTop = '';

@@ -71,7 +71,7 @@ function playboyOpenModal() {
     document.getElementById('myWork').style.marginBottom = '0';
 	
 	// adds the padding to accurately position the modal
-    document.getElementById('secondRow').style.paddingTop = '7.5vh';
+    document.getElementById('galleryRow').style.paddingTop = '7.5vh';
 
     // rescales and fades line 1 items
     document.getElementById('kojiro').style.height = '0';
@@ -149,7 +149,7 @@ function playboyOpenModal() {
     document.getElementById('myWork').style.marginBottom = '0';
 	
 	// adds the padding to accurately position the modal
-    document.getElementById('secondRow').style.paddingTop = '7.5vh';
+    document.getElementById('galleryRow').style.paddingTop = '7.5vh';
 
     // rescales and fades line 1 items
     document.getElementById('kojiro').style.height = '0';

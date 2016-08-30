@@ -73,7 +73,7 @@ function kojiroOpenModal() {
     document.getElementById('myWork').style.marginBottom = '0';
 	
 	// adds the padding to accurately position the modal
-    document.getElementById('firstRow').style.paddingTop = '7.5vh';
+    document.getElementById('galleryRow').style.paddingTop = '7.5vh';
 
     // rescales and fades other line 1 items
     document.getElementById('sunnyspot').style.height = '85vh';
@@ -148,7 +148,7 @@ function kojiroOpenModal() {
     document.getElementById('myWork').style.marginBottom = '0';
 	
 	// adds the padding to accurately position the modal
-    document.getElementById('firstRow').style.paddingTop = '7.5vh';
+    document.getElementById('galleryRow').style.paddingTop = '7.5vh';
 
     // rescales and fades other line 1 items
     document.getElementById('sunnyspot').style.height = '85vh';
@@ -208,6 +208,10 @@ function kojiroOpenModal() {
 		
 		 
 })(jQuery);
+
+
+
+	document.getElementById('modalBGContainer').style.display = 'block';
 
 
 }

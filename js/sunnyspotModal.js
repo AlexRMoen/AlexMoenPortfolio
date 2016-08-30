@@ -71,7 +71,7 @@ function sunnyspotOpenModal() {
     document.getElementById('myWork').style.marginBottom = '0';
 	
 	// adds the padding to accurately position the modal
-    document.getElementById('firstRow').style.paddingTop = '7.5vh';
+    document.getElementById('galleryRow').style.paddingTop = '7.5vh';
 
     // rescales and fades other line 1 items
     document.getElementById('kojiro').style.height = '85vh';
@@ -145,7 +145,7 @@ function sunnyspotOpenModal() {
     document.getElementById('myWork').style.marginBottom = '0';
 	
 	// adds the padding to accurately position the modal
-    document.getElementById('firstRow').style.paddingTop = '7.5vh';
+    document.getElementById('galleryRow').style.paddingTop = '7.5vh';
 
     // rescales and fades other line 1 items
     document.getElementById('kojiro').style.height = '85vh';
@@ -308,9 +308,6 @@ function sunnyspotRightArrow() {
 	
 	// starts displaying relevant modal
 	document.getElementById('ella').style.display = '';
-	
-    document.getElementById('firstRow').style.paddingTop = '0';
-	document.getElementById('secondRow').style.paddingTop = '7.5vh';
 	
     // closes itself
     document.getElementById('sunnyspot').style.height = '0';

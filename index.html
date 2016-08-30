@@ -84,6 +84,14 @@ $(function() {
   <!-- provides a blue underlay for next sections -->
 <div class="tealBG">
 
+                   <!-- this link closes modal when clicked outside of modal window --> 
+      <div id="modalBGContainer">
+      <a href="javascript:void(0)" onclick="sunnyspotOpenModal()">
+      <div id="modalBG">
+      </div>
+      </a>
+      </div>      
+
 <!-- About Me section -->
 <div class="paddingTop3em paddingBottom2em whiteBG boxShadow paddingForLargeViewports" id="aboutMe">
   <div class="marginLeftRight10em"> 
@@ -234,12 +242,14 @@ $(function() {
 </div>
 
 <!-- gallery of projects section -->
-<div id="galleryHeightWrapper">
-<div class="paddingTop2em paddingBottom3em threeDaccel" id="gallery">
+<div id="galleryHeightWrapper">     
+      
+<div class="paddingTop2em paddingBottom3em threeDaccel" id="gallery"> 
+
   <h3 class="white dropShadow bold marginBottom1em textCenter threeDaccel" id="myWork">PROJECTS</h3>
   
-  <!-- wraps the first row of gallery items -->
-  <div class="row galleryRow" id="firstRow"> 
+  <!-- wraps the row of gallery items -->
+  <div class="row galleryRow" id="galleryRow"> 
     
     <!-- kojiro gallery section -->
     <div class="column column-6 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="kojiro"> 
@@ -703,13 +713,6 @@ $(function() {
 </style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/></svg>
     </div>
     </a>
-    
-
-    
-    </div>
-  
-  <!-- wraps the second row of gallery items -->
-  <div class="row galleryRow" id="secondRow"> 
     
     <!-- ella gallery section -->
     <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="ella"> 
@@ -1495,8 +1498,9 @@ We jotted all touchpoints down on sticky notes and arranged them across a timeli
     
     <!-- right arrow for enterprise --> 
     <!-- NONE -->
-    
-</div>
+      
+      
+</div>    
 </div>
 </div>
 </div>
