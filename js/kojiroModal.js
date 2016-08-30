@@ -243,11 +243,8 @@ function kojiroCloseX() {
 
 function kojiroRightArrow() {
 	
-	// starts displaying other modals
+	// starts displaying relvant modal
 	document.getElementById('sunnyspot').style.display = '';
-	document.getElementById('ella').style.display = '';
-	document.getElementById('playboy').style.display = '';
-	document.getElementById('enterprise').style.display = '';
 	
 // closes itself
     document.getElementById('kojiro').style.width = '0';
@@ -308,5 +305,10 @@ function kojiroRightArrow() {
 	document.getElementById('sunnyspotBottomLabel').style.paddingBottom = '0.4em';
 	document.getElementById('sunnyspotTopLabel').style.paddingLeft = '15px';
 	document.getElementById('sunnyspotBottomLabel').style.paddingLeft = '15px';
+	
+	setTimeout(function() {
+	// stops displaying current modal
+	document.getElementById('kojiro').style.display = 'none';
+		}, 510);
 	
 }

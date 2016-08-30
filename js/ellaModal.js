@@ -244,11 +244,8 @@ function ellaCloseX() {
 
 function ellaLeftArrow() {
 	
-		// starts displaying other modals
-	document.getElementById('kojiro').style.display = '';
+	// starts displaying relvant modal
 	document.getElementById('sunnyspot').style.display = '';
-	document.getElementById('playboy').style.display = '';
-	document.getElementById('enterprise').style.display = '';
 	
 	
 	// adds the padding to accurately position the modal
@@ -337,16 +334,17 @@ function ellaLeftArrow() {
 	document.getElementById('sunnyspotTopLabel').style.paddingLeft = '15px';
 	document.getElementById('sunnyspotBottomLabel').style.paddingLeft = '15px';
 	
+	setTimeout(function() {
+	// stops displaying current modal
+	document.getElementById('ella').style.display = 'none';
+		}, 510);
+	
 }
 
 function ellaRightArrow() {
 	
-	// starts displaying other modals
-	document.getElementById('kojiro').style.display = '';
-	document.getElementById('sunnyspot').style.display = '';
+	// starts displaying relevant
 	document.getElementById('playboy').style.display = '';
-	document.getElementById('enterprise').style.display = '';
-	
 	
 	
 // closes itself
@@ -412,6 +410,11 @@ function ellaRightArrow() {
 	document.getElementById('playboyBottomLabel').style.paddingBottom = '0.4em';
 	document.getElementById('playboyTopLabel').style.paddingLeft = '15px';
 	document.getElementById('playboyBottomLabel').style.paddingLeft = '15px';
+	
+	setTimeout(function() {
+	// stops displaying current modal
+	document.getElementById('ella').style.display = 'none';
+		}, 510);
 	
 }
 

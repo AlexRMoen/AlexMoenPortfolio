@@ -233,11 +233,9 @@ function sunnyspotCloseX() {
 
 function sunnyspotLeftArrow() {
 	
-	// starts displaying other modals
+	
+	// starts displaying relevant modal
 	document.getElementById('kojiro').style.display = '';
-	document.getElementById('ella').style.display = '';
-	document.getElementById('playboy').style.display = '';
-	document.getElementById('enterprise').style.display = '';
 	
     // closes itself
     document.getElementById('sunnyspot').style.width = '0';
@@ -299,15 +297,17 @@ function sunnyspotLeftArrow() {
 	document.getElementById('kojiroTopLabel').style.paddingLeft = '15px';
 	document.getElementById('kojiroBottomLabel').style.paddingLeft = '15px';
 	
+	setTimeout(function() {
+	// stops displaying current modal
+	document.getElementById('sunnyspot').style.display = 'none';
+		}, 510);
+	
 }
 
 function sunnyspotRightArrow() {
 	
-	// starts displaying other modals
-	document.getElementById('kojiro').style.display = '';
+	// starts displaying relevant modal
 	document.getElementById('ella').style.display = '';
-	document.getElementById('playboy').style.display = '';
-	document.getElementById('enterprise').style.display = '';
 	
     document.getElementById('firstRow').style.paddingTop = '0';
 	document.getElementById('secondRow').style.paddingTop = '7.5vh';
@@ -391,6 +391,11 @@ function sunnyspotRightArrow() {
 	document.getElementById('ellaBottomLabel').style.paddingBottom = '0.4em';
 	document.getElementById('ellaTopLabel').style.paddingLeft = '15px';
 	document.getElementById('ellaBottomLabel').style.paddingLeft = '15px';
+	
+	setTimeout(function() {
+	// stops displaying current modal
+	document.getElementById('sunnyspot').style.display = 'none';
+		}, 510);
 	
 }
 

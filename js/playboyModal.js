@@ -242,11 +242,8 @@ function playboyCloseX() {
 
 function playboyLeftArrow() {
 	
-// starts displaying other modals
-	document.getElementById('kojiro').style.display = '';
-	document.getElementById('sunnyspot').style.display = '';
+// starts displaying relevant
 	document.getElementById('ella').style.display = '';
-	document.getElementById('enterprise').style.display = '';
 	
 	
 // closes itself
@@ -313,6 +310,11 @@ function playboyLeftArrow() {
 	document.getElementById('ellaTopLabel').style.paddingLeft = '15px';
 	document.getElementById('ellaBottomLabel').style.paddingLeft = '15px';
 	
+	setTimeout(function() {
+	// stops displaying current modal
+	document.getElementById('playboy').style.display = 'none';
+		}, 510);
+	
 }
 
 
@@ -320,9 +322,6 @@ function playboyLeftArrow() {
 function playboyRightArrow() {
 	
 // starts displaying other modals
-	document.getElementById('kojiro').style.display = '';
-	document.getElementById('sunnyspot').style.display = '';
-	document.getElementById('ella').style.display = '';
 	document.getElementById('enterprise').style.display = '';
 	
 	
@@ -389,5 +388,10 @@ function playboyRightArrow() {
 	document.getElementById('enterpriseBottomLabel').style.paddingBottom = '0.4em';
 	document.getElementById('enterpriseTopLabel').style.paddingLeft = '15px';
 	document.getElementById('enterpriseBottomLabel').style.paddingLeft = '15px';
+	
+	setTimeout(function() {
+	// stops displaying current modal
+	document.getElementById('playboy').style.display = 'none';
+		}, 510);
 	
 }

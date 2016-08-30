@@ -249,9 +249,6 @@ function enterpriseLeftArrow() {
 	
 
 	// starts displaying other modals
-	document.getElementById('kojiro').style.display = '';
-	document.getElementById('sunnyspot').style.display = '';
-	document.getElementById('ella').style.display = '';
 	document.getElementById('playboy').style.display = '';
 	
 // closes itself
@@ -317,5 +314,10 @@ function enterpriseLeftArrow() {
 	document.getElementById('playboyBottomLabel').style.paddingBottom = '0.4em';
 	document.getElementById('playboyTopLabel').style.paddingLeft = '15px';
 	document.getElementById('playboyBottomLabel').style.paddingLeft = '15px';
+	
+	setTimeout(function() {
+	// stops displaying current modal
+	document.getElementById('enterprise').style.display = 'none';
+		}, 510);
 	
 }
