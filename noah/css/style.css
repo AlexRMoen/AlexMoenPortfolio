@@ -17,9 +17,30 @@ body {
 	background-color: bisque;
 }
 
+.colorFirebrick {
+	background-color: firebrick;
+}
+
 /* Containers */
 
 .fullViewport {
 	width: 100vw;
 	height: 100vh;
 }
+
+.heightFull {
+	height: 100vh;
+}
+
+/* Positioning */
+
+.fixed {
+	position: fixed;
+}
+
+.absoluteLeftMiddle {
+	position: absolute;
+	left: 0;
+	top: 50%;
+}
+
