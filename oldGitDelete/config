@@ -1,0 +1,41 @@
+[core]
+	bare = false
+	filemode = true
+	ignorecase = true
+	precomposeunicode = true
+	logallrefupdates = true
+[core]
+	repositoryformatversion = 0
+[remote "origin"]
+	url = https://github.com/AlexRMoen/AlexMoenPortfolio.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[branch "Getting-Gallery-Windows-to-Work"]
+	remote = origin
+	merge = refs/heads/Getting-Gallery-Windows-to-Work
+[branch "Fixing-Modal-Position-for-Good"]
+	remote = origin
+	merge = refs/heads/Fixing-Modal-Position-for-Good
+[branch "Changing-Visual-Elements"]
+	remote = origin
+	merge = refs/heads/Changing-Visual-Elements
+[branch "Changing-Colors,-Text-+-Icons"]
+	remote = origin
+	merge = refs/heads/Changing-Colors,-Text-+-Icons
+[branch "Changing-gallery-label-style"]
+	remote = origin
+	merge = refs/heads/Changing-gallery-label-style
+[branch "Fixing-Responsiveness-by-Resetting-Modal-Values"]
+	remote = origin
+	merge = refs/heads/Fixing-Responsiveness-by-Resetting-Modal-Values
+[branch "5-modals-instead-of-7"]
+	remote = origin
+	merge = refs/heads/5-modals-instead-of-7
+[branch "Changing-Fish"]
+	remote = origin
+	merge = refs/heads/Changing-Fish
+[branch "IAT339-Showcase"]
+	remote = origin
+	merge = refs/heads/IAT339-Showcase

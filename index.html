@@ -46,6 +46,7 @@ $(function() {
 
 <!-- loads modal expanding JavaScript -->
 <script src="js/kojiroModal.js"></script>
+<script src="js/greenlightModal.js"></script>
 <script src="js/sunnyspotModal.js"></script>
 <script src="js/ellaModal.js"></script>
 <script src="js/playboyModal.js"></script>
@@ -56,12 +57,11 @@ $(function() {
 
 <body class="tealBG">
 
-
 <!-- above the fold -->
 <div class="heightFull" id="aboveFold"> 
-
-<!-- hello, fish! -->
-<canvas data-processing-sources="js/fish.pde"></canvas>
+  
+  <!-- hello, fish! -->
+  <canvas data-processing-sources="js/fish.pde"></canvas>
   
   <!-- name and job position -->
   <div class="marginLeftRight10em paddingForLargeViewports" id="title">
@@ -80,104 +80,96 @@ $(function() {
     </svg>
   </div>
   </a> </div>
+
+<!-- provides a blue underlay for next sections -->
+<div class="tealBG"> 
   
-  <!-- provides a blue underlay for next sections -->
-<div class="tealBG">
-
-                   <!-- this link closes modal when clicked outside of modal window --> 
-      <div id="modalBGContainer">
-      <a href="javascript:void(0)" onclick="sunnyspotOpenModal()">
-      <div id="modalBG">
-      </div>
-      </a>
-      </div>      
-
-<!-- About Me section -->
-<div class="paddingTop3em paddingBottom2em whiteBG boxShadow paddingForLargeViewports" id="aboutMe">
-  <div class="marginLeftRight10em"> 
-    
-    <!-- skill icons -->
-    <div class="row row-small marginBottom1point5em">
-      <div class="column column-3 column-3-small marginBottomGutterWidth imgFitBox paddingLeftRight1percent marginBottom1em"> 
-        
-        <!-- high-quality UI + graphic design icon -->
-        <div class="icon marginBottom1em">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306 306" width="100%">
-            <style type="text/css">  
+  <!-- About Me section -->
+  <div class="paddingTop3em paddingBottom2em whiteBG boxShadow paddingForLargeViewports" id="aboutMe">
+    <div class="marginLeftRight10em"> 
+      
+      <!-- skill icons -->
+      <div class="row row-small marginBottom1point5em">
+        <div class="column column-3 column-3-small marginBottomGutterWidth imgFitBox paddingLeftRight1percent marginBottom1em"> 
+          
+          <!-- high-quality UI + graphic design icon -->
+          <div class="icon marginBottom1em">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306 306" width="100%">
+              <style type="text/css">  
 	.st0{fill:#21AEC2;}
 	.st1{fill:#FFFFFF;}
 </style>
-            <circle class="st0" cx="153" cy="153" r="153"/>
-            <rect x="72.2" y="101.5" transform="matrix(0.9202 -0.3915 0.3915 0.9202 -48.8369 65.3995)" class="st1" width="127.5" height="101.8"/>
-            <rect x="99.3" y="92.7" class="st0" width="140.6" height="115.6"/>
-            <rect x="106.2" y="99.9" class="st1" width="127.5" height="101.8"/>
-            <polygon class="st0" points="144.4 156.7 182.7 111.9 221 156.7 "/>
-            <polygon class="st0" points="116.8 156.7 142.8 126.3 168.8 156.7 "/>
-            <rect x="116.8" y="164.9" class="st0" width="80.2" height="5.8"/>
-            <rect x="116.8" y="175.4" class="st0" width="60.8" height="5.8"/>
-            <rect x="116.8" y="185.8" class="st0" width="104.3" height="5.8"/>
-          </svg>
+              <circle class="st0" cx="153" cy="153" r="153"/>
+              <rect x="72.2" y="101.5" transform="matrix(0.9202 -0.3915 0.3915 0.9202 -48.8369 65.3995)" class="st1" width="127.5" height="101.8"/>
+              <rect x="99.3" y="92.7" class="st0" width="140.6" height="115.6"/>
+              <rect x="106.2" y="99.9" class="st1" width="127.5" height="101.8"/>
+              <polygon class="st0" points="144.4 156.7 182.7 111.9 221 156.7 "/>
+              <polygon class="st0" points="116.8 156.7 142.8 126.3 168.8 156.7 "/>
+              <rect x="116.8" y="164.9" class="st0" width="80.2" height="5.8"/>
+              <rect x="116.8" y="175.4" class="st0" width="60.8" height="5.8"/>
+              <rect x="116.8" y="185.8" class="st0" width="104.3" height="5.8"/>
+            </svg>
+          </div>
+          
+          <!-- high-quality UI + graphic design label -->
+          <h4 class="grey textCenter">high-quality UI <br>
+            + graphic design</h4>
         </div>
-        
-        <!-- high-quality UI + graphic design label -->
-        <h4 class="grey textCenter">high-quality UI <br>
-          + graphic design</h4>
-      </div>
-      <div class="column column-3 column-3-small marginBottomGutterWidth imgFitBox paddingLeftRight1percent marginBottom1em"> 
-        
-        <!-- HTML + CSS web coding icon -->
-        <div class="icon marginBottom1em">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306 306" width="100%">
-            <style type="text/css">  
+        <div class="column column-3 column-3-small marginBottomGutterWidth imgFitBox paddingLeftRight1percent marginBottom1em"> 
+          
+          <!-- HTML + CSS web coding icon -->
+          <div class="icon marginBottom1em">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306 306" width="100%">
+              <style type="text/css">  
 	.st0{fill:#21AEC2;}
 	.st1{fill:#FFFFFF;}
 </style>
-            <circle class="st0" cx="153" cy="153" r="153"/>
-            <path class="st1" d="M45.3 149.6l60.6-31.6v13.5c0 1-0.3 2-0.8 2.8 -0.5 0.8-1.4 1.6-2.5 2.2l-27.8 14.2c-1.2 0.6-2.4 1.1-3.7 1.6 -1.3 0.4-2.7 0.8-4.2 1.2 1.5 0.4 2.9 0.8 4.2 1.2 1.3 0.4 2.5 1 3.7 1.6l27.8 14.3c1.2 0.6 2 1.3 2.5 2.2 0.5 0.8 0.8 1.8 0.8 2.8v13.5l-60.6-31.7V149.6z"/>
-            <path class="st1" d="M140.1 205.2c-0.5 1.2-1 2.2-1.8 3.1 -0.7 0.9-1.5 1.6-2.4 2.2 -0.9 0.6-1.9 1-2.9 1.3 -1 0.3-2 0.5-3 0.5h-8L166.7 98c0.9-2.1 2.1-3.8 3.7-4.9 1.6-1.1 3.6-1.7 5.9-1.7h8L140.1 205.2z"/>
-            <path class="st1" d="M200.1 188.9v-13.5c0-1 0.3-2 0.8-2.8 0.5-0.8 1.4-1.6 2.5-2.2l27.8-14.3c2.2-1.1 4.9-2 7.9-2.8 -1.5-0.4-2.9-0.8-4.2-1.2 -1.3-0.4-2.5-1-3.7-1.6l-27.8-14.2c-1.2-0.6-2-1.3-2.5-2.2 -0.5-0.8-0.8-1.8-0.8-2.8V118l60.6 31.6v7.7L200.1 188.9z"/>
-          </svg>
+              <circle class="st0" cx="153" cy="153" r="153"/>
+              <path class="st1" d="M45.3 149.6l60.6-31.6v13.5c0 1-0.3 2-0.8 2.8 -0.5 0.8-1.4 1.6-2.5 2.2l-27.8 14.2c-1.2 0.6-2.4 1.1-3.7 1.6 -1.3 0.4-2.7 0.8-4.2 1.2 1.5 0.4 2.9 0.8 4.2 1.2 1.3 0.4 2.5 1 3.7 1.6l27.8 14.3c1.2 0.6 2 1.3 2.5 2.2 0.5 0.8 0.8 1.8 0.8 2.8v13.5l-60.6-31.7V149.6z"/>
+              <path class="st1" d="M140.1 205.2c-0.5 1.2-1 2.2-1.8 3.1 -0.7 0.9-1.5 1.6-2.4 2.2 -0.9 0.6-1.9 1-2.9 1.3 -1 0.3-2 0.5-3 0.5h-8L166.7 98c0.9-2.1 2.1-3.8 3.7-4.9 1.6-1.1 3.6-1.7 5.9-1.7h8L140.1 205.2z"/>
+              <path class="st1" d="M200.1 188.9v-13.5c0-1 0.3-2 0.8-2.8 0.5-0.8 1.4-1.6 2.5-2.2l27.8-14.3c2.2-1.1 4.9-2 7.9-2.8 -1.5-0.4-2.9-0.8-4.2-1.2 -1.3-0.4-2.5-1-3.7-1.6l-27.8-14.2c-1.2-0.6-2-1.3-2.5-2.2 -0.5-0.8-0.8-1.8-0.8-2.8V118l60.6 31.6v7.7L200.1 188.9z"/>
+            </svg>
+          </div>
+          
+          <!-- HTML + CSS web coding label -->
+          <h4 class="grey textCenter">HTML, CSS<br>
+            + JavaScript coding</h4>
         </div>
-        
-        <!-- HTML + CSS web coding label -->
-        <h4 class="grey textCenter">HTML, CSS<br>
-          + JavaScript coding</h4>
-      </div>
-      <div class="column column-3 column-3-small marginBottomGutterWidth imgFitBox paddingLeftRight1percent marginBottom1em"> 
-        
-        <!-- video editing + sound design icon -->
-        <div class="icon marginBottom1em">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306 306" width="100%">
-            <style type="text/css">  
+        <div class="column column-3 column-3-small marginBottomGutterWidth imgFitBox paddingLeftRight1percent marginBottom1em"> 
+          
+          <!-- video editing + sound design icon -->
+          <div class="icon marginBottom1em">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306 306" width="100%">
+              <style type="text/css">  
 	.st0{fill:#21AEC2;}
 	.st1{fill:#FFFFFF;}
 </style>
-            <circle class="st0" cx="153" cy="153" r="153"/>
-            <rect x="86.2" y="104.4" class="st1" width="133.5" height="106.6"/>
-            <rect x="230" y="104.4" class="st1" width="19.6" height="12.9"/>
-            <rect x="230" y="127.8" class="st1" width="19.6" height="12.9"/>
-            <rect x="230" y="151.2" class="st1" width="19.6" height="12.9"/>
-            <rect x="230" y="174.6" class="st1" width="19.6" height="12.9"/>
-            <rect x="230" y="198.1" class="st1" width="19.6" height="12.9"/>
-            <rect x="56.4" y="104.4" class="st1" width="19.6" height="12.9"/>
-            <rect x="56.4" y="127.8" class="st1" width="19.6" height="12.9"/>
-            <rect x="56.4" y="151.2" class="st1" width="19.6" height="12.9"/>
-            <rect x="56.4" y="174.6" class="st1" width="19.6" height="12.9"/>
-            <rect x="56.4" y="198.1" class="st1" width="19.6" height="12.9"/>
-            <path class="st0" d="M179.5 126.6l-43.7 8.2v41.5c-2.5-1.1-6-1.1-9.4 0.1 -5.6 2.1-9 7-7.5 10.9 1.5 3.9 7.2 5.4 12.9 3.3 4.5-1.7 7.6-5.3 7.8-8.6h0V147l36.1-6.7v28.5c-2.5-1.1-6-1.1-9.4 0.1 -5.6 2.1-9 7-7.5 10.9 1.5 3.9 7.2 5.4 12.9 3.3 4.5-1.7 7.6-5.3 7.8-8.6h0V126.6z"/>
-          </svg>
+              <circle class="st0" cx="153" cy="153" r="153"/>
+              <rect x="86.2" y="104.4" class="st1" width="133.5" height="106.6"/>
+              <rect x="230" y="104.4" class="st1" width="19.6" height="12.9"/>
+              <rect x="230" y="127.8" class="st1" width="19.6" height="12.9"/>
+              <rect x="230" y="151.2" class="st1" width="19.6" height="12.9"/>
+              <rect x="230" y="174.6" class="st1" width="19.6" height="12.9"/>
+              <rect x="230" y="198.1" class="st1" width="19.6" height="12.9"/>
+              <rect x="56.4" y="104.4" class="st1" width="19.6" height="12.9"/>
+              <rect x="56.4" y="127.8" class="st1" width="19.6" height="12.9"/>
+              <rect x="56.4" y="151.2" class="st1" width="19.6" height="12.9"/>
+              <rect x="56.4" y="174.6" class="st1" width="19.6" height="12.9"/>
+              <rect x="56.4" y="198.1" class="st1" width="19.6" height="12.9"/>
+              <path class="st0" d="M179.5 126.6l-43.7 8.2v41.5c-2.5-1.1-6-1.1-9.4 0.1 -5.6 2.1-9 7-7.5 10.9 1.5 3.9 7.2 5.4 12.9 3.3 4.5-1.7 7.6-5.3 7.8-8.6h0V147l36.1-6.7v28.5c-2.5-1.1-6-1.1-9.4 0.1 -5.6 2.1-9 7-7.5 10.9 1.5 3.9 7.2 5.4 12.9 3.3 4.5-1.7 7.6-5.3 7.8-8.6h0V126.6z"/>
+            </svg>
+          </div>
+          
+          <!-- video editing + sound design label -->
+          <h4 class="grey textCenter">video editing <br>
+            + sound design</h4>
         </div>
-        
-        <!-- video editing + sound design label -->
-        <h4 class="grey textCenter">video editing <br>
-          + sound design</h4>
-      </div>
-      <div class="column column-3 column-3-small marginBottomGutterWidth imgFitBox paddingLeftRight1percent marginBottom1em"> 
-        
-        <!-- motion text + animated graphics icon -->
-        <div class="icon marginBottom1em">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306 306" width="100%">
-            <style type="text/css">  
+        <div class="column column-3 column-3-small marginBottomGutterWidth imgFitBox paddingLeftRight1percent marginBottom1em"> 
+          
+          <!-- motion text + animated graphics icon -->
+          <div class="icon marginBottom1em">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306 306" width="100%">
+              <style type="text/css">  
 	.st0{fill:#21AEC2;}
 	.st1{fill:#FFFFFF;}
 	.st2{opacity:0.8;}
@@ -186,579 +178,509 @@ $(function() {
 	.st5{fill:none;}
 	.st6{opacity:0.4;}
 </style>
-            <circle class="st0" cx="153" cy="153" r="153"/>
-            <path class="st1" d="M242.1 205.1h-15.9c-1.8 0-3.3-0.4-4.4-1.3 -1.1-0.9-2-2-2.5-3.3l-8.3-22.6h-45.8l-8.3 22.6c-0.4 1.2-1.2 2.2-2.4 3.2 -1.2 1-2.7 1.5-4.4 1.5h-16l43.5-110.6h21L242.1 205.1zM170.5 163.3h35.3l-13.5-36.8c-0.6-1.6-1.3-3.6-2-5.8 -0.7-2.2-1.5-4.6-2.2-7.2 -0.7 2.6-1.4 5-2.1 7.3 -0.7 2.2-1.4 4.2-2 5.9L170.5 163.3z"/>
-            <g class="st2">
-              <path class="st1" d="M192.3 205.1h-15.9c-1.8 0-3.3-0.4-4.4-1.3 -1.1-0.9-2-2-2.5-3.3l-8.3-22.6h-45.8l-8.3 22.6c-0.4 1.2-1.2 2.2-2.4 3.2 -1.2 1-2.7 1.5-4.4 1.5h-16l43.5-110.6h21L192.3 205.1zM120.7 163.3H156l-13.5-36.8c-0.6-1.6-1.3-3.6-2-5.8 -0.7-2.2-1.5-4.6-2.2-7.2 -0.7 2.6-1.4 5-2.1 7.3 -0.7 2.2-1.4 4.2-2 5.9L120.7 163.3z"/>
-            </g>
-            <g class="st3">
-              <path class="st1" d="M143 205.1h-15.9c-1.8 0-3.3-0.4-4.4-1.3 -1.1-0.9-2-2-2.5-3.3l-8.3-22.6H66.1l-8.3 22.6c-0.4 1.2-1.2 2.2-2.4 3.2 -1.2 1-2.7 1.5-4.4 1.5H35L78.5 94.5h21L143 205.1zM71.4 163.3h35.3l-13.5-36.8c-0.6-1.6-1.3-3.6-2-5.8 -0.7-2.2-1.5-4.6-2.2-7.2 -0.7 2.6-1.4 5-2.1 7.3 -0.7 2.2-1.4 4.2-2 5.9L71.4 163.3z"/>
-            </g>
-            <g class="st4">
-              <path class="st5" d="M0.4 142.6C0.1 146.1 0 149.5 0 153c0 3.5 0.1 6.9 0.4 10.3h7.6L0.4 142.6z"/>
-              <path class="st5" d="M153 0C83.8 0 25.4 45.9 6.5 108.9l37.8 96.2H28.4c-1.8 0-3.3-0.4-4.4-1.3 -1.1-0.9-2-2-2.5-3.3l-8.3-22.6H2C13.9 250.5 77 306 153 306c84.5 0 153-68.5 153-153S237.5 0 153 0z"/>
-              <path class="st1" d="M21.5 200.4c0.5 1.3 1.3 2.4 2.5 3.3 1.1 0.9 2.6 1.3 4.4 1.3h15.9L6.5 108.9c-3.2 10.8-5.3 22.1-6.1 33.8l7.6 20.7H0.4c0.3 4.9 0.9 9.8 1.7 14.5h11.2L21.5 200.4z"/>
-            </g>
-            <g class="st6">
-              <path class="st5" d="M43.8 126.5c-0.6-1.6-1.3-3.6-2-5.8 -0.7-2.2-1.5-4.6-2.2-7.2 -0.7 2.6-1.4 5-2.1 7.3 -0.7 2.2-1.4 4.2-2 5.9L22 163.3h35.3L43.8 126.5z"/>
-              <path class="st5" d="M153 0C68.5 0 0 68.5 0 153c0 4.7 0.2 9.4 0.6 14l28.5-72.5h21l43.5 110.6H77.7c-1.8 0-3.3-0.4-4.4-1.3 -1.1-0.9-2-2-2.5-3.3l-8.3-22.6H16.7l-8.3 22.6c-0.1 0.4-0.3 0.8-0.6 1.2C28.2 262.3 85.5 306 153 306c84.5 0 153-68.5 153-153S237.5 0 153 0z"/>
-              <path class="st1" d="M16.7 177.9h45.8l8.3 22.6c0.5 1.3 1.3 2.4 2.5 3.3 1.1 0.9 2.6 1.3 4.4 1.3h15.9L50.2 94.5h-21L0.6 167c1.1 12 3.6 23.6 7.2 34.6 0.2-0.4 0.4-0.8 0.6-1.2L16.7 177.9zM35.5 126.7c0.7-1.7 1.3-3.6 2-5.9 0.7-2.2 1.4-4.7 2.1-7.3 0.7 2.6 1.4 5 2.2 7.2 0.7 2.2 1.4 4.1 2 5.8l13.5 36.8H22L35.5 126.7z"/>
-            </g>
-          </svg>
+              <circle class="st0" cx="153" cy="153" r="153"/>
+              <path class="st1" d="M242.1 205.1h-15.9c-1.8 0-3.3-0.4-4.4-1.3 -1.1-0.9-2-2-2.5-3.3l-8.3-22.6h-45.8l-8.3 22.6c-0.4 1.2-1.2 2.2-2.4 3.2 -1.2 1-2.7 1.5-4.4 1.5h-16l43.5-110.6h21L242.1 205.1zM170.5 163.3h35.3l-13.5-36.8c-0.6-1.6-1.3-3.6-2-5.8 -0.7-2.2-1.5-4.6-2.2-7.2 -0.7 2.6-1.4 5-2.1 7.3 -0.7 2.2-1.4 4.2-2 5.9L170.5 163.3z"/>
+              <g class="st2">
+                <path class="st1" d="M192.3 205.1h-15.9c-1.8 0-3.3-0.4-4.4-1.3 -1.1-0.9-2-2-2.5-3.3l-8.3-22.6h-45.8l-8.3 22.6c-0.4 1.2-1.2 2.2-2.4 3.2 -1.2 1-2.7 1.5-4.4 1.5h-16l43.5-110.6h21L192.3 205.1zM120.7 163.3H156l-13.5-36.8c-0.6-1.6-1.3-3.6-2-5.8 -0.7-2.2-1.5-4.6-2.2-7.2 -0.7 2.6-1.4 5-2.1 7.3 -0.7 2.2-1.4 4.2-2 5.9L120.7 163.3z"/>
+              </g>
+              <g class="st3">
+                <path class="st1" d="M143 205.1h-15.9c-1.8 0-3.3-0.4-4.4-1.3 -1.1-0.9-2-2-2.5-3.3l-8.3-22.6H66.1l-8.3 22.6c-0.4 1.2-1.2 2.2-2.4 3.2 -1.2 1-2.7 1.5-4.4 1.5H35L78.5 94.5h21L143 205.1zM71.4 163.3h35.3l-13.5-36.8c-0.6-1.6-1.3-3.6-2-5.8 -0.7-2.2-1.5-4.6-2.2-7.2 -0.7 2.6-1.4 5-2.1 7.3 -0.7 2.2-1.4 4.2-2 5.9L71.4 163.3z"/>
+              </g>
+              <g class="st4">
+                <path class="st5" d="M0.4 142.6C0.1 146.1 0 149.5 0 153c0 3.5 0.1 6.9 0.4 10.3h7.6L0.4 142.6z"/>
+                <path class="st5" d="M153 0C83.8 0 25.4 45.9 6.5 108.9l37.8 96.2H28.4c-1.8 0-3.3-0.4-4.4-1.3 -1.1-0.9-2-2-2.5-3.3l-8.3-22.6H2C13.9 250.5 77 306 153 306c84.5 0 153-68.5 153-153S237.5 0 153 0z"/>
+                <path class="st1" d="M21.5 200.4c0.5 1.3 1.3 2.4 2.5 3.3 1.1 0.9 2.6 1.3 4.4 1.3h15.9L6.5 108.9c-3.2 10.8-5.3 22.1-6.1 33.8l7.6 20.7H0.4c0.3 4.9 0.9 9.8 1.7 14.5h11.2L21.5 200.4z"/>
+              </g>
+              <g class="st6">
+                <path class="st5" d="M43.8 126.5c-0.6-1.6-1.3-3.6-2-5.8 -0.7-2.2-1.5-4.6-2.2-7.2 -0.7 2.6-1.4 5-2.1 7.3 -0.7 2.2-1.4 4.2-2 5.9L22 163.3h35.3L43.8 126.5z"/>
+                <path class="st5" d="M153 0C68.5 0 0 68.5 0 153c0 4.7 0.2 9.4 0.6 14l28.5-72.5h21l43.5 110.6H77.7c-1.8 0-3.3-0.4-4.4-1.3 -1.1-0.9-2-2-2.5-3.3l-8.3-22.6H16.7l-8.3 22.6c-0.1 0.4-0.3 0.8-0.6 1.2C28.2 262.3 85.5 306 153 306c84.5 0 153-68.5 153-153S237.5 0 153 0z"/>
+                <path class="st1" d="M16.7 177.9h45.8l8.3 22.6c0.5 1.3 1.3 2.4 2.5 3.3 1.1 0.9 2.6 1.3 4.4 1.3h15.9L50.2 94.5h-21L0.6 167c1.1 12 3.6 23.6 7.2 34.6 0.2-0.4 0.4-0.8 0.6-1.2L16.7 177.9zM35.5 126.7c0.7-1.7 1.3-3.6 2-5.9 0.7-2.2 1.4-4.7 2.1-7.3 0.7 2.6 1.4 5 2.2 7.2 0.7 2.2 1.4 4.1 2 5.8l13.5 36.8H22L35.5 126.7z"/>
+              </g>
+            </svg>
+          </div>
+          
+          <!-- motion text + animated graphics label -->
+          <h4 class="grey textCenter">motion text <br>
+            + animated graphics</h4>
         </div>
-        
-        <!-- motion text + animated graphics label -->
-        <h4 class="grey textCenter">motion text <br>
-          + animated graphics</h4>
       </div>
-    </div>
-    
-    <!-- my pic and description row -->
-    <div class="row helloRow">
-      <div class="column column-5 column-5-small marginBottomGutterWidth marginTopGutterWidth imgFitBox verticalCenterParent"> 
-        <div class="verticalCenterChild"> 
       
-      
-        <!-- my pic --> 
-        <img src="img/profilepic6-min.png" class="imgCircle img100"> 
+      <!-- my pic and description row -->
+      <div class="row helloRow">
+        <div class="column column-5 column-5-small marginBottomGutterWidth marginTopGutterWidth imgFitBox verticalCenterParent">
+          <div class="verticalCenterChild"> 
+            
+            <!-- my pic --> 
+            <img src="img/profilepic6-min.png" class="imgCircle img100"> </div>
         </div>
-        </div>
-        
-      <div class="column column-7 column-7-small marginBottomGutterWidth imgFitBox paddingLeft2em verticalCenterParent">
-      <div class="verticalCenterChild"> 
-      
-        <!-- my description-->
-        <h3 class="teal bold marginBottom1point25em textCenter topIsFlush">HELLO !</h3>
-        <p class="grey marginBottom1em">I'm a designer specializing in user interfaces, graphic design, website coding and video production. I've been trained in user experience design at SFU's <span class="italic">School of Interactive Arts & Technology</span>.</p>
-        <p class="grey marginBottom1em">Whether its the UI concept for an app, the creation of a responsive website (like this one), or a smart promotional video, I will deliver a high level of design quality that will communicate and delight.</p>
-        
-        <!-- my resume + jump to contact me -->
-        <div class="buttonCluster"> <a href="AlexMoen_resume.pdf" class="button buttonResume">MY RESUME</a> <a href="#contactMe" class="button">CONTACT ME</a> </div>
-        
+        <div class="column column-7 column-7-small marginBottomGutterWidth imgFitBox paddingLeft2em verticalCenterParent">
+          <div class="verticalCenterChild"> 
+            
+            <!-- my description-->
+            <h3 class="teal bold marginBottom1point25em textCenter topIsFlush">HELLO !</h3>
+            <p class="grey marginBottom1em">I'm a designer specializing in user interfaces, graphic design, website coding and video production. I've been trained in user experience design at SFU's <span class="italic">School of Interactive Arts & Technology</span>.</p>
+            <p class="grey marginBottom1em">Whether its the UI concept for an app, the creation of a responsive website (like this one), or a smart promotional video, I will deliver a high level of design quality that will communicate and delight.</p>
+            
+            <!-- my resume + jump to contact me -->
+            <div class="buttonCluster"> <a href="AlexMoen_resume.pdf" class="button buttonResume">MY RESUME</a> <a href="#contactMe" class="button">CONTACT ME</a> </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-<!-- gallery of projects section -->
-<div id="galleryHeightWrapper">     
-      
-<div class="paddingTop2em paddingBottom3em threeDaccel" id="gallery"> 
-
-  <h3 class="white dropShadow bold marginBottom1em textCenter threeDaccel" id="myWork">PROJECTS</h3>
   
-  <!-- wraps the row of gallery items -->
-  <div class="row galleryRow" id="galleryRow"> 
+  <!-- gallery of projects section -->
+  <div id="galleryHeightWrapper"> 
     
-    <!-- kojiro gallery section -->
-    <div class="column column-6 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="kojiro"> 
-      
-       
-      
-
-      <!-- label for the gallery item becomes modal header -->
-      <div class="modalHeader imgFitBox" id="kojiroHeader"> 
-      
-   
-      
-          
-      
-        <!-- label for gallery item --> 
-         <div class="boxLabel threeDaccel" id="kojiroLabel">
-         <div class="gradient">
-          <h5 class="white topLabel textShadowStrong" id="kojiroTopLabel">KOJIRŌ IZAKAYA</h5>
-          </div>
-            <h6 class="tealBG white bottomLabel boxShadow" id="kojiroBottomLabel">interactive restaurant menu</h6>
-        </div>
-        </div>
-      
-      <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain threeDaccel" id="kojiroMain">
-      
-    
-      <div class="marginLeftRight5em">
-    
-    
-    <p class="grey marginBottom2em">The course was <span class="italic">Interface Design</span>, and I was working with a talented team of students to create an interactive menu for a restaurant setting. Our vision was to place an interactive mobile tablet in front of every customer in the restaurant, replacing the traditional paper menu.</p>
-   
-    <figure>
-    <img src="img/gallery/kojiro/gallery9-min.png" width="100%" class="dropShadow marginBottom1em">
-    <figcaption class="grey marginBottom3em">The final design for the Kojirō Izakaya interactive restaurant menu.</figcaption>
-</figure>
-
-<figure>
-<div class="videoWrapper dropShadow marginBottom1em" id="kojiroVideo">
-    <!-- Copy & Pasted from YouTube -->
-    <iframe width="560" height="315" src="http://www.youtube.com/embed/OlpkLHqLKPI?modestbranding=1&rel=0&color=white" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-    </div>
-    <figcaption class="grey">The final video pitch to demonstrate the interactive menu concept / <span class="bold">1.5 minutes</span></figcaption>
-</figure>
-    
-        
-        
-        <h3 class="teal bold marginBottom1point25em textCenter">PROCESS</h3>
-
-<div class="row">
-<div class="column column-6">
-<figure>
-<img src="img/gallery/kojiro/gallerylogo-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">Kojirō Izakaya - our fictional Japanese pub concept.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
- <p class="grey marginBottom1em">Our plan was for customers to be able to browse food and drink, and make orders, without having to summon the server. I suggested that we come up with an example restaurant to guide our design.</p>
- <p class="grey marginBottom1em">Because the concept of the "izakaya" (Japanese pub) encouraged long visits with repeated ordering of drinks and small foods, this seemed like the ideal type of restaurant for an on-table ordering menu.</p>
-
-</div>
-</div>
-
-    <hr>
-
-<div class="row">
-<div class="column column-6">
-<figure>
-<img src="img/gallery/kojiro/gallery2b-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">An excerpt from Alex's sketchbook, showing a rough paper wireframe of a potential menu layout.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">I always start designing on paper. I began by sketching a series of possible layouts, keeping them simple to get through many ideas very quickly. Once I chose a layout that worked, I sketched it out in greater detail.</p>
-<p class="grey marginBottom1em">My concept was to allow the customer to jump to specific food/drink categories with persistent buttons, or allow them to keep swiping through the entire thing as in a traditional menu. A persistent shopping cart would be docked to the right side of the screen, to help people easily understand what they've ordered.</p>
-</div>
-</div>
-
-<hr>
-
-<div class="row">
-<div class="column column-6"><figure><img src="img/gallery/kojiro/gallery3-min.png" width="100%" class="dropShadow marginBottom1em">
-<img src="img/gallery/kojiro/gallery4-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">Rough digital wireframes</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">I then took the concept into the digital realm, creating wireframes on the computer.</p>
-<p class="grey marginBottom1em">The goal here was to keep it rough and low detail. We were not worrying about final look yet. This was purely to test the feasibility of the layout.</p>
-</div>
-</div>
-
-<hr>
-
-<div class="row">
-<div class="column column-6">
-<figure>
-<img src="img/gallery/kojiro/gallery5-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">The wireframes made interactive through Axure, for user testing.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">We took the digital wireframes and placed them into <span class="italic">Axure</span>. This tool allowed us to make the wireframes interactive.</p>
-<p class="grey marginBottom1em">We put the interface in front of a few test users, and got feedback. They liked the persistent category buttons and shopping cart. But they were a bit overwhelmed by the fact that you had some things docked to the bottom, and some to the side.</p>
-</div>
-</div>
-
-<hr>
-
-<div class="row">
-<div class="column column-6">
-<figure>
-<img src="img/gallery/kojiro/gallery6-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">Creating a high-detail layout in Illustrator.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">We decided to move the category buttons to the left-hand side of the screen.</p>
-<p class="grey marginBottom1em">It was now time to create a high-detail version of the layout. I created the finished look in <span class="italic">Adobe Illustrator</span>, taking care to use fonts and colors which reflected the classy-but-comfortable image of an izakaya.</p>
-</div>
-</div>
-
-<hr>
-
-<div class="row">
-<div class="column column-6">
-<figure>
-<img src="img/gallery/kojiro/gallery7-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">Animating the interactions of the menu in AfterEffects.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">We had to deliver a pitch video at the end of this process. I brought my final interface design into <span class="italic">Adobe AfterEffects</span> (one of my favorite tools) and animated all of the interactions.</p>
-<p class="grey marginBottom1em">A shaded circle represents a user's touch on the interface, and the menu responds with animations between different menu states.</p>
-</div>
-</div>
-
-<hr>
-
-<div class="row">
-<div class="column column-6">
-<figure>
-<img src="img/gallery/kojiro/gallery9-min.png" width="100%" class="dropShadow marginBottom1em">
-<img src="img/gallery/kojiro/gallery8-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey marginBottom4em">Actors point to the interactive tablet menu in our pitch video.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">Normally, I'd be at ease shooting live action video for design pitches. But in this case I knew that I could fully count on a fellow teammate. <span class="italic">Jay Tseng</span> is an accomplished videographer, and he took a couple of actors to a Japanese restaurant in order to shoot video.</p>
-<p class="grey marginBottom4em">The two ladies acted out interaction with a tablet. When combined with my AfterEffects animation, this helped to visualize the experience of using our interactive menu in the field.</p>
-<!-- anchor link seems to be broken, check javascript 
-<p class="grey marginBottom1em">In case you missed it above, <a href="#kojiroVideo">jump back to the video</a>.</p>
--->
-</div>
-</div>
-
-
-
-
-
-      </div>
-      
-      
-            <div class="modalFooter">
-            <div class="modalFooterText">
-<a href="javascript:void(0)" onclick="kojiroRightArrow()"><h7 class="tealBG white bold">next project &#8594;</h7></a>
-</div>
-</div> 
-  
-      
-      </div>
-
-      
-      
-      <!-- this link expands a gallery box into a modal --> 
-      <div class="modalLinkContainer" id="kojiroModalLinkContainer">
-      <a href="javascript:void(0)" onclick="kojiroOpenModal()">
-      <div class="modalLink">
-      </div>
-      </a>
-      </div>
-      
-
-      </div>
-      
-
-    
-
-    
-    <!-- sunnyspot gallery section -->
-    <div class="column column-6 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="sunnyspot"> 
-      
-      <!-- label for the gallery item becomes modal header -->
-      <div class="modalHeader imgFitBox" id="sunnyspotHeader"> 
-      
-
-        
-        <!-- label for gallery item -->
-               <div class="boxLabel threeDaccel" id="sunnyspotLabel">
-               
-               <div class="gradient">
-          <h5 class="white topLabel textShadowStrong" id="sunnyspotTopLabel">A SUNNY SPOT</h5>
-          </div>
-          
-            <h6 class="tealBG white bottomLabel boxShadow" id="sunnyspotBottomLabel">short documentary</h6>
-        </div>
-        </div>
-      
-      <!-- main section of modal is hidden until expanded -->
-           <div class="modalMain threeDaccel" id="sunnyspotMain">
-      
-    
-      <div class="marginLeftRight5em">
-      
-        <p class="grey marginBottom1em">It was an "intersession" version of the <span class="italic">Moving Images</span> course, which meant that this normally full sized course was compressed into a single month and a half. We had to rush to create several short video projects, culminating in a final project to create a short documentary film.</p>
-        <p class="grey marginBottom2em">Little did I realize that this time-constrained course would connect me with an adorable older couple who run a Chinese café. I directed the documentary about their story, with the aid of a talented crew of fellow students.</p>
-   
-
-<figure>
-<div class="videoWrapper dropShadow marginBottom1em" id="sunnysideVideo">
-    <!-- Copy & Pasted from YouTube -->
-    <iframe width="560" height="315" src="http://www.youtube.com/embed/FOtHeDr9Idc?modestbranding=1&rel=0&color=white" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-    </div>
-    <figcaption class="grey">Our short documentary about the Sunny Spot café, and the lovely couple behind it / <span class="bold">6 minutes</span></figcaption>
-</figure>
-    
-        
-        
-        <h3 class="teal bold marginBottom1point25em textCenter">PROCESS</h3>
-
-
-<div class="row">
-<div class="column column-6">
-<figure>
-
-<div class="row">
-<div class="column column-6">
-<img src="img/gallery/sunnyspot/treatment1-min.png" width="100%" class="dropShadow marginBottom1em">
-</div>
-<div class="column column-6">
-<img src="img/gallery/sunnyspot/treatment2-min.png" width="100%" class="dropShadow marginBottom1em">
-</div>
-</div>
-<figcaption class="grey">MacKenzie Ma's initial treatment for the Sunny Spot café documentary.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">Every documentary begins with a "treatment", a short synopsis of what the film is to be about. In this case, it was created by <span class="italic">MacKenzie Ma</span>. She knew of an older couple who ran a Chinese café, famous for their delicious "Xianburgers", and she wanted to document their story.</p>
-<p class="grey marginBottom1em">MacKenzie approached me to join her team. Her and I would work in close collaboration over the next weeks. We were co-directors.</p>
-</div>
-</div>
-
-<hr>
-
-<div class="row">
-<div class="column column-6"><figure><img src="img/gallery/sunnyspot/script1-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">Alex's preliminary script, which helped to define a specific vision for the café documentary shoot.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">Even documentaries need scripts. We needed to know how the film would work, even before we began shooting. I wrote a quick script that helped the crew to understand what we were going to do.</p>
-<p class="grey marginBottom1em">I proposed that the film have three acts: the introduction of the couple and the cafe, the revelation that they were to retire, and their satisfaction that they were happy and had done a great job.</p>
-<p class="grey marginBottom1em">I would prompt MacKenzie to ask interview questions which teased out this narrative. The film would be spoken in Chinese, so her translation was invaluable, and she really understood the narrative arc that I was proposing.</p>
-</div>
-</div>
-
-<hr>
-
-<div class="row">
-<div class="column column-6">
-<figure>
-<img src="img/gallery/sunnyspot/broll1-min.png" width="100%" class="dropShadow marginBottom1em">
-<img src="img/gallery/sunnyspot/broll2-min.png" width="100%" class="dropShadow marginBottom1em">
-<img src="img/gallery/sunnyspot/broll4-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">Screenshots of "b-roll" footage, showing Vancouver's Main St. neighborhood.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">We actually began shooting on a day the café was closed. This was by design. We needed to shoot "b-roll" footage of the surrounding neighbourhood. This would be intercut with the interview footage, rooting the story in Vancouver's unique Main St. neighborhood.</p>
-</div>
-</div>
-
-<hr>
-
-<div class="row">
-<div class="column column-6">
-<figure>
-<img src="img/gallery/sunnyspot/interview1-min.png" width="100%" class="dropShadow marginBottom1em">
-<img src="img/gallery/sunnyspot/broll3-min.png" width="100%" class="dropShadow marginBottom1em">
-<img src="img/gallery/sunnyspot/broll5-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">Alex directing and recording sound on the main day of filming. The crew shot interview footage, as well as b-roll footage of the couple and their café.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">On the main day of shooting, we set up three cameras at different angles, each manned by a different crew member. I was doing dual duty as director and boom mic operator, holding a microphone over the interview subject.</p>
-<p class="grey marginBottom1em">I reminded MacKenzie of each question to ask, and she did wonderfully. Our café couple delivered entertaining answers to our questions, and delivered the narrative we'd hoped for. After shooting some more interior b-roll footage of the café and its adorable details, we had ourselves a film.</p>
-</div>
-</div>
-
-<hr>
-
-<div class="row">
-<div class="column column-6">
-<figure>
-<img src="img/gallery/sunnyspot/script2-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">Transcriptions of the interviewees' responses, translated into literal English, then adapted into natural English that works for the film.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">We needed to subtitle the film for our largely English-speaking audience. I had the crew transcribe the couple's responses and translate them into English.</p>
-<p class="grey marginBottom1em">It was okay if it was a too literal translation or the English was rough. I went over their transcription and created my own interpretation in English, checking with MacKenzie to ensure that the meaning was intact. It was okay if some nuances were changed as long as it worked for the intention of the film.</p>
-</div>
-</div>
-
-<hr>
-
-
-<div class="row">
-<div class="column column-6">
-<figure>
-<img src="img/gallery/sunnyspot/premiere1-min.png" width="100%" class="dropShadow marginBottom1em">
-<img src="img/gallery/sunnyspot/aftereffects1-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey marginBottom4em">Editing video and audio in Premiere, then adding titles and animating photographs in AfterEffects.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">MacKenzie and I edited the film together in <span class="italic">Adobe Premiere</span>. I needed her to tell me when certain Chinese sentences began and ended, so the editing would feel right. We chose a music track together and I made sure that the cuts were nicely timed to each section of the song.</p>
-<p class="grey marginBottom1em">I added titles, subtitles, and an ending credits with <span class="italic">Adobe AfterEffects</span>. It was also used to perform the "Ken Burns effect" on certain still photographs used in the film.</p>
-<p class="grey marginBottom4em">We screened the film for our teacher and a group of our peers. We could tell from the mood of the room that we had emotionally connected with our audience. We felt proud of our accomplishment, and very happy that we could deliver a retirement gift to the lovely couple who'd been so kind as to star in our film.</p>
-
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-      </div>
-      
-<div class="modalFooter">
-            <div class="modalFooterText">
-<a href="javascript:void(0)" onclick="sunnyspotRightArrow()"><h7 class="tealBG white bold">next project &#8594;</h7></a>
-</div>
-</div> 
-      
-      
-      </div>
-      
-      
-        <!-- this link expands a gallery box into a modal --> 
-      <div class="modalLinkContainer" id="sunnyspotModalLinkContainer">
+    <!-- TO EDIT AUGUST 30th: ADDING ABILITY TO close modal by clicking outside
+                            <!-- this link closes modal when clicked outside of modal window  
+      <div id="modalBGContainer">
       <a href="javascript:void(0)" onclick="sunnyspotOpenModal()">
-      <div class="modalLink">
+      <div id="modalBG">
       </div>
       </a>
-      </div>
+      </div>  
+      -->
+    
+    <div class="paddingTop2em paddingBottom3em threeDaccel" id="gallery">
+      <h3 class="white dropShadow bold marginBottom1em textCenter threeDaccel" id="myWork">PROJECTS</h3>
       
- </div>
-    
-    <!-- arrows for each expanded modal in first row --> 
-      
-              <!-- close X for kojiro-->
-          <a href="javascript:void(0)" onclick="kojiroCloseX()">
-      <div class="closeX dropShadow" id="kojiroCloseX">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
-	.xBG{fill:rgb(35, 174, 194);}
-	.xIcon{fill:rgb(255, 255, 255);}
-</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
-      </div>
-      </a>
-      
-    <!-- left arrow for kojiro --> 
-    <!-- NONE! --> 
-    
-    <!-- right arrow for kojiro --> 
-    <a href="javascript:void(0)" onclick="kojiroRightArrow()">
-    
-    <div class="rightArrow dropShadow" id="kojiroRightArrow">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
-	.arrowCircle{fill:#FFFFFF;}
-	.arrowFill{fill:#21AEC2;}
-</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/></svg>
-    </div>
-    </a> 
-    
-
-     <!-- close X for sunnyspot -->
-          <a href="javascript:void(0)" onclick="sunnyspotCloseX()">
-     <div class="closeX dropShadow" id="sunnyspotCloseX">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
-	.xBG{fill:rgb(35, 174, 194);}
-	.xIcon{fill:rgb(255, 255, 255);}
-</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
-      </div>
-      </a>
-    
-    <!-- left arrow for sunnyspot --> 
-    <a href="#javascript:void(0)" onclick="sunnyspotLeftArrow()">
-    <div class="leftArrow dropShadow" id="sunnyspotLeftArrow">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
-	.arrowCircle{fill:#FFFFFF;}
-	.arrowFill{fill:#21AEC2;}
-</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M25 33l1.4-1.4 -9.5-9.5c-0.4-0.4-0.8-0.8-1.1-1.1l10.6-10.6L25 9 13 21l0.7 0.7C13.8 21.8 25 33 25 33z"/></svg>
-    </div>
-    </a> 
-    
-    <!-- right arrow for sunnyspot --> 
-    <a href="javascript:void(0)" onclick="sunnyspotRightArrow()">
-    <div class="rightArrow dropShadow" id="sunnyspotRightArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
-	.arrowCircle{fill:#FFFFFF;}
-	.arrowFill{fill:#21AEC2;}
-</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/></svg>
-    </div>
-    </a> 
-    
-    <!-- close X for sunnyspot-->
-          <a href="javascript:void(0)" onclick="sunnyspotCloseX()">
-         <div class="closeX dropShadow" id="sunnyspotCloseX">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
-	.xBG{fill:rgb(35, 174, 194);}
-	.xIcon{fill:rgb(255, 255, 255);}
-</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
-      </div>
-      </a>
-    
-    <!-- left arrow for sunnyspot --> 
-    <a href="javascript:void(0)" onclick="sunnyspotLeftArrow()">
-    <div class="leftArrow dropShadow" id="sunnyspotLeftArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
-	.arrowCircle{fill:#FFFFFF;}
-	.arrowFill{fill:#21AEC2;}
-</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M25 33l1.4-1.4 -9.5-9.5c-0.4-0.4-0.8-0.8-1.1-1.1l10.6-10.6L25 9 13 21l0.7 0.7C13.8 21.8 25 33 25 33z"/></svg>
-    </div>
-    </a> 
-    
-    <!-- right arrow for sunnyspot --> 
-    <a href="javascript:void(0)" onclick="sunnyspotRightArrow()">
-    <div class="rightArrow dropShadow" id="sunnyspotRightArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
-	.arrowCircle{fill:#FFFFFF;}
-	.arrowFill{fill:#21AEC2;}
-</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/></svg>
-    </div>
-    </a>
-    
-    <!-- ella gallery section -->
-    <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="ella"> 
-      
-      <!-- label for the gallery item becomes modal header -->
-      <div class="modalHeader imgFitBox" id="ellaHeader">
-      
-
+      <!-- wraps the row of gallery items -->
+      <div class="row galleryRow" id="galleryRow"> 
         
-        <!-- label for gallery item -->
-        <div class="boxLabel threeDaccel" id="ellaLabel">
-        
-        <div class="gradient">
-          <h5 class="white topLabel textShadowStrong" id="ellaTopLabel">ELLA</h5>
+        <!-- kojiro gallery section -->
+        <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="kojiro"> 
+          
+          <!-- label for the gallery item becomes modal header -->
+          <div class="modalHeader imgFitBox" id="kojiroHeader"> 
+            
+            <!-- label for gallery item -->
+            <div class="boxLabel threeDaccel" id="kojiroLabel">
+              <div class="gradient">
+                <h5 class="white topLabel textShadowStrong" id="kojiroTopLabel">KOJIRŌ IZAKAYA</h5>
+              </div>
+              <h6 class="tealBG white bottomLabel boxShadow" id="kojiroBottomLabel">interactive restaurant menu</h6>
+            </div>
           </div>
           
-            <h6 class="tealBG white bottomLabel boxShadow" id="ellaBottomLabel">24 hour app challenge</h6>
+          <!-- main section of modal is hidden until expanded -->
+          <div class="modalMain threeDaccel" id="kojiroMain">
+            <div class="marginLeftRight5em">
+              <p class="grey marginBottom2em">The course was <span class="italic">Interface Design</span>, and I was working with a talented team of students to create an interactive menu for a restaurant setting. Our vision was to place an interactive mobile tablet in front of every customer in the restaurant, replacing the traditional paper menu.</p>
+              <figure> <img src="img/gallery/kojiro/gallery9-min.png" width="100%" class="dropShadow marginBottom1em">
+                <figcaption class="grey marginBottom3em">The final design for the Kojirō Izakaya interactive restaurant menu.</figcaption>
+              </figure>
+              <figure>
+                <div class="videoWrapper dropShadow marginBottom1em" id="kojiroVideo"> 
+                  <!-- Copy & Pasted from YouTube -->
+                  <iframe width="560" height="315" src="http://www.youtube.com/embed/OlpkLHqLKPI?modestbranding=1&rel=0&color=white" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+                <figcaption class="grey">The final video pitch to demonstrate the interactive menu concept / <span class="bold">1.5 minutes</span></figcaption>
+              </figure>
+              <h3 class="teal bold marginBottom1point25em textCenter">PROCESS</h3>
+              <div class="row">
+                <div class="column column-6">
+                  <figure> <img src="img/gallery/kojiro/gallerylogo-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">Kojirō Izakaya - our fictional Japanese pub concept.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">Our plan was for customers to be able to browse food and drink, and make orders, without having to summon the server. I suggested that we come up with an example restaurant to guide our design.</p>
+                  <p class="grey marginBottom1em">Because the concept of the "izakaya" (Japanese pub) encouraged long visits with repeated ordering of drinks and small foods, this seemed like the ideal type of restaurant for an on-table ordering menu.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure> <img src="img/gallery/kojiro/gallery2b-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">An excerpt from Alex's sketchbook, showing a rough paper wireframe of a potential menu layout.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">I always start designing on paper. I began by sketching a series of possible layouts, keeping them simple to get through many ideas very quickly. Once I chose a layout that worked, I sketched it out in greater detail.</p>
+                  <p class="grey marginBottom1em">My concept was to allow the customer to jump to specific food/drink categories with persistent buttons, or allow them to keep swiping through the entire thing as in a traditional menu. A persistent shopping cart would be docked to the right side of the screen, to help people easily understand what they've ordered.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure><img src="img/gallery/kojiro/gallery3-min.png" width="100%" class="dropShadow marginBottom1em"> <img src="img/gallery/kojiro/gallery4-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">Rough digital wireframes</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">I then took the concept into the digital realm, creating wireframes on the computer.</p>
+                  <p class="grey marginBottom1em">The goal here was to keep it rough and low detail. We were not worrying about final look yet. This was purely to test the feasibility of the layout.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure> <img src="img/gallery/kojiro/gallery5-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">The wireframes made interactive through Axure, for user testing.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">We took the digital wireframes and placed them into <span class="italic">Axure</span>. This tool allowed us to make the wireframes interactive.</p>
+                  <p class="grey marginBottom1em">We put the interface in front of a few test users, and got feedback. They liked the persistent category buttons and shopping cart. But they were a bit overwhelmed by the fact that you had some things docked to the bottom, and some to the side.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure> <img src="img/gallery/kojiro/gallery6-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">Creating a high-detail layout in Illustrator.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">We decided to move the category buttons to the left-hand side of the screen.</p>
+                  <p class="grey marginBottom1em">It was now time to create a high-detail version of the layout. I created the finished look in <span class="italic">Adobe Illustrator</span>, taking care to use fonts and colors which reflected the classy-but-comfortable image of an izakaya.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure> <img src="img/gallery/kojiro/gallery7-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">Animating the interactions of the menu in AfterEffects.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">We had to deliver a pitch video at the end of this process. I brought my final interface design into <span class="italic">Adobe AfterEffects</span> (one of my favorite tools) and animated all of the interactions.</p>
+                  <p class="grey marginBottom1em">A shaded circle represents a user's touch on the interface, and the menu responds with animations between different menu states.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure> <img src="img/gallery/kojiro/gallery9-min.png" width="100%" class="dropShadow marginBottom1em"> <img src="img/gallery/kojiro/gallery8-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey marginBottom4em">Actors point to the interactive tablet menu in our pitch video.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">Normally, I'd be at ease shooting live action video for design pitches. But in this case I knew that I could fully count on a fellow teammate. <span class="italic">Jay Tseng</span> is an accomplished videographer, and he took a couple of actors to a Japanese restaurant in order to shoot video.</p>
+                  <p class="grey marginBottom4em">The two ladies acted out interaction with a tablet. When combined with my AfterEffects animation, this helped to visualize the experience of using our interactive menu in the field.</p>
+                  <!-- anchor link seems to be broken, check javascript 
+<p class="grey marginBottom1em">In case you missed it above, <a href="#kojiroVideo">jump back to the video</a>.</p>
+--> 
+                </div>
+              </div>
+            </div>
+            <div class="modalFooter">
+              <div class="modalFooterText"> <a href="javascript:void(0)" onclick="kojiroRightArrow()">
+                <h7 class="tealBG white bold">next project &#8594;</h7>
+                </a> </div>
+            </div>
+          </div>
+          
+          <!-- this link expands a gallery box into a modal -->
+          <div class="modalLinkContainer" id="kojiroModalLinkContainer"> <a href="javascript:void(0)" onclick="kojiroOpenModal()">
+            <div class="modalLink"> </div>
+            </a> </div>
         </div>
-
+        
+                <!-- greenlight gallery section -->
+        <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="greenlight"> 
+          
+          <!-- label for the gallery item becomes modal header -->
+          <div class="modalHeader imgFitBox" id="greenlightHeader"> 
+            
+            <!-- label for gallery item -->
+            <div class="boxLabel threeDaccel" id="greenlightLabel">
+              <div class="gradient">
+                <h5 class="white topLabel textShadowStrong" id="greenlightTopLabel">COMING SOON</h5>
+              </div>
+              <h6 class="tealBG white bottomLabel boxShadow" id="greenlightBottomLabel">e-commerce project</h6>
+            </div>
+          </div>
+          
+          <!-- main section of modal is hidden until expanded -->
+          <div class="modalMain threeDaccel" id="greenlightMain">
+            <div class="marginLeftRight5em">
+              <p class="grey marginBottom1em">COMING SOON<br><br><br><br><br><br><br><br><br></p>
+             
+                  
+                  
+            </div>
+            <div class="modalFooter">
+              <div class="modalFooterText"> <a href="javascript:void(0)" onclick="greenlightRightArrow()">
+                <h7 class="tealBG white bold">next project &#8594;</h7>
+                </a> </div>
+            </div>
+          </div>
+          
+          <!-- this link expands a gallery box into a modal -->
+          <div class="modalLinkContainer" id="greenlightModalLinkContainer"> <a href="javascript:void(0)" onclick="greenlightOpenModal()">
+            <div class="modalLink"> </div>
+            </a> </div>
         </div>
-      
-      <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain threeDaccel" id="ellaMain">
-
-      <div class="marginLeftRight5em">
-
-
-      <!-- <p>MY ROLES:<p>
+        
+        <!-- sunnyspot gallery section -->
+        <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="sunnyspot"> 
+          
+          <!-- label for the gallery item becomes modal header -->
+          <div class="modalHeader imgFitBox" id="sunnyspotHeader"> 
+            
+            <!-- label for gallery item -->
+            <div class="boxLabel threeDaccel" id="sunnyspotLabel">
+              <div class="gradient">
+                <h5 class="white topLabel textShadowStrong" id="sunnyspotTopLabel">A SUNNY SPOT</h5>
+              </div>
+              <h6 class="tealBG white bottomLabel boxShadow" id="sunnyspotBottomLabel">short documentary</h6>
+            </div>
+          </div>
+          
+          <!-- main section of modal is hidden until expanded -->
+          <div class="modalMain threeDaccel" id="sunnyspotMain">
+            <div class="marginLeftRight5em">
+              <p class="grey marginBottom1em">It was an "intersession" version of the <span class="italic">Moving Images</span> course, which meant that this normally full sized course was compressed into a single month and a half. We had to rush to create several short video projects, culminating in a final project to create a short documentary film.</p>
+              <p class="grey marginBottom2em">Little did I realize that this time-constrained course would connect me with an adorable older couple who run a Chinese café. I directed the documentary about their story, with the aid of a talented crew of fellow students.</p>
+              <figure>
+                <div class="videoWrapper dropShadow marginBottom1em" id="sunnysideVideo"> 
+                  <!-- Copy & Pasted from YouTube -->
+                  <iframe width="560" height="315" src="http://www.youtube.com/embed/FOtHeDr9Idc?modestbranding=1&rel=0&color=white" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+                <figcaption class="grey">Our short documentary about the Sunny Spot café, and the lovely couple behind it / <span class="bold">6 minutes</span></figcaption>
+              </figure>
+              <h3 class="teal bold marginBottom1point25em textCenter">PROCESS</h3>
+              <div class="row">
+                <div class="column column-6">
+                  <figure>
+                    <div class="row">
+                      <div class="column column-6"> <img src="img/gallery/sunnyspot/treatment1-min.png" width="100%" class="dropShadow marginBottom1em"> </div>
+                      <div class="column column-6"> <img src="img/gallery/sunnyspot/treatment2-min.png" width="100%" class="dropShadow marginBottom1em"> </div>
+                    </div>
+                    <figcaption class="grey">MacKenzie Ma's initial treatment for the Sunny Spot café documentary.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">Every documentary begins with a "treatment", a short synopsis of what the film is to be about. In this case, it was created by <span class="italic">MacKenzie Ma</span>. She knew of an older couple who ran a Chinese café, famous for their delicious "Xianburgers", and she wanted to document their story.</p>
+                  <p class="grey marginBottom1em">MacKenzie approached me to join her team. Her and I would work in close collaboration over the next weeks. We were co-directors.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure><img src="img/gallery/sunnyspot/script1-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">Alex's preliminary script, which helped to define a specific vision for the café documentary shoot.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">Even documentaries need scripts. We needed to know how the film would work, even before we began shooting. I wrote a quick script that helped the crew to understand what we were going to do.</p>
+                  <p class="grey marginBottom1em">I proposed that the film have three acts: the introduction of the couple and the cafe, the revelation that they were to retire, and their satisfaction that they were happy and had done a great job.</p>
+                  <p class="grey marginBottom1em">I would prompt MacKenzie to ask interview questions which teased out this narrative. The film would be spoken in Chinese, so her translation was invaluable, and she really understood the narrative arc that I was proposing.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure> <img src="img/gallery/sunnyspot/broll1-min.png" width="100%" class="dropShadow marginBottom1em"> <img src="img/gallery/sunnyspot/broll2-min.png" width="100%" class="dropShadow marginBottom1em"> <img src="img/gallery/sunnyspot/broll4-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">Screenshots of "b-roll" footage, showing Vancouver's Main St. neighborhood.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">We actually began shooting on a day the café was closed. This was by design. We needed to shoot "b-roll" footage of the surrounding neighbourhood. This would be intercut with the interview footage, rooting the story in Vancouver's unique Main St. neighborhood.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure> <img src="img/gallery/sunnyspot/interview1-min.png" width="100%" class="dropShadow marginBottom1em"> <img src="img/gallery/sunnyspot/broll3-min.png" width="100%" class="dropShadow marginBottom1em"> <img src="img/gallery/sunnyspot/broll5-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">Alex directing and recording sound on the main day of filming. The crew shot interview footage, as well as b-roll footage of the couple and their café.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">On the main day of shooting, we set up three cameras at different angles, each manned by a different crew member. I was doing dual duty as director and boom mic operator, holding a microphone over the interview subject.</p>
+                  <p class="grey marginBottom1em">I reminded MacKenzie of each question to ask, and she did wonderfully. Our café couple delivered entertaining answers to our questions, and delivered the narrative we'd hoped for. After shooting some more interior b-roll footage of the café and its adorable details, we had ourselves a film.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure> <img src="img/gallery/sunnyspot/script2-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">Transcriptions of the interviewees' responses, translated into literal English, then adapted into natural English that works for the film.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">We needed to subtitle the film for our largely English-speaking audience. I had the crew transcribe the couple's responses and translate them into English.</p>
+                  <p class="grey marginBottom1em">It was okay if it was a too literal translation or the English was rough. I went over their transcription and created my own interpretation in English, checking with MacKenzie to ensure that the meaning was intact. It was okay if some nuances were changed as long as it worked for the intention of the film.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure> <img src="img/gallery/sunnyspot/premiere1-min.png" width="100%" class="dropShadow marginBottom1em"> <img src="img/gallery/sunnyspot/aftereffects1-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey marginBottom4em">Editing video and audio in Premiere, then adding titles and animating photographs in AfterEffects.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">MacKenzie and I edited the film together in <span class="italic">Adobe Premiere</span>. I needed her to tell me when certain Chinese sentences began and ended, so the editing would feel right. We chose a music track together and I made sure that the cuts were nicely timed to each section of the song.</p>
+                  <p class="grey marginBottom1em">I added titles, subtitles, and an ending credits with <span class="italic">Adobe AfterEffects</span>. It was also used to perform the "Ken Burns effect" on certain still photographs used in the film.</p>
+                  <p class="grey marginBottom4em">We screened the film for our teacher and a group of our peers. We could tell from the mood of the room that we had emotionally connected with our audience. We felt proud of our accomplishment, and very happy that we could deliver a retirement gift to the lovely couple who'd been so kind as to star in our film.</p>
+                </div>
+              </div>
+            </div>
+            <div class="modalFooter">
+              <div class="modalFooterText"> <a href="javascript:void(0)" onclick="sunnyspotRightArrow()">
+                <h7 class="tealBG white bold">next project &#8594;</h7>
+                </a> </div>
+            </div>
+          </div>
+          
+          <!-- this link expands a gallery box into a modal -->
+          <div class="modalLinkContainer" id="sunnyspotModalLinkContainer"> <a href="javascript:void(0)" onclick="sunnyspotOpenModal()">
+            <div class="modalLink"> </div>
+            </a> </div>
+        </div>
+        
+        <!-- arrows for each expanded modal in first row --> 
+        
+        <!-- close X for kojiro--> 
+        <a href="javascript:void(0)" onclick="kojiroCloseX()">
+        <div class="closeX dropShadow" id="kojiroCloseX">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1">
+            <style type="text/css">  
+	.xBG{fill:rgb(35, 174, 194);}
+	.xIcon{fill:rgb(255, 255, 255);}
+</style>
+            <circle class="xBG" cx="25.6" cy="25.6" r="25.6"/>
+            <polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/>
+          </svg>
+        </div>
+        </a> 
+        
+        <!-- left arrow for kojiro --> 
+        <!-- NONE! --> 
+        
+        <!-- right arrow for kojiro --> 
+        <a href="javascript:void(0)" onclick="kojiroRightArrow()">
+        <div class="rightArrow dropShadow" id="kojiroRightArrow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1">
+            <style type="text/css">  
+	.arrowCircle{fill:#FFFFFF;}
+	.arrowFill{fill:#21AEC2;}
+</style>
+            <circle class="arrowCircle" cx="21" cy="21" r="21"/>
+            <path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/>
+          </svg>
+        </div>
+        </a> 
+        
+        <!-- close X for greenlight --> 
+        <a href="javascript:void(0)" onclick="greenlightCloseX()">
+        <div class="closeX dropShadow" id="greenlightCloseX">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1">
+            <style type="text/css">  
+	.xBG{fill:rgb(35, 174, 194);}
+	.xIcon{fill:rgb(255, 255, 255);}
+</style>
+            <circle class="xBG" cx="25.6" cy="25.6" r="25.6"/>
+            <polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/>
+          </svg>
+        </div>
+        </a> 
+        
+        <!-- left arrow for greenlight --> 
+        <a href="#javascript:void(0)" onclick="greenlightLeftArrow()">
+        <div class="leftArrow dropShadow" id="greenlightLeftArrow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1">
+            <style type="text/css">  
+	.arrowCircle{fill:#FFFFFF;}
+	.arrowFill{fill:#21AEC2;}
+</style>
+            <circle class="arrowCircle" cx="21" cy="21" r="21"/>
+            <path class="arrowFill" d="M25 33l1.4-1.4 -9.5-9.5c-0.4-0.4-0.8-0.8-1.1-1.1l10.6-10.6L25 9 13 21l0.7 0.7C13.8 21.8 25 33 25 33z"/>
+          </svg>
+        </div>
+        </a> 
+        
+        <!-- right arrow for greenlight --> 
+        <a href="javascript:void(0)" onclick="greenlightRightArrow()">
+        <div class="rightArrow dropShadow" id="greenlightRightArrow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1">
+            <style type="text/css">  
+	.arrowCircle{fill:#FFFFFF;}
+	.arrowFill{fill:#21AEC2;}
+</style>
+            <circle class="arrowCircle" cx="21" cy="21" r="21"/>
+            <path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/>
+          </svg>
+        </div>
+        </a> 
+        
+        <!-- close X for sunnyspot--> 
+        <a href="javascript:void(0)" onclick="sunnyspotCloseX()">
+        <div class="closeX dropShadow" id="sunnyspotCloseX">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1">
+            <style type="text/css">  
+	.xBG{fill:rgb(35, 174, 194);}
+	.xIcon{fill:rgb(255, 255, 255);}
+</style>
+            <circle class="xBG" cx="25.6" cy="25.6" r="25.6"/>
+            <polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/>
+          </svg>
+        </div>
+        </a> 
+        
+        <!-- left arrow for sunnyspot --> 
+        <a href="javascript:void(0)" onclick="sunnyspotLeftArrow()">
+        <div class="leftArrow dropShadow" id="sunnyspotLeftArrow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1">
+            <style type="text/css">  
+	.arrowCircle{fill:#FFFFFF;}
+	.arrowFill{fill:#21AEC2;}
+</style>
+            <circle class="arrowCircle" cx="21" cy="21" r="21"/>
+            <path class="arrowFill" d="M25 33l1.4-1.4 -9.5-9.5c-0.4-0.4-0.8-0.8-1.1-1.1l10.6-10.6L25 9 13 21l0.7 0.7C13.8 21.8 25 33 25 33z"/>
+          </svg>
+        </div>
+        </a> 
+        
+        <!-- right arrow for sunnyspot --> 
+        <a href="javascript:void(0)" onclick="sunnyspotRightArrow()">
+        <div class="rightArrow dropShadow" id="sunnyspotRightArrow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1">
+            <style type="text/css">  
+	.arrowCircle{fill:#FFFFFF;}
+	.arrowFill{fill:#21AEC2;}
+</style>
+            <circle class="arrowCircle" cx="21" cy="21" r="21"/>
+            <path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/>
+          </svg>
+        </div>
+        </a> 
+        
+        <!-- ella gallery section -->
+        <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box threeDaccel" id="ella"> 
+          
+          <!-- label for the gallery item becomes modal header -->
+          <div class="modalHeader imgFitBox" id="ellaHeader"> 
+            
+            <!-- label for gallery item -->
+            <div class="boxLabel threeDaccel" id="ellaLabel">
+              <div class="gradient">
+                <h5 class="white topLabel textShadowStrong" id="ellaTopLabel">ELLA</h5>
+              </div>
+              <h6 class="tealBG white bottomLabel boxShadow" id="ellaBottomLabel">24 hour app challenge</h6>
+            </div>
+          </div>
+          
+          <!-- main section of modal is hidden until expanded -->
+          <div class="modalMain threeDaccel" id="ellaMain">
+            <div class="marginLeftRight5em"> 
+              
+              <!-- <p>MY ROLES:<p>
       <p>User interface prototyping</p>
       <p>User testing</p>
       <p>Finished UI design</p>
       <p><i>AfterEffects</i> prototype video</p> -->
-    
-    
-    <p class="grey marginBottom2em">This wasn't the usual design process. In the <span class="italic">Interface Design</span> course, we were given 24 hours to come up with an app design that would help would-be volunteers connect with charitable organizations. It was an opportunity to come up with a finished-looking design in a quick span of time.</p>
-   
-    <figure>
-    <img src="img/gallery/ella/gallery6-min.png" width="100%" class="marginBottom1em">
-    <figcaption class="grey">A showcase of various pages from the Ella app concept.</figcaption>
-</figure>
-    
-        
-        
-        <h3 class="teal bold marginBottom1point25em textCenter">PROCESS</h3>
-
-<!--
+              
+              <p class="grey marginBottom2em">This wasn't the usual design process. In the <span class="italic">Interface Design</span> course, we were given 24 hours to come up with an app design that would help would-be volunteers connect with charitable organizations. It was an opportunity to come up with a finished-looking design in a quick span of time.</p>
+              <figure> <img src="img/gallery/ella/gallery6-min.png" width="100%" class="marginBottom1em">
+                <figcaption class="grey">A showcase of various pages from the Ella app concept.</figcaption>
+              </figure>
+              <h3 class="teal bold marginBottom1point25em textCenter">PROCESS</h3>
+              
+              <!--
 <div class="row">
 <div class="column column-6">
 <figure>
@@ -775,830 +697,670 @@ $(function() {
 </div>
 
     <hr> -->
-
-<div class="row">
-<div class="column column-6">
-<figure>
-<img src="img/gallery/ella/gallery2-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">The first page that a user will see, offering social media-based login options.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">I set for myself the constraint that I wanted this app to have a low-bar for entry. I settled on offering social media-based login options from <span class="italic">Facebook</span>, <span class="italic">Twitter</span> and <span class="italic">Google</span>.</p>
-<p class="grey marginBottom1em">This is not a perfect solution for all apps, as it requires people to already be users of one of these social media sites. But it has the advantage of skipping an email-based signup process that can lose people. For this project, I felt it was a fit.</p>
-</div>
-</div>
-
-<hr>
-
-<div class="row">
-<div class="column column-6"><figure><img src="img/gallery/ella/gallery3-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">The onboarding experience of Ella, showing a field of bubbles with different types of charities that the user can select.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">This app needed to be able to suggest charities to volunteers. I wanted to provide a meaningful "feed" of charity suggestions. But to do this, the volunteer needed to state the types of organizations and tasks that they would be interested in.</p>
-<p class="grey marginBottom1em">Taking inspiration from <span class="italic">Apple Music</span>, the on-boarding experience for this app would provide a field of "bubbles", describing first <span class="italic">organizations</span> and later <span class="italic">tasks</span> that the user would be interested in. The user can tap on as many or as few bubbles as they like. This would help to populate the app's feed with appropriate charity suggestions.</p>
-</div>
-</div>
-
-<hr>
-
-<div class="row">
-<div class="column column-6">
-<figure>
-<img src="img/gallery/ella/gallery4-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">The main feed, called "opportunities". By default it shows suggestions based on the user's previous activity.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">The main feed is called "opportunities", and by default shows the app's charity suggestions as determined by the user's choices during the on-boarding experience. These selections will be refined as the user continues to interact with the app. This section also allows you to filter by specific categories.</p>
-<p class="grey marginBottom1em">The user can swipe left and right between different charity options. Each charity is placed on a color-appropriate card which shows imagery of the charity, and the ability to "favorite" it for later, or apply now.</p>
-</div>
-</div>
-
-<hr>
-
-<div class="row">
-<div class="column column-6">
-<figure>
-<img src="img/gallery/ella/gallery5-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey marginBottom4em">The "favorite" screen, showing charities that the user wants to remember.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">On every charity is a star icon, allowing the user to "favorite" it to a special list.</p>
-<p class="grey marginBottom4em">The star icon is prominantly displayed beside each entry. Clicking on that icon will "un-favorite" the charity, removing it from the list.</p>
-</div>
-</div>
-
-
-
-
-</div>
-
-<div class="modalFooter">
-            <div class="modalFooterText">
-<a href="javascript:void(0)" onclick="ellaRightArrow()"><h7 class="tealBG white bold">next project &#8594;</h7></a>
-</div>
-</div> 
-
-      </div>
-      
-        <!-- this link expands a gallery box into a modal --> 
-      <div class="modalLinkContainer" id="ellaModalLinkContainer">
-      <a href="javascript:void(0)" onclick="ellaOpenModal()">
-      <div class="modalLink">
-      </div>
-      </a>
-      </div>
-      
-     </div>
-      
-    
-        <!-- playboy gallery section -->
-    <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box imgFitBox threeDaccel" id="playboy"> 
-      
-      <!-- label for the gallery item becomes modal header -->
-      <div class="modalHeader imgFitBox" id="playboyHeader"> 
-      
-
-        
-        <!-- label for gallery item -->
-        <div class="boxLabel threeDaccel" id="playboyLabel">
-        
-        <div class="gradient">
-          <h5 class="white topLabel textShadowStrong" id="playboyTopLabel">PLAYBOY</h5>
+              
+              <div class="row">
+                <div class="column column-6">
+                  <figure> <img src="img/gallery/ella/gallery2-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">The first page that a user will see, offering social media-based login options.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">I set for myself the constraint that I wanted this app to have a low-bar for entry. I settled on offering social media-based login options from <span class="italic">Facebook</span>, <span class="italic">Twitter</span> and <span class="italic">Google</span>.</p>
+                  <p class="grey marginBottom1em">This is not a perfect solution for all apps, as it requires people to already be users of one of these social media sites. But it has the advantage of skipping an email-based signup process that can lose people. For this project, I felt it was a fit.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure><img src="img/gallery/ella/gallery3-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">The onboarding experience of Ella, showing a field of bubbles with different types of charities that the user can select.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">This app needed to be able to suggest charities to volunteers. I wanted to provide a meaningful "feed" of charity suggestions. But to do this, the volunteer needed to state the types of organizations and tasks that they would be interested in.</p>
+                  <p class="grey marginBottom1em">Taking inspiration from <span class="italic">Apple Music</span>, the on-boarding experience for this app would provide a field of "bubbles", describing first <span class="italic">organizations</span> and later <span class="italic">tasks</span> that the user would be interested in. The user can tap on as many or as few bubbles as they like. This would help to populate the app's feed with appropriate charity suggestions.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure> <img src="img/gallery/ella/gallery4-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">The main feed, called "opportunities". By default it shows suggestions based on the user's previous activity.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">The main feed is called "opportunities", and by default shows the app's charity suggestions as determined by the user's choices during the on-boarding experience. These selections will be refined as the user continues to interact with the app. This section also allows you to filter by specific categories.</p>
+                  <p class="grey marginBottom1em">The user can swipe left and right between different charity options. Each charity is placed on a color-appropriate card which shows imagery of the charity, and the ability to "favorite" it for later, or apply now.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure> <img src="img/gallery/ella/gallery5-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey marginBottom4em">The "favorite" screen, showing charities that the user wants to remember.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">On every charity is a star icon, allowing the user to "favorite" it to a special list.</p>
+                  <p class="grey marginBottom4em">The star icon is prominantly displayed beside each entry. Clicking on that icon will "un-favorite" the charity, removing it from the list.</p>
+                </div>
+              </div>
+            </div>
+            <div class="modalFooter">
+              <div class="modalFooterText"> <a href="javascript:void(0)" onclick="ellaRightArrow()">
+                <h7 class="tealBG white bold">next project &#8594;</h7>
+                </a> </div>
+            </div>
           </div>
           
-            <h6 class="tealBG white bottomLabel boxShadow" id="playboyBottomLabel">writer-based website proposal</h6>
+          <!-- this link expands a gallery box into a modal -->
+          <div class="modalLinkContainer" id="ellaModalLinkContainer"> <a href="javascript:void(0)" onclick="ellaOpenModal()">
+            <div class="modalLink"> </div>
+            </a> </div>
         </div>
         
-        </div>
-      
-      <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain threeDaccel" id="playboyMain">
-        
-        
-              <div class="marginLeftRight5em">
-      
-        <p class="grey marginBottom1em"><span class="italic">Interactive Objects & Environments</span> is like the upper-level design boot camp for our school's program. Led by professional design critic Russell Taylor, we were to take on a business client with a "core business problem" and propose a solution for them.</p>
-        <p class="grey marginBottom2em"> We went to Russell with a list of options: Toys R Us? Blackberry? <span class="italic">Playboy</span>...? Yes, that Playboy. Russell liked the last one, and off we went to try and solve the problem of the most infamous magazine in America.</p>
-   
-    <figure>
-    
-    <img src="img/gallery/playboy/mockup1-min.png" width="100%" class="dropShadow marginBottom1em">
-    <figcaption class="grey marginBottom3em">The final design of our Playboy website proposal, portraying restaurant guru Anthony Bourdain as a featured writer.</figcaption>
-</figure>
-
-<figure>
-<div class="videoWrapper dropShadow marginBottom1em" id="playboyVideo">
-    <!-- Copy & Pasted from YouTube -->
-    <iframe width="560" height="315" src="http://www.youtube.com/embed/Tbi7Hy8NGfA?modestbranding=1&rel=0&color=white" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-    </div>
-    <figcaption class="grey">The final video pitch for the Playboy website proposal / <span class="bold">3 minutes</span></figcaption>
-</figure>
-    
-        
-        
-        <h3 class="teal bold marginBottom1point25em textCenter">PROCESS</h3>
-        
-        <div class="row">
-<div class="column column-6"><figure><img src="img/gallery/playboy/process1-min.jpg" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">Our group works on a whiteboard to define the core value of Playboy. We attempted to determine what could be refreshed and what could be jettisoned.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">The issue with Playboy was easy to identify: It traded on adult content in an age when adult content was free on the internet, and the magazine's readership was declining. They had just announced that they were removing nudity from the magazine in an effort to pivot to a new identity.</p>
-
-<p class="grey marginBottom1em">It was the pefect moment to intervene. Could we re-invent them as something new? Could we de-stigmatize the brand and make it cool again?</p>
-<p class="grey marginBottom1em">My team got in a room and teased out the original value of the brand. Largely forgotten by our generation, who knew it only as an adult magazine, Playboy was once respected for its interviews and literary articles. People really did "read it for the articles" at one time. But the medium of a magazine was not the ideal place to connect with today's intelligent audience. How could we revive this?</p>
-</div>
-</div>
-
-<hr>
-
-<div class="row">
-<div class="column column-6">
-<figure>
-
-<div class="marginBottom1em">
-<div class="row">
-<div class="column column-6">
-<img src="img/gallery/playboy/firstApp1-min.png" width="100%" class="dropShadow marginBottomPoint2em">
-</div>
-<div class="column column-6">
-<img src="img/gallery/playboy/firstApp2-min.png" width="100%" class="dropShadow marginBottomPoint2em">
-</div>
-</div>
-<div class="row">
-<div class="column column-6">
-<img src="img/gallery/playboy/firstApp3-min.png" width="100%" class="dropShadow marginBottomPoint2em">
-</div>
-<div class="column column-6">
-<img src="img/gallery/playboy/firstApp4-min.png" width="100%" class="dropShadow marginBottomPoint2em">
-</div>
-</div>
-</div>
-
-<figcaption class="grey">Playboy Stream - the first attempt to create a new Playboy app focused on audio/video broadcasts.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">Our first idea was live broadcasts. We looked at the explosion in popularity of podcasts such as <span class="italic">Serial</span>, and we thought this might be a way to connect a modern audience to smart personalities. We thought of a broadcast appropriate to mobile phones, which could either be watched or just listened to.</p>
-<p class="grey marginBottom1em">I was in charge of the user interface and visual design. Working in <span class="italic">Adboe Illustrator</span>, I came up with a quick first week design for an app called <span class="italic">Playboy Stream</span>.</p>
-<p class="grey marginBottom1em">I combined the famous Playboy bunny logo with a play icon to symbolize this new app. It would allow users to tune into a live show or archived broadcast. If the show was live, the users could influence the direction of the show with an instant vote.</p>
-</div>
-</div>
-
-<hr>
-
-
-<div class="row">
-<div class="column column-6">
-<figure>
-
-<div class="marginBottom1em">
-<div class="row">
-<div class="column column-6">
-<img src="img/gallery/playboy/secondApp1-min.png" width="100%" class="dropShadow marginBottomPoint2em">
-</div>
-<div class="column column-6">
-<img src="img/gallery/playboy/secondApp2-min.png" width="100%" class="dropShadow marginBottomPoint2em">
-</div>
-</div>
-<div class="row">
-<div class="column column-6">
-<img src="img/gallery/playboy/secondApp3-min.png" width="100%" class="dropShadow marginBottomPoint2em">
-</div>
-<div class="column column-6">
-<img src="img/gallery/playboy/secondApp4-min.png" width="100%" class="dropShadow marginBottomPoint2em">
-</div>
-</div>
-</div>
-
-<figcaption class="grey">A second version of the Playboy app, with dedicated shows hosted by engaging personalities.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">The next week, I took the opportunity to refresh the visual design. The all-black look was on-brand, but it could use a splash of color. We presented it to a panel of critics.</p>
-<p class="grey marginBottom1em">Professor Russell Taylor grilled us on it. He wasn't sold on the idea of a broadcast network as a replacement for the Playboy he knew from his youth. And the content was wrong, he said. Too frivolous. Too many privileged-looked people in the mockup. Fair enough.</p>
-<p class="grey marginBottom1em">We went back to the drawing board...</p>
-</div>
-</div>
-
-<hr>
-
-
-<div class="row">
-<div class="column column-6"><figure><img src="img/gallery/playboy/sketching1-min.jpg" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">Alex's sketches of possible layout concepts. The bottom "tree" concept was incorporated into the final design.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">We ditched the idea of an app. Instead, we'd create a new website that would consider the needs of literary writers, and help connect them with an engaged audience. It would be a combination of magazine and social media blogging platform. Think <span class="italic">Medium</span> but with vetted personalities.</p>
-<p class="grey marginBottom1em">It was a website, but we didn't want anything predictable. We wanted to make a splash with the layout. After a little research, I started sketching out new layout concepts. We settled on the concept of a "tree". Each item of content posted by the writer would be a new "leaf", and as they posted, the tree would grow.</p>
-</div>
-</div>
-
-<hr>
-
-
-<div class="row">
-<div class="column column-6"><figure><img src="img/gallery/playboy/illustrator1-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">Creating a final visual design for the user interface.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">I got to work on a finished visual design in <span class="italic">Adobe Illustrator</span>. The idea was that the writer had their own dedicated page, showing only the content they posted or re-posted from elsewhere.</p>
-<p class="grey marginBottom1em">The writer would be able to create content by category, and each category posted in a unique color. Depending on the type of post (a quick update, a full article, or a video), the system would make blocks of differing sizes. This automatically grew the "tree" into a unique form as the writer continued to post content.</p></p>
-</div>
-</div>
-
-<hr>
-
-<div class="row">
-<div class="column column-6">
-<figure>
-<img src="img/gallery/playboy/shooting2-min.jpg" width="100%" class="dropShadow marginBottom1em">
-<img src="img/gallery/playboy/shooting1-min.jpg" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">Gurvinder Singh and So Eun Ahn act in our video shoot as a Playboy writer and reader, respectively.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">Our team got to work on a video to pitch the website. We needed to show our website in real-world use. Two of our members, <span class="italic">Gurvinder Singh</span> and <span class="italic">So Eun Ahn</span>, stood in as a Playboy writer and a Playboy reader, respectively.</p>
-<p class="grey marginBottom1em">I helped to direct the shoot along with <span class="italic">Sara Echavarria</span>. Our "writer" posted content on a laptop, and our "reader" read it on a tablet. We'd combine this footage with the website itself, in order to present our vision.</p>
-</div>
-</div>
-
-<hr>
-
-<div class="row">
-<div class="column column-6">
-<figure>
-<img src="img/gallery/playboy/aftereffects1-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">Animating the user interface in AfterEffects to illustrate the interactions of the website.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">My visual designs were given in slices to other members of the group, in order to animate how users interact with it. Meanwhile, I would create the overall concept for the pitch video.</p>
-</div>
-</div>
-
-<hr>
-
-<div class="row">
-<div class="column column-6">
-<figure>
-<img src="img/gallery/playboy/aftereffects2-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">Editing titles and animating photographs in AfterEffects in order to create the final pitch video.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">The elephant in the room is that everyone hears "Playboy" and assumes purile adult content. I decided that we should address this up front and get it out of the way. I thought of the humorous defense always said by Playboy readers: <span class="italic">"I read it for the articles"</span>. Well, this was not so untrue at one point!</p>
-<p class="grey marginBottom1em">Playing on this phrase, we could remind viewers about Playboy's forgotten literary history, and introduce our writer-focused concept. My video teased the history of the salacious content that Playboy had become known for, before surprising them with Playboy's literary legacy. I animated still shots and added titles with <span class="italic">AfterEffects</span> and cut it with the app and actor's footage in <span class="italic">Premiere</span>. I set it to a jazz soundtrack evoking the classic mid-century era of Playboy.</p>
-</div>
-</div>
-
-<hr>
-
-
-<div class="row">
-<div class="column column-6"><figure><img src="img/gallery/playboy/mockup2-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey marginBottom4em">The final layout of Anthony Bourdain's dedicated page on our Playboy website concept.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">The entire website concept was begun and finished in one week. We presented our video in front of a large panel of guest critics.</p>
-<p class="grey marginBottom1em">It was well-received, the video in particular. We collected a lot of feedback about worked and what didn't (a full-screen interface would have been nice while writing a post! - I agree), and our entire team acquired many skills in regard to devising business strategy and user interface design.</p>
-<p class="grey marginBottom4em">This project sparked my passion for creating pitch videos with engaging visuals, moving text, and a great soundtrack, and it remains one of my particular areas of interest.</p>
-</div>
-</div>
-
-
-
-
-
-
-
-
-      </div>
-      
-      
-      <div class="modalFooter">
-            <div class="modalFooterText">
-<a href="javascript:void(0)" onclick="playboyRightArrow()"><h7 class="tealBG white bold">next project &#8594;</h7></a>
-</div>
-</div> 
-        
-        
-      </div>
-      
-        <!-- this link expands a gallery box into a modal --> 
-      <div class="modalLinkContainer" id="playboyModalLinkContainer">
-      <a href="javascript:void(0)" onclick="playboyOpenModal()">
-      <div class="modalLink">
-      </div>
-      </a>
-      </div>
-      
- </div>
-    
-    
-    
-    
-        <!-- enterprise gallery section -->
-    <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box imgFitBox threeDaccel" id="enterprise"> 
-      
-      <!-- label for the gallery item becomes modal header -->
-      <div class="modalHeader imgFitBox" id="enterpriseHeader"> 
-        
-        <!-- label for gallery item -->
-                        <div class="boxLabel threeDaccel" id="enterpriseLabel">
-                        
-                        <div class="gradient">
-          <h5 class="white topLabel textShadowStrong" id="enterpriseTopLabel">ENTERPRISE</h5>
+        <!-- playboy gallery section -->
+        <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box imgFitBox threeDaccel" id="playboy"> 
+          
+          <!-- label for the gallery item becomes modal header -->
+          <div class="modalHeader imgFitBox" id="playboyHeader"> 
+            
+            <!-- label for gallery item -->
+            <div class="boxLabel threeDaccel" id="playboyLabel">
+              <div class="gradient">
+                <h5 class="white topLabel textShadowStrong" id="playboyTopLabel">PLAYBOY</h5>
+              </div>
+              <h6 class="tealBG white bottomLabel boxShadow" id="playboyBottomLabel">writer-based website proposal</h6>
+            </div>
           </div>
-            <h6 class="tealBG white bottomLabel boxShadow" id="enterpriseBottomLabel">Car Drop app proposal</h6>
+          
+          <!-- main section of modal is hidden until expanded -->
+          <div class="modalMain threeDaccel" id="playboyMain">
+            <div class="marginLeftRight5em">
+              <p class="grey marginBottom1em"><span class="italic">Interactive Objects & Environments</span> is like the upper-level design boot camp for our school's program. Led by professional design critic Russell Taylor, we were to take on a business client with a "core business problem" and propose a solution for them.</p>
+              <p class="grey marginBottom2em"> We went to Russell with a list of options: Toys R Us? Blackberry? <span class="italic">Playboy</span>...? Yes, that Playboy. Russell liked the last one, and off we went to try and solve the problem of the most infamous magazine in America.</p>
+              <figure> <img src="img/gallery/playboy/mockup1-min.png" width="100%" class="dropShadow marginBottom1em">
+                <figcaption class="grey marginBottom3em">The final design of our Playboy website proposal, portraying restaurant guru Anthony Bourdain as a featured writer.</figcaption>
+              </figure>
+              <figure>
+                <div class="videoWrapper dropShadow marginBottom1em" id="playboyVideo"> 
+                  <!-- Copy & Pasted from YouTube -->
+                  <iframe width="560" height="315" src="http://www.youtube.com/embed/Tbi7Hy8NGfA?modestbranding=1&rel=0&color=white" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+                <figcaption class="grey">The final video pitch for the Playboy website proposal / <span class="bold">3 minutes</span></figcaption>
+              </figure>
+              <h3 class="teal bold marginBottom1point25em textCenter">PROCESS</h3>
+              <div class="row">
+                <div class="column column-6">
+                  <figure><img src="img/gallery/playboy/process1-min.jpg" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">Our group works on a whiteboard to define the core value of Playboy. We attempted to determine what could be refreshed and what could be jettisoned.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">The issue with Playboy was easy to identify: It traded on adult content in an age when adult content was free on the internet, and the magazine's readership was declining. They had just announced that they were removing nudity from the magazine in an effort to pivot to a new identity.</p>
+                  <p class="grey marginBottom1em">It was the pefect moment to intervene. Could we re-invent them as something new? Could we de-stigmatize the brand and make it cool again?</p>
+                  <p class="grey marginBottom1em">My team got in a room and teased out the original value of the brand. Largely forgotten by our generation, who knew it only as an adult magazine, Playboy was once respected for its interviews and literary articles. People really did "read it for the articles" at one time. But the medium of a magazine was not the ideal place to connect with today's intelligent audience. How could we revive this?</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure>
+                    <div class="marginBottom1em">
+                      <div class="row">
+                        <div class="column column-6"> <img src="img/gallery/playboy/firstApp1-min.png" width="100%" class="dropShadow marginBottomPoint2em"> </div>
+                        <div class="column column-6"> <img src="img/gallery/playboy/firstApp2-min.png" width="100%" class="dropShadow marginBottomPoint2em"> </div>
+                      </div>
+                      <div class="row">
+                        <div class="column column-6"> <img src="img/gallery/playboy/firstApp3-min.png" width="100%" class="dropShadow marginBottomPoint2em"> </div>
+                        <div class="column column-6"> <img src="img/gallery/playboy/firstApp4-min.png" width="100%" class="dropShadow marginBottomPoint2em"> </div>
+                      </div>
+                    </div>
+                    <figcaption class="grey">Playboy Stream - the first attempt to create a new Playboy app focused on audio/video broadcasts.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">Our first idea was live broadcasts. We looked at the explosion in popularity of podcasts such as <span class="italic">Serial</span>, and we thought this might be a way to connect a modern audience to smart personalities. We thought of a broadcast appropriate to mobile phones, which could either be watched or just listened to.</p>
+                  <p class="grey marginBottom1em">I was in charge of the user interface and visual design. Working in <span class="italic">Adboe Illustrator</span>, I came up with a quick first week design for an app called <span class="italic">Playboy Stream</span>.</p>
+                  <p class="grey marginBottom1em">I combined the famous Playboy bunny logo with a play icon to symbolize this new app. It would allow users to tune into a live show or archived broadcast. If the show was live, the users could influence the direction of the show with an instant vote.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure>
+                    <div class="marginBottom1em">
+                      <div class="row">
+                        <div class="column column-6"> <img src="img/gallery/playboy/secondApp1-min.png" width="100%" class="dropShadow marginBottomPoint2em"> </div>
+                        <div class="column column-6"> <img src="img/gallery/playboy/secondApp2-min.png" width="100%" class="dropShadow marginBottomPoint2em"> </div>
+                      </div>
+                      <div class="row">
+                        <div class="column column-6"> <img src="img/gallery/playboy/secondApp3-min.png" width="100%" class="dropShadow marginBottomPoint2em"> </div>
+                        <div class="column column-6"> <img src="img/gallery/playboy/secondApp4-min.png" width="100%" class="dropShadow marginBottomPoint2em"> </div>
+                      </div>
+                    </div>
+                    <figcaption class="grey">A second version of the Playboy app, with dedicated shows hosted by engaging personalities.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">The next week, I took the opportunity to refresh the visual design. The all-black look was on-brand, but it could use a splash of color. We presented it to a panel of critics.</p>
+                  <p class="grey marginBottom1em">Professor Russell Taylor grilled us on it. He wasn't sold on the idea of a broadcast network as a replacement for the Playboy he knew from his youth. And the content was wrong, he said. Too frivolous. Too many privileged-looked people in the mockup. Fair enough.</p>
+                  <p class="grey marginBottom1em">We went back to the drawing board...</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure><img src="img/gallery/playboy/sketching1-min.jpg" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">Alex's sketches of possible layout concepts. The bottom "tree" concept was incorporated into the final design.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">We ditched the idea of an app. Instead, we'd create a new website that would consider the needs of literary writers, and help connect them with an engaged audience. It would be a combination of magazine and social media blogging platform. Think <span class="italic">Medium</span> but with vetted personalities.</p>
+                  <p class="grey marginBottom1em">It was a website, but we didn't want anything predictable. We wanted to make a splash with the layout. After a little research, I started sketching out new layout concepts. We settled on the concept of a "tree". Each item of content posted by the writer would be a new "leaf", and as they posted, the tree would grow.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure><img src="img/gallery/playboy/illustrator1-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">Creating a final visual design for the user interface.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">I got to work on a finished visual design in <span class="italic">Adobe Illustrator</span>. The idea was that the writer had their own dedicated page, showing only the content they posted or re-posted from elsewhere.</p>
+                  <p class="grey marginBottom1em">The writer would be able to create content by category, and each category posted in a unique color. Depending on the type of post (a quick update, a full article, or a video), the system would make blocks of differing sizes. This automatically grew the "tree" into a unique form as the writer continued to post content.</p>
+                  </p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure> <img src="img/gallery/playboy/shooting2-min.jpg" width="100%" class="dropShadow marginBottom1em"> <img src="img/gallery/playboy/shooting1-min.jpg" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">Gurvinder Singh and So Eun Ahn act in our video shoot as a Playboy writer and reader, respectively.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">Our team got to work on a video to pitch the website. We needed to show our website in real-world use. Two of our members, <span class="italic">Gurvinder Singh</span> and <span class="italic">So Eun Ahn</span>, stood in as a Playboy writer and a Playboy reader, respectively.</p>
+                  <p class="grey marginBottom1em">I helped to direct the shoot along with <span class="italic">Sara Echavarria</span>. Our "writer" posted content on a laptop, and our "reader" read it on a tablet. We'd combine this footage with the website itself, in order to present our vision.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure> <img src="img/gallery/playboy/aftereffects1-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">Animating the user interface in AfterEffects to illustrate the interactions of the website.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">My visual designs were given in slices to other members of the group, in order to animate how users interact with it. Meanwhile, I would create the overall concept for the pitch video.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure> <img src="img/gallery/playboy/aftereffects2-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">Editing titles and animating photographs in AfterEffects in order to create the final pitch video.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">The elephant in the room is that everyone hears "Playboy" and assumes purile adult content. I decided that we should address this up front and get it out of the way. I thought of the humorous defense always said by Playboy readers: <span class="italic">"I read it for the articles"</span>. Well, this was not so untrue at one point!</p>
+                  <p class="grey marginBottom1em">Playing on this phrase, we could remind viewers about Playboy's forgotten literary history, and introduce our writer-focused concept. My video teased the history of the salacious content that Playboy had become known for, before surprising them with Playboy's literary legacy. I animated still shots and added titles with <span class="italic">AfterEffects</span> and cut it with the app and actor's footage in <span class="italic">Premiere</span>. I set it to a jazz soundtrack evoking the classic mid-century era of Playboy.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure><img src="img/gallery/playboy/mockup2-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey marginBottom4em">The final layout of Anthony Bourdain's dedicated page on our Playboy website concept.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">The entire website concept was begun and finished in one week. We presented our video in front of a large panel of guest critics.</p>
+                  <p class="grey marginBottom1em">It was well-received, the video in particular. We collected a lot of feedback about worked and what didn't (a full-screen interface would have been nice while writing a post! - I agree), and our entire team acquired many skills in regard to devising business strategy and user interface design.</p>
+                  <p class="grey marginBottom4em">This project sparked my passion for creating pitch videos with engaging visuals, moving text, and a great soundtrack, and it remains one of my particular areas of interest.</p>
+                </div>
+              </div>
+            </div>
+            <div class="modalFooter">
+              <div class="modalFooterText"> <a href="javascript:void(0)" onclick="playboyRightArrow()">
+                <h7 class="tealBG white bold">next project &#8594;</h7>
+                </a> </div>
+            </div>
+          </div>
+          
+          <!-- this link expands a gallery box into a modal -->
+          <div class="modalLinkContainer" id="playboyModalLinkContainer"> <a href="javascript:void(0)" onclick="playboyOpenModal()">
+            <div class="modalLink"> </div>
+            </a> </div>
         </div>
         
+        <!-- enterprise gallery section -->
+        <div class="column column-4 whiteBG boxShadow height35 marginBottomGutterWidth box imgFitBox threeDaccel" id="enterprise"> 
+          
+          <!-- label for the gallery item becomes modal header -->
+          <div class="modalHeader imgFitBox" id="enterpriseHeader"> 
+            
+            <!-- label for gallery item -->
+            <div class="boxLabel threeDaccel" id="enterpriseLabel">
+              <div class="gradient">
+                <h5 class="white topLabel textShadowStrong" id="enterpriseTopLabel">ENTERPRISE</h5>
+              </div>
+              <h6 class="tealBG white bottomLabel boxShadow" id="enterpriseBottomLabel">Car Drop app proposal</h6>
+            </div>
+          </div>
+          
+          <!-- main section of modal is hidden until expanded -->
+          <div class="modalMain threeDaccel" id="enterpriseMain">
+            <div class="marginLeftRight5em">
+              <p class="grey marginBottom1em">In the middle of Russell Taylor's intensive <span class="italic">Interactive Objects & Environments</span> class, my team and I took at look at <span class="italic">Enterprise Rent-a-Car</span>. They were known for the "we'll pick you up" concept, where an employee goes to where the customer is when they need a rental car.</p>
+              <p class="grey marginBottom2em">It was once a brilliant idea for service. But in this changing landscape of <span class="italic">Car-2-Go</span> and <span class="italic">Uber</span>, we wondered if they could go further.</p>
+              <figure>
+                <div class="row">
+                  <div class="column column-4"><img src="img/gallery/enterprise/app1-min.png" width="100%" class="dropShadow marginBottom1em"> </div>
+                  <div class="column column-4"><img src="img/gallery/enterprise/app5-min.png" width="100%" class="dropShadow marginBottom1em"> </div>
+                  <div class="column column-4"><img src="img/gallery/enterprise/app9-min.png" width="100%" class="dropShadow marginBottom1em"> </div>
+                </div>
+                <figcaption class="grey marginBottom3em">The final design of our Enterprise "Car Drop" app proposal, which brings a car right to the customer's location.</figcaption>
+              </figure>
+              <figure>
+                <div class="videoWrapper dropShadow marginBottom1em" id="enterpriseVideo"> 
+                  <!-- Copy & Pasted from YouTube -->
+                  <iframe width="560" height="315" src="http://www.youtube.com/embed/I4q2GiavX7Y?modestbranding=1&rel=0&color=white" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+                <figcaption class="grey">The final video pitch to demonstrate Enterprise Car Drop app proposal / <span class="bold">1.5 minutes</span></figcaption>
+              </figure>
+              <h3 class="teal bold marginBottom1point25em textCenter">PROCESS</h3>
+              <div class="row">
+                <div class="column column-6">
+                  <figure><img src="img/gallery/enterprise/process1-min.jpg" width="100%" class="dropShadow marginBottom1em"> <img src="img/gallery/enterprise/process2-min.jpg" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">Our team wraps their head around the entire process of renting a car. We wrote down every point of contact between company and customer on sticky notes, in order to define all the factors that affect them.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">Studying the concept of "service design", our team looked at all the places that Enterprise comes into contact with their customers. These contact points are called "touchpoints", and they occur before, during, and even after a customer rents a vehicle. Service design asks us to look at all of these touchpoints, and apply the company values to each one.</p>
+                  <p class="grey marginBottom1em"> We jotted all touchpoints down on sticky notes and arranged them across a timeline, considering both sides of the business/customer relationship.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure><img src="img/gallery/enterprise/presentation1-min.png" width="100%" class="dropShadow marginBottom1em"> <img src="img/gallery/enterprise/presentation2-min.png" width="100%" class="dropShadow marginBottom1em"> <img src="img/gallery/enterprise/presentation3-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">Excerpts from our first week presentation. Our concept was for Enterprise to bring a rental car right to their customers' location. We created a low-fidelity mockup of a website which could facilitate this process.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">The touchpoint that stuck in our mind was the "we'll pick you up" concept, where an employee picks up a customer in need of a vehicle. This struck us as the best idea of a few decades ago. Ultimately, the customer still had to get picked up, drive with an employee back to a storefront, and fill out paperwork with a suited employee. Was this really the easiest process in an age of on-demand apps and services?</p>
+                  <p class="grey marginBottom1em">We had a thought. What if Enterprise could just drop the vehicle off for the customer? My thinking was that self-driving vehicles would be arriving in a few years. Enterprise could position themselves as the vehicle dropoff service early, before the technology was ready. This is similar to how <span class="italic">Netflix</span> began as a DVD delivery service in the mid-2000s. They knew streaming would soon be feasible, but it was a way to get there first. Enterprise could tow the vehicle to the customer, or provide alternate transportation for the employee on the return trip. They could even close their storefronts and save money through the idea.</p>
+                  <p class="grey marginBottom1em">I designed a simple mockup of what the website would look like, populated with vehicles near to the user's location. They could choose a vehicle and it would come right to them.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure><img src="img/gallery/enterprise/exampleapp-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">A very quick mockup that Alex created in 10 minutes in order to pitch a concept to his team. Each vehicle occupies the full screen with stylish imagery of it in action. The user can swipe left and right between different vehicles.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">Professor Russell Taylor and his panel of critics liked they idea, and asked us to focus on a mobile app design.</p>
+                  <p class="grey marginBottom1em">Our team started to think about the app. Many on the team argued for a traditional grid or list of vehicles. I had a theory that a full-screen visual for each vehicle would make for a more delightful experience, and the customer could swipe left and right through the available vehicles. It was a lot like <span class="italic">Tinder</span>.</p>
+                  <p class="grey marginBottom1em">To illustrate the idea, I very quickly created a mockup in 10 minutes, pictured here. This rather high-fidelity mockup convinced the team that this was the right direction.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure><img src="img/gallery/enterprise/app1-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">The front page of the final app design, showing the user's location, and prompting them to select a date range for their car rental.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">I worked on the final design in <span class="italic">Adobe Illustrator</span>, and the entire team gave input.</p>
+                  <p class="grey marginBottom1em">I was never entirely sold on the need to use an entire page to show the user's location (don't they know what city they're in?), but it did provide an opportunity to show beautiful local imagery.</p>
+                  <p class="grey marginBottom1em">It was my theory to place all "tasks" for the user at the bottom of the screen in grey bars. The green button confirms their choices. The grey bars will rise to the top of the screen if it is still relevant to change the tasks, and they dissappear off the top of the page when the context no longer requires them.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure>
+                    <div class="row">
+                      <div class="column column-6"> <img src="img/gallery/enterprise/app4-min.png" width="100%" class="dropShadow marginBottom1em"> </div>
+                      <div class="column column-6"> <img src="img/gallery/enterprise/app3-min.png" width="100%" class="dropShadow marginBottom1em"> </div>
+                    </div>
+                    <figcaption class="grey">Selecting a date and time to show all available vehicles during that time.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">When the grey bar tasks are clicked on, they expand outward as "drawers". Inside each drawer is a larger interface that allows the adjustment for each item.</p>
+                  <p class="grey marginBottom1em">In this case, the task is to set the date range that a person needs to rent a vehicle. First a calendar is shown, and upon selecting a date, a time selector is shown. Once the user has chosen a day and time, the drawer closes. They can click on the green button to confirm the dates and show the vehicles.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure>
+                    <div class="row">
+                      <div class="column column-6"> <img src="img/gallery/enterprise/app6-min.png" width="100%" class="dropShadow marginBottom1em"> </div>
+                      <div class="column column-6"> <img src="img/gallery/enterprise/app7-min.png" width="100%" class="dropShadow marginBottom1em"> </div>
+                    </div>
+                    <figcaption class="grey">An entry for one of the vehicles, showing the name and price. The user is also able to filter by specific vehicle type.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">The user is able to swipe between all the vehicles available in their chosen date range.</p>
+                  <p class="grey marginBottom1em">If they would like to choose a specific type of vehicle, they can click on a button to choose filters for specific vehicle types.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure>
+                    <div class="row">
+                      <div class="column column-6"> <img src="img/gallery/enterprise/app9-min.png" width="100%" class="dropShadow marginBottom1em"> </div>
+                      <div class="column column-6"> <img src="img/gallery/enterprise/app10-min.png" width="100%" class="dropShadow marginBottom1em"> </div>
+                    </div>
+                    <figcaption class="grey">Changing available options for a selected vehicle, and entering in address and payment information.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">Once the user has chosen their vehicle, they can adjust options such as GPS and insurance.</p>
+                  <p class="grey marginBottom1em">Once they enter their personal information (which can be saved for another time), they can submit their request for a vehicle, and it will be brought to their location.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure><img src="img/gallery/enterprise/app11-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey">After ordering a vehicle, the front page of the app displays the pending delivery.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">After the order has been placed, the user needs to be able to see and review their request.</p>
+                  <p class="grey marginBottom1em">My theory was to not hide the order in some hidden menu. Instead, a kind of "notification" would be displayed on the "home screen" of the app. Any time you return to the app, the pending vehicle request would be prominantly displayed to them.</p>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="column column-6">
+                  <figure> <img src="img/gallery/enterprise/video1-min.png" width="100%" class="dropShadow marginBottom1em"> <img src="img/gallery/enterprise/video2-min.png" width="100%" class="dropShadow marginBottom1em">
+                    <figcaption class="grey marginBottom4em">Shooting live-action video to situate the app in real-world usage. Titles interspersed with footage help to explain the context.</figcaption>
+                  </figure>
+                </div>
+                <div class="column column-6 paddingLeft2em">
+                  <p class="grey marginBottom1em">We needed to create a video and present it to Russell and his panel of critics. I handed off my interface designs to <span class="italic">Linyiang Jiang</span> and <span class="italic">Yang Zhang</span>, who animated the app as we had discussed.</p>
+                  <p class="grey marginBottom1em"><span class="italic">Josh McGee</span> and Yang shot video to situate the app in the real world. We were discussing how to portray a person in need of a car. I suggested that the sound of an engine that wouldn't start would go a very long way. I animated the titles for the video, and handed them off to Josh, who finished the editing of the video.</p>
+                  <p class="grey marginBottom4em">We presented it to the class the following day, where the app design was considered successful.</p>
+                </div>
+              </div>
+            </div>
+            <div class="modalFooter">
+              <div class="modalFooterText"> <a href="javascript:void(0)" onclick="enterpriseCloseX()">
+                <h7 class="tealBG white bold">&#10005;&nbsp; close</h7>
+                </a> </div>
+            </div>
+          </div>
+          
+          <!-- this link expands a gallery box into a modal -->
+          <div class="modalLinkContainer" id="enterpriseModalLinkContainer"> <a href="javascript:void(0)" onclick="enterpriseOpenModal()">
+            <div class="modalLink"> </div>
+            </a> </div>
         </div>
-      
-      <!-- main section of modal is hidden until expanded -->
-      <div class="modalMain threeDaccel" id="enterpriseMain">
-
-
-              <div class="marginLeftRight5em">
-      
-        <p class="grey marginBottom1em">In the middle of Russell Taylor's intensive <span class="italic">Interactive Objects & Environments</span> class, my team and I took at look at <span class="italic">Enterprise Rent-a-Car</span>. They were known for the "we'll pick you up" concept, where an employee goes to where the customer is when they need a rental car.</p>
-        <p class="grey marginBottom2em">It was once a brilliant idea for service. But in this changing landscape of <span class="italic">Car-2-Go</span> and <span class="italic">Uber</span>, we wondered if they could go further.</p>
-   
-   <figure>
-<div class="row">
-<div class="column column-4"><img src="img/gallery/enterprise/app1-min.png" width="100%" class="dropShadow marginBottom1em">
-</div>
-<div class="column column-4"><img src="img/gallery/enterprise/app5-min.png" width="100%" class="dropShadow marginBottom1em">
-</div>
-<div class="column column-4"><img src="img/gallery/enterprise/app9-min.png" width="100%" class="dropShadow marginBottom1em">
-</div>
-</div>
-
-<figcaption class="grey marginBottom3em">The final design of our Enterprise "Car Drop" app proposal, which brings a car right to the customer's location.</figcaption>
-</figure>
-
-
-<figure>
-<div class="videoWrapper dropShadow marginBottom1em" id="enterpriseVideo">
-    <!-- Copy & Pasted from YouTube -->
-    <iframe width="560" height="315" src="http://www.youtube.com/embed/I4q2GiavX7Y?modestbranding=1&rel=0&color=white" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-    </div>
-    <figcaption class="grey">The final video pitch to demonstrate Enterprise Car Drop app proposal / <span class="bold">1.5 minutes</span></figcaption>
-</figure>
-    
         
+        <!-- arrows for each expanded modal in second row --> 
         
-        <h3 class="teal bold marginBottom1point25em textCenter">PROCESS</h3>
-        
-        <div class="row">
-<div class="column column-6"><figure><img src="img/gallery/enterprise/process1-min.jpg" width="100%" class="dropShadow marginBottom1em">
-<img src="img/gallery/enterprise/process2-min.jpg" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">Our team wraps their head around the entire process of renting a car. We wrote down every point of contact between company and customer on sticky notes, in order to define all the factors that affect them.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">Studying the concept of "service design", our team looked at all the places that Enterprise comes into contact with their customers. These contact points are called "touchpoints", and they occur before, during, and even after a customer rents a vehicle. Service design asks us to look at all of these touchpoints, and apply the company values to each one.</p>
-
-<p class="grey marginBottom1em">
-We jotted all touchpoints down on sticky notes and arranged them across a timeline, considering both sides of the business/customer relationship.</p>
-</div>
-</div>
-
-<hr>
-
-      <div class="row">
-<div class="column column-6"><figure><img src="img/gallery/enterprise/presentation1-min.png" width="100%" class="dropShadow marginBottom1em">
-<img src="img/gallery/enterprise/presentation2-min.png" width="100%" class="dropShadow marginBottom1em">
-<img src="img/gallery/enterprise/presentation3-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">Excerpts from our first week presentation. Our concept was for Enterprise to bring a rental car right to their customers' location. We created a low-fidelity mockup of a website which could facilitate this process.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-
-<p class="grey marginBottom1em">The touchpoint that stuck in our mind was the "we'll pick you up" concept, where an employee picks up a customer in need of a vehicle. This struck us as the best idea of a few decades ago. Ultimately, the customer still had to get picked up, drive with an employee back to a storefront, and fill out paperwork with a suited employee. Was this really the easiest process in an age of on-demand apps and services?</p>
-<p class="grey marginBottom1em">We had a thought. What if Enterprise could just drop the vehicle off for the customer? My thinking was that self-driving vehicles would be arriving in a few years. Enterprise could position themselves as the vehicle dropoff service early, before the technology was ready. This is similar to how <span class="italic">Netflix</span> began as a DVD delivery service in the mid-2000s. They knew streaming would soon be feasible, but it was a way to get there first. Enterprise could tow the vehicle to the customer, or provide alternate transportation for the employee on the return trip. They could even close their storefronts and save money through the idea.</p>
-<p class="grey marginBottom1em">I designed a simple mockup of what the website would look like, populated with vehicles near to the user's location. They could choose a vehicle and it would come right to them.</p>
-</div>
-</div>
-
-<hr>
-
- <div class="row">
-<div class="column column-6"><figure><img src="img/gallery/enterprise/exampleapp-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">A very quick mockup that Alex created in 10 minutes in order to pitch a concept to his team. Each vehicle occupies the full screen with stylish imagery of it in action. The user can swipe left and right between different vehicles.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">Professor Russell Taylor and his panel of critics liked they idea, and asked us to focus on a mobile app design.</p>
-<p class="grey marginBottom1em">Our team started to think about the app. Many on the team argued for a traditional grid or list of vehicles. I had a theory that a full-screen visual for each vehicle would make for a more delightful experience, and the customer could swipe left and right through the available vehicles. It was a lot like <span class="italic">Tinder</span>.</p>
-<p class="grey marginBottom1em">To illustrate the idea, I very quickly created a mockup in 10 minutes, pictured here. This rather high-fidelity mockup convinced the team that this was the right direction.</p>
-</div>
-</div>
-
-<hr>
-
- <div class="row">
-<div class="column column-6"><figure><img src="img/gallery/enterprise/app1-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">The front page of the final app design, showing the user's location, and prompting them to select a date range for their car rental.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">I worked on the final design in <span class="italic">Adobe Illustrator</span>, and the entire team gave input.</p>
-<p class="grey marginBottom1em">I was never entirely sold on the need to use an entire page to show the user's location (don't they know what city they're in?), but it did provide an opportunity to show beautiful local imagery.</p>
-<p class="grey marginBottom1em">It was my theory to place all "tasks" for the user at the bottom of the screen in grey bars. The green button confirms their choices. The grey bars will rise to the top of the screen if it is still relevant to change the tasks, and they dissappear off the top of the page when the context no longer requires them.</p>
-</div>
-</div>
-
-<hr>
-
- <div class="row">
-<div class="column column-6">
-
-<figure>
- <div class="row">
- <div class="column column-6">
-<img src="img/gallery/enterprise/app4-min.png" width="100%" class="dropShadow marginBottom1em">
-
-</div>
-<div class="column column-6">
-<img src="img/gallery/enterprise/app3-min.png" width="100%" class="dropShadow marginBottom1em">
-</div>
-</div>
-
-<figcaption class="grey">Selecting a date and time to show all available vehicles during that time.</figcaption>
-</figure>
-
-
-
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">When the grey bar tasks are clicked on, they expand outward as "drawers". Inside each drawer is a larger interface that allows the adjustment for each item.</p>
-<p class="grey marginBottom1em">In this case, the task is to set the date range that a person needs to rent a vehicle. First a calendar is shown, and upon selecting a date, a time selector is shown. Once the user has chosen a day and time, the drawer closes. They can click on the green button to confirm the dates and show the vehicles.</p>
-</div>
-</div>
-
-<hr>
-
- <div class="row">
-<div class="column column-6">
-
-<figure>
- <div class="row">
- <div class="column column-6">
-<img src="img/gallery/enterprise/app6-min.png" width="100%" class="dropShadow marginBottom1em">
-
-</div>
-<div class="column column-6">
-<img src="img/gallery/enterprise/app7-min.png" width="100%" class="dropShadow marginBottom1em">
-</div>
-</div>
-
-<figcaption class="grey">An entry for one of the vehicles, showing the name and price. The user is also able to filter by specific vehicle type.</figcaption>
-</figure>
-
-
-
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">The user is able to swipe between all the vehicles available in their chosen date range.</p>
-<p class="grey marginBottom1em">If they would like to choose a specific type of vehicle, they can click on a button to choose filters for specific vehicle types.</p>
-</div>
-</div>
-
-<hr>
-
-
- <div class="row">
-<div class="column column-6">
-
-<figure>
- <div class="row">
- <div class="column column-6">
-<img src="img/gallery/enterprise/app9-min.png" width="100%" class="dropShadow marginBottom1em">
-
-</div>
-<div class="column column-6">
-<img src="img/gallery/enterprise/app10-min.png" width="100%" class="dropShadow marginBottom1em">
-</div>
-</div>
-
-<figcaption class="grey">Changing available options for a selected vehicle, and entering in address and payment information.</figcaption>
-</figure>
-
-
-
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">Once the user has chosen their vehicle, they can adjust options such as GPS and insurance.</p>
-<p class="grey marginBottom1em">Once they enter their personal information (which can be saved for another time), they can submit their request for a vehicle, and it will be brought to their location.</p>
-</div>
-</div>
-
-<hr>
-
-
-<div class="row">
-<div class="column column-6"><figure><img src="img/gallery/enterprise/app11-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey">After ordering a vehicle, the front page of the app displays the pending delivery.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-<p class="grey marginBottom1em">After the order has been placed, the user needs to be able to see and review their request.</p>
-<p class="grey marginBottom1em">My theory was to not hide the order in some hidden menu. Instead, a kind of "notification" would be displayed on the "home screen" of the app. Any time you return to the app, the pending vehicle request would be prominantly displayed to them.</p>
-</div>
-</div>
-
-<hr>
-
-      <div class="row">
-<div class="column column-6"><figure>
-<img src="img/gallery/enterprise/video1-min.png" width="100%" class="dropShadow marginBottom1em">
-<img src="img/gallery/enterprise/video2-min.png" width="100%" class="dropShadow marginBottom1em">
-<figcaption class="grey marginBottom4em">Shooting live-action video to situate the app in real-world usage. Titles interspersed with footage help to explain the context.</figcaption>
-</figure>
-</div>
-<div class="column column-6 paddingLeft2em">
-      
-
-<p class="grey marginBottom1em">We needed to create a video and present it to Russell and his panel of critics. I handed off my interface designs to <span class="italic">Linyiang Jiang</span> and <span class="italic">Yang Zhang</span>, who animated the app as we had discussed.</p>
-<p class="grey marginBottom1em"><span class="italic">Josh McGee</span> and Yang shot video to situate the app in the real world. We were discussing how to portray a person in need of a car. I suggested that the sound of an engine that wouldn't start would go a very long way. I animated the titles for the video, and handed them off to Josh, who finished the editing of the video.</p>
-<p class="grey marginBottom4em">We presented it to the class the following day, where the app design was considered successful.</p>
-</div>
-</div>
-
-
-
-
-      </div>
-      
-      
-      
-      <div class="modalFooter">
-            <div class="modalFooterText">
-<a href="javascript:void(0)" onclick="enterpriseCloseX()"><h7 class="tealBG white bold">&#10005;&nbsp; close</h7></a>
-</div>
-</div> 
-
-      
-      </div>
-      
-        <!-- this link expands a gallery box into a modal --> 
-      <div class="modalLinkContainer" id="enterpriseModalLinkContainer">
-      <a href="javascript:void(0)" onclick="enterpriseOpenModal()">
-      <div class="modalLink">
-      </div>
-      </a>
-      </div>
-      
- </div>
- 
- 
-    
-    <!-- arrows for each expanded modal in second row --> 
-    
-     <!-- close X for ella -->
-     <a href="javascript:void(0)" onclick="ellaCloseX()">
-       <div class="closeX dropShadow" id="ellaCloseX">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
+        <!-- close X for ella --> 
+        <a href="javascript:void(0)" onclick="ellaCloseX()">
+        <div class="closeX dropShadow" id="ellaCloseX">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1">
+            <style type="text/css">  
 	.xBG{fill:rgb(35, 174, 194);}
 	.xIcon{fill:rgb(255, 255, 255);}
-</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
-      </div>
-      </a>  
-      
-    <!-- left arrow for ella --> 
-    <a href="javascript:void(0)" onclick="ellaLeftArrow()">
-    <div class="leftArrow dropShadow" id="ellaLeftArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+</style>
+            <circle class="xBG" cx="25.6" cy="25.6" r="25.6"/>
+            <polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/>
+          </svg>
+        </div>
+        </a> 
+        
+        <!-- left arrow for ella --> 
+        <a href="javascript:void(0)" onclick="ellaLeftArrow()">
+        <div class="leftArrow dropShadow" id="ellaLeftArrow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1">
+            <style type="text/css">  
 	.arrowCircle{fill:#FFFFFF;}
 	.arrowFill{fill:#21AEC2;}
-</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M25 33l1.4-1.4 -9.5-9.5c-0.4-0.4-0.8-0.8-1.1-1.1l10.6-10.6L25 9 13 21l0.7 0.7C13.8 21.8 25 33 25 33z"/></svg>
-    </div>
-    </a> 
-    
-    <!-- right arrow for ella --> 
-    <a href="javascript:void(0)" onclick="ellaRightArrow()">
-    <div class="rightArrow dropShadow" id="ellaRightArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+</style>
+            <circle class="arrowCircle" cx="21" cy="21" r="21"/>
+            <path class="arrowFill" d="M25 33l1.4-1.4 -9.5-9.5c-0.4-0.4-0.8-0.8-1.1-1.1l10.6-10.6L25 9 13 21l0.7 0.7C13.8 21.8 25 33 25 33z"/>
+          </svg>
+        </div>
+        </a> 
+        
+        <!-- right arrow for ella --> 
+        <a href="javascript:void(0)" onclick="ellaRightArrow()">
+        <div class="rightArrow dropShadow" id="ellaRightArrow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1">
+            <style type="text/css">  
 	.arrowCircle{fill:#FFFFFF;}
 	.arrowFill{fill:#21AEC2;}
-</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/></svg>
-    </div>
-    </a> 
-    
-    <!-- close X for playboy -->
-          <a href="javascript:void(0)" onclick="playboyCloseX()">
+</style>
+            <circle class="arrowCircle" cx="21" cy="21" r="21"/>
+            <path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/>
+          </svg>
+        </div>
+        </a> 
+        
+        <!-- close X for playboy --> 
+        <a href="javascript:void(0)" onclick="playboyCloseX()">
         <div class="closeX dropShadow" id="playboyCloseX">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1">
+            <style type="text/css">  
 	.xBG{fill:rgb(35, 174, 194);}
 	.xIcon{fill:rgb(255, 255, 255);}
-</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
-      </div>
-      </a>
-    
-    <!-- left arrow for playboy --> 
-    <a href="javascript:void(0)" onclick="playboyLeftArrow()">
-    <div class="leftArrow dropShadow" id="playboyLeftArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+</style>
+            <circle class="xBG" cx="25.6" cy="25.6" r="25.6"/>
+            <polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/>
+          </svg>
+        </div>
+        </a> 
+        
+        <!-- left arrow for playboy --> 
+        <a href="javascript:void(0)" onclick="playboyLeftArrow()">
+        <div class="leftArrow dropShadow" id="playboyLeftArrow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1">
+            <style type="text/css">  
 	.arrowCircle{fill:#FFFFFF;}
 	.arrowFill{fill:#21AEC2;}
-</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M25 33l1.4-1.4 -9.5-9.5c-0.4-0.4-0.8-0.8-1.1-1.1l10.6-10.6L25 9 13 21l0.7 0.7C13.8 21.8 25 33 25 33z"/></svg>
-    </div>
-    </a> 
-    
-    <!-- right arrow for playboy --> 
-    <a href="javascript:void(0)" onclick="playboyRightArrow()">
-    <div class="rightArrow dropShadow" id="playboyRightArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+</style>
+            <circle class="arrowCircle" cx="21" cy="21" r="21"/>
+            <path class="arrowFill" d="M25 33l1.4-1.4 -9.5-9.5c-0.4-0.4-0.8-0.8-1.1-1.1l10.6-10.6L25 9 13 21l0.7 0.7C13.8 21.8 25 33 25 33z"/>
+          </svg>
+        </div>
+        </a> 
+        
+        <!-- right arrow for playboy --> 
+        <a href="javascript:void(0)" onclick="playboyRightArrow()">
+        <div class="rightArrow dropShadow" id="playboyRightArrow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1">
+            <style type="text/css">  
 	.arrowCircle{fill:#FFFFFF;}
 	.arrowFill{fill:#21AEC2;}
-</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/></svg>
-    </div>
-    </a> 
-    
-    <!-- close X for chirpr -->
-          <a href="javascript:void(0)" onclick="chirprCloseX()">
+</style>
+            <circle class="arrowCircle" cx="21" cy="21" r="21"/>
+            <path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/>
+          </svg>
+        </div>
+        </a> 
+        
+        <!-- close X for chirpr --> 
+        <a href="javascript:void(0)" onclick="chirprCloseX()">
         <div class="closeX dropShadow" id="chirprCloseX">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1">
+            <style type="text/css">  
 	.xBG{fill:rgb(35, 174, 194);}
 	.xIcon{fill:rgb(255, 255, 255);}
-</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
-      </div>
-      </a>
-    
-    <!-- left arrow for chirpr --> 
-    <a href="javascript:void(0)" onclick="chirprLeftArrow()">
-    <div class="leftArrow dropShadow" id="chirprLeftArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+</style>
+            <circle class="xBG" cx="25.6" cy="25.6" r="25.6"/>
+            <polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/>
+          </svg>
+        </div>
+        </a> 
+        
+        <!-- left arrow for chirpr --> 
+        <a href="javascript:void(0)" onclick="chirprLeftArrow()">
+        <div class="leftArrow dropShadow" id="chirprLeftArrow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1">
+            <style type="text/css">  
 	.arrowCircle{fill:#FFFFFF;}
 	.arrowFill{fill:#21AEC2;}
-</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M25 33l1.4-1.4 -9.5-9.5c-0.4-0.4-0.8-0.8-1.1-1.1l10.6-10.6L25 9 13 21l0.7 0.7C13.8 21.8 25 33 25 33z"/></svg>
-    </div>
-    </a> 
-    
-    <!-- right arrow for chirpr --> 
-    <a href="javascript:void(0)" onclick="chirprRightArrow()">
-    <div class="rightArrow dropShadow" id="chirprRightArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+</style>
+            <circle class="arrowCircle" cx="21" cy="21" r="21"/>
+            <path class="arrowFill" d="M25 33l1.4-1.4 -9.5-9.5c-0.4-0.4-0.8-0.8-1.1-1.1l10.6-10.6L25 9 13 21l0.7 0.7C13.8 21.8 25 33 25 33z"/>
+          </svg>
+        </div>
+        </a> 
+        
+        <!-- right arrow for chirpr --> 
+        <a href="javascript:void(0)" onclick="chirprRightArrow()">
+        <div class="rightArrow dropShadow" id="chirprRightArrow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1">
+            <style type="text/css">  
 	.arrowCircle{fill:#FFFFFF;}
 	.arrowFill{fill:#21AEC2;}
-</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/></svg>
-    </div>
-    </a> 
-    
-    <!-- close X for enterprise -->
-          <a href="javascript:void(0)" onclick="enterpriseCloseX()">
-         <div class="closeX dropShadow" id="enterpriseCloseX">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1"><style type="text/css">  
+</style>
+            <circle class="arrowCircle" cx="21" cy="21" r="21"/>
+            <path class="arrowFill" d="M17.1 33l-1.4-1.4 9.5-9.5c0.4-0.4 0.8-0.8 1.1-1.1L15.7 10.4 17.1 9l12 12 -0.7 0.7C28.3 21.8 17.1 33 17.1 33z"/>
+          </svg>
+        </div>
+        </a> 
+        
+        <!-- close X for enterprise --> 
+        <a href="javascript:void(0)" onclick="enterpriseCloseX()">
+        <div class="closeX dropShadow" id="enterpriseCloseX">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.1 51.1">
+            <style type="text/css">  
 	.xBG{fill:rgb(35, 174, 194);}
 	.xIcon{fill:rgb(255, 255, 255);}
-</style><circle class="xBG" cx="25.6" cy="25.6" r="25.6"/><polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/></svg>
-      </div>
-      </a>
-    
-    <!-- left arrow for enterprise --> 
-    <a href="javascript:void(0)" onclick="enterpriseLeftArrow()">
-    <div class="leftArrow dropShadow" id="enterpriseLeftArrow">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1"><style type="text/css">  
+</style>
+            <circle class="xBG" cx="25.6" cy="25.6" r="25.6"/>
+            <polygon class="xIcon" points="38.9 14.3 36.8 12.2 25.6 23.4 14.3 12.2 12.2 14.3 23.4 25.6 12.2 36.8 14.3 38.9 25.6 27.7 36.8 38.9 38.9 36.8 27.7 25.6 "/>
+          </svg>
+        </div>
+        </a> 
+        
+        <!-- left arrow for enterprise --> 
+        <a href="javascript:void(0)" onclick="enterpriseLeftArrow()">
+        <div class="leftArrow dropShadow" id="enterpriseLeftArrow">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.1 42.1">
+            <style type="text/css">  
 	.arrowCircle{fill:#FFFFFF;}
 	.arrowFill{fill:#21AEC2;}
-</style><circle class="arrowCircle" cx="21" cy="21" r="21"/><path class="arrowFill" d="M25 33l1.4-1.4 -9.5-9.5c-0.4-0.4-0.8-0.8-1.1-1.1l10.6-10.6L25 9 13 21l0.7 0.7C13.8 21.8 25 33 25 33z"/></svg>
+</style>
+            <circle class="arrowCircle" cx="21" cy="21" r="21"/>
+            <path class="arrowFill" d="M25 33l1.4-1.4 -9.5-9.5c-0.4-0.4-0.8-0.8-1.1-1.1l10.6-10.6L25 9 13 21l0.7 0.7C13.8 21.8 25 33 25 33z"/>
+          </svg>
+        </div>
+        </a> 
+        
+        <!-- right arrow for enterprise --> 
+        <!-- NONE --> 
+        
+      </div>
     </div>
-    </a> 
-    
-    <!-- right arrow for enterprise --> 
-    <!-- NONE -->
-      
-      
-</div>    
-</div>
-</div>
+  </div>
 </div>
 
 <!-- contact me section -->
 <div class="paddingBottom1point5em dropShadow textCenter heightFull" id="porthole">
-
-<div class="portholeRim">
-
-  <div class="contactPosition transitionAll0point5" id="contactMe">
-    <h3 class="teal bold marginBottomPoint75em">CONTACT ME</h3>
-    <div class="marginLeftRight10em paddingForLargeViewports"> 
-    <div class="paddingForLargeViewportsContacts">
-    
-      
-      <!-- contact methods -->
-      <div class="row contact-row-small"> <a href="tel://1-604-773-2199">
-        <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent hovering"> 
+  <div class="portholeRim">
+    <div class="contactPosition transitionAll0point5" id="contactMe">
+      <h3 class="teal bold marginBottomPoint75em">CONTACT ME</h3>
+      <div class="marginLeftRight10em paddingForLargeViewports">
+        <div class="paddingForLargeViewportsContacts"> 
           
-          <!-- phone icon -->
-          <div class="icon marginBottom1em">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.1 75.8" width="100%">
-              <style type="text/css">  
+          <!-- contact methods -->
+          <div class="row contact-row-small"> <a href="tel://1-604-773-2199">
+            <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent hovering"> 
+              
+              <!-- phone icon -->
+              <div class="icon marginBottom1em">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.1 75.8" width="100%">
+                  <style type="text/css">  
 	.st0{fill:#1FAEC2;}
 	.st1{fill:#FFFFFF;}
 </style>
-              <circle class="st0" cx="38.1" cy="37.8" r="38"/>
-              <path class="st1" d="M31.8 30.9c-2.6 2.4-1.6 7.5 2.1 11.6 3.7 4 8.8 5.3 11.4 3 0 0 2.1-1.6 2.4-1.3 0 0 2.1 0.9 4 2.9 1.9 2 3 4 2.5 4.4 -5.8 5.4-16.7 3-24.4-5.2s-9.2-19.3-3.4-24.7c0.5-0.4 2.4 0.8 4.2 2.8 1.9 2 2.6 4.2 2.6 4.2C33.6 28.9 31.8 30.9 31.8 30.9z"/>
-            </svg>
-          </div>
-          
-          <!-- phone label -->
-          <h4 class="grey textCenter">604.773.2199</h4>
-        </div>
-        </a> <a href="mailto:info@alexmoen.com">
-        <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent hovering"> 
-          
-          <!-- email icon -->
-          <div class="icon marginBottom1em">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.1 75.8" width="100%">
-              <style type="text/css">  
+                  <circle class="st0" cx="38.1" cy="37.8" r="38"/>
+                  <path class="st1" d="M31.8 30.9c-2.6 2.4-1.6 7.5 2.1 11.6 3.7 4 8.8 5.3 11.4 3 0 0 2.1-1.6 2.4-1.3 0 0 2.1 0.9 4 2.9 1.9 2 3 4 2.5 4.4 -5.8 5.4-16.7 3-24.4-5.2s-9.2-19.3-3.4-24.7c0.5-0.4 2.4 0.8 4.2 2.8 1.9 2 2.6 4.2 2.6 4.2C33.6 28.9 31.8 30.9 31.8 30.9z"/>
+                </svg>
+              </div>
+              
+              <!-- phone label -->
+              <h4 class="grey textCenter">604.773.2199</h4>
+            </div>
+            </a> <a href="mailto:info@alexmoen.com">
+            <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent hovering"> 
+              
+              <!-- email icon -->
+              <div class="icon marginBottom1em">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.1 75.8" width="100%">
+                  <style type="text/css">  
 	.st0{fill:#1FAEC2;}
 	.st1{fill:#FFFFFF;}
 </style>
-              <circle class="st0" cx="38.1" cy="37.8" r="38"/>
-              <polygon class="st1" points="38.1 36.6 55.5 27.4 55.5 27.4 20.7 27.4 20.7 27.4 "/>
-              <polygon class="st1" points="38.1 40 20.7 30.8 20.7 48.7 55.5 48.7 55.5 30.8 "/>
-            </svg>
-          </div>
-          
-          <!-- email label -->
-          <h4 class="grey textCenter">info@alexmoen.com</h4>
-        </div>
-        </a> <a href="https://linkedin.com/in/alexmoen">
-        <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent hovering"> 
-          
-          <!-- LinkedIn icon -->
-          <div class="icon marginBottom1em">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.1 75.8" width="100%">
-              <style type="text/css">  
+                  <circle class="st0" cx="38.1" cy="37.8" r="38"/>
+                  <polygon class="st1" points="38.1 36.6 55.5 27.4 55.5 27.4 20.7 27.4 20.7 27.4 "/>
+                  <polygon class="st1" points="38.1 40 20.7 30.8 20.7 48.7 55.5 48.7 55.5 30.8 "/>
+                </svg>
+              </div>
+              
+              <!-- email label -->
+              <h4 class="grey textCenter">info@alexmoen.com</h4>
+            </div>
+            </a> <a href="https://linkedin.com/in/alexmoen">
+            <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent hovering"> 
+              
+              <!-- LinkedIn icon -->
+              <div class="icon marginBottom1em">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.1 75.8" width="100%">
+                  <style type="text/css">  
 	.st0{fill:#1FAEC2;}
 	.st1{fill:#FFFFFF;}
 </style>
-              <circle class="st0" cx="38.1" cy="37.8" r="38"/>
-              <rect x="21.3" y="32.1" class="st1" width="7.2" height="22.8"/>
-              <path class="st1" d="M48.1 31.8c-4.1 0-6.7 2.2-7.2 3.8v-3.6h-8.1c0.1 1.9 0 22.8 0 22.8h8.1V42.5c0-0.7 0-1.4 0.2-1.9 0.6-1.4 1.7-2.8 3.9-2.8 2.8 0 4.1 2.1 4.1 5.2v11.8h8.2V42.2C57.2 35.1 53.2 31.8 48.1 31.8z"/>
-              <path class="st1" d="M24.7 21.3c-2.7 0-4.4 1.7-4.4 4 0 2.2 1.7 3.9 4.3 3.9h0.1c2.7 0 4.4-1.7 4.4-4C29 23 27.4 21.3 24.7 21.3z"/>
-            </svg>
-          </div>
-          
-          <!-- LinkedIn label -->
-          <h4 class="grey textCenter">alexmoen</h4>
-        </div>
-        </a> <a href="https://twitter.com/AlexRMoen">
-        <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent hovering"> 
-          
-          <!-- Twitter icon -->
-          <div class="icon marginBottom1em">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.1 75.8" width="100%">
-              <style type="text/css">  
+                  <circle class="st0" cx="38.1" cy="37.8" r="38"/>
+                  <rect x="21.3" y="32.1" class="st1" width="7.2" height="22.8"/>
+                  <path class="st1" d="M48.1 31.8c-4.1 0-6.7 2.2-7.2 3.8v-3.6h-8.1c0.1 1.9 0 22.8 0 22.8h8.1V42.5c0-0.7 0-1.4 0.2-1.9 0.6-1.4 1.7-2.8 3.9-2.8 2.8 0 4.1 2.1 4.1 5.2v11.8h8.2V42.2C57.2 35.1 53.2 31.8 48.1 31.8z"/>
+                  <path class="st1" d="M24.7 21.3c-2.7 0-4.4 1.7-4.4 4 0 2.2 1.7 3.9 4.3 3.9h0.1c2.7 0 4.4-1.7 4.4-4C29 23 27.4 21.3 24.7 21.3z"/>
+                </svg>
+              </div>
+              
+              <!-- LinkedIn label -->
+              <h4 class="grey textCenter">alexmoen</h4>
+            </div>
+            </a> <a href="https://twitter.com/AlexRMoen">
+            <div class="column column-3 contact-small marginBottomGutterWidth box imgFitBox paddingLeftRight1percent hovering"> 
+              
+              <!-- Twitter icon -->
+              <div class="icon marginBottom1em">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.1 75.8" width="100%">
+                  <style type="text/css">  
 	.st0{fill:#1FAEC2;}
 	.st1{fill:#FFFFFF;}
 </style>
-              <circle class="st0" cx="38.1" cy="37.8" r="38"/>
-              <path class="st1" d="M55.4 22.6c-1.5 0.9-3.1 1.6-4.9 1.9 -1.4-1.5-3.4-2.5-5.6-2.5 -4.2 0-7.7 3.5-7.7 7.9 0 0.6 0.1 1.2 0.2 1.8 -6.4-0.3-12-3.5-15.8-8.2 -0.7 1.2-1 2.5-1 4 0 2.7 1.4 5.1 3.4 6.6 -1.3 0-2.4-0.4-3.5-1v0.1c0 3.8 2.6 7 6.2 7.7 -0.6 0.2-1.3 0.3-2 0.3 -0.5 0-1 0-1.4-0.1 1 3.1 3.8 5.4 7.2 5.5 -2.6 2.1-5.9 3.4-9.5 3.4 -0.6 0-1.2 0-1.8-0.1 3.4 2.2 7.4 3.5 11.8 3.5 14.1 0 21.9-12 21.9-22.4 0-0.3 0-0.7 0-1 1.5-1.1 2.8-2.5 3.8-4.1 -1.4 0.6-2.9 1.1-4.4 1.2C53.6 25.9 54.8 24.4 55.4 22.6z"/>
-            </svg>
-          </div>
-          
-          <!-- Twitter label -->
-          <h4 class="grey textCenter">@AlexRMoen</h4>
+                  <circle class="st0" cx="38.1" cy="37.8" r="38"/>
+                  <path class="st1" d="M55.4 22.6c-1.5 0.9-3.1 1.6-4.9 1.9 -1.4-1.5-3.4-2.5-5.6-2.5 -4.2 0-7.7 3.5-7.7 7.9 0 0.6 0.1 1.2 0.2 1.8 -6.4-0.3-12-3.5-15.8-8.2 -0.7 1.2-1 2.5-1 4 0 2.7 1.4 5.1 3.4 6.6 -1.3 0-2.4-0.4-3.5-1v0.1c0 3.8 2.6 7 6.2 7.7 -0.6 0.2-1.3 0.3-2 0.3 -0.5 0-1 0-1.4-0.1 1 3.1 3.8 5.4 7.2 5.5 -2.6 2.1-5.9 3.4-9.5 3.4 -0.6 0-1.2 0-1.8-0.1 3.4 2.2 7.4 3.5 11.8 3.5 14.1 0 21.9-12 21.9-22.4 0-0.3 0-0.7 0-1 1.5-1.1 2.8-2.5 3.8-4.1 -1.4 0.6-2.9 1.1-4.4 1.2C53.6 25.9 54.8 24.4 55.4 22.6z"/>
+                </svg>
+              </div>
+              
+              <!-- Twitter label -->
+              <h4 class="grey textCenter">@AlexRMoen</h4>
+            </div>
+            </a> </div>
         </div>
-        </a> </div>
-        
-        </div>
+      </div>
     </div>
   </div>
-  </div>
 </div>
-
 </body>
 </html>

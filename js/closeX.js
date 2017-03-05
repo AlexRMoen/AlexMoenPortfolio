@@ -4,6 +4,7 @@ function closeX() {
 	
 	// starts displaying other modals
 	document.getElementById('kojiro').style.display = '';
+	document.getElementById('greenlight').style.display = '';
 	document.getElementById('ella').style.display = '';
 	document.getElementById('sunnyspot').style.display = '';
 	document.getElementById('ella').style.display = '';
@@ -11,6 +12,7 @@ function closeX() {
 	
 	// opens the modal link divs
 	document.getElementById('kojiroModalLinkContainer').style.display = '';
+	document.getElementById('greenlightModalLinkContainer').style.display = '';
 	document.getElementById('sunnyspotModalLinkContainer').style.display = '';
 	document.getElementById('ellaModalLinkContainer').style.display = '';
 	document.getElementById('playboyModalLinkContainer').style.display = '';
@@ -48,6 +50,28 @@ function closeX() {
 	document.getElementById('kojiroBottomLabel').style.paddingBottom = '';
 	document.getElementById('kojiroTopLabel').style.paddingLeft = '';
 	document.getElementById('kojiroBottomLabel').style.paddingLeft = '';
+	
+	document.getElementById('greenlight').style.height = '';
+    document.getElementById('greenlight').style.width = '';
+    document.getElementById('greenlight').style.opacity = '';
+    document.getElementById('greenlight').style.marginLeft = '';
+    document.getElementById('greenlight').style.marginRight = '';
+    document.getElementById('greenlight').style.marginBottom = '';
+    document.getElementById('greenlight').style.overflowX = 'auto';
+    document.getElementById('greenlight').style.overflowY = 'hidden';
+	$( "#greenlight" ).removeClass( "smallViewHide" );
+    document.getElementById('greenlightHeader').style.height = '';
+    document.getElementById('greenlightMain').style.height = '';
+    document.getElementById('greenlightMain').style.opacity = '';
+    document.getElementById('greenlightCloseX').style.transform = '';
+    document.getElementById('greenlightCloseX').style.opacity = '';
+    document.getElementById('greenlightLabel').style.transform = '';
+    document.getElementById('greenlightLabel').style.bottom = '';
+	document.getElementById('greenlightLabel').style.width = '';
+	document.getElementById('greenlightBottomLabel').style.paddingTop = '';
+	document.getElementById('greenlightBottomLabel').style.paddingBottom = '';
+	document.getElementById('greenlightTopLabel').style.paddingLeft = '';
+	document.getElementById('greenlightBottomLabel').style.paddingLeft = '';
 	
 	document.getElementById('sunnyspot').style.height = '';
     document.getElementById('sunnyspot').style.width = '';

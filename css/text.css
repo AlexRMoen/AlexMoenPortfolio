@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* CSS Document */
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+}
+
+/* headers */
+h1 {
+	font-family: 'Palanquin Dark', sans-serif;
+	font-size: 4em;
+	line-height: 1.4em;
+}
+
+h2 {
+	font-family: 'Palanquin Dark', sans-serif;
+	font-size: 1.5em;
+	font-weight: lighter;
+}
+
+h3 {
+	font-family: 'Palanquin Dark', sans-serif;
+	font-size: 2em;
+}
+
+h4 {
+	font-family: 'Lato', sans-serif;
+	font-size: 0.9em;
+}
+
+h5 {
+	font-family: 'Palanquin Dark', sans-serif;
+	font-size: 1.9em;
+	line-height: 1.6em;
+	font-weight: bold;
+}
+
+h6 {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	/* line-height: 1.4em; */
+	font-weight: normal;
+}
+
+h7 {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+}
+
+figcaption {
+	font-family: 'Lato', sans-serif;
+	font-size: 0.75em;
+	margin-bottom: 2em;
+	font-style: italic;
+}
+
+/* text rules */
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.textCenter {
+	text-align: center;
+}
+
+.textRight {
+	text-align: right;
+}
+
+.topIsFlush {
+	line-height: 0.65em;
+}
+
+@media only screen and (max-width: 50em) {
+	
+	
+
+h5 {
+	font-size: 1.6em;
+}
+
+h6 {
+	font-size: 0.9em;
+}
+
+}
+
+@media only screen and (max-width: 48em) {
+	
+	
+
+h5 {
+	font-size: 1.9em;
+}
+
+h6 {
+	font-size: 1em;
+}
+
+h1 {
+	font-size: 3.5em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+}
+
+@media only screen and (max-width: 34.375em) {
+	
+	h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 1em;
+}
+
+
+}
+
+@media only screen and (max-width: 20em) {
+	
+	h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 0.9em;
+}
+
+}
+
+

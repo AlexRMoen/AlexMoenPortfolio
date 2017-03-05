@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 033628ba4c398c678536b9d350a10cacaaf93ee4 AlexRMoen <alex.r.moen@gmail.com> 1470333849 -0700
+033628ba4c398c678536b9d350a10cacaaf93ee4 c94ba4194831219c3b41745cf54d99a8f42d98ad AlexRMoen <alex.r.moen@gmail.com> 1470333852 -0700	commit: Switched out 7 modals for 5
+c94ba4194831219c3b41745cf54d99a8f42d98ad fcd7b8ef31b30c78ed3325180dd0f6f793f6028d AlexRMoen <alex.r.moen@gmail.com> 1470337844 -0700	commit: Half of Kojiro has been filled in
+fcd7b8ef31b30c78ed3325180dd0f6f793f6028d 84a2633b77f93f14e897e8c4f7fdcb0b746b56d3 AlexRMoen <alex.r.moen@gmail.com> 1470344393 -0700	commit: Fixed some responsive stuff
+84a2633b77f93f14e897e8c4f7fdcb0b746b56d3 57e13792dac2a2be5cdd9083cc1bc35f06ddf6cc AlexRMoen <alex.r.moen@gmail.com> 1470345335 -0700	commit: Changed all px to em

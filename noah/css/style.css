@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: #0984DB;
+	padding: 0;
+	margin: 0;
+}
+
+/* Colors */
+
+.colorChocolate {
+	background-color: chocolate;
+}
+
+.colorBisque {
+	background-color: bisque;
+}
+
+/* Containers */
+
+.fullViewport {
+	width: 100vw;
+	height: 100vh;
+}

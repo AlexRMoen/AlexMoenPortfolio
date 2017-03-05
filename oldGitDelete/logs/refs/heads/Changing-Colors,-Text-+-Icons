@@ -1,0 +1,17 @@
+0000000000000000000000000000000000000000 be01fe9e5604891796acf6da0d6852cdaf614b44 AlexRMoen <alex.r.moen@gmail.com> 1469084424 -0700
+be01fe9e5604891796acf6da0d6852cdaf614b44 02321479144414d85f8f3aefe7d7c4b94de50fdf AlexRMoen <alex.r.moen@gmail.com> 1469089258 -0700	commit: New label style
+02321479144414d85f8f3aefe7d7c4b94de50fdf 71b7dcc82c02894ff19e9436b0de2491f9252ece AlexRMoen <alex.r.moen@gmail.com> 1469094213 -0700	commit: New close X icon design
+71b7dcc82c02894ff19e9436b0de2491f9252ece 1bc64c1228a309294324d63816ba605d2aebe964 AlexRMoen <alex.r.moen@gmail.com> 1469138935 -0700	commit: Added a porthole and changed X color
+1bc64c1228a309294324d63816ba605d2aebe964 426d237db117a2f7070f34b78716a115ec350894 AlexRMoen <alex.r.moen@gmail.com> 1469140439 -0700	commit: Updated portal rim
+426d237db117a2f7070f34b78716a115ec350894 1dcda3d4923c3167dbb569ea94161efd03458733 AlexRMoen <alex.r.moen@gmail.com> 1469315119 -0700	commit: Updated copy in about me section
+1dcda3d4923c3167dbb569ea94161efd03458733 a73a500d108db4d2309c6dc9844272466a24faa0 AlexRMoen <alex.r.moen@gmail.com> 1469318536 -0700	commit: Added topIsFlush class for "hello" h3 header
+a73a500d108db4d2309c6dc9844272466a24faa0 1dcda3d4923c3167dbb569ea94161efd03458733 AlexRMoen <alex.r.moen@gmail.com> 1469318544 -0700	reset: moving to 1dcda3d4923c3167dbb569ea94161efd03458733
+1dcda3d4923c3167dbb569ea94161efd03458733 1538972bd51b7bc949d85c10190893e97b4aa3b3 AlexRMoen <alex.r.moen@gmail.com> 1469318561 -0700	commit: Added topIsFlush class for "hello" h3 header
+1538972bd51b7bc949d85c10190893e97b4aa3b3 14bb8e0802f8a4bb479bf9d2e8f2cb6947c58654 AlexRMoen <alex.r.moen@gmail.com> 1469320751 -0700	commit: Changed name + text shadowing
+14bb8e0802f8a4bb479bf9d2e8f2cb6947c58654 eb57ae81358e43cf65d460ac748765452d3898d2 AlexRMoen <alex.r.moen@gmail.com> 1469342935 -0700	commit: Cracked the code in getting the "hello" section to vertically align
+eb57ae81358e43cf65d460ac748765452d3898d2 63428f85b6382a3adaaa98fdb539ef98370599f5 AlexRMoen <alex.r.moen@gmail.com> 1469344055 -0700	commit: Made icons responsive
+63428f85b6382a3adaaa98fdb539ef98370599f5 eb57ae81358e43cf65d460ac748765452d3898d2 AlexRMoen <alex.r.moen@gmail.com> 1469344059 -0700	reset: moving to eb57ae81358e43cf65d460ac748765452d3898d2
+eb57ae81358e43cf65d460ac748765452d3898d2 ed824e0330fd83f16572be92d2fde0ec3d394170 AlexRMoen <alex.r.moen@gmail.com> 1469344097 -0700	commit: Made icons responsive
+ed824e0330fd83f16572be92d2fde0ec3d394170 78c24a1662f46a35f407b91bddc1bcdb0b8e54e1 AlexRMoen <alex.r.moen@gmail.com> 1469347598 -0700	commit: More responsive tweaks
+78c24a1662f46a35f407b91bddc1bcdb0b8e54e1 5ba717d6df321f689a99396057332276c8cd4337 AlexRMoen <alex.r.moen@gmail.com> 1469348872 -0700	commit: Small tweaks
+5ba717d6df321f689a99396057332276c8cd4337 833333da5f4179f962d304c5c5469e4f3ec592ab AlexRMoen <alex.r.moen@gmail.com> 1469353578 -0700	commit: Last edit before merge

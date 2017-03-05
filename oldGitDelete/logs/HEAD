@@ -1,0 +1,209 @@
+0000000000000000000000000000000000000000 32b40f80bb91fb8e0ea675f5d77f21d515a97e8f AlexRMoen <alex.r.moen@gmail.com> 1468052049 -0700	commit (initial): A new portfolio begins
+32b40f80bb91fb8e0ea675f5d77f21d515a97e8f 2ab2ae61b015d70770a611953ab57f177508bb17 AlexRMoen <alex.r.moen@gmail.com> 1468059002 -0700	commit: Created discrete sections
+2ab2ae61b015d70770a611953ab57f177508bb17 a8539b18deac8a2fa2ba9d437683fb2f10f51079 AlexRMoen <alex.r.moen@gmail.com> 1468059642 -0700	commit: Figured out title + Changed background to teal
+a8539b18deac8a2fa2ba9d437683fb2f10f51079 63b5421955c63d918e74d228a92737d29c391dbc AlexRMoen <alex.r.moen@gmail.com> 1468061140 -0700	commit: Removed margins on small viewport
+63b5421955c63d918e74d228a92737d29c391dbc dc0c635271caeaf9d90838a7169d7afb0e3b5e77 AlexRMoen <alex.r.moen@gmail.com> 1468063028 -0700	commit: Fixed full viewport height
+dc0c635271caeaf9d90838a7169d7afb0e3b5e77 10111ad3af4640813dadbecec88f25a08e860912 AlexRMoen <alex.r.moen@gmail.com> 1468064890 -0700	commit: Margin under gird items is equal to the gutter width
+10111ad3af4640813dadbecec88f25a08e860912 fd078f4e2ce62448a3caef502246e145eafc063b AlexRMoen <alex.r.moen@gmail.com> 1468066346 -0700	commit: Shadows
+fd078f4e2ce62448a3caef502246e145eafc063b af17e7955f06399f14458ab0c1657eaed7b94170 AlexRMoen <alex.r.moen@gmail.com> 1468101558 -0700	commit: New day - More subtle shadows
+af17e7955f06399f14458ab0c1657eaed7b94170 f01f72a2752292187e0194f695caf4f9cde5aad4 AlexRMoen <alex.r.moen@gmail.com> 1468103955 -0700	commit: Added hover effect over gallery boxes
+f01f72a2752292187e0194f695caf4f9cde5aad4 bfd4f461832d8e4411e55cc9e43c96fcc09a6488 AlexRMoen <alex.r.moen@gmail.com> 1468107471 -0700	commit: Added grey and changed most h2 to new h3
+bfd4f461832d8e4411e55cc9e43c96fcc09a6488 40d7d2c5a2dcbf6faa66307c4506056bb39d2bbc AlexRMoen <alex.r.moen@gmail.com> 1468111307 -0700	commit: Added About Me image + description
+40d7d2c5a2dcbf6faa66307c4506056bb39d2bbc 3467f1530fdde7f7c4db0c75b221da966f705754 AlexRMoen <alex.r.moen@gmail.com> 1468111898 -0700	commit: Added skill Icons
+3467f1530fdde7f7c4db0c75b221da966f705754 e06d727f4cedd0d61911f4ae4ff517cd4e7be8e5 AlexRMoen <alex.r.moen@gmail.com> 1468113191 -0700	commit: Skill icons and labels
+e06d727f4cedd0d61911f4ae4ff517cd4e7be8e5 05c7fed1350a10eb901493e571900c31c8b68d04 AlexRMoen <alex.r.moen@gmail.com> 1468115795 -0700	commit: Added links to contact icons + changed margin/spacing
+05c7fed1350a10eb901493e571900c31c8b68d04 4d52f5c65d2c63b95b1b5b65a31481c4e4257bba AlexRMoen <alex.r.moen@gmail.com> 1468127390 -0700	commit: Just a safety commit
+4d52f5c65d2c63b95b1b5b65a31481c4e4257bba 8ba194c7fad753766ed7b616cbde26ab767c1ce9 AlexRMoen <alex.r.moen@gmail.com> 1468133349 -0700	commit: Added porthole for the fish
+8ba194c7fad753766ed7b616cbde26ab767c1ce9 3ddaef36efd9d50d4132950a41421cabe3752430 AlexRMoen <alex.r.moen@gmail.com> 1468148449 -0700	commit: Added Buttons
+3ddaef36efd9d50d4132950a41421cabe3752430 5bbc8c8672e9fa197876ccbd7721a302fe82192e AlexRMoen <alex.r.moen@gmail.com> 1468149785 -0700	commit: Labels on gallery boxes
+5bbc8c8672e9fa197876ccbd7721a302fe82192e b1c8c639f4a223ee3a14112248fbb30418b5b158 AlexRMoen <alex.r.moen@gmail.com> 1468150307 -0700	commit: Added Video for development purposes
+b1c8c639f4a223ee3a14112248fbb30418b5b158 f638a833a22b628d22a5e85a2156aeddf17da707 AlexRMoen <alex.r.moen@gmail.com> 1468150485 -0700	commit: Add to last commit
+f638a833a22b628d22a5e85a2156aeddf17da707 275e7cfc7084ff22a2a9997b71cf5ef220addce9 AlexRMoen <alex.r.moen@gmail.com> 1468217178 -0700	commit: Added bottom arrow above the fold
+275e7cfc7084ff22a2a9997b71cf5ef220addce9 275e7cfc7084ff22a2a9997b71cf5ef220addce9 AlexRMoen <alex.r.moen@gmail.com> 1468233796 -0700	checkout: moving from master to Getting-Gallery-Windows-to-Work
+275e7cfc7084ff22a2a9997b71cf5ef220addce9 4cad93b1f8b5ead0d9e5c78c2a53d4b7c28d24cc AlexRMoen <alex.r.moen@gmail.com> 1468233880 -0700	commit: Clicking on gallery window makes others move away
+4cad93b1f8b5ead0d9e5c78c2a53d4b7c28d24cc 275e7cfc7084ff22a2a9997b71cf5ef220addce9 AlexRMoen <alex.r.moen@gmail.com> 1468233921 -0700	checkout: moving from Getting-Gallery-Windows-to-Work to master
+275e7cfc7084ff22a2a9997b71cf5ef220addce9 4cad93b1f8b5ead0d9e5c78c2a53d4b7c28d24cc AlexRMoen <alex.r.moen@gmail.com> 1468233929 -0700	checkout: moving from master to Getting-Gallery-Windows-to-Work
+4cad93b1f8b5ead0d9e5c78c2a53d4b7c28d24cc 4cad93b1f8b5ead0d9e5c78c2a53d4b7c28d24cc AlexRMoen <alex.r.moen@gmail.com> 1468279580 -0700	checkout: moving from Getting-Gallery-Windows-to-Work to Getting-Gallery-Windows-to-Work
+4cad93b1f8b5ead0d9e5c78c2a53d4b7c28d24cc 275e7cfc7084ff22a2a9997b71cf5ef220addce9 AlexRMoen <alex.r.moen@gmail.com> 1468279587 -0700	checkout: moving from Getting-Gallery-Windows-to-Work to master
+275e7cfc7084ff22a2a9997b71cf5ef220addce9 4cad93b1f8b5ead0d9e5c78c2a53d4b7c28d24cc AlexRMoen <alex.r.moen@gmail.com> 1468279591 -0700	checkout: moving from master to Getting-Gallery-Windows-to-Work
+4cad93b1f8b5ead0d9e5c78c2a53d4b7c28d24cc dda10ad45820ed5d3ccaa296729408309bd13312 AlexRMoen <alex.r.moen@gmail.com> 1468281401 -0700	commit: Added smooth scrolling to anchors
+dda10ad45820ed5d3ccaa296729408309bd13312 275e7cfc7084ff22a2a9997b71cf5ef220addce9 AlexRMoen <alex.r.moen@gmail.com> 1468281420 -0700	checkout: moving from Getting-Gallery-Windows-to-Work to master
+275e7cfc7084ff22a2a9997b71cf5ef220addce9 dda10ad45820ed5d3ccaa296729408309bd13312 AlexRMoen <alex.r.moen@gmail.com> 1468281430 -0700	checkout: moving from master to Getting-Gallery-Windows-to-Work
+dda10ad45820ed5d3ccaa296729408309bd13312 0ca629569a946acb9ab90952e4ddf5b50c8ce7ed AlexRMoen <alex.r.moen@gmail.com> 1468287863 -0700	commit: Better code for gallery re-flow
+0ca629569a946acb9ab90952e4ddf5b50c8ce7ed 275e7cfc7084ff22a2a9997b71cf5ef220addce9 AlexRMoen <alex.r.moen@gmail.com> 1468287945 -0700	checkout: moving from Getting-Gallery-Windows-to-Work to master
+275e7cfc7084ff22a2a9997b71cf5ef220addce9 0ca629569a946acb9ab90952e4ddf5b50c8ce7ed AlexRMoen <alex.r.moen@gmail.com> 1468287958 -0700	checkout: moving from master to Getting-Gallery-Windows-to-Work
+0ca629569a946acb9ab90952e4ddf5b50c8ce7ed 275e7cfc7084ff22a2a9997b71cf5ef220addce9 AlexRMoen <alex.r.moen@gmail.com> 1468287976 -0700	checkout: moving from Getting-Gallery-Windows-to-Work to master
+275e7cfc7084ff22a2a9997b71cf5ef220addce9 0ca629569a946acb9ab90952e4ddf5b50c8ce7ed AlexRMoen <alex.r.moen@gmail.com> 1468287979 -0700	checkout: moving from master to Getting-Gallery-Windows-to-Work
+0ca629569a946acb9ab90952e4ddf5b50c8ce7ed 275e7cfc7084ff22a2a9997b71cf5ef220addce9 AlexRMoen <alex.r.moen@gmail.com> 1468288006 -0700	checkout: moving from Getting-Gallery-Windows-to-Work to master
+275e7cfc7084ff22a2a9997b71cf5ef220addce9 c9b4ffc644d4310375c4db6610e5d6e8a748dc24 AlexRMoen <alex.r.moen@gmail.com> 1468288017 -0700	merge Getting-Gallery-Windows-to-Work: Merge made by the 'recursive' strategy.
+c9b4ffc644d4310375c4db6610e5d6e8a748dc24 27309565f62fb1c64f0e018f8458b35eafcb8cbf AlexRMoen <alex.r.moen@gmail.com> 1468290028 -0700	commit: Got grid -> modal perfected
+27309565f62fb1c64f0e018f8458b35eafcb8cbf 9943e68461c6bff723a747e277d8453f9c7e97a6 AlexRMoen <alex.r.moen@gmail.com> 1468291455 -0700	commit: Got arrow functionality working
+9943e68461c6bff723a747e277d8453f9c7e97a6 c3b9e34230e2538765593fe7a252124be95b5049 AlexRMoen <alex.r.moen@gmail.com> 1468306096 -0700	commit: Added navigation arrows
+c3b9e34230e2538765593fe7a252124be95b5049 2407b9419e559af47c162ac0ac24160b6b8a04c1 AlexRMoen <alex.r.moen@gmail.com> 1468308845 -0700	commit: Added the header + footer for the modal
+2407b9419e559af47c162ac0ac24160b6b8a04c1 f2c972b34f1aaa82a2d3a012c3d795a5a365f08d AlexRMoen <alex.r.moen@gmail.com> 1468309146 -0700	commit: Changed height 30 to height 35
+f2c972b34f1aaa82a2d3a012c3d795a5a365f08d 0da4af4574e10963c2493e2580c95a087c97d247 AlexRMoen <alex.r.moen@gmail.com> 1468310972 -0700	commit: Added X button to close modal
+0da4af4574e10963c2493e2580c95a087c97d247 2d65a56cb8c8b3906d4fa53ff8e01f7c3d1ca8fb AlexRMoen <alex.r.moen@gmail.com> 1468314037 -0700	commit: Body content fades in + arrows attached to gallery row
+2d65a56cb8c8b3906d4fa53ff8e01f7c3d1ca8fb 9755e31302d5ecb77375da4316cccdb3a293b452 AlexRMoen <alex.r.moen@gmail.com> 1468316188 -0700	commit: Updated kojiro with newer link rules
+9755e31302d5ecb77375da4316cccdb3a293b452 8fa97c49826757c0a93d9025624d3ee804c503c9 AlexRMoen <alex.r.moen@gmail.com> 1468316338 -0700	commit: Slowed arrow animation
+8fa97c49826757c0a93d9025624d3ee804c503c9 de441fb2c62853ef0554512df521a998aeb81f5a AlexRMoen <alex.r.moen@gmail.com> 1468316699 -0700	commit: Linked "contact me" button to contact section
+de441fb2c62853ef0554512df521a998aeb81f5a e729cb4b0d57aad7fd0c1fbb85e68fed9d25c9d4 AlexRMoen <alex.r.moen@gmail.com> 1468362037 -0700	commit: Added Trello links
+e729cb4b0d57aad7fd0c1fbb85e68fed9d25c9d4 e8313f7619c9b8c7eb61b1d433d25ed16cbf21d5 AlexRMoen <alex.r.moen@gmail.com> 1468363081 -0700	commit: Fixed mystery margin on right side
+e8313f7619c9b8c7eb61b1d433d25ed16cbf21d5 934db7862babfbb51cf1f0c1c8be30d1df87640d AlexRMoen <alex.r.moen@gmail.com> 1468374867 -0700	commit: Added ability to page between last item on row 1 and first item on row 2
+934db7862babfbb51cf1f0c1c8be30d1df87640d 664e89ccca092a3b53ed8fda133e683cd19dcfe5 AlexRMoen <alex.r.moen@gmail.com> 1468388623 -0700	commit: Adding content to modal
+664e89ccca092a3b53ed8fda133e683cd19dcfe5 1081ab3b27f20a5a9c9902b3ac3f0ccbb75ded75 AlexRMoen <alex.r.moen@gmail.com> 1468399940 -0700	commit: Added a new label for the boxes
+1081ab3b27f20a5a9c9902b3ac3f0ccbb75ded75 3aa80a583475dd4bcedb4866b84a3b0b91761ede AlexRMoen <alex.r.moen@gmail.com> 1468454209 -0700	commit: Properly scaled label and cover behavior
+3aa80a583475dd4bcedb4866b84a3b0b91761ede 3aa80a583475dd4bcedb4866b84a3b0b91761ede AlexRMoen <alex.r.moen@gmail.com> 1468467324 -0700	checkout: moving from master to Fixing-Modal-Position-for-Good
+3aa80a583475dd4bcedb4866b84a3b0b91761ede bfbe4868f5219f4a7ba3d7ffbb6d47e02732cefb AlexRMoen <alex.r.moen@gmail.com> 1468467406 -0700	commit: Figured out modal position
+bfbe4868f5219f4a7ba3d7ffbb6d47e02732cefb 1bf65d4129df2d3d374fd73328399810256c764b AlexRMoen <alex.r.moen@gmail.com> 1468483690 -0700	commit: Scrolling during switch to modal perfected
+1bf65d4129df2d3d374fd73328399810256c764b 71b4ff9fd7ae11a95fec4f5c85ff05dcb60d2c88 AlexRMoen <alex.r.moen@gmail.com> 1468487568 -0700	commit: Removed redundant properties + added 3daccel
+71b4ff9fd7ae11a95fec4f5c85ff05dcb60d2c88 d437620ef8ccf9749368a649398ceb38c4b56c2e AlexRMoen <alex.r.moen@gmail.com> 1468490253 -0700	commit: Fixed the major slowdown issue: filter shadows
+d437620ef8ccf9749368a649398ceb38c4b56c2e cdf8ed0c999df6e7de7f65befc7a2e7d7cb12c1c AlexRMoen <alex.r.moen@gmail.com> 1468491770 -0700	commit: White divs now cast a shadow again
+cdf8ed0c999df6e7de7f65befc7a2e7d7cb12c1c cb4fa2fbba30428da2de7ae82626509d907e08a6 AlexRMoen <alex.r.moen@gmail.com> 1468492529 -0700	commit: Made the cover image for the page (just ella now) larger
+cb4fa2fbba30428da2de7ae82626509d907e08a6 cb4fa2fbba30428da2de7ae82626509d907e08a6 AlexRMoen <alex.r.moen@gmail.com> 1468492603 -0700	checkout: moving from Fixing-Modal-Position-for-Good to Fixing-Modal-Position-for-Good
+cb4fa2fbba30428da2de7ae82626509d907e08a6 cb4fa2fbba30428da2de7ae82626509d907e08a6 AlexRMoen <alex.r.moen@gmail.com> 1468495814 -0700	checkout: moving from Fixing-Modal-Position-for-Good to Fixing-Modal-Position-for-Good
+cb4fa2fbba30428da2de7ae82626509d907e08a6 3aa80a583475dd4bcedb4866b84a3b0b91761ede AlexRMoen <alex.r.moen@gmail.com> 1468495837 -0700	checkout: moving from Fixing-Modal-Position-for-Good to master
+3aa80a583475dd4bcedb4866b84a3b0b91761ede cb4fa2fbba30428da2de7ae82626509d907e08a6 AlexRMoen <alex.r.moen@gmail.com> 1468495844 -0700	checkout: moving from master to Fixing-Modal-Position-for-Good
+cb4fa2fbba30428da2de7ae82626509d907e08a6 1baaa359f0ae11487c27fbd7e4fd589f97908fbf AlexRMoen <alex.r.moen@gmail.com> 1468701717 -0700	commit: After crit + close all other non-gallery divs
+1baaa359f0ae11487c27fbd7e4fd589f97908fbf 01294ac58a8d5901a967a8415b51fa0f202b87d4 AlexRMoen <alex.r.moen@gmail.com> 1468714795 -0700	commit: Added Javascript switch to modals
+01294ac58a8d5901a967a8415b51fa0f202b87d4 ff26a38956bbfc3a44a6019fbf4f9e65df815a28 AlexRMoen <alex.r.moen@gmail.com> 1468730776 -0700	commit: Move To fixed in modal transition
+ff26a38956bbfc3a44a6019fbf4f9e65df815a28 1b746de6947cbd26ef083829ee6be1e48ed466bd AlexRMoen <alex.r.moen@gmail.com> 1468732104 -0700	commit: Finalized Ella modal transition
+1b746de6947cbd26ef083829ee6be1e48ed466bd 728d6b85b44c4113ad7d9e1a468efb31d2ba9f5a AlexRMoen <alex.r.moen@gmail.com> 1468732394 -0700	commit: Changed naming convention for modal JS files
+728d6b85b44c4113ad7d9e1a468efb31d2ba9f5a 6623cb9440dec52610958b32356b218fc30a72be AlexRMoen <alex.r.moen@gmail.com> 1468732927 -0700	commit: Added Trello modal switch
+6623cb9440dec52610958b32356b218fc30a72be 3ca649d7485af30dcf33e6ed17cea9fd891ae57b AlexRMoen <alex.r.moen@gmail.com> 1468736946 -0700	commit: Fixed Xs on top row
+3ca649d7485af30dcf33e6ed17cea9fd891ae57b 9f989c4cab81d9bba6b17f759db443a08dbb193a AlexRMoen <alex.r.moen@gmail.com> 1468738194 -0700	commit: Playboy modal fixed
+9f989c4cab81d9bba6b17f759db443a08dbb193a f2c9f4b23edfaeefbf5caedd8986cb67c0cb5bfb AlexRMoen <alex.r.moen@gmail.com> 1468740585 -0700	commit: Enterprise now expands
+f2c9f4b23edfaeefbf5caedd8986cb67c0cb5bfb 1ea638700615760262821688a61989bbec76d942 AlexRMoen <alex.r.moen@gmail.com> 1468744351 -0700	commit: Chirpr works
+1ea638700615760262821688a61989bbec76d942 3aa80a583475dd4bcedb4866b84a3b0b91761ede AlexRMoen <alex.r.moen@gmail.com> 1468744377 -0700	checkout: moving from Fixing-Modal-Position-for-Good to master
+3aa80a583475dd4bcedb4866b84a3b0b91761ede 1ea638700615760262821688a61989bbec76d942 AlexRMoen <alex.r.moen@gmail.com> 1468744390 -0700	checkout: moving from master to Fixing-Modal-Position-for-Good
+1ea638700615760262821688a61989bbec76d942 3aa80a583475dd4bcedb4866b84a3b0b91761ede AlexRMoen <alex.r.moen@gmail.com> 1468744411 -0700	checkout: moving from Fixing-Modal-Position-for-Good to master
+3aa80a583475dd4bcedb4866b84a3b0b91761ede 168aedd8e0ba2dcaf7a74c776fd2179349a49c83 AlexRMoen <alex.r.moen@gmail.com> 1468744427 -0700	merge Fixing-Modal-Position-for-Good: Merge made by the 'recursive' strategy.
+168aedd8e0ba2dcaf7a74c776fd2179349a49c83 168aedd8e0ba2dcaf7a74c776fd2179349a49c83 AlexRMoen <alex.r.moen@gmail.com> 1468744459 -0700	checkout: moving from master to master
+168aedd8e0ba2dcaf7a74c776fd2179349a49c83 168aedd8e0ba2dcaf7a74c776fd2179349a49c83 AlexRMoen <alex.r.moen@gmail.com> 1468744586 -0700	checkout: moving from master to master
+168aedd8e0ba2dcaf7a74c776fd2179349a49c83 5fa3899cca1bee11b90f426594a3c3fc1828cdf5 AlexRMoen <alex.r.moen@gmail.com> 1468746171 -0700	commit: Fixed overflow bug
+5fa3899cca1bee11b90f426594a3c3fc1828cdf5 37733f023b4ea4b6a313ebf34926fc85f6203a1c AlexRMoen <alex.r.moen@gmail.com> 1468746848 -0700	commit: Newitem has modal conversion
+37733f023b4ea4b6a313ebf34926fc85f6203a1c 6f35131b7c7a734c389940471de1ccf5cb6e9d5c AlexRMoen <alex.r.moen@gmail.com> 1468749393 -0700	commit: Ella Right Arrow appears to work
+6f35131b7c7a734c389940471de1ccf5cb6e9d5c a7cb0adf87d5b07c9ac104f1fa553830fa3bf38c AlexRMoen <alex.r.moen@gmail.com> 1468753990 -0700	commit: Better titling
+a7cb0adf87d5b07c9ac104f1fa553830fa3bf38c bc11701a737b36199d331f7fa8739ba90d636b98 AlexRMoen <alex.r.moen@gmail.com> 1468781449 -0700	commit: Changed naming convention for modal functions
+bc11701a737b36199d331f7fa8739ba90d636b98 a391cba49b7f8f1f51dcd2e6388c6c8d625127dd AlexRMoen <alex.r.moen@gmail.com> 1468782944 -0700	commit: Created Close X function
+a391cba49b7f8f1f51dcd2e6388c6c8d625127dd 5385237dffcdf5122b502c02c987e0dc00be7c2b AlexRMoen <alex.r.moen@gmail.com> 1468826223 -0700	commit: Got the modal close to work
+5385237dffcdf5122b502c02c987e0dc00be7c2b 74e63e92bf36c00bcf01da97371613996bf42746 AlexRMoen <alex.r.moen@gmail.com> 1468827364 -0700	commit: Got the gallery to properly animate to full height
+74e63e92bf36c00bcf01da97371613996bf42746 9a89ca71e2417393762b3992e034ce92c59b9c23 AlexRMoen <alex.r.moen@gmail.com> 1468828420 -0700	commit: Updated Kojiro Modal to close properly
+9a89ca71e2417393762b3992e034ce92c59b9c23 adec5f38630c1bd2f27e4479832f579d0ae4666d AlexRMoen <alex.r.moen@gmail.com> 1468829095 -0700	commit: Made modal autoscroll to the top on close
+adec5f38630c1bd2f27e4479832f579d0ae4666d c1992be692c73e3f09f6463395fdc9ea4b747aca AlexRMoen <alex.r.moen@gmail.com> 1468829329 -0700	commit: Fixed a bug where the right ella arrow wasn't properly sizing the label back to normal
+c1992be692c73e3f09f6463395fdc9ea4b747aca 6ce131a19f0d659459e14247cfbea7a93e0eaa65 AlexRMoen <alex.r.moen@gmail.com> 1468830244 -0700	commit: Fixed a gallery height bug in Safari
+6ce131a19f0d659459e14247cfbea7a93e0eaa65 8ff34e955613737d92022fc6e8ce1fc3cc7cbf25 AlexRMoen <alex.r.moen@gmail.com> 1468831700 -0700	commit: Fixed a bug in Firefox
+8ff34e955613737d92022fc6e8ce1fc3cc7cbf25 2db4c79a79ad725853e3c4aa4b48616639809fa3 AlexRMoen <alex.r.moen@gmail.com> 1468832406 -0700	commit: Changed size of profile pic + fixed ella bug
+2db4c79a79ad725853e3c4aa4b48616639809fa3 2db4c79a79ad725853e3c4aa4b48616639809fa3 AlexRMoen <alex.r.moen@gmail.com> 1468838668 -0700	checkout: moving from master to Changing-Visual-Elements
+2db4c79a79ad725853e3c4aa4b48616639809fa3 62098253162c4fd91dd27da435e88bae73ffa551 AlexRMoen <alex.r.moen@gmail.com> 1468838763 -0700	commit: Increased gallery padding
+62098253162c4fd91dd27da435e88bae73ffa551 2c008bf06a895769c3b14f80839ee1f6527d5d1e AlexRMoen <alex.r.moen@gmail.com> 1468875669 -0700	commit: Added Kojiro left arrow and fixed overflow bug
+2c008bf06a895769c3b14f80839ee1f6527d5d1e 39dccf70cbd7bc511b2a59e3798ca8ffbb819d28 AlexRMoen <alex.r.moen@gmail.com> 1469001944 -0700	commit: Kojiro Right Arrow + Trello close X done
+39dccf70cbd7bc511b2a59e3798ca8ffbb819d28 81955ad6f2dfa7cf653e25a0f654f7bf99e1fe3b AlexRMoen <alex.r.moen@gmail.com> 1469003567 -0700	commit: Fixed bugs across modals
+81955ad6f2dfa7cf653e25a0f654f7bf99e1fe3b 2db4c79a79ad725853e3c4aa4b48616639809fa3 AlexRMoen <alex.r.moen@gmail.com> 1469003583 -0700	checkout: moving from Changing-Visual-Elements to master
+2db4c79a79ad725853e3c4aa4b48616639809fa3 2db4c79a79ad725853e3c4aa4b48616639809fa3 AlexRMoen <alex.r.moen@gmail.com> 1469003600 -0700	checkout: moving from master to master
+2db4c79a79ad725853e3c4aa4b48616639809fa3 2db4c79a79ad725853e3c4aa4b48616639809fa3 AlexRMoen <alex.r.moen@gmail.com> 1469003617 -0700	checkout: moving from master to master
+2db4c79a79ad725853e3c4aa4b48616639809fa3 ce4e5f69d6ae6b72cbce2e3bd671517c5532b800 AlexRMoen <alex.r.moen@gmail.com> 1469003650 -0700	merge Changing-Visual-Elements: Merge made by the 'recursive' strategy.
+ce4e5f69d6ae6b72cbce2e3bd671517c5532b800 4f8a893ecc6954b1448a442ca7936af1906804cf AlexRMoen <alex.r.moen@gmail.com> 1469005717 -0700	commit: Got second row item to move in correctly
+4f8a893ecc6954b1448a442ca7936af1906804cf 504be291e7309de28fb5eb35befa888353325656 AlexRMoen <alex.r.moen@gmail.com> 1469051540 -0700	commit: Playboy Close X seems to work
+504be291e7309de28fb5eb35befa888353325656 680ac10b4cfb6263d6cd39c660fff8c8e2cb7fa5 AlexRMoen <alex.r.moen@gmail.com> 1469052444 -0700	commit: Fixed a bug related to the first and second row
+680ac10b4cfb6263d6cd39c660fff8c8e2cb7fa5 0d97099296adf8564d69c47bc3db9baba4927792 AlexRMoen <alex.r.moen@gmail.com> 1469052593 -0700	commit: Fixed a similar bug
+0d97099296adf8564d69c47bc3db9baba4927792 ee0fcd9e78fd1778bea44d11ccc72e935b412809 AlexRMoen <alex.r.moen@gmail.com> 1469053693 -0700	commit: Playboy left arrow seems to work
+ee0fcd9e78fd1778bea44d11ccc72e935b412809 881607d99b0d4a9f9085af0dd9d44f9e5ff7d8a1 AlexRMoen <alex.r.moen@gmail.com> 1469054524 -0700	commit: Playboy right arrow works
+881607d99b0d4a9f9085af0dd9d44f9e5ff7d8a1 82be7ed0863dbe6536346a8978703ae4a0aa2069 AlexRMoen <alex.r.moen@gmail.com> 1469055282 -0700	commit: Enterprise close X
+82be7ed0863dbe6536346a8978703ae4a0aa2069 3d5f1c8bc6bcf87e1fb27cc724a6863fa9a35e07 AlexRMoen <alex.r.moen@gmail.com> 1469055874 -0700	commit: Enterprise is complete
+3d5f1c8bc6bcf87e1fb27cc724a6863fa9a35e07 bd6f180d25a1b0d0349d0385984e4de7f4de64af AlexRMoen <alex.r.moen@gmail.com> 1469056565 -0700	commit: Chirpr done
+bd6f180d25a1b0d0349d0385984e4de7f4de64af 52a79821e73c9484fdbcb66771213758007c5c29 AlexRMoen <alex.r.moen@gmail.com> 1469057244 -0700	commit: ALL GALLERY ITEMS DONE!
+52a79821e73c9484fdbcb66771213758007c5c29 be01fe9e5604891796acf6da0d6852cdaf614b44 AlexRMoen <alex.r.moen@gmail.com> 1469063679 -0700	commit: Aligned buttons in the centre
+be01fe9e5604891796acf6da0d6852cdaf614b44 be01fe9e5604891796acf6da0d6852cdaf614b44 AlexRMoen <alex.r.moen@gmail.com> 1469084424 -0700	checkout: moving from master to Changing-Colors,-Text-+-Icons
+be01fe9e5604891796acf6da0d6852cdaf614b44 02321479144414d85f8f3aefe7d7c4b94de50fdf AlexRMoen <alex.r.moen@gmail.com> 1469089258 -0700	commit: New label style
+02321479144414d85f8f3aefe7d7c4b94de50fdf 71b7dcc82c02894ff19e9436b0de2491f9252ece AlexRMoen <alex.r.moen@gmail.com> 1469094213 -0700	commit: New close X icon design
+71b7dcc82c02894ff19e9436b0de2491f9252ece 1bc64c1228a309294324d63816ba605d2aebe964 AlexRMoen <alex.r.moen@gmail.com> 1469138935 -0700	commit: Added a porthole and changed X color
+1bc64c1228a309294324d63816ba605d2aebe964 426d237db117a2f7070f34b78716a115ec350894 AlexRMoen <alex.r.moen@gmail.com> 1469140439 -0700	commit: Updated portal rim
+426d237db117a2f7070f34b78716a115ec350894 1dcda3d4923c3167dbb569ea94161efd03458733 AlexRMoen <alex.r.moen@gmail.com> 1469315119 -0700	commit: Updated copy in about me section
+1dcda3d4923c3167dbb569ea94161efd03458733 a73a500d108db4d2309c6dc9844272466a24faa0 AlexRMoen <alex.r.moen@gmail.com> 1469318536 -0700	commit: Added topIsFlush class for "hello" h3 header
+a73a500d108db4d2309c6dc9844272466a24faa0 1dcda3d4923c3167dbb569ea94161efd03458733 AlexRMoen <alex.r.moen@gmail.com> 1469318544 -0700	reset: moving to 1dcda3d4923c3167dbb569ea94161efd03458733
+1dcda3d4923c3167dbb569ea94161efd03458733 1538972bd51b7bc949d85c10190893e97b4aa3b3 AlexRMoen <alex.r.moen@gmail.com> 1469318561 -0700	commit: Added topIsFlush class for "hello" h3 header
+1538972bd51b7bc949d85c10190893e97b4aa3b3 14bb8e0802f8a4bb479bf9d2e8f2cb6947c58654 AlexRMoen <alex.r.moen@gmail.com> 1469320751 -0700	commit: Changed name + text shadowing
+14bb8e0802f8a4bb479bf9d2e8f2cb6947c58654 eb57ae81358e43cf65d460ac748765452d3898d2 AlexRMoen <alex.r.moen@gmail.com> 1469342935 -0700	commit: Cracked the code in getting the "hello" section to vertically align
+eb57ae81358e43cf65d460ac748765452d3898d2 63428f85b6382a3adaaa98fdb539ef98370599f5 AlexRMoen <alex.r.moen@gmail.com> 1469344055 -0700	commit: Made icons responsive
+63428f85b6382a3adaaa98fdb539ef98370599f5 eb57ae81358e43cf65d460ac748765452d3898d2 AlexRMoen <alex.r.moen@gmail.com> 1469344059 -0700	reset: moving to eb57ae81358e43cf65d460ac748765452d3898d2
+eb57ae81358e43cf65d460ac748765452d3898d2 ed824e0330fd83f16572be92d2fde0ec3d394170 AlexRMoen <alex.r.moen@gmail.com> 1469344097 -0700	commit: Made icons responsive
+ed824e0330fd83f16572be92d2fde0ec3d394170 78c24a1662f46a35f407b91bddc1bcdb0b8e54e1 AlexRMoen <alex.r.moen@gmail.com> 1469347598 -0700	commit: More responsive tweaks
+78c24a1662f46a35f407b91bddc1bcdb0b8e54e1 5ba717d6df321f689a99396057332276c8cd4337 AlexRMoen <alex.r.moen@gmail.com> 1469348872 -0700	commit: Small tweaks
+5ba717d6df321f689a99396057332276c8cd4337 833333da5f4179f962d304c5c5469e4f3ec592ab AlexRMoen <alex.r.moen@gmail.com> 1469353578 -0700	commit: Last edit before merge
+833333da5f4179f962d304c5c5469e4f3ec592ab be01fe9e5604891796acf6da0d6852cdaf614b44 AlexRMoen <alex.r.moen@gmail.com> 1469353599 -0700	checkout: moving from Changing-Colors,-Text-+-Icons to master
+be01fe9e5604891796acf6da0d6852cdaf614b44 b7b54439fae7b542a8de8272004ab0b8f2b810ef AlexRMoen <alex.r.moen@gmail.com> 1469353614 -0700	merge Changing-Colors,-Text-+-Icons: Merge made by the 'recursive' strategy.
+b7b54439fae7b542a8de8272004ab0b8f2b810ef b7b54439fae7b542a8de8272004ab0b8f2b810ef AlexRMoen <alex.r.moen@gmail.com> 1469353703 -0700	checkout: moving from master to Changing-gallery-label-style
+b7b54439fae7b542a8de8272004ab0b8f2b810ef f2aa275e0321a8982f8340e3636a98aec7b18bdb AlexRMoen <alex.r.moen@gmail.com> 1469410303 -0700	commit: New label concept
+f2aa275e0321a8982f8340e3636a98aec7b18bdb ef259fa80229c13d203143e18ca7816d4b0c186e AlexRMoen <alex.r.moen@gmail.com> 1469411562 -0700	commit: Adjusted padding on left of blue bar
+ef259fa80229c13d203143e18ca7816d4b0c186e 8a1ed2d404385b0ba0889f0a077f9577489f242c AlexRMoen <alex.r.moen@gmail.com> 1469421389 -0700	commit: Added cool shadows above sub-heading bar
+8a1ed2d404385b0ba0889f0a077f9577489f242c abdb11cbcb4ce733fda5883b13b040147a8773bb AlexRMoen <alex.r.moen@gmail.com> 1469422203 -0700	commit: Fixed some font weights
+abdb11cbcb4ce733fda5883b13b040147a8773bb f612bfedb3f507cf3ffa66c022c3fcc44356111d AlexRMoen <alex.r.moen@gmail.com> 1469433706 -0700	commit: Removed multiple shadow versions + moved down arrow above the fold
+f612bfedb3f507cf3ffa66c022c3fcc44356111d 84eb53af6fabb612e383272a5400fcd3effcd9c0 AlexRMoen <alex.r.moen@gmail.com> 1469658220 -0700	commit: More work on responsive design
+84eb53af6fabb612e383272a5400fcd3effcd9c0 d31c1dc6ab775e21fbec45f1a0bd200108ad13b8 AlexRMoen <alex.r.moen@gmail.com> 1469659837 -0700	commit: Changing text at different resolutions
+d31c1dc6ab775e21fbec45f1a0bd200108ad13b8 d939c7e7e05224feb917f2da087e5e0b0c332786 AlexRMoen <alex.r.moen@gmail.com> 1469663161 -0700	commit: Fully responsive baby
+d939c7e7e05224feb917f2da087e5e0b0c332786 1120df2da09785dfcec05691309865fef4ff79b4 AlexRMoen <alex.r.moen@gmail.com> 1469664616 -0700	commit: Switched Ella and Kojiro
+1120df2da09785dfcec05691309865fef4ff79b4 b7b54439fae7b542a8de8272004ab0b8f2b810ef AlexRMoen <alex.r.moen@gmail.com> 1469664625 -0700	checkout: moving from Changing-gallery-label-style to master
+b7b54439fae7b542a8de8272004ab0b8f2b810ef 833333da5f4179f962d304c5c5469e4f3ec592ab AlexRMoen <alex.r.moen@gmail.com> 1469664682 -0700	checkout: moving from master to Changing-Colors,-Text-+-Icons
+833333da5f4179f962d304c5c5469e4f3ec592ab 1120df2da09785dfcec05691309865fef4ff79b4 AlexRMoen <alex.r.moen@gmail.com> 1469664698 -0700	checkout: moving from Changing-Colors,-Text-+-Icons to Changing-gallery-label-style
+1120df2da09785dfcec05691309865fef4ff79b4 b7b54439fae7b542a8de8272004ab0b8f2b810ef AlexRMoen <alex.r.moen@gmail.com> 1469664704 -0700	checkout: moving from Changing-gallery-label-style to master
+b7b54439fae7b542a8de8272004ab0b8f2b810ef b7b54439fae7b542a8de8272004ab0b8f2b810ef AlexRMoen <alex.r.moen@gmail.com> 1469664725 -0700	checkout: moving from master to master
+b7b54439fae7b542a8de8272004ab0b8f2b810ef 319c6adc46c26e9133af96b0bbb029834c98877b AlexRMoen <alex.r.moen@gmail.com> 1469664732 -0700	merge Changing-gallery-label-style: Merge made by the 'recursive' strategy.
+319c6adc46c26e9133af96b0bbb029834c98877b eb6412e1163768d5e45973b5daaf6f3acb71c5fd AlexRMoen <alex.r.moen@gmail.com> 1469995601 -0700	commit: Commit just before trying to fix responsive modals
+eb6412e1163768d5e45973b5daaf6f3acb71c5fd eb6412e1163768d5e45973b5daaf6f3acb71c5fd AlexRMoen <alex.r.moen@gmail.com> 1470098452 -0700	checkout: moving from master to Fixing-Responsiveness-by-Resetting-Modal-Values
+eb6412e1163768d5e45973b5daaf6f3acb71c5fd 1971e8ca7400079c30acd62e2bac915313646882 AlexRMoen <alex.r.moen@gmail.com> 1470098479 -0700	commit: Change method of Modal close
+1971e8ca7400079c30acd62e2bac915313646882 51032847226e4d2ef8fce06cc57725c28bf808e6 AlexRMoen <alex.r.moen@gmail.com> 1470102463 -0700	commit: Created new universal closeX class
+51032847226e4d2ef8fce06cc57725c28bf808e6 a5e259fd109c77a70b61e0a98a47bc62b9dcba0c AlexRMoen <alex.r.moen@gmail.com> 1470113551 -0700	commit: Fixed all modals
+a5e259fd109c77a70b61e0a98a47bc62b9dcba0c 0c99bbe9848232ec178d91e2a75f6bd5069aade3 AlexRMoen <alex.r.moen@gmail.com> 1470114429 -0700	commit: Small tweaks
+0c99bbe9848232ec178d91e2a75f6bd5069aade3 c6689340a7768fd10c674c97a71a166eeb0cdd0c AlexRMoen <alex.r.moen@gmail.com> 1470122703 -0700	commit: Fixed left/right transitions on mobile viewport
+c6689340a7768fd10c674c97a71a166eeb0cdd0c a626ac92b63c28480d250e8bdc7076766b000680 AlexRMoen <alex.r.moen@gmail.com> 1470123297 -0700	commit: Only scrolls to top of gallery on larger viewports
+a626ac92b63c28480d250e8bdc7076766b000680 33b51d01827bbbe890c03da510d877980dde0b09 AlexRMoen <alex.r.moen@gmail.com> 1470211578 -0700	commit: Removed all animation from small viewports
+33b51d01827bbbe890c03da510d877980dde0b09 534bc80729fd5a34542f3176d3e51070e81460d2 AlexRMoen <alex.r.moen@gmail.com> 1470212680 -0700	commit: Fixed a bug
+534bc80729fd5a34542f3176d3e51070e81460d2 bd3a757a98eef1b8c82a733b3e2df3a5de3fec3f AlexRMoen <alex.r.moen@gmail.com> 1470263169 -0700	commit: Change arrow styles
+bd3a757a98eef1b8c82a733b3e2df3a5de3fec3f 157183c9d3215c2f90694a9fa8b745ca57cd66e2 AlexRMoen <alex.r.moen@gmail.com> 1470263730 -0700	commit: Adjusted arrow positions
+157183c9d3215c2f90694a9fa8b745ca57cd66e2 78e61c0738b4c449d8f7b6027520934159c57cd1 AlexRMoen <alex.r.moen@gmail.com> 1470267349 -0700	commit: Moved closeX into modal header
+78e61c0738b4c449d8f7b6027520934159c57cd1 e0ec5d79af4234d5eabe56b642c92ac59c3caf07 AlexRMoen <alex.r.moen@gmail.com> 1470269800 -0700	commit: Added full height and width links to gallery items
+e0ec5d79af4234d5eabe56b642c92ac59c3caf07 bbed2a7c74770db241ba4215931541f621d9250a AlexRMoen <alex.r.moen@gmail.com> 1470277322 -0700	commit: Gallery boxed now enlarge when hovered
+bbed2a7c74770db241ba4215931541f621d9250a b4aaa628b9225a058bda66ea38959eb33f7ca12c AlexRMoen <alex.r.moen@gmail.com> 1470281194 -0700	commit: Moved closeX again
+b4aaa628b9225a058bda66ea38959eb33f7ca12c 033628ba4c398c678536b9d350a10cacaaf93ee4 AlexRMoen <alex.r.moen@gmail.com> 1470300471 -0700	commit: Progress on info within the kojiro modal
+033628ba4c398c678536b9d350a10cacaaf93ee4 033628ba4c398c678536b9d350a10cacaaf93ee4 AlexRMoen <alex.r.moen@gmail.com> 1470333849 -0700	checkout: moving from Fixing-Responsiveness-by-Resetting-Modal-Values to 5-modals-instead-of-7
+033628ba4c398c678536b9d350a10cacaaf93ee4 c94ba4194831219c3b41745cf54d99a8f42d98ad AlexRMoen <alex.r.moen@gmail.com> 1470333852 -0700	commit: Switched out 7 modals for 5
+c94ba4194831219c3b41745cf54d99a8f42d98ad fcd7b8ef31b30c78ed3325180dd0f6f793f6028d AlexRMoen <alex.r.moen@gmail.com> 1470337844 -0700	commit: Half of Kojiro has been filled in
+fcd7b8ef31b30c78ed3325180dd0f6f793f6028d 84a2633b77f93f14e897e8c4f7fdcb0b746b56d3 AlexRMoen <alex.r.moen@gmail.com> 1470344393 -0700	commit: Fixed some responsive stuff
+84a2633b77f93f14e897e8c4f7fdcb0b746b56d3 57e13792dac2a2be5cdd9083cc1bc35f06ddf6cc AlexRMoen <alex.r.moen@gmail.com> 1470345335 -0700	commit: Changed all px to em
+57e13792dac2a2be5cdd9083cc1bc35f06ddf6cc 57e13792dac2a2be5cdd9083cc1bc35f06ddf6cc AlexRMoen <alex.r.moen@gmail.com> 1470392609 -0700	checkout: moving from 5-modals-instead-of-7 to Changing-Fish
+57e13792dac2a2be5cdd9083cc1bc35f06ddf6cc d38e4f8cc9c5fee0a68ba4354e4ffd6d44471f3e AlexRMoen <alex.r.moen@gmail.com> 1470392660 -0700	commit: Changed the fish to use ProcessingJS instead of video
+d38e4f8cc9c5fee0a68ba4354e4ffd6d44471f3e 77b9af5ba6a8436a32fddc7556548671155a3742 AlexRMoen <alex.r.moen@gmail.com> 1470393275 -0700	commit: Fish moves off screen
+77b9af5ba6a8436a32fddc7556548671155a3742 9816665d8e1fab2c565b4501bcde539346a0a8dc AlexRMoen <alex.r.moen@gmail.com> 1470453052 -0700	commit: Fish in background properly
+9816665d8e1fab2c565b4501bcde539346a0a8dc ec31ade59f85e261b02196e7ce1a8637914ecf08 AlexRMoen <alex.r.moen@gmail.com> 1470475664 -0700	commit: Good milestone before submission
+ec31ade59f85e261b02196e7ce1a8637914ecf08 f99e4d385158f7989f32688047533302e7328acc AlexRMoen <alex.r.moen@gmail.com> 1470476155 -0700	commit: Final commit before submission
+f99e4d385158f7989f32688047533302e7328acc eb6412e1163768d5e45973b5daaf6f3acb71c5fd AlexRMoen <alex.r.moen@gmail.com> 1470476170 -0700	checkout: moving from Changing-Fish to master
+eb6412e1163768d5e45973b5daaf6f3acb71c5fd f99e4d385158f7989f32688047533302e7328acc AlexRMoen <alex.r.moen@gmail.com> 1470476188 -0700	checkout: moving from master to Changing-Fish
+f99e4d385158f7989f32688047533302e7328acc eb6412e1163768d5e45973b5daaf6f3acb71c5fd AlexRMoen <alex.r.moen@gmail.com> 1470476201 -0700	checkout: moving from Changing-Fish to master
+eb6412e1163768d5e45973b5daaf6f3acb71c5fd 1be7b6bfddb858fb42d19315ac85793bbd3c4cf6 AlexRMoen <alex.r.moen@gmail.com> 1470476211 -0700	merge Changing-Fish: Merge made by the 'recursive' strategy.
+1be7b6bfddb858fb42d19315ac85793bbd3c4cf6 3eb0470907fd7f048073d6e39fd50809c391d565 AlexRMoen <alex.r.moen@gmail.com> 1470476594 -0700	commit: Before Submission for real
+3eb0470907fd7f048073d6e39fd50809c391d565 3eb0470907fd7f048073d6e39fd50809c391d565 AlexRMoen <alex.r.moen@gmail.com> 1470477183 -0700	checkout: moving from master to IAT339-Showcase
+3eb0470907fd7f048073d6e39fd50809c391d565 3ddb64c6bc603155ab8235a744ea775dfaa604d3 AlexRMoen <alex.r.moen@gmail.com> 1470522371 -0700	commit: Last submission
+3ddb64c6bc603155ab8235a744ea775dfaa604d3 29a2350f80e47fcb374e26a1955a802f8c0414fa AlexRMoen <alex.r.moen@gmail.com> 1471565963 -0600	commit: Removed temporary school submission section + added dummy content to project 3
+29a2350f80e47fcb374e26a1955a802f8c0414fa 97170c7ac8c4e69d0a4bb72341db5e88c47c8430 AlexRMoen <alex.r.moen@gmail.com> 1471575635 -0600	commit: Switched around modal tags to their final location
+97170c7ac8c4e69d0a4bb72341db5e88c47c8430 3eb0470907fd7f048073d6e39fd50809c391d565 AlexRMoen <alex.r.moen@gmail.com> 1471575649 -0600	checkout: moving from IAT339-Showcase to master
+3eb0470907fd7f048073d6e39fd50809c391d565 d6e2b332577f0fd8e1b78085558a7906a8cdaced AlexRMoen <alex.r.moen@gmail.com> 1471575664 -0600	merge IAT339-Showcase: Merge made by the 'recursive' strategy.
+d6e2b332577f0fd8e1b78085558a7906a8cdaced 19a94563299fd729da03c37646f614575fb998d9 AlexRMoen <alex.r.moen@gmail.com> 1471677085 -0600	commit: Added a lot of images for gallery items
+19a94563299fd729da03c37646f614575fb998d9 0c92ef5d6e940a8bbaf617ec7b23182dbfc89c6a AlexRMoen <alex.r.moen@gmail.com> 1471682145 -0600	commit: Last update for the night. Playboy images 90% done.
+0c92ef5d6e940a8bbaf617ec7b23182dbfc89c6a 4d7a1e58bbc9b2068bfbf543302395fa8a5c4a82 AlexRMoen <alex.r.moen@gmail.com> 1471760008 -0600	commit: 95% of Playboy done
+4d7a1e58bbc9b2068bfbf543302395fa8a5c4a82 c46de6b974cadc4a9c88df83de18c62964c7e800 AlexRMoen <alex.r.moen@gmail.com> 1471811970 -0600	commit: Enterprise images filled
+c46de6b974cadc4a9c88df83de18c62964c7e800 7dae1016ca2506b2e337426caeca0357310f5318 AlexRMoen <alex.r.moen@gmail.com> 1471818455 -0600	commit: Enterprise copy mostly done
+7dae1016ca2506b2e337426caeca0357310f5318 97a952a68a9c2982144cd7c31291d394645c9c0d AlexRMoen <alex.r.moen@gmail.com> 1471821783 -0600	commit: Enterprise section finished
+97a952a68a9c2982144cd7c31291d394645c9c0d 58ae7462800e70bf4e18f6d46576994e8728eb8b AlexRMoen <alex.r.moen@gmail.com> 1471830560 -0600	commit: Most of the copy is complete
+58ae7462800e70bf4e18f6d46576994e8728eb8b b0d0c5bee5b2d322f5dd37a75dce70c39e943f5b AlexRMoen <alex.r.moen@gmail.com> 1471832485 -0600	commit: Done all copy
+b0d0c5bee5b2d322f5dd37a75dce70c39e943f5b 0526862f1ee0c2ec5e8121dab5bf72a629563a1a AlexRMoen <alex.r.moen@gmail.com> 1471837198 -0600	commit: Added compressed images
+0526862f1ee0c2ec5e8121dab5bf72a629563a1a 87541ffd47b9a462bf9c426c97eac9cec388ed0c AlexRMoen <alex.r.moen@gmail.com> 1471850051 -0600	commit: Changed profile pic
+87541ffd47b9a462bf9c426c97eac9cec388ed0c 063a27d9e438e26d37676674a5a0361cc95cb036 AlexRMoen <alex.r.moen@gmail.com> 1471890481 -0600	commit: Fixed large viewport sizes
+063a27d9e438e26d37676674a5a0361cc95cb036 b5c17038c1cd7ce6c2b72bd4d8ac83c4feeff72b AlexRMoen <alex.r.moen@gmail.com> 1471903984 -0600	commit: New profile pic
+b5c17038c1cd7ce6c2b72bd4d8ac83c4feeff72b 01eced2bf7068e6f0e2335357f960b689af04c65 AlexRMoen <alex.r.moen@gmail.com> 1471905157 -0600	commit: Added fullscreen option for YouTube embeds
+01eced2bf7068e6f0e2335357f960b689af04c65 eeceec81b89c93a79188c444c5eda94c3b4fbece AlexRMoen <alex.r.moen@gmail.com> 1471907861 -0600	commit: Fixed the fact that the About Me section never cast a shadow properly
+eeceec81b89c93a79188c444c5eda94c3b4fbece 0295a1ef341b46e9322b89a66b060e2ba029e395 AlexRMoen <alex.r.moen@gmail.com> 1471908240 -0600	commit: Intensified shadows
+0295a1ef341b46e9322b89a66b060e2ba029e395 e50bf9393549824e1ad9e58825fa070f3bb77e41 AlexRMoen <alex.r.moen@gmail.com> 1471908959 -0600	commit: Fixed sizing on small mobile devices
+e50bf9393549824e1ad9e58825fa070f3bb77e41 ed4bf1601eaf1b189967515595bf078a21587ba8 AlexRMoen <alex.r.moen@gmail.com> 1471911551 -0600	commit: Fine tuning of font positioning on small viewports
+ed4bf1601eaf1b189967515595bf078a21587ba8 78ebd7182d6839bb591af1b3c6c9f35a1c37e447 AlexRMoen <alex.r.moen@gmail.com> 1471913025 -0600	commit: More adjusting text sizes on smaller screens
+78ebd7182d6839bb591af1b3c6c9f35a1c37e447 3f7eb3a85f60d7aa654a54884b16eeecd5ac3c90 AlexRMoen <alex.r.moen@gmail.com> 1471944581 -0600	commit: Added "next project" footers and set all other modals to be hidden after animation transition
+3f7eb3a85f60d7aa654a54884b16eeecd5ac3c90 031d0a5f94c09ece7bfc375a105f2b789acf1f1c AlexRMoen <alex.r.moen@gmail.com> 1471947173 -0600	commit: Added all footers to modals + fixed bottom padding of content

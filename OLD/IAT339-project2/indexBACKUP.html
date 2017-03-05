@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PIZZA DROP</title>
+
+<link href="css/style.css" rel="stylesheet">
+
+<!-- font loaded from Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("orderButton").click(function(){
+        $("mainPadding").css({"padding": "0"});
+    });
+});
+</script>
+
+
+</head>
+
+
+<body>
+
+
+
+<!-- nav bar absolutely positioned at top of screen at all times -->
+<div id="topNav">
+<div class="topNavBanner">
+
+<h1>PIZZA DROP</h1>
+
+<!-- user account icon -->
+<a href="#" onclick="document.getElementById('topNav').style.height = '30vh';">
+<div class="accountIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-365 253.3 90 90" height="100%"><style type="text/css">  
+	.st0{fill:#FFFFFF;}
+</style><path class="st0" d="M-320 253.3c-24.9 0-45 20.2-45 45 0 24.9 20.1 45 45 45s45-20.1 45-45C-275 273.5-295.1 253.3-320 253.3L-320 253.3zM-319.7 294c-7 0-12.7-5.8-12.7-12.7 0-7 5.7-12.8 12.7-12.8 6.9 0 12.5 5.7 12.5 12.8C-307.3 288.3-312.8 294-319.7 294L-319.7 294zM-312.2 297.8c8.9 0 15.1 7.2 15.1 15.2v7.5c0 8.5-8.7 9.8-22.7 9.8 -14.2 0-22.9-1.3-23-9.8V313c0-7.8 6.3-15.2 15.3-15.2C-327.5 297.8-312.2 297.8-312.2 297.8z"/></svg></div>
+
+</a>
+
+</div>
+<div class="topNavUserAccount">
+yo
+</div>
+</div>
+
+<!-- main window containing menu items -->
+<div id="mainWindow">
+<div class="dimmedBG">
+
+<div class="mainPadding">
+
+<!-- introduction and onboarding for menu selection process -->
+<div class="morePadding">
+<h2>HUNGRY?</h2>
+<p>PIZZA DROP is a new kind of restaurant, located on your computer screen, or in the palm of your hand. Don't look for any corner store front, we come to you! Featuring advanced delivery methods to bring your favorite pizza right to your location.</p>
+</div>
+
+
+
+<!-- main grid of menu items -->
+
+<!-- food items -->
+<h2>FOOD</h2>
+<div class="row">
+    <div class="column column-4 itemPadding">
+    
+    <!-- menu item -->
+    <div class="productImage foodItem"><img class="img-circle" src="img/mashroom_ham_pizza.png" width="100%"></div>
+    <h3 class="productTitle">HAM + MUSHROOM PIZZA</h3>
+    <p class="smaller">Italian tomato sauce, mashroom, ham + mozzarella cheese. 
+</p>
+    <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw'; document.getElementById('mainWindowDim').style.width = '76vw';
+document.getElementById('mainPadding').style.padding = '0';">ADD TO CART</a></div>
+    
+    </div>
+    <div class="column column-4 itemPadding">
+    
+    <!-- menu item -->
+    <div class="productImage foodItem"><img class="img-circle" src="img/pepperoni_pizza.png"></div>
+    <h3 class="productTitle">PEPPERONI PIZZA</h3>
+    <p class="smaller">Italian tomato sauce, pepperoni + mozzarella cheese. </p>
+    <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw'; document.getElementById('mainWindowDim').style.width = '76vw';">ADD TO CART</a></div>
+    
+    </div>
+    <div class="column column-4 itemPadding">
+    
+    <!-- menu item -->
+    <div class="productImage foodItem"><img class="img-circle" src="img/spicy_pizza.png" width="100%"></div>
+    <h3 class="productTitle">SPICY PIZZA</h3>
+    <p class="smaller">Italian tomato sauce, Jalapeño peppers, red onions, parsley, tomatoes + mozzarella cheese. 
+.</p>
+    <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw'; document.getElementById('mainWindowDim').style.width = '76vw';">ADD TO CART</a></div>
+    
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="column column-4 itemPadding">
+    
+    <!-- menu item -->
+    <div class="productImage foodItem"><img class="img-circle" src="img/veggie_pizza.png"></div>
+    <h3 class="productTitle">VEGETARIAN PIZZA</h3>
+    <p class="smaller">Italian tomato sauce, black olives, tomatoes, red bell peppers, green bell peppers, mashrooms + mozzarella cheese.</p>
+    <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw'; document.getElementById('mainWindowDim').style.width = '76vw';">ADD TO CART</a></div>
+    
+    </div>
+    <div class="column column-4 itemPadding">
+    
+    <!-- menu item -->
+    <div class="productImage foodItem"><img class="img-circle" src="img/tomato_zucchini_pizza.png"></div>
+    <h3 class="productTitle">TOMATO + ZUCCHINI PIZZA</h3>
+    <p class="smaller">Italian tomato sauce, tomatoes, zucchinis + mozzarella cheese.</p>
+    <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw'; document.getElementById('mainWindowDim').style.width = '76vw';">ADD TO CART</a></div>
+    
+    </div>
+    <div class="column column-4 itemPadding">
+    
+    <!-- menu item -->
+    <div class="productImage foodItem"><img class="img-circle" src="img/veggie_ham_pizza.png"></div>
+    <h3 class="productTitle">HAM + VEGGIE PIZZA</h3>
+    <p class="smaller">Italian tomato sauce, ham, green bell peppers, red bell peppers, black olives, mashrooms + mozzarella cheese.</p>
+    <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw'; document.getElementById('mainWindowDim').style.width = '76vw';">ADD TO CART</a></div>
+    
+    </div>
+</div>
+
+
+<!-- drink items -->
+<h2>DRINKS</h2>
+<div class="row">
+    <div class="column column-4 itemPadding">
+    
+    <!-- menu item -->
+    <div class="productImage drinkItem"><img class="img-circle" src="img/coca_cola.png"></div>
+    
+    <h3 class="productTitle">COCA-COLA</h3>
+     <p class="smaller">$1.00 / Can</p>
+    <p class="smaller">$5.25 / 6 Pack</p>
+    <p class="smaller">$2.25 / 2 Litre</p>
+    <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw'; document.getElementById('mainWindowDim').style.width = '76vw';">ADD TO CART</a></div>
+    
+    </div>
+    <div class="column column-4 itemPadding">
+    
+    <!-- menu item -->
+    <div class="productImage drinkItem"><img class="img-circle" src="img/coca_cola_light.png"></div>
+    <h3 class="productTitle">DIET COKE</h3>
+    <p class="smaller">$1.00 / Can</p>
+    <p class="smaller">$5.25 / 6 Pack</p>
+    <p class="smaller">$2.25 / 2 Litre</p>
+</p>
+    <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw'; document.getElementById('mainWindowDim').style.width = '76vw';">ADD TO CART</a></div>
+    
+    </div>
+    <div class="column column-4 itemPadding">
+    
+    <!-- menu item -->
+    <div class="productImage drinkItem"><img class="img-circle" src="img/coca_cola_zero.png"></div>
+    <h3 class="productTitle">COKE ZERO</h3>
+    <p class="smaller">$1.00 / Can</p>
+    <p class="smaller">$5.25 / 6 Pack</p>
+    <p class="smaller">$2.25 / 2 Litre</p>
+    <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw'; document.getElementById('mainWindowDim').style.width = '76vw';">ADD TO CART</a></div>
+    
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="column column-4 itemPadding">
+    
+    <!-- menu item -->
+    <div class="productImage drinkItem"><img class="img-circle" src="img/sprite.png"></div>
+    <h3 class="productTitle">SPRITE</h3>
+    <p class="smaller">$1.00 / Can</p>
+    <p class="smaller">$5.25 / 6 Pack</p>
+    <p class="smaller">$2.25 / 2 Litre</p>
+    <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw'; document.getElementById('mainWindowDim').style.width = '76vw';">ADD TO CART</a></div>
+    
+    </div>
+    <div class="column column-4 itemPadding">
+    
+    <!-- menu item -->
+    <div class="productImage drinkItem"><img class="img-circle" src="img/sprite_zero.png"></div>
+    <h3 class="productTitle">SPRITE ZERO</h3>
+    <p class="smaller">$1.00 / Can</p>
+    <p class="smaller">$5.25 / 6 Pack</p>
+    <p class="smaller">$2.25 / 2 Litre</p>
+    <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw'; document.getElementById('mainWindowDim').style.width = '76vw';">ADD TO CART</a></div>
+    
+    </div>
+    <div class="column column-4 itemPadding">
+    
+    <!-- menu item -->
+    <div class="productImage drinkItem"><img class="img-circle" src="img/water_bottle.png"></div>
+    <h3 class="productTitle">DASANI WATER</h3>
+    <p class="smaller">$1.50 / 500ml</p>
+    <div class="productButtonSpacer"><a href="#" class="button productButton" onclick="document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw'; document.getElementById('mainWindowDim').style.width = '76vw';">ADD TO CART</a></div>
+    
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- this is a dimmed overlay that appears over the main window when the shopping cart is expanded -->
+<a href="#" onclick="
+document.getElementById('dim').style.display = 'none';
+document.getElementById('arrowDiv').style.display = 'none';
+document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw';
+document.getElementById('mainWindowDim').style.width = '76vw';">
+<div class="mainWindowDim" id="dim" style="display: none;">
+</div>
+</a>
+
+<!-- shopping cart absolutely positioned at right side of screen -->
+<div id="shoppingCart">
+
+<!-- x button to close shopping cart -->
+<a href="#" onclick="
+document.getElementById('dim').style.display = 'none';
+document.getElementById('arrowDiv').style.display = 'none';
+document.getElementById('shoppingCart').style.width = '24vw'; document.getElementById('mainWindow').style.width = '76vw';
+document.getElementById('mainWindowDim').style.width = '76vw';">
+<div class="arrow" id="arrowDiv" style="display: none;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.4 42" height="100%"><style type="text/css">  
+	.arrow{fill:#FFFFFF;}
+</style><polygon class="arrow" points="1.4 42 0 40.6 19.7 21 0 1.4 1.4 0 22.4 21 "/></svg>
+</div>
+</a>
+
+<div class="shoppingCartTable">
+<div class="shoppingCartRow">
+
+<!-- shopping cart's open/close tab -->
+<a href="#" id="shoppingCartOpenClose" onclick="document.getElementById('shoppingCart').style.width = '30vw'; document.getElementById('mainWindow').style.width = '70vw'; document.getElementById('mainWindowDim').style.width = '70vw';
+document.getElementById('shoppingCartOpenClose').style.width = '70vw'; document.getElementById('mainWindowDim').style.width = '70vw'; document.getElementById('cartOpener').style.display = 'none';">
+
+
+
+<div id="cartOpener">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-561 347 83.5 68.9"><style type="text/css">  
+	.st0{fill:#FFFFFF;}
+</style><path class="st0" d="M-487.9 395h-50.5c-1.9 0-3.5-1.3-3.9-3.2l-7.7-36.3 -7.3-0.5c-2.2-0.2-3.9-2.1-3.7-4.3 0.2-2.2 2.1-3.9 4.3-3.7l10.2 0.8c1.8 0.1 3.2 1.4 3.6 3.2l7.7 36h44l5.8-26.8c0.5-2.2 2.6-3.5 4.8-3.1 2.2 0.5 3.5 2.6 3.1 4.8l-6.4 30C-484.4 393.7-486.1 395-487.9 395z"/><circle class="st0" cx="-529.7" cy="407.9" r="8"/><circle class="st0" cx="-496" cy="407.9" r="8"/><path class="st0" d="M-494.6 369.3h-37.2c-2.2 0-4-1.8-4-4 0-2.2 1.8-4 4-4h37.2c2.2 0 4 1.8 4 4C-490.6 367.5-492.4 369.3-494.6 369.3z"/><path class="st0" d="M-497.2 381.9h-31.9c-2.2 0-4-1.8-4-4 0-2.2 1.8-4 4-4h31.9c2.2 0 4 1.8 4 4C-493.2 380.1-495 381.9-497.2 381.9z"/></svg>
+</div>
+
+
+</a>
+
+<!-- shopping cart items added column-->
+<div class="shoppingCartColumn">
+
+
+<h4>shopping cart</h4>
+<div>Pepperoni Pizza
+</div>
+
+<div class="test"><a href="#" class="button orderButton" onClick="document.getElementById('shoppingCart').style.width = '48vw'; document.getElementById('dim').style.display = 'block';
+document.getElementById('arrowDiv').style.display = 'block';">CHECKOUT</a></div>
+<!-- confirm order button -->
+<div class="orderButtonSpacer">
+
+</div>
+
+
+</div>
+
+<!-- payment options column-->
+<div class="shoppingCartColumn">
+<h4>PAYMENT TYPE</h4>
+
+
+<div class="orderButtonSpacer">
+<a href="#" class="button orderButton" onClick="document.getElementById('shoppingCart').style.width = '72vw';">VISA</a>
+<a href="#" class="button orderButton" onClick="document.getElementById('shoppingCart').style.width = '72vw';">MASTERCARD</a>
+<a href="#" class="button orderButton" onClick="document.getElementById('shoppingCart').style.width = '72vw';">CASH</a>
+</div>
+
+</div>
+
+<!-- address column-->
+<div class="shoppingCartColumn">
+<h4>YOUR LOCATION</h4>
+
+<div class="orderButtonSpacer">
+<a href="#" class="button orderButton" onClick="document.getElementById('shoppingCart').style.width = '72vw';">ORDER</a>
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+
+
+</body>
+</html>

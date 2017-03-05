@@ -1,0 +1,309 @@
+
+	body {
+		color: rgb(255, 255, 255);
+		/* this makes the font standard on Safari */
+		-webkit-font-smoothing: subpixel-antialiased;
+		
+	background-color: #3E3E3E;
+	margin: 0;
+}
+
+.cover {
+	width: 100%;
+	height: 72vh;
+	  background: url(bettercover.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+.content {
+	padding-left: 10em;
+	padding-right: 10em;
+}
+
+a {
+	color: inherit;
+	} 
+a:hover {
+	color: inherit;
+}
+h1 {
+	font-family: 'Palanquin Dark', sans-serif;
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
+	color: white;
+	margin-top: 0.5em;
+}
+h2 {
+	font-family: 'Palanquin Dark', sans-serif;
+	font-size: 4em;
+	margin: 0;
+	padding: 0;
+	    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+	color: rgb(35, 174, 194);
+}
+h3 {
+	font-family: 'Palanquin Dark', sans-serif;
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+	    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+	color: rgb(35, 174, 194);
+}
+h5 {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: lighter;
+		font-size: medium;
+    -webkit-margin-after: 0;
+		margin-bottom: 2.5em;
+}
+h6 {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: lighter;
+		font-size: medium;
+    -webkit-margin-after: 0;
+		font-size: 3rem;
+}
+p {
+		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: lighter;
+	font-size: medium;
+}
+.centerIt {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+.title {
+	position: absolute;
+	bottom: 20vh;
+	left: 0;
+}
+.pPaddingLeft {
+	padding-left: 2em;
+}
+/* for ie8 */
+video {
+	display: block;
+	}
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(fish1.png) no-repeat;
+    background-size: cover; 
+}
+
+.fishTank {
+/* background-image: url("img/headertest.jpg"); */
+background-size: cover;
+	min-height: 92vh;
+}
+.arrow {
+	height: 8vh;
+	/* transition: height 1s ease-in-out; */
+	padding-top: 3vh;
+}
+/*
+.arrow:hover {
+    height: 10vh;
+}
+*/
+.teal {
+	color: rgb(35, 174, 194);
+}
+.tealBG {
+	background-color: rgb(35, 174, 194);
+}
+.grey {
+	color: #3E3E3E;
+}
+.greyBG {
+	background-color: #3E3E3E;
+}
+.whiteBG {
+	background-color: rgb(0, 0, 0);
+}
+.marginTop {
+	margin-top: 0;
+}
+.parent {
+    display: table;
+    table-layout: fixed;
+}
+
+.child {
+    display:table-cell;
+    vertical-align:middle;
+	float: none;
+}
+	.roundImageMargins {
+		padding-right: 1.5em;
+				margin-bottom: 3.5em;
+		
+	}
+		.btnMargins {
+			margin-top: 2em;
+		margin-right: 0.75em;
+				margin-bottom: 3.5em;
+	}
+	/* gallery of projects */
+	.galleryPadding {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+.galleryBG {
+		z-index: 1;
+		position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+
+	.galleryModal {
+		z-index: 2;
+		height: 90vh;
+		width: 80vw;
+		position: fixed;
+		left: 50%;
+		top: 50%;
+transform: translate(-50%, -50%);
+		background-color: #FFF;
+		  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+		  overflow: hidden;
+	
+	}
+		.galleryBanner {
+		width: 100%;
+		height: 30%;
+		padding: 2.5em 5em;
+		background-color: rgb(35, 174, 194);
+	
+	}
+	.galleryMain {
+	height: 70%;
+		  	overflow: scroll;
+			font-weight: normal;
+			padding: 2.5em 5em;
+}
+	.galleryImage {
+		width: 15%;
+	}
+	.galleryTitle { 
+		width: 85%;
+		padding-left: 2.5em;
+	}
+	.x {
+	height: 3vh;
+	position: fixed;
+	top: 2em;
+	right: 2em;
+}
+
+.galleryLeft {
+	height: 8vh;
+	position: fixed;
+	top: 50%;
+	transform: translate(0, -50%);
+	left: 5vw;
+	
+	-webkit-filter: drop-shadow(0 15px 12px rgba(0,0,0,0.8));
+	filter: drop-shadow(0 15px 12px rgba(0,0,0,0.8));
+}
+
+.galleryRight {
+	height: 8vh;
+	position: fixed;
+	top: 50%;
+	transform: translate(0, -50%);
+	right: 5vw;
+	
+	-webkit-filter: drop-shadow(0 15px 12px rgba(0,0,0,0.8));
+	filter: drop-shadow(0 15px 12px rgba(0,0,0,0.8));
+}
+
+
+
+	.paddingTopBottom {
+	padding-top: 2em;
+		padding-bottom: 0em;
+}
+	.paddingLeftRight {
+		padding-left: 12em;
+	padding-right: 12em;
+}
+
+@media only screen and (max-width: 991px) {
+
+		.paddingLeftRight {
+		padding-left: 5em;
+	padding-right: 5em;
+}
+}
+@media only screen and (max-width: 767px) {
+		.galleryPadding {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.roundImageMargins {
+		padding-right: 0;
+		margin-bottom: 2.5em;
+	}
+	.pPaddingLeft {
+	padding-left: 0;
+	padding-right: 0;
+}
+.parent {
+    display: block;
+}
+	.child {
+    display: block;
+}
+h1 {
+	font-size: 3.5em;
+}
+h2 {
+font-size: 1.5em;
+}
+h5 {
+		font-size: smaller;
+}
+}
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url(fish1.png) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+}
+
+.BandW {
+    -webkit-filter: grayscale(40%); /* Chrome, Safari, Opera */
+    filter: grayscale(40%);
+}
+
+.sizer {
+-webkit-transition: transform 2s; /* Safari */
+    transition: transform 0.25s;
+}
+
+.sizer:hover{
+   transform: scale(1.075,1.075);
+}

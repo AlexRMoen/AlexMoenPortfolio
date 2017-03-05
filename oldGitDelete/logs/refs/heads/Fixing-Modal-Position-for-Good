@@ -1,0 +1,17 @@
+0000000000000000000000000000000000000000 3aa80a583475dd4bcedb4866b84a3b0b91761ede AlexRMoen <alex.r.moen@gmail.com> 1468467324 -0700
+3aa80a583475dd4bcedb4866b84a3b0b91761ede bfbe4868f5219f4a7ba3d7ffbb6d47e02732cefb AlexRMoen <alex.r.moen@gmail.com> 1468467406 -0700	commit: Figured out modal position
+bfbe4868f5219f4a7ba3d7ffbb6d47e02732cefb 1bf65d4129df2d3d374fd73328399810256c764b AlexRMoen <alex.r.moen@gmail.com> 1468483690 -0700	commit: Scrolling during switch to modal perfected
+1bf65d4129df2d3d374fd73328399810256c764b 71b4ff9fd7ae11a95fec4f5c85ff05dcb60d2c88 AlexRMoen <alex.r.moen@gmail.com> 1468487568 -0700	commit: Removed redundant properties + added 3daccel
+71b4ff9fd7ae11a95fec4f5c85ff05dcb60d2c88 d437620ef8ccf9749368a649398ceb38c4b56c2e AlexRMoen <alex.r.moen@gmail.com> 1468490253 -0700	commit: Fixed the major slowdown issue: filter shadows
+d437620ef8ccf9749368a649398ceb38c4b56c2e cdf8ed0c999df6e7de7f65befc7a2e7d7cb12c1c AlexRMoen <alex.r.moen@gmail.com> 1468491770 -0700	commit: White divs now cast a shadow again
+cdf8ed0c999df6e7de7f65befc7a2e7d7cb12c1c cb4fa2fbba30428da2de7ae82626509d907e08a6 AlexRMoen <alex.r.moen@gmail.com> 1468492529 -0700	commit: Made the cover image for the page (just ella now) larger
+cb4fa2fbba30428da2de7ae82626509d907e08a6 1baaa359f0ae11487c27fbd7e4fd589f97908fbf AlexRMoen <alex.r.moen@gmail.com> 1468701717 -0700	commit: After crit + close all other non-gallery divs
+1baaa359f0ae11487c27fbd7e4fd589f97908fbf 01294ac58a8d5901a967a8415b51fa0f202b87d4 AlexRMoen <alex.r.moen@gmail.com> 1468714795 -0700	commit: Added Javascript switch to modals
+01294ac58a8d5901a967a8415b51fa0f202b87d4 ff26a38956bbfc3a44a6019fbf4f9e65df815a28 AlexRMoen <alex.r.moen@gmail.com> 1468730776 -0700	commit: Move To fixed in modal transition
+ff26a38956bbfc3a44a6019fbf4f9e65df815a28 1b746de6947cbd26ef083829ee6be1e48ed466bd AlexRMoen <alex.r.moen@gmail.com> 1468732104 -0700	commit: Finalized Ella modal transition
+1b746de6947cbd26ef083829ee6be1e48ed466bd 728d6b85b44c4113ad7d9e1a468efb31d2ba9f5a AlexRMoen <alex.r.moen@gmail.com> 1468732394 -0700	commit: Changed naming convention for modal JS files
+728d6b85b44c4113ad7d9e1a468efb31d2ba9f5a 6623cb9440dec52610958b32356b218fc30a72be AlexRMoen <alex.r.moen@gmail.com> 1468732927 -0700	commit: Added Trello modal switch
+6623cb9440dec52610958b32356b218fc30a72be 3ca649d7485af30dcf33e6ed17cea9fd891ae57b AlexRMoen <alex.r.moen@gmail.com> 1468736946 -0700	commit: Fixed Xs on top row
+3ca649d7485af30dcf33e6ed17cea9fd891ae57b 9f989c4cab81d9bba6b17f759db443a08dbb193a AlexRMoen <alex.r.moen@gmail.com> 1468738194 -0700	commit: Playboy modal fixed
+9f989c4cab81d9bba6b17f759db443a08dbb193a f2c9f4b23edfaeefbf5caedd8986cb67c0cb5bfb AlexRMoen <alex.r.moen@gmail.com> 1468740585 -0700	commit: Enterprise now expands
+f2c9f4b23edfaeefbf5caedd8986cb67c0cb5bfb 1ea638700615760262821688a61989bbec76d942 AlexRMoen <alex.r.moen@gmail.com> 1468744351 -0700	commit: Chirpr works

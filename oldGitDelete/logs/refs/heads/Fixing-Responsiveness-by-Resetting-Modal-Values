@@ -1,0 +1,16 @@
+0000000000000000000000000000000000000000 eb6412e1163768d5e45973b5daaf6f3acb71c5fd AlexRMoen <alex.r.moen@gmail.com> 1470098452 -0700
+eb6412e1163768d5e45973b5daaf6f3acb71c5fd 1971e8ca7400079c30acd62e2bac915313646882 AlexRMoen <alex.r.moen@gmail.com> 1470098479 -0700	commit: Change method of Modal close
+1971e8ca7400079c30acd62e2bac915313646882 51032847226e4d2ef8fce06cc57725c28bf808e6 AlexRMoen <alex.r.moen@gmail.com> 1470102463 -0700	commit: Created new universal closeX class
+51032847226e4d2ef8fce06cc57725c28bf808e6 a5e259fd109c77a70b61e0a98a47bc62b9dcba0c AlexRMoen <alex.r.moen@gmail.com> 1470113551 -0700	commit: Fixed all modals
+a5e259fd109c77a70b61e0a98a47bc62b9dcba0c 0c99bbe9848232ec178d91e2a75f6bd5069aade3 AlexRMoen <alex.r.moen@gmail.com> 1470114429 -0700	commit: Small tweaks
+0c99bbe9848232ec178d91e2a75f6bd5069aade3 c6689340a7768fd10c674c97a71a166eeb0cdd0c AlexRMoen <alex.r.moen@gmail.com> 1470122703 -0700	commit: Fixed left/right transitions on mobile viewport
+c6689340a7768fd10c674c97a71a166eeb0cdd0c a626ac92b63c28480d250e8bdc7076766b000680 AlexRMoen <alex.r.moen@gmail.com> 1470123297 -0700	commit: Only scrolls to top of gallery on larger viewports
+a626ac92b63c28480d250e8bdc7076766b000680 33b51d01827bbbe890c03da510d877980dde0b09 AlexRMoen <alex.r.moen@gmail.com> 1470211578 -0700	commit: Removed all animation from small viewports
+33b51d01827bbbe890c03da510d877980dde0b09 534bc80729fd5a34542f3176d3e51070e81460d2 AlexRMoen <alex.r.moen@gmail.com> 1470212680 -0700	commit: Fixed a bug
+534bc80729fd5a34542f3176d3e51070e81460d2 bd3a757a98eef1b8c82a733b3e2df3a5de3fec3f AlexRMoen <alex.r.moen@gmail.com> 1470263169 -0700	commit: Change arrow styles
+bd3a757a98eef1b8c82a733b3e2df3a5de3fec3f 157183c9d3215c2f90694a9fa8b745ca57cd66e2 AlexRMoen <alex.r.moen@gmail.com> 1470263730 -0700	commit: Adjusted arrow positions
+157183c9d3215c2f90694a9fa8b745ca57cd66e2 78e61c0738b4c449d8f7b6027520934159c57cd1 AlexRMoen <alex.r.moen@gmail.com> 1470267349 -0700	commit: Moved closeX into modal header
+78e61c0738b4c449d8f7b6027520934159c57cd1 e0ec5d79af4234d5eabe56b642c92ac59c3caf07 AlexRMoen <alex.r.moen@gmail.com> 1470269800 -0700	commit: Added full height and width links to gallery items
+e0ec5d79af4234d5eabe56b642c92ac59c3caf07 bbed2a7c74770db241ba4215931541f621d9250a AlexRMoen <alex.r.moen@gmail.com> 1470277322 -0700	commit: Gallery boxed now enlarge when hovered
+bbed2a7c74770db241ba4215931541f621d9250a b4aaa628b9225a058bda66ea38959eb33f7ca12c AlexRMoen <alex.r.moen@gmail.com> 1470281194 -0700	commit: Moved closeX again
+b4aaa628b9225a058bda66ea38959eb33f7ca12c 033628ba4c398c678536b9d350a10cacaaf93ee4 AlexRMoen <alex.r.moen@gmail.com> 1470300471 -0700	commit: Progress on info within the kojiro modal

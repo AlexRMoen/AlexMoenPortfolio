@@ -247,7 +247,7 @@ canvas {
 #modalBGContainer {
 	background-color: rgba(227,142,14,1.00);
 	display: none;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -500,6 +500,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 #ellaHeader {
 	background-image: url(../img/gallery/ella/thumbnail.png);
+}
+
+#greenlightHeader {
+	background-image: url(../img/gallery/greenlight/Dyad1-min.jpg);
 }
 
 #sunnyspotHeader {

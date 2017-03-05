@@ -1,0 +1,13 @@
+body {
+	background: #2D2D2E;
+		color: #FF119A;
+}
+h1 {
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 800;
+}
+.bgimage {
+background-image: url("../img/headertest.jpg");
+background-size: cover;
+min-height: 90vh;
+}

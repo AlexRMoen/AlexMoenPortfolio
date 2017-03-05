@@ -1,0 +1,375 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	font-family: "Hammersmith One", sans-serif;
+
+}
+
+body {
+
+}
+
+h1 {
+	font-size: 3em;
+	display: inline;
+	color: #FFF;
+}
+h2 {
+	font-size: 2em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	color: #E54F51;
+}
+
+h3 {
+	font-size: 1em;
+	color: #E54F51;
+	margin-top: 1em;
+}
+
+h4 {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+p, form {
+	font-family: 'Open Sans', sans-serif;
+	color: #FFF;
+}
+
+ form{
+ 	font-size: 0.8em;
+ }
+input {
+	margin-left: 1em;
+	margin-top: 2em;
+}
+
+input [text]{
+	width: 100%;
+}
+
+input [radio]{
+	width: 100%;
+}
+
+
+.smaller {
+	font-size: 0.75rem;
+}
+#topNav {
+	z-index: 999;
+	position: fixed;
+	width: 100%;
+	height: 14vh;
+	color: #FFF;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	background-color: #E54F51;
+	transition: height 0.5s ease-out;
+	overflow: hidden;
+}
+.topNavBanner {
+	width: 100%;
+	height: 14vh;
+	line-height: 14vh;
+	text-align: center;
+}
+.topNavUserAccount {
+	width: 100%;
+	height: 16vh;
+}
+.accountIcon {
+	position: absolute;
+	right: 2em;
+	height: 8vh;
+	display: inline;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+}
+#mainWindow {
+	z-index: 997;
+	width: 100vw;
+	height: 86vh;
+	overflow: scroll;
+	transition: width 0.5s ease-out;
+	padding-top: 52vh;
+		background: url(../img/pizzaCover.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.mainWindowDim {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 998;
+	width: 100vw;
+	height: 86vh;
+	transition: width 0.5s ease-out;
+	background: rgba(0,0,0,0.6);
+}
+.mainPadding {
+	padding: 0 5em 0 5em;
+}
+.standardPadding {
+	padding-left: 14em;
+	padding-right: 14em;
+}
+.morePadding {
+	padding-left: 0;
+	padding-right: 16em;
+	padding-bottom: 1em;
+}
+.itemPadding {
+	padding-top: 0;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 3em;
+}
+
+.dimmedBG {
+
+padding-top: 8vh;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,131313+100&0+0,1+15,1+100 */
+
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(3,3,3,1) 15%, rgba(19,19,19,1) 100%); /* FF3.6-15 */
+
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(3,3,3,1) 15%,rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(3,3,3,1) 15%,rgba(19,19,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+
+
+
+
+
+
+
+
+
+
+
+}
+
+.foodItem img {
+	width: 100%;
+}
+
+.drinkItem{
+	height: 100%;
+}
+
+
+.button {
+    border: none;
+    padding: 0.75em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+	
+
+}
+.productButton {
+background-color: #E54F51;
+color: #FFF;
+text-align: center;
+}
+.productButtonSpacer {
+margin: auto;
+margin-top: 2em;
+}
+.orderButtonSpacer {
+margin: auto;
+margin-top: 2em;
+position: absolute;
+bottom: 1em;
+width: 100%;
+}
+.orderButton {
+text-align: center;
+background-color: #FFF;
+color: #E54F51;
+width: "100%";
+}
+
+#shoppingCart {
+	z-index: 998;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	height: 86vh;
+	width: 6vw;
+	transition: width 0.5s ease-out;
+	overflow: hidden;
+	
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.shoppingCartTitle {
+	margin: 1.5em 0 0 0.5em;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+
+.shoppingCartItem,.shoppingCartItemPrice {
+	font-size: 0.8em;
+	margin: 3em 0 0 1em;
+	
+}
+ 
+ .topLine {
+ 	border-top: #fff .1em solid;
+ }
+
+.arrow {
+	position: absolute;
+	top: 1em;
+	left: 1em;
+	width: 1em;
+}
+.shoppingCartTable {
+	display: table;
+	width: 78vw;
+	margin: 0;
+	padding: 0;
+}
+.shoppingCartRow {
+	display: table-row;
+	margin: 0;
+	padding: 0;
+}
+#shoppingCartOpenClose {
+	height: 86vh;
+	width: 4vw;
+	display: table-cell;
+	margin: 0;
+	
+	padding-left: 1em;
+	padding-right: 1.5em;
+	background-color: #E54F51;
+}
+
+#cartOpener {
+}
+
+.shoppingCartColumn {
+	height: 86vh;
+	width: 24vw;
+	display: table-cell;
+	margin: 0;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 2em;
+	background-color: #E54F51;
+}
+.test {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.row, 
+.column {
+    box-sizing: border-box;
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.column {
+    position: relative;
+    float: left;
+}
+
+.column + .column {
+    margin-left: 1.6%;
+}
+
+.column-1 {
+    width: 6.86666666667%;
+}
+
+.column-2 {
+    width: 15.3333333333%;
+}
+
+.column-3 {
+    width: 23.8%;
+}
+
+.column-4 {
+    width: 32.2666666667%;
+}
+
+.column-5 {
+    width: 40.7333333333%;
+}
+
+.column-6 {
+    width: 49.2%;
+}
+
+.column-7 {
+    width: 57.6666666667%;
+}
+
+.column-8 {
+    width: 66.1333333333%;
+}
+
+.column-9 {
+    width: 74.6%;
+}
+
+.column-10 {
+    width: 83.0666666667%;
+}
+
+.column-11 {
+    width: 91.5333333333%;
+}
+
+.column-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 550px) {
+    .column-1, 
+    .column-2, 
+    .column-3, 
+    .column-4, 
+    .column-5, 
+    .column-6, 
+    .column-7, 
+    .column-8, 
+    .column-9, 
+    .column-10, 
+    .column-11, 
+    .column-12 {
+        width: auto;
+        float: none;
+    }
+
+    .column + .column {
+        margin-left: 0;
+    }
+}
