@@ -32,15 +32,22 @@ body {
 	height: 100vh;
 }
 
+.spelunkerColumn {
+	height: 100%;
+	width: 15%;
+	position: relative;
+}
+
 /* Positioning */
 
 .fixed {
 	position: fixed;
 }
 
-.absoluteLeftMiddle {
+.absoluteLeft0top60 {
 	position: absolute;
 	left: 0;
-	top: 50%;
+	top: 60%;
+	transform: translateY(-50%);
 }
 
