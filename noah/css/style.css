@@ -32,22 +32,23 @@ body {
 	height: 100vh;
 }
 
-.spelunkerColumn {
-	height: 100%;
-	width: 15%;
-	position: relative;
-}
-
 /* Positioning */
 
 .fixed {
 	position: fixed;
 }
 
-.absoluteLeft0top60 {
+.absoluteCenter {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.absoluteLeftMiddle {
 	position: absolute;
 	left: 0;
-	top: 60%;
+	top: 50%;
 	transform: translateY(-50%);
 }
 
