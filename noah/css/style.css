@@ -2,15 +2,9 @@
 /* CSS Document */
 
 body {
+	background-color: #0984DB;
 	padding: 0;
 	margin: 0;
-	
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00b7ea+0,006989+100 */
-background: #00b7ea; /* Old browsers */
-background: -moz-linear-gradient(top, #00b7ea 0%, #006989 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #00b7ea 0%,#006989 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #00b7ea 0%,#006989 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#006989',GradientType=0 ); /* IE6-9 */
 }
 
 /* Colors */
@@ -23,38 +17,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', end
 	background-color: bisque;
 }
 
-.colorFirebrick {
-	background-color: firebrick;
-}
-
 /* Containers */
 
 .fullViewport {
 	width: 100vw;
 	height: 100vh;
 }
-
-.heightFull {
-	height: 100vh;
-}
-
-/* Positioning */
-
-.fixed {
-	position: fixed;
-}
-
-.absoluteCenter {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.absoluteLeftMiddle {
-	position: absolute;
-	left: 0;
-	top: 50%;
-	transform: translateY(-50%);
-}
-

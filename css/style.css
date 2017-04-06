@@ -1,0 +1,884 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration:none;
+}
+
+hr {
+	margin-top: 2em;
+	margin-bottom: 2.5em;
+	
+}
+
+canvas {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: -1;
+}
+
+/* colors */
+/* white */
+.white {
+	color: rgb(255, 255, 255);
+} 
+
+.whiteBG {
+	background-color: rgb(255, 255, 255);
+}
+
+/* grey */
+.grey {
+	color: rgb(100,100,100);
+} 
+
+.greyBG {
+	background-color: rgb(100,100,100);
+}
+
+/* teal */
+.teal {
+	color: rgb(35, 174, 194);
+} 
+
+.tealBG {
+	background-color: rgb(35, 174, 194);
+}
+
+/* paddings */
+.paddingTop1point5em {
+	padding-top: 1.5em;
+}
+
+.paddingTop2em {
+	padding-top: 2em;
+}
+
+.paddingTop3em {
+	padding-top: 3em;
+}
+
+.paddingBottom2em {
+	padding-bottom: 2em;
+}
+
+.paddingBottom3em {
+	padding-bottom: 3em;
+}
+
+.paddingLeft2em {
+	padding-left: 2em;
+}
+
+.paddingLeftRight1percent {
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.paddingForLargeViewports {
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
+.paddingForLargeViewportsContacts {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+/* margins */
+.marginAuto {
+	margin: auto;
+}
+
+.marginBottomPoint2em {
+	margin-bottom: 0.2em;
+}
+
+.marginBottomPoint75em {
+	margin-bottom: 0.75em;
+}
+
+.marginBottom1em {
+	margin-bottom: 1em;
+}
+
+.marginBottom1point25em {
+	margin-bottom: 1.25em;
+}
+
+.marginBottom1point5em {
+	margin-bottom: 1.5em;
+}
+
+.marginBottom2em {
+	margin-bottom: 2em;
+}
+
+.marginBottom3em {
+	margin-bottom: 3em;
+}
+
+.marginBottom2point5em {
+	margin-bottom: 2.5em;
+}
+
+.marginBottom4em {
+	margin-bottom: 4em;
+}
+
+.marginLeftRight5em {
+	margin-left: 5em;
+	margin-right: 5em;
+}
+
+.marginLeftRight10em {
+	margin-left: 10em;
+	margin-right: 10em;
+}
+
+/* should be set to the same margin width as the grid gutter, in vw units */
+.marginBottomGutterWidth {
+	margin-bottom: 1.6vw;
+}
+
+/* div sizes */
+/* 100% of a full viewport height */
+.heightFull {
+	width: 100%;
+	height: 100vh;
+}
+
+/* 35% of a full viewport height */
+.height35 {
+	width: 100%;
+	height: 35vh;
+}
+
+/* img behaviors */
+/* makes img circular */
+.imgCircle {
+    border-radius: 50%;
+}
+
+/* makes img greyscale */
+.greyscale {
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+/* makes img full width */
+.img100 {
+	width: 100%;
+}
+
+/* button styles */
+.button {
+	/* should be the same as teal class */
+    background-color: rgb(35, 174, 194);
+	color: rgb(255, 255, 255);
+	border-radius: 25px;
+    padding: 0.75em 1.25em;
+  	font-family: 'Lato', sans-serif;
+	font-size: 0.9em;
+	text-align: center;
+    text-decoration: none;
+	-webkit-transition: all 0.25s ease-out;
+	transition: all 0.25s ease-out;
+}
+
+.button:hover {
+	/* should be the same as teal class */
+	color: rgb(35, 174, 194);
+	background-color: rgba(35, 174, 194, 0.3);
+}
+
+.buttonResume {
+	/* should be the same as grey class */
+    background-color: rgb(100,100,100);
+	margin-right: 1em;
+}
+
+.buttonResume:hover {
+	/* should be the same as grey class */
+	color: rgb(100, 100, 100);
+	background-color: rgba(100, 100, 100, 0.3);
+}
+
+/* a container for the buttons that positions it properly */
+.buttonCluster {
+	padding-top: 2.25em;
+	text-align: center;
+}
+
+/* timing */
+.transitionAll0point5 {
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+/* div behaviors */
+/* gallery box transition rules */
+.box {
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+.threeDaccel {
+   -webkit-transform: translateZ(0);
+   -moz-transform: translateZ(0);
+   -ms-transform: translateZ(0);
+   -o-transform: translateZ(0);
+   transform: translateZ(0);
+   
+	-webkit-backface-visibility: hidden;
+   -moz-backface-visibility: hidden;
+   -ms-backface-visibility: hidden;
+   backface-visibility: hidden;
+}
+
+/* link for the BG of modal to close */
+#modalBGContainer {
+	background-color: rgba(227,142,14,1.00);
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#modalBG {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* link for the modal to open */
+.modalLinkContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.modalLink {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* makes a background image for a box */
+.imgFitBox {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+/* labels the box */
+.boxLabel {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	right: 0;
+	transform-origin: 100% 0;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+.topLabel {
+	padding-left: 35px;
+	padding-right: 25px;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+.bottomLabel {
+	padding-left: 35px;
+	padding-right: 25px;
+	padding-top: 0.5em;
+	padding-bottom: 0.7em;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+.gradient {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
+
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%);
+
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#0d000000',GradientType=0 );
+
+
+
+}
+
+
+/* drop shadows */
+.boxShadow {
+	box-shadow: 4px 4px 20px rgba(0,0,0,0.3);
+}
+
+.dropShadow {
+-webkit-filter: drop-shadow(4px 4px 20px rgba(0,0,0,0.3));
+	filter: drop-shadow(4px 4px 20px rgba(0,0,0,0.3));
+	
+}
+
+.textShadowStrong {
+	text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+
+/* specific element rules */
+/* main page title and sub-heading */
+#title {
+	position: absolute;
+	left: 0;
+	bottom: 18vh;
+}
+
+/* down arrow to indicate scrolling on a full screen */
+#arrowDown {
+	position: absolute;
+	bottom: 6vh;
+	left: 50%;
+	-ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+	width: 3em;
+}
+
+/* margins which resize icons inside their grid containers */
+.icon {
+	margin-left: 2.25em;
+	margin-right: 2.25em;
+}
+
+.hovering:hover {
+	transform: scale(1.1);
+	-webkit-filter: drop-shadow(2px 2px 8px rgba(0,0,0,0.3));
+	filter: drop-shadow(2px 2px 8px rgba(0,0,0,0.3));
+}
+
+/* wrapper which resizes videos to container size */
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* gallery items */
+#gallery {
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	height: 100%;
+	overflow: hidden;
+
+}
+
+#galleryHeightWrapper {
+	min-height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.galleryRow {
+	-webkit-transition: all 0.7s ease-out;
+	transition: all 0.7s ease-out;
+	-webkit-transition: padding-top 0.1s ease-out;
+	transition: padding-top 0.1s ease-out;
+	position: relative;
+	max-width: 100vw;
+	}
+
+#myWork {
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
+}
+
+/* the header and main window of the modal */
+.modalHeader {
+	height: 100%;
+	max-width: 100%;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	position: relative;
+}
+
+.modalMain {
+	height: 0%;
+	max-width: 100%;
+	-webkit-transition: height 0.5s ease-out, width 0.5s ease-out;
+	transition: height 0.5s ease-out, width 0.5s ease-out;
+	opacity: 0;
+	-webkit-transition: opacity 2s ease-out;
+	transition: opacity 2s ease-out;
+	padding-top: 2em;
+}
+
+.modalFooter {
+	width: 100%;
+	padding-top: 1.25em;
+	padding-bottom: 1.5em;
+	margin: 0;
+	background-color: rgb(35, 174, 194);
+}
+.modalFooterText {
+	text-align: right;
+	padding-right: 2em;
+}
+
+/* close X button */
+.closeX {
+	position: absolute;
+	top: 7.5vh;
+	right: 10vw;
+	width: 2.25em;
+	margin-right: 1.5em;
+	margin-top: 1.5em;
+	transform: scale(0);
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	z-index: 999;
+}
+
+.leftArrow {
+	position: absolute;
+	width: 4vw;
+	left: -2.5em;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	opacity: 0;
+	z-index: 999;
+}
+
+.rightArrow {
+	position: absolute;
+	width: 4vw;
+	right: -2.5em;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	opacity: 0;
+	z-index: 999;
+}
+
+/* covers for gallery boxes / headers for modals */
+#kojiroHeader {
+	background-image: url(../img/gallery/kojiro/thumbnail2.png);
+}
+
+#ellaHeader {
+	background-image: url(../img/gallery/ella/thumbnail.png);
+}
+
+#greenlightHeader {
+	background-image: url(../img/gallery/greenlight/Dyad1-min.jpg);
+}
+
+#sunnyspotHeader {
+	background-image: url(../img/gallery/trello/thumbnail2.png);
+}
+
+#playboyHeader {
+	background-image: url(../img/gallery/playboy/thumbnail.png);
+}
+
+#enterpriseHeader {
+	background-image: url(../img/gallery/enterprise/thumbnail.png);
+}
+
+#chirprHeader {
+	background-image: url(../img/gallery/chirpr/thumbnail.png);
+}
+
+#newitemHeader {
+	background-image: url(../img/gallery/chirpr/thumbnail.png);
+}
+
+/* creates see-through porthole effect */
+
+#porthole {
+	position: relative;
+	background: radial-gradient(circle 20% at 50% 33.333%, transparent 20%, rgb(235,235,235) 20%);
+    background: -webkit-radial-gradient(50% 33.333%, circle, transparent 20%, rgba(235,235,235,1.00) 20%);
+	background: -moz-radial-gradient(50% 33.333%, circle, transparent 20%, rgb(235,235,235) 20%);
+	z-index: 1;
+}
+
+.portholeRim {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(circle 5% at 50% 33.333%, transparent 23%, rgb(255,255,255) 20%);
+    background: -webkit-radial-gradient(50% 33.333%, circle, transparent 23%, rgb(255,255,255) 20%);
+	background: -moz-radial-gradient(50% 33.333%, circle, transparent 23%, rgb(255,255,255) 20%);
+}
+
+#aboveFold {
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
+	overflow:hidden;
+}
+
+#aboutMe {
+	-webkit-transition: all 1s ease-out;
+	transition: all 1s ease-out;
+	height: 100%;
+}
+
+
+/* attaches contact methods to the bottom of the contact me section */
+.contactPosition {
+	position: absolute;
+	bottom: 1em;
+	width: 100%;
+}
+
+.verticalCenterParent {
+display: table;
+min-height: 55vh;
+}
+
+.verticalCenterChild {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.helloRow {
+	min-height: 55vh;
+}
+
+/* adds padding on very large viewports */
+@media only screen and (max-width: 300em) {
+	
+	.paddingForLargeViewports {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.paddingForLargeViewportsContacts {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+	
+	
+}
+@media only screen and (max-width: 187.5em) {
+	
+	.paddingForLargeViewports {
+	padding-left: 15%;
+	padding-right: 15%;
+}
+	
+	.paddingForLargeViewportsContacts {
+	padding-left: 16%;
+	padding-right: 16%;
+}
+	
+}
+@media only screen and (max-width: 125em) {
+	
+	.paddingForLargeViewports {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.paddingForLargeViewportsContacts {
+	padding-left: 14%;
+	padding-right: 14%;
+}
+	
+}
+@media only screen and (max-width: 93.75em) {
+	
+	.paddingForLargeViewports {
+	padding-left: 7%;
+	padding-right: 7%;
+}
+
+.paddingForLargeViewportsContacts {
+	padding-left: 8%;
+	padding-right: 8%;
+}
+	
+}
+@media only screen and (max-width: 81.25em) {
+	
+	.paddingForLargeViewports {
+	padding-left: 5%;
+	padding-right: 5%;
+	
+	
+}
+
+.paddingForLargeViewportsContacts {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+	
+}
+@media only screen and (max-width: 75em) {
+	
+	.paddingForLargeViewports {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.paddingForLargeViewportsContacts {
+	padding-left: 0;
+	padding-right: 0;
+}
+	
+}
+
+/* incrementally reduces the margin on the sides of the screen */
+
+
+@media only screen and (max-width: 65.625) {
+	
+	.marginLeftRight10em {
+	margin-left: 9em;
+	margin-right: 9em;
+}
+	
+}
+
+@media only screen and (max-width: 62.5em) {
+	
+	.marginLeftRight10em {
+	margin-left: 8em;
+	margin-right: 8em;
+}
+	
+}
+
+@media only screen and (max-width: 59.375em) {
+	
+	.marginLeftRight10em {
+	margin-left: 7em;
+	margin-right: 7em;
+}
+	
+}
+
+@media only screen and (max-width: 56.25em) {
+	
+	.marginLeftRight10em {
+	margin-left: 6em;
+	margin-right: 6em;
+}
+
+	
+}
+
+
+@media only screen and (max-width: 48em) {
+	
+
+	
+	 .paddingLeft2em {
+		 padding-left: 0;
+	 }
+	
+	 
+	
+	.marginTopGutterWidth {
+		margin-top: 1.6vw;
+	}
+	
+	.marginBottomGutterWidth {
+		margin-bottom: 2em;
+	}
+	
+	.marginLeftRight5em {
+		margin-left: 2.5em;
+	margin-right: 2.5em;
+	}
+	
+	.marginLeftRight10em {
+	margin-left: 5em;
+	margin-right: 5em;
+}
+
+
+.closedGallery-sm {
+	height: 0;
+}
+.smallViewHide {
+	display: none;
+}
+.transitionAll0point5 {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+.box {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+.boxLabel {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+.topLabel {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+.bottomLabel {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+#gallery {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+
+.galleryRow {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+#myWork {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+.modalHeader {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+.modalMain {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+.closeX {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+.leftArrow {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+.rightArrow {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+#aboveFold {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+#aboutMe {
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+
+#porthole {
+	
+	-webkit-transition: all 0s;
+	transition: all 0s;
+}
+#title {
+	padding-left: 1.5em;
+}
+}
+
+@media only screen and (max-width: 43.75em) {
+	
+	
+
+#porthole {
+	
+	background: radial-gradient(circle 20% at 50% 25%, transparent 20%, rgb(235,235,235) 20%);
+    background: -webkit-radial-gradient(50% 25%, circle, transparent 20%, rgba(235,235,235,1.00) 20%);
+	background: -moz-radial-gradient(50% 25%, circle, transparent 20%, rgb(235,235,235) 20%);
+}
+
+.portholeRim {
+	
+	background: radial-gradient(circle 5% at 50% 25%, transparent 23%, rgb(255,255,255) 20%);
+    background: -webkit-radial-gradient(50% 25%, circle, transparent 23%, rgb(255,255,255) 20%);
+	background: -moz-radial-gradient(50% 25%, circle, transparent 23%, rgb(255,255,255) 20%);
+}
+
+
+#title {
+	padding-left: 1em;
+}
+}
+
+@media only screen and (max-width: 37.5em) {
+	
+		.leftArrow {
+	width: 2.5em;
+}
+
+.rightArrow {
+	width: 2.5em;
+}
+
+.marginLeftRight10em {
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+
+
+}
+@media only screen and (max-width: 25em) {
+	.button {
+	display: block;
+	margin-bottom: 1.5em;
+}
+.buttonResume {
+	margin-right: auto;
+}
+
+
+
+}
+
+#webdesign {
+	padding: 1em 2em;
+}
